@@ -1,0 +1,90 @@
+/* #Social icons
+================================================== */
+
+	.soc-ico a:before {
+		.content & {
+			background-color: fade(@base-color, 15%);
+		}
+		.sidebar &,
+		.sidebar-content & {
+			background-color: fade(@widget-sidebar-color, 15%);
+		}
+		.footer & {
+			background-color: fade(@widget-footer-color, 15%);
+		}
+	}
+	.dt-shortcode-soc-icons a.dt-icon-bg-on:before,
+	.content .dt-team-shortcode.dt-icon-bg-on .soc-ico a:before {
+		border-color: @accent-bg-color;
+		background-color: @accent-bg-color;
+		.accent-gradient & {
+			.background-gradient (@startColor: @accent-bg-color, @endColor: @accent-bg-color-2);
+		}
+		-webkit-box-shadow-color: inset 0px 0px 0px @soc-icon-border-width @accent-bg-color;
+		box-shadow-color:        inset 0px 0px 0px @soc-icon-border-width @accent-bg-color;
+	}
+			
+	.soc-ico a {
+		#main &,
+		#footer & {
+			&:hover {
+				background-color: transparent;
+				.box-shadow (none);
+			}
+			&:after {
+				background-color: @accent-bg-color;
+				.box-shadow (none);
+			}
+		}
+		#footer & {
+			&:after {
+				.custom-mixin-footer-accent-bg (@widget-footer-accent-color, @color-opacity:100%);
+			}
+		}
+		
+		.accent-gradient #main &,
+		.accent-gradient #footer & {
+			&:hover {
+				background: none;
+			}
+			&:after {
+				.background-gradient (@startColor: @accent-bg-color, @endColor: @accent-bg-color-2);
+			}
+
+		}
+		.accent-gradient #footer & {
+			&:after {
+				.custom-mixin-footer-accent-bg (@widget-footer-accent-color, @color-opacity:100%);
+			}
+		}
+	}
+	.dt-shortcode-soc-icons a.dt-icon-hover-bg-on,
+	.content .dt-team-shortcode.dt-icon-hover-bg-on .soc-ico a {
+		&:after {
+			border-color: @accent-bg-color;
+			background-color: @accent-bg-color;
+			.accent-gradient & {
+				.background-gradient (@startColor: @accent-bg-color, @endColor: @accent-bg-color-2);
+			}
+		}
+	}
+	.dt-shortcode-soc-icons a .soc-font-icon,
+	.content .dt-team-shortcode .soc-ico a .soc-font-icon {
+		color: @accent-bg-color;
+		.accent-gradient & {
+			.text-gradient (@startColor: @accent-bg-color, @endColor: @accent-bg-color-2);
+		}
+	}
+
+	.soc-ico a .soc-font-icon {
+		.content & {
+			color: @base-color;
+		}
+		.sidebar &,
+		.sidebar-content & {
+			color: @widget-sidebar-color;
+		}
+		.footer & {
+			color: @widget-footer-color;
+		}
+	}

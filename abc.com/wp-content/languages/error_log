@@ -1,0 +1,1 @@
+[26-Mar-2015 07:33:25 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/pcaonet/public_html/demo/the7/wp-content/languages/zh_CN.php on line 31

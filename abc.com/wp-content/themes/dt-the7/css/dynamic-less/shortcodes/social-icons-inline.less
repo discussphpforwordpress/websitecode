@@ -1,0 +1,71 @@
+/* #Social icons
+================================================== */
+.custom-mixin-color (@customColor) when (iscolor(@customColor)) {
+	color: @customColor;
+	-webkit-text-fill-color: @customColor;
+	background: none;
+}
+.custom-mixin-bg (@customColor) when (iscolor(@customColor)) {
+	background: @customColor;
+}
+.custom-mixin-border (@customColor) when (iscolor(@customColor)) {
+	border-color: @customColor;
+}
+a {
+	.dt-shortcode-soc-icons.@{unique-shortcode-class-name} & {
+		margin-right: @soc-icon-gap-between;
+	}
+}
+a.@{unique-shortcode-class-name} {
+	.dt-shortcode-soc-icons & {
+		min-width: @soc-icon-bg-size;
+		min-height: @soc-icon-bg-size;
+		font-size: @soc-icon-size;
+		border-radius: @soc-icon-border-radius;
+		margin-right: @soc-icon-gap-between;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:before,
+		&:after {
+			min-width: @soc-icon-bg-size;
+			min-height: @soc-icon-bg-size;
+			padding: inherit;
+		}
+		&.dt-icon-bg-on:before {
+			.content & {
+				.custom-mixin-bg (@soc-icon-bg-color);
+			}
+		}
+		&:before {
+			border: @soc-icon-border-width solid @soc-icon-border-color;
+		}
+		&:after {
+			border: @soc-icon-border-width solid @soc-icon-border-color-hover;
+		}
+		&:hover {
+			font-size: @soc-icon-size;
+			
+			& .soc-font-icon {
+				#page & {
+					.custom-mixin-color (@soc-icon-color-hover);
+				}
+			}
+		}
+		&.dt-icon-hover-bg-on {
+			&:after {
+				.content & {
+					.custom-mixin-bg (@soc-icon-bg-color-hover);
+				}
+			}
+		}
+		&:not(:hover) .soc-font-icon {
+			#page & {
+				.custom-mixin-color (@soc-icon-color);
+			}
+		}
+		& .soc-font-icon {
+			font-size: @soc-icon-size;
+		}
+	}
+}

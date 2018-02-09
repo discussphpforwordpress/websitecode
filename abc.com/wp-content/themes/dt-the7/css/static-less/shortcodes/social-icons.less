@@ -1,0 +1,121 @@
+/* #Social icons
+================================================== */
+.soc-ico {
+	overflow: hidden;
+}
+.dt-shortcode-soc-icons.soc-icons-center {
+	text-align: center;
+}
+.dt-shortcode-soc-icons.soc-icons-right {
+	text-align: right;
+}
+	// .dt-shortcode-soc-icons a,
+	.soc-ico a {
+		position: relative;
+		//visibility: hidden;
+		.flex-display(@display: inline-flex);
+		.align-items(@align: center);
+		.justify-content(@justify: center);
+		/*float: left;*/
+		margin: 2px;
+		width: 26px;
+		height: 26px;
+		line-height: 26px;
+		text-align: center;
+		.static-border-radius;
+		.box-sizing (border-box);
+		text-decoration: none;
+	}
+	.dt-shortcode-soc-icons a {
+		position: relative;
+		.flex-display(@display: inline-flex);
+		.align-items(@align: center);
+		.justify-content(@justify: center);
+		min-width: 26px;
+		min-height: 26px;
+		line-height: 26px;
+		text-align: center;
+		.static-border-radius;
+		.box-sizing (border-box);
+		text-decoration: none;
+		margin: 0;
+		&:before,
+		&:after {
+			box-sizing: border-box;
+			border: 0px solid;
+		}
+	}
+		a:before,
+		a:after {
+			//.dt-shortcode-soc-icons &,
+			.soc-ico & {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 26px;
+				height: 26px;
+				content: "";
+				-webkit-border-radius: inherit;
+				border-radius: inherit;
+				-webkit-transition: opacity 0.150s;
+				transition: opacity 0.150s;
+			}
+			.dt-shortcode-soc-icons & {
+				position: absolute;
+				top: 0;
+				left: 0;
+				min-width: 26px;
+				min-height: 26px;
+				width: 100%;
+				height: 100%;
+				content: "";
+				-webkit-border-radius: inherit;
+				border-radius: inherit;
+				-webkit-transition: opacity 0.180s;
+				transition: opacity 0.180s;
+			}
+		}
+		a:before,
+		a:hover:after {
+			.dt-shortcode-soc-icons &,
+			.soc-ico & {
+				opacity: 1;
+			}
+		}
+		a:after,
+		a:hover:before {
+			.dt-shortcode-soc-icons &,
+			.soc-ico & {
+				opacity: 0;
+			}
+		}
+		// a:before {
+		// 	.dt-shortcode-soc-icons &,
+		// 	.soc-ico & {
+		// 		-webkit-transition-delay: 0.120s; /* Safari */
+		//     	transition-delay: 0.120s;
+		// 	}
+		// }
+	
+	.soc-ico.text-centered a {
+		float: none;
+		display: inline-block;
+	}
+
+	#top-bar .right-block .soc-ico a {
+		float: right;
+		margin: 2px;
+	}
+
+	.soc-ico a,
+	.soc-ico a:hover,
+	#top-bar .soc-ico a:hover,
+	#bottom-bar .soc-ico a:hover {
+		text-decoration: none;
+	}
+	.soc-ico a:hover .soc-font-icon {
+		#main &,
+		#footer & {
+			color: #fff;
+		}
+	}
