@@ -762,7 +762,7 @@ blockquote,
 }
 .top-bar.line-content:after,
 .top-bar.full-width-line:after {
-  border-bottom: 1px solid rgba(51,51,51,0.12);
+  border-bottom: 1px dashed rgba(51,51,51,0.12);
 }
 .top-bar {
   min-height: 0px;
