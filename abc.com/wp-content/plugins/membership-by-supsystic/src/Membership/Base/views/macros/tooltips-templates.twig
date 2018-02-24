@@ -1,0 +1,423 @@
+{% macro get(template) %}
+{% spaceless %}
+{% import _self as templates %}
+{{ attribute(templates, template|replace({'-':'_'})) }}
+{% endspaceless %}
+{% endmacro %}
+
+{{ _self.get(template) }}
+
+{% macro photo_gallery_enable() %}
+    {{ translate('Choose galleries, which will be used for list of gallery presets and displayed for membership users on frontend') }}
+{% endmacro %}
+
+{% macro slider_enable() %}
+    {{ translate('Choose sliders, which will be used for list of sliders presets and displayed for membership users on frontend') }}
+{% endmacro %}
+
+{% macro GoogleMaps_enable() %}
+	{{ translate('Choose Google Maps, which will be used for list of google map presets and displayed for membership users on frontend') }}
+{% endmacro %}
+
+{% macro social_share_enable() %}
+	{{ translate('Choose Social Shares, which will be used for membership users on frontend') }}
+{% endmacro %}
+
+{% macro admin_email() %}
+    {{ translate('Email that will get notifications about the membership society.') }}
+{% endmacro %}
+
+{% macro admin_email_button() %}
+    {{ translate('Email delivery depends from your server configuration. For some cases - you and your subscribers can not receive emails just because email on your server is not working correctly. You can easy test it here - by sending test email. If you receive it - then it means that email functionality on your server works well. If not - this means that it is not working correctly and you should contact your hosting provider with this issue and ask them to setup email functionality for you on your server.') }}
+{% endmacro %}
+
+{% macro messages() %}
+    {{ translate('Enable this option and page Messages will be created on your website.') }}
+{% endmacro %}
+
+{% macro groups() %}
+    {{ translate('Enable this option and page Groups will be created on your website.') }}
+{% endmacro %}
+
+{% macro friends() %}
+    {{ translate('Enable this option and page Friends will be created on your website.') }}
+{% endmacro %}
+
+{% macro activity() %}
+    {{ translate('Enable this option and page Activity will be created on your website.') }}
+{% endmacro %}
+
+{% macro after_registration_action() %}
+    {{ translate('After user submits a registration form, he will be redirected to his profile or to the specified link.') }}
+{% endmacro %}
+
+{% macro after_login_action() %}
+    {{ translate('After user submits a login form, he will be redirected to his profile or to the specified link.') }}
+{% endmacro %}
+
+{% macro after_logout_action() %}
+    {{ translate('After user logs out from his account, he will be redirected to the main page or to the specified link.') }}
+{% endmacro %}
+
+{% macro after_delete_account_action() %}
+    {{ translate('After user deletes his account, he will be redirected to the main page or to the specified link.') }}
+{% endmacro %}
+
+{% macro badges() %}
+	{{ translate('Add image to user name in frontend') }}
+{% endmacro %}
+
+{% macro global_site_access() %}
+    {{ translate('Select who can see information on your website.') }}
+{% endmacro %}
+
+{% macro protect_all_pages() %}
+{{ translate('By default option "Site Accessible to Logged In Users" hides only access to the pages of Membership plugin. If you want to hide access to all pages of your site - activate this checkbox. When opening any page of your site - all not logged in users will be redirected to the login page.') }}
+{% endmacro %}
+
+{% macro backend_login_screen_redirect() %}
+    {{ translate('When this option is activated - users, who want to login to your website, will be redirected to Membership Login page instead of usual WordPress login form.') }}
+{% endmacro %}
+
+{% macro blocked_ip() %}
+    {{ translate('Black list of IP addresses. Enter IP addresses separated by comma or just leave this field blank if you don\'t need to use this option.') }}
+{% endmacro %}
+
+{% macro max_file_size_mb() %}
+    {{ translate('Enter the maximum size of file that can be uploaded by user in Mb.') }}
+{% endmacro %}
+
+{% macro image_quality() %}
+    {{ translate('Set the quality of images in %. The highest value is 100.') }}
+{% endmacro %}
+
+{% macro profile_title() %}
+    {{ translate('Enter the profile title that will be defined in the browser toolbar and displayed for the page in search-engine results.') }}
+{% endmacro %}
+
+{% macro profile_description() %}
+    {{ translate('Specify a description of User Profile page. Search engines can pick up this description to show with the results of searches.') }}
+{% endmacro %}
+
+{% macro group_title() %}
+    {{ translate('Enter the group title that will be defined in the browser toolbar and displayed for the page in search-engine results.') }}
+{% endmacro %}
+
+{% macro group_description() %}
+    {{ translate('Specify a description of Group page. Search engines can pick up this description to show with the results of searches.') }}
+{% endmacro %}
+
+{% macro default_role() %}
+    {{ translate('Select a role that will be assigned to user after his registration.') }}
+{% endmacro %}
+
+{% macro use_avatar() %}
+    {{ translate('If this option is enabled an avatar will be displayed near user\'s name.') }}
+{% endmacro %}
+
+{% macro use_gravatar() %}
+    {{ translate('Enable this option and users will be able to upload their Globally Recognized Avatar.') }}
+{% endmacro %}
+
+{% macro use_cover() %}
+    {{ translate('If this option is enabled users will be able to upload the second image behind the avatar image. It is kind of background image.') }}
+{% endmacro %}
+
+{% macro permalink_base() %}
+    {{ translate('Select what data to use in the link of user\'s profile. E.g. "http://supsystic/profile/john_snow/" or "http://supsystic/profile/1/".') }}
+{% endmacro %}
+
+{% macro display_name() %}
+    {{ translate('Select which kind of user\'s name will be displayed.') }}
+{% endmacro %}
+
+{% macro registration_confirmation() %}
+    {{ translate('Select the type of confirmation that should be performed after user registration. You can choose "Auto" and there will be no confirmation.') }}
+{% endmacro %}
+
+{% macro groups_permalink_base() %}
+    {{ translate('Group Permalink Base: Select what data to use in the group\'s link. E.g. "http://supsystic/groups/culinary-blog/" or "http://supsystic/groups/1/".') }}
+{% endmacro %}
+
+{% macro mail_appears_from() %}
+    {{ translate('The name of site that will be indicated in emails.') }}
+{% endmacro %}
+
+{% macro mail_appears_from_address() %}
+    {{ translate('This email will be used as Sender.') }}
+{% endmacro %}
+
+{% macro use_html_for_emails() %}
+    {{ translate('This option allows to use html markup language to edit the text in emails.') }}
+{% endmacro %}
+
+{% macro account_welcome_email() %}
+    {{ translate('Email that will be sent to user after signing up.') }}
+{% endmacro %}
+
+{% macro account_activation_email() %}
+    {{ translate('This email will be sent to user, so he could confirm his email and activate the account after registration.') }}
+{% endmacro %}
+
+{% macro pending_review_email() %}
+    {{ translate('This email will be sent to user if he needs to wait till admin will approve his account.') }}
+{% endmacro %}
+
+{% macro account_approved_email() %}
+    {{ translate('This email will be sent to user after his account has been approved and activated by admin.') }}
+{% endmacro %}
+
+{% macro account_rejected_email() %}
+    {{ translate('This email will be sent to user if admin rejected his account.') }}
+{% endmacro %}
+
+{% macro account_deactivation_email() %}
+    {{ translate('This email will be sent to user if his account has been deactivated.') }}
+{% endmacro %}
+
+{% macro account_deleted_email() %}
+    {{ translate('This email will be sent to user if this account has been deleted.') }}
+{% endmacro %}
+
+{% macro password_changed_email() %}
+    {{ translate('This email will be sent to user if he has requested to change the password.') }}
+{% endmacro %}
+
+{% macro messages_refresh_period() %}
+    {{ translate('Enter the time for intervals with which messages will be updated.') }}
+{% endmacro %}
+
+{% macro admin_email_address() %}
+    {{ translate('Enter the email of admin.') }}
+{% endmacro %}
+
+{% macro new_user_notification() %}
+    {{ translate('The message that admin will receive after a new user signs up. In case you don\'t want to get this email just turn this option off.') }}
+{% endmacro %}
+
+{% macro account_needs_review_notification() %}
+    {{ translate('The message that admin will get if some account needs to be reviewed.') }}
+{% endmacro %}
+
+{% macro account_deletion_notification() %}
+    {{ translate('Admin will get this email after some account has been deleted.') }}
+{% endmacro %}
+
+{% macro avatar_style() %}
+    {{ translate('Select the style of profiles and groups images.') }}
+{% endmacro %}
+
+{% macro default_theme_colors() %}
+    {{ translate('If this option is enabled, the default colors of your theme will be used.') }}
+{% endmacro %}
+
+{% macro primary_button_color() %}
+    {{ translate('Set the color for primary buttons.') }}
+{% endmacro %}
+
+{% macro primary_button_hover_color() %}
+    {{ translate('Set the color for primary buttons when they will be covered by mouse.') }}
+{% endmacro %}
+
+{% macro primary_button_text_color() %}
+    {{ translate('Set the color for text in primary buttons.') }}
+{% endmacro %}
+
+{% macro secondary_button_color() %}
+    {{ translate('Set the color for secondary buttons.') }}
+{% endmacro %}
+
+{% macro secondary_button_hover_color() %}
+    {{ translate('Set the color for secondary buttons when they will be covered by mouse.') }}
+{% endmacro %}
+
+{% macro secondary_button_text_color() %}
+    {{ translate('Set the color for text in secondary buttons.') }}
+{% endmacro %}
+
+{% macro label_text_color() %}
+    {{ translate('Set the color for text in labels.') }}
+{% endmacro %}
+
+{% macro input_border_color() %}
+    {{ translate('Set the color for borders of labels.') }}
+{% endmacro %}
+
+{% macro input_border_focus_color() %}
+    {{ translate('Set the color for borders when the cursor is in this field.') }}
+{% endmacro %}
+
+{% macro input_background_color() %}
+    {{ translate('Set the background color for labels.') }}
+{% endmacro %}
+
+{% macro input_background_focus_color() %}
+    {{ translate('Set the background color when the cursor is in this field.') }}
+{% endmacro %}
+
+{% macro input_text_color() %}
+    {{ translate('Set the color for text.') }}
+{% endmacro %}
+
+{% macro input_placeholder_color() %}
+    {{ translate('Set the color for placeholder.') }}
+{% endmacro %}
+
+{% macro container_max_width() %}
+    {{ translate('Set the width for profile container. The maximum is 100%.') }}
+{% endmacro %}
+
+{% macro header_background_color() %}
+    {{ translate('Set the background color for profile header.') }}
+{% endmacro %}
+
+{% macro show_display_name() %}
+    {{ translate('If this option is enabled, profile name will be shown in header.') }}
+{% endmacro %}
+
+{% macro registration_primary_button_text() %}
+    {{ translate('Set the text for "Register" button.') }}
+{% endmacro %}
+
+{% macro login_primary_button_text() %}
+    {{ translate('Set the text for "Log in" button.') }}
+{% endmacro %}
+
+{% macro login_secondary_button() %}
+    {{ translate('Enable secondary button for Login form.') }}
+{% endmacro %}
+
+{% macro login_secondary_button_text() %}
+    {{ translate('Set the text for secondary button.') }}
+{% endmacro %}
+
+{% macro login_secondary_button_url() %}
+    {{ translate('Set url to which user will be redirected after clicking on secondary button in Login form.') }}
+{% endmacro %}
+
+{% macro login_show_remember_me() %}
+    {{ translate('If this option is enabled, "Remember me" checkbox will be shown in login form.') }}
+{% endmacro %}
+
+{% macro roles_to_display() %}
+    {{ translate('Users with the chosen role will be shown on "Members" tab.') }}
+{% endmacro %}
+
+{% macro show_only_with_avatar() %}
+    {{ translate('If this option is enabled, only members with avatar will be shown.') }}
+{% endmacro %}
+
+{% macro show_only_with_cover() %}
+    {{ translate('If this option is enabled, only members with cover photo will be shown on "Members" tab.') }}
+{% endmacro %}
+
+{% macro show_tabs() %}
+	{{ translate('If this option is enabled, authorized members can swich tabs (friends, follows, followers) on Member page.') }}
+{% endmacro %}
+
+{% macro sort_users_by() %}
+    {{ translate('Select the sorting order to display users on "Members" tab.') }}
+{% endmacro %}
+
+{% macro facebook() %}
+    {{ translate('Integrate Membership with your Facebook App.') }}
+{% endmacro %}
+
+{% macro facebook_key() %}
+    {{ translate('To find your Facebook App ID please login to your Facebook account at <a target="_blank" href="https://developers.facebook.com/apps/">https://developers.facebook.com/apps/</a>. Then on the left main menu click on Dashboard. Copy / Paste your App ID into "Facebook App ID" field here. For more detailed instruction - check article <a target="_blank" href="http://supsystic.com/integrate-membership-facebook-app/">here</a>.') }}
+{% endmacro %}
+
+{% macro facebook_secret() %}
+    {{ translate('To find your Facebook App Secret please login to your Facebook account at https://developers.facebook.com/apps/. Then on the left main menu click on Dashboard. Copy / Paste your App Secret into "Facebook App Secret" field here. For more detailed instruction - check article <a target="_blank" href="http://supsystic.com/integrate-membership-facebook-app/">here</a>.') }}
+{% endmacro %}
+
+{% macro twitter() %}
+    Integrate Membership with your Twitter App.
+{% endmacro %}
+
+{% macro twitter_key() %}
+    {{ translate('To find your Twitter API Key please login to your Twitter account at https://apps.twitter.com/. Open the settings of your App and click on "Keys and Access Tokens" tab. Copy / Paste "Consumer Key (API Key)" into "Twitter API Key" field here. For more detailed instruction - check article <a target="_blank" href="http://supsystic.com/integrate-membership-twitter/">here</a>.') }}
+{% endmacro %}
+
+{% macro twitter_secret() %}
+    {{ translate('To find your Twitter API Secret please login to your Twitter account at https://apps.twitter.com/. Open the settings of your App and click on "Keys and Access Tokens" tab. Copy / Paste "Consumer Secret (API Secret)" into "Twitter API Secret" field here. For more detailed instruction - check article <a target="_blank" href="http://supsystic.com/integrate-membership-twitter/">here</a>.') }}
+{% endmacro %}
+
+{% macro autosubscribe_new_user() %}
+    {{ translate('This option will create subscriber directly after new user registration. If this option is disabled - new subscriber won\'t be created for your subscription list after registration. In this case user will be able to subscribe only in his Profile Settings.') }}
+{% endmacro %}
+
+{% macro confirmation_sent_message() %}
+    {{ translate('User will see this message after subscription in the settings of his profile, when email with confirmation link was
+    sent.') }}
+{% endmacro %}
+
+{% macro subscribe_success_message() %}
+    {{ translate('This message will be shown after subscription in the settings of user\'s profile right after subscriber will be
+    created and confirmed.') }}
+{% endmacro %}
+
+{% macro constantcontact_subscription() %}
+    {{ translate('Select lists for subscribe. They are taken from your Constant Contact account.') }}
+{% endmacro %}
+
+{% macro mailchimp_subscription_lists() %}
+    {{ translate('Select lists for subscribe. They are taken from your MailChimp account - so make sure that you entered correct API key before.') }}
+{% endmacro %}
+
+{% macro mailchimp_api_key() %}
+    {{ translate('To find your MailChimp API Key login to your Mailchimp account at http://mailchimp.com. On the left main menu click on your Username, then select "Account" in the flyout menu. From the account page select "Extras", "API Keys". Your API Key will be listed in the table labeled "Your API Keys". Copy / Paste your API key into "MailChimp API key" field here.') }}
+{% endmacro %}
+
+{% macro disable_double_opt_in() %}
+    {{ translate('Disable double opt-in confirmation message sending. This option will create subscriber directly after he will subscribe to your list.') }}
+{% endmacro %}
+
+{% macro enable_send_welcome_email() %}
+{% endmacro %}
+
+{% macro mailchimp_subscription_groups() %}
+    {{ translate('In MailChimp there is possibility to select groups for your subscribers. This is not mandatory, but sometimes it is really helpful. So, we added this possibility for you in our plugin - hope you will like it!') }}
+{% endmacro %}
+
+{% macro google_re_captcha_site_key() %}
+    {{ translate('Your site key, generated on <a href="https://www.google.com/recaptcha/admin#list" target="_blank">https://www.google.com/recaptcha/admin#list</a>.') }}
+{% endmacro %}
+
+{% macro google_re_captcha_secret_key() %}
+    {{ translate('Your secret key, generated on <a href="https://www.google.com/recaptcha/admin#list" target="_blank">https://www.google.com/recaptcha/admin#list</a>.') }}
+{% endmacro %}
+
+{% macro google_re_captcha_theme() %}
+    {{ translate('The color theme. You can select from themes, provided by Google, for your reCaptcha.') }}
+{% endmacro %}
+
+{% macro google_re_captcha_type() %}
+    {{ translate('The type of CAPTCHA to serve.') }}
+{% endmacro %}
+
+{% macro google_re_captcha_size() %}
+    {{ translate('The size of the CAPTCHA widget.') }}
+{% endmacro %}
+
+{% macro login_google_recaptcha_enable() %}
+	{{ translate('Enable Google ReCaptcha on login page.') }}
+{% endmacro %}
+
+{% macro login_google_recaptcha_site_key() %}
+	{{ translate('Your site key, generated on <a href="https://www.google.com/recaptcha/admin#list" target="_blank">https://www.google.com/recaptcha/admin#list</a>.') }}
+{% endmacro %}
+
+{% macro login_google_recaptcha_secret_key() %}
+	{{ translate('Your secret key, generated on <a href="https://www.google.com/recaptcha/admin#list" target="_blank">https://www.google.com/recaptcha/admin#list</a>.') }}
+{% endmacro %}
+
+{% macro activityTypesFriendPostOn() %}
+	{{ translate("Shared post by user will be displayed in all user's friends Activity page") }}
+{% endmacro %}
+
+{% macro activityTypesFriendPostInFrontendOn() %}
+	{{ translate("Allow users to disable automatic sharing of friend's posts") }}
+{% endmacro %}
+
+{{ environment.dispatcher.dispatch('adminTooltips') }}

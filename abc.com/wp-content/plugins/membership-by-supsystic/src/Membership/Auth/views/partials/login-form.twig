@@ -1,0 +1,48 @@
+<form class="ui form left membership-login-form"
+      method="post"
+      data-validation-rules="{{
+      {
+	      'username': {"presence":{"message":"%s"}},
+	      'password': {"presence":{"message":"%s"}}
+      }
+      |json_encode
+      |format(translate('Username or E-mail is required'), translate('Password is required')) }}"
+      class="membership-login-form"
+>
+	
+	{{ environment.dispatcher.dispatch('auth.view.loginFormBefore') }}
+	{{ environment.dispatcher.dispatch('loginFormBefore') }}
+	
+	<div class="field ui left" data-name="username">
+		<label>{{ translate('Username or E-mail') }}</label>
+		<input type="text" name="username">
+	</div>
+	<div class="field" data-name="password">
+		<label>{{ translate('Password') }}</label>
+		<input type="password" name="password">
+	</div>
+	<div class="ui equal width grid">
+		<div class="field left aligned column">
+			{% if settings.design.auth['login-show-remember-me'] %}
+				<div class="ui checkbox">
+					<input type="checkbox" id="remember-user-checkbox" value="true" name="remember" class="hidden">
+					<label for="remember-user-checkbox"><small>{{ translate('Remember me') }}</small></label>
+				</div>
+			{% endif %}
+		</div>
+		<div class="field right aligned column">
+			<a href="{{ getRouteUrl('login', {'action':'reset-password'}) }}">{{ translate('Forgot your password?') }}</a>
+		</div>
+	</div>
+	
+	{{ environment.dispatcher.dispatch('auth.view.loginFormAfter') }}
+	
+	<div class="mp-login-form-action-buttons ui basic vertical clearing segment">
+		<a class="submit ui left floated button primary mini">{{ settings.design.auth['login-primary-button-text'] }}</a>
+		<a class="mp-login-secondary-button ui right floated button secondary mini" href="{{ getRouteUrl('registration') }}">
+			{{ settings.design.auth['login-secondary-button-text'] }}
+		</a>
+	</div>
+	
+	<input type="submit" style="display: none;">
+</form>

@@ -1,0 +1,21 @@
+{% extends '@users/profile.twig' %}
+
+{% block content %}
+	<div id="mp-posts" class="ui basic vertical segment">
+		{% if isCurrentUser(requestedUser) and createNewPostUrl != null and canUserCreatePost and requestedUser['permissions']['can-access-wp-admin'] == 'true' %}
+			<a href="{{ createNewPostUrl }}" class="ui primary button">{{ translate('Add new post') }}</a>
+		{% endif %}
+		{% if posts %}
+			<div class="ui divided items">
+				{% include '@users/partials/posts.twig' with {'posts': posts} %}
+			</div>
+			<div class="ui basic vertical segment posts-loader" style="display: none">
+				<div class="ui active centered inline loader"></div>
+			</div>
+		{% else %}
+			<div class="ui message">
+				<p>{{ translate('No posts to show.') }}</p>
+			</div>
+		{% endif %}
+	</div>
+{% endblock %}

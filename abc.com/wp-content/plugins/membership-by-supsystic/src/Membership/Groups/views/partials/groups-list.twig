@@ -1,0 +1,75 @@
+{% for group in groups %}
+	<div class="ui card mp-group-card" data-id="{{ group.id }}">
+		<div class="image">
+			<a href="{{ groupUrl(group) }}" class="header">
+				<img src="{{ groupCover(group, 'medium') }}" alt="">
+                {% if group.currentUserIsFollowing == true %}
+                    {% set count =  notReadPost(group.id) %}
+                    {% if count >= 1 %}
+                        <div class="mp-new-posts">
+                            <span>{{ notReadPost(group.id) }}</span>
+                        </div>
+                    {% endif %}
+                {% endif %}
+			</a>
+		</div>
+
+		<div class="content">
+			<div class="mp-group-logo-container">
+				<div class="mp-group-logo">
+					<a href="{{ groupUrl(group) }}" class="header">
+						<img src="{{ groupLogo(group, 'large') }}" alt="">
+					</a>
+				</div>
+			</div>
+			<a href="{{ groupUrl(group) }}" class="header">{{ group.name }}</a>
+			<div class="meta mbs-group-g-type">
+				<small>
+					{% if group.settings.type == 'closed' %}
+						{{ translate('Closed group') }}
+					{% elseif group.settings.type == 'open' %}
+						{{ translate('Open group') }}
+					{% elseif group.settings.type == 'private' %}
+						{{ translate('Private group') }}
+					{% endif %}
+				</small>
+			</div>
+			<div class="meta mbs-group-followers">
+				<small>{{ translate('%s followers')|format(group.totalUsers) }}</small>
+			</div>
+		</div>
+
+		<div class="extra content" {% if hideButtons %}style="display: none"{% endif %}>
+			<div class="group-action-buttons">
+				{% block actionButtons %}
+					{% if userLoggedIn %}
+						{% if canSendJoinRequest(group) %}
+							<button class="ui mini primary button" data-action="send-request">{{ translate('Send a request') }}</button>
+						{% endif %}
+						{% if canCancelJoinRequest(group) %}
+							<button class="ui mini primary button" data-action="cancel-request">{{ translate('Cancel request') }}</button>
+						{% endif %}
+						{% if canJoinGroup(group) %}
+							<button class="ui mini primary button" data-action="join-group">{{ translate('Join group') }}</button>
+						{% endif %}
+						{% if canLeaveGroup(group) %}
+							<button class="ui mini primary button" data-action="leave-group">{{ translate('Leave group') }}</button>
+						{% endif %}
+						{% if canFollowGroup(group) %}
+							<button class="ui mini primary button" data-action="follow">{{ translate('Follow') }}</button>
+						{% endif %}
+						{% if canUnfollowGroup(group) %}
+							<button class="ui mini primary button" data-action="unfollow">{{ translate('Unfollow') }}</button>
+						{% endif %}
+					{% else %}
+						<div class="not-logged-in">
+							{{ translate('Please <a href="%s">sign up</a> or <a href="%s">sign in</a> to join or leave groups.')
+							|format(getRouteUrl('registration'), getRouteUrl('login'))
+							|raw }}
+						</div>
+					{% endif %}
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+{% endfor %}

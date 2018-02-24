@@ -1,0 +1,37 @@
+.mpp-mrgn-top-8 {
+    margin-top: 8px;
+    padding-left: 26px;
+}
+
+.mpp-tooltip {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 20px;
+}
+.mbs-plug-not-install {
+    padding: 15px 10px;
+}
+.mbs-plug-msg-info {
+    padding: 15px 10px;
+}
+.mbs-gg-header {
+    width: 60px;
+}
+.mbs-plugins-preset-list {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.mbs-plugins-preset-list tr td {
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+#photo-gallery-enable,
+#slider-enable {
+    margin-top: 10px;
+}
+.mpp-mrgn-top-8.mbsThinCol {
+    width: 250px !important;
+}

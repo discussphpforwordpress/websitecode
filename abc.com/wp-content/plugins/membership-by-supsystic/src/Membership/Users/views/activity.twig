@@ -1,0 +1,5 @@
+{% extends '@users/profile.twig' %}
+
+{% block content %}
+	{% include '@activity/partials/activities-container.twig' with {'disablePostForm': disablePostForm, 'activities': activities, 'context': 'profile'} %}
+{% endblock %}

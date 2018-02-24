@@ -1,0 +1,5 @@
+{% if activity.totalComments > 0 %}
+	<div class="mp-activity-stats-comments">
+		<a class="mp-activity-show-comments" href="#">{{ activity.totalComments }} {{ translate('Comments') }}</a>
+	</div>
+{% endif %}

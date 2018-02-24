@@ -1,0 +1,169 @@
+{% macro createField(field) %}
+	{% import _self as fields %}
+	{% if field.enabled %}
+		{{ fields.template(field, attribute(fields, field.type, [field])) }}
+	{% endif %}
+{% endmacro %}
+
+{% macro outputField(field) %}
+	{% import _self as fields %}
+	{% if field.enabled %}
+		{{ fields.templateView(field, field.data) }}
+	{% endif %}
+{% endmacro %}
+
+{% macro templateView(field, data) %}
+<tr>
+	<td><label><b>{{ field.label }}</b></label></td>
+	<td>
+		{% if data and data is not empty %}
+			{% if field.options %}
+				{% set data = [] %}
+				{% for option in field.options %}
+					{% if option.id in field.data %}
+						{% set data = data|merge([option.name]) %}
+					{% endif %}
+				{% endfor %}
+				{{ data|join(' ') }}
+			{% else %}
+				{{ field.data }}
+			{% endif %}
+		{% else %}
+			{% if field.options %}
+				{% set data = [] %}
+				{% for option in field.options %}
+					{% if option.checked %}
+						{% set data = data|merge([option.name]) %}
+					{% endif %}
+				{% endfor %}
+				{{ data|join(' ') }}
+			{% endif %}
+		{% endif %}
+	</td>
+</tr>
+{% endmacro %}
+
+{% macro template(field, input) %}
+
+<tr>
+	<th>
+		<label for="membership[{{ field.name }}]">{{ field.label }}{% if field.required %}<span class="description">({{ translate('required') }})</span>{% endif %}</label>
+	</th>
+	<td>
+		{{ input }}
+		{% if field.description %}
+			<p class="description">{{ field.description }}</p>
+		{% endif %}
+	</td>
+</tr>
+
+{% endmacro %}
+
+{% macro section(field) %}
+	<h2>{{ field.label }}</h2>
+{% endmacro %}
+
+{% macro text(field) %}
+	<input 
+		type="text" 
+		name="membership[{{ field.name }}]"
+		data-validation-rules="{{ field['validation-rules']|json_encode }}"
+		value="{{ field.data }}" 
+	>
+{% endmacro %}
+
+{% macro email(field) %}
+	<input
+		type="email"
+		name="membership[{{ field.name }}]"
+		data-validation-rules="{{ field['validation-rules']|json_encode }}"
+		value="{{ field.data }}" 
+	>
+{% endmacro %}
+
+{% macro password(field) %}
+	<input
+		type="password"
+		name="membership[{{ field.name }}]"
+		data-validation-rules="{{ field['validation-rules']|json_encode }}"
+		value="{{ field.data }}" 
+	>
+{% endmacro %}
+
+{% macro numeric(field) %}
+	<input
+		type="number"
+		name="membership[{{ field.name }}]"
+		data-validation-rules="{{ field['validation-rules']|json_encode }}"
+		value="{{ field.data }}" 
+	>
+{% endmacro %}
+
+{% macro date(field) %}
+	<input
+		type="text"
+		name="membership[{{ field.name }}]"
+		data-validation-rules="{{ field['validation-rules']|json_encode }}"
+		value="{{ field.data }}" 
+	>
+{% endmacro %}
+
+{% macro radio(field) %}
+	{% for option in field.options %}
+		<input
+			type="radio"
+			name="membership[{{ field.name }}][]"
+			id="membership[{{ field.name }}]-{{ loop.index }}"
+			value="{{ option.id }}"
+			data-validation-rules="{{ field['validation-rules']|json_encode }}"
+			{% if option.id in field.data %}
+				checked="true"
+			{% endif %}
+		>
+		<label for="membership[{{ field.name }}]-{{ loop.index }}">{{ option.name }}</label>
+	{% endfor %}
+{% endmacro %}
+
+{% macro checkbox(field) %}
+	{% for option in field.options %}
+		<input
+			type="checkbox"
+			name="membership[{{ field.name }}][]"
+			id="membership[{{ field.name }}]-{{ loop.index }}"
+			value="{{ option.id }}"
+			data-validation-rules="{{ field['validation-rules']|json_encode }}"
+			{% if option.id in field.data %}
+				checked="true"
+			{% endif %}
+		>
+		<label for="membership[{{ field.name }}]-{{ loop.index }}">{{ option.name }}</label>
+	{% endfor %}
+{% endmacro %}
+
+{% macro drop(field) %}
+	<select name="membership[{{ field.name }}]">
+		{% for option in field.options %}
+			<option
+				value="{{ option.id }}"
+				data-validation-rules="{{ field['validation-rules']|json_encode }}"
+				{% if option.id in field.data %}
+					selected="true"
+				{% endif %}
+			>{{ option.name }}</option>
+		{% endfor %}
+	</select>
+{% endmacro %}
+
+{% macro scroll(field) %}
+	<select name="membership[{{ field.name }}][]" multiple="true" style="width: 140px">
+		{% for option in field.options %}
+			<option
+				value="{{ option.id }}"
+				data-validation-rules="{{ field['validation-rules']|json_encode }}"
+				{% if option.id in field.data %}
+					selected="true"
+				{% endif %}
+			>{{ option.name }}</option>
+		{% endfor %}
+	</select>
+{% endmacro %}

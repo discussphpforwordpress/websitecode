@@ -1,0 +1,272 @@
+/* Profile fields */
+.mp-fields .action-panel {
+	margin-bottom: 2em;
+}
+
+.mp-section {
+	margin-bottom: 2em;
+	border: 1px solid #28282a;
+}
+
+.mp-section .fields-list {
+	min-height: 1.5em;
+}
+
+.mp-section .mp-section-container {
+	padding: 1em;
+	background: white;
+	transition: all 0.5s linear;
+	width: 100%;
+}
+
+.mp-section-drag-handler,
+.mp-section-title,
+.mp-section-add-field,
+.mp-section-remove {
+	display: inline-block;
+	padding: 0.7em 1em;
+	position: relative;
+	top: 1px;
+}
+
+.mp-section-remove {
+	float: right;
+	right: 0.5em;
+	cursor: pointer;
+}
+
+.mp-section-title {
+	padding: 0;
+}
+
+.mp-section-title input {
+	border: none;
+	margin: 0;
+	padding: 0.7em 1em;
+	box-shadow: none;
+	outline: none;
+	background: transparent;
+}
+
+.mp-section-title input:focus {
+	background: white;
+	box-shadow: none;
+	outline: none;
+}
+
+.mp-section.ui-sortable-placeholder {
+	background: #f9f9f9;
+	height: 5em;
+	visibility: visible!important;
+	border: 1px dashed #28282a;
+	margin: .5em 0;
+}
+.mp-section-drag-handler:hover {
+	cursor: move;
+}
+
+.mp-section-title-bar {
+	background: #F1F1F1;
+}
+
+.mp-section-fields-table {
+	width: 100%;
+}
+
+.mp-section-fields-table th {
+	padding: .3em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 0.9em;
+}
+
+.fields-list-placeholder {
+	height: 1em;
+}
+
+.mp-field td {
+	padding: .2em .5em;
+	font-size: 14px;
+	margin: .5em 0;
+	white-space: nowrap;
+	background: white;
+	position: relative;
+}
+
+.mp-field.ui-sortable-helper {
+	display: table;
+}
+
+.mp-field.ui-sortable-placeholder {
+	background: #f9f9f9;	
+	border: 1px dashed #28282a;
+	visibility: visible!important;
+}
+
+.mp-field.ui-sortable-placeholder td {
+	padding: 1em 0;
+	background: #f9f9f9;
+}
+
+.mp-field.disabled:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #fff;
+	opacity: 0.7;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.mp-field .mp-field-drag-handler {
+	width: 2em;
+	text-align: center;
+}
+
+.mp-field .mp-field-action {
+	width: 2em;
+}
+
+.mp-field-registration,
+.mp-field-required,
+.mp-field-enabled {
+	text-align: center;
+}
+
+.mp-field .mp-field-action .sc-button {
+	font-size: 12px;
+	padding: 0.3em 0.6em;
+}
+.mp-field .mp-field-action .sc-button[disabled] {
+	background: #fff;
+	color: #ccc;
+	cursor: not-allowed;
+}
+
+.mp-field .mp-field-label {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.mp-field .mp-field-label .mp-field-label-input {
+	border: none;
+	box-shadow: none;
+	border-bottom: 1px solid transparent;
+	width: 100%;
+	min-width: 6em;
+}
+
+.mp-field .mp-field-label .mp-field-label-input:focus {
+	border-bottom: 1px solid #4ae8ea;
+}
+
+.mp-field .action-panel {
+	margin-bottom: 2em;
+}
+
+.mp-modal .protected-field-message {
+	display: none;
+	margin-bottom: 2em;
+}
+
+.mp-modal.protected .protected-field-message {
+	display: block;
+}
+
+.mp-modal .sc-input.mp-field-label[disabled],
+.mp-modal .fields-types-select[disabled] {
+	border: none;
+	box-shadow: none;
+	background: #fff;
+}
+
+/* Modal fields edit */
+.mp-modal .field-options {
+	width: 100%;	
+}
+
+.mp-modal .field-options-list .option {
+	padding: 0.5em;
+	border: 1px solid #28282a;
+	text-align: left;
+	margin-bottom: 0.4em;
+	background: #fff;
+}
+
+.mp-modal .option .option-drag-handler,
+.mp-modal .option .option-name,
+.mp-modal .option .checked-state,
+.mp-modal .option .remove-option {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.mp-modal .option .option-drag-handler {
+	margin-right: 0.3em;
+	display: inline-block;
+	width: 1em;
+	text-align: center;
+}
+
+.mp-modal .option .option-name {
+	border: none;
+	width: 6em;
+	display: inline-block;
+}
+.mp-modal .field-options-list .option .option-name {
+	border: none;
+	width: auto;
+}
+
+.mp-modal .option .option-name input {
+	max-width: 100%;
+	border: none;
+	box-shadow: none;
+	border-bottom: 1px solid transparent;
+}
+
+.mp-modal .option .option-name input:focus {
+	border-bottom: 1px solid #28282a;
+}
+
+.mp-modal .option .checked-state {
+	display: inline-block;
+	font-size: 12px;
+}
+
+.mp-modal .field-options-list .option.ui-sortable-placeholder {
+	background: #f9f9f9;
+	height: 3em;
+	visibility: visible!important;
+	border: 1px dashed #28282a;
+	margin: .5em 0;
+}
+
+
+.mp-modal .option .remove-option {
+	font-size: 1.5em;
+	cursor: pointer;
+	float: right;
+	position: relative;
+	top: 0.1em;
+}
+
+.option .checked-state .sc-checkbox.seleceted-options-state input[type="radio"],
+.option .checked-state .sc-radio.seleceted-options-state input[type="checkbox"] {
+	display: none;
+}
+
+.field-states {
+	font-size: 14px;
+}
+
+.mp-modal .error-msg {
+	color: crimson;
+}
+.edit-field-modal {
+	max-height: 550px;
+}

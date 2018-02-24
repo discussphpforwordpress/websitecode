@@ -1,0 +1,4245 @@
+msgid " WooCommerce from admin area, or visit it\'s official page on Wordpress.org "
+msgstr ""
+
+msgid " plugin from your admin area, or visit it\'s official page on Wordpress.org "
+msgstr ""
+
+msgid "%d followers"
+msgstr ""
+
+msgid "%s accepted your friend reuqest."
+msgstr ""
+
+msgid "%s and %s becomes friends"
+msgstr ""
+
+msgid "%s commented post from %s on %s."
+msgstr ""
+
+msgid "%s created new topic %s."
+msgstr ""
+
+msgid "%s followers"
+msgstr ""
+
+msgid "%s invited you to join %s group."
+msgstr ""
+
+msgid "%s is following you."
+msgstr ""
+
+msgid "%s is not valid email"
+msgstr ""
+
+msgid "%s is registered"
+msgstr ""
+
+msgid "%s is required and can't be empty"
+msgstr ""
+
+msgid "%s liked post from %s on %s."
+msgstr ""
+
+msgid "%s now following %s"
+msgstr ""
+
+msgid "%s now following you"
+msgstr ""
+
+msgid "%s people liked this"
+msgstr ""
+
+msgid "%s people shared this"
+msgstr ""
+
+msgid "%s replied in topic %s."
+msgstr ""
+
+msgid "%s sent you a friend reuqest."
+msgstr ""
+
+msgid "%s sent you a message."
+msgstr ""
+
+msgid "%s shared %s post."
+msgstr ""
+
+msgid "%s tag already added to this group."
+msgstr ""
+
+msgid "(for Maestro and Solo cards only)"
+msgstr ""
+
+msgid "(if available)"
+msgstr ""
+
+msgid "2Checkout"
+msgstr ""
+
+msgid "2Checkout payments."
+msgstr ""
+
+msgid "<p><b>Upgrading</b></p><p>Once you have purchased PRO addon of plugin - you\'ll have to enter license key (you can find it in your personal account on our site). Go to the License tab and enter your email and license key. Once you have activated your PRO license - you can use plugin pro addon.</p><p> That\'s all. From this moment you can use your Membership plugin without any doubt. But if you still have some question - do not hesitate to contact us through our <a href=\"https://supsystic.com/contact-us/\">internal support</a> or on our <a href=\"https://supsystic.com/forum/membership-plugin/\">Supsystic Forum</a>. Besides you can always describe your questions on <a href=\"https://wordpress.org/support/plugin/membership-by-supsystic\">WordPress Ultimate Forum</a>.</p><p><b>Enjoy this plugin?</b></p> <p>It will be nice if you\'ll help us and boost plugin with <a href=\"https://wordpress.org/support/plugin/membership-by-supsystic/reviews/\">Five Stars rating on WordPress.org.</a> We hope that you like this plugin and wish you all the best! Good luck!</p>"
+msgstr ""
+
+msgid "A small guide for the first-time user"
+msgstr ""
+
+msgid "API Password"
+msgstr ""
+
+msgid "API Signature"
+msgstr ""
+
+msgid "API Username"
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "Accept"
+msgstr ""
+
+msgid "Accept Friend Request"
+msgstr ""
+
+msgid "Accept invitation"
+msgstr ""
+
+msgid "Access denied. You can\'t add image to this gallery."
+msgstr ""
+
+msgid "Access denied. You can\'t add image to this slider."
+msgstr ""
+
+msgid "Access denied. You can\'t remove this gallery."
+msgstr ""
+
+msgid "Access denied. You can\'t remove this image."
+msgstr ""
+
+msgid "Access denied. You can\'t remove this slider."
+msgstr ""
+
+msgid "Access is denied"
+msgstr ""
+
+msgid "Access to admin dashboard"
+msgstr ""
+
+msgid "Access to specific pages"
+msgstr ""
+
+msgid "Access to this page is restricted."
+msgstr ""
+
+msgid "Access to user profiles with specific roles"
+msgstr ""
+
+msgid "Account"
+msgstr ""
+
+msgid "Account Activation Email"
+msgstr ""
+
+msgid "Account Activation Email Body"
+msgstr ""
+
+msgid "Account Activation Email Subject"
+msgstr ""
+
+msgid "Account Approved Email"
+msgstr ""
+
+msgid "Account Approved Email Body"
+msgstr ""
+
+msgid "Account Approved Email Subject"
+msgstr ""
+
+msgid "Account Deactivation Email"
+msgstr ""
+
+msgid "Account Deactivation Email Body"
+msgstr ""
+
+msgid "Account Deactivation Email Subject"
+msgstr ""
+
+msgid "Account Deleted Email"
+msgstr ""
+
+msgid "Account Deleted Email Body"
+msgstr ""
+
+msgid "Account Deleted Email Subject"
+msgstr ""
+
+msgid "Account Deletion"
+msgstr ""
+
+msgid "Account Deletion Notification"
+msgstr ""
+
+msgid "Account Deletion Notification Body"
+msgstr ""
+
+msgid "Account Deletion Notification Subject"
+msgstr ""
+
+msgid "Account E-mail"
+msgstr ""
+
+msgid "Account Needs Review Notification"
+msgstr ""
+
+msgid "Account Needs Review Notification Body"
+msgstr ""
+
+msgid "Account Needs Review Notification Subject"
+msgstr ""
+
+msgid "Account Rejected Email"
+msgstr ""
+
+msgid "Account Rejected Email Body"
+msgstr ""
+
+msgid "Account Rejected Email Subject"
+msgstr ""
+
+msgid "Account Welcome Email"
+msgstr ""
+
+msgid "Account Welcome Email Body"
+msgstr ""
+
+msgid "Account Welcome Email Subject"
+msgstr ""
+
+msgid "Account is deleted from system."
+msgstr ""
+
+msgid "Account is disabled."
+msgstr ""
+
+msgid "Account is in verification process."
+msgstr ""
+
+msgid "Account is not approved."
+msgstr ""
+
+msgid "Actions"
+msgstr ""
+
+msgid "Activate Addons"
+msgstr ""
+
+msgid "Activated"
+msgstr ""
+
+msgid "Active"
+msgstr ""
+
+msgid "Activities"
+msgstr ""
+
+msgid "Activity"
+msgstr ""
+
+msgid "Activity Report"
+msgstr ""
+
+msgid "Activity already liked"
+msgstr ""
+
+msgid "Activity commenting"
+msgstr ""
+
+msgid "Activity content"
+msgstr ""
+
+msgid "Activity filter"
+msgstr ""
+
+msgid "Activity is not found"
+msgstr ""
+
+msgid "Activity is not liked"
+msgstr ""
+
+msgid "Activity link image preview for Amazon"
+msgstr ""
+
+msgid "Activity post writing"
+msgstr ""
+
+msgid "Activity posting is restricted"
+msgstr ""
+
+msgid "Activity type"
+msgstr ""
+
+msgid "Activity types"
+msgstr ""
+
+msgid "Activity viewing"
+msgstr ""
+
+msgid "Activity with id %d is not found"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "Add Field"
+msgstr ""
+
+msgid "Add Friend"
+msgstr ""
+
+msgid "Add Image"
+msgstr ""
+
+msgid "Add Marker"
+msgstr ""
+
+msgid "Add New"
+msgstr ""
+
+msgid "Add Section"
+msgstr ""
+
+msgid "Add image to user name in frontend"
+msgstr ""
+
+msgid "Add logout link to menu"
+msgstr ""
+
+msgid "Add new"
+msgstr ""
+
+msgid "Add new post"
+msgstr ""
+
+msgid "Add new role"
+msgstr ""
+
+msgid "Add new rule"
+msgstr ""
+
+msgid "Add new tag"
+msgstr ""
+
+msgid "Add remove friends"
+msgstr ""
+
+msgid "Add role depend of the user order"
+msgstr ""
+
+msgid "Add tag"
+msgstr ""
+
+msgid "Add this option to frontend"
+msgstr ""
+
+msgid "Added"
+msgstr ""
+
+msgid "Added to Cart"
+msgstr ""
+
+msgid "Addons"
+msgstr ""
+
+msgid "Address"
+msgstr ""
+
+msgid "Address is required"
+msgstr ""
+
+msgid "Address:"
+msgstr ""
+
+msgid "Admin Email"
+msgstr ""
+
+msgid "Admin will get this email after some account has been deleted."
+msgstr ""
+
+msgid "Administrative permissions"
+msgstr ""
+
+msgid "Administrator confirmation"
+msgstr ""
+
+msgid "Administrators only can comment"
+msgstr ""
+
+msgid "Administrators only can write posts"
+msgstr ""
+
+msgid "After user deletes his account, he will be redirected to the main page or to the specified link."
+msgstr ""
+
+msgid "After user logs out from his account, he will be redirected to the main page or to the specified link."
+msgstr ""
+
+msgid "After user submits a login form, he will be redirected to his profile or to the specified link."
+msgstr ""
+
+msgid "After user submits a registration form, he will be redirected to his profile or to the specified link."
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "All Friends"
+msgstr ""
+
+msgid "All categories"
+msgstr ""
+
+msgid "All conversations"
+msgstr ""
+
+msgid "All group members can send invitations"
+msgstr ""
+
+msgid "All groups"
+msgstr ""
+
+msgid "All members"
+msgstr ""
+
+msgid "All networks"
+msgstr ""
+
+msgid "All roles"
+msgstr ""
+
+msgid "All users"
+msgstr ""
+
+msgid "All users can comment"
+msgstr ""
+
+msgid "All users can view group activity"
+msgstr ""
+
+msgid "All users can write posts"
+msgstr ""
+
+msgid "Allow to change privacy settings"
+msgstr ""
+
+msgid "Allow users to disable automatic sharing of friend's posts"
+msgstr ""
+
+msgid "Allow your members share posts to several networks simultaneously in one click, making your site more famous again and again."
+msgstr ""
+
+msgid "Already has subscription"
+msgstr ""
+
+msgid "Anti Bot Protection"
+msgstr ""
+
+msgid "Appear since"
+msgstr ""
+
+msgid "Apply"
+msgstr ""
+
+msgid "Apply WordPress role"
+msgstr ""
+
+msgid "Approve"
+msgstr ""
+
+msgid "Are you sure you want to delete this category?"
+msgstr ""
+
+msgid "Are you sure you want to delete this role?"
+msgstr ""
+
+msgid "Assign to Membership Level"
+msgstr ""
+
+msgid "Asterisk"
+msgstr ""
+
+msgid "Asterisk color"
+msgstr ""
+
+msgid "Audio"
+msgstr ""
+
+msgid "Authorize in Constant Contact"
+msgstr ""
+
+msgid "Authorize.net"
+msgstr ""
+
+msgid "Authorize.net SIM payments."
+msgstr ""
+
+msgid "Auto"
+msgstr ""
+
+msgid "Autosubscribe new user"
+msgstr ""
+
+msgid "Available field data"
+msgstr ""
+
+msgid "Available for next Membership Levels:"
+msgstr ""
+
+msgid "Available import field names. You can add more here."
+msgstr ""
+
+msgid "Avatar Thumbnail Large Size"
+msgstr ""
+
+msgid "Avatar Thumbnail Medium Size"
+msgstr ""
+
+msgid "Avatar Thumbnail Small Size"
+msgstr ""
+
+msgid "Back"
+msgstr ""
+
+msgid "Back to Site"
+msgstr ""
+
+msgid "Badge img"
+msgstr ""
+
+msgid "Badges"
+msgstr ""
+
+msgid "Billing"
+msgstr ""
+
+msgid "Billing Address"
+msgstr ""
+
+msgid "Billing Amount"
+msgstr ""
+
+msgid "Billing Information"
+msgstr ""
+
+msgid "Billing cycle limit"
+msgstr ""
+
+msgid "Black list of IP addresses. Enter IP addresses separated by comma or just leave this field blank if you don\'t need to use this option."
+msgstr ""
+
+msgid "Block"
+msgstr ""
+
+msgid "Block activity"
+msgstr ""
+
+msgid "Block group"
+msgstr ""
+
+msgid "Block groups"
+msgstr ""
+
+msgid "Block user"
+msgstr ""
+
+msgid "Blocked IP Addresses"
+msgstr ""
+
+msgid "Blocked users"
+msgstr ""
+
+msgid "Bulk Actions"
+msgstr ""
+
+msgid "Button text when need to extend Membership Level."
+msgstr ""
+
+msgid "Buttons"
+msgstr ""
+
+msgid "Buy Now"
+msgstr ""
+
+msgid "Buy now"
+msgstr ""
+
+msgid "By default option \"Site Accessible to Logged In Users\" hides only access to the pages of Membership plugin. If you want to hide access to all pages of your site - activate this checkbox. When opening any page of your site - all not logged in users will be redirected to the login page."
+msgstr ""
+
+msgid "Can not create Customer in Stripe"
+msgstr ""
+
+msgid "Can not detect authorization fo account owner. Contact site owner to resolve this issue."
+msgstr ""
+
+msgid "Can not find Products for this order"
+msgstr ""
+
+msgid "Can not find order"
+msgstr ""
+
+msgid "Can not find required Item"
+msgstr ""
+
+msgid "Can not get cc obj"
+msgstr ""
+
+msgid "Can\'t detect your IP, please don\'t spam"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Cancel Friend Request"
+msgstr ""
+
+msgid "Cancel a friend request"
+msgstr ""
+
+msgid "Cancel invitation"
+msgstr ""
+
+msgid "Cancel request"
+msgstr ""
+
+msgid "Cannot send email - problem with send server"
+msgstr ""
+
+msgid "Captcha response error."
+msgstr ""
+
+msgid "Caption"
+msgstr ""
+
+msgid "Card Expiry Date"
+msgstr ""
+
+msgid "Card Expiry Date: Month"
+msgstr ""
+
+msgid "Card Expiry Date: Year"
+msgstr ""
+
+msgid "Card Issue Number"
+msgstr ""
+
+msgid "Card Number"
+msgstr ""
+
+msgid "Card Owner"
+msgstr ""
+
+msgid "Card Security Code (CVV2)"
+msgstr ""
+
+msgid "Card Type"
+msgstr ""
+
+msgid "Card Valid From Date"
+msgstr ""
+
+msgid "Card Valid From Date: Month"
+msgstr ""
+
+msgid "Card Valid From Date: Year"
+msgstr ""
+
+msgid "Change"
+msgstr ""
+
+msgid "Change User Role"
+msgstr ""
+
+msgid "Change User Status"
+msgstr ""
+
+msgid "Change email"
+msgstr ""
+
+msgid "Change logo image"
+msgstr ""
+
+msgid "Change password"
+msgstr ""
+
+msgid "Change profile image"
+msgstr ""
+
+msgid "Changing page..."
+msgstr ""
+
+msgid "Check your account to find your ordered User Levels."
+msgstr ""
+
+msgid "Check your email address for confirmation link."
+msgstr ""
+
+msgid "Check your email for the confirmation link."
+msgstr ""
+
+msgid "Checkbox"
+msgstr ""
+
+msgid "Checkout"
+msgstr ""
+
+msgid "Checkout Success"
+msgstr ""
+
+msgid "Choose Gallery Preset"
+msgstr ""
+
+msgid "Choose Google Maps Marker Icon"
+msgstr ""
+
+msgid "Choose Google Maps Preset"
+msgstr ""
+
+msgid "Choose Google Maps, which will be used for list of google map presets and displayed for membership users on frontend"
+msgstr ""
+
+msgid "Choose Icon"
+msgstr ""
+
+msgid "Choose Slider Preset"
+msgstr ""
+
+msgid "Choose field(s) to enable in search"
+msgstr ""
+
+msgid "Choose galleries, which will be used for list of gallery presets and displayed for membership users on frontend"
+msgstr ""
+
+msgid "Choose menus to add logout item..."
+msgstr ""
+
+msgid "Choose sliders, which will be used for list of sliders presets and displayed for membership users on frontend"
+msgstr ""
+
+msgid "Circle"
+msgstr ""
+
+msgid "Clear data"
+msgstr ""
+
+msgid "Clear selection"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Close Tutorial"
+msgstr ""
+
+msgid "Closed"
+msgstr ""
+
+msgid "Closed group"
+msgstr ""
+
+msgid "Comment as"
+msgstr ""
+
+msgid "Comment can\'t be empty"
+msgstr ""
+
+msgid "Comment not found."
+msgstr ""
+
+msgid "Comment posting is restricted"
+msgstr ""
+
+msgid "Comments"
+msgstr ""
+
+msgid "Community activity is disabled"
+msgstr ""
+
+msgid "Community type"
+msgstr ""
+
+msgid "Compact"
+msgstr ""
+
+msgid "Company Name"
+msgstr ""
+
+msgid "Configure Google Map"
+msgstr ""
+
+msgid "Confirm Uninstall"
+msgstr ""
+
+msgid "Confirm deletion (All group data will be deleted and cannot be restored)"
+msgstr ""
+
+msgid "Confirm deletion (All user data will be deleted and cannot be restored)"
+msgstr ""
+
+msgid "Confirm password"
+msgstr ""
+
+msgid "Confirm your current password to continue"
+msgstr ""
+
+msgid "Confirmation link for password change is sent to your email."
+msgstr ""
+
+msgid "Confirmation link was sent to your email address. Check your email!"
+msgstr ""
+
+msgid "Confirmation sent message"
+msgstr ""
+
+msgid "Connect"
+msgstr ""
+
+msgid "Connected Accounts"
+msgstr ""
+
+msgid "Connected Social Network Accounts"
+msgstr ""
+
+msgid "Constant Contact Setup"
+msgstr ""
+
+msgid "Contact Us"
+msgstr ""
+
+msgid "Contact us through %s if you have some question, offer or wish."
+msgstr ""
+
+msgid "Content"
+msgstr ""
+
+msgid "Content Settings"
+msgstr ""
+
+msgid "Could you please do me a BIG favor and give it a 5-star rating on WordPress? Just to help us spread the word and boost our motivation."
+msgstr ""
+
+msgid "Couldn\'t get the plugin to work"
+msgstr ""
+
+msgid "Country"
+msgstr ""
+
+msgid "Country is required"
+msgstr ""
+
+msgid "Cover Thumbnail Medium Size"
+msgstr ""
+
+msgid "Cover Thumbnail Small Size"
+msgstr ""
+
+msgid "Create"
+msgstr ""
+
+msgid "Create Group"
+msgstr ""
+
+msgid "Create all unassigned pages"
+msgstr ""
+
+msgid "Create and edit mailing templates of users letters and notifications for administrator."
+msgstr ""
+
+msgid "Create groups"
+msgstr ""
+
+msgid "Create new Membership Badges"
+msgstr ""
+
+msgid "Create new Membership Currency"
+msgstr ""
+
+msgid "Create new Membership Drip"
+msgstr ""
+
+msgid "Create new Membership Level"
+msgstr ""
+
+msgid "Create new group"
+msgstr ""
+
+msgid "Create page"
+msgstr ""
+
+msgid "Create user"
+msgstr ""
+
+msgid "Currency"
+msgstr ""
+
+msgid "Currency value (corresponding to default currency)"
+msgstr ""
+
+msgid "Current password is required"
+msgstr ""
+
+msgid "Current password was incorrect"
+msgstr ""
+
+msgid "Custom text if no users were found"
+msgstr ""
+
+msgid "Dark"
+msgstr ""
+
+msgid "Data exported successfully"
+msgstr ""
+
+msgid "Data successfully imported."
+msgstr ""
+
+msgid "Database error"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Date Format"
+msgstr ""
+
+msgid "Day"
+msgstr ""
+
+msgid "Day(s)"
+msgstr ""
+
+msgid "Decline"
+msgstr ""
+
+msgid "Decline Friend Request"
+msgstr ""
+
+msgid "Default Activity Filter"
+msgstr ""
+
+msgid "Default Avatar Image"
+msgstr ""
+
+msgid "Default Cover Image"
+msgstr ""
+
+msgid "Default Logo Image"
+msgstr ""
+
+msgid "Default Selected"
+msgstr ""
+
+msgid "Default Sort Users By"
+msgstr ""
+
+msgid "Default User role"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete account"
+msgstr ""
+
+msgid "Delete conversation"
+msgstr ""
+
+msgid "Delete group"
+msgstr ""
+
+msgid "Delete messages"
+msgstr ""
+
+msgid "Delete selected"
+msgstr ""
+
+msgid "Delete their account"
+msgstr ""
+
+msgid "Delete this conversation?"
+msgstr ""
+
+msgid "Delete this messages?"
+msgstr ""
+
+msgid "Deleted"
+msgstr ""
+
+msgid "Demo Mode"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Design"
+msgstr ""
+
+msgid "Design Customization"
+msgstr ""
+
+msgid "Details"
+msgstr ""
+
+msgid "Disable double opt-in"
+msgstr ""
+
+msgid "Disable double opt-in confirmation message sending. This option will create subscriber directly after he will subscribe to your list."
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "Disconnect"
+msgstr ""
+
+msgid "Displayed"
+msgstr ""
+
+msgid "Don't add friend's posts to my activity."
+msgstr ""
+
+msgid "Dripping (schedule) Content"
+msgstr ""
+
+msgid "Dripping Content"
+msgstr ""
+
+msgid "Dropdown List"
+msgstr ""
+
+msgid "E-Commerce"
+msgstr ""
+
+msgid "E-Commerce (PRO)"
+msgstr ""
+
+msgid "E-mail"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Edit or delete other users activity"
+msgstr ""
+
+msgid "Edit profile"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Email Address"
+msgstr ""
+
+msgid "Email Address is required"
+msgstr ""
+
+msgid "Email address for notifications"
+msgstr ""
+
+msgid "Email confirmation"
+msgstr ""
+
+msgid "Email delivery depends from your server configuration. For some cases - you and your subscribers can not receive emails just because email on your server is not working correctly. You can easy test it here - by sending test email. If you receive it - then it means that email functionality on your server works well. If not - this means that it is not working correctly and you should contact your hosting provider with this issue and ask them to setup email functionality for you on your server."
+msgstr ""
+
+msgid "Email is not valid."
+msgstr ""
+
+msgid "Email is updated successfully"
+msgstr ""
+
+msgid "Email not confirmed"
+msgstr ""
+
+msgid "Email that will be sent to user after signing up."
+msgstr ""
+
+msgid "Email that will get notifications about the membership society."
+msgstr ""
+
+msgid "Emails"
+msgstr ""
+
+msgid "Empty API key"
+msgstr ""
+
+msgid "Empty Form Data"
+msgstr ""
+
+msgid "Empty Order ID"
+msgstr ""
+
+msgid "Empty Strie Token"
+msgstr ""
+
+msgid "Empty User ID"
+msgstr ""
+
+msgid "Empty data to save option"
+msgstr ""
+
+msgid "Empty or invalid Badge Name"
+msgstr ""
+
+msgid "Empty or invalid Code"
+msgstr ""
+
+msgid "Empty or invalid ID - only Update action allowed for now"
+msgstr ""
+
+msgid "Empty or invalid Level Name"
+msgstr ""
+
+msgid "Empty or invalid User Id"
+msgstr ""
+
+msgid "Empty or invalid email"
+msgstr ""
+
+msgid "Empty payment method"
+msgstr ""
+
+msgid "Enable Cover Photo"
+msgstr ""
+
+msgid "Enable Dripping for this Content"
+msgstr ""
+
+msgid "Enable Forum Tab"
+msgstr ""
+
+msgid "Enable Google ReCaptcha on login page."
+msgstr ""
+
+msgid "Enable Profile Photo"
+msgstr ""
+
+msgid "Enable Search feature"
+msgstr ""
+
+msgid "Enable secondary button for Login form."
+msgstr ""
+
+msgid "Enable this option and page Activity will be created on your website."
+msgstr ""
+
+msgid "Enable this option and page Friends will be created on your website."
+msgstr ""
+
+msgid "Enable this option and page Groups will be created on your website."
+msgstr ""
+
+msgid "Enable this option and page Messages will be created on your website."
+msgstr ""
+
+msgid "Enable this option and users will be able to upload their Globally Recognized Avatar."
+msgstr ""
+
+msgid "Enabled"
+msgstr ""
+
+msgid "Enter API key - and your list will appear here"
+msgstr ""
+
+msgid "Enter API key, select List - and your groups will appear here"
+msgstr ""
+
+msgid "Enter hashtags divided by the \",\" symbol"
+msgstr ""
+
+msgid "Enter name"
+msgstr ""
+
+msgid "Enter the email of admin."
+msgstr ""
+
+msgid "Enter the group title that will be defined in the browser toolbar and displayed for the page in search-engine results."
+msgstr ""
+
+msgid "Enter the maximum size of file that can be uploaded by user in Mb."
+msgstr ""
+
+msgid "Enter the profile title that will be defined in the browser toolbar and displayed for the page in search-engine results."
+msgstr ""
+
+msgid "Enter the time for intervals with which messages will be updated."
+msgstr ""
+
+msgid "Enter your Email and License Key on this page, find the information for activation in your personal account on our site %s. Then click \"Activate Addons\" button."
+msgstr ""
+
+msgid "Error"
+msgstr ""
+
+msgid "Error Occurred!"
+msgstr ""
+
+msgid "Error creating user with login: %s. Error message: %s"
+msgstr ""
+
+msgid "Error ocured!"
+msgstr ""
+
+msgid "Error when adding a Google Map to the database"
+msgstr ""
+
+msgid "Error when adding a gallery to the database."
+msgstr ""
+
+msgid "Error when adding a slider to the database."
+msgstr ""
+
+msgid "Error! File not exists!"
+msgstr ""
+
+msgid "Error! Gallery params are incorrect!"
+msgstr ""
+
+msgid "Error! Illegal file entry!"
+msgstr ""
+
+msgid "Error! Illegal file extention!"
+msgstr ""
+
+msgid "Error! Image params are incorrect!"
+msgstr ""
+
+msgid "Error! Incorrect GoogleMaps params!"
+msgstr ""
+
+msgid "Error! Incorrect Upload file params!"
+msgstr ""
+
+msgid "Error! Incorrect gallery params!"
+msgstr ""
+
+msgid "Error! Incorrect slider params!"
+msgstr ""
+
+msgid "Error! Insert Attachment Type. Db error #1"
+msgstr ""
+
+msgid "Error! Slider params are incorrect!"
+msgstr ""
+
+msgid "Error! The maximum length is 204 characters"
+msgstr ""
+
+msgid "Establish your privacy settings for you local social network."
+msgstr ""
+
+msgid "Every user must have at least %s field specified."
+msgstr ""
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Exceeded filesize limit."
+msgstr ""
+
+msgid "Expired"
+msgstr ""
+
+msgid "Export"
+msgstr ""
+
+msgid "Export data from activity"
+msgstr ""
+
+msgid "Export data from activity by hashtags"
+msgstr ""
+
+msgid "Export to CSV"
+msgstr ""
+
+msgid "Extend"
+msgstr ""
+
+msgid "Extend Level button text"
+msgstr ""
+
+msgid "Extensions"
+msgstr ""
+
+msgid "Facebook"
+msgstr ""
+
+msgid "Facebook App ID"
+msgstr ""
+
+msgid "Facebook App Secret"
+msgstr ""
+
+msgid "Failed to import posts."
+msgstr ""
+
+msgid "Failed to update last export data"
+msgstr ""
+
+msgid "Favorites"
+msgstr ""
+
+msgid "Feel free to contact us and don\'t worry, everything will be cool!"
+msgstr ""
+
+msgid "Field user_login is required. Passed data: %s. Skipped."
+msgstr ""
+
+msgid "File entry error!"
+msgstr ""
+
+msgid "Find group..."
+msgstr ""
+
+msgid "Find user..."
+msgstr ""
+
+msgid "Finish"
+msgstr ""
+
+msgid "First"
+msgstr ""
+
+msgid "First Name"
+msgstr ""
+
+msgid "First Name Last Name"
+msgstr ""
+
+msgid "First Name is required"
+msgstr ""
+
+msgid "Follow"
+msgstr ""
+
+msgid "Follow unfollow users"
+msgstr ""
+
+msgid "Followers"
+msgstr ""
+
+msgid "Following"
+msgstr ""
+
+msgid "Follows"
+msgstr ""
+
+msgid "Follows me"
+msgstr ""
+
+msgid "Fonts"
+msgstr ""
+
+msgid "For example:"
+msgstr ""
+
+msgid "Forgot your password?"
+msgstr ""
+
+msgid "Forum"
+msgstr ""
+
+msgid "Found %d users"
+msgstr ""
+
+msgid "Fractional precision"
+msgstr ""
+
+msgid "Fractional separator"
+msgstr ""
+
+msgid "Friend Requests"
+msgstr ""
+
+msgid "Friends"
+msgstr ""
+
+msgid "Friends of friends"
+msgstr ""
+
+msgid "Friends only"
+msgstr ""
+
+msgid "Friends/Followers Notification Body"
+msgstr ""
+
+msgid "Friends/Followers Notification Subject"
+msgstr ""
+
+msgid "From"
+msgstr ""
+
+msgid "Gallery Images"
+msgstr ""
+
+msgid "Gallery Name"
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+msgid "General Options"
+msgstr ""
+
+msgid "Get PRO Addon"
+msgstr ""
+
+msgid "Get Pro"
+msgstr ""
+
+msgid "Get new password"
+msgstr ""
+
+msgid "Get this from your 2Checkout account. This should be present here to validate responce from 2Checkout!"
+msgstr ""
+
+msgid "Global Site Access"
+msgstr ""
+
+msgid "Global activity page"
+msgstr ""
+
+msgid "Google ReCaptcha"
+msgstr ""
+
+msgid "Google ReCaptcha Secret Key"
+msgstr ""
+
+msgid "Google ReCaptcha Site Key"
+msgstr ""
+
+msgid "Google ReCaptcha Size"
+msgstr ""
+
+msgid "Google ReCaptcha Theme"
+msgstr ""
+
+msgid "Google ReCaptcha Type"
+msgstr ""
+
+msgid "GoogleMaps Name"
+msgstr ""
+
+msgid "Group Category"
+msgstr ""
+
+msgid "Group Category List"
+msgstr ""
+
+msgid "Group Cover Size"
+msgstr ""
+
+msgid "Group Description"
+msgstr ""
+
+msgid "Group Dynamic Meta Description"
+msgstr ""
+
+msgid "Group ID"
+msgstr ""
+
+msgid "Group Logo Size"
+msgstr ""
+
+msgid "Group Name"
+msgstr ""
+
+msgid "Group Permalink Base"
+msgstr ""
+
+msgid "Group Permalink Base: Select what data to use in the group\'s link. E.g. \"http://supsystic/groups/culinary-blog/\" or \"http://supsystic/groups/1/\"."
+msgstr ""
+
+msgid "Group Title"
+msgstr ""
+
+msgid "Group alias"
+msgstr ""
+
+msgid "Group by"
+msgstr ""
+
+msgid "Group category name:"
+msgstr ""
+
+msgid "Group data successfully updated"
+msgstr ""
+
+msgid "Group deletion"
+msgstr ""
+
+msgid "Group does not exists"
+msgstr ""
+
+msgid "Group does not exists, or user not a member of this group"
+msgstr ""
+
+msgid "Group does not exists."
+msgstr ""
+
+msgid "Group for subscribe"
+msgstr ""
+
+msgid "Group invites"
+msgstr ""
+
+msgid "Group is blocked"
+msgstr ""
+
+msgid "Group is blocked by administrator"
+msgstr ""
+
+msgid "Group logo picture"
+msgstr ""
+
+msgid "Group members only can comment"
+msgstr ""
+
+msgid "Group members only can view activity"
+msgstr ""
+
+msgid "Group members only can write posts"
+msgstr ""
+
+msgid "Group name is required"
+msgstr ""
+
+msgid "Group settings"
+msgstr ""
+
+msgid "Group successfully created."
+msgstr ""
+
+msgid "Group that are you looking is not found."
+msgstr ""
+
+msgid "Group was deleted."
+msgstr ""
+
+msgid "Group with given id does not exists."
+msgstr ""
+
+msgid "Groups"
+msgstr ""
+
+msgid "Groups are disabled by site administrator."
+msgstr ""
+
+msgid "Groups option is Turn Off, you can turn it On on the Main settings tab or click <a href=\"%s\">here</a>."
+msgstr ""
+
+msgid "Help Icon Background Color"
+msgstr ""
+
+msgid "Help Icon Color"
+msgstr ""
+
+msgid "Here is possible to adjust external user\'s profiles look, Registration сonfirmation and others."
+msgstr ""
+
+msgid "Here is you profile link."
+msgstr ""
+
+msgid "Here you can adjust main settings of the site page and enter your admin email."
+msgstr ""
+
+msgid "Hey, I noticed you just use Membership by Supsystic over a week – that’s awesome!"
+msgstr ""
+
+msgid ""
+"Hi {display_name}\n"
+"This is an automated email to let you know your {site_name} account has been deactivated.\n"
+"I you would like your account to be reactivated please contact us at {admin_email}\n"
+"Thanks, {site_name}"
+msgstr ""
+
+msgid ""
+"Hi {display_name}.		 \n"
+"Thank you for applying for membership to {site_name}!\n"
+"We have reviewed your information and unfortunately we are unable to accept you as a member at this moment.\n"
+"Please feel free to apply again at a future date.\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+
+msgid ""
+"Hi {display_name}.\n"
+"Thank you for signing up with {site_name}!\n"
+"\n"
+"To login please visit the following url: \n"
+"\n"
+"<a href="{login_url}">{login_url}</a>\n"
+"\n"
+"Your account e-mail: {email}\n"
+"\n"
+"Your account username: {username}\n"
+"\n"
+"Your account password: {password}\n"
+"\n"
+"If you have any problems, please contact us at {admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+
+msgid ""
+"Hi {display_name}.\n"
+"Thank you for signing up with {site_name}!\n"
+"Your account has been approved and is now active.\n"
+"To login please visit the following url: <a href="{login_url}">{login_url}</a>\n"
+"Your account e-mail: {email}\n"
+"Your account username: {username}\n"
+"Your account password: {password}\n"
+"If you have any problems, please contact us at {admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+
+msgid ""
+"Hi {display_name}.\n"
+"Thank you for signing up with {site_name}!\n"
+"Your account is currently being reviewed by a member of our team.\n"
+"Please allow us some time to process your request.\n"
+"If you have any problems, please contact us at {admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+
+msgid ""
+"Hi {display_name}.\n"
+"This is an automated email to let you know your {site_name} account has been deleted.\n"
+"All of your personal information has been permanently deleted and you will no longer be able to login to {site_name}.\n"
+"\n"
+"If your account has been deleted by accident please contact us at {admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+
+msgid ""
+"Hi {display_name}.\n"
+"We received a request to reset the password for your account.\n"
+"If you made this request, click the link below to change your password:\n"
+"<a href="{password_reset_link}">{password_reset_link}</a>\n"
+"\n"
+"If you didn\'t make this request, you can ignore this email\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+
+msgid ""
+"Hi {display_name}.\n"
+"You have new {friend_follower}.\n"
+"Сheck it <a target="_blank" href="{followers_url}">here</a>"
+msgstr ""
+
+msgid ""
+"Hi {display_name}.\n"
+"You recently have requested for changing the password associated with your {site_name} account.\n"
+"To confirm your request please visit the following url: <a href="{password_change_url}">{password_change_url}</a>\n"
+"If you did not make this change and believe your {site_name} account has been compromised, please contact us at the following email address: {admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+
+msgid "Hide ordered Membership Levels"
+msgstr ""
+
+msgid "Hope you will come back."
+msgstr ""
+
+msgid "Hour"
+msgstr ""
+
+msgid "Hour(s)"
+msgstr ""
+
+msgid "I already did"
+msgstr ""
+
+msgid "I found a better plugin"
+msgstr ""
+
+msgid "I no longer need the plugin"
+msgstr ""
+
+msgid "ID"
+msgstr ""
+
+msgid "IPN Address"
+msgstr ""
+
+msgid "ISO Code"
+msgstr ""
+
+msgid "Icon"
+msgstr ""
+
+msgid "Icon:"
+msgstr ""
+
+msgid "Id"
+msgstr ""
+
+msgid "If buy next products"
+msgstr ""
+
+msgid "If it\'s possible, specify plugin name"
+msgstr ""
+
+msgid "If the %s field is not specified then the password will be the same as the %s field."
+msgstr ""
+
+msgid "If the user with the specified username or email already exists then inserting fields data will be ignored."
+msgstr ""
+
+msgid "If this option is enabled an avatar will be displayed near user\'s name."
+msgstr ""
+
+msgid "If this option is enabled users will be able to upload the second image behind the avatar image. It is kind of background image."
+msgstr ""
+
+msgid "If this option is enabled, \"Remember me\" checkbox will be shown in login form."
+msgstr ""
+
+msgid "If this option is enabled, authorized members can swich tabs (friends, follows, followers) on Member page."
+msgstr ""
+
+msgid "If this option is enabled, only members with avatar will be shown."
+msgstr ""
+
+msgid "If this option is enabled, only members with cover photo will be shown on \"Members\" tab."
+msgstr ""
+
+msgid "If this option is enabled, profile name will be shown in header."
+msgstr ""
+
+msgid "If this option is enabled, the default colors of your theme will be used."
+msgstr ""
+
+msgid "If you have a moment, please share why you are deactivating Membership by Supsystic"
+msgstr ""
+
+msgid "If you have a question, <a href=\"%s\" target=\"_blank\">contact us</a> and will do our best to help you"
+msgstr ""
+
+msgid "If, unfortunately, you have some problem - we are always ready to help you in our %s."
+msgstr ""
+
+msgid "Image"
+msgstr ""
+
+msgid "Image Quality"
+msgstr ""
+
+msgid "Image size limit is exceeded"
+msgstr ""
+
+msgid "Import"
+msgstr ""
+
+msgid "Import Activity"
+msgstr ""
+
+msgid "Import Buddy Press Data"
+msgstr ""
+
+msgid "Import Data"
+msgstr ""
+
+msgid "Import Friends"
+msgstr ""
+
+msgid "Import Groups"
+msgstr ""
+
+msgid "Import Ultimate Member Data"
+msgstr ""
+
+msgid "Import User Fields"
+msgstr ""
+
+msgid "Import completed successfully"
+msgstr ""
+
+msgid "Import data to activity"
+msgstr ""
+
+msgid "Import data to activity by hashtags"
+msgstr ""
+
+msgid "Import from csv"
+msgstr ""
+
+msgid "Import users from CSV"
+msgstr ""
+
+msgid "Importing completed with errors"
+msgstr ""
+
+msgid "In MailChimp there is possibility to select groups for your subscribers. This is not mandatory, but sometimes it is really helpful. So, we added this possibility for you in our plugin - hope you will like it!"
+msgstr ""
+
+msgid "Indeed, Membership is a very easy-to-use plugin and it consists of various exciting options at the same time. So after you close this page we will demonstrate you the main of them with step-by-step tutorial. For the first time we will help you to tune your Membership, but if you will need our help, please, contact us via our %s."
+msgstr ""
+
+msgid "Input Background Color"
+msgstr ""
+
+msgid "Input Background Focus Color"
+msgstr ""
+
+msgid "Input Border Color"
+msgstr ""
+
+msgid "Input Border Focus Color"
+msgstr ""
+
+msgid "Input Placeholder Color"
+msgstr ""
+
+msgid "Inputs"
+msgstr ""
+
+msgid "Insert Attachment. Db error #2"
+msgstr ""
+
+msgid "Insert this URL to your %s account as IPN address - to make IPN system work as it should."
+msgstr ""
+
+msgid "Install"
+msgstr ""
+
+msgid "Integrate Membership with your Facebook App."
+msgstr ""
+
+msgid "Integrations"
+msgstr ""
+
+msgid "Invalid ID"
+msgstr ""
+
+msgid "Invalid login or password."
+msgstr ""
+
+msgid "Invalid token. Please refresh page."
+msgstr ""
+
+msgid "Invalid username or email."
+msgstr ""
+
+msgid "Invitations"
+msgstr ""
+
+msgid "Invite"
+msgstr ""
+
+msgid ""
+"Invite\n"
+"									administrators"
+msgstr ""
+
+msgid "Invite administrators"
+msgstr ""
+
+msgid "Invite as administrator"
+msgstr ""
+
+msgid "Invite friends"
+msgstr ""
+
+msgid "Invite users"
+msgstr ""
+
+msgid "Invited users"
+msgstr ""
+
+msgid "Invites"
+msgstr ""
+
+msgid "Is default?"
+msgstr ""
+
+msgid "It\'s a temporary deactivation"
+msgstr ""
+
+msgid "Join group"
+msgstr ""
+
+msgid "Join groups"
+msgstr ""
+
+msgid "Join requests"
+msgstr ""
+
+msgid "Joined Groups"
+msgstr ""
+
+msgid "Joined Groups tab"
+msgstr ""
+
+msgid "Label"
+msgstr ""
+
+msgid "Last"
+msgstr ""
+
+msgid "Last Name"
+msgstr ""
+
+msgid "Last Name First Name"
+msgstr ""
+
+msgid "Last Name is required"
+msgstr ""
+
+msgid "Last seen"
+msgstr ""
+
+msgid "Latitude:"
+msgstr ""
+
+msgid "Leave group"
+msgstr ""
+
+msgid "Let your users register and login easily via Facebook or Twitter accounts."
+msgstr ""
+
+msgid "Let's Start!"
+msgstr ""
+
+msgid "Let\'s make a quick tour through features and main options of the plugin. Just click \"Next\" button."
+msgstr ""
+
+msgid "Level"
+msgstr ""
+
+msgid "Level Purchase (can be with Registration)"
+msgstr ""
+
+msgid "License"
+msgstr ""
+
+msgid "License Key"
+msgstr ""
+
+msgid "License server error"
+msgstr ""
+
+msgid "Light"
+msgstr ""
+
+msgid "Like"
+msgstr ""
+
+msgid "Liked activity  is not exist"
+msgstr ""
+
+msgid "Liked activity is not exist"
+msgstr ""
+
+msgid "Likes"
+msgstr ""
+
+msgid "Link"
+msgstr ""
+
+msgid "Lists for subscribe"
+msgstr ""
+
+msgid "Load more"
+msgstr ""
+
+msgid "Log in"
+msgstr ""
+
+msgid "Log in with"
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
+msgid "Login ID"
+msgstr ""
+
+msgid "Login Primary Button Text"
+msgstr ""
+
+msgid "Login Secondary Button"
+msgstr ""
+
+msgid "Login Secondary Button Text"
+msgstr ""
+
+msgid "Login Secondary Button URL"
+msgstr ""
+
+msgid "Login after success Registration"
+msgstr ""
+
+msgid "Login error"
+msgstr ""
+
+msgid "Logo Thumbnail Large Size"
+msgstr ""
+
+msgid "Logo Thumbnail Medium Size"
+msgstr ""
+
+msgid "Logo Thumbnail Small Size"
+msgstr ""
+
+msgid "Logout"
+msgstr ""
+
+msgid "Longitude:"
+msgstr ""
+
+msgid "Mail appears from"
+msgstr ""
+
+msgid "Mail appears from address"
+msgstr ""
+
+msgid "MailChimp API key"
+msgstr ""
+
+msgid "Mails"
+msgstr ""
+
+msgid "Mails Configuration"
+msgstr ""
+
+msgid "Main"
+msgstr ""
+
+msgid "Main Settings"
+msgstr ""
+
+msgid "Make sure you assigned Membership Level for this Content before enable Dripping."
+msgstr ""
+
+msgid "Managed Groups"
+msgstr ""
+
+msgid "Maps params was saved success"
+msgstr ""
+
+msgid "Mark all as read"
+msgstr ""
+
+msgid "Mark as read and close"
+msgstr ""
+
+msgid "Mark as unread and close"
+msgstr ""
+
+msgid "Marker Description:"
+msgstr ""
+
+msgid "Marker Name:"
+msgstr ""
+
+msgid "Markers list"
+msgstr ""
+
+msgid "Maximum File Size (Mb)"
+msgstr ""
+
+msgid "Maximum Image Size"
+msgstr ""
+
+msgid "Maximum available file upload size is %d Mb"
+msgstr ""
+
+msgid "Maximum number of profiles"
+msgstr ""
+
+msgid "Media"
+msgstr ""
+
+msgid "Members"
+msgstr ""
+
+msgid "Members Directory"
+msgstr ""
+
+msgid "Members page"
+msgstr ""
+
+msgid "Membership Administrator"
+msgstr ""
+
+msgid "Membership Guest"
+msgstr ""
+
+msgid "Membership Levels"
+msgstr ""
+
+msgid "Membership Purchase"
+msgstr ""
+
+msgid "Membership Role"
+msgstr ""
+
+msgid "Membership Status"
+msgstr ""
+
+msgid "Membership User"
+msgstr ""
+
+msgid "Membership by Supsystic Popular Activities"
+msgstr ""
+
+msgid "Membership by Supsystic Popular Groups"
+msgstr ""
+
+msgid "Membership by Supsystic Suggested Groups"
+msgstr ""
+
+msgid "Membership profile"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
+msgid "Message Recieve Notification"
+msgstr ""
+
+msgid "Message Recieve Notification Body"
+msgstr ""
+
+msgid "Message Recieve Notification Subject"
+msgstr ""
+
+msgid "Message attachment save error!"
+msgstr ""
+
+msgid "Messages"
+msgstr ""
+
+msgid "Messages Refresh Period"
+msgstr ""
+
+msgid "Minute(s)"
+msgstr ""
+
+msgid "Month"
+msgstr ""
+
+msgid "Month(s)"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Need renew text"
+msgstr ""
+
+msgid "Network Uninstall"
+msgstr ""
+
+msgid "New %s on group %s."
+msgstr ""
+
+msgid "New Password"
+msgstr ""
+
+msgid "New Password Confirmation"
+msgstr ""
+
+msgid "New Password and New Password Confirmation fields is not match."
+msgstr ""
+
+msgid "New User Notification"
+msgstr ""
+
+msgid "New User Notification Body"
+msgstr ""
+
+msgid "New User Notification Subject"
+msgstr ""
+
+msgid "New Users First"
+msgstr ""
+
+msgid "New conversation"
+msgstr ""
+
+msgid "New friends and followers notification"
+msgstr ""
+
+msgid "New group %s is created by %s."
+msgstr ""
+
+msgid "New password"
+msgstr ""
+
+msgid "New password and password confirmation not match."
+msgstr ""
+
+msgid "New password can\'t be empty."
+msgstr ""
+
+msgid "New password confirmation"
+msgstr ""
+
+msgid "New password confirmation can\'t be empty."
+msgstr ""
+
+msgid "New password is required"
+msgstr ""
+
+msgid "New tag"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "Nickname "
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "No API key entered in admin area - contact site owner to resolve this issue."
+msgstr ""
+
+msgid "No blocked users to show."
+msgstr ""
+
+msgid "No comments to show."
+msgstr ""
+
+msgid "No data found"
+msgstr ""
+
+msgid "No favorites to show."
+msgstr ""
+
+msgid "No file is sent"
+msgstr ""
+
+msgid "No followers to show."
+msgstr ""
+
+msgid "No following to show."
+msgstr ""
+
+msgid "No friend requests to show."
+msgstr ""
+
+msgid "No friends to show."
+msgstr ""
+
+msgid "No groups to show."
+msgstr ""
+
+msgid "No invites to show."
+msgstr ""
+
+msgid "No lists to add selected in admin area - contact site owner to resolve this issue."
+msgstr ""
+
+msgid "No posts to show."
+msgstr ""
+
+msgid "No role restriction"
+msgstr ""
+
+msgid "No subscriptions to show."
+msgstr ""
+
+msgid "No supported plugins found. Currently we support:"
+msgstr ""
+
+msgid "No topics to show."
+msgstr ""
+
+msgid "No users is found."
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Nope, maybe later"
+msgstr ""
+
+msgid "Normal"
+msgstr ""
+
+msgid "Not Activated"
+msgstr ""
+
+msgid "Not logged-in"
+msgstr ""
+
+msgid "Not ordered"
+msgstr ""
+
+msgid "Nothing is found"
+msgstr ""
+
+msgid "Nothing is found."
+msgstr ""
+
+msgid "Nothing was found"
+msgstr ""
+
+msgid "Notifications"
+msgstr ""
+
+msgid "Notifications "
+msgstr ""
+
+msgid "Notifications settings changes could not be saved."
+msgstr ""
+
+msgid "Notifications settings changes has been saved."
+msgstr ""
+
+msgid "Now your account is active."
+msgstr ""
+
+msgid "Number of activities to show:"
+msgstr ""
+
+msgid "Number of columns to show:"
+msgstr ""
+
+msgid "Number of groups to show:"
+msgstr ""
+
+msgid "Number of profiles per page"
+msgstr ""
+
+msgid "Number of profiles per page (for Mobiles & Tablets)"
+msgstr ""
+
+msgid "Numeric"
+msgstr ""
+
+msgid "Ok"
+msgstr ""
+
+msgid "Ok, you deserve it"
+msgstr ""
+
+msgid "Old Users First"
+msgstr ""
+
+msgid "On fields with type (Scroll List, Dropdown List, Radio Button, Checkbox) you can only use values from the available options so passed data to that field must match otherwise it will be ignored."
+msgstr ""
+
+msgid "Once you delete your copy of this conversation, it cannot be undone."
+msgstr ""
+
+msgid "Once you delete your copy of this messages, it cannot be undone."
+msgstr ""
+
+msgid "Once your site visitors begin to view or purchase your Membership Levels - statistics will be displayed here."
+msgstr ""
+
+msgid "Online"
+msgstr ""
+
+msgid "Only Me"
+msgstr ""
+
+msgid "Only group administrators can send invitations"
+msgstr ""
+
+msgid "Open"
+msgstr ""
+
+msgid "Open group"
+msgstr ""
+
+msgid "Opened Content - no Level required"
+msgstr ""
+
+msgid "Option Name"
+msgstr ""
+
+msgid "Order"
+msgstr ""
+
+msgid "Order Admin Email"
+msgstr ""
+
+msgid "Order Admin Email content"
+msgstr ""
+
+msgid "Order Created"
+msgstr ""
+
+msgid "Ordered"
+msgstr ""
+
+msgid "Ordered Levels"
+msgstr ""
+
+msgid "Orders"
+msgstr ""
+
+msgid "Other"
+msgstr ""
+
+msgid "Pages"
+msgstr ""
+
+msgid "Parent comment is not exists"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Password Changed Email"
+msgstr ""
+
+msgid "Password Changed Email Body"
+msgstr ""
+
+msgid "Password Changed Email Subject"
+msgstr ""
+
+msgid "Password Confirmation"
+msgstr ""
+
+msgid "Password Reset Email"
+msgstr ""
+
+msgid "Password Reset Email Body"
+msgstr ""
+
+msgid "Password Reset Email Subject"
+msgstr ""
+
+msgid "Password and password confirmation must match"
+msgstr ""
+
+msgid "Password and password confirmation not match."
+msgstr ""
+
+msgid "Password change"
+msgstr ""
+
+msgid "Password confirmation is required"
+msgstr ""
+
+msgid "Password is required"
+msgstr ""
+
+msgid "Password is required and can\'t be empty."
+msgstr ""
+
+msgid "Password is updated successfully"
+msgstr ""
+
+msgid "Pay by Stripe"
+msgstr ""
+
+msgid "PayPal PRO"
+msgstr ""
+
+msgid "PayPal PRO payments."
+msgstr ""
+
+msgid "PayPal Standard"
+msgstr ""
+
+msgid "PayPal Standard payments."
+msgstr ""
+
+msgid "Payment Action"
+msgstr ""
+
+msgid "Payment Info"
+msgstr ""
+
+msgid "Payment Method"
+msgstr ""
+
+msgid "Payment fail checkout text"
+msgstr ""
+
+msgid "Payments"
+msgstr ""
+
+msgid "Pending Review Email"
+msgstr ""
+
+msgid "Pending Review Email Body"
+msgstr ""
+
+msgid "Pending Review Email Subject"
+msgstr ""
+
+msgid "Pending review"
+msgstr ""
+
+msgid "Phone"
+msgstr ""
+
+msgid "Phone is required"
+msgstr ""
+
+msgid "Photos"
+msgstr ""
+
+msgid "Pick up your Membership users to different Subscription lists right after registration."
+msgstr ""
+
+msgid "Places"
+msgstr ""
+
+msgid "Please <a href=\"%s\">sign up</a> or <a href=\"%s\">sign in</a> to join or leave groups."
+msgstr ""
+
+msgid "Please <a href=\"%s\">sign up</a> or <a href=\"%s\">sign in</a> to like or write comments on this post."
+msgstr ""
+
+msgid "Please activate your account"
+msgstr ""
+
+msgid "Please enter %s"
+msgstr ""
+
+msgid "Please enter Group Category Name!"
+msgstr ""
+
+msgid "Please fill up the captcha."
+msgstr ""
+
+msgid "Please select an image to remove."
+msgstr ""
+
+msgid "Please select at least one option"
+msgstr ""
+
+msgid "Points count"
+msgstr ""
+
+msgid "Popular"
+msgstr ""
+
+msgid "Position"
+msgstr ""
+
+msgid "Post"
+msgstr ""
+
+msgid "Post by service action setting could not be saved."
+msgstr ""
+
+msgid "Post by service action setting has been saved."
+msgstr ""
+
+msgid "Post can\'t be empty"
+msgstr ""
+
+msgid "Postcode / ZIP"
+msgstr ""
+
+msgid "Postcode / ZIP is required"
+msgstr ""
+
+msgid "Posted from %s activity."
+msgstr ""
+
+msgid "Posts"
+msgstr ""
+
+msgid "Powerful stuff of Membership Ecommerce addon will help you to start and manage your own paid Membership site."
+msgstr ""
+
+msgid "Premium support expires in"
+msgstr ""
+
+msgid "Prev"
+msgstr ""
+
+msgid "Previous"
+msgstr ""
+
+msgid "Price"
+msgstr ""
+
+msgid "Price for Membership Level"
+msgstr ""
+
+msgid "Price for recurring payments"
+msgstr ""
+
+msgid "Primary Button Color"
+msgstr ""
+
+msgid "Primary Button Hover Color"
+msgstr ""
+
+msgid "Primary Color"
+msgstr ""
+
+msgid "Privacy"
+msgstr ""
+
+msgid "Privacy settings was not updated."
+msgstr ""
+
+msgid "Privacy settings was updated."
+msgstr ""
+
+msgid "Private"
+msgstr ""
+
+msgid "Private group"
+msgstr ""
+
+msgid "Products"
+msgstr ""
+
+msgid "Profile"
+msgstr ""
+
+msgid "Profile Avatar Size"
+msgstr ""
+
+msgid "Profile Container Max Width"
+msgstr ""
+
+msgid "Profile Cover Size"
+msgstr ""
+
+msgid "Profile Fields"
+msgstr ""
+
+msgid "Profile Fields are made for their creation and configuration of asking on registration page and demonstrating at About section in users profiles after loginning to the site."
+msgstr ""
+
+msgid "Profile Header Background Color"
+msgstr ""
+
+msgid "Profile Image Style"
+msgstr ""
+
+msgid "Profile Permalink Base"
+msgstr ""
+
+msgid "Profile Settings"
+msgstr ""
+
+msgid "Profile is not exists."
+msgstr ""
+
+msgid "Profile picture"
+msgstr ""
+
+msgid "Protect all Pages"
+msgstr ""
+
+msgid "Publish"
+msgstr ""
+
+msgid "Publish to Membership Activity"
+msgstr ""
+
+msgid "Publish to my activity"
+msgstr ""
+
+msgid "Purchase"
+msgstr ""
+
+msgid "Purchase button name"
+msgstr ""
+
+msgid "Put symbol at left side?"
+msgstr ""
+
+msgid "Radio Button"
+msgstr ""
+
+msgid "Random"
+msgstr ""
+
+msgid "ReCaptcha is not valid."
+msgstr ""
+
+msgid "Read"
+msgstr ""
+
+msgid "Read groups"
+msgstr ""
+
+msgid "Read more"
+msgstr ""
+
+msgid "Read this post"
+msgstr ""
+
+msgid "Reading comments is restricted"
+msgstr ""
+
+msgid "Recent Post"
+msgstr ""
+
+msgid "Record removed..."
+msgstr ""
+
+msgid "Record saved..."
+msgstr ""
+
+msgid "Record updated..."
+msgstr ""
+
+msgid "Recurring Subscription"
+msgstr ""
+
+msgid "Redirect after account is deleted to"
+msgstr ""
+
+msgid "Redirect after login to"
+msgstr ""
+
+msgid "Redirect after logout to"
+msgstr ""
+
+msgid "Redirect after registration to"
+msgstr ""
+
+msgid "Redirect from backend login screen to membership login page"
+msgstr ""
+
+msgid "Register"
+msgstr ""
+
+msgid "Register with"
+msgstr ""
+
+msgid "Registered"
+msgstr ""
+
+msgid "Registration"
+msgstr ""
+
+msgid "Registration Confirmation"
+msgstr ""
+
+msgid "Registration Primary Button Text"
+msgstr ""
+
+msgid "Registration and Login"
+msgstr ""
+
+msgid "Registration button name"
+msgstr ""
+
+msgid "Rejected"
+msgstr ""
+
+msgid "Remember me"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Remove from group"
+msgstr ""
+
+msgid "Remove login and registration links from menu when user is logged in"
+msgstr ""
+
+msgid "Remove selected images"
+msgstr ""
+
+msgid "Replace bbPress profile link with link to Membership profile"
+msgstr ""
+
+msgid "Replies"
+msgstr ""
+
+msgid "Replies Created"
+msgstr ""
+
+msgid "Reply"
+msgstr ""
+
+msgid "Report"
+msgstr ""
+
+msgid "Report Comment"
+msgstr ""
+
+msgid "Report Date"
+msgstr ""
+
+msgid "Report Status"
+msgstr ""
+
+msgid "Report comment"
+msgstr ""
+
+msgid "Report date"
+msgstr ""
+
+msgid "Report details"
+msgstr ""
+
+msgid "Report post"
+msgstr ""
+
+msgid "Report type"
+msgstr ""
+
+msgid "Report was not sent."
+msgstr ""
+
+msgid "Report was not sent. Report content not found."
+msgstr ""
+
+msgid "Reported"
+msgstr ""
+
+msgid "Reported Activity"
+msgstr ""
+
+msgid "Reported Activity Author"
+msgstr ""
+
+msgid "Reporter"
+msgstr ""
+
+msgid "Reports"
+msgstr ""
+
+msgid "Requested activity is not found."
+msgstr ""
+
+msgid "Required"
+msgstr ""
+
+msgid "Required Asterisk Color"
+msgstr ""
+
+msgid "Reset Zoom"
+msgstr ""
+
+msgid "Reset key is not provided."
+msgstr ""
+
+msgid "Reset password"
+msgstr ""
+
+msgid "Reset to Default"
+msgstr ""
+
+msgid "Reset your password"
+msgstr ""
+
+msgid "Results Text"
+msgstr ""
+
+msgid "Review for"
+msgstr ""
+
+msgid "Role"
+msgstr ""
+
+msgid "Role Name"
+msgstr ""
+
+msgid "Role name"
+msgstr ""
+
+msgid "Roles"
+msgstr ""
+
+msgid "Roles tab offers you to manage with membership roles. By default there are three roles – Membership Administrator, Membership User and Membership Guest."
+msgstr ""
+
+msgid "Roles who can have forum tab"
+msgstr ""
+
+msgid "Rounded Corners"
+msgstr ""
+
+msgid "SEO"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Save Address"
+msgstr ""
+
+msgid "Save Fields"
+msgstr ""
+
+msgid "Save Marker"
+msgstr ""
+
+msgid "Save Pages"
+msgstr ""
+
+msgid "Save Settings"
+msgstr ""
+
+msgid "Scroll List"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Search..."
+msgstr ""
+
+msgid "Secondary Button Color"
+msgstr ""
+
+msgid "Secondary Button Hover Color"
+msgstr ""
+
+msgid "Secondary Color"
+msgstr ""
+
+msgid "Secret word to validate responce"
+msgstr ""
+
+msgid "Section"
+msgstr ""
+
+msgid "Section Name"
+msgstr ""
+
+msgid "Security"
+msgstr ""
+
+msgid "Security Settings"
+msgstr ""
+
+msgid "See dashboard bar"
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+msgid "Select a role that will be assigned to user after his registration."
+msgstr ""
+
+msgid "Select badge"
+msgstr ""
+
+msgid "Select contact form that will be displayed on Contact Us page."
+msgstr ""
+
+msgid "Select lists for subscribe. They are taken from your Constant Contact account."
+msgstr ""
+
+msgid "Select lists for subscribe. They are taken from your MailChimp account - so make sure that you entered correct API key before."
+msgstr ""
+
+msgid "Select membership roles that will have access to this page."
+msgstr ""
+
+msgid "Select messages to delete"
+msgstr ""
+
+msgid "Select some Lists before"
+msgstr ""
+
+msgid "Select the sorting order to display users on \"Members\" tab."
+msgstr ""
+
+msgid "Select the style of profiles and groups images."
+msgstr ""
+
+msgid "Select the type of confirmation that should be performed after user registration. You can choose \"Auto\" and there will be no confirmation."
+msgstr ""
+
+msgid "Select user"
+msgstr ""
+
+msgid "Select value"
+msgstr ""
+
+msgid "Select what data to use in the link of user\'s profile. E.g. \"http://supsystic/profile/john_snow/\" or \"http://supsystic/profile/1/\"."
+msgstr ""
+
+msgid "Select which kind of user\'s name will be displayed."
+msgstr ""
+
+msgid "Select who can see information on your website."
+msgstr ""
+
+msgid "Send"
+msgstr ""
+
+msgid "Send MailChimp Welcome Email"
+msgstr ""
+
+msgid "Send Test"
+msgstr ""
+
+msgid "Send Test Email"
+msgstr ""
+
+msgid "Send a request"
+msgstr ""
+
+msgid "Send and receive messages"
+msgstr ""
+
+msgid "Send friend request"
+msgstr ""
+
+msgid "Send me some info, pls"
+msgstr ""
+
+msgid "Send message"
+msgstr ""
+
+msgid "Send message to"
+msgstr ""
+
+msgid "Send message to: "
+msgstr ""
+
+msgid "Send private message"
+msgstr ""
+
+msgid "Sending message to this user is restricted by his privacy settings"
+msgstr ""
+
+msgid "Server error!"
+msgstr ""
+
+msgid "Set the background color for labels."
+msgstr ""
+
+msgid "Set the background color for profile header."
+msgstr ""
+
+msgid "Set the background color when the cursor is in this field."
+msgstr ""
+
+msgid "Set the color for borders of labels."
+msgstr ""
+
+msgid "Set the color for borders when the cursor is in this field."
+msgstr ""
+
+msgid "Set the color for placeholder."
+msgstr ""
+
+msgid "Set the color for primary buttons when they will be covered by mouse."
+msgstr ""
+
+msgid "Set the color for primary buttons."
+msgstr ""
+
+msgid "Set the color for secondary buttons when they will be covered by mouse."
+msgstr ""
+
+msgid "Set the color for secondary buttons."
+msgstr ""
+
+msgid "Set the color for text in labels."
+msgstr ""
+
+msgid "Set the color for text in primary buttons."
+msgstr ""
+
+msgid "Set the color for text in secondary buttons."
+msgstr ""
+
+msgid "Set the color for text."
+msgstr ""
+
+msgid "Set the quality of images in %. The highest value is 100."
+msgstr ""
+
+msgid "Set the text for \"Log in\" button."
+msgstr ""
+
+msgid "Set the text for \"Register\" button."
+msgstr ""
+
+msgid "Set the text for secondary button."
+msgstr ""
+
+msgid "Set the width for profile container. The maximum is 100%."
+msgstr ""
+
+msgid "Set to default"
+msgstr ""
+
+msgid "Set url to which user will be redirected after clicking on secondary button in Login form."
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Share"
+msgstr ""
+
+msgid "Share to Friends Activity"
+msgstr ""
+
+msgid "Shared activity is not exist or user don\'t have read permission to read activity."
+msgstr ""
+
+msgid "Shared post by user will be displayed in all user's friends Activity page"
+msgstr ""
+
+msgid "Shares"
+msgstr ""
+
+msgid "Shipping Address"
+msgstr ""
+
+msgid "Shipping Information"
+msgstr ""
+
+msgid "Show Activity Filter"
+msgstr ""
+
+msgid "Show Display Name"
+msgstr ""
+
+msgid "Show Display Name In Profile Header"
+msgstr ""
+
+msgid "Show Friends and Followers"
+msgstr ""
+
+msgid "Show Load More Button"
+msgstr ""
+
+msgid "Show Only Members With Cover"
+msgstr ""
+
+msgid "Show Only Members With Photo"
+msgstr ""
+
+msgid "Show Pages"
+msgstr ""
+
+msgid "Show Remember Me"
+msgstr ""
+
+msgid "Show an asterisk for required fields"
+msgstr ""
+
+msgid "Show billing address in user settings"
+msgstr ""
+
+msgid "Show bought products in profile"
+msgstr ""
+
+msgid "Show extra user information below tagline?"
+msgstr ""
+
+msgid "Show group action buttons?"
+msgstr ""
+
+msgid "Show my profile in Members Directory."
+msgstr ""
+
+msgid "Show ordered Membership Levels"
+msgstr ""
+
+msgid "Show orders in members directory"
+msgstr ""
+
+msgid "Show orders in profile"
+msgstr ""
+
+msgid "Show product reviews in profile"
+msgstr ""
+
+msgid "Show purchases in profile"
+msgstr ""
+
+msgid "Show results only after search"
+msgstr ""
+
+msgid "Show shipping address in user settings"
+msgstr ""
+
+msgid "Show short post view"
+msgstr ""
+
+msgid "Show tabs"
+msgstr ""
+
+msgid "Show tagline below profile name"
+msgstr ""
+
+msgid "Show total spent in members directory"
+msgstr ""
+
+msgid "Show total spent in profile"
+msgstr ""
+
+msgid "Shows the list of activities, depending on likes."
+msgstr ""
+
+msgid "Shows the list of groups, depending on the number of followers."
+msgstr ""
+
+msgid "Shows the list of suggested groups."
+msgstr ""
+
+msgid "Since:"
+msgstr ""
+
+msgid "Single Result Text"
+msgstr ""
+
+msgid "Site Accessible to Everyone"
+msgstr ""
+
+msgid "Site Accessible to Logged In Users"
+msgstr ""
+
+msgid "Site wide"
+msgstr ""
+
+msgid "Skip & Deactivate"
+msgstr ""
+
+msgid "Slider Images"
+msgstr ""
+
+msgid "Slider Name"
+msgstr ""
+
+msgid "Smile Button Background Color"
+msgstr ""
+
+msgid "Smile Button Hover Background Color"
+msgstr ""
+
+msgid "Smile button icon size"
+msgstr ""
+
+msgid "Social"
+msgstr ""
+
+msgid "Social Login"
+msgstr ""
+
+msgid "Social Login (PRO)"
+msgstr ""
+
+msgid "Social Network Integration"
+msgstr ""
+
+msgid "Social Networks Integration (PRO)"
+msgstr ""
+
+msgid "Social network integration"
+msgstr ""
+
+msgid "Social sign-in"
+msgstr ""
+
+msgid "Some of requested users cannot receive or send messages"
+msgstr ""
+
+msgid "Some of your products is extendable, but you don\'t have original product purchased before."
+msgstr ""
+
+msgid "Something going wrong while trying to send data to MailChimp. Please contact site owner."
+msgstr ""
+
+msgid "Something going wrong while trying to send data to mail list service. Please contact site owner."
+msgstr ""
+
+msgid "Something went wrong"
+msgstr ""
+
+msgid "Sorry, the original post was deleted by its author."
+msgstr ""
+
+msgid "Sort Groups by"
+msgstr ""
+
+msgid "Sorts in Descending order"
+msgstr ""
+
+msgid "Specific roles"
+msgstr ""
+
+msgid "Specify a description of Group page. Search engines can pick up this description to show with the results of searches."
+msgstr ""
+
+msgid "Specify a description of User Profile page. Search engines can pick up this description to show with the results of searches."
+msgstr ""
+
+msgid "Square"
+msgstr ""
+
+msgid "Start"
+msgstr ""
+
+msgid "State"
+msgstr ""
+
+msgid "State / County"
+msgstr ""
+
+msgid "State / County is required"
+msgstr ""
+
+msgid "Statistics"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Stripe"
+msgstr ""
+
+msgid "Stripe Publishable Key"
+msgstr ""
+
+msgid "Stripe Secret Key"
+msgstr ""
+
+msgid "Stripe payments."
+msgstr ""
+
+msgid "Subscribe"
+msgstr ""
+
+msgid "Subscribe success message"
+msgstr ""
+
+msgid "Subscriptions"
+msgstr ""
+
+msgid "Subscriptions (PRO)"
+msgstr ""
+
+msgid "Subscriptions Lists"
+msgstr ""
+
+msgid "Success checkout text"
+msgstr ""
+
+msgid "Support part"
+msgstr ""
+
+msgid "Supsystic Forum"
+msgstr ""
+
+msgid "Supsystic Membership Role"
+msgstr ""
+
+msgid "Symbol"
+msgstr ""
+
+msgid "Tag does not exists at this group"
+msgstr ""
+
+msgid "Tags"
+msgstr ""
+
+msgid "Tags for this group have not been added yet."
+msgstr ""
+
+msgid "Test"
+msgstr ""
+
+msgid "Test Mode"
+msgstr ""
+
+msgid "Test Payments"
+msgstr ""
+
+msgid "Test mail"
+msgstr ""
+
+msgid "Test user"
+msgstr ""
+
+msgid "Text"
+msgstr ""
+
+msgid "Text that users will see when they need to renew this Level."
+msgstr ""
+
+msgid "Thank you for choosing our Membership plugin"
+msgstr ""
+
+msgid "Thank you for choosing our plugin! We are happy you like Membership plugin by Supsystic and You will get our best work!"
+msgstr ""
+
+msgid "Thank you for registration!"
+msgstr ""
+
+msgid ""
+"Thank you for signing up with {site_name}!\n"
+"To activate your account, please click the link below to confirm your email address: <a href="{account_activation_link}">{account_activation_link}</a>\n"
+"If you have any problems, please contact us at {admin_email}\n"
+"Thanks, {site_name}"
+msgstr ""
+
+msgid "The color theme. You can select from themes, provided by Google, for your reCaptcha."
+msgstr ""
+
+msgid "The message that admin will get if some account needs to be reviewed."
+msgstr ""
+
+msgid "The message that admin will receive after a new user signs up. In case you don\'t want to get this email just turn this option off."
+msgstr ""
+
+msgid "The message was sent"
+msgstr ""
+
+msgid "The name of site that will be indicated in emails."
+msgstr ""
+
+msgid "The requested social network integration is not enabled"
+msgstr ""
+
+msgid "The size of the CAPTCHA widget."
+msgstr ""
+
+msgid "The total number of recurring billing cycles for this level, including the trial period (if applicable) but not including the initial payment. Set to zero if membership is indefinite."
+msgstr ""
+
+msgid "The type of CAPTCHA to serve."
+msgstr ""
+
+msgid "The vendor account number for the 2Checkout gateway"
+msgstr ""
+
+msgid "There are no Membership Levels on this site for now."
+msgstr ""
+
+msgid "There is no administrators left in group, you must delete group first."
+msgstr ""
+
+msgid "There is no data to import."
+msgstr ""
+
+msgid "There is no products"
+msgstr ""
+
+msgid "There is no purchases"
+msgstr ""
+
+msgid "There is no reviews"
+msgstr ""
+
+msgid "There is no subscription in subscriptions lists"
+msgstr ""
+
+msgid "There is no user with provided id"
+msgstr ""
+
+msgid "There is no users yet."
+msgstr ""
+
+msgid "There was some problem while trying to get your lists. Make sure that your API key is correct."
+msgstr ""
+
+msgid "There were some errors with your data"
+msgstr ""
+
+msgid "There\'s no any activity yet"
+msgstr ""
+
+msgid "This Level is Expired"
+msgstr ""
+
+msgid "This content is closed for you"
+msgstr ""
+
+msgid "This email will be sent to user after his account has been approved and activated by admin."
+msgstr ""
+
+msgid "This email will be sent to user if admin rejected his account."
+msgstr ""
+
+msgid "This email will be sent to user if he has requested to change the password."
+msgstr ""
+
+msgid "This email will be sent to user if he needs to wait till admin will approve his account."
+msgstr ""
+
+msgid "This email will be sent to user if his account has been deactivated."
+msgstr ""
+
+msgid "This email will be sent to user if this account has been deleted."
+msgstr ""
+
+msgid "This email will be sent to user, so he could confirm his email and activate the account after registration."
+msgstr ""
+
+msgid "This email will be used as Sender."
+msgstr ""
+
+msgid "This is not your Order"
+msgstr ""
+
+msgid "This is protected field. You cannot modify its type."
+msgstr ""
+
+msgid ""
+"This message will be shown after subscription in the settings of user\'s profile right after subscriber will be\n"
+"    created and confirmed."
+msgstr ""
+
+msgid "This module is used for test purpose only. Do not use in in Production."
+msgstr ""
+
+msgid "This month"
+msgstr ""
+
+msgid "This option allows to use html markup language to edit the text in emails."
+msgstr ""
+
+msgid "This option will create subscriber directly after new user registration. If this option is disabled - new subscriber won\'t be created for your subscription list after registration. In this case user will be able to subscribe only in his Profile Settings."
+msgstr ""
+
+msgid "This page is disabled by site administrator."
+msgstr ""
+
+msgid "This post not exist!"
+msgstr ""
+
+msgid "This tab allows you to see detail user reports on restricted content types of other users and write to the reporter/reported user or block him/her."
+msgstr ""
+
+msgid "This user is blocking your messages."
+msgstr ""
+
+msgid "This user is restrict access to his about page."
+msgstr ""
+
+msgid "This user is restrict access to his activity page."
+msgstr ""
+
+msgid "This user is restrict access to his comments page."
+msgstr ""
+
+msgid "This user is restrict access to his followers page."
+msgstr ""
+
+msgid "This user is restrict access to his friends page."
+msgstr ""
+
+msgid "This user is restrict access to his groups page."
+msgstr ""
+
+msgid "This user is restrict access to his posts page."
+msgstr ""
+
+msgid "This user is restrict access to his profile."
+msgstr ""
+
+msgid "This week"
+msgstr ""
+
+msgid "This will be initial amount for the first payment"
+msgstr ""
+
+msgid "This year"
+msgstr ""
+
+msgid "Thousands separator"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Title:"
+msgstr ""
+
+msgid "To"
+msgstr ""
+
+msgid "To be unique develop your own coloristic combination of Membership design."
+msgstr ""
+
+msgid "To complete your registration administrator needs to review your account.<br>You will receive email about your account activation after review."
+msgstr ""
+
+msgid "To complete your registration please follow the activation link in confirmation email message that you will receive."
+msgstr ""
+
+msgid "To find your Facebook App ID please login to your Facebook account at <a target=\"_blank\" href=\"https://developers.facebook.com/apps/\">https://developers.facebook.com/apps/</a>. Then on the left main menu click on Dashboard. Copy / Paste your App ID into \"Facebook App ID\" field here. For more detailed instruction - check article <a target=\"_blank\" href=\"http://supsystic.com/integrate-membership-facebook-app/\">here</a>."
+msgstr ""
+
+msgid "To find your Facebook App Secret please login to your Facebook account at https://developers.facebook.com/apps/. Then on the left main menu click on Dashboard. Copy / Paste your App Secret into \"Facebook App Secret\" field here. For more detailed instruction - check article <a target=\"_blank\" href=\"http://supsystic.com/integrate-membership-facebook-app/\">here</a>."
+msgstr ""
+
+msgid "To find your MailChimp API Key login to your Mailchimp account at http://mailchimp.com. On the left main menu click on your Username, then select \"Account\" in the flyout menu. From the account page select \"Extras\", \"API Keys\". Your API Key will be listed in the table labeled \"Your API Keys\". Copy / Paste your API key into \"MailChimp API key\" field here."
+msgstr ""
+
+msgid "To find your Twitter API Key please login to your Twitter account at https://apps.twitter.com/. Open the settings of your App and click on \"Keys and Access Tokens\" tab. Copy / Paste \"Consumer Key (API Key)\" into \"Twitter API Key\" field here. For more detailed instruction - check article <a target=\"_blank\" href=\"http://supsystic.com/integrate-membership-twitter/\">here</a>."
+msgstr ""
+
+msgid "To find your Twitter API Secret please login to your Twitter account at https://apps.twitter.com/. Open the settings of your App and click on \"Keys and Access Tokens\" tab. Copy / Paste \"Consumer Secret (API Secret)\" into \"Twitter API Secret\" field here. For more detailed instruction - check article <a target=\"_blank\" href=\"http://supsystic.com/integrate-membership-twitter/\">here</a>."
+msgstr ""
+
+msgid "To:"
+msgstr ""
+
+msgid "Today"
+msgstr ""
+
+msgid "Token response error. You need to reconnect to %s."
+msgstr ""
+
+msgid "Topics Started"
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+msgid "Total Spent"
+msgstr ""
+
+msgid "Total Statistics"
+msgstr ""
+
+msgid "Total Statistics is empty for now."
+msgstr ""
+
+msgid "Town / City"
+msgstr ""
+
+msgid "Town / City is required"
+msgstr ""
+
+msgid "Transaction Key"
+msgstr ""
+
+msgid "Tune needed settings for frontend appearance of Membership Groups."
+msgstr ""
+
+msgid "Twitter"
+msgstr ""
+
+msgid "Twitter API Key"
+msgstr ""
+
+msgid "Twitter API Secret"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+msgid "Unapprove"
+msgstr ""
+
+msgid "Unblock"
+msgstr ""
+
+msgid "Unblock actvity"
+msgstr ""
+
+msgid "Unblock group"
+msgstr ""
+
+msgid "Unblock user"
+msgstr ""
+
+msgid "Unfollow"
+msgstr ""
+
+msgid "Unfriend"
+msgstr ""
+
+msgid "Uninstall"
+msgstr ""
+
+msgid "Unknown upload error."
+msgstr ""
+
+msgid "Unpublished"
+msgstr ""
+
+msgid "Unread"
+msgstr ""
+
+msgid "Unsubscribe"
+msgstr ""
+
+msgid "Unsubscribed successfully"
+msgstr ""
+
+msgid "Unsupported file format"
+msgstr ""
+
+msgid "Unsupported image format"
+msgstr ""
+
+msgid "Unsupported image format. You can use jpeg or png image format."
+msgstr ""
+
+msgid "Unsupported template."
+msgstr ""
+
+msgid "Update"
+msgstr ""
+
+msgid "Upgrade your Membership site and provide beneficial abilities for clients with Membership PRO Addons by Supsystic."
+msgstr ""
+
+msgid "Upload Icon"
+msgstr ""
+
+msgid "Upload logo"
+msgstr ""
+
+msgid "Upload photo"
+msgstr ""
+
+msgid "Uploads"
+msgstr ""
+
+msgid "Use Default Theme Colors"
+msgstr ""
+
+msgid "Use HTML for E-mails"
+msgstr ""
+
+msgid "Use Profile Avatar"
+msgstr ""
+
+msgid "Use Profile Cover"
+msgstr ""
+
+msgid "Use Profile Gravatar"
+msgstr ""
+
+msgid "Use your own social network app"
+msgstr ""
+
+msgid "User Display Name"
+msgstr ""
+
+msgid "User Fields"
+msgstr ""
+
+msgid "User ID"
+msgstr ""
+
+msgid "User Name"
+msgstr ""
+
+msgid "User Profile"
+msgstr ""
+
+msgid "User Profile Dynamic Meta Description"
+msgstr ""
+
+msgid "User Profile Title"
+msgstr ""
+
+msgid "User Registration"
+msgstr ""
+
+msgid "User Report"
+msgstr ""
+
+msgid "User Role List"
+msgstr ""
+
+msgid "User Roles that can use search"
+msgstr ""
+
+msgid "User Roles to Display"
+msgstr ""
+
+msgid "User activated"
+msgstr ""
+
+msgid "User already blocked"
+msgstr ""
+
+msgid "User already followed"
+msgstr ""
+
+msgid "User already has badges"
+msgstr ""
+
+msgid "User already in friends"
+msgstr ""
+
+msgid "User blocked"
+msgstr ""
+
+msgid "User does not have permission to delete this group."
+msgstr ""
+
+msgid "User get role"
+msgstr ""
+
+msgid "User is not allowed to edit this order"
+msgstr ""
+
+msgid "User is not blocked"
+msgstr ""
+
+msgid "User is not follower of this group"
+msgstr ""
+
+msgid "User is not found"
+msgstr ""
+
+msgid "User is not provided."
+msgstr ""
+
+msgid "User not found"
+msgstr ""
+
+msgid "User not selected"
+msgstr ""
+
+msgid "User registration is disabled. To enable go to WP Settings > General and check box for Membership option."
+msgstr ""
+
+msgid "User unblocked"
+msgstr ""
+
+msgid "User update error"
+msgstr ""
+
+msgid ""
+"User will see this message after subscription in the settings of his profile, when email with confirmation link was\n"
+"    sent."
+msgstr ""
+
+msgid "User with email %s already exists. Skipped."
+msgstr ""
+
+msgid "User with id %d is not found"
+msgstr ""
+
+msgid "User with login %s already exists. Skipped."
+msgstr ""
+
+msgid "User with this %s e-mail address already exists."
+msgstr ""
+
+msgid "User with username %s already exists"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Username or E-mail"
+msgstr ""
+
+msgid "Username or E-mail is required"
+msgstr ""
+
+msgid "Username or E-mail is required."
+msgstr ""
+
+msgid "Username or Email Address"
+msgstr ""
+
+msgid "Users"
+msgstr ""
+
+msgid "Users profile activity page"
+msgstr ""
+
+msgid "Users with the chosen role will be shown on \"Members\" tab."
+msgstr ""
+
+msgid "Vendor account number"
+msgstr ""
+
+msgid "Video Tutorial"
+msgstr ""
+
+msgid "View"
+msgstr ""
+
+msgid "View previous comments"
+msgstr ""
+
+msgid "View previous replies"
+msgstr ""
+
+msgid "Waiting for schedule"
+msgstr ""
+
+msgid "Warning! All membership users data will be deleted. This action cannot be undone!"
+msgstr ""
+
+msgid "Warning! Some required Membership plugin pages are missing or haven\'t been created, you can assign or create them <a href=\"%s\">here</a>"
+msgstr ""
+
+msgid "We are constantly making improvements of the Membership tool usage for your maximum comfort and easiness. And now it is the most appropriate moment to tell you about some options and features of Membership plugin."
+msgstr ""
+
+msgid "We love the plugins that we created and feel responsibility for every our product. Constantly we are trying to improve something or update the new features, but sometimes you may have a situation when you need help or have an issue. We can propose you next kinds of help:"
+msgstr ""
+
+msgid "Week"
+msgstr ""
+
+msgid "Week(s)"
+msgstr ""
+
+msgid "Welcome to the"
+msgstr ""
+
+msgid "Welcome to {site_name}!"
+msgstr ""
+
+msgid "Well done!"
+msgstr ""
+
+msgid "What is the reason?"
+msgstr ""
+
+msgid "What's new?"
+msgstr ""
+
+msgid "When this option is activated - users, who want to login to your website, will be redirected to Membership Login page instead of usual WordPress login form."
+msgstr ""
+
+msgid "When user bought any product assign role:"
+msgstr ""
+
+msgid "When user bought specific product: assign role:"
+msgstr ""
+
+msgid "Who can be invited"
+msgstr ""
+
+msgid "Who can comment my activity posts."
+msgstr ""
+
+msgid "Who can invite"
+msgstr ""
+
+msgid "Who can post to my profile activity."
+msgstr ""
+
+msgid "Who can send me private messages."
+msgstr ""
+
+msgid "Who can view about information on my profile."
+msgstr ""
+
+msgid "Who can view comments on my activity posts."
+msgstr ""
+
+msgid "Who can view my followers."
+msgstr ""
+
+msgid "Who can view my follows."
+msgstr ""
+
+msgid "Who can view my friends."
+msgstr ""
+
+msgid "Who can view my groups."
+msgstr ""
+
+msgid "Who can view my posts."
+msgstr ""
+
+msgid "Who can view my profile activity page."
+msgstr ""
+
+msgid "Who can view my profile."
+msgstr ""
+
+msgid "WooCommerce"
+msgstr ""
+
+msgid "WooCommerce (PRO)"
+msgstr ""
+
+msgid "WooCommerce integration is made for those who want to create online shop inside Membership community."
+msgstr ""
+
+msgid "Write a comment..."
+msgstr ""
+
+msgid "Write a message"
+msgstr ""
+
+msgid "Write a message..."
+msgstr ""
+
+msgid "Year(s)"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "You able to use addon but update is disabled"
+msgstr ""
+
+msgid "You are is blocked by group administrator"
+msgstr ""
+
+msgid "You are not logged-in"
+msgstr ""
+
+msgid ""
+"You can import new users as well as data for custom fields.\n"
+"						To do this, you need to specify the required fields in the first line of your csv file and for next lines data related to these fields."
+msgstr ""
+
+msgid "You can login in to your account here."
+msgstr ""
+
+msgid "You can not delete this map"
+msgstr ""
+
+msgid "You do not have access!"
+msgstr ""
+
+msgid "You don\'t have any conversations started."
+msgstr ""
+
+msgid "You don\'t have permissions to access this user profile."
+msgstr ""
+
+msgid "You don\'t have unread notifications."
+msgstr ""
+
+msgid "You have new {friend_follower}"
+msgstr ""
+
+msgid "You have no Contact Form for now. Create your Contact Form or Enable Membership feature for contact form which you want to use for Contact Us page."
+msgstr ""
+
+msgid "You have no Currency for now. %s your first Membership Currency!"
+msgstr ""
+
+msgid "You have no Galleries for now. Create your Gallery or Enable Membership feature for galleries which you want to use as presets!."
+msgstr ""
+
+msgid "You have no Google Maps for now. Create your Google Maps  or Enable Membership feature for Google Maps which you want to use as presets."
+msgstr ""
+
+msgid "You have no Membership Badges And Points for now. %s your first Membership Badges And Points!"
+msgstr ""
+
+msgid "You have no Membership Badges for now. %s your first Membership Badge!"
+msgstr ""
+
+msgid "You have no Membership Drip for now. Go to any Post / Page or other content edit on your site - and enable Dripping there."
+msgstr ""
+
+msgid "You have no Membership Levels for now."
+msgstr ""
+
+msgid "You have no Membership Levels for now. %s your first Membership Level!"
+msgstr ""
+
+msgid "You have no Membership Levels for now. To protect your content by Membership Level - %s your first Level."
+msgstr ""
+
+msgid "You have no Orders for now."
+msgstr ""
+
+msgid "You have no Sliders for now. Create your Slider or Enable Membership feature for sliders which you want to use as presets!."
+msgstr ""
+
+msgid "You have this Level"
+msgstr ""
+
+msgid "You just subscribed from this IP"
+msgstr ""
+
+msgid "You must authorize to use Constant Contact features"
+msgstr ""
+
+msgid "You must confirm your account email address. Check your email for confirmation link."
+msgstr ""
+
+msgid "You must enter a username or email address."
+msgstr ""
+
+msgid "You need to install Contact Form by Supsystic to use this feature. "
+msgstr ""
+
+msgid "You need to install Google Maps Easy to use this feature. "
+msgstr ""
+
+msgid "You need to install Photo Gallery by Supsystic to use this feature. "
+msgstr ""
+
+msgid "You need to install Slider by Supsystic to use this feature. "
+msgstr ""
+
+msgid "You need to install and activate WooCommerce plugin to use this feature. "
+msgstr ""
+
+msgid "You will be redirected to next page in few seconds."
+msgstr ""
+
+msgid "Your Feedback"
+msgstr ""
+
+msgid "Your License Key from your account on"
+msgstr ""
+
+msgid "Your account at {site_name} is now active"
+msgstr ""
+
+msgid "Your account don\'t have permission to access this page"
+msgstr ""
+
+msgid "Your account don\'t have permission to read groups"
+msgstr ""
+
+msgid "Your account don\'t have permission to see activity page"
+msgstr ""
+
+msgid "Your account don\'t have permission to see members page"
+msgstr ""
+
+msgid "Your account don\'t have permission to see messages section"
+msgstr ""
+
+msgid "Your account don\'t have permissions to see activity page"
+msgstr ""
+
+msgid "Your account has been deactivated"
+msgstr ""
+
+msgid "Your account has been deleted"
+msgstr ""
+
+msgid "Your account has been deleted."
+msgstr ""
+
+msgid "Your account has been disabled."
+msgstr ""
+
+msgid "Your account has been rejected"
+msgstr ""
+
+msgid "Your account has been rejected."
+msgstr ""
+
+msgid "Your account is awaiting admin approval."
+msgstr ""
+
+msgid "Your account is pending review"
+msgstr ""
+
+msgid "Your changes could not be saved"
+msgstr ""
+
+msgid "Your changes has been saved."
+msgstr ""
+
+msgid "Your email address, used on checkout procedure on"
+msgstr ""
+
+msgid "Your email has been confirmed."
+msgstr ""
+
+msgid "Your group successfully created. Redirecting to you new group..."
+msgstr ""
+
+msgid "Your license has expired"
+msgstr ""
+
+msgid "Your password has been changed."
+msgstr ""
+
+msgid "Your password has been reset."
+msgstr ""
+
+msgid "Your password reset link appears to be invalid. Please request a new link."
+msgstr ""
+
+msgid "Your search returned no results."
+msgstr ""
+
+msgid "Your secret key, generated on <a href=\"https://www.google.com/recaptcha/admin#list\" target=\"_blank\">https://www.google.com/recaptcha/admin#list</a>."
+msgstr ""
+
+msgid "Your site key, generated on <a href=\"https://www.google.com/recaptcha/admin#list\" target=\"_blank\">https://www.google.com/recaptcha/admin#list</a>."
+msgstr ""
+
+msgid "Your {site_name} password has been changed"
+msgstr ""
+
+msgid "[{site_name}] Account deleted"
+msgstr ""
+
+msgid "[{site_name}] New user account"
+msgstr ""
+
+msgid "[{site_name}] New user awaiting review"
+msgstr ""
+
+msgid "here"
+msgstr ""
+
+msgid "internal support"
+msgstr ""
+
+msgid "is loading..."
+msgstr ""
+
+msgid "is required"
+msgstr ""
+
+msgid "of"
+msgstr ""
+
+msgid "per"
+msgstr ""
+
+msgid "required"
+msgstr ""
+
+msgid "right after"
+msgstr ""
+
+msgid "to start searching, enter more than 2 characters"
+msgstr ""
+
+msgid ""
+"{display_name} has just applied for membership to {site_name} and is waiting to be reviewed.\n"
+"To review this member please click the following link: <a href="{user_profile_link}">{user_profile_link}</a>\n"
+"Here is the submitted registration form:\n"
+"{submitted_registration}"
+msgstr ""
+
+msgid ""
+"{display_name} has just created an account on {site_name}.\n"
+"To view their profile click here: <a href="{user_profile_link}">{user_profile_link}</a>\n"
+"Here is the submitted registration form:\n"
+"{submitted_registration}"
+msgstr ""
+
+msgid "{display_name} has just deleted their {site_name} account."
+msgstr ""
+

@@ -1,0 +1,63 @@
+{% spaceless %}
+	{% for conversation in conversations %}
+		<div class="item" data-id="{{ conversation.id }}">
+			<div class="content-info">
+				<div class="right last-message-date">{{ conversation.lastMessageCreatedAt }}</div>
+				<div class="right ui red mini circular label unread-messages-count"
+						{% if not conversation.unreadMessages %}
+							style="display:none"
+						{% endif %}
+				>{{ conversation.unreadMessages }}</div>
+			</div>
+			
+			{% set usersLength = conversation.users|length %}
+			<div class="conversation-image
+					{% if usersLength == 1 %}
+				        one
+			        {% elseif usersLength == 2 %}
+			            {% if not (usersLength == 2 and user.id == currentUser.id) %}
+				            one
+				        {% else %}
+				            two
+				        {% endif %}
+			        {% elseif usersLength > 2 %}
+				        many
+			        {% endif %}
+				">
+				{% for user in conversation.users %}
+					{% if not (usersLength == 2 and user.id == currentUser.id) %}
+						<div>
+							<img src="{{ userAvatar(user, 'medium') }}" alt="{{ user.displayName }}">
+						</div>
+					{% endif %}
+					{% if (usersLength == 2 and user.id == currentUser.id and loop.last) %}
+						<div>
+							<img src="{{ userAvatar(user, 'medium') }}" alt="{{ user.displayName }}">
+						</div>
+					{% endif %}
+				{% endfor %}
+			</div>
+			
+
+			<div class="content-data">
+				<div class="mp-coversation-users">
+					{% if usersLength <= 2 %}
+						{% for user in conversation.users %}
+							{% if not isCurrentUser(user) %}
+								{{ user.displayName }}
+							{% endif %}
+						{% endfor %}
+					{% else %}
+						{% for user in conversation.users %}
+							{% spaceless %}
+								{{ user.firstName }}
+							{% endspaceless %}{% if not loop.last %},{% endif %}
+						{% endfor %}
+					{% endif %}
+				</div>
+				<div class="last-message">{{ conversation.lastMessage }}</div>
+			</div>
+
+		</div>
+	{% endfor %}
+{% endspaceless %}

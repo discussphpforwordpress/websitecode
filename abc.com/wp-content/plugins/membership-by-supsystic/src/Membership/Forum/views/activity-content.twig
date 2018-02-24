@@ -1,0 +1,7 @@
+{% if activity.type == 'bbpress_topic' %}
+	<div class="mp-activity-content-text">{{ activity.post.post_content }}</div>
+{% endif %}
+
+{% if activity.type == 'bbpress_reply' %}
+	<div class="mp-activity-content-text">{{ activity.post_reply.post_content }}</div>
+{% endif %}

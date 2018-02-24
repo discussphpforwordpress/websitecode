@@ -1,0 +1,48 @@
+.sc-table.roles {
+     width: auto;
+     margin: 0;
+}
+.sc-table.roles td, .sc-table.roles th {
+    min-width: 200px;
+}
+
+.sc-table.roles td {
+    text-align: center;
+}
+.sc-table.roles th {
+    font-weight: normal;
+}
+
+.roles-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.roles-table-wrap  .fixed-column {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    border-right: 1px solid #ddd;
+    background: white;
+    z-index: 100;
+    opacity: 1;
+    white-space: nowrap;
+}
+
+.sc-table.roles td:first-child {
+    white-space: nowrap;
+    text-align: left;
+}
+
+.sc-table.roles td[colspan] {
+    white-space: nowrap;
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    .roles-table-wrap  .fixed-column  {
+        display: none;
+    }
+}

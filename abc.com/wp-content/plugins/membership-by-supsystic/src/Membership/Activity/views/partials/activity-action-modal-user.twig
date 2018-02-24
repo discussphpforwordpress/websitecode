@@ -1,0 +1,12 @@
+{% spaceless %}
+{% for activity in activities %}
+	<div class="eight wide mobile five wide tablet three wide computer column" data-activity-id="{{ activity.id }}">
+		<a href="{{ profileUrl(activity.author) }}" class="ui fluid image">
+			<img title="{{ activity.author.displayName }}" src="{{ userAvatar(activity.author, 'default') }}">
+		</a>
+		<div class="ui center aligned modal-user-name">
+			<a href="{{ profileUrl(activity.author) }}">{{ activity.author.displayName }}</a>
+		</div>
+	</div>
+{% endfor %}
+{% endspaceless %}

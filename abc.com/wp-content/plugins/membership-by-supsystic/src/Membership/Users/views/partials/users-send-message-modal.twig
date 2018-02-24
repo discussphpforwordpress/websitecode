@@ -1,0 +1,27 @@
+<div class="ui small modal" id="send-message-modal">
+    <i class="close icon"></i>
+    <div class="header">
+        {{ translate('Send message to') }} <span class="recipient-name"></span>
+    </div>
+    <div class="content">
+        <div class="ui form">
+            <div class="field">
+                <label>{{ translate('Message') }}</label>
+                <textarea rows="5"></textarea>
+            </div>
+        </div>
+		{% if useAttachment == 1 %}
+			<div class="mbs-all-attachment-list"></div>
+		{% endif %}
+	</div>
+    <div class="actions">
+		{% if useAttachment == 1 %}
+			<button class="mbs-add-attachment ui button mini"><span class="mbs-invisible">_</span><i class="icon attach"></i></button>
+		{% endif %}
+        <button class="ui button mini secondary cancel">{{ translate('Cancel') }}</button>
+        <button class="ui positive mini primary button mbsAttMessSendBtn">{{ translate('Send') }}</button>
+    </div>
+</div>
+{% if useAttachment == 1 %}
+	{{ environment.dispatcher.dispatch('users.send.message.attachment.template') }}
+{% endif %}

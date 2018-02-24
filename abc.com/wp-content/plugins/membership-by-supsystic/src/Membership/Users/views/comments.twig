@@ -1,0 +1,18 @@
+{% extends '@users/profile.twig' %}
+
+{% block content %}
+	<div id="mp-comments" class="ui basic vertical segment">
+		{% if comments %}
+			<div class="ui divided items">
+				{% include '@users/partials/comments.twig' with {'comments': comments} %}
+			</div>
+			<div class="ui basic vertical segment comments-loader" style="display: none">
+				<div class="ui active centered inline loader"></div>
+			</div>
+		{% else %}
+			<div class="ui message">
+				<p>{{ translate('No comments to show.') }}</p>
+			</div>
+		{% endif %}
+	</div>
+{% endblock %}

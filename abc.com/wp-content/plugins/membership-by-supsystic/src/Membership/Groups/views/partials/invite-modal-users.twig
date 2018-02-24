@@ -1,0 +1,7 @@
+{% embed '@users/partials/users-list.twig' %}
+	{% block actionButtons %}
+		<div class="ui mini primary button" data-action="invite-user">{{ translate('Invite') }}</div>
+		<div class="ui mini primary button" data-action="invite-administrator">{{ translate('Invite as administrator') }}</div>
+		<div class="ui mini primary button" data-action="cancel-invitation">{{ translate('Cancel invitation') }}</div>
+	{% endblock %}
+{% endembed %}

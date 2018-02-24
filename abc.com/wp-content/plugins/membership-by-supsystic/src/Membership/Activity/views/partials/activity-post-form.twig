@@ -1,0 +1,98 @@
+<div class="ui segments mp-activity-post-form" style="display:none;">
+    <div class="ui segment">
+        <div class="ui divided items">
+            <div class="item">
+                {% if context == 'group' and canEditGroup(requestedGroup) %}
+                    <img class="mp-activity-post-avatar activity-author-group" src="{{ groupLogo(requestedGroup, 'medium') }}" alt="">
+	                <img class="mp-activity-post-avatar activity-author-user" src="{{ userAvatar(currentUser, 'medium') }}" style="display: none" alt="">
+                {% else %}
+                    <img class="mp-activity-post-avatar activity-author-user" src="{{ userAvatar(currentUser, 'medium') }}" alt="">
+                {% endif %}
+                <div class="middle aligned content">
+                    <form class="ui reply form">
+                        <div class="field">
+							<textarea class="mp-form-textarea" rows="2" placeholder="{{ translate("What's new?") }}"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="ui segment mp-attachment-images" style="display:none;"></div>
+
+	{{ environment.dispatcher.dispatch('activity.form.photoGalleryContainer') }}
+	{{ environment.dispatcher.dispatch('activity.form.sliderContainer') }}
+	{{ environment.dispatcher.dispatch('activity.form.googleMapsContainer') }}
+
+    <div class="ui segment mp-attachment-link" style="display:none;">
+        <div class="ui active centered inline loader" style="display:none;"></div>
+    </div>
+	
+    <div class="ui secondary basic segment clearing post-form-buttons">
+
+	    <div class="post-activity-buttons">
+			<button class="ui icon button secondary mini mbsActivityAttachmentBtn" data-action="mbs-add-attachment"><i class="icon attach"></i></button>
+		    <button class="ui icon button primary mini right floated" data-action="post-activity">
+			    <span><i class="send icon"></i>{{ translate('Post') }}</span>
+		    </button>
+			{% if smilesList|length > 0 %}
+				<div class="mbs-smile-btn-wrapper">
+					<button class="ui button mini" data-action="add-smile-to-text">:D</button>
+					<div class="mp-smiles-window mbs-displ-hidden">
+						<div class="mbs-smiles-wrapper">
+							{% for scIndex, smileCode in smilesList %}
+								<div class="mbs-sw-one-smile" data-id="{{ scIndex }}" data-code="{{ smileCode }}">{{ smileCode }}</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			{% endif %}
+
+            {{ environment.dispatcher.dispatch('activity.form.actions') }}
+		
+		    {% if context == 'group' and canEditGroup(requestedGroup) %}
+			    <div class="ui pointing left top dropdown mp-activity-author right floated">
+				    <div class="text">
+					    <img class="ui mini image activity-author-group" src="{{ groupLogo(requestedGroup, 'small') }}" >
+					    <img class="ui mini image activity-author-user" src="{{ userAvatar(currentUser, 'small') }}" style="display: none">
+				    </div>
+				    <i class="dropdown icon"></i>
+				    <div class="menu">
+					    <div class="header">Post as</div>
+					    <div class="divider"></div>
+					    <div class="item" data-value="user">
+						    <img class="ui avatar image" src="{{ userAvatar(currentUser, 'small') }}">
+						    {{ currentUser.displayName }}
+					    </div>
+					    <div class="item" data-value="group">
+						    <img class="ui avatar image" src="{{ groupLogo(requestedGroup, 'small') }}">
+						    {{ requestedGroup.name }}
+					    </div>
+				    </div>
+			    </div>
+		    {% endif %}
+	    </div>
+	
+	    <div class="edit-activity-buttons" style="display:none;">
+		    <div class="post-activity-buttons edit-activity-buttons" style="display: inline-block;">
+			    <button class="ui icon button secondary mini mbsActivityAttachmentBtn" data-action="mbs-add-attachment"><i class="icon attach"></i></button>
+			    {% if smilesList|length > 0 %}
+				    <div class="mbs-smile-btn-wrapper">
+					    <button class="ui button mini" data-action="add-smile-to-text">:D</button>
+					    <div class="mp-smiles-window mbs-displ-hidden">
+						    <div class="mbs-smiles-wrapper">
+							    {% for scIndex, smileCode in smilesList %}
+								    <div class="mbs-sw-one-smile" data-id="{{ scIndex }}" data-code="{{ smileCode }}">{{ smileCode }}</div>
+							    {% endfor %}
+						    </div>
+					    </div>
+				    </div>
+			    {% endif %}
+		    </div>
+		    <button class="ui floating icon button mini right floated primary" data-action="save">{{ translate('Save') }}</button>
+		    <button class="ui floating icon button mini right floated secondary" data-action="cancel">{{ translate('Cancel') }}</button>
+		</div>
+	    
+    </div>
+</div>

@@ -1,0 +1,61 @@
+{% extends '@users/profile.twig' %}
+
+{% block content %}
+<div class="ui basic vertical segment">
+	
+	{% if currentUserHasPermission('view-follows', requestedUser) or currentUserHasPermission('view-followers', requestedUser) %}
+		<div class="ui pointing secondary menu users-tab-items">
+			{% if currentUserHasPermission('view-followers', requestedUser) %}
+				<a class="item active" data-tab="followers">{{ translate('Followers') }} <div class="ui mini label">{{ requestedUser.followers }}</div></a>
+			{% endif %}
+			{% if currentUserHasPermission('view-follows', requestedUser) %}
+				<a class="item" data-tab="following">{{ translate('Following') }} <div class="ui mini label">{{ requestedUser.follows }}</div></a>
+			{% endif %}
+		</div>
+	{% endif %}
+	
+	<div class="users-tabs">
+		<div class="ui tab basic vertical segment active" data-tab="followers">
+			<div class="ui basic vertical segment form user-search-input">
+				<div class="ui fluid icon input">
+					<input type="text" placeholder="{{ translate('Find user...') }}">
+					<i class="search icon"></i>
+				</div>
+			</div>
+			<div class="ui two cards stackable users-list">
+				{% include '@users/partials/users-list.twig' with {'users': followers} only %}
+			</div>
+			<div class="ui basic vertical segment no-users" {% if followers %}style="display: none"{% endif %}>
+				<div class="ui message">
+					<p>{{ translate('No followers to show.') }}</p>
+				</div>
+			</div>
+			<div class="ui basic segment very padded list-loader" style="display:none;">
+				<div class="ui active loader"></div>
+			</div>
+		</div>
+		
+		<div class="ui tab basic vertical segment" data-tab="following">
+			<div class="ui basic vertical segment form user-search-input">
+				<div class="ui fluid icon input">
+					<input type="text" placeholder="{{ translate('Find user...') }}">
+					<i class="search icon"></i>
+				</div>
+			</div>
+			<div class="ui two cards stackable users-list">
+				{% include '@users/partials/users-list.twig' with {'users': follows} only %}
+			</div>
+			<div class="ui basic vertical segment no-users" {% if follows %}style="display: none"{% endif %}>
+				<div class="ui message">
+					<p>{{ translate('No following to show.') }}</p>
+				</div>
+			</div>
+			<div class="ui basic segment very padded list-loader" style="display:none;">
+				<div class="ui active loader"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{{ environment.dispatcher.dispatch('users.send.message.modal.wnd') }}
+{% endblock %}

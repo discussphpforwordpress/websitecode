@@ -1,0 +1,19 @@
+.mp-friends-list {
+	overflow: auto;
+	padding: 0.5em;
+	border: 1px solid #ccc;
+}
+
+.mp-friend {
+	width: 50%;
+	float: left;
+}
+
+@media only screen and (max-width: 576px)
+{
+	.ui.two.cards>.card {
+		width: 100%;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}

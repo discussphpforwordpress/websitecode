@@ -1,0 +1,59 @@
+<div class="ui small modal" id="create-group-modal">
+	<i class="close icon"></i>
+	<div class="header">{{ translate('Create new group') }}</div>
+	<div class="content">
+		<div class="ui form">
+			
+			<div class="ui message respone-message" style="display: none"></div>
+			<div class="field">
+				<label>{{ translate('Group Name') }}</label>
+				<input type="text" name="name">
+			</div>
+			<div class="field">
+				<label>{{ translate('Group Description') }}</label>
+				<textarea max="2000" rows="2" name="description"></textarea>
+			</div>
+
+			<div class="field">
+				<label>{{ translate('Group Category') }}</label>
+				<select name="category">
+					<option value="0">{{ translate('None') }}</option>
+					{% if groupCategoryList|length %}
+						{% for oneGcItem in groupCategoryList %}
+							<option value="{{ oneGcItem['id'] }}">{{ oneGcItem['name'] }}</option>
+						{% endfor %}
+					{% endif %}
+				</select>
+			</div>
+			
+			<div class="field">
+				<label>{{ translate('Community type') }}</label>
+				<select class="ui dropdown" name="type">
+					<option value="open">Open</option>
+					<option value="closed">Closed</option>
+					<option value="private">Private</option>
+				</select>
+			</div>
+			<div class="field">
+				<label>{{ translate('Invite users') }}</label>
+				<div class="ui fluid multiple search selection dropdown">
+					<input type="hidden" name="users">
+					<i class="dropdown icon"></i>
+					<div class="default text">{{ translate('Enter name') }}</div>
+					<div class="ui active small inline loader" style="display: none; margin: 0.2em 0;"></div>
+					<div class="menu ui relaxed list">
+						{% include '@base/partials/search-dropdown-user.twig' with {'users': friends} %}
+					</div>
+				</div>
+				<div class="mbsInputUnderLabel">{{ translate('to start searching, enter more than 2 characters') }}</div>
+			</div>
+		</div>
+	</div>
+	<div class="actions">
+		<button class="ui button secondary mini cancel">{{ translate('Cancel') }}</button>
+		<button class="ui button mini primary approve">{{ translate('Create') }}</button>
+	</div>
+
+	<input type="hidden" id="mbsMsgErrorOcured" value="{{ translate('Error ocured!') }}"/>
+	<input type="hidden" id="mbsMsgGroupCreated-1" value="{{ translate('Your group successfully created. Redirecting to you new group...') }}"/>
+</div>

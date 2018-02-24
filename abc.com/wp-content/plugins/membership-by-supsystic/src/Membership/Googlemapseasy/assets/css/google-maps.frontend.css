@@ -1,0 +1,158 @@
+.mbs-google-maps-container .mbs-one-gg-image {
+    width: 130px;
+    height: 130px;
+    margin: 1% 1%;
+    background: #eee;
+    vertical-align: middle;
+    display: inline-table;
+    position: relative;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.mbs-google-maps-container .mbs-one-gg-image.selected:before {
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 100;
+}
+
+.mbs-google-maps-container .mbs-preview {
+    width: 130px;
+    height: 130px;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+    position: relative;
+}
+
+.mbs-google-maps-container .mbs-one-gg-image img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.mbs-google-maps-container .close {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    cursor: pointer;
+    margin: 0;
+    width: 10px;
+    height: 10px;
+    line-height: 13px;
+}
+.mbs-google-maps-container .close:before {
+    display: inline-block !important;
+    vertical-align: middle !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 10px !important;
+    height: 10px !important;
+    line-height: 3px !important;
+    font-size: 1em !important;
+}
+
+#mbsBlockWithGoogleMaps {
+    width: 600px;
+    height: 300px;
+    border: 1px solid #000;
+}
+.mbs-gmaps-wrapper {
+    width: 100%;
+    margin-top: 10px;
+}
+.mbs-add-marker-inputs {
+    padding: 0 20px;
+    display: none;
+}
+.mbs-add-marker-form {
+    width: 100%;
+}
+
+.mbs-gmp-button {
+    display: inline-block;
+}
+
+.mbsGmeWndIconWrapper .mbsGmeIconPreview {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.mbsGmeWndIconWrapper .mbsGmeIconPreview.mbsSelected {
+    border: 1px solid rgb(25, 105, 164);
+    background-color: rgb(25, 105, 164);
+}
+.mbsGmeWndIconWrapper .mbsGmeIconPreview .mbsGmeMarkerIcon {
+    height: 43px;
+}
+
+.mbsGme-marker-list-wrap {
+    margin: 10px 0;
+    table-layout: auto;
+}
+.mbsGme-marker-list-wrap tr td {
+    text-align: center;
+    overflow: hidden;
+    min-width: 90px;
+}
+.mbsGme-marker-list-buttons .mbsGme-marker-edit,
+.mbsGme-marker-list-buttons .mbsGme-marker-edit:hover,
+.mbsGme-marker-list-buttons .mbsGme-marker-remove:hover,
+.mbsGme-marker-list-buttons .mbsGme-marker-remove {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    line-height: inherit !important;
+}
+.mbsGme-marker-list-buttons .mbsGme-marker-edit {
+    margin: 5px 0;
+}
+.mbsGme-marker-list-wrap .mbsGme-marker-list-row {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}
+.mbsGme-marker-list-wrap .mbsGme-marker-list-lat,
+.mbsGme-marker-list-wrap .mbsGme-marker-list-lng {
+    display: inline-block;
+}
+.mbsGme-marker-list-wrap .mbsGme-marker-list-title {
+    max-width: 200px;
+}
+.mp-google-maps-modal.mbs-gg-tab-pages .content.mbs-gg-tab-page[data-tab-info="page2"] {
+    overflow-y: scroll;
+}
+.mbs-gg-tab-page[data-tab-info="page2"] button {
+    cursor: pointer;
+}
+.ui-menu.ui-widget.ui-autocomplete {
+    z-index: 1000;
+    display: block;
+}
+.mbs-add-marker-form .ui.button {
+    vertical-align: middle;
+}
+.mbsGme-page2-one-row {
+    margin: 10px 0;
+}
+
+.mbsGme-marker-edit .icon,
+.mbsGme-marker-remove .icon {
+    margin: 0;
+    line-height: 20px;
+}

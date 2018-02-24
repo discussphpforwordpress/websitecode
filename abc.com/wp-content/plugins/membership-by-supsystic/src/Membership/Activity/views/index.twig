@@ -1,0 +1,56 @@
+<div id="supsystic-membership" class="sc-membership">
+	{% if activityFilterEnabled %}
+	<div>
+		<div class="ui floating labeled icon top left pointing dropdown small button activity-filter">
+			<input name="activity-filter" type="hidden" value="{{ activityFilter }},{{ activityTypes|join(',') }}">
+			<span class="text">
+				{% if activityFilter == 'subscriptions' %}
+						{{ translate('Subscriptions') }}
+					{% elseif activityFilter == 'popular' %}
+						{{ translate('Popular') }}
+					{% elseif activityFilter == 'site-wide' %}
+						{{ translate('Site wide') }}
+				{% endif %}
+			</span>
+			<i class="filter icon"></i>
+			<div class="menu">
+				<div class="header">
+					<i class="filter icon"></i>
+					{{ translate('Activity filter') }}
+				</div>
+				<div class="scrolling menu activity-filter-menu">
+					{% if userLoggedIn %}
+						<div class="item activity-filter-item {{ activityFilter == 'subscriptions' ? 'active' }}" data-text="{{ translate('Subscriptions') }}" data-value="subscriptions">
+							{{ translate('Subscriptions') }}
+						</div>
+					{% endif %}
+					<div class="item activity-filter-item {{ activityFilter == 'popular' ? 'active' }}" data-text="{{ translate('Popular') }}" data-value="popular">
+						{{ translate('Popular') }}
+					</div>
+					<div class="item activity-filter-item {{ activityFilter == 'site-wide' ? 'active' }}" data-text="{{ translate('Site wide') }}" data-value="site-wide">
+						{{ translate('Site wide') }}
+					</div>
+				</div>
+				<div class="header">
+					<i class="tags icon"></i>
+					{{ translate('Activity type') }}
+				</div>
+				<div class="scrolling menu">
+					{% for type, title in activityAllTypes %}
+						{% set isActive = false %}
+						{% if type in activityTypes %}
+							{% set isActive = true %}
+						{% endif %}
+						
+						<div class="item activity-type-item {{ isActive ? 'active' }}" data-value="{{ type }}">
+							<div class="ui {{ isActive ? 'green' : 'red' }} empty circular label"></div>
+							{{ title }}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endif %}
+	{% include '@activity/partials/activities-container.twig' with {'activities': activities, 'context': 'activity', 'smilesList': smilesList, 'settings': settings, } %}
+</div>

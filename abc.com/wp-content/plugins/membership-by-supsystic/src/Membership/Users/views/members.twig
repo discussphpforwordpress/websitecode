@@ -1,0 +1,76 @@
+{% set paginationIsEnabled = settings.design.members['show-pages'] == 'true' %}
+{% set tabsIsEnabled = settings.design.members['show-tabs'] == 'true' %}
+
+<div class="sc-membership">
+    <div class="ui grid">
+        <div class="wide column">
+
+            <div class="ui form basic vertical segment" id="mbsMembersSearchForm">
+                <div class="ui fluid icon input {% if paginationIsEnabled %}action{% endif %}" id="mbsMsfUserNameWr">
+                    <input type="text" placeholder="{{ translate('Find user...') }}" id="users-search-input" value="{{ request.query.search }}">
+                    {% if paginationIsEnabled %}
+                        <button class="ui icon button"><i class="search icon"></i></button>
+                    {% else %}
+                        <i class="search icon"></i>
+                    {% endif %}
+                </div>
+				<div class="field" id="mbsMsfUserRoleWr">
+					<select name="mbsFindUserRoleSlct" id="mbsMsfUserRoleId">
+						{% for oneRole in userRoleList %}
+							<option value="{{ oneRole.id }}" {% if oneRole.selected == true %}selected="selected"{% endif %}>{{ oneRole.name }}</option>
+						{% endfor %}
+					</select>
+				</div>
+			</div>
+	        {% if user and tabsIsEnabled %}
+				<div class="ui basic vertical segment">
+					<div class="ui center aligned container member-tabs" style="position: relative;">
+						<button class="ui mini primary button {% if userType == 'all' %}active{% endif %}" data-current-url="{{ membersPageUrl }}" data-user-id="{{ user.id }}" data-count="{{ total_count }}" data-action="all" style="">{{ translate('All members') }}<span class="sc-count">{{ total_count }}</span></button>
+						<button class="ui mini primary button {% if userType == 'friends' %}active{% endif %}" data-current-url="{{ membersPageUrl }}" data-user-id="{{ user.id }}" data-count="{{ user.friends }}" data-action="friends" style="">{{ translate('Friends') }}<span class="sc-count">{{ user.friends }}</span></button>
+						<button class="ui mini primary button {% if userType == 'follows' %}active{% endif %}" data-current-url="{{ membersPageUrl }}" data-user-id="{{ user.id }}" data-count="{{ user.follows }}" data-action="follows" style="">{{ translate('Follows') }}<span class="sc-count">{{ user.follows }}</span></button>
+						<button class="ui mini primary button {% if userType == 'followers' %}active{% endif %}" data-current-url="{{ membersPageUrl }}" data-user-id="{{ user.id }}" data-count="{{ user.followers }}" data-action="followers" style="">{{ translate('Followers') }}<span class="sc-count">{{ user.followers }}</span></button>
+					</div>
+				</div>
+	        {% endif %}
+            <div class="ui basic vertical segment">
+                <div class="ui two cards stackable users-list">
+                    {% include '@users/partials/users-list.twig' with {'users': users} only %}
+                </div>
+	            <div class="ui two cards stackable users-list-tabs" style="display: none"></div>
+            </div>
+
+            {% if paginationIsEnabled and users is not empty %}
+	            <div class="ui center aligned container users-list-pagination">
+                    {% include '@users/partials/users-list-pagination.twig' with {'totalPages': totalPages, 'currentPage': currentPage, 'userType': userType} only %}
+                </div>
+            {% endif %}
+
+            {% if settings.design.members['show-load-more-button'] == 'true' %}
+                <div class="ui basic vertical segment" id="users-list-load-more">
+                    <div class="ui center aligned container">
+                        <button class="ui mini primary button" style="display: none">{{ translate('Load more') }}</button>
+                    </div>
+                </div>
+            {% endif %}
+
+            <div class="ui basic segment very padded users-list-loader" style="display: none">
+                <div class="ui active loader"></div>
+            </div>
+
+            {% if users is empty %}
+                {% if request.query.search is not empty %}
+                    <div class="ui center aligned container">{{ translate('Your search returned no results.') }}</div>
+                {% else %}
+                    <div class="ui center aligned container">{{ translate('There is no users yet.') }}</div>
+                {% endif %}
+            {% endif %}
+
+        </div>
+    </div>
+
+	{{ environment.dispatcher.dispatch('users.send.message.modal.wnd') }}
+</div>
+
+{% if not userLoggedIn %}
+	{% include '@auth/partials/login-modal.twig' %}
+{% endif %}

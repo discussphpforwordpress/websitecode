@@ -1,0 +1,156 @@
+{% macro createField(field) %}
+	{% import _self as fields %}
+	{% if field.enabled and field.registration %}
+		{{ attribute(fields, field.type, [field]) }}
+	{% endif %}
+{% endmacro %}
+
+{% macro section(field) %}
+	<h2>{{ field.label }}</h2>
+{% endmacro %}
+
+{% macro text(field) %}
+	<div class="mp-field">
+		<div class="mp-field-label">
+			<label>{{ field.label }}</label>
+		</div>
+		<div class="mp-field-input">
+			<input 
+				type="text" 
+				name="{{ field.name }}"
+			>
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro email(field) %}
+	<div class="mp-field">
+		<div class="mp-field-label">
+			<label>{{ field.label }}</label>
+		</div>
+		<div class="mp-field-input">
+			<input
+				type="email"
+				name="{{ field.name }}"
+			>
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro password(field) %}
+	<div class="mp-field">
+		<div class="mp-field-label">
+			<label>{{ field.label }}</label>
+		</div>
+		<div class="mp-field-input">
+			<input
+				type="password"
+				name="{{ field.name }}"
+			>
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro numeric(field) %}
+	<div class="mp-field">
+		<div class="mp-field-label">
+			<label>{{ field.label }}</label>
+		</div>
+		<div class="mp-field-input">
+			<input
+				type="number"
+				name="{{ field.name }}"
+			>
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro date(field) %}
+	<div class="mp-field">
+		<div class="mp-field-label">
+			<label>{{ field.label }}</label>
+		</div>
+		<div class="mp-field-input">
+			<input
+				type="date"
+				name="{{ field.name }}"
+			>
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro radio(field) %}
+	<div class="mp-field">
+		<label>{{ field.label }}</label>
+		<div class="membership-radio-input">
+			{% for option in field.options %}
+				<input
+					type="radio"
+					name="{{ field.name }}[]"
+					id="{{ field.name }}-{{ loop.index }}"
+					value="{{ option.id }}"
+					{% if option.checked %}
+						checked="true"
+					{% endif %}
+				>
+				<label for="{{ field.name }}-{{ loop.index }}">{{ option.name }}</label>
+			{% endfor %}
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro checkbox(field) %}
+	<div class="mp-field">
+		<label>{{ field.label }}</label>
+		<div class="membership-radio-input">
+			{% for option in field.options %}
+				<input
+					type="checkbox"
+					name="{{ field.name }}[]"
+					id="{{ field.name }}-{{ loop.index }}"
+					value="{{ option.id }}"
+					{% if option.checked %}
+						checked="true"
+					{% endif %}
+				>
+				<label for="{{ field.name }}-{{ loop.index }}">{{ option.name }}</label>
+			{% endfor %}
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro drop(field) %}
+	<div class="mp-field">
+		<label>{{ field.label }}</label>
+		<div class="membership-dropdown-input">
+			<select name="{{ field.name }}">
+				{% for option in field.options %}
+					<option
+						value="{{ option.id }}"
+						{% if option.checked %}
+							selected="true"
+						{% endif %}
+					>{{ option.name }}</option>
+				{% endfor %}
+			</select>
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro scroll(field) %}
+	<div class="mp-field">
+		<label>{{ field.label }}</label>
+		<div class="membership-scroll-input">
+			<select name="{{ field.name }}[]" multiple="true" style="width: 140px">
+				{% for option in field.options %}
+					<option
+						value="{{ option.id }}"
+						{% if option.checked %}
+							selected="true"
+						{% endif %}
+					>{{ option.name }}</option>
+				{% endfor %}
+			</select>
+		</div>
+	</div>
+{% endmacro %}

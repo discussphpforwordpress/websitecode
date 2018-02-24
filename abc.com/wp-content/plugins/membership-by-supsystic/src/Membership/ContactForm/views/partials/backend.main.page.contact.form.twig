@@ -1,0 +1,80 @@
+<div class="mp-option mp-page-option mp-page-contact-form" data-page-slug="contact_form">
+	{% if contactFormPresets %}
+	<div class="row">
+		<div class="col-md-4 mbsThinCol">
+			<div class="mp-option-label">
+				<span title="{{ translate('Contact Us') }}">{{ translate('Contact Us') }}</span>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div class="mp-option-input-with-button">
+				<div class="mp-option-button mp-opt-contact-form-btn" {% if (pagesInfo.contact_form) %}style="display: none"{% endif %}>
+					<button class="sc-button icon-button create-page-button primary" data-page-slug="contact_form" id="contactFormCreatePageBtn">
+						<i class="fa fa-plus"></i>
+						<span>{{ translate('Create page') }}</span>
+					</button>
+				</div>
+				<div class="mp-option-select">
+					{{ function('wp_dropdown_pages', {'name': 'pages[contact_form]', 'selected': pagesInfo.contact_form, 'class': 'sc-input wp-pages-list', 'echo': false, 'show_option_none': 'Select Page', 'option_none_value': '__none'})|raw }}
+				</div>
+			</div>
+		</div>
+	</div>
+	{# need to repeat all this magic for "correct select input width" #}
+	<div class="row" id="contact-form-preset-row">
+		<div class="col-md-4 mbsThinCol">
+			<div class="mp-option-label" style="text-align: right; width: 300px; margin-top: 10px;">
+				<div class="mpp-tooltip tooltip">
+					<i class="fa fa-question sc-tooltip"></i>
+					<div class="tooltip_content">
+						<div>{{ translate('Select contact form that will be displayed on Contact Us page.') | raw }}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div class="mp-option-input-with-button" style="padding-top: 5px;">
+				<div class="mp-option-select">
+					<select id="contactFormPresetSel" style="width: 165px;" name="pages[contact_form_preset]">
+						<option value="">{{ translate('Select value') }}</option>
+						{% for val1 in contactFormPresets %}
+							<option value="{{ val1.id }}" {% if pagesInfo.contact_form_preset == val1.id %}selected="selected"{% endif %}>{{ val1.label }}</option>
+						{% endfor %}
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% elseif isPluginActive == true %}
+	<div class="row">
+		<div class="col-md-4 mbsThinCol">
+			<div class="mp-option-label">
+				<span title="{{ translate('Contact Us') }}">{{ translate('Contact Us') }}</span>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div style="margin: 7px 0;">
+				{{ translate('You have no Contact Form for now. Create your Contact Form or Enable Membership feature for contact form which you want to use for Contact Us page.') }}
+			</div>
+		</div>
+	</div>
+	{% else %}
+	<div class="row">
+		<div class="col-md-4 mbsThinCol">
+			<div class="mp-option-label">
+				<span title="{{ translate('Contact Us') }}">{{ translate('Contact Us') }}</span>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div style="margin: 7px 0;">
+				{{ translate('You need to install Contact Form by Supsystic to use this feature. ') }}
+				<a target="_blank" href="{{ pluginInstallUrl }}">{{ translate('Install') }}</a>
+				{{ translate(' plugin from your admin area, or visit it\'s official page on Wordpress.org ') }}
+				<a target="_blank" href="{{ wpPluginInstallUrl }}">{{ translate('here') }}</a>
+			</div>
+		</div>
+	</div>
+	{% endif %}
+</div>
+
+

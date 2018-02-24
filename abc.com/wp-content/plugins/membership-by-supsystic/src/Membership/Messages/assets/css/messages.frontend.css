@@ -1,0 +1,289 @@
+#conversations a {
+	box-shadow: none;
+}
+
+#conversations textarea {
+    box-sizing: border-box;
+}
+
+.conversation-messages, .conversation-users {
+	min-height: 2px;
+	max-height: 300px;
+	overflow-x: hidden;
+}
+
+.conversation-messages {
+    max-width: 1127px!important;
+}
+
+.conversation .mp-message {
+	margin: 0 0.5em!important;
+}
+
+.conversation.delete-messages-action .mp-message .delete-message-column {
+    display: block!important;
+}
+
+
+#conversations .mp-message-container {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+
+#conversations .mp-message-avatar, #conversations .mp-message-content {
+	display: table-cell;
+	vertical-align: top;
+}
+
+#conversations .mp-message-avatar, #conversations .mp-message-content .text {
+	margin-top: .5em;
+}
+.mp-message-avatar {
+	min-width: 65px;
+	width: 65px;
+}
+
+#conversations .conversation-image {
+    overflow: hidden;
+}
+
+#conversations .mp-message-container img {
+	margin-right: auto;
+	max-width: 50px;
+}
+
+.mp-message-content {
+	width: auto;
+}
+
+.new-conversation-container .multiple.dropdown > .image.label {
+    padding: 0.6em 0.5em;
+    font-size: 14px;
+}
+
+#conversations .conversation-image {
+	width: 50px;
+	height: 50px;
+	float: left;
+	position: relative;
+}
+
+#conversations .conversation-image.two div {
+	position: absolute;
+	width: 24px;
+	height: 100%;
+	overflow: hidden;
+}
+
+#conversations .conversation-image.two div:nth-child(2) {
+	position: absolute;
+	left: 26px;
+}
+
+#conversations .conversation-image.two div img {
+	width: 50px;
+	max-width: none;
+	position: relative;
+	left: -12px;
+}
+
+#conversations .conversation-image.many div {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	overflow: hidden;
+}
+
+
+#conversations .conversation-image.many div:nth-child(2) {
+	position: absolute;
+	left: 26px;
+}
+
+#conversations .conversation-image.many div:nth-child(3) {
+	position: absolute;
+	top: 26px;
+}
+
+#conversations .conversation-image.many div:nth-child(4) {
+	position: absolute;
+	top: 26px;
+	left: 26px;
+}
+
+#conversations .conversations-list .new-conversation {
+	margin-right: 10px;
+}
+
+#conversations .conversations-list .item {
+	overflow: hidden;
+	padding: 1em;
+}
+
+#conversations .conversations-list .content-data {
+	margin: 0 75px 0 50px;
+	width: 46%;
+}
+
+#conversations .conversations-list .content-info {
+	float: right;
+	white-space: nowrap;
+	text-align: right;
+	font-size: 0.9em;
+}
+
+#conversations .conversations-list .content-info div {
+	margin-bottom: 0.5em;
+}
+
+#conversations .mp-coversation-users,
+#conversations .last-message {
+	display: block;
+	white-space: nowrap;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-overflow: "…";
+	margin: 0 1em;
+}
+
+#conversations .last-message {
+	margin-top: 0.5em
+}
+
+@media only screen and (max-width: 576px)
+{
+	.ui.grid>.six.wide.column,
+	.ui.grid>.ten.wide.column {
+		width: 100%!important;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	#conversations .conversations-list {
+		min-height: 250px;
+	}
+}
+
+.conversation-delete-messages-buttons .center.container {
+	margin-bottom: 1.3em;
+	font-size: 1em;
+}
+
+.mbsMsgAttachmentWrap {
+	display: block;
+	max-width: 100%;
+	padding: 10px 0 0;
+}
+.mbsMsgAttachmentOne {
+	display: inline-block;
+	max-width: 150px;
+	max-height: 250px;
+	text-align: center;
+	margin: 0 10px 10px;
+	cursor: pointer;
+	vertical-align: bottom;
+}
+.mbsMsgAttachmentOne .mbsMsgAttachmImage {
+	max-width: 100px !important;
+	max-height: 100px;
+	display: inline-block;
+}
+.mbsMsgAttachmentOne .mbsMsgAttachmCaption {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#mbsImagePopupModalWnd {
+	max-height: 90%;
+	max-width: 90%;
+	text-align: center;
+	overflow: scroll;
+	padding: 10px;
+}
+#mbsImagePopupModalWnd .content {
+	width: auto;
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+}
+.mbsConversationCount.characters-count {
+	float: left !important;
+}
+.mbsMessButtonsWrap .mbsAddAttachment2 {
+	position: relative;
+	margin-left: 20px;
+}
+.mbsAddAttachment2 .mbs-invisible {
+	color: transparent !important;
+}
+.mbsMessButtonsWrap .mbsAddAttachment2 .icon.attach {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin:0 !important;
+	font-size: 26px;
+	line-height: 22px;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform:    translate(-50%, -50%);
+	-ms-transform:     translate(-50%, -50%);
+	-o-transform:      translate(-50%, -50%);
+	transform:         translate(-50%, -50%);
+}
+
+.mbs-all-attachment-list {
+	padding: 20px 0 0;
+}
+.mbs-one-any-attachment {
+	min-height: 50px;
+	min-width: 100px;
+	max-width: 150px;
+	display: inline-block;
+	margin: 10px;
+	vertical-align: top;
+	text-align: center;
+	position: relative;
+}
+.mbs-one-any-attachment .mbs-att-image {
+	max-width: 150px;
+	max-height: 100px;
+	display: inline-block !important;
+}
+.mbs-one-any-attachment .mbs-image-caption {
+	overflow: hidden;
+	display: block;
+	margin: 10px 0 0;
+	white-space: nowrap;
+}
+
+.mbs-one-any-attachment .mbs-progress-bar {
+	position: absolute;
+	bottom: 10px;
+	padding: 0 10px;
+	width: 100%;
+}
+.mbs-one-any-attachment i {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: none;
+	color: #f5f5f5;
+}
+.mbs-one-any-attachment:hover i {
+	display: block;
+}
+.mbs-one-any-attachment i:hover {
+	color: white;
+	cursor: pointer;
+}
+.mbs-one-any-attachment:hover .mbs-attachment-image-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: black;
+	opacity: 0.4;
+}

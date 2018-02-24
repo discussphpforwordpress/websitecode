@@ -1,0 +1,29 @@
+.mp-followers-list {
+	overflow: auto;
+	padding: 0.5em;
+	border: 1px solid #ccc;
+}
+
+.mp-followers {
+	width: 50%;
+	float: left;
+}
+
+@media only screen and (max-width: 576px)
+{
+	.ui.two.cards>.card {
+		width: 100%;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}
+
+.followers-section-menu {
+	width: 10rem !important;
+}
+
+.user-action-button {
+	padding: 11px !important;
+	margin-right: 0 !important;
+	width: 91px !important;
+}

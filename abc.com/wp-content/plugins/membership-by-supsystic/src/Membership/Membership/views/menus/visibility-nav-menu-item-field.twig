@@ -1,0 +1,24 @@
+<div class="description description-wide {{ class }}" style="padding: 20px 0;">
+	<div class="mbs-nav-menu-edit-item-param">
+		<div class="mbs-nmei-header1" style="background-color: #3ab3b5; color: #fff; padding: 10px; border-radius: 3px; font-size: 1.2em; font-weight: bold;">
+			{{ translate('Membership Menu Settings') }}
+		</div>
+		<div class="mbs-mnei-label" style="padding: 5px 0; font-style: italic; font-weight: bold;">
+			{{ translate('Who can see this menu link?') }}
+		</div>
+		<div class="mbs-mnei-input-list">
+			<label for="{{ id }}-0">
+				<input id="{{ id }}-0" type="radio" name="{{ name }}" value="0" {% if value == null %}{{ 'checked="checked"' }}{% endif %}/>
+				{{ translate('Everyone') }}
+			</label>
+			<label for="{{ id }}-1">
+				<input id="{{ id }}-1" type="radio" name="{{ name }}" value="1" {% if value == 1 %}{{ 'checked="checked"' }}{% endif %}/>
+				{{ translate('Logged In Users') }}
+			</label>
+			<label for="{{ id }}-2">
+				<input id="{{ id }}-2" type="radio" name="{{ name }}" value="2" {% if value == 2 %}{{ 'checked="checked"' }}{% endif %}/>
+				{{ translate('Logged Out Users') }}
+			</label>
+		</div>
+	</div>
+</div>

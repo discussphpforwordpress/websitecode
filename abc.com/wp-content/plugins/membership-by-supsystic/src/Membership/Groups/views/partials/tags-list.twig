@@ -1,0 +1,5 @@
+{% for tag in tags %}
+	<a class="ui large label" data-id="{{ tag.id }}">{{ tag.title }}
+		<i class="delete icon"></i>
+	</a>
+{% endfor %}

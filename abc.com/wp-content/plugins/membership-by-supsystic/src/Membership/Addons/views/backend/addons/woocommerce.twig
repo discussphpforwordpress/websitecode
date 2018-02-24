@@ -1,0 +1,14 @@
+{% extends "@base/layouts/backend.twig" %}
+
+{% block mainHeader %}
+	<div class="sc-header sc-get-addon-header">
+		<h2>{{ translate('WooCommerce') }}</h2>
+		<a target="_blank" href="{{ getMembershipAddonUrl('membership-woocommerce') }}"><button class="sc-button primary">{{ translate('Get PRO Addon') }}</button></a>
+	</div>
+{% endblock %}
+
+{% block main %}
+	<a target="_blank" href="{{ getMembershipAddonUrl('membership-woocommerce') }}">
+		<img src="{{ assets('addons', '') }}" title="{{ translate('Get Pro') }}">
+	</a>
+{% endblock %}

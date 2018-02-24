@@ -1,0 +1,86 @@
+{% extends '@users/profile.twig' %}
+
+{% block content %}
+	<div class="ui basic vertical segment">
+		<div class="groups-tab-items" {% if not (groupInvites and isCurrentUser(requestedUser)) %}style="display:none"{% endif %}>
+			<div class="ui pointing secondary menu" id="friends-tabs">
+				<a class="item active" data-tab="joined">Groups <div class="ui mini label">{{ groupCounts.joined }}</div></a>
+				<a class="item" data-tab="invited">Invites <div class="ui mini red label">{{ groupCounts.invited }}</div></a>
+			</div>
+			<div class="ui basic segment very padded friends-list-loader" style="display:none;">
+				<div class="ui active loader"></div>
+			</div>
+		</div>
+		
+		<div class="groups-tabs">
+			<div class="ui tab basic vertical segment active" data-tab="joined">
+				<div class="ui basic vertical segment form group-search-input">
+					<select name="category" class="mbsGroupsSearchCategory">
+						<option value="0">{{ translate('All categories') }}</option>
+						{% if groupCategoryList|length %}
+							{% for oneGcItem in groupCategoryList %}
+								<option value="{{ oneGcItem['id'] }}">{{ oneGcItem['name'] }}</option>
+							{% endfor %}
+						{% endif %}
+					</select>
+					<div class="ui fluid icon input mbsGroupsSearchName">
+						<input type="text" placeholder="{{ translate('Find group...') }}">
+						<i class="search icon"></i>
+					</div>
+				</div>
+				<div class="ui two cards stackable groups-list">
+					{% include '@groups/partials/groups-list.twig' with {'groups': groups} only %}
+				</div>
+				<div class="ui basic vertical segment">
+					<div class="ui message no-groups" {% if groups %}style="display:none"{% endif %}>
+						<p>{{ translate('No groups to show.') }}</p>
+					</div>
+				</div>
+				<div class="ui basic segment very padded list-loader" style="display:none;">
+					<div class="ui active loader"></div>
+				</div>
+			</div>
+			
+			{% if groupInvites and isCurrentUser(requestedUser) %}
+				<div class="ui tab basic vertical segment" data-tab="invited">
+					<div class="ui basic vertical segment form group-search-input">
+						<select name="category" class="mbsGroupsSearchCategory">
+							<option value="0">{{ translate('All categories') }}</option>
+							{% if groupCategoryList|length %}
+								{% for oneGcItem in groupCategoryList %}
+									<option value="{{ oneGcItem['id'] }}">{{ oneGcItem['name'] }}</option>
+								{% endfor %}
+							{% endif %}
+						</select>
+						<div class="ui fluid icon input mbsGroupsSearchName">
+							<input type="text" placeholder="{{ translate('Find group...') }}">
+							<i class="search icon"></i>
+						</div>
+					</div>
+					<div class="ui two cards stackable groups-list">
+						{% embed '@groups/partials/groups-list.twig' with {'groups': groupInvites} %}
+							{% block actionButtons %}
+								{% if not isMemberOfGroup(group) %}
+									<button class="ui mini primary button" data-action="accept-invitation">{{ translate('Accept') }}</button>
+									<button class="ui mini primary button" data-action="decline-invitation">{{ translate('Decline') }}</button>
+								{% else %}
+									{% if canLeaveGroup(group) %}
+										<button class="ui mini primary button" data-action="decline-invitation">{{ translate('Leave group') }}</button>
+									{% endif %}
+								{% endif %}
+							{% endblock %}
+						{% endembed %}
+					</div>
+					
+					<div class="ui message no-groups" {% if groupInvites %}style="display:none"{% endif %}>
+						<p>{{ translate('No invites to show.') }}</p>
+					</div>
+					
+					<div class="ui basic segment very padded list-loader" style="display:none;">
+						<div class="ui active loader"></div>
+					</div>
+				</div>
+			{% endif %}
+		</div>
+	</div>
+{% endblock %}

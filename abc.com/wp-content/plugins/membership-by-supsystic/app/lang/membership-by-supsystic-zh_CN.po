@@ -1,0 +1,4646 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Membership by Supsystic\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: 倡萌@WordPress大学 <admin@cmhello.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Basepath: ./\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ../..\n"
+
+msgid "%d followers"
+msgstr "%d 粉丝"
+
+msgid "%s accepted your friend reuqest."
+msgstr "%s 接受了您的好友请求。"
+
+msgid "%s and %s becomes friends"
+msgstr "%s 和 %s 成为了好友"
+
+msgid "%s commented on this."
+msgstr "%s 评论了这个帖子。"
+
+msgid "%s created new topic %s."
+msgstr "%s 创建了新话题 %s。"
+
+msgid "%s followers"
+msgstr "%s 粉丝"
+
+msgid "%s invited you to join %s group."
+msgstr "%s 邀请您加入 %s 群组。"
+
+msgid "%s is following you."
+msgstr "%s 关注了您。"
+
+msgid "%s is registered"
+msgstr "%s 注册了账户"
+
+msgid "%s liked this."
+msgstr "%s 喜欢了这个。"
+
+msgid "%s now following %s"
+msgstr "%s 刚刚关注了 %s"
+
+msgid "%s now following you"
+msgstr "%s 刚刚关注了您"
+
+msgid "%s people liked this"
+msgstr "%s 人已喜欢"
+
+msgid "%s people shared this"
+msgstr "%s 人已分享"
+
+msgid "%s replied in topic %s."
+msgstr "%s 回复了话题 %s。"
+
+msgid "%s sent you a friend reuqest."
+msgstr "%s 给您发送了一个好友请求。"
+
+msgid "%s sent you a message."
+msgstr "%s 给您发送有一个信息。"
+
+msgid "%s shared %s post."
+msgstr "%s 分享了 %s 的内容。"
+
+msgid "%s tag already added to this group."
+msgstr "%s 标签已被添加到这个群组。"
+
+msgid "(for Maestro and Solo cards only)"
+msgstr "（仅适用于Maestro和Solo卡）"
+
+msgid "(if available)"
+msgstr "（如果可用的话）"
+
+msgid "2Checkout"
+msgstr "2Checkout"
+
+msgid "2Checkout payments."
+msgstr "2Checkout支付。"
+
+msgid ""
+"<p><b>Upgrading</b></p><p>Once you have purchased PRO addon of plugin - "
+"you'll have to enter license key (you can find it in your personal account "
+"on our site). Go to the License tab and enter your email and license key. "
+"Once you have activated your PRO license - you can use plugin pro addon.</"
+"p><p> That's all. From this moment you can use your Membership plugin "
+"without any doubt. But if you still have some question - do not hesitate to "
+"contact us through our <a href=\"https://supsystic.com/contact-us/"
+"\">internal support</a> or on our <a href=\"https://supsystic.com/forum/"
+"membership-plugin/\">Supsystic Forum</a>. Besides you can always describe "
+"your questions on <a href=\"https://wordpress.org/support/plugin/membership-"
+"by-supsystic\">WordPress Ultimate Forum</a>.</p><p><b>Enjoy this plugin?</"
+"b></p> <p>It will be nice if you'll help us and boost plugin with <a href="
+"\"https://wordpress.org/support/plugin/membership-by-supsystic/reviews/"
+"\">Five Stars rating on WordPress.org.</a> We hope that you like this plugin "
+"and wish you all the best! Good luck!</p>"
+msgstr ""
+"<p><b>升级</b></p><p>一旦您购买了这个插件的专业版，您需要输入许可证密钥（您可"
+"以在我们网站的您的个人账户中找到）。访问许可证标签输入你的邮箱和许可证密钥。"
+"激活你的专业版授权后，就可以使用专业版的扩展功能啦。</p><p> 就这样！从现在"
+"起，你可以毫无疑问地使用会员插件。当然，如果遇到任何问题，请通过<a href="
+"\"https://supsystic.com/contact-us/\">站内支持</a> 联系我们，或在我们的 <a "
+"href=\"https://supsystic.com/forum/membership-plugin/\">论坛</a> 反馈。此外，"
+"你还可以在 <a href=\"https://wordpress.org/support/plugin/membership-by-"
+"supsystic\">WordPress 论坛</a>提问。</p><p><b>喜欢这个插件？</b></p> <p>如果"
+"你可以在<a href=\"https://wordpress.org/support/plugin/membership-by-"
+"supsystic/reviews/\"> WordPress.org 给它五星评价</a>，我们将感激万分！ 我们希"
+"望你喜欢这个插件，并祝你万事如意！好运连连！</p>"
+
+msgid "A small guide for the first-time user"
+msgstr "新手指南"
+
+msgid "API Password"
+msgstr "API密码"
+
+msgid "API Signature"
+msgstr "API签名"
+
+msgid "API Username"
+msgstr "API用户名"
+
+msgid "About"
+msgstr "关于"
+
+msgid "Accept"
+msgstr "接受"
+
+msgid "Accept Friend Request"
+msgstr "接受好友请求"
+
+msgid "Accept invitation"
+msgstr "接受邀请"
+
+msgid "Access to admin dashboard"
+msgstr "访问管理仪表板"
+
+msgid "Access to specific pages"
+msgstr "访问特定页面"
+
+msgid "Access to this page is restricted."
+msgstr "访问此页面受到限制。"
+
+msgid "Access to user profiles with specific roles"
+msgstr "访问具有特定角色的用户个人资料"
+
+msgid "Account"
+msgstr "账户"
+
+msgid "Account Activation Email"
+msgstr "账户激活邮件"
+
+msgid "Account Activation Email Body"
+msgstr "账户激活邮件内容"
+
+msgid "Account Activation Email Subject"
+msgstr "账户激活邮件主题"
+
+msgid "Account Approved Email"
+msgstr "账户审核通过邮件"
+
+msgid "Account Approved Email Body"
+msgstr "账户审核通过的邮件内容"
+
+msgid "Account Approved Email Subject"
+msgstr "账户审核通过的邮件主题"
+
+msgid "Account Deactivation Email"
+msgstr "账户被停用邮件"
+
+msgid "Account Deactivation Email Body"
+msgstr "账户被停用邮件内容"
+
+msgid "Account Deactivation Email Subject"
+msgstr "账户被停用邮件主题"
+
+msgid "Account Deleted Email"
+msgstr "账户被删除邮件"
+
+msgid "Account Deleted Email Body"
+msgstr "账户被删除邮件内容"
+
+msgid "Account Deleted Email Subject"
+msgstr "账户被删除邮件主题"
+
+msgid "Account Deletion"
+msgstr "账户删除"
+
+msgid "Account Deletion Notification"
+msgstr "账户删除通知"
+
+msgid "Account Deletion Notification Body"
+msgstr "账户删除通知内容"
+
+msgid "Account Deletion Notification Subject"
+msgstr "账户删除通知主题"
+
+msgid "Account E-mail"
+msgstr "账户邮箱"
+
+msgid "Account Needs Review Notification"
+msgstr "账户需要审查通知"
+
+msgid "Account Needs Review Notification Body"
+msgstr "账户需要审查通知内容"
+
+msgid "Account Needs Review Notification Subject"
+msgstr "账户需要审查通知主题"
+
+msgid "Account Rejected Email"
+msgstr "账户被拒邮件"
+
+msgid "Account Rejected Email Body"
+msgstr "账户被拒邮件内容"
+
+msgid "Account Rejected Email Subject"
+msgstr "账户被拒邮件主题"
+
+msgid "Account Welcome Email"
+msgstr "账户欢迎邮件"
+
+msgid "Account Welcome Email Body"
+msgstr "账户欢迎邮件内容"
+
+msgid "Account Welcome Email Subject"
+msgstr "账户欢迎邮件主题"
+
+msgid "Account is deleted from system."
+msgstr "账户已被删除。"
+
+msgid "Account is disabled."
+msgstr "账户已被禁用。"
+
+msgid "Account is in verification process."
+msgstr "账户正在等待验证。"
+
+msgid "Account is not approved."
+msgstr "账户未获批准"
+
+msgid "Activate Addons"
+msgstr "激活扩展"
+
+msgid "Activated"
+msgstr "已激活"
+
+msgid "Active"
+msgstr "激活"
+
+msgid "Activity"
+msgstr "活动"
+
+msgid "Activity Report"
+msgstr "活动举报"
+
+msgid "Activity already liked"
+msgstr "活动已被喜欢"
+
+msgid "Activity commenting"
+msgstr "活动评论"
+
+msgid "Activity content"
+msgstr "活动内容"
+
+msgid "Activity filter"
+msgstr "活动过滤器"
+
+msgid "Activity is not found"
+msgstr "未找到活动"
+
+msgid "Activity is not liked"
+msgstr "活动不被喜欢"
+
+msgid "Activity post writing"
+msgstr "活动内容写作"
+
+msgid "Activity posting is restricted"
+msgstr "活动发布受限"
+
+msgid "Activity type"
+msgstr "活动类型"
+
+msgid "Activity viewing"
+msgstr "活动查看"
+
+msgid "Activity with id %d is not found"
+msgstr "指定ID %d 的活动不存在"
+
+msgid "Add"
+msgstr "添加"
+
+msgid "Add Field"
+msgstr "添加字段"
+
+msgid "Add Friend"
+msgstr "添加好友"
+
+msgid "Add New"
+msgstr "新建"
+
+msgid "Add Section"
+msgstr "添加小节"
+
+msgid "Add logout link to menu"
+msgstr "添加登录链接到菜单"
+
+msgid "Add new role"
+msgstr "添加新角色"
+
+msgid "Add new rule"
+msgstr "添加新规则"
+
+msgid "Add new tag"
+msgstr "添加新标签"
+
+msgid "Add remove friends"
+msgstr "添加/删除好友"
+
+msgid "Add role depend of the user order"
+msgstr "添加角色取决于用户的顺序"
+
+msgid "Add tag"
+msgstr "添加标签"
+
+msgid "Added to Cart"
+msgstr "添加到购物车"
+
+msgid "Addons"
+msgstr "扩展"
+
+msgid "Address"
+msgstr "地址"
+
+msgid "Admin"
+msgstr "管理员"
+
+msgid "Admin Email"
+msgstr "管理员邮箱"
+
+msgid "Admin will get this email after some account has been deleted."
+msgstr "某些账户被删除后，管理员将收到此邮件。"
+
+msgid "Administrative permissions"
+msgstr "管理权限"
+
+msgid "Administrator confirmation"
+msgstr "管理员确认"
+
+msgid "Administrators only can comment"
+msgstr "管理员只能发表评论"
+
+msgid "Administrators only can write posts"
+msgstr "管理员只能写帖子"
+
+msgid ""
+"After user deletes his account, he will be redirected to the main page or to "
+"the specified link."
+msgstr "用户删除其账户后，他将被重定向到主页或指定的链接。"
+
+msgid ""
+"After user logs out from his account, he will be redirected to the main page "
+"or to the specified link."
+msgstr "用户退出登录后，他将被重定向到主页或指定的链接。"
+
+msgid ""
+"After user submits a login form, he will be redirected to his profile or to "
+"the specified link."
+msgstr "用户登录后，他将被重定向到他的个人资料或指定的链接。"
+
+msgid ""
+"After user submits a registration form, he will be redirected to his profile "
+"or to the specified link."
+msgstr "用户提交注册表单后，他将被重定向到他的个人资料或指定的链接。"
+
+msgid "All"
+msgstr "所有"
+
+msgid "All Friends"
+msgstr "所有好友"
+
+msgid "All conversations"
+msgstr "所有对话"
+
+msgid "All group members can send invitations"
+msgstr "所有团体成员都可以发送邀请"
+
+msgid "All networks"
+msgstr "所有网络"
+
+msgid "All users"
+msgstr "所有用户"
+
+msgid "All users can comment"
+msgstr "所有用户都可以评论"
+
+msgid "All users can view group activity"
+msgstr "所有用户都可以查看群组活动"
+
+msgid "All users can write posts"
+msgstr "所有用户都可以写帖子"
+
+msgid "Allow to change privacy settings"
+msgstr "允许更改隐私设置"
+
+msgid ""
+"Allow your members share posts to several networks simultaneously in one "
+"click, making your site more famous again and again."
+msgstr "允许成员在一次点击中同时分享帖子到多个网络，使您的网站更加出名。"
+
+msgid "Already has subscription"
+msgstr "已经订阅"
+
+msgid "Appear since"
+msgstr "出现于"
+
+msgid "Apply"
+msgstr "应用"
+
+msgid "Approve"
+msgstr "批准"
+
+msgid "Are you sure you want to delete this role?"
+msgstr "您确定要删除此角色吗？"
+
+msgid "Assign to Membership Level"
+msgstr "分配会员级别"
+
+msgid "Audio"
+msgstr "音频"
+
+msgid "Authorize in Constant Contact"
+msgstr "授权在Constant Contact"
+
+msgid "Authorize.net"
+msgstr "Authorize.net"
+
+msgid "Authorize.net SIM payments."
+msgstr "Authorize.net SIM 卡付款。"
+
+msgid "Auto"
+msgstr "自动"
+
+msgid "Autosubscribe new user"
+msgstr "自动订阅新用户"
+
+msgid "Available field data"
+msgstr "可用字段数据"
+
+msgid "Available for next Membership Levels:"
+msgstr "可用于下一个会员级别："
+
+msgid "Available import field names. You can add more here."
+msgstr "可用的导入字段名称。 您可以在这里添加更多。"
+
+msgid "Avatar Thumbnail Large Size"
+msgstr "头像缩略图大尺寸"
+
+msgid "Avatar Thumbnail Medium Size"
+msgstr "头像缩略图中等尺寸"
+
+msgid "Avatar Thumbnail Small Size"
+msgstr "头像缩略图小尺寸"
+
+msgid "Back"
+msgstr "返回"
+
+msgid "Back to Site"
+msgstr "返回网站"
+
+msgid "Billing"
+msgstr "账单"
+
+msgid "Billing Address"
+msgstr "账单地址"
+
+msgid "Billing Amount"
+msgstr "账单账户"
+
+msgid "Billing Information"
+msgstr "账单信息"
+
+msgid "Billing cycle limit"
+msgstr "账单/开票周期限制"
+
+msgid ""
+"Black list of IP addresses. Enter IP addresses separated by comma or just "
+"leave this field blank if you don't need to use this option."
+msgstr "黑名单IP地址。 输入用英文逗号分隔的IP地址。留空将不使用该功能。"
+
+msgid "Block"
+msgstr "阻止"
+
+msgid "Block activity"
+msgstr "阻止活动"
+
+msgid "Block group"
+msgstr "阻止群组"
+
+msgid "Block groups"
+msgstr "阻止群组"
+
+msgid "Block user"
+msgstr "阻止用户"
+
+msgid "Blocked IP Addresses"
+msgstr "阻止的IP地址"
+
+msgid "Blocked users"
+msgstr "被阻止的用户"
+
+msgid "Bottom"
+msgstr "底部"
+
+msgid "Bulk Actions"
+msgstr "批量操作"
+
+msgid "Button text when need to extend Membership Level."
+msgstr "当需要扩展会员级别时的按钮文本。"
+
+msgid "Buttons"
+msgstr "按钮"
+
+msgid "Buy Now"
+msgstr "立即购买"
+
+msgid "Buy now"
+msgstr "立即购买"
+
+msgid ""
+"By default option \"Site Accessible to Logged In Users\" hides only access "
+"to the pages of Membership plugin. If you want to hide access to all pages "
+"of your site - activate this checkbox. When opening any page of your site - "
+"all not logged in users will be redirected to the login page."
+msgstr ""
+"默认情况下，“站点仅已登录用户可访问”选项，仅隐藏访问Membership插件的页面。 如"
+"果您想隐藏访问您网站的所有页面 - 激活此复选框。 当打开您网站的任何页面时，所"
+"有未登录的用户将被重定向到登录页面。"
+
+msgid "Can not create Customer in Stripe"
+msgstr "无法在Stripe中创建客户"
+
+msgid ""
+"Can not detect authorization fo account owner. Contact site owner to resolve "
+"this issue."
+msgstr "无法检测账户所有者的授权。 联系网站所有者以解决此问题。"
+
+msgid "Can not find Products for this order"
+msgstr "找不到此订单的产品"
+
+msgid "Can not find order"
+msgstr "找不到订单"
+
+msgid "Can not find required Item"
+msgstr "找不到所需项目"
+
+msgid "Can not get cc obj"
+msgstr "不能得到cc obj"
+
+msgid "Can't detect your IP, please don't spam"
+msgstr "无法检测到您的IP，请勿发送垃圾邮件"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Cancel Friend Request"
+msgstr "取消好友请求"
+
+msgid "Cancel a friend request"
+msgstr "取消好友请求"
+
+msgid "Cancel invitation"
+msgstr "取消邀请"
+
+msgid "Cancel request"
+msgstr "取消邀请"
+
+msgid "Cannot send email - problem with send server"
+msgstr "无法发送邮件 - 发送服务器的问题"
+
+msgid "Card Expiry Date"
+msgstr "卡的失效日期"
+
+msgid "Card Expiry Date: Month"
+msgstr "卡的失效日期：月"
+
+msgid "Card Expiry Date: Year"
+msgstr "卡的失效日期：年"
+
+msgid "Card Issue Number"
+msgstr "卡的发行号码"
+
+msgid "Card Number"
+msgstr "卡号"
+
+msgid "Card Owner"
+msgstr "持卡人"
+
+msgid "Card Security Code (CVV2)"
+msgstr "卡的安全码（CVV2）"
+
+msgid "Card Type"
+msgstr "卡的类型"
+
+msgid "Card Valid From Date"
+msgstr "卡的有效起始日期"
+
+msgid "Card Valid From Date: Month"
+msgstr "卡的有效起始日期：月"
+
+msgid "Card Valid From Date: Year"
+msgstr "卡的有效起始日期：年"
+
+msgid "Change"
+msgstr "更改"
+
+msgid "Change User Role"
+msgstr "更改用户角色"
+
+msgid "Change User Status"
+msgstr "更改用户状态"
+
+msgid "Change email"
+msgstr "更改邮箱"
+
+msgid "Change logo image"
+msgstr "更改Logo图片"
+
+msgid "Change password"
+msgstr "更改密码"
+
+msgid "Change profile image"
+msgstr "更改头像"
+
+msgid "Changing page..."
+msgstr "更改页面..."
+
+msgid "Check your account to find your ordered User Levels."
+msgstr "检查您的账户以找到您订购的用户级别。"
+
+msgid "Check your email address for confirmation link."
+msgstr "检查您的邮件地址以确认链接。"
+
+msgid "Check your email for the confirmation link."
+msgstr "查看您邮件里的确认链接。"
+
+msgid "Checkbox"
+msgstr "复选框"
+
+msgid "Checkout"
+msgstr "结账"
+
+msgid "Checkout Success"
+msgstr "结账"
+
+msgid "Choose field(s) to enable in search"
+msgstr "选择要在搜索中启用的字段"
+
+msgid "Circle"
+msgstr "圆形"
+
+msgid "Clear data"
+msgstr "清空数据"
+
+msgid "Clear selection"
+msgstr "清空选项"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Close Tutorial"
+msgstr "关闭教程"
+
+msgid "Closed"
+msgstr "已关闭"
+
+msgid "Closed group"
+msgstr "已关闭群组"
+
+msgid "Comment as"
+msgstr "评论为"
+
+msgid "Comment not found."
+msgstr "未找到评论。"
+
+msgid "Comment posting is restricted"
+msgstr "评论发布被限制"
+
+msgid "Comments"
+msgstr "评论"
+
+msgid "Community activity is disabled"
+msgstr "社区活动被禁用"
+
+msgid "Community type"
+msgstr "社区类型"
+
+msgid "Compact"
+msgstr ""
+
+msgid "Company Name"
+msgstr "公司名称"
+
+msgid "Confirm Uninstall"
+msgstr "确认卸载"
+
+msgid ""
+"Confirm deletion (All group data will be deleted and cannot be restored)"
+msgstr "确认删除（所有组数据将被删除，无法恢复）"
+
+msgid "Confirm deletion (All user data will be deleted and cannot be restored)"
+msgstr "确认删除（所有用户数据将被删除，无法恢复）"
+
+msgid "Confirm password"
+msgstr "确认密码"
+
+msgid "Confirm your current password to continue"
+msgstr "确认您当前的密码以继续"
+
+msgid "Confirmation link for password change is sent to your email."
+msgstr "密码更改的确认链接已发送到您的邮件。"
+
+msgid "Confirmation link was sent to your email address. Check your email!"
+msgstr "确认链接已发送到您的邮箱地址。 查看您的邮件！"
+
+msgid "Confirmation sent message"
+msgstr "确认发送消息"
+
+msgid "Connect"
+msgstr "关联"
+
+msgid "Connected Accounts"
+msgstr "已关联账户"
+
+msgid "Connected Social Network Accounts"
+msgstr "关联的社交网络账户"
+
+msgid "Constant Contact Setup"
+msgstr "账户关联设置"
+
+msgid "Contact us through %s if you have some question, offer or wish."
+msgstr "如果您有任何问题，要约或愿望，请通过%s与我们联系。"
+
+msgid "Content"
+msgstr "内容"
+
+msgid "Content Settings"
+msgstr "内容设置"
+
+msgid "Country"
+msgstr "国家"
+
+msgid "Cover Thumbnail Medium Size"
+msgstr "封面缩略图中等尺寸"
+
+msgid "Cover Thumbnail Small Size"
+msgstr "封面缩略图小尺寸"
+
+msgid "Create"
+msgstr "创建"
+
+msgid "Create Group"
+msgstr "创建群组"
+
+msgid "Create all unassigned pages"
+msgstr "创建所有未分配的页面"
+
+msgid ""
+"Create and edit mailing templates of users letters and notifications for "
+"administrator."
+msgstr "为管理员创建和编辑用户信件和通知的邮件模板。"
+
+msgid "Create groups"
+msgstr "创建群组"
+
+msgid "Create new Membership Currency"
+msgstr "建新的会员币种"
+
+msgid "Create new Membership Drip"
+msgstr "创建新的会员滴水计划"
+
+msgid "Create new Membership Level"
+msgstr "创建新的会员级别"
+
+msgid "Create new group"
+msgstr "创建新群组"
+
+msgid "Create page"
+msgstr "创建页面"
+
+msgid "Create user"
+msgstr "创建用户"
+
+msgid "Currency"
+msgstr "货币"
+
+msgid "Currency value (corresponding to default currency)"
+msgstr "货币值（对应于默认货币）"
+
+msgid "Current password is required"
+msgstr "当前密码是必需的"
+
+msgid "Current password was incorrect"
+msgstr "当前密码不正确"
+
+msgid "Custom text if no users were found"
+msgstr "没有找到用户的自定义文本"
+
+msgid "Dark"
+msgstr "黑暗"
+
+msgid "Data exported successfully"
+msgstr "数据导出成功"
+
+msgid "Data successfully imported."
+msgstr "数据成功导入。"
+
+msgid "Database error"
+msgstr "数据库错误"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Date Format"
+msgstr "日期格式"
+
+msgid "Day"
+msgstr "天"
+
+msgid "Day(s)"
+msgstr "天（复数）"
+
+msgid "Decline"
+msgstr "拒绝"
+
+msgid "Decline Friend Request"
+msgstr "拒绝好友请求"
+
+msgid "Default Avatar Image"
+msgstr "默认头像图片"
+
+msgid "Default Cover Image"
+msgstr "默认封面图片"
+
+msgid "Default Logo Image"
+msgstr "默认Logo图片"
+
+msgid "Default Selected"
+msgstr "默认选择"
+
+msgid "Default Sort Users By"
+msgstr "默认用户排序"
+
+msgid "Default User role"
+msgstr "默认用户角色"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Delete account"
+msgstr "删除账户"
+
+msgid "Delete conversation"
+msgstr "删除对话"
+
+msgid "Delete group"
+msgstr "删除群组"
+
+msgid "Delete messages"
+msgstr "删除信息"
+
+msgid "Delete selected"
+msgstr "删除所选"
+
+msgid "Delete their account"
+msgstr "删除他们的账户"
+
+msgid "Delete this conversation?"
+msgstr "删除这个对话？"
+
+msgid "Delete this messages?"
+msgstr "删除这个信息？"
+
+msgid "Deleted"
+msgstr "已删除"
+
+msgid "Demo Mode"
+msgstr "演示模式"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Design"
+msgstr "设计"
+
+msgid "Design Customization"
+msgstr "设计定制"
+
+msgid "Details"
+msgstr "详情"
+
+msgid "Disable double opt-in"
+msgstr "禁用双重确认"
+
+msgid ""
+"Disable double opt-in confirmation message sending. This option will create "
+"subscriber directly after he will subscribe to your list."
+msgstr "禁用双重确认消息发送。 勾选后，用户订阅的列表后将直接成为订阅者。"
+
+msgid "Disabled"
+msgstr "已禁用"
+
+msgid "Disconnect"
+msgstr "断开"
+
+msgid "Displayed"
+msgstr "显示"
+
+msgid "Dripping (schedule) Content"
+msgstr "滴水（计划）内容"
+
+msgid "Dripping Content"
+msgstr "滴水内容"
+
+msgid "Dropdown List"
+msgstr "下拉列表"
+
+msgid "E-Commerce"
+msgstr "电子商务"
+
+msgid "E-Commerce (PRO)"
+msgstr "电子商务 (PRO)"
+
+msgid "E-mail"
+msgstr "邮箱"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Edit profile"
+msgstr "编辑资料"
+
+msgid "Email"
+msgstr "邮件"
+
+msgid "Email Address"
+msgstr "邮箱地址"
+
+msgid "Email address for notifications"
+msgstr "用于通知的邮箱地址"
+
+msgid "Email confirmation"
+msgstr "邮件确认"
+
+msgid ""
+"Email delivery depends from your server configuration. For some cases - you "
+"and your subscribers can not receive emails just because email on your "
+"server is not working correctly. You can easy test it here - by sending test "
+"email. If you receive it - then it means that email functionality on your "
+"server works well. If not - this means that it is not working correctly and "
+"you should contact your hosting provider with this issue and ask them to "
+"setup email functionality for you on your server."
+msgstr ""
+"邮件传送取决于您的服务器配置。 对于某些情况，您和您的订阅者无法接收邮件，因为"
+"您的服务器上的邮件无法正常工作。 您可以在这里轻松测试 - 发送测试电子邮件。 如"
+"果您收到它 - 那么这意味着您的服务器上的电子邮件功能可以正常工作。 如果没有，"
+"这意味着它无法正常工作，并且您应该与您的主机提供商联系此问题，并要求他们在您"
+"的服务器上为您设置电子邮件功能。"
+
+msgid "Email is not valid."
+msgstr "邮箱无效。"
+
+msgid "Email is updated successfully"
+msgstr "邮箱已成功更新"
+
+msgid "Email not confirmed"
+msgstr "邮箱未确认"
+
+msgid "Email that will be sent to user after signing up."
+msgstr "注册后发送给用户的邮件。"
+
+msgid "Email that will get notifications about the membership society."
+msgstr "将收到有关会员社会通知的邮件。"
+
+msgid "Emails"
+msgstr "邮件"
+
+msgid "Empty API key"
+msgstr "空的API密钥"
+
+msgid "Empty Form Data"
+msgstr "空的表单数据"
+
+msgid "Empty Order ID"
+msgstr "空的订单ID"
+
+msgid "Empty Strie Token"
+msgstr "空的Strie令牌"
+
+msgid "Empty User ID"
+msgstr "空的用户ID"
+
+msgid "Empty data to save option"
+msgstr "空的数据保存选项"
+
+msgid "Empty or invalid Code"
+msgstr "空或无效的代码"
+
+msgid "Empty or invalid ID - only Update action allowed for now"
+msgstr "空或无效的ID - 仅限现在允许的更新操作"
+
+msgid "Empty or invalid Level Name"
+msgstr "空或无效级别名称"
+
+msgid "Empty or invalid email"
+msgstr "邮箱为空或无效"
+
+msgid "Empty payment method"
+msgstr "空的付款方式"
+
+msgid "Enable Cover Photo"
+msgstr "启用封面照片"
+
+msgid "Enable Dripping for this Content"
+msgstr "启用此内容的滴水计划"
+
+msgid "Enable Forum Tab"
+msgstr "启用论坛标签"
+
+msgid "Enable Profile Photo"
+msgstr "启用头像"
+
+msgid "Enable Search feature"
+msgstr "启用搜索功能"
+
+msgid "Enable secondary button for Login form."
+msgstr "启用“登录”表单的次按钮。"
+
+msgid "Enable this option and page Activity will be created on your website."
+msgstr "启用此选项，将在您的网站上创建活动页面。"
+
+msgid "Enable this option and page Friends will be created on your website."
+msgstr "启用此选项，将在您的网站上创建好友页面。"
+
+msgid "Enable this option and page Groups will be created on your website."
+msgstr "启用此选项，将在您的网站上创建群组页面。"
+
+msgid "Enable this option and page Messages will be created on your website."
+msgstr "启用此选项，将在您的网站上创建消息页面。"
+
+msgid ""
+"Enable this option and users will be able to upload their Globally "
+"Recognized Avatar."
+msgstr "启用此选项，用户将能够上传其全球认可的头像。"
+
+msgid "Enabled"
+msgstr "启用"
+
+msgid "Enter API key - and your list will appear here"
+msgstr "输入API密钥，您的列表将显示在此处"
+
+msgid "Enter API key, select List - and your groups will appear here"
+msgstr "输入API密钥，选择列表 - 您的群组将显示在此处"
+
+msgid "Enter hashtags divided by the \",\" symbol"
+msgstr "输入主题标签，使用 \",\"英文逗号隔开"
+
+msgid "Enter name"
+msgstr "输入名字"
+
+msgid "Enter the email of admin."
+msgstr "输入管理员的邮箱。"
+
+msgid ""
+"Enter the group title that will be defined in the browser toolbar and "
+"displayed for the page in search-engine results."
+msgstr ""
+"输入群组标题，它将在显示在浏览器工具条中，并在搜索引擎中作为该页面的标题。"
+
+msgid "Enter the maximum size of file that can be uploaded by user in Mb."
+msgstr "输入用户可上传的最大文件大小（单位为Mb）。"
+
+msgid ""
+"Enter the profile title that will be defined in the browser toolbar and "
+"displayed for the page in search-engine results."
+msgstr ""
+"输入个人资料页面的标题，它将在显示在浏览器工具条中，并在搜索引擎中作为该页面"
+"的标题。"
+
+msgid "Enter the time for intervals with which messages will be updated."
+msgstr "输入更新消息的间隔时间。"
+
+msgid ""
+"Enter your Email and License Key on this page, find the information for "
+"activation in your personal account on our site %s. Then click \"Activate "
+"Addons\" button."
+msgstr ""
+"在此页面上输入您的邮箱和许可密钥，在我们的网站%s上找到您个人账户中激活的信"
+"息。 然后点击“激活扩展”按钮。"
+
+msgid "Error"
+msgstr "错误"
+
+msgid "Error creating user with login: %s. Error message: %s"
+msgstr "创建用户时出错： %s。 错误消息：%s"
+
+msgid "Establish your privacy settings for you local social network."
+msgstr "为您的本地社交网络建立您的隐私设置。"
+
+msgid "Every user must have at least %s field specified."
+msgstr "每个用户必须至少有 %s 指定的字段。"
+
+msgid "Everyone"
+msgstr "任何人"
+
+msgid "Exceeded filesize limit."
+msgstr "超过文件大小限制。"
+
+msgid "Expired"
+msgstr "已过期"
+
+msgid "Export"
+msgstr "导出"
+
+msgid "Export data from activity"
+msgstr "从活动导出数据"
+
+msgid "Export data from activity by hashtags"
+msgstr "通过主题标签从活动导出数据"
+
+msgid "Export to CSV"
+msgstr "导出为CSV"
+
+msgid "Extend"
+msgstr "展开"
+
+msgid "Extend Level button text"
+msgstr "展开等级按钮文本"
+
+msgid "Extensions"
+msgstr "扩展"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Facebook App ID"
+msgstr "Facebook App ID"
+
+msgid "Facebook App Secret"
+msgstr "Facebook App Segreta"
+
+msgid "Failed to import posts."
+msgstr "无法导入文章。"
+
+msgid "Failed to update last export data"
+msgstr "无法更新上次导出数据"
+
+msgid "Favorites"
+msgstr "喜欢"
+
+msgid "Feel free to contact us and don't worry, everything will be cool!"
+msgstr "随时联系我们，不要担心，一切都会很酷！"
+
+msgid "Field user_login is required. Passed data: %s. Skipped."
+msgstr "字段 user_login 是必需的。已传递数据：%s。已跳过。"
+
+msgid "Find group..."
+msgstr "查找群组..."
+
+msgid "Find user..."
+msgstr "查找用户..."
+
+msgid "Finish"
+msgstr "完成"
+
+msgid "First"
+msgstr "首页"
+
+msgid "First Name"
+msgstr "名字"
+
+msgid "First Name Last Name"
+msgstr "名姓"
+
+msgid "Follow"
+msgstr "关注"
+
+msgid "Follow unfollow users"
+msgstr "关注/取消关注用户"
+
+msgid "Followers"
+msgstr "粉丝"
+
+msgid "Following"
+msgstr "关注"
+
+msgid "Follows"
+msgstr "关注"
+
+msgid "Follows me"
+msgstr "关注我"
+
+msgid "For example:"
+msgstr "例如："
+
+msgid "Forgot your password?"
+msgstr "忘记密码？"
+
+msgid "Forum"
+msgstr "论坛"
+
+msgid "Found %d users"
+msgstr "找到 %d 个用户"
+
+msgid "Fractional precision"
+msgstr "分数精度"
+
+msgid "Fractional separator"
+msgstr "分数分隔符"
+
+msgid "Friend Requests"
+msgstr "好友请求"
+
+msgid "Friends"
+msgstr "好友"
+
+msgid "Friends of friends"
+msgstr "好友的好友"
+
+msgid "Friends only"
+msgstr "仅限好友"
+
+msgid "From"
+msgstr "从"
+
+msgid "General"
+msgstr "常规"
+
+msgid "General Options"
+msgstr "常规选项"
+
+msgid "Get PRO Addon"
+msgstr "获得PRO扩展"
+
+msgid "Get Pro"
+msgstr "获取PRO"
+
+msgid "Get new password"
+msgstr "获取新密码"
+
+msgid ""
+"Get this from your 2Checkout account. This should be present here to "
+"validate responce from 2Checkout!"
+msgstr ""
+"从您的2Checkout账户获取此信息。 这里应该出现在此以验证来自2Checkout的响应！"
+
+msgid "Global Site Access"
+msgstr "全局网站访问"
+
+msgid "Global activity page"
+msgstr "全局活动页面"
+
+msgid "Google ReCaptcha"
+msgstr "Google ReCaptcha"
+
+msgid "Google ReCaptcha Secret Key"
+msgstr "Google ReCaptcha Secret Key"
+
+msgid "Google ReCaptcha Site Key"
+msgstr "Google ReCaptcha Site Key"
+
+msgid "Google ReCaptcha Size"
+msgstr "Google ReCaptcha 大小"
+
+msgid "Google ReCaptcha Theme"
+msgstr "Google ReCaptcha 主题"
+
+msgid "Google ReCaptcha Type"
+msgstr "Google ReCaptcha 类型"
+
+msgid "Group Cover Size"
+msgstr "群组封面大小"
+
+msgid "Group Description"
+msgstr "群组描述"
+
+msgid "Group Dynamic Meta Description"
+msgstr "群组动态元描述"
+
+msgid "Group ID"
+msgstr "群组ID"
+
+msgid "Group Logo Size"
+msgstr "群组Logo大小"
+
+msgid "Group Name"
+msgstr "群组名称"
+
+msgid "Group Permalink Base"
+msgstr "群组固定链接"
+
+msgid ""
+"Group Permalink Base: Select what data to use in the group's link. E.g. "
+"\"http://supsystic/groups/culinary-blog/\" or \"http://supsystic/groups/1/\"."
+msgstr ""
+"群组固定链接：选择群组中链接中要使用的英文名称。 例如： \"http://supsystic/"
+"groups/culinary-blog/\" 或 \"http://supsystic/groups/1/\"."
+
+msgid "Group Title"
+msgstr "群组标题"
+
+msgid "Group alias"
+msgstr "群组别名"
+
+msgid "Group by"
+msgstr "分组依据"
+
+msgid "Group data successfully updated"
+msgstr "群组数据已成功更新"
+
+msgid "Group deletion"
+msgstr "群组删除"
+
+msgid "Group does not exists"
+msgstr "群组不存在"
+
+msgid "Group does not exists, or user not a member of this group"
+msgstr "群组不存在，或用户不是此组的成员"
+
+msgid "Group does not exists."
+msgstr "群组不存在。"
+
+msgid "Group for subscribe"
+msgstr "订阅群组"
+
+msgid "Group invites"
+msgstr "群组邀请"
+
+msgid "Group is blocked"
+msgstr "群组被阻止"
+
+msgid "Group is blocked by administrator"
+msgstr "群组被管理员阻止"
+
+msgid "Group logo picture"
+msgstr "群组Logo图片"
+
+msgid "Group members only can comment"
+msgstr "群组成员只能发表评论"
+
+msgid "Group members only can view activity"
+msgstr "群组成员只能查看活动"
+
+msgid "Group members only can write posts"
+msgstr "群组成员只能写帖子"
+
+msgid "Group name is required"
+msgstr "群组名称是必需的"
+
+msgid "Group settings"
+msgstr "群组设置"
+
+msgid "Group successfully created."
+msgstr "群组已成功创建。"
+
+msgid "Group that are you looking is not found."
+msgstr "您要查找的群组不存在。"
+
+msgid "Group was deleted."
+msgstr "群组已删除。"
+
+msgid "Group with given id does not exists."
+msgstr "具有给定ID的群组不存在。"
+
+msgid "Groups"
+msgstr "群组"
+
+msgid "Groups are disabled by site administrator."
+msgstr "群组被网站管理员禁用。"
+
+msgid ""
+"Groups option is Turn Off, you can turn it On on the Main settings tab or "
+"click <a href=\"%s\">here</a>."
+msgstr ""
+"群组选项是关闭的，您可以在主设置选项卡上打开它，或单击<a href=\"%s\">此处</"
+"a>。"
+
+msgid "Help Icon Background Color"
+msgstr "帮助图标背景颜色"
+
+msgid "Help Icon Color"
+msgstr "帮助图标颜色"
+
+msgid ""
+"Here is possible to adjust external user's profiles look, Registration "
+"сonfirmation and others."
+msgstr "这可以调整用户的个人资料，注册确认等。"
+
+msgid "Here is you profile link."
+msgstr "这是您的个人资料链接。"
+
+msgid ""
+"Here you can adjust main settings of the site page and enter your admin "
+"email."
+msgstr "在这里您可以调整站点页面的主要设置并输入管理员的邮箱。"
+
+msgid ""
+"Hi {display_name}\n"
+"This is an automated email to let you know your {site_name} account has been "
+"deactivated.\n"
+"I you would like your account to be reactivated please contact us at "
+"{admin_email}\n"
+"Thanks, {site_name}"
+msgstr ""
+"您好 {display_name}\n"
+"这是一封自动发送的邮件，用以告知您在 {site_name} 的账户已被禁用。\n"
+"如果您希望重新启用您的账号，请联系我们  {admin_email}\n"
+"谢谢！\n"
+" {site_name}"
+
+msgid ""
+"Hi {display_name}.\t\t \n"
+"Thank you for applying for membership to {site_name}!\n"
+"We have reviewed your information and unfortunately we are unable to accept "
+"you as a member at this moment.\n"
+"Please feel free to apply again at a future date.\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+"您好， {display_name}。\t\t \n"
+"感谢您申请成为 {site_name} 的会员！\n"
+"我们已经审查了您的信息，不幸的是，我们目前无法接受您的会员申请。\n"
+"请随时在以后的日期再次申请。\n"
+"\n"
+"谢谢！\n"
+" {site_name}"
+
+msgid ""
+"Hi {display_name}.\n"
+"Thank you for signing up with {site_name}!\n"
+"\n"
+"To login please visit the following url: \n"
+"\n"
+"<a href=\"{login_url}\">{login_url}</a>\n"
+"\n"
+"Your account e-mail: {email}\n"
+"\n"
+"Your account username: {username}\n"
+"\n"
+"Your account password: {password}\n"
+"\n"
+"If you have any problems, please contact us at {admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+"您好，{display_name}。\n"
+"感谢注册 {site_name}!\n"
+"\n"
+"您可以访问下面的链接进行登录： \n"
+"\n"
+"<a href=\"{login_url}\">{login_url}</a>\n"
+"\n"
+"您的邮箱： {email}\n"
+"\n"
+"您的用户名： {username}\n"
+"\n"
+"您的密码： {password}\n"
+"\n"
+"如果有什么问题，请通过以下邮箱地址与我们联系：  {admin_email}\n"
+"\n"
+"谢谢！\n"
+"{site_name}"
+
+msgid ""
+"Hi {display_name}.\n"
+"Thank you for signing up with {site_name}!\n"
+"Your account has been approved and is now active.\n"
+"To login please visit the following url: <a href=\"{login_url}\">{login_url}"
+"</a>\n"
+"Your account e-mail: {email}\n"
+"Your account username: {username}\n"
+"Your account password: {password}\n"
+"If you have any problems, please contact us at {admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+"您好，{display_name}。\n"
+"感谢注册 {site_name}!\n"
+"您的账户已通过审核，可以正常使用了。\n"
+"您可以点击下面的链接进行登录： <a href=\"{login_url}\">{login_url}</a>\n"
+"您的邮箱： {email}\n"
+"您的用户名： {username}\n"
+"您的密码： {password}\n"
+"有什么问题，请通过以下邮箱地址与我们联系：  {admin_email}\n"
+"\n"
+"谢谢！\n"
+" {site_name}"
+
+msgid ""
+"Hi {display_name}.\n"
+"Thank you for signing up with {site_name}!\n"
+"Your account is currently being reviewed by a member of our team.\n"
+"Please allow us some time to process your request.\n"
+"If you have any problems, please contact us at {admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+"您好，{display_name}。\n"
+"感谢注册 {site_name}!\n"
+"您的账户正在等待审核。\n"
+"审核需要一定的时间，请耐心等待。\n"
+"有什么问题，请通过以下邮箱地址与我们联系： {admin_email}\n"
+"\n"
+"谢谢！\n"
+" {site_name}"
+
+msgid ""
+"Hi {display_name}.\n"
+"This is an automated email to let you know your {site_name} account has been "
+"deleted.\n"
+"All of your personal information has been permanently deleted and you will "
+"no longer be able to login to {site_name}.\n"
+"\n"
+"If your account has been deleted by accident please contact us at "
+"{admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+"您好，{display_name}。\n"
+"这是一封自动发送的邮件，用以 通知您在{site_name} 的账户已被删除。\n"
+"您的所有个人信息都已被永久删除，并且您将无法使用这个账户登录 {site_name}.\n"
+"\n"
+"如果您的账户是被意外删除的，请通过以下邮箱地址与我们联系： {admin_email}\n"
+"\n"
+"谢谢！\n"
+" {site_name}"
+
+msgid ""
+"Hi {display_name}.\n"
+"We received a request to reset the password for your account.\n"
+"If you made this request, click the link below to change your password:\n"
+"<a href=\"{password_reset_link}\">{password_reset_link}</a>\n"
+"\n"
+"If you didn't make this request, you can ignore this email\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+"您好， {display_name}。\n"
+"我们收到要重置您的密码的请求。\n"
+"如果是您请求的，请点击下面的链接修改密码：\n"
+"<a href=\"{password_reset_link}\">{password_reset_link}</a>\n"
+"\n"
+"如果您没有提交过请求，可直接忽略本邮件。\n"
+"\n"
+"谢谢！\n"
+" {site_name}"
+
+msgid ""
+"Hi {display_name}.\n"
+"You recently have requested for changing the password associated with your "
+"{site_name} account.\n"
+"To confirm your request please visit the following url: <a href="
+"\"{password_change_url}\">{password_change_url}</a>\n"
+"If you did not make this change and believe your {site_name} account has "
+"been compromised, please contact us at the following email address: "
+"{admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+"您好， {display_name}。\n"
+"您最近已要求更改您在 {site_name} 的账户密码。\n"
+"要确认您的请求，请访问下面的链接： <a href="
+"\"{password_change_url}\">{password_change_url}</a>\n"
+"如果您没有进行此更改，并且相信您的{site_name}账户已被盗用，请通过以下邮箱地址"
+"与我们联系：{admin_email}\n"
+"\n"
+"谢谢！\n"
+" {site_name}"
+
+msgid "Hide ordered Membership Levels"
+msgstr "隐藏有序会员级别"
+
+msgid "Hour"
+msgstr "小时"
+
+msgid "Hour(s)"
+msgstr "小时（复数）"
+
+msgid "IPN Address"
+msgstr "IPN地址"
+
+msgid "ISO Code"
+msgstr "ISO编号"
+
+msgid "If buy next products"
+msgstr "如果买下一个产品"
+
+msgid ""
+"If the %s field is not specified then the password will be the same as the "
+"%s field."
+msgstr "如果未指定%s字段，则该密码将与%s字段相同。"
+
+msgid ""
+"If the user with the specified username or email already exists then "
+"inserting fields data will be ignored."
+msgstr "如果具有指定用户名或邮箱的用户已经存在，则插入字段数据将被忽略。"
+
+msgid "If this option is enabled an avatar will be displayed near user's name."
+msgstr "如果启用此选项，将在用户名附近显示头像。"
+
+msgid ""
+"If this option is enabled users will be able to upload the second image "
+"behind the avatar image. It is kind of background image."
+msgstr ""
+"如果启用此选项，用户将可以在头像图像后面上传第二张图像。 它是一种背景图像。"
+
+msgid ""
+"If this option is enabled, \"Remember me\" checkbox will be shown in login "
+"form."
+msgstr "如果启用此选项，\"记住我\"复选框将在登录表单中显示。"
+
+msgid "If this option is enabled, only members with avatar will be shown."
+msgstr "如果启用此选项，则只显示具有头像的成员。"
+
+msgid ""
+"If this option is enabled, only members with cover photo will be shown on "
+"\"Members\" tab."
+msgstr "如果启用此选项，则只有拥有封面照片的会员才会显示在“成员”选项卡上。"
+
+msgid "If this option is enabled, profile name will be shown in header."
+msgstr "如果启用此选项，个人资料名将显示在页眉中。"
+
+msgid ""
+"If this option is enabled, the default colors of your theme will be used."
+msgstr "如果启用此选项，将使用主题的默认颜色。"
+
+msgid ""
+"If, unfortunately, you have some problem - we are always ready to help you "
+"in our %s."
+msgstr "如果，不幸的是，您有一些问题，我们随时准备在我们的 %s 帮助您。"
+
+msgid "Image"
+msgstr "图片"
+
+msgid "Image Quality"
+msgstr "图片质量"
+
+msgid "Image size limit is exceeded"
+msgstr "超过图像尺寸限制"
+
+msgid "Import"
+msgstr "导入"
+
+msgid "Import Activity"
+msgstr "导入活动"
+
+msgid "Import Buddy Press Data"
+msgstr "导入BuddyPress数据"
+
+msgid "Import Data"
+msgstr "导入数据"
+
+msgid "Import Friends"
+msgstr "导入好友"
+
+msgid "Import Groups"
+msgstr "导入群组"
+
+msgid "Import Ultimate Member Data"
+msgstr "导入Ultimate Member 数据"
+
+msgid "Import User Fields"
+msgstr "导入用户字段"
+
+msgid "Import completed successfully"
+msgstr "导入成功完成"
+
+msgid "Import data to activity"
+msgstr "导入数据到活动"
+
+msgid "Import data to activity by hashtags"
+msgstr "通过主题标签将数据导入活动"
+
+msgid "Import from csv"
+msgstr "从CSV文件中导入"
+
+msgid "Import users from CSV"
+msgstr "从CSV导入用户"
+
+msgid "Importing completed with errors"
+msgstr "导入完成并出现错误"
+
+msgid ""
+"In MailChimp there is possibility to select groups for your subscribers. "
+"This is not mandatory, but sometimes it is really helpful. So, we added this "
+"possibility for you in our plugin - hope you will like it!"
+msgstr ""
+"在MailChimp中，有可能为您的用户选择群组。 这不是强制性的，但有时它是非常有帮"
+"助的。 所以，我们在插件中添加了这个可能性 - 希望您会喜欢它！"
+
+msgid ""
+"Indeed, Membership is a very easy-to-use plugin and it consists of various "
+"exciting options at the same time. So after you close this page we will "
+"demonstrate you the main of them with step-by-step tutorial. For the first "
+"time we will help you to tune your Membership, but if you will need our "
+"help, please, contact us via our %s."
+msgstr ""
+"的确，这是一个非常易于使用的插件，它同时包含各种令人兴奋的选择。 所以在您关闭"
+"这个页面后，我们将通过分步教程来向您演示主要内容。 我们第一次帮助您调整会员资"
+"格，但如果您需要我们的帮助，请通过我们的%s与我们联系。"
+
+msgid "Input Background Color"
+msgstr "输入框背景颜色"
+
+msgid "Input Background Focus Color"
+msgstr "输入框对焦背景色"
+
+msgid "Input Border Color"
+msgstr "输入框边框颜色"
+
+msgid "Input Border Focus Color"
+msgstr "输入宽的边框对焦颜色"
+
+msgid "Input Placeholder Color"
+msgstr "输入框占位符颜色"
+
+msgid "Input Text Color"
+msgstr "输入框文字颜色"
+
+msgid "Inputs"
+msgstr "输入框"
+
+msgid ""
+"Insert this URL to your %s account as IPN address - to make IPN system work "
+"as it should."
+msgstr "将此URL作为IPN地址插入您的%s账户 - 使IPN系统正常工作。"
+
+msgid "Integrate Membership with your Facebook App."
+msgstr "将Membership插件与您的Facebook应用集成。"
+
+msgid "Integrations"
+msgstr "集成"
+
+msgid "Invalid ID"
+msgstr "无效的ID"
+
+msgid "Invalid login or password."
+msgstr "无效的登录名或密码。"
+
+msgid "Invalid token. Please refresh page."
+msgstr "令牌无效。 请刷新页面。"
+
+msgid "Invalid username or email."
+msgstr "用户名或邮箱无效。"
+
+msgid "Invitations"
+msgstr "邀请"
+
+msgid "Invite"
+msgstr "邀请"
+
+msgid ""
+"Invite\n"
+"\t\t\t\t\t\t\t\t\tadministrators"
+msgstr ""
+"邀请\n"
+"\t\t\t\t\t\t\t\t\t管理员"
+
+msgid "Invite administrators"
+msgstr "邀请管理员"
+
+msgid "Invite as administrator"
+msgstr "邀请为管理员"
+
+msgid "Invite friends"
+msgstr "邀请好友"
+
+msgid "Invite users"
+msgstr "邀请用户"
+
+msgid "Invited users"
+msgstr "受邀用户"
+
+msgid "Invites"
+msgstr "邀请"
+
+msgid "Is default?"
+msgstr "是默认的吗？"
+
+msgid "Join group"
+msgstr "加入群组"
+
+msgid "Join groups"
+msgstr "加入群组"
+
+msgid "Join requests"
+msgstr "加入请求"
+
+msgid "Joined Groups"
+msgstr "已加群组"
+
+msgid "Label"
+msgstr "标签（Label）"
+
+msgid "Label Text Color"
+msgstr "标签文字颜色"
+
+msgid "Last"
+msgstr "尾页"
+
+msgid "Last Name"
+msgstr "姓氏"
+
+msgid "Last Name First Name"
+msgstr "姓名"
+
+msgid "Last seen"
+msgstr "最后登录"
+
+msgid "Leave group"
+msgstr "离开群组"
+
+msgid "Left"
+msgstr "左"
+
+msgid ""
+"Let your users register and login easily via Facebook or Twitter accounts."
+msgstr "让您的用户通过Facebook或Twitter账户轻松注册和登录。"
+
+msgid ""
+"Let's make a quick tour through features and main options of the plugin. "
+"Just click \"Next\" button."
+msgstr "让我们快速浏览插件的功能和主要选项。 只需点击“下一步”按钮。"
+
+msgid "Level"
+msgstr "级别"
+
+msgid "Level Purchase (can be with Registration)"
+msgstr "购买级别（可以注册）"
+
+msgid "License"
+msgstr "许可证"
+
+msgid "License Key"
+msgstr "许可密钥"
+
+msgid "License server error"
+msgstr "许可证服务器错误"
+
+msgid "Light"
+msgstr "明亮"
+
+msgid "Like"
+msgstr "喜欢"
+
+msgid "Liked activity  is not exist"
+msgstr "喜欢的活动不存在"
+
+msgid "Liked activity is not exist"
+msgstr "喜欢的活动不存在"
+
+msgid "Likes"
+msgstr "喜欢"
+
+msgid "Link"
+msgstr "链接"
+
+msgid "Lists for subscribe"
+msgstr "订阅列表"
+
+msgid "Load more"
+msgstr "加载更多"
+
+msgid "Log in"
+msgstr "登录"
+
+msgid "Log in with"
+msgstr "登录使用"
+
+msgid "Login"
+msgstr "登录"
+
+msgid "Login ID"
+msgstr "登录ID"
+
+msgid "Login Maximum Width"
+msgstr "登录最大宽度"
+
+msgid "Login Primary Button Text"
+msgstr "登录主按钮文本"
+
+msgid "Login Secondary Button"
+msgstr "登录次按钮"
+
+msgid "Login Secondary Button Text"
+msgstr "登录次按钮文本"
+
+msgid "Login Secondary Button URL"
+msgstr "登录次按钮URL"
+
+msgid "Login error"
+msgstr "登录错误"
+
+msgid "Logo Thumbnail Large Size"
+msgstr "Logo缩略图大尺寸"
+
+msgid "Logo Thumbnail Medium Size"
+msgstr "Logo缩略图中等尺寸"
+
+msgid "Logo Thumbnail Small Size"
+msgstr "Logo缩略图中等尺寸"
+
+msgid "Logout"
+msgstr "登出"
+
+msgid "Mail appears from"
+msgstr "发件来源"
+
+msgid "Mail appears from address"
+msgstr "发件地址"
+
+msgid "MailChimp API key"
+msgstr "MailChimp API密钥"
+
+msgid "Mails"
+msgstr "邮件"
+
+msgid "Mails Configuration"
+msgstr "邮件配置"
+
+msgid "Main"
+msgstr "主页"
+
+msgid "Main Settings"
+msgstr "主要设置"
+
+msgid ""
+"Make sure you assigned Membership Level for this Content before enable "
+"Dripping."
+msgstr "确保在启用滴水计划之前为此内容分配了会员级别。"
+
+msgid "Managed Groups"
+msgstr "管理群组"
+
+msgid "Mark all as read"
+msgstr "标记为已读"
+
+msgid "Mark as read and close"
+msgstr "标记为已读并关闭"
+
+msgid "Mark as unread and close"
+msgstr "标记为未读并关闭"
+
+msgid "Maximum File Size (Mb)"
+msgstr "最大文件大小（Mb）"
+
+msgid "Maximum Image Size"
+msgstr "最大图像大小"
+
+msgid "Maximum available file upload size is %d Mb"
+msgstr "最大可用文件上传大小为 %d Mb"
+
+msgid "Maximum number of profiles"
+msgstr "最大配置文件数"
+
+msgid "Media"
+msgstr "媒体"
+
+msgid "Members"
+msgstr "会员"
+
+msgid "Members Directory"
+msgstr "会员目录"
+
+msgid "Members page"
+msgstr "会员页面"
+
+msgid "Membership Administrator"
+msgstr "会员管理员"
+
+msgid "Membership Guest"
+msgstr "会员游客"
+
+msgid "Membership Levels"
+msgstr "会员级别"
+
+msgid "Membership Purchase"
+msgstr "会员购买"
+
+msgid "Membership Role"
+msgstr "会员角色"
+
+msgid "Membership Status"
+msgstr "会员状态"
+
+msgid "Membership User"
+msgstr "会员用户"
+
+msgid "Membership by Supsystic Popular Activities"
+msgstr "热门活动"
+
+msgid "Membership by Supsystic Popular Groups"
+msgstr "热门群组"
+
+msgid "Membership by Supsystic Suggested Groups"
+msgstr "推荐群组"
+
+msgid "Membership profile"
+msgstr "会员资料"
+
+msgid "Menu"
+msgstr "菜单"
+
+msgid "Message"
+msgstr "信息"
+
+msgid "Messages"
+msgstr "信息"
+
+msgid "Messages Refresh Period"
+msgstr "信息刷新周期"
+
+msgid "Minute(s)"
+msgstr "分钟（复数）"
+
+msgid "Month"
+msgstr "月"
+
+msgid "Month(s)"
+msgstr "月（复数）"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Need renew text"
+msgstr "需要更新文字"
+
+msgid "Network Uninstall"
+msgstr "网络卸载"
+
+msgid "New Password"
+msgstr "新密码"
+
+msgid "New Password Confirmation"
+msgstr "新密码确认"
+
+msgid "New Password and New Password Confirmation fields is not match."
+msgstr "新密码和新密码确认字段不匹配。"
+
+msgid "New User Notification"
+msgstr "新用户通知"
+
+msgid "New User Notification Body"
+msgstr "新用户通知内容"
+
+msgid "New User Notification Subject"
+msgstr "新用户通知主题"
+
+msgid "New Users First"
+msgstr "新用户优先"
+
+msgid "New conversation"
+msgstr "新的对话"
+
+msgid "New group %s is created by %s."
+msgstr "新群组 %s 由 %s 创建。"
+
+msgid "New password"
+msgstr "新密码"
+
+msgid "New password and password confirmation not match."
+msgstr "新密码和密码确认不匹配。"
+
+msgid "New password can't be empty."
+msgstr "新密码不能为空。"
+
+msgid "New password confirmation"
+msgstr "新密码确认"
+
+msgid "New password confirmation can't be empty."
+msgstr "新密码确认不能为空。"
+
+msgid "New password is required"
+msgstr "新密码必填"
+
+msgid "New tag"
+msgstr "新标签"
+
+msgid "Next"
+msgstr "下一页"
+
+msgid "No"
+msgstr "否"
+
+msgid ""
+"No API key entered in admin area - contact site owner to resolve this issue."
+msgstr "管理区域中没有输入API密钥 - 联系人站点所有者来解决此问题。"
+
+msgid "No blocked users to show."
+msgstr "没有阻止用户。"
+
+msgid "No comments to show."
+msgstr "没有评论。"
+
+msgid "No data found"
+msgstr "没有找到数据"
+
+msgid "No favorites to show."
+msgstr "没有收藏。"
+
+msgid "No file is sent"
+msgstr "没有文件发送"
+
+msgid "No followers to show."
+msgstr "没有粉丝。"
+
+msgid "No following to show."
+msgstr "没有关注。"
+
+msgid "No friend requests to show."
+msgstr "没有好友请求。"
+
+msgid "No friends to show."
+msgstr "没有好友。"
+
+msgid "No groups to show."
+msgstr "没有群组。"
+
+msgid "No invites to show."
+msgstr "没有邀请。"
+
+msgid ""
+"No lists to add selected in admin area - contact site owner to resolve this "
+"issue."
+msgstr "没有在管理区域添加选择的列表 - 联系网站所有者来解决此问题。"
+
+msgid "No posts to show."
+msgstr "没有文章。"
+
+msgid "No role restriction"
+msgstr "没有角色限制"
+
+msgid "No subscriptions to show."
+msgstr "没有订阅。"
+
+msgid "No supported plugins is found. Currently we support:"
+msgstr "没有找到支持的插件。 目前我们支持："
+
+msgid "No topics to show."
+msgstr "没有话题。"
+
+msgid "No users is found."
+msgstr "没有用户。"
+
+msgid "None"
+msgstr "无"
+
+msgid "Normal"
+msgstr "正常"
+
+msgid "Not Activated"
+msgstr "未激活"
+
+msgid "Not logged-in"
+msgstr "未登录"
+
+msgid "Not ordered"
+msgstr "没有订购"
+
+msgid "Nothing is found"
+msgstr "没有找到任何东西"
+
+msgid "Nothing is found."
+msgstr "没有任何东西。"
+
+msgid "Notifications"
+msgstr "通知"
+
+msgid "Notifications settings changes could not be saved."
+msgstr "通知设置无法保存更改。"
+
+msgid "Notifications settings changes has been saved."
+msgstr "通知设置更改已保存。"
+
+msgid "Notififcations"
+msgstr "通知"
+
+msgid "Now your account is active."
+msgstr "现在您的账户已激活。"
+
+msgid "Number of activities to show:"
+msgstr "要显示的活动数量："
+
+msgid "Number of columns to show:"
+msgstr "要显示的列数："
+
+msgid "Number of groups to show:"
+msgstr "要显示的群组数量："
+
+msgid "Number of profiles per page"
+msgstr "每页的个人资料数量"
+
+msgid "Number of profiles per page (for Mobiles & Tablets)"
+msgstr "每页的个人资料数量（适用于手机和平板电脑）"
+
+msgid "Numeric"
+msgstr "数字"
+
+msgid "Off"
+msgstr "关闭"
+
+msgid "Old Users First"
+msgstr "老用户优先"
+
+msgid ""
+"On fields with type (Scroll List, Dropdown List, Radio Button, Checkbox) you "
+"can only use values from the available options so passed data to that field "
+"must match otherwise it will be ignored."
+msgstr ""
+"在类型为（滚动列表，下拉列表，单选按钮，复选框）的字段中，您只能使用可用选项"
+"中的值，以便将数据传递到该字段，否则将被忽略。"
+
+msgid "Once you delete your copy of this conversation, it cannot be undone."
+msgstr "删除此对话的副本后，无法撤消。"
+
+msgid "Once you delete your copy of this messages, it cannot be undone."
+msgstr "删除此邮件的副本后，无法撤消。"
+
+msgid ""
+"Once your site visitors begin to view or purchase your Membership Levels - "
+"statistics will be displayed here."
+msgstr "一旦您的网站访问者开始查看或购买会员级别 - 此处将显示统计信息。"
+
+msgid "Online"
+msgstr "在线"
+
+msgid "Only Me"
+msgstr "只有我"
+
+msgid "Only group administrators can send invitations"
+msgstr "只有群组管理员可以发送邀请"
+
+msgid "Open"
+msgstr "开放"
+
+msgid "Open group"
+msgstr "开发群组"
+
+msgid "Opened Content - no Level required"
+msgstr "已开放的内容 - 不需要级别"
+
+msgid "Option Name"
+msgstr "选项名称"
+
+msgid "Order"
+msgstr "订单"
+
+msgid "Order Admin Email"
+msgstr "订单管理邮箱"
+
+msgid "Order Admin Email content"
+msgstr "订单管理邮件内容"
+
+msgid "Order Created"
+msgstr "订单已创建"
+
+msgid "Ordered"
+msgstr "已订购"
+
+msgid "Ordered Levels"
+msgstr "订购级别"
+
+msgid "Orders"
+msgstr "订单"
+
+msgid "Pages"
+msgstr "页面"
+
+msgid "Parent comment is not exists"
+msgstr "父级评论不存在"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Password Changed Email"
+msgstr "密码已更改邮件"
+
+msgid "Password Changed Email Body"
+msgstr "密码更改邮件正文"
+
+msgid "Password Changed Email Subject"
+msgstr "密码更改邮件主题"
+
+msgid "Password Confirmation"
+msgstr "密码确认"
+
+msgid "Password Reset Email"
+msgstr "密码重置邮件"
+
+msgid "Password Reset Email Body"
+msgstr "密码重置邮件正文"
+
+msgid "Password Reset Email Subject"
+msgstr "密码重置邮件主题"
+
+msgid "Password and password confirmation must match"
+msgstr "密码和密码确认必须匹配"
+
+msgid "Password change"
+msgstr "密码更改"
+
+msgid "Password confirmation is required"
+msgstr "密码确认是必填的"
+
+msgid "Password is required"
+msgstr "密码是必填的"
+
+msgid "Password is updated successfully"
+msgstr "密码已成功更新"
+
+msgid "Pay by Stripe"
+msgstr "通过 Stripe 支付"
+
+msgid "PayPal PRO"
+msgstr "PayPal PRO"
+
+msgid "PayPal PRO payments."
+msgstr "PayPal PRO付款。"
+
+msgid "PayPal Standard"
+msgstr "PayPal标准"
+
+msgid "PayPal Standard payments."
+msgstr "PayPal标准付款。"
+
+msgid "Payment Action"
+msgstr "付款操作"
+
+msgid "Payment Info"
+msgstr "付款信息"
+
+msgid "Payment Method"
+msgstr "付款方式"
+
+msgid "Payment fail checkout text"
+msgstr "付款失败结账文本"
+
+msgid "Payments"
+msgstr "付款"
+
+msgid "Pending Review Email"
+msgstr "账户待审查邮件"
+
+msgid "Pending Review Email Body"
+msgstr "待审查邮件正文"
+
+msgid "Pending Review Email Subject"
+msgstr "待审查邮件主题"
+
+msgid "Pending review"
+msgstr "待审核"
+
+msgid "Phone"
+msgstr "电话"
+
+msgid "Photos"
+msgstr "照片"
+
+msgid ""
+"Pick up your Membership users to different Subscription lists right after "
+"registration."
+msgstr "将您的会员用户注册后接收到不同的订阅列表。"
+
+msgid ""
+"Please <a href=\"%s\">sign up</a> or <a href=\"%s\">sign in</a> to join or "
+"leave groups."
+msgstr ""
+"请 <a href=\"%s\">注册</a> 或 <a href=\"%s\">登录</a> 后加入或离开群组。"
+
+msgid ""
+"Please <a href=\"%s\">sign up</a> or <a href=\"%s\">sign in</a> to like or "
+"write comments on this post."
+msgstr ""
+"请<a href=\"%s\">注册</a> 或 <a href=\"%s\">登录</a>后喜欢或评论这篇文章。"
+
+msgid "Please activate your account"
+msgstr "请激活您的账户"
+
+msgid "Please enter %s"
+msgstr "请输入 %s"
+
+msgid "Popular"
+msgstr "热门"
+
+msgid "Post"
+msgstr "文章"
+
+msgid "Post by service action setting could not be saved."
+msgstr "服务操作设置提交无法保存。"
+
+msgid "Post by service action setting has been saved."
+msgstr "服务操作设置提交已被保存。"
+
+msgid "Postcode / ZIP"
+msgstr "邮政编码/ ZIP"
+
+msgid "Posts"
+msgstr "文章"
+
+msgid ""
+"Powerful stuff of Membership Ecommerce addon will help you to start and "
+"manage your own paid Membership site."
+msgstr "会员电子商务插件的强大功能将帮助您启动和管理您自己的付费会员网站。"
+
+msgid "Premium support expires in"
+msgstr "高级支持到期于"
+
+msgid "Prev"
+msgstr "上一页"
+
+msgid "Previous"
+msgstr "上一页"
+
+msgid "Price"
+msgstr "价格"
+
+msgid "Price for Membership Level"
+msgstr "会员级别价格"
+
+msgid "Price for recurring payments"
+msgstr "定期付款的价格"
+
+msgid "Primary Button Color"
+msgstr "主按钮颜色"
+
+msgid "Primary Button Hover Color"
+msgstr "主按钮悬停颜色"
+
+msgid "Primary Button Text Color"
+msgstr "主按钮文字颜色"
+
+msgid "Primary Color"
+msgstr "主色"
+
+msgid "Privacy"
+msgstr "隐私"
+
+msgid "Privacy settings was not updated."
+msgstr "隐私设置未更新。"
+
+msgid "Privacy settings was updated."
+msgstr "隐私设置已更新。"
+
+msgid "Private"
+msgstr "隐私"
+
+msgid "Private group"
+msgstr "私密群组"
+
+msgid "Products"
+msgstr "产品"
+
+msgid "Profile"
+msgstr "资料"
+
+msgid "Profile Area Maximum Width"
+msgstr "资料区域的最大宽度"
+
+msgid "Profile Avatar Size"
+msgstr "头像大小"
+
+msgid "Profile Base Background Color"
+msgstr "资料背景色"
+
+msgid "Profile Container Max Width"
+msgstr "资料封面最大宽度"
+
+msgid "Profile Cover Photos"
+msgstr "封面照片"
+
+msgid "Profile Cover Size"
+msgstr "封面大小"
+
+msgid "Profile Field Icons"
+msgstr "资料字段图标"
+
+msgid "Profile Fields"
+msgstr "资料字段"
+
+msgid ""
+"Profile Fields are made for their creation and configuration of asking on "
+"registration page and demonstrating at About section in users profiles after "
+"loginning to the site."
+msgstr ""
+"资料字段用于创建和配置注册页面，并在登录到站点后，在用户个人资料页面的“关"
+"于”部分进行显示。"
+
+msgid "Profile Header Background Color"
+msgstr "资料页眉背景色"
+
+msgid "Profile Header Icon Link Color"
+msgstr "资料页眉图标链接颜色"
+
+msgid "Profile Header Icon Link Hover Color"
+msgstr "资料页眉图标链接悬停颜色"
+
+msgid "Profile Header Link Color"
+msgstr "资料页眉链接颜色"
+
+msgid "Profile Header Link Hover Color"
+msgstr "资料页眉链接悬停颜色"
+
+msgid "Profile Header Menu Position"
+msgstr "资料页眉菜单位置"
+
+msgid "Profile Header Meta Text Icon"
+msgstr "资料页眉元数据文字图标"
+
+msgid "Profile Image Style"
+msgstr "资料图片样式"
+
+msgid "Profile Permalink Base"
+msgstr "资料固定链接"
+
+msgid "Profile Primary Button Text"
+msgstr "资料主按钮文本"
+
+msgid "Profile Secondary Button"
+msgstr "资料次按钮"
+
+msgid "Profile Secondary Button Text"
+msgstr "资料次按钮文本"
+
+msgid "Profile Settings"
+msgstr "资料设置"
+
+msgid "Profile is not exists."
+msgstr "资料不存在。"
+
+msgid "Profile picture"
+msgstr "头像"
+
+msgid "Protect all Pages"
+msgstr "保护所有页面"
+
+msgid "Publish"
+msgstr "发布"
+
+msgid "Publish to Membership Activity"
+msgstr "发布到会员活动页面"
+
+msgid "Publish to my activity"
+msgstr "发布到我的活动"
+
+msgid "Purchase"
+msgstr "购买"
+
+msgid "Purchase button name"
+msgstr "购买按钮名称"
+
+msgid "Put symbol at left side?"
+msgstr "把符号放在左边？"
+
+msgid "Radio Button"
+msgstr "单选按钮"
+
+msgid "Random"
+msgstr "随机"
+
+msgid "ReCaptcha is not valid."
+msgstr "ReCaptcha无效。"
+
+msgid "Read"
+msgstr "查看"
+
+msgid "Read groups"
+msgstr "查看群组"
+
+msgid "Read more"
+msgstr "查看全文"
+
+msgid "Reading comments is restricted"
+msgstr "您无权查看评论"
+
+msgid "Recurring Subscription"
+msgstr "定期订阅"
+
+msgid "Redirect after account is deleted to"
+msgstr "账户删除后重定向到"
+
+msgid "Redirect after login to"
+msgstr "登录后重定向到"
+
+msgid "Redirect after logout to"
+msgstr "登出后重定向到"
+
+msgid "Redirect after registration to"
+msgstr "注册后重定向到"
+
+msgid "Redirect from backend login screen to membership login page"
+msgstr "将后台登录界面重定向到前台登录页面"
+
+msgid "Register"
+msgstr "注册"
+
+msgid "Register with"
+msgstr "快速注册用"
+
+msgid "Registered"
+msgstr "注册时间"
+
+msgid "Registration"
+msgstr "注册"
+
+msgid "Registration Confirmation"
+msgstr "注册确认"
+
+msgid "Registration Default Role"
+msgstr "注册默认角色"
+
+msgid "Registration Field Icons"
+msgstr "注册字段图标"
+
+msgid "Registration Fields"
+msgstr "注册字段"
+
+msgid "Registration Primary Button Text"
+msgstr "注册主按钮文本"
+
+msgid "Registration Secondary Button"
+msgstr "注册次按钮"
+
+msgid "Registration Secondary Button Text"
+msgstr "注册次按钮文本"
+
+msgid "Registration Secondary Button URL"
+msgstr "注册次按钮链接"
+
+msgid "Registration and Login"
+msgstr "注册和登录"
+
+msgid "Registration button name"
+msgstr "注册按钮名称"
+
+msgid "Rejected"
+msgstr "已拒绝"
+
+msgid "Remember me"
+msgstr "记住我"
+
+msgid "Remove"
+msgstr "删除"
+
+msgid "Remove from group"
+msgstr "从群组中删除"
+
+msgid "Remove login and registartion links from menu when user is logged in"
+msgstr "当用户登录后，从菜单中删除登录和注册链接"
+
+msgid "Replace bbPress profile link with link to Membership profile"
+msgstr "将bbPress资料页面的链接替换为本插件的的资料页面链接"
+
+msgid "Replies"
+msgstr "回复"
+
+msgid "Replies Created"
+msgstr "回复已创建"
+
+msgid "Reply"
+msgstr "回复"
+
+msgid "Report"
+msgstr "举报"
+
+msgid "Report Comment"
+msgstr "举报评论"
+
+msgid "Report Date"
+msgstr "举报日期"
+
+msgid "Report Status"
+msgstr "举报状态"
+
+msgid "Report comment"
+msgstr "举报评论"
+
+msgid "Report date"
+msgstr "举报日期"
+
+msgid "Report details"
+msgstr "举报详情"
+
+msgid "Report post"
+msgstr "提交举报"
+
+msgid "Report type"
+msgstr "举报类型"
+
+msgid "Report was not sent."
+msgstr "举报未发送"
+
+msgid "Report was not sent. Report content not found."
+msgstr "举报未发送。 举报内容未找到。"
+
+msgid "Reported"
+msgstr "举报"
+
+msgid "Reported Activity"
+msgstr "举报活动"
+
+msgid "Reported Activity Author"
+msgstr "举报的活动作者"
+
+msgid "Reporter"
+msgstr "举报人"
+
+msgid "Reports"
+msgstr "举报"
+
+msgid "Requested activity is not found."
+msgstr "未找到请求的活动。"
+
+msgid "Required"
+msgstr "必需"
+
+msgid "Required Asterisk Color"
+msgstr "所需星号颜色"
+
+msgid "Reset Zoom"
+msgstr "重置缩放"
+
+msgid "Reset key is not provided."
+msgstr "不提供复位键。"
+
+msgid "Reset password"
+msgstr "重置密码"
+
+msgid "Reset to Default"
+msgstr "恢复默认"
+
+msgid "Reset your password"
+msgstr "重置您的密码"
+
+msgid "Results Text"
+msgstr "结果文本"
+
+msgid "Review for"
+msgstr "评论"
+
+msgid "Role"
+msgstr "角色"
+
+msgid "Role Name"
+msgstr "角色名称"
+
+msgid "Role name"
+msgstr "角色名称"
+
+msgid "Roles"
+msgstr "角色"
+
+msgid ""
+"Roles tab offers you to manage with membership roles. By default there are "
+"three roles – Membership Administrator, Membership User and Membership Guest."
+msgstr ""
+"“角色”选项卡可让您以会员角色进行管理。 默认情况下，会有三个角色 - 会员管理"
+"员，会员用户和会员游客。"
+
+msgid "Roles who can have forum tab"
+msgstr "可以拥有论坛标签的角色"
+
+msgid "Rounded Corners"
+msgstr "圆角"
+
+msgid "SEO"
+msgstr "SEO"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Save Address"
+msgstr "保存地址"
+
+msgid "Save Fields"
+msgstr "保存字段"
+
+msgid "Save Pages"
+msgstr "保存页面"
+
+msgid "Save Settings"
+msgstr "保存设置"
+
+msgid "Scroll List"
+msgstr "滚动列表"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Search..."
+msgstr "搜索..."
+
+msgid "Secondary Button Color"
+msgstr "次按钮颜色"
+
+msgid "Secondary Button Hover Color"
+msgstr "次按钮悬停颜色"
+
+msgid "Secondary Button Text Color"
+msgstr "次按钮文本颜色"
+
+msgid "Secondary Color"
+msgstr "次颜色"
+
+msgid "Secret word to validate responce"
+msgstr "用来验证回应的密语"
+
+msgid "Section"
+msgstr "小节"
+
+msgid "Section Name"
+msgstr "小节名称"
+
+msgid "Security"
+msgstr "安全"
+
+msgid "Security Settings"
+msgstr "安全设置"
+
+msgid "See dashboard bar"
+msgstr "可见仪表盘工具条"
+
+msgid "Select"
+msgstr "选择"
+
+msgid "Select a role that will be assigned to user after his registration."
+msgstr "选择在注册后分配给用户的角色。"
+
+msgid ""
+"Select lists for subscribe. They are taken from your Constant Contact "
+"account."
+msgstr "选择订阅列表。它们来自您的Constant Contact 账户。"
+
+msgid ""
+"Select lists for subscribe. They are taken from your MailChimp account - so "
+"make sure that you entered correct API key before."
+msgstr ""
+"选择订阅列表。 它们是从您的MailChimp账户中获取的 - 因此请确保您之前输入了正确"
+"的API密钥。"
+
+msgid "Select messages to delete"
+msgstr "选择要删除的信息"
+
+msgid "Select some Lists before"
+msgstr "选择一些列表之后"
+
+msgid "Select the sorting order to display users on \"Members\" tab."
+msgstr "选择在“成员”选项卡上显示用户的排序。"
+
+msgid "Select the style of profiles and groups images."
+msgstr "选择资料页面的样式和群组图像。"
+
+msgid ""
+"Select the type of confirmation that should be performed after user "
+"registration. You can choose \"Auto\" and there will be no confirmation."
+msgstr "选择用户注册后应执行的确认类型。 您可以选择“自动”，便不会有任何确认。"
+
+msgid ""
+"Select what data to use in the link of user's profile. E.g. \"http://"
+"supsystic/profile/john_snow/\" or \"http://supsystic/profile/1/\"."
+msgstr ""
+"在用户资料的链接中选择要使用的英文链接。 例如\"http://supsystic/profile/"
+"john_snow/\" or \"http://supsystic/profile/1/\"."
+
+msgid "Select which kind of user's name will be displayed."
+msgstr "选择将显示哪种用户名。"
+
+msgid "Select who can see information on your website."
+msgstr "选择谁可以在您的网站上查看信息。"
+
+msgid "Send"
+msgstr "发送"
+
+msgid "Send MailChimp Welcome Email"
+msgstr "发送MailChimp欢迎邮件"
+
+msgid "Send Test"
+msgstr "发送测试"
+
+msgid "Send Test Email"
+msgstr "发送测试邮件"
+
+msgid "Send a request"
+msgstr "发送请求"
+
+msgid "Send and receive messages"
+msgstr "发送和接收信息"
+
+msgid "Send friend request"
+msgstr "发送好友请求"
+
+msgid "Send me some info, pls"
+msgstr "给我一些信息，"
+
+msgid "Send message"
+msgstr "发送信息"
+
+msgid "Send message to"
+msgstr "发送信息给"
+
+msgid "Send message to: "
+msgstr "发送信息给："
+
+msgid "Send private message"
+msgstr "发送私信"
+
+msgid "Sending message to this user is restricted by his privacy settings"
+msgstr "向该用户发送消息受其隐私设置的限制"
+
+msgid "Set the background color for labels."
+msgstr "设置标签的背景颜色。"
+
+msgid "Set the background color for profile header."
+msgstr "设置资料页眉的背景颜色。"
+
+msgid "Set the background color when the cursor is in this field."
+msgstr "设置光标在此字段时的背景颜色。"
+
+msgid "Set the color for borders of labels."
+msgstr "设置标签边框的颜色。"
+
+msgid "Set the color for borders when the cursor is in this field."
+msgstr "设置当光标在此字段中时的边框的颜色。"
+
+msgid "Set the color for placeholder."
+msgstr "设置占位符的颜色。"
+
+msgid "Set the color for primary buttons when they will be covered by mouse."
+msgstr "设置主按钮被鼠标悬停的颜色。"
+
+msgid "Set the color for primary buttons."
+msgstr "设置主按钮的颜色。"
+
+msgid "Set the color for secondary buttons when they will be covered by mouse."
+msgstr "设置次按钮被鼠标悬停的颜色。"
+
+msgid "Set the color for secondary buttons."
+msgstr "设置次按钮的颜色。"
+
+msgid "Set the color for text in labels."
+msgstr "设置标签中的文本颜色。"
+
+msgid "Set the color for text in primary buttons."
+msgstr "设置主按钮中文本的颜色。"
+
+msgid "Set the color for text in secondary buttons."
+msgstr "设置次按钮中文本的颜色。"
+
+msgid "Set the color for text."
+msgstr "设置文本的颜色。"
+
+msgid "Set the quality of images in %. The highest value is 100."
+msgstr "设置图像的质量（百分比），最高值为100。"
+
+msgid "Set the text for \"Log in\" button."
+msgstr "设置“登录”按钮的文本。"
+
+msgid "Set the text for \"Register\" button."
+msgstr "设置“注册”按钮的文本。"
+
+msgid "Set the text for secondary button."
+msgstr "设置次按钮的文本。"
+
+msgid "Set the width for profile container. The maximum is 100%."
+msgstr "设置资料容器的宽度。 最大为100％。"
+
+msgid "Set to default"
+msgstr "设置为默认值"
+
+msgid ""
+"Set url to which user will be redirected after clicking on secondary button "
+"in Login form."
+msgstr "设置一个链接，当用户在“登录”表单中单击次按钮后，将重定向他到这个链接。"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Share"
+msgstr "分享"
+
+msgid ""
+"Shared activity is not exist or user don't have read permission to read "
+"activity."
+msgstr "共享活动不存在或用户没有阅读活动的查看权限。"
+
+msgid "Shares"
+msgstr "分享"
+
+msgid "Shipping Address"
+msgstr "收货地址"
+
+msgid "Shipping Information"
+msgstr "收货信息"
+
+msgid "Show Display Name"
+msgstr "显示显示名字（Display Name）"
+
+msgid "Show Display Name In Profile Header"
+msgstr "在资料页眉中显示显示名称"
+
+msgid "Show Friends and Followers"
+msgstr "显示好友和粉丝"
+
+msgid "Show Load More Button"
+msgstr "显示加载更多按钮"
+
+msgid "Show Only Members With Cover"
+msgstr "只显示有封面的会员"
+
+msgid "Show Only Members With Photo"
+msgstr "只显示有头像的会员"
+
+msgid "Show Pages"
+msgstr "显示页眉"
+
+msgid "Show Remember Me"
+msgstr "显示“记住我”"
+
+msgid "Show a custom message if profile is empty"
+msgstr "如果个人资料为空，则显示自定义信息"
+
+msgid "Show an asterisk for required fields"
+msgstr "显示必填字段的星号"
+
+msgid "Show billing address in user settings"
+msgstr "在用户设置中显示收货地址"
+
+msgid "Show bought products in profile"
+msgstr "在用户资料中显示已购买的产品"
+
+msgid "Show extra user information below tagline?"
+msgstr "在标语下面显示额外的用户信息？"
+
+msgid "Show group action buttons?"
+msgstr "显示群组操作按钮？"
+
+msgid "Show inside text field"
+msgstr "在文本字段内显示"
+
+msgid "Show my profile in Members Directory."
+msgstr "在成员目录中显示我的资料"
+
+msgid "Show ordered Membership Levels"
+msgstr "显示订购会员级别"
+
+msgid "Show orders in members directory"
+msgstr "在成员目录中显示订单"
+
+msgid "Show orders in profile"
+msgstr "在资料中显示订单"
+
+msgid "Show product reviews in profile"
+msgstr "在资料中显示产品评论"
+
+msgid "Show purchases in profile"
+msgstr "在资料中显示购买"
+
+msgid "Show results only after search"
+msgstr "仅在搜索后显示结果"
+
+msgid "Show shipping address in user settings"
+msgstr "在用户设置中显示收货地址"
+
+msgid "Show social links in profile header"
+msgstr "在资料页眉中显示社交链接"
+
+msgid "Show tagline below profile name"
+msgstr "在资料名称下显示标语"
+
+msgid "Show total spent in members directory"
+msgstr "在成员目录中显示总花费"
+
+msgid "Show total spent in profile"
+msgstr "在资料中显示总花费"
+
+msgid "Show user description in header"
+msgstr "在资料页眉中显示用户描述"
+
+msgid "Show with label"
+msgstr "用标签显示"
+
+msgid "Shows the list of activities, depending on likes."
+msgstr "显示活动列表，具体取决于喜欢的内容。"
+
+msgid "Shows the list of groups, depending on the number of followers."
+msgstr "显示群组的列表，具体取决于关注人的数量。"
+
+msgid "Shows the list of suggested groups."
+msgstr "显示推荐群组列表。"
+
+msgid "Since:"
+msgstr "自从："
+
+msgid "Single Result Text"
+msgstr "单一结果文本"
+
+msgid "Site Accessible to Everyone"
+msgstr "任何人都可以访问"
+
+msgid "Site Accessible to Logged In Users"
+msgstr "仅限已登录的用户访问"
+
+msgid "Site wide"
+msgstr "全站"
+
+msgid "Social"
+msgstr "社交"
+
+msgid "Social Login"
+msgstr "社交登录"
+
+msgid "Social Login (PRO)"
+msgstr "社交登录 (PRO)"
+
+msgid "Social Network Integration"
+msgstr "社交网络集成"
+
+msgid "Social Networks Integration (PRO)"
+msgstr "社交网络集成 (PRO)"
+
+msgid "Social network integration"
+msgstr "社交网络集成"
+
+msgid "Social sign-in"
+msgstr "社交登录"
+
+msgid "Some of requested users cannot receive or send messages"
+msgstr "一些被请求的用户不能接收或发送消息"
+
+msgid ""
+"Some of your products is extendable, but you don't have original product "
+"purchased before."
+msgstr "您的部分产品是可扩展的，但您之前没有购买原始产品。"
+
+msgid ""
+"Something going wrong while trying to send data to MailChimp. Please contact "
+"site owner."
+msgstr "尝试向MailChimp发送数据时发生错误。 请联系网站所有者。"
+
+msgid ""
+"Something going wrong while trying to send data to mail list service. Please "
+"contact site owner."
+msgstr "尝试将数据发送到邮件列表服务时发生错误。 请联系网站所有者。"
+
+msgid "Something went wrong"
+msgstr "出错了"
+
+msgid "Specific roles"
+msgstr "特定角色"
+
+msgid ""
+"Specify a description of Group page. Search engines can pick up this "
+"description to show with the results of searches."
+msgstr "指定群组页面的描述。 搜索引擎可以提取此描述以显示在搜索结果中。"
+
+msgid ""
+"Specify a description of User Profile page. Search engines can pick up this "
+"description to show with the results of searches."
+msgstr ""
+"指定用户个人资料页面的描述。 搜索引擎可以提取此描述以显示在搜索结果中。"
+
+msgid "Square"
+msgstr "正方形"
+
+msgid "Start"
+msgstr "开始"
+
+msgid "State"
+msgstr "省"
+
+msgid "State / County"
+msgstr "州/县"
+
+msgid "Statistics"
+msgstr "统计"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Stripe"
+msgstr "Stripe"
+
+msgid "Stripe Publishable Key"
+msgstr "Stripe Publishable Key"
+
+msgid "Stripe Secret Key"
+msgstr "Stripe Secret Key"
+
+msgid "Stripe payments."
+msgstr "Stripe 付款。"
+
+msgid "Subscribe"
+msgstr "订阅"
+
+msgid "Subscribe success message"
+msgstr "订阅成功的信息"
+
+msgid "Subscriptions"
+msgstr "订阅"
+
+msgid "Subscriptions (PRO)"
+msgstr "订阅 (PRO)"
+
+msgid "Subscriptions Lists"
+msgstr "订阅列表"
+
+msgid "Success checkout text"
+msgstr "成功结账的文本"
+
+msgid "Support part"
+msgstr "支持部分"
+
+msgid "Supsystic Forum"
+msgstr "Supsystic 论坛"
+
+msgid "Supsystic Membership Role"
+msgstr "会员角色"
+
+msgid "Symbol"
+msgstr "符号"
+
+msgid "Tag does not exists at this group"
+msgstr "此群组中不存在标签"
+
+msgid "Tags"
+msgstr "标签"
+
+msgid "Tags for this group have not been added yet."
+msgstr "此群组尚未添加标签。"
+
+msgid "Test"
+msgstr "测试"
+
+msgid "Test Mode"
+msgstr "测试模式"
+
+msgid "Test Payments"
+msgstr "测试付款"
+
+msgid "Test mail"
+msgstr "测试邮件"
+
+msgid "Test user"
+msgstr "测试用户"
+
+msgid "Text"
+msgstr "文本"
+
+msgid "Text that users will see when they need to renew this Level."
+msgstr "当用户需要更新此级别时，用户将看到的文字。"
+
+msgid "Thank you for choosing our Membership plugin"
+msgstr "感谢您选择我们的会员插件"
+
+msgid ""
+"Thank you for choosing our plugin! We are happy you like Membership plugin "
+"by Supsystic and You will get our best work!"
+msgstr ""
+"感谢您选择我们的插件！ 我们很高兴您喜欢Supsystic的会员插件，您会得到我们最好"
+"的产品！"
+
+msgid "Thank you for registration!"
+msgstr "谢谢您的注册！"
+
+msgid ""
+"Thank you for signing up with {site_name}!\n"
+"To activate your account, please click the link below to confirm your email "
+"address: <a href=\"{account_activation_link}\">{account_activation_link}</"
+"a>\n"
+"If you have any problems, please contact us at {admin_email}\n"
+"Thanks, {site_name}"
+msgstr ""
+"感谢您注册 {site_name}！\n"
+"请点击下面的链接激活您的账户： <a href="
+"\"{account_activation_link}\">{account_activation_link}</a>\n"
+"有什么问题，可以通过这个邮箱联系我们： {admin_email}\n"
+"谢谢！\n"
+" {site_name}"
+
+msgid ""
+"The color theme. You can select from themes, provided by Google, for your "
+"reCaptcha."
+msgstr "颜色主题。 您可以从Google提供的主题中选择。"
+
+msgid "The message that admin will get if some account needs to be reviewed."
+msgstr "如果某些账户需要被审查，管理员将收到的信息。"
+
+msgid ""
+"The message that admin will receive after a new user signs up. In case you "
+"don't want to get this email just turn this option off."
+msgstr "新用户注册后管理员将收到的信息。 如果您不想收到此邮件，请关闭此选项。"
+
+msgid "The message was sent"
+msgstr "信息已发送"
+
+msgid "The name of site that will be indicated in emails."
+msgstr "将在邮件中显示的网站的名称。"
+
+msgid "The requested social network integration is not enabled"
+msgstr "请求的社交网络集成未启用"
+
+msgid "The size of the CAPTCHA widget."
+msgstr "CAPTCHA 小工具的大小。"
+
+msgid ""
+"The total number of recurring billing cycles for this level, including the "
+"trial period (if applicable) but not including the initial payment. Set to "
+"zero if membership is indefinite."
+msgstr ""
+"此级别的定期结算周期总数，包括试用期（如适用），但不包括初始付款。 如果会员资"
+"格不确定，则设置为零。"
+
+msgid "The type of CAPTCHA to serve."
+msgstr "要提供的CAPTCHA类型。"
+
+msgid "The vendor account number for the 2Checkout gateway"
+msgstr "2Checkout网关的供应商帐号"
+
+msgid "There are no Membership Levels on this site for now."
+msgstr "现在这个网站没有会员级别。"
+
+msgid "There is no administrators left in group, you must delete group first."
+msgstr "群组中没有管理员，您必须先删除群组。"
+
+msgid "There is no data to import."
+msgstr "没有要导入的数据。"
+
+msgid "There is no products"
+msgstr "暂无产品"
+
+msgid "There is no purchases"
+msgstr "暂无购买"
+
+msgid "There is no reviews"
+msgstr "暂无评论"
+
+msgid "There is no subscription in subscriptions lists"
+msgstr "订阅列表中没有订阅"
+
+msgid "There is no user with provided id"
+msgstr "不存在指定ID的用户"
+
+msgid "There is no users yet."
+msgstr "还没有用户。"
+
+msgid ""
+"There was some problem while trying to get your lists. Make sure that your "
+"API key is correct."
+msgstr "尝试获取列表时出现问题。 确保您的API密钥正确。"
+
+msgid "There were some errors with your submission"
+msgstr "您的提交有一些错误"
+
+msgid "There's no any activity yet"
+msgstr "还没有任何活动"
+
+msgid "This Level is Expired"
+msgstr "此级别已过期"
+
+msgid ""
+"This email will be sent to user after his account has been approved and "
+"activated by admin."
+msgstr "如果他的账户被管理员批准并激活，该邮件将发送给他。"
+
+msgid "This email will be sent to user if admin rejected his account."
+msgstr "如果管理员拒绝了他的账户，该邮件将被发送给用户。"
+
+msgid ""
+"This email will be sent to user if he has requested to change the password."
+msgstr "如果他要求更改密码，该邮件将发送给用户。"
+
+msgid ""
+"This email will be sent to user if he needs to wait till admin will approve "
+"his account."
+msgstr "如果他的账户需要等待管理员批准，这封电子将被发送给用户。"
+
+msgid "This email will be sent to user if his account has been deactivated."
+msgstr "如果他的账户被停用，这封邮件将被发送给用户。"
+
+msgid "This email will be sent to user if this account has been deleted."
+msgstr "如果他的账户已被删除，这封邮件将被发送给用户。"
+
+msgid ""
+"This email will be sent to user, so he could confirm his email and activate "
+"the account after registration."
+msgstr "如果他注册后确认邮件并激活账户，这封邮件将发送给用户。"
+
+msgid "This email will be used as Sender."
+msgstr "此邮箱将用作发件人。"
+
+msgid "This is not your Order"
+msgstr "这不是您的订单"
+
+msgid ""
+"This message will be shown after subscription in the settings of user's "
+"profile right after subscriber will be\n"
+"    created and confirmed."
+msgstr "此信息将在订阅者创建并确认订阅后，显示在用户的资料页面的设置中。"
+
+msgid "This module is used for test purpose only. Do not use in in Production."
+msgstr "该模块仅用于测试目的。 不要在生产中使用。"
+
+msgid "This month"
+msgstr "本月"
+
+msgid ""
+"This option allows to use html markup language to edit the text in emails."
+msgstr "此选项允许使用html标记语言来编辑邮件中的文本。"
+
+msgid ""
+"This option will create subscriber directly after new user registration. If "
+"this option is disabled - new subscriber won't be created for your "
+"subscription list after registration. In this case user will be able to "
+"subscribe only in his Profile Settings."
+msgstr ""
+"此选项将在新用户注册后直接创建用户。 如果禁用此选项，则注册后不会为订阅列表创"
+"建新用户。 在这种情况下，用户只能在他的个人资料设置中订阅。"
+
+msgid "This page is disabled by site administrator."
+msgstr "此页面被网站管理员禁用。"
+
+msgid ""
+"This tab allows you to see detail user reports on restricted content types "
+"of other users and write to the reporter/reported user or block him/her."
+msgstr ""
+"此选项卡允许您查看有关其他用户的受限内容类型的详细用户举报，并写信给举报用户"
+"或阻止他/她。"
+
+msgid "This user is blocking your messages."
+msgstr "此用户正在阻止您的信息。"
+
+msgid "This user is restrict access to his about page."
+msgstr "该用户限制访问他的关于页面。"
+
+msgid "This user is restrict access to his activity page."
+msgstr "此用户限制访问他的活动页"
+
+msgid "This user is restrict access to his comments page."
+msgstr "该用户限制访问他的评论页面。"
+
+msgid "This user is restrict access to his followers page."
+msgstr "此用户限制访问他的粉丝页面。"
+
+msgid "This user is restrict access to his friends page."
+msgstr "该用户限制访问他的好友页面。"
+
+msgid "This user is restrict access to his groups page."
+msgstr "该用户限制访问他的群组页面。"
+
+msgid "This user is restrict access to his posts page."
+msgstr "该用户限制访问他的文章页面。"
+
+msgid "This user is restrict access to his profile."
+msgstr "该用户限制访问他的个人资料。"
+
+msgid "This week"
+msgstr "本周"
+
+msgid "This will be initial amount for the first payment"
+msgstr "这将是首次付款的初始金额"
+
+msgid "This year"
+msgstr "本年度"
+
+msgid "Thousands separator"
+msgstr "千分位分隔符"
+
+msgid "Title:"
+msgstr "标题："
+
+msgid "To"
+msgstr "给 "
+
+msgid ""
+"To be unique develop your own coloristic combination of Membership design."
+msgstr "开发您自己的第一无二的会员界面设计。"
+
+msgid ""
+"To complete your registration administrator needs to review your account."
+"<br>You will receive email about your account activation after review."
+msgstr ""
+"要完成您的注册，管理员需要查看您的账户。<br>在审核后，您将收到有关您的账户激"
+"活的邮件。"
+
+msgid ""
+"To complete your registration please follow the activation link in "
+"confirmation email message that you will receive."
+msgstr "要完成您的注册，请按照您将收到的确认邮件中的激活链接。"
+
+msgid ""
+"To find your Facebook App ID please login to your Facebook account at <a "
+"target=\"_blank\" href=\"https://developers.facebook.com/apps/\">https://"
+"developers.facebook.com/apps/</a>. Then on the left main menu click on "
+"Dashboard. Copy / Paste your App ID into \"Facebook App ID\" field here. For "
+"more detailed instruction - check article <a target=\"_blank\" href=\"http://"
+"supsystic.com/integrate-membership-facebook-app/\">here</a>."
+msgstr ""
+"要找到您的 Facebook App ID，请在 <a target=\"_blank\" href=\"https://"
+"developers.facebook.com/apps/\">https://developers.facebook.com/apps/</a>登录"
+"您的Facebook账号。然后在左边的菜单中点击仪表盘。复制并粘贴您的 App ID 到 "
+"\"Facebook App ID\" 字段。要获取更多信息，请访问 <a target=\"_blank\" href="
+"\"http://supsystic.com/integrate-membership-facebook-app/\">这里</a>。"
+
+msgid ""
+"To find your Facebook App Secret please login to your Facebook account at "
+"https://developers.facebook.com/apps/. Then on the left main menu click on "
+"Dashboard. Copy / Paste your App Secret into \"Facebook App Secret\" field "
+"here. For more detailed instruction - check article <a target=\"_blank\" "
+"href=\"http://supsystic.com/integrate-membership-facebook-app/\">here</a>."
+msgstr ""
+"要找到您的 Facebook App Secret，请在 <a target=\"_blank\" href=\"https://"
+"developers.facebook.com/apps/\">https://developers.facebook.com/apps/</a>登录"
+"您的Facebook账号。然后在左边的菜单中点击仪表盘。复制并粘贴您的 App Secret 到 "
+"\"Facebook App Secret\" 字段。要获取更多信息，请访问 <a target=\"_blank\" "
+"href=\"http://supsystic.com/integrate-membership-facebook-app/\">这里</a>。"
+
+msgid ""
+"To find your MailChimp API Key login to your Mailchimp account at http://"
+"mailchimp.com. On the left main menu click on your Username, then select "
+"\"Account\" in the flyout menu. From the account page select \"Extras\", "
+"\"API Keys\". Your API Key will be listed in the table labeled \"Your API "
+"Keys\". Copy / Paste your API key into \"MailChimp API key\" field here."
+msgstr ""
+"要找到您的 MailChimp API Key，请在http://mailchimp.com 登录您的Mailchimp账"
+"号。在左菜单中点击您的用户名，然后在弹出菜单中选择“账户”。在账户页面选择“高"
+"级”，您的API Key 将列在标有“您的API Key”的表中。 将您的API Key复制/粘贴"
+"到“MailChimp API Key”字段中。"
+
+msgid ""
+"To find your Twitter API Key please login to your Twitter account at https://"
+"apps.twitter.com/. Open the settings of your App and click on \"Keys and "
+"Access Tokens\" tab. Copy / Paste \"Consumer Key (API Key)\" into \"Twitter "
+"API Key\" field here. For more detailed instruction - check article <a "
+"target=\"_blank\" href=\"http://supsystic.com/integrate-membership-twitter/"
+"\">here</a>."
+msgstr ""
+"要找到您的 Twitter API Key，请在 https://apps.twitter.com/登录您的Twitter账"
+"号。 打开您的应用程序的设置，然后单击“Keys and Access Tokens”选项卡。 "
+"将“Consumer Key (API Key)”复制/粘贴到“Twitter API Key”字段中。 有关更详细的说"
+"明，请参阅<a target=\"_blank\" href=\"http://supsystic.com/integrate-"
+"membership-twitter/\">此文</a>。"
+
+msgid ""
+"To find your Twitter API Secret please login to your Twitter account at "
+"https://apps.twitter.com/. Open the settings of your App and click on \"Keys "
+"and Access Tokens\" tab. Copy / Paste \"Consumer Secret (API Secret)\" into "
+"\"Twitter API Secret\" field here. For more detailed instruction - check "
+"article <a target=\"_blank\" href=\"http://supsystic.com/integrate-"
+"membership-twitter/\">here</a>."
+msgstr ""
+"要找到您的 Twitter API Secret，请在 https://apps.twitter.com/登录您的Twitter"
+"账号。 打开您的应用程序的设置，然后单击“Keys and Access Tokens”选项卡。 "
+"将“Consumer Secret (API Secret)”复制/粘贴到“Twitter API Secret”字段中。 有关"
+"更详细的说明，请参阅<a target=\"_blank\" href=\"http://supsystic.com/"
+"integrate-membership-twitter/\">此文</a>。"
+
+msgid "To:"
+msgstr "给："
+
+msgid "Today"
+msgstr "今天"
+
+msgid "Token response error. You need to reconnect to %s."
+msgstr "令牌响应错误。 您需要重新连接到%s。"
+
+msgid "Topics Started"
+msgstr "主题开始"
+
+msgid "Total"
+msgstr "总计"
+
+msgid "Total Spent"
+msgstr "总计花费"
+
+msgid "Total Statistics"
+msgstr "总统计"
+
+msgid "Total Statistics is empty for now."
+msgstr "现在总统计数是空的。"
+
+msgid "Town / City"
+msgstr "镇/市"
+
+msgid "Transaction Key"
+msgstr "交易密钥"
+
+msgid "Tune needed settings for frontend appearance of Membership Groups."
+msgstr "调整成员资格群组的前端显示所需的设置。"
+
+msgid "Twitter"
+msgstr "Twitter"
+
+msgid "Twitter API Key"
+msgstr "Twitter API Key"
+
+msgid "Twitter API Secret"
+msgstr "Twitter API Secret"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Unapprove"
+msgstr "取消审核"
+
+msgid "Unblock"
+msgstr "解除阻止"
+
+msgid "Unblock actvity"
+msgstr "取消阻止活动"
+
+msgid "Unblock group"
+msgstr "解除阻止群组"
+
+msgid "Unblock user"
+msgstr "解除阻止用户"
+
+msgid "Unfollow"
+msgstr "取消关注"
+
+msgid "Unfriend"
+msgstr "取消好友"
+
+msgid "Uninstall"
+msgstr "卸载"
+
+msgid "Unknown upload error."
+msgstr "未知上传错误。"
+
+msgid "Unpublished"
+msgstr "取消发布"
+
+msgid "Unread"
+msgstr "未读"
+
+msgid "Unsubscribe"
+msgstr "退订"
+
+msgid "Unsubscribed successfully"
+msgstr "取消订阅成功"
+
+msgid "Unsupported image format"
+msgstr "不支持的图像格式"
+
+msgid "Unsupported template."
+msgstr "不支持的模板"
+
+msgid "Update"
+msgstr "更新"
+
+msgid ""
+"Upgrade your Membership site and provide beneficial abilities for clients "
+"with Membership PRO Addons by Supsystic."
+msgstr "升级您的会员网站，并为Supsystic的会员PRO插件的客户提供有益的能力。"
+
+msgid "Upload logo"
+msgstr "上传Logo"
+
+msgid "Upload photo"
+msgstr "上传照片"
+
+msgid "Uploads"
+msgstr "上传"
+
+msgid "Use Default Theme Colors"
+msgstr "使用默认主题颜色"
+
+msgid "Use HTML for E-mails"
+msgstr "在邮件中使用HTML代码"
+
+msgid "Use Profile Avatar"
+msgstr "使用个人资料头像"
+
+msgid "Use Profile Cover"
+msgstr "使用个人资料封面"
+
+msgid "Use Profile Gravatar"
+msgstr "使用个人资料Gravatar"
+
+msgid "Use your own social network app"
+msgstr "使用您自己的社交网络应用程序"
+
+msgid "User"
+msgstr "用户"
+
+msgid "User Display Name"
+msgstr "用户显示名字"
+
+msgid "User ID"
+msgstr "用户ID"
+
+msgid "User Name"
+msgstr "用户名"
+
+msgid "User Profile"
+msgstr "用户个人资料"
+
+msgid "User Profile Dynamic Meta Description"
+msgstr "用户个人资料的动态元描述"
+
+msgid "User Profile Title"
+msgstr "用户个人资料标题"
+
+msgid "User Registration"
+msgstr "用户注册"
+
+msgid "User Report"
+msgstr "用户举报"
+
+msgid "User Roles that can use search"
+msgstr "可以使用搜索的用户角色"
+
+msgid "User Roles to Display"
+msgstr "要显示的用户角色"
+
+msgid "User activated"
+msgstr "用户已激活"
+
+msgid "User already blocked"
+msgstr "用户已被阻止"
+
+msgid "User already followed"
+msgstr "用户已关注"
+
+msgid "User already in friends"
+msgstr "用户已是好友"
+
+msgid "User blocked"
+msgstr "用户被阻止"
+
+msgid "User does not have permission to delete this group."
+msgstr "用户无权删除此群组。"
+
+msgid "User get role"
+msgstr "用户获取角色"
+
+msgid "User is not allowed to edit this order"
+msgstr "用户不能编辑此订单"
+
+msgid "User is not blocked"
+msgstr "用户没有被阻止"
+
+msgid "User is not follower of this group"
+msgstr "用户不是此群组的关注者"
+
+msgid "User is not found"
+msgstr "没有找到用户"
+
+msgid "User is not provided."
+msgstr "用户未提供。"
+
+msgid "User not found"
+msgstr "没有找到用户"
+
+msgid ""
+"User registration is disabled. To enable go to WP Settings > General and "
+"check box for Membership option."
+msgstr ""
+"用户注册已被禁用。 要启用，请到WP设置>常规界面，勾选成员资格选项复选框。"
+
+msgid "User unblocked"
+msgstr "用户已解除阻止"
+
+msgid "User update error"
+msgstr "用户更新错误"
+
+msgid ""
+"User will see this message after subscription in the settings of his "
+"profile, when email with confirmation link was\n"
+"    sent."
+msgstr ""
+"当包含确认链接的邮件发送后，用户将在他的资料界面的订阅设置下看到这个信息。"
+
+msgid "User with email %s already exists. Skipped."
+msgstr "具有邮箱 %s 的用户已经存在。已跳过。"
+
+msgid "User with id %d is not found"
+msgstr "找不到ID为%d的用户"
+
+msgid "User with login %s already exists. Skipped."
+msgstr "具有用户名 %s 的用户已经存在。已跳过。"
+
+msgid "User with this %s e-mail address already exists."
+msgstr "使用该邮箱地址 %s 的用户已存在。"
+
+msgid "User with username %s already exists"
+msgstr "使用 ％s 作为用户名的的用户已经存在"
+
+msgid "Username"
+msgstr "用户名"
+
+msgid "Username or E-mail"
+msgstr "用户名或邮箱"
+
+msgid "Username or E-mail is required"
+msgstr "用户名或邮箱是必需的"
+
+msgid "Username or E-mail is required."
+msgstr "用户名或邮箱是必需的。"
+
+msgid "Username or Email Address"
+msgstr "用户名或邮箱地址"
+
+msgid "Users"
+msgstr "用户"
+
+msgid "Users profile activity page"
+msgstr "用户个人资料活动页面"
+
+msgid "Users with the chosen role will be shown on \"Members\" tab."
+msgstr "具有所选角色的用户将显示在“成员”选项卡上。"
+
+msgid "Vendor account number"
+msgstr "供应商账号"
+
+msgid "Video Tutorial"
+msgstr "视频教程"
+
+msgid "View"
+msgstr "查看"
+
+msgid "View previous comments"
+msgstr "查看以前的评论"
+
+msgid "View previous replies"
+msgstr "查看以前的回复"
+
+msgid "Waiting for schedule"
+msgstr "等待时间表"
+
+msgid ""
+"Warning! All membership users data will be deleted. This action cannot be "
+"undone!"
+msgstr "警告！ 所有会员用户数据将被删除。 此操作无法撤销！"
+
+msgid ""
+"Warning! Some required Membership plugin pages are missing or haven't been "
+"created, you can assign or create them <a href=\"%s\">here</a>"
+msgstr ""
+"警告！ 某些必需的会员插件页面丢失或尚未创建，您可以在<a href=\"%s\">这里</a>"
+"分配或创建它们。"
+
+msgid ""
+"We are constantly making improvements of the Membership tool usage for your "
+"maximum comfort and easiness. And now it is the most appropriate moment to "
+"tell you about some options and features of Membership plugin."
+msgstr ""
+"我们不断改进会员工具的使用方式，以获得最大的舒适度和容易度。 现在，最适合的时"
+"刻告诉您一些Membership插件的选项和功能。"
+
+msgid ""
+"We love the plugins that we created and feel responsibility for every our "
+"product. Constantly we are trying to improve something or update the new "
+"features, but sometimes you may have a situation when you need help or have "
+"an issue. We can propose you next kinds of help:"
+msgstr ""
+"我们喜欢我们创建的插件，并为每个产品负责。 我们正在努力不断地改进某些内容或更"
+"新新功能，但有时您可能会遇到需要帮助或遇到问题的情况。 我们可以为您提供以下帮"
+"助："
+
+msgid "Week"
+msgstr "周"
+
+msgid "Week(s)"
+msgstr "周（复数）"
+
+msgid "Welcome to the"
+msgstr "欢迎来到"
+
+msgid "Welcome to {site_name}!"
+msgstr "欢迎访问{site_name}！"
+
+msgid "Well done!"
+msgstr "做得好！"
+
+msgid ""
+"When this option is activated - users, who want to login to your website, "
+"will be redirected to Membership Login page instead of usual WordPress login "
+"form."
+msgstr ""
+"当此选项被激活时 - 希望登录到您的网站的用户将被重定向到会员登录页面，而不是通"
+"常的WordPress登录表单。"
+
+msgid "When user bought any product assign role:"
+msgstr "当用户购买任何产品分配角色："
+
+msgid "When user bought specific product: assign role:"
+msgstr "当用户购买特定产品时：分配角色："
+
+msgid "Who can be invited"
+msgstr "谁可以被邀请"
+
+msgid "Who can comment my activity posts."
+msgstr "谁可以评论我的活动。"
+
+msgid "Who can invite"
+msgstr "谁可以邀请"
+
+msgid "Who can post to my profile activity."
+msgstr "谁可以发布内容到我的资料的活动页面。"
+
+msgid "Who can send me private messages."
+msgstr "谁可以给我发送私信。"
+
+msgid "Who can view about information on my profile."
+msgstr "谁可以查看我的个人资料的简介信息。"
+
+msgid "Who can view comments on my activity posts."
+msgstr "谁可以查看我的活动的评论。"
+
+msgid "Who can view my followers."
+msgstr "谁可以查看我的粉丝。"
+
+msgid "Who can view my follows."
+msgstr "谁可以查看我的关注。"
+
+msgid "Who can view my friends."
+msgstr "谁可以查看我的好友。"
+
+msgid "Who can view my groups."
+msgstr "谁可以查看我的群组。"
+
+msgid "Who can view my posts."
+msgstr "谁可以查看我的文章。"
+
+msgid "Who can view my profile activity page."
+msgstr "谁可以查看我的个人资料活动页面。"
+
+msgid "Who can view my profile."
+msgstr "谁可以查看我的个人资料"
+
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+msgid "WooCommerce (PRO)"
+msgstr "WooCommerce (PRO)"
+
+msgid ""
+"WooCommerce integration is made for those who want to create online shop "
+"inside Membership community."
+msgstr "WooCommerce集成是为那些想要在会员社区中创建网上商店的人而设计的。"
+
+msgid "Write a comment..."
+msgstr "写评论..."
+
+msgid "Write a message"
+msgstr "写信息"
+
+msgid "Write a message..."
+msgstr "写信息..."
+
+msgid "Year(s)"
+msgstr "年（复数）"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "You able to use addon but update is disabled"
+msgstr "您可以使用插件，但更新被禁用"
+
+msgid "You are is blocked by group administrator"
+msgstr "您被组管理员阻止"
+
+msgid "You are not logged-in"
+msgstr "您没有登录"
+
+msgid ""
+"You can import new users as well as data for custom fields.\n"
+"\t\t\t\t\t\tTo do this, you need to specify the required fields in the first "
+"line of your csv file and for next lines data related to these fields."
+msgstr ""
+"您可以导入新用户以及自定义字段的数据\n"
+"\t\t\t\t\t\t为此，您需要在csv文件的第一行中指定必需的字段，并为下一行指定与这"
+"些字段相关的数据。"
+
+msgid "You can login in to your account here."
+msgstr "您可以在这里登录您的账户。"
+
+msgid "You don't have any conversations started."
+msgstr "您没有开始任何对话。"
+
+msgid "You don't have permissions to access this user profile."
+msgstr "您没有访问此用户资料的权限。"
+
+msgid "You don't have unread notifications."
+msgstr "您没有未读通知。"
+
+msgid "You have no Currency for now. %s your first Membership Currency!"
+msgstr "您现在没有货币，%s 是您的第一个货币！"
+
+msgid ""
+"You have no Membership Drip for now. Go to any Post / Page or other content "
+"edit on your site - and enable Dripping there."
+msgstr ""
+"您现在没有会员滴水计划，转到您网站上的任何文章、页面或其他内容编辑界面 - 在启"
+"用滴水计划那里设置。"
+
+msgid "You have no Membership Levels for now."
+msgstr "您现在没有会员级别。"
+
+msgid "You have no Membership Levels for now. %s your first Membership Level!"
+msgstr "您现在没有会员级别。 %s 是您的第一个会员级别！"
+
+msgid ""
+"You have no Membership Levels for now. To protect your content by Membership "
+"Level - %s your first Level."
+msgstr "您现在没有会员级别。 通过会员级别保护您的内容 -  %s是您的第一级。"
+
+msgid "You have no Orders for now."
+msgstr "您现在没有订单。"
+
+msgid "You have this Level"
+msgstr "您有这个级别"
+
+msgid "You just subscribed from this IP"
+msgstr "您刚刚从这个IP订阅"
+
+msgid "You must authorize to use Constant Contact features"
+msgstr "您必须授权使用Constant Contact功能"
+
+msgid ""
+"You must confirm your account email address. Check your email for "
+"confirmation link."
+msgstr "您必须确认您的账户邮箱地址。 检查您的邮件的确认链接。"
+
+msgid "You must enter a username or email address."
+msgstr "您必须输入一个用户名或邮箱地址。"
+
+msgid "You will be redirected to next page in few seconds."
+msgstr "您将在几秒钟内重定向到下一个页面。"
+
+msgid "Your License Key from your account on"
+msgstr "您账户上的许可证密钥"
+
+msgid "Your account at {site_name} is now active"
+msgstr "您在{site_name}的账户现已启用"
+
+msgid "Your account don't have permission to access this page"
+msgstr "您的账户无权访问此页面"
+
+msgid "Your account don't have permission to read groups"
+msgstr "您的账户没有阅读群组的权限"
+
+msgid "Your account don't have permission to see activity page"
+msgstr "您的账户无权查看活动页面"
+
+msgid "Your account don't have permission to see members page"
+msgstr "您的账户没有权限查看会员页面"
+
+msgid "Your account don't have permission to see messages section"
+msgstr "您的账户无权查看信息部分"
+
+msgid "Your account don't have permissions to see activity page"
+msgstr "您的账户没有权限查看活动页面"
+
+msgid "Your account has been deactivated"
+msgstr "您的账户已被停用"
+
+msgid "Your account has been deleted"
+msgstr "您的账户已被删除"
+
+msgid "Your account has been deleted."
+msgstr "您的账户已被删除。"
+
+msgid "Your account has been disabled."
+msgstr "您的账户已被禁用。"
+
+msgid "Your account has been rejected"
+msgstr "您的账户已被拒绝"
+
+msgid "Your account has been rejected."
+msgstr "您的账户已被拒绝。"
+
+msgid "Your account is awaiting admin approval."
+msgstr "您的账户正在等待管理员审核。"
+
+msgid "Your account is pending review"
+msgstr "您的账户正在等待审核"
+
+msgid "Your changes could not be saved"
+msgstr "您的更改无法保存"
+
+msgid "Your changes has been saved."
+msgstr "您的更改已保存。"
+
+msgid "Your email address, used on checkout procedure on"
+msgstr "您的邮箱地址，用于结账程序"
+
+msgid "Your email has been confirmed."
+msgstr "您的邮箱已被确认。"
+
+msgid "Your license has expired"
+msgstr "您的许可证已过期"
+
+msgid "Your password has been changed."
+msgstr "您的密码已被更改。"
+
+msgid "Your password has been reset."
+msgstr "您的密码已被重置。"
+
+msgid ""
+"Your password reset link appears to be invalid. Please request a new link."
+msgstr "您的密码重置链接似乎无效了，请重新请求重置链接。"
+
+msgid "Your search returned no results."
+msgstr "您的搜索未返回任何结果。"
+
+msgid ""
+"Your secret key, generated on <a href=\"https://www.google.com/recaptcha/"
+"admin#list\" target=\"_blank\">https://www.google.com/recaptcha/admin#list</"
+"a>."
+msgstr ""
+"您的密钥（secret key），可在 <a href=\"https://www.google.com/recaptcha/"
+"admin#list\" target=\"_blank\">https://www.google.com/recaptcha/admin#list</"
+"a> 生成。"
+
+msgid ""
+"Your site key, generated on <a href=\"https://www.google.com/recaptcha/"
+"admin#list\" target=\"_blank\">https://www.google.com/recaptcha/admin#list</"
+"a>."
+msgstr ""
+"您的网站密钥（site key），可在 <a href=\"https://www.google.com/recaptcha/"
+"admin#list\" target=\"_blank\">https://www.google.com/recaptcha/admin#list</"
+"a> 生成。"
+
+msgid "Your {site_name} password has been changed"
+msgstr "您的{site_name}密码已更改"
+
+msgid "[{site_name}] Account deleted"
+msgstr "[{site_name}] 账户被删除"
+
+msgid "[{site_name}] New user account"
+msgstr "[{site_name}] 新用户账户"
+
+msgid "[{site_name}] New user awaiting review"
+msgstr "[{site_name}] 新用户等待审核"
+
+msgid "internal support"
+msgstr "内部支持"
+
+msgid "is loading..."
+msgstr "正在加载..."
+
+msgid "is required"
+msgstr "是必须的"
+
+msgid "of"
+msgstr "of"
+
+msgid "per"
+msgstr "每"
+
+msgid "required"
+msgstr "必需"
+
+msgid "right after"
+msgstr "之后"
+
+msgid ""
+"{display_name} has just applied for membership to {site_name} and is waiting "
+"to be reviewed.\n"
+"To review this member please click the following link: <a href="
+"\"{user_profile_link}\">{user_profile_link}</a>\n"
+"Here is the submitted registration form:\n"
+"{submitted_registration}"
+msgstr ""
+"{display_name} 刚刚申请成为 {site_name}会员，正在等待您的审核。\n"
+"点击下面的链接可查看成员信息： <a href="
+"\"{user_profile_link}\">{user_profile_link}</a>\n"
+"以下是提交的注册表单：\n"
+"{submitted_registration}"
+
+msgid ""
+"{display_name} has just created an account on {site_name}.\n"
+"To view their profile click here: <a href="
+"\"{user_profile_link}\">{user_profile_link}</a>\n"
+"Here is the submitted registration form:\n"
+"{submitted_registration}"
+msgstr ""
+"{display_name} 刚刚在 {site_name} 创建了一个账户。\n"
+"点击下面的链接可查看成员信息： <a href="
+"\"{user_profile_link}\">{user_profile_link}</a>\n"
+"以下是提交的注册表单：\n"
+"{submitted_registration}"
+
+msgid "{display_name} has just deleted their {site_name} account."
+msgstr "{display_name} 刚刚删除了他在 {site_name} 的账户."
+
+#~ msgid "%s has restricted access to his %s page."
+#~ msgstr "%s ha limitato l'accesso alla sua pagina %s."
+
+#~ msgid "Admin E-mail Address"
+#~ msgstr "Indirizzo Email Admin"
+
+#~ msgid "Allow users setup privacy settings"
+#~ msgstr "Lasciare le impostazioni di privacy di configurazione utenti"
+
+#~ msgid ""
+#~ "Here is possible to adjust external user's profiles look, Registration "
+#~ "ÃÂonfirmation and others."
+#~ msgstr ""
+#~ "Qui è possibile regolare l'aspetto dei profili degli utenti esterni, "
+#~ "Registrazione, Conferma e altro ancora."
+
+#~ msgid ""
+#~ "Hi {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Thank you for applying for membership to {site_name}!<br>\n"
+#~ "We have reviewed your information and unfortunately we are unable to "
+#~ "accept you as a member at this moment.<br>\n"
+#~ "<br>\n"
+#~ "Please feel free to apply again at a future date.<br>\n"
+#~ "<br>\n"
+#~ "Thanks,<br>\n"
+#~ "{site_name}"
+#~ msgstr ""
+#~ "Ciao {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Grazie per la richiesta di adesione di {site_name}! <br> \\ n\n"
+#~ "Abbiamo esaminato le informazioni e purtroppo non siamo in grado di "
+#~ "accettare come membro in questo momento.<br>\n"
+#~ "<br>\n"
+#~ "Non esitare a contattarci di nuovo in una data futura.<br>\n"
+#~ "<br>\n"
+#~ "Grazie,<br>\n"
+#~ "{site_name}"
+
+#~ msgid ""
+#~ "Hi {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Thank you for signing up with {site_name}!<br>\n"
+#~ "Your account has been approved and is now active.<br>\n"
+#~ "<br>\n"
+#~ "To login please visit the following url:<br>\n"
+#~ "<br>\n"
+#~ "<a href=\"{login_url}\">{login_url}</a><br>\n"
+#~ "<br>\n"
+#~ "Your account e-mail: {email}<br>\n"
+#~ "Your account username: {username}<br>\n"
+#~ "Your account password: {password}<br>\n"
+#~ "<br>\n"
+#~ "If you have any problems, please contact us at {admin_email}<br>\n"
+#~ "<br>\n"
+#~ "Thanks,<br>\n"
+#~ "{site_name}"
+#~ msgstr ""
+#~ "Ciao {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Grazie per esserti registrato {site_name}!<br>\n"
+#~ "Il tuo profilo è stato approvato ed è già attivo.<br>\n"
+#~ "<br>\n"
+#~ "Per effettuare il login vai al seguente indirizzo:<br>\n"
+#~ "<br>\n"
+#~ "<a href=\"{login_url}\">{login_url}</a><br>\n"
+#~ "<br>\n"
+#~ "La tua e-mail: {email}<br>\n"
+#~ "Il tuo username: {username}<br>\n"
+#~ "La tua password: {password}<br>\n"
+#~ "<br>\n"
+#~ "Per qualsiasi problema, contattaci a {admin_email}<br>\n"
+#~ "<br>\n"
+#~ "Grazie,<br>\n"
+#~ "{site_name}"
+
+#~ msgid ""
+#~ "Hi {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Thank you for signing up with {site_name}!<br>\n"
+#~ "Your account is currently being reviewed by a member of our team.<br>\n"
+#~ "<br>\n"
+#~ "Please allow us some time to process your request.<br>\n"
+#~ "<br>\n"
+#~ "If you have any problems, please contact us at {admin_email}<br>\n"
+#~ "<br>\n"
+#~ "Thanks,<br>\n"
+#~ "{site_name}"
+#~ msgstr ""
+#~ "Ciao {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Grazie per esserti affiliato a {site_name}!<br>\n"
+#~ "Il tuo account è attualmente in fase di revisione da un membro del nostro "
+#~ "team.<br>\n"
+#~ "<br>\n"
+#~ "Prego, concedici un piccolo lasso di tempo per elaborare la tua richiesta."
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Per qualsiasi problema, contattaci qui {admin_email}<br>\n"
+#~ "<br>\n"
+#~ "Grazie,<br>\n"
+#~ "{site_name}"
+
+#~ msgid ""
+#~ "Hi {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Thank you for signing up with {site_name}!\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "To login please visit the following url:\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "<a href=\"{login_url}\">{login_url}</a>\n"
+#~ "<br>\n"
+#~ "<br>Your account e-mail: {email}\n"
+#~ "<br>Your account username: {username}\n"
+#~ "<br>Your account password: {password}\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "If you have any problems, please contact us at {admin_email}\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Thanks,\n"
+#~ "<br>{site_name}"
+#~ msgstr ""
+#~ "Ciao {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Grazie per esserti affiliato a {site_name}!\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Per effettuare il login vai al seguente link \n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "<a href=\"{login_url}\">{login_url}</a>\n"
+#~ "<br>\n"
+#~ "<br>La tua e-mail: {email}\n"
+#~ "<br>Il tuo username: {username}\n"
+#~ "<br>La tua password: {password}\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Per qualsiasi problema, contattaci qui {admin_email}\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Grazie,\n"
+#~ "<br>{site_name}"
+
+#~ msgid ""
+#~ "Hi {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "This is an automated email to let you know your {site_name} account has "
+#~ "been deactivated.<br>\n"
+#~ "<br>\n"
+#~ "I\n"
+#~ " you would like your account to be reactivated please contact us at "
+#~ "{admin_email}<br>\n"
+#~ "<br>\n"
+#~ "Thanks,<br>\n"
+#~ "{site_name}"
+#~ msgstr ""
+#~ "Ciao {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Questa è una e-mail automatica per farti sapere che il tuo Profilo "
+#~ "{site_name} è attivo.<br>\n"
+#~ "<br>\n"
+#~ "I\n"
+#~ " per un'eventuale riattivazione, contattaci all'indirizzo {admin_email}"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Grazie,<br>\n"
+#~ "{site_name}"
+
+#~ msgid ""
+#~ "Hi {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "This is an automated email to let you know your {site_name} account has "
+#~ "been deleted.<br>\n"
+#~ "All of your personal information has been permanently deleted and you "
+#~ "will no longer be able to login to {site_name}.<br>\n"
+#~ "<br>\n"
+#~ "If your account has been deleted by accident please contact us at "
+#~ "{admin_email}<br>\n"
+#~ "<br>\n"
+#~ "Thanks,<br>\n"
+#~ "{site_name}"
+#~ msgstr ""
+#~ "Ciao {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Questa è una e-mail automatica per farti sapere che il tuo Profilo "
+#~ "{site_name} è stato cancellato.<br>\n"
+#~ "Tutte le tue informazioni personali sono stati eliminate in modo "
+#~ "permanente e non sarai più in grado di accedere a {site_name}.<br>\n"
+#~ "<br>\n"
+#~ "Se il tuo profilo è stato cancellato accidentalmente, contattaci qui "
+#~ "{admin_email}<br>\n"
+#~ "<br>\n"
+#~ "Grazie,<br>\n"
+#~ "{site_name}"
+
+#~ msgid ""
+#~ "Hi {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "We received a request to reset the password for your account.<br>\n"
+#~ "If you made this request, click the link below to change your password:"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "<a href=\"{password_reset_link}\">{password_reset_link}</a><br>\n"
+#~ "<br>\n"
+#~ "If you didn't make this request, you can ignore this email<br>\n"
+#~ "<br>\n"
+#~ "Thanks,<br\n"
+#~ "{site_name}"
+#~ msgstr ""
+#~ "Ciao {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Abbiamo ricevuto una richiesta di reset password per il tuo profilo.<br>\n"
+#~ "Se vuoi procedere, clicca qui e cambierai la tua password:<br>\n"
+#~ "<br>\n"
+#~ "<a href=\"{password_reset_link}\">{password_reset_link}</a><br>\n"
+#~ "<br>\n"
+#~ "Se non vuoi procedere, ignoreremo questa email<br>\n"
+#~ "<br>\n"
+#~ "Grazie,<br\n"
+#~ "{site_name}"
+
+#~ msgid ""
+#~ "Hi {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "You recently have requested for changing the password associated with "
+#~ "your {site_name} account.<br>\n"
+#~ "<br>\n"
+#~ "To confirm your request please visit the following url:<br>\n"
+#~ "<br>\n"
+#~ "<a href=\"{password_change_url}\">{password_change_url}</a><br>\n"
+#~ "<br>\n"
+#~ "If you did not make this change and believe your {site_name} account has "
+#~ "been compromised, please contact us at the following email address: "
+#~ "{admin_email}<br>\n"
+#~ "<br>\n"
+#~ "Thanks,<br>\n"
+#~ "{site_name}"
+#~ msgstr ""
+#~ "Ciao {display_name},\n"
+#~ "<br>\n"
+#~ "<br>\n"
+#~ "Hai recentemente chiesto di cambiare la password associata al tuo Profilo "
+#~ "{site_name}.<br>\n"
+#~ "<br>\n"
+#~ "Per confermare questa richiesta vai al seguente link:<br>\n"
+#~ "<br>\n"
+#~ "<a href=\"{password_change_url}\">{password_change_url}</a><br>\n"
+#~ "<br>\n"
+#~ "Se non hai fatto questo cambiamento e credi che il tuo Profilo "
+#~ "{site_name} sia stato violato, non esitare a contattarci al seguente "
+#~ "indirizzo di posta elettronica: {admin_email}<br>\n"
+#~ "<br>\n"
+#~ "Grazie,<br>\n"
+#~ "{site_name}"
+
+#~ msgid "Hide my profile from Members Directory."
+#~ msgstr "Nascondi il mio profilo dalla Directory Membri"
+
+#~ msgid "Invite\t\t\t\t\t\t\t\t\tadministrators"
+#~ msgstr "Invita\t\t\t\t\t\t\t\t\tamministratori"
+
+#~ msgid "Messages is disabled by site administrator."
+#~ msgstr "Messaggio disabilitato dal sito dell'amministratore"
+
+#~ msgid "Or you can click %s."
+#~ msgstr "O puoi cliccare %s."
+
+#~ msgid "Please confirm your password correctly."
+#~ msgstr "Prego, conferma la tua password correttamente."
+
+#~ msgid "Registration And Login"
+#~ msgstr "Registrazione e Login"
+
+#~ msgid "Remove login and registration links from menu when user is logged in"
+#~ msgstr ""
+#~ "Rimuovi link di login e registrazione dal menu quando l'utente è loggato"
+
+#~ msgid ""
+#~ "Roles tab offers you to manage with membership roles. By default there "
+#~ "are three roles Ã¢ÂÂ Membership Administrator, Membership User and "
+#~ "Membership Guest."
+#~ msgstr ""
+#~ "Scheda Ruoli ti permette di gestire i ruoli di appartenenza. Di default "
+#~ "ci sono tre ruoli Ã¢ÂÂ Membership Administrator, Membership User e "
+#~ "Membership Guest."
+
+#~ msgid "Tag already exists"
+#~ msgstr "Etichetta già esistente"
+
+#~ msgid ""
+#~ "Thank you for registration!<br>To complete your registration "
+#~ "administrator needs to review your account.<br>You will receive email "
+#~ "about your account activation after review."
+#~ msgstr ""
+#~ "Grazie per la registrazione! <br> Per completare l'amministratore di "
+#~ "registrazione ha bisogno di rivedere il vostro profilo. <br> Riceverai e-"
+#~ "mail relative al tuo profilo di attivazione dopo la revisione."
+
+#~ msgid ""
+#~ "Thank you for registration!<br>To complete your registration please "
+#~ "follow the activation link in confirmation email message that you will "
+#~ "receive."
+#~ msgstr ""
+#~ "Grazie per la registrazione! <br> Per completare la registrazione si "
+#~ "prega di seguire il link di attivazione nella conferma messaggio e-mail "
+#~ "che riceverete."
+
+#~ msgid ""
+#~ "Thank you for signing up with {site_name}!\n"
+#~ "<br>\n"
+#~ "<br>To activate your account, please click the link below to confirm your "
+#~ "email address:\n"
+#~ "<br>\n"
+#~ "<br><a href=\"{account_activation_link}\">{account_activation_link}</a>\n"
+#~ "<br>\n"
+#~ "<br>If you have any problems, please contact us at {admin_email}\n"
+#~ "<br>\n"
+#~ "<br>Thanks,\n"
+#~ "<br>{site_name}"
+#~ msgstr ""
+#~ "Grazie per la registrazione a {site_name}! \n"
+#~ "<br> \n"
+#~ "<br> Per attivare il tuo profilo, fai clic sul link qui sotto. "
+#~ "Confermerai anche il tuo indirizzo email: \n"
+#~ "<br> \n"
+#~ "<br> <a href=\"{account_activation_link}\"> {} account_activation_link </"
+#~ "a> \n"
+#~ "<br> \n"
+#~ "<br> Se hai qualche problema, contattaci all'indirizzo {admin_email} \n"
+#~ "<br> \n"
+#~ "<br> Grazie, \n"
+#~ "<br> {site_name}"
+
+#~ msgid ""
+#~ "The color theme. You can select from themes, provided by Google, for your "
+#~ "reCaptcha. To get more info - check <a href=\"http://supsystic.com/create-"
+#~ "recaptcha-field/\" target=\"_blank\">our tutorial.</a>"
+#~ msgstr ""
+#~ "Il tema del colore. È possibile scegliere tra i temi, forniti da Google, "
+#~ "per il vostro reCaptcha. Per avere maggiori informazioni - controlla <a "
+#~ "href=\"http://supsystic.com/create-recaptcha-field/\" target=\"_blank\"> "
+#~ "il nostro tutorial </a>."
+
+#~ msgid ""
+#~ "This message will be shown after subscription in the settings of user's "
+#~ "profile right after subscriber will be    created and confirmed."
+#~ msgstr ""
+#~ "Questo messaggio verrà visualizzato dopo l'iscrizione nelle impostazioni "
+#~ "del profilo dell'utente, subito dopo l'affiliazione e la conferma."
+
+#~ msgid ""
+#~ "User will see this message after subscription in the settings of his "
+#~ "profile, when email with confirmation link was    sent."
+#~ msgstr ""
+#~ "Utente vedrà questo messaggio dopo registrazione nelle impostazioni del "
+#~ "suo profilo, quando è già stata spedita l'email con il link di conferma."
+
+#~ msgid "Who can comment on my posts."
+#~ msgstr "Chi può commentare i miei articoli."
+
+#~ msgid "Who can post to my activity."
+#~ msgstr "Chi può pubblicare sulla mia bacheca"
+
+#~ msgid "Who can view comments on my post."
+#~ msgstr "Chi può vedere commenti ai miei articoli"
+
+#~ msgid "You will be redirected to the home page at %s seconds."
+#~ msgstr "Sarai reindirizzato alla Home Page in %s secondi."
+
+#~ msgid "You will be redirected to the home page at 10 seconds."
+#~ msgstr "Sarai reindirizzato alla Home Page in 10 secondi."
+
+#~ msgid "Your account has been confirmed."
+#~ msgstr "Il tuo profilo è stato confermato."
+
+#~ msgid ""
+#~ "Your secret key, generated on <a href=\"https://www.google.com/recaptcha/"
+#~ "admin#list\" target=\"_blank\"> https://www.google.com/recaptcha/"
+#~ "admin#list</a>. To get more info - check <a href=\"http://supsystic.com/"
+#~ "create-recaptcha-field/\" target=\"_blank\">our tutorial.</a>"
+#~ msgstr ""
+#~ "La tua chiave segreta, generata su <a href=\"https://www.google.com/"
+#~ "recaptcha/admin#list\" target=\"_blank\"> https://www.google.com/"
+#~ "recaptcha/admin#list</ a>. Per avere maggiori informazioni - controlla <a "
+#~ "href=\"http://supsystic.com/create-recaptcha-field/\" target=\"_blank\"> "
+#~ "nostro tutorial </a>."
+
+#~ msgid ""
+#~ "Your site key, generated on <a href=\"https://www.google.com/recaptcha/"
+#~ "admin#list\" target=\"_blank\">https://www.google.com/recaptcha/"
+#~ "admin#list</a>. To get more info - check <a href=\"http://supsystic.com/"
+#~ "create-recaptcha-field/\" target=\"_blank\">our tutorial.</a>"
+#~ msgstr ""
+#~ "La tua chiave del sito, generata su <a href=\"https://www.google.com/"
+#~ "recaptcha/admin#list\" target=\"_blank\"> https://www.google.com/"
+#~ "recaptcha/admin#list</ a>. Per avere maggiori informazioni - controlla <a "
+#~ "href=\"http://supsystic.com/create-recaptcha-field/\" target=\"_blank\"> "
+#~ "nostro tutorial </a>."
+
+#~ msgid "this link"
+#~ msgstr "questo link "
+
+#~ msgid ""
+#~ "{display_name} has just created an account on {site_name}.<br>To view "
+#~ "their profile click here:<br><br><a href="
+#~ "\"{user_profile_link}\">{user_profile_link}</a><br><br>Here is the "
+#~ "submitted registration form:<br><br>{submitted_registration}{% endmacro %}"
+#~ "{% macro account_needs_review_notification_subject() %}[{site_name}] New "
+#~ "user awaiting review{% endmacro %}{% macro "
+#~ "account_needs_review_notification_body() %}{display_name} has just "
+#~ "applied for membership to {site_name} and is waiting to be reviewed."
+#~ "<br><br>To review this member please click the following link:<br><br><a "
+#~ "href=\"{user_profile_link}\">{user_profile_link}</a><br><br>Here is the "
+#~ "submitted registration form:<br><br>{submitted_registration}"
+#~ msgstr ""
+#~ "{display_name} ha appena creato un Profilo su {site_name} <br> Per "
+#~ "consultare il suo profilo clicca qui: <br> <a Href="
+#~ "\"{user_profile_link}\"> {} user_profile_link </a> <br> < br> Ecco il "
+#~ "modulo di registrazione presentato: <br> {submitted_registration} {% "
+#~ "endmacro%} {% macro account_needs_review_notification_subject ()%} "
+#~ "[{site_name}] Nuovo utente in attesa di revisione {% endmacro%} {% macro "
+#~ "account_needs_review_notification_body ( )%} {DISPLAY_NAME} ha appena "
+#~ "presentato domanda di adesione al {site_name} ed è in attesa di essere "
+#~ "esaminato <br> per rivedere questo utente clicca il seguente link:. <br> "
+#~ "<a href = \"{ user_profile_link} \"> {} user_profile_link </a> <br> Ecco "
+#~ "il modulo di registrazione presentato: <br> {} submitted_registration"

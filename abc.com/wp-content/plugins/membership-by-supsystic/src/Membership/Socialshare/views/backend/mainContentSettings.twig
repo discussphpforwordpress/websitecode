@@ -1,0 +1,59 @@
+{% import "@base/macros/options.twig" as options %}
+
+{% set pluginsSs = settings.base.plugins.socialShare %}
+{% set inputSocialShareAttr %}
+	{% if socialShareInfo.isPuliginActive != true %} disabled="disabled" {% endif %}
+	{% if socialShareInfo.isPuliginActive == true and pluginsSs.enabled == 1 %} checked="checked" {% endif %}
+{% endset %}
+
+{% if inputSocialShareAttr|trim|length %}
+	{% set socialShareRowAttributes = {
+		'input': inputSocialShareAttr|trim,
+	} %}
+{% endif %}
+
+{{ options.enablePluginRow(
+	'Social Share',
+	'plugins[socialShare]',
+	'social-share-enable',
+	socialShareRowAttributes,
+	'Settings'
+) }}
+
+{% if socialShareInfo.isPuliginActive == true %}
+	<div id="toogle-social-share-enable" style="display: none;">
+		<div class="row">
+			<div class="col-md-12">
+				{% if(socialShareInfo.projectList | length) %}
+					<table class="sc-table mbs-plugins-preset-list">
+						<tr>
+							<th class="mbs-gg-header"></th>
+							<th>{{ translate('SocialShare Name') }}</th>
+						</tr>
+						{% for val1 in socialShareInfo.projectList %}
+							<tr>
+								<td>
+									<label class="sc-radio">
+										<input type="radio" class="mbs-can-setting-checked mbs-type-social-share" id="mbs-socialShare-{{ val1.id }}" name="plugins[socialShare][ids][]" value="{{ val1.id }}" {% if val1.id in pluginsSs.ids %} checked="checked" {% endif %}>
+										<div class="sc-radio-state"></div>
+									</label>
+								</td>
+								<td> <label for="mbs-socialShare-{{ val1.id }}">{{ val1.title }}</label></td>
+							</tr>
+						{% endfor %}
+					</table>
+				{% else %}
+					<div class="mbs-plug-msg-info">{{ translate('You have no SocialShare projects for now. Create new SocialShare project or Enable Membership feature for SocialShare which you want to use as project!.') }}</div>
+				{% endif %}
+			</div>
+		</div>
+
+	</div>
+{% else %}
+	<div class="mbs-plug-not-install">
+		{{ translate('You need to install Social Share Buttons by Supsystic to use this feature. ') }}
+		<a target="_blank" href="{{ socialShareInfo.installUrl }}">{{ translate('Install') }}</a>
+		{{ translate(' plugin from your admin area, or visit it\'s official page on Wordpress.org ') }}
+		<a target="_blank" href="{{ socialShareInfo.installWpUrl }}">{{ translate('here') }}</a>
+	</div>
+{% endif %}

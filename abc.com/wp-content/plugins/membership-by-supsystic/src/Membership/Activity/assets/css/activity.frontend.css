@@ -1,0 +1,801 @@
+
+.mp-activity-container .mp-activity-list > * + * {
+    margin-top: 1rem;
+}
+
+.mp-activity a {
+	box-shadow: none!important;
+}
+
+.mp-activity.shared .mp-activity-header-image {
+	max-width: 32px;
+}
+
+.mp-activity-content-text, .mp-activity-comments .comment .text {
+	white-space: pre-line;
+}
+
+.mp-activity-content-text + *,
+.mp-comment-content .text + * {
+    margin: .5em 0;
+}
+
+.mp-activity-comments .comment .mp-activity-link,
+.mp-activity-comments .comment .mp-activity-gallery {
+	margin-bottom: 1em;
+}
+
+.mp-activity-container .comment .actions > * {
+    float: none;
+}
+.mp-activity-container .ui.comments .comment .avatar img,
+.mp-activity-container .mp-activity-comments .comment img {
+	height: auto;
+}
+
+.mp-activity-container textarea {
+    box-sizing: border-box;
+}
+
+.mp-activity-container form.reply {
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+
+.mp-activity-header-image {
+	max-width: 50px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 0.5em;
+}
+
+.mp-activity-header-title {
+	display: inline-block;
+	font-size: 16px;
+    line-height: 1;
+}
+
+.mp-shared-activity .mp-activity-header-title {
+	font-size: 14px;
+}
+
+.mp-activity-content {
+	margin-top: 0.5em;
+}
+
+.mp-activity-header-title > div {
+	margin: 0.6em 0 ;
+}
+
+.mp-shared-activity .mp-activity-header-title > div {
+	margin: 0.6em 0 ;
+}
+
+.mp-activity-list  .mp-liked-activity i {
+	color: #db2828;
+}
+
+.mp-activity-list  .mp-shared-activity i {
+	color: #2185D0;
+}
+
+.activity-header-title .date {
+	color: #999;
+	font-size: 13px;
+}
+
+.mp-shared-activity .mp-activity.shared {
+	margin-top: 1em;
+}
+
+.mp-activity:hover .mp-activity-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: black;
+	opacity: 0.4;
+}
+
+.mp-activity .mp-activity-menu {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	color: #999;
+}
+
+.mp-activity-actions a {
+	font-size: 12px;
+	color: #999;
+}
+.mp-activity-actions a:hover {
+	color: #666;
+	cursor: pointer;
+}
+
+.mp-activity-actions > a {
+	margin-right: 2em;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.mp-activity-actions > a span {
+    font-weight: 900;
+}
+
+.mp-attachment-images {
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+.mp-attachment-images .mbs-one-any-attachment,
+.mp-attachment-images .mp-attachment-image {
+	position: relative;
+	display: inline-block;
+		min-height: 100px;
+	min-width: 100px;
+	max-width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: center;
+	margin: 0 5px;
+}
+.mp-attachment-images .mbs-image-caption {
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.mp-attachment-images .mbs-one-any-attachment img,
+.mp-attachment-images .mp-attachment-image img.mbs-att-image {
+	max-height: 100px;
+	max-height: 100px;
+	display: inline-block;
+}
+
+.mp-attachment-images i {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: none;
+	color: #f5f5f5;
+}
+
+.mp-attachment-images .mbs-one-any-attachment:hover .mp-attachment-image-overlay,
+.mp-attachment-images .mp-attachment-image:hover .mp-attachment-image-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: black;
+	opacity: 0.4;
+}
+
+.mp-attachment-images .mbs-one-any-attachment:hover i,
+.mp-attachment-images .mp-attachment-image:hover i {
+	display: block;
+}
+.mbs-one-any-attachment .mbs-one-any-attachment,
+.mp-attachment-image + .mp-attachment-image {
+	margin-left: 0.5em;
+}
+
+.mbs-one-any-attachment i:hover,
+.mp-attachment-image i:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.mp-attachment-images .mp-progress-bar {
+	position: absolute;
+	bottom: 10px;
+	padding: 0 10px;
+	width: 100%;
+}
+
+
+.mp-activity-images {
+	white-space: nowrap;
+}
+
+.mp-activity-images .mp-activity-image {
+	position: relative;
+	min-height: 400px;
+	min-width: 400px;
+	height: 400px !important;
+}
+.mp-activity-images .mp-activity-image img {
+	max-height: 400px;
+
+}
+
+.mp-activity-images i {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: none;
+	color: #f5f5f5;
+}
+
+.mp-activity-images .mp-activity-image:hover .mp-activity-image-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: black;
+	opacity: 0.4;
+}
+
+.mp-activity-images .mp-activity-image:hover i {
+	display: block;
+}
+
+.mp-activity-image i:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.mp-activity-images .mp-progress-bar {
+	position: absolute;
+	bottom: 10px;
+	padding: 0 10px;
+	width: 100%;
+}
+
+.mp-activity-card a {
+	 box-shadow: none;
+}
+
+.mp-activity-card .mp-activity-logo-container {
+	background: #fff;
+	height: 10px;
+	position: relative;
+}
+
+.mp-activity-card .mp-activity-logo {
+	max-width: 100px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -100px;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.mp-activity-card .mp-activity-logo img {
+	padding: 5px;
+}
+
+.mp-activity-container .mp-like-popup small,
+.mp-activity-container .mp-share-popup small {
+	cursor: pointer;
+}
+
+.modal-users .modal-user-name {
+	padding: 0.7em 0;
+	font-size: 14px;
+	text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mp-activity-container .mp-activity-likes-hover {
+	opacity: 1;
+	height: 80px;
+	padding: 1em;
+}
+
+.mp-activity-container .mp-activity-likes .like {
+	display: inline-block;
+}
+
+.mp-activity-container .mp-activity-post-form .item {
+    flex-direction: row;
+}
+
+.mp-activity-container .mp-activity-post-avatar {
+	min-height: 50px;
+	max-height: 50px;
+	width: 50px;
+}
+
+.mp-activity-container .mp-activity-post-form .field {
+    margin-left: 1em;
+}
+
+.sc-membership .mp-activity-container .mp-form-textarea {
+	border: none;
+	resize: none;
+	height: 50px;
+	overflow: hidden;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.mp-activity-comment-form,
+.mp-report-form-block {
+	width: 100%;
+}
+
+.mp-activity-comment-form .mp-comment-form-author {
+	max-width: 33px;
+	min-width: 33px;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.mp-activity-comment-form .mp-comment-form-author .author {
+    max-width: 33px;
+    min-width: 33px;
+    display: inline-block;
+}
+
+.mp-activity-comment-form .mp-comment-form-author.comment-as {
+    max-width: 50px;
+    min-width: 50px;
+}
+
+.mp-reply-form .mp-activity-comment-form {
+    margin: 1em 0 0;
+}
+
+.mp-activity-container .mp-activity-comment-form .mp-comment-form-author i {
+	margin-left: 0.5em;
+}
+
+.mp-activity-comment-form .mp-comment-form-author-logo,
+.mp-report-form-block .mp-report-form-author-logo {
+	display: inline-block;
+}
+
+.mp-activity-comment-form .mp-comment-form-author .mp-comment-form-author-logo,
+.mp-report-form-block .mp-report-form-author .mp-report-form-author-logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.mp-activity-container .mp-activity-comment-form .mp-comment-form-author i,
+.mp-activity-container .mp-report-form-block .mp-report-form-author i,
+.mp-activity-container .mp-activity-post-form .mp-activity-author i {
+	margin: 0!important;
+}
+
+.mp-comment-form,
+.mp-report-form {
+	vertical-align: top;
+	padding-left: 10px;
+	display: table-cell;
+	width: 100%;
+	overflow: hidden;
+    position: relative;
+}
+
+.mp-activity-list  .ui.threaded.comments {
+	max-width: 100%;
+    margin-top: 0;
+}
+
+.mp-activity-list  .ui.threaded.comments .comment-replies {
+    margin: .5em 0;
+}
+
+.mp-activity-list  .ui.threaded.comments .comment-container .mp-comment-content {
+    margin-left: 3.5em;
+    float: none;
+}
+
+.mp-activity-list  .date {
+    font-size: 12px;
+}
+
+.mp-activity-list  .ui.threaded.comments .comment .comments {
+    padding: 1em 0 1em 2.25em;
+}
+
+.mp-comment-form-action,
+.mp-report-form-action {
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+    top: 0;
+    line-height: 34px;
+}
+
+.mp-comment-form-edit-action {
+    margin-top: 0.5em;
+}
+
+.mp-activity-container .mp-activity-comment-form .mp-comment-form-action i {
+	cursor: pointer;
+	vertical-align: top;
+}
+.mp-activity-container .mp-activity-comment-form .mp-comment-form-action i.loading.icon {
+	vertical-align: baseline;
+}
+.mp-activity-container .mp-report-form-block .mp-report-form-action i {
+	cursor: pointer;
+	vertical-align: baseline;
+}
+
+.mp-comment-form-action i + i,
+.mp-report-form-action i + i {
+	margin-left: 5px;
+}
+
+.sc-membership .mp-activity-container .mp-comment-textarea,
+.sc-membership .mp-activity-container .mp-report-textarea {
+	border: none;
+	resize: none;
+	height: auto;
+	overflow: hidden;
+	font-size: 12px;
+	padding-right: 70px;
+}
+
+.mp-load-replies {
+    margin: 1em 0;
+}
+
+.mp-more-replies {
+	margin: .5em 0;
+}
+
+.mp-previous-comments, .mp-previous-replies {
+    font-size: 14px;
+    float: none;
+}
+
+.mp-more-comments, .mp-more-replies {
+	cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.mp-reply-form .mp-comment-form-author {
+	max-width: 24px;
+	min-width: 24px;
+}
+
+.mp-reply-form .mp-comment-form-action {
+    line-height: 26px;
+}
+
+.mp-activity-container .mp-reply-form .mp-comment-form-author img,
+.mp-activity-container .mp-reply-form .mp-comment-form-author-logo img {
+	max-height: 24px;
+	width: auto;
+}
+
+.mp-activity-container .mp-reply-form .mp-comment-textarea {
+	padding: 5px 70px 5px 5px;
+	height: 26px;
+}
+
+.mp-activity-container .mp-activity-link .link-video-icon {
+    z-index: 1;
+}
+
+.mp-activity-container .mp-activity-link .ui.card,
+.mp-activity-container .mp-activity-link .image img {
+    width: 100%;
+}
+
+.mp-activity-container .mp-activity-link.squared {
+    flex-direction: row
+}
+
+.mp-activity-container .mp-activity-link.squared .card {
+    display: table;
+}
+
+.mp-activity-container .mp-activity-link.squared .card > * {
+    display: table-cell;
+}
+
+
+.mp-activity-container .mp-activity-link.squared .image {
+    width: 140px;
+    min-height: 140px;
+    border-radius: 0!important;
+    overflow: hidden;
+}
+
+.mp-activity-container .mp-activity-link.squared .image img {
+    position: absolute;
+}
+
+.mp-activity-container .mp-activity-link iframe {
+    margin: 0;
+}
+
+.mp-activity-container .mp-activity-link .image {
+    position: relative;
+}
+.mp-activity-container .mp-activity-link .video-container {
+    background: black;
+}
+
+.mp-activity-container .mp-activity-link .mp-remove-attached-link {
+    cursor: pointer;
+}
+
+
+.sc-membership .mp-activity-container .mp-activity-author {
+	float: right;
+	margin-right: 1em;
+}
+
+.mp-activity-container .mp-activity-link .link-video-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.mp-activity-container .mp-activity-link .link-video-icon i {
+    font-size: 6em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: auto;
+    color: snow;
+    transition: all 0.1s linear;
+    text-shadow: 0px 0px 3px rgba(150, 150, 150, 1);
+}
+
+.mp-activity-container .mp-activity-link .link-video-icon:hover i {
+    color: white;
+    text-shadow: 0px 0px 5px rgba(250, 250, 250, 1);
+}
+
+.fade-transition {
+	transition: all .3s ease;
+}
+
+.fade-enter, .fade-leave {
+	opacity: 0;
+}
+
+.mp-activity-gallery {
+	overflow: auto;
+}
+
+.mp-activity-gallery-image {
+	max-height: 450px;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.mp-activity-gallery-image > div {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.mp-activity-gallery .mp-activity-gallery-image img {
+	max-height: 450px;
+}
+
+.mp-activity-gallery-image-overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: table;
+	background: rgba(0,0,0,0.5);
+}
+
+.mp-activity-gallery-image-overlay div {
+	font-size: 35px;
+	color: #ccc;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.mp-gallery-modal .controls {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.mp-gallery-modal {
+	width: 850px;
+	height: 650px;
+	background: rgba(0,0,0,0.7);
+}
+
+.ui.basic.modal.mp-gallery-modal {
+	background: rgba(0,0,0,0.7);
+}
+
+.mp-gallery-modal img {
+	height: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.mp-gallery-modal .image-content {
+	display: table;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.mp-gallery-modal .image-index {
+	width: 100%;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	z-index: 10;
+}
+
+.mp-gallery-modal .image-content .image {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.mp-gallery-modal .controls {
+	z-index: 1;
+}
+
+.mp-gallery-modal .controls .prev-button, .mp-gallery-modal .controls .next-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: rgba(255,255,255,0.3);
+	font-size: 35px;
+	width: 50%;
+    height: 600px;
+    display: table;
+}
+
+.mp-gallery-modal .controls .prev-button:hover, .mp-gallery-modal .controls .next-button:hover {
+	color: rgba(255,255,255,0.8);
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.mp-gallery-modal .controls .prev-button i, .mp-gallery-modal .controls .next-button i {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.mp-gallery-modal .controls .prev-button i {
+	text-align: left;
+}
+
+.mp-gallery-modal .controls .next-button i {
+	text-align: right;
+}
+
+.mp-gallery-modal .controls .prev-button {
+	left: 20px;
+}
+
+.mp-gallery-modal .controls .next-button {
+	right: 20px;
+}
+
+#supsystic-membership .activity-filter {
+    float: none;
+}
+
+#supsystic-membership .activity-filter.dropdown .menu {
+    box-shadow: none!important;
+}
+.post-activity-buttons .button[data-action="add-smile-to-text"] {
+	padding: 6px 8px;
+	font-size: 20px;
+}
+.mbs-smile-btn-wrapper .button .emoji {
+	margin: 0!important;
+	padding: 0 !important;
+}
+.mbs-smile-btn-wrapper {
+	float: right;
+	margin-right: 0;
+	margin-left: .25em;
+	position: relative;
+}
+.mp-smiles-window {
+	display: inline-block;
+	background-color: #fff;
+	border: 1px solid #aaa;
+	padding: 0px;
+	text-align: center;
+	left: -264%;
+
+	overflow: visible;
+	z-index: 10;
+	position: absolute;
+}
+.mbs-smiles-wrapper {
+	display: inline-block;
+	width: 246px;
+}
+.mbs-sw-one-smile {
+	display: inline-block;
+	width: 36px;	/* 8px + 20px + 8px*/
+	height: 36px;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 8px;
+	margin: 0px;
+}
+.mbs-sw-one-smile:hover {
+	background-color: #e0e1e2;
+	cursor: pointer;
+}
+.mbs-sw-one-smile .emoji {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.mbs-displ-hidden {
+	display: none !important;
+}
+.ui.form textarea{
+	resize: vertical !important;
+}
+.sc-membership .mbsFrontendSearchWr {
+	width: initial;
+	height: initial;
+}
+
+.mbsActivityAttachmentBtn i.icon.attach {
+	width: 100%;
+}
+.mbsActivityAttachmentBtn i.icon.attach:before {
+	font-size: 2em;
+}
+
+.mbsActivAttachFilesWr {
+	padding: 10px 0;
+}
+.mbsActivAttachFilesWr .mbsOneAttachItem {
+	max-width: 150px;
+	margin-right: 10px;
+	white-space: nowrap;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mbsActivAttachFilesWr .mbsOneAttachIcon {
+	vertical-align: middle;
+	font-size: 100%;
+	line-height: 100%;
+	margin: 0;
+}
+.mbsActivAttachFilesWr .mbsOneAttachIcon:before {
+	font-size: 20px;
+}
+.mbsActivAttachFilesWr .mbsOneAttachCaption {
+	vertical-align: middle;
+	color: #000;
+}
+
+#report-activity-modal .content {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

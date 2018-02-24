@@ -1,0 +1,14 @@
+{% spaceless %}
+	{% for user in users %}
+		<div class="item" data-value="{{ user.id }}">
+			<img class="ui avatar image" src="{{ userAvatar(user, 'small') }}">
+			<div class="content">
+				<a class="header">{{ user.displayName }}</a>
+			</div>
+			<a data-tag class="ui image small label mp-user-label" style="display: none" data-value="{{ user.id }}">
+				<img src="{{ userAvatar(user, 'small') }}">{{ user.displayName }}
+				<i class="delete icon"></i>
+			</a>
+		</div>
+	{% endfor %}
+{% endspaceless %}

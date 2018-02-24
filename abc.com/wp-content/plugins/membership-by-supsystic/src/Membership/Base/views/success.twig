@@ -1,0 +1,10 @@
+<div class="sc-membership">
+	<div class="ui positive message">
+		{% if header is defined %}
+			<div class="header" >
+				{{ header }}
+			</div>
+		{% endif %}
+		<p>{{ message|raw }}</p>
+	</div>
+</div>

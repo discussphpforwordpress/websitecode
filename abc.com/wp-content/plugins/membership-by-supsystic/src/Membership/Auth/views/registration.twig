@@ -1,0 +1,151 @@
+<div class="sc-membership">
+	<div class="ui centered grid">
+		<div class="column left aligned">
+			<div class="ui message success" style="display: none"></div>
+			<form method="post" data-validation-rules="{{ validationRules|json_encode }}" class="ui large form left membership-registration-form">
+				
+				{% set sections = [] %}
+
+				{{ environment.dispatcher.dispatch('auth.view.registrationFormBefore') }}
+				{{ environment.dispatcher.dispatch('registrationFormBefore') }}
+				
+				{% for field in fields %}
+					{% if field.enabled and field.registration %}
+						{% if field.section not in sections %}
+							<h3>{{ field.section }}</h3>
+							{% set sections = sections|merge([field.section]) %}
+						{% endif %}
+
+						<div class="field" data-name="{{ field.name }}">
+							<glabel>{{ field.label }} {% if field.required and field.asterisk is defined and field.asterisk == true %}<span class="gg-required-field" style="color: {{ settings['design']['general']['asterisk-color'] }};">*</span>{% endif %} </glabel>
+							
+							{% if field.type == 'text' %}
+								<input type="text" name="{{ field.name }}">
+							{% elseif field.type == 'email' %}
+								<input type="email" name="{{ field.name }}">
+							{% elseif field.type == 'password' %}
+								<input type="password" name="{{ field.name }}">
+							{% elseif field.type == 'numeric' %}
+								<input type="number" name="{{ field.name }}">
+							{% elseif field.type == 'date' %}
+								<input
+										class="date-field"
+										data-format="{{ field['format'] }}"
+										data-field-name="{{ field.name }}"
+										type="text"
+								>
+								<input name="{{ field.name }}" type="hidden">
+							{% elseif field.type == 'scroll' %}
+								<select multiple class="ui fluid multiple search selection dropdown" name="{{ field.name }}[]">
+									{% for option in field.options %}
+										{% set checked = false %}
+										{% if field.data and field.data is not empty %}
+											{% if option.id in field.data %}
+												{% set checked = true %}
+											{% endif %}
+										{% else %}
+											no data
+											{% if option.checked %}
+												{% set checked = true %}
+											{% endif %}
+										{% endif %}
+										<option value="{{ option.id }}" {% if checked %}selected{% endif %}>{{ option.name }}</option>
+									{% endfor %}
+								</select>
+							{% elseif field.type == 'drop' %}
+								<select class="ui fluid search single dropdown" name="{{ field.name }}">
+									{% for option in field.options %}
+										{% set checked = false %}
+										{% if field.data and field.data is not empty %}
+											{% if option.id == field.data %}
+												{% set checked = true %}
+											{% endif %}
+										{% else %}
+											{% if option.checked %}
+												{% set checked = true %}
+											{% endif %}
+										{% endif %}
+										<option value="{{ option.id }}" {% if checked %}selected{% endif %}>{{ option.name }}</option>
+									{% endfor %}
+								</select>
+							{% elseif field.type == 'radio' %}
+								<div class="inline fields">
+									{% for option in field.options %}
+										<div class="field">
+											<div class="ui radio checkbox">
+												{% set checked = false %}
+												{% if field.data and field.data is not empty %}
+													{% if option.id in field.data %}
+														{% set checked = true %}
+													{% endif %}
+												{% else %}
+													{% if option.checked %}
+														{% set checked = true %}
+													{% endif %}
+												{% endif %}
+												<input type="radio" name="{{ field.name }}" id="{{ field.name }}-{{ option.id }}" value="{{ option.id }}" {% if checked  %}checked{% endif %} class="hidden">
+												<label for="{{ field.name }}-{{ option.id }}">{{ option.name }}</label>
+											</div>
+										</div>
+									{% endfor %}
+								</div>
+							{% elseif field.type == 'checkbox' %}
+								<div class="inline fields">
+									{% for option in field.options %}
+										<div class="field">
+											<div class="ui checkbox">
+												{% set checked = false %}
+												{% if field.data and field.data is not empty %}
+													{% if option.id in field.data %}
+														{% set checked = true %}
+													{% endif %}
+												{% else %}
+													{% if option.checked %}
+														{% set checked = true %}
+													{% endif %}
+												{% endif %}
+												<input type="checkbox" name="{{ field.name }}[]" id="{{ field.name }}-{{ option.id }}" value="{{ option.id }}" {% if checked  %}checked{% endif %} class="hidden">
+												<label for="{{ field.name }}-{{ option.id }}">{{ option.name }}</label>
+											</div>
+										</div>
+									{% endfor %}
+								</div>
+							{% elseif field.type == 'g-recaptcha-response' %}
+								<div class="g-recaptcha"
+								     data-sitekey="{{ field['google-re-captcha-site-key'] }}"
+								     data-theme="{{ field['google-re-captcha-theme'] }}"
+								     data-type="{{ field['google-re-captcha-type'] }}"
+								     data-size="{{ field['google-re-captcha-size'] }}"
+								     data-callback="MembershipRecaptchaResponseCallback"
+								></div>
+							{% endif %}
+						
+							{% if field.description %}
+								<p><small><em>{{ field.description }}</em></small></p>
+							{% endif %}
+						</div>
+						
+						
+					{% endif %}
+				{% endfor %}
+
+				{{ environment.dispatcher.dispatch('auth.view.registrationFormAfter') }}
+				{{ environment.dispatcher.dispatch('registrationFormAfter') }}
+				
+				<div class="ui error message" style="display: none">
+					<i class="close icon"></i>
+					<div class="header">
+						{{ translate('There were some errors with your data') }}
+					</div>
+					<ul class="list"></ul>
+				</div>
+				
+				<div class="mp-action-buttons">
+					<button class="registration-submit ui button mini primary" type="submit" value="">{{ settings.design.auth['registration-primary-button-text'] }}</button>
+				</div>
+
+				<input type="hidden" id="_wpnonce" name="_wpnonce" value="{{ nonce }}" />
+			</form>
+		</div>
+	</div>
+</div>

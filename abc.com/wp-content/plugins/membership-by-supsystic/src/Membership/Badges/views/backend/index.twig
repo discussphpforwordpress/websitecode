@@ -1,0 +1,28 @@
+{% extends "@base/layouts/backend.twig" %}
+{% import "@base/macros/options.twig" as options %}
+{% block head %}
+
+    <div class="sc-tabs">
+	    <a href="#" class="tab" data-target="badge_list" data-connect-tbl="mbsLevelsTbl">
+		    <i class="fa fa-user"></i>Badge list
+	    </a>
+	    <a href="#" class="tab" data-target="user_list" data-connect-tbl="mbsBadgesAndPointsTbl">
+		    <i class="fa fa-user"></i>User list
+	    </a>
+    </div>
+{% endblock %}
+
+{% block mainHeader %}
+
+{% endblock %}
+
+{% block main %}
+    <div class="sc-tabs-container">
+	    <div class="sc-tab-content" data-tab="badge_list">
+		    {% include '@badges/backend/list_badges.twig' %}
+	    </div>
+	    <div class="sc-tab-content" data-tab="user_list">
+		   {{ userList|raw }}
+	    </div>
+    </div>
+{% endblock %}

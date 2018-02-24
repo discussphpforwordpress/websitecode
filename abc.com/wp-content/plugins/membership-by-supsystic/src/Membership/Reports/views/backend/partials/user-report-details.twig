@@ -1,0 +1,78 @@
+<h2>{{ translate('Report details') }}</h2>
+
+<input type="hidden" class="report-id" name="report-id" value="">
+
+<div class="mp-option">
+    <div class="row">
+        <div class="col-md-3">
+            {{ options.label(translate('Report date')) }}
+        </div>
+        <div class="col-md-9">
+            <div class="mp-option">
+                <span class="report-date"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mp-option report-reporter">
+    <div class="row">
+        <div class="col-md-3">
+            {{ options.label(translate('Reporter')) }}
+        </div>
+        <div class="col-md-3">
+            <div class="mp-option">
+                <span class="report-reporter-link"></span>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <button class="sc-button primary send-message"><i class="fa fa-send"></i> {{ translate('Send message') }}</button>
+            <button class="sc-button primary block-user"><i class="fa fa-lock"></i> {{ translate('Block user') }}</button>
+            <button class="sc-button primary unblock-user"><i class="fa fa-unlock"></i> {{ translate('Unblock user') }}</button>
+        </div>
+    </div>
+</div>
+
+<div class="mp-option report-reported">
+    <div class="row">
+        <div class="col-md-3">
+            {{ options.label(translate('Reported')) }}
+        </div>
+        <div class="col-md-3">
+            <div class="mp-value">
+                <span class="report-reported-link"></span>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <button class="sc-button primary send-message"><i class="fa fa-send"></i> {{ translate('Send message') }}</button>
+            <button class="sc-button primary block-user"><i class="fa fa-lock"></i> {{ translate('Block user') }}</button>
+            <button class="sc-button primary unblock-user"><i class="fa fa-unlock"></i> {{ translate('Unblock user') }}</button>
+        </div>
+    </div>
+</div>
+
+<div class="mp-option">
+    <div class="row">
+        <div class="col-md-3">
+            {{ options.label(translate('Report comment')) }}
+        </div>
+        <div class="col-md-9">
+            <div class="mp-option">
+                <span class="report-comment"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mp-option">
+    <div class="row">
+        <div class="col-md-3">
+            {{ options.label(translate('Report Status')) }}
+        </div>
+        <div class="col-md-9">
+            <div class="mp-option">
+                <span class="report-status"></span>
+            </div>
+        </div>
+    </div>
+</div>

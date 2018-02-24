@@ -1,0 +1,49 @@
+
+.mp-notification-content-date {
+    color: #999;
+    font-size: 12px;
+}
+
+.mp-notification .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+    color: #999;
+}
+
+.mp-notification .checkmark {
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    display: none;
+    color: #999;
+}
+
+.mp-notification .checkmark.set-viewed-action {
+    top: 44px;
+}
+
+.mp-notification:hover .close,
+.mp-notification:hover .checkmark {
+    display: block;
+}
+
+.mp-notification .close:hover,
+.mp-notification .checkmark:hover {
+    color: #666;
+    cursor: pointer;
+}
+
+.mp-notifications-list .ui.segment:hover,
+.mp-notifications-menu a:hover {
+    background-color: rgba(0,0,0,0.2)!important;
+}
+
+#mp-notifications .mp-notification.not-viewed {
+    background-color: #f7fbff;
+}
+
+.mp-notifications-menu {
+    width: auto!important;
+}

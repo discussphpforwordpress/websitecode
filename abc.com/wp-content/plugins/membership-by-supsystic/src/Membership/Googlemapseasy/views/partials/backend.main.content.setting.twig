@@ -1,0 +1,63 @@
+{% import "@base/macros/options.twig" as options %}
+{#{{ dump(googleMapsInfo) }}#}
+{% set pluginS = settings.base.plugins.googleMapsEasy %}
+{% set inputGoogleMapsAttr %}
+	{% if googleMapsInfo.isPuliginActive != 'true' %} disabled="disabled" {% endif %}
+	{% if googleMapsInfo.isPuliginActive == 'true' and pluginS.enabled == 1 %} checked="checked" {% endif %}
+{% endset %}
+
+{% if inputGoogleMapsAttr|trim|length %}
+	{% set googleMapsRowAttributes = {
+		'input': inputGoogleMapsAttr|trim,
+	} %}
+{% endif %}
+
+{{ options.enablePluginRow(
+	'Google Maps',
+	'plugins[googleMapsEasy]',
+	'GoogleMaps-enable',
+	googleMapsRowAttributes,
+	'Settings'
+) }}
+
+{% if googleMapsInfo.isPuliginActive == 'true' %}
+	<div id="toogle-GoogleMaps-enable" style="display: none;">
+		<div class="row">
+			<div class="col-md-12">
+				{% if(googleMapsInfo.presets| length) %}
+					<table class="sc-table mbs-plugins-preset-list">
+						<tr>
+							<th class="mbs-gg-header">
+								<label class="sc-checkbox">
+									<input type="checkbox" class="mbs-setting-select-all" data-type="GoogleMaps">
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</th>
+							<th>{{ translate('GoogleMaps Name') }}</th>
+						</tr>
+						{% for val1 in googleMapsInfo.presets %}
+							<tr>
+								<td>
+									<label class="sc-checkbox">
+										<input type="checkbox" class="mbs-can-setting-checked mbs-type-GoogleMaps" id="mbs-GoogleMaps-{{ val1.id }}" name="plugins[googleMapsEasy][ids][]" value="{{ val1.id }}" {% if val1.id in pluginS.ids %} checked="checked" {% endif %}/>
+										<div class="sc-checkbox-state"></div>
+									</label>
+								</td>
+								<td>{{ val1.title }}</td>
+							</tr>
+						{% endfor %}
+					</table>
+				{% else %}
+					<div class="mbs-plug-msg-info">{{ translate('You have no Google Maps for now. Create your Google Maps  or Enable Membership feature for Google Maps which you want to use as presets.') }}</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+{% else %}
+	<div class="mbs-plug-not-install">
+		{{ translate('You need to install Google Maps Easy to use this feature. ') }}
+		<a target="_blank" href="{{ googleMapsInfo.installUrl }}">{{ translate('Install') }}</a>
+		{{ translate(' plugin from your admin area, or visit it\'s official page on Wordpress.org ') }}
+		<a target="_blank" href="{{ googleMapsInfo.installWpUrl }}">{{ translate('here') }}</a>
+	</div>
+{% endif %}

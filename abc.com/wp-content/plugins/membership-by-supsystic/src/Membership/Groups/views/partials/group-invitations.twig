@@ -1,0 +1,22 @@
+{% for invitation in invitations %}
+	{% set group = invitation.invitedTo %}
+	<div class="mp-group">
+		<div class="mp-group-image">
+			<img src="{{ getGroupLogo(group, 50, 50) }}">
+		</div>
+		<div class="mp-group-info">
+			<div class="mp-group-title"><a href="{{ getGroupUrl(group) }}">{{ group.name }}</a> </div>
+			<div class="mp-group-type">
+				{% if group.type == 'open' %}
+				    {{ translate('Open group') }}
+				{% elseif group.type == 'closed' %}
+				    {{ translate('Closed group') }}
+				{% endif %}
+			</div>
+			<div class="mp-group-users">{{ translate('%d followers')|format(group.totalUsers) }}</div>
+			<div><a href="#" data-group-id="{{ group.id }}" class="mp-group-accept-invite">{{ translate('Accept invitation') }}</a></div>
+			<div><a href="#" data-group-id="{{ group.id }}" class="mp-group-cancel-invite">{{ translate('Cancel invitation') }}</a></div>
+		</div>
+	</div>
+
+{% endfor %}

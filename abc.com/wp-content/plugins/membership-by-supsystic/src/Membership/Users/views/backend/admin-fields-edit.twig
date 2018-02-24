@@ -1,0 +1,20 @@
+{% import "@users/macros/admin-fields.twig" as fieldsTemplates %}
+
+{% if fields %}
+	<h1>{{ translate('Membership profile') }}</h1>
+{% endif %}
+
+{% set sections = [] %}
+<table class="form-table">
+	<tbody>
+		{% for field in fields %}
+			{% if field.enabled  %}
+				{% if field.section not in sections %}
+					<h2>{{ field.section }}</h2>
+					{% set sections = sections|merge([field.section]) %}
+				{% endif %}
+				{{ fieldsTemplates.createField(field) }}
+			{% endif %}
+		{% endfor %}
+	</tbody>
+</table>

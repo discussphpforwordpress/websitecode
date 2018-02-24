@@ -1,0 +1,13 @@
+{% for comment in comments %}
+	<div class="item mp-comment" data-comment-id="{{ comment.id }}">
+		<div class="content">
+			<a class="header" href="{{ comment.post_link }}">{{ comment.title }}</a>
+			<div class="meta">
+				<small class="date">{{ comment.date }}</small>
+			</div>
+			<div class="description">
+				<p>{{ comment.content }}</p>
+			</div>
+		</div>
+	</div>
+{% endfor %}

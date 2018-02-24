@@ -1,0 +1,71 @@
+{% extends "@base/layouts/backend.twig" %}
+{% import "@base/macros/options.twig" as options %}
+
+{% block mainHeader %}
+	<h2 class="sc-header">{{ translate('Addons') }}</h2>
+{% endblock %}
+
+{% block main %}
+
+	{% import _self as f %}
+	<div class="sc-tabs-container">
+		<div class="sc-tab-content active">
+			<div class="mp-action-panel">
+				<form class="mp-addons-activation-form">
+					<div class="tooltip">
+						<i class="fa fa-question-circle fa-lg"></i>
+						<div class="tooltip_content">
+							{{ translate('Your email address, used on checkout procedure on') }} <a href="https://supsystic.com/">https://supsystic.com/</a>
+						</div>
+					</div>
+					<input class="sc-input" type="text" name="email" placeholder="Email">
+					<div class="tooltip">
+						<i class="fa fa-question-circle fa-lg"></i>
+						<div class="tooltip_content">
+							{{ translate('Your License Key from your account on') }} <a href="https://supsystic.com/">https://supsystic.com/</a>
+						</div>
+					</div>
+					<input class="sc-input" type="text" name="key" placeholder="{{ translate('License Key') }}">
+
+					<button class="activate-addons sc-button icon-button primary">
+						<i class="fa fa-key"></i>
+						<span>{{ translate('Activate Addons') }}</span>
+					</button>
+				</form>
+
+			</div>
+			<div class="mp-options">
+				<div class="row">
+					<div class="col-md-12">
+						<table class="mp-addons-table">
+							<tr>
+								<th>{{ translate('Addons') }}</th>
+								<th>{{ translate('State') }}</th>
+							</tr>
+							{% for id, addon in addons %}
+								<tr data-addon-id="{{ id }}" class="mp-addon-state {{ addon.state | raw }}">
+									<td>{{ addon.title }}</td>
+									<td class="activated-state">
+										<div><b>{{ translate('Activated') }}</b></div>
+										<span>{{ translate('Premium support expires in') }} <span data-addon-days-left="{{ addon.daysLeft }}" data-addon-check-date="{{ addon.checkDate }}" class="mp-addon-days-left"></span> days</span>
+									</td>
+									<td class="expired-state">
+										<div><b>{{ translate('Expired') }}</b></div>
+										<span>{{ translate('You able to use addon but update is disabled') }}</span>
+									</td>
+									<td class="not-activated-state">
+										<div><b>{{ translate('Not Activated') }}</b></div>
+										<span>{{ translate('Enter your Email and License Key on this page, find the information for activation in your personal account on our site %s. Then click "Activate Addons" button.')|format('<a target="_blank" href="https://supsystic.com/my-account/my-orders/">https://supsystic.com/my-account/my-orders/</a>')|raw }}</span>
+									</td>
+									<td class="error-state">
+										<div><b>{{ translate('Error') }}</b> <span class="addon-error">{{ addon.error }}</span></div>
+									</td>
+								</tr>
+							{% endfor %}
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

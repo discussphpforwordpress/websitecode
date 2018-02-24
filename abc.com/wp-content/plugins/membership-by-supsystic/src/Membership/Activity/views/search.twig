@@ -1,0 +1,25 @@
+<div class="sc-membership">
+	<div class="ui segment vertical basic mp-activity-container" data-activity-context="activity">
+		
+		<div class="ui vertical segment basic search-activities">
+			<div class="ui fluid icon input mbsFrontendSearchWr">
+				<input type="text">
+				<i class="search icon"></i>
+			</div>
+		</div>
+		
+		<div class="mp-activity-list">
+			{% include '@activity/partials/activities.twig' with {'activities': activities} %}
+		</div>
+		
+		<div class="ui message no-activities" {% if activities %}style="display: none"{% endif %}>{{ translate('Nothing is found.') }}</div>
+		
+		<div class="ui basic segment activity-loader" style="display: none">
+			<div class="ui active loader"></div>
+		</div>
+	
+	</div>
+	
+	{% include '@activity/partials/activity-gallery-modal.twig' %}
+	{% include '@activity/partials/activity-report-modal.twig' %}
+</div>

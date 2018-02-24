@@ -1,0 +1,32 @@
+{% macro create(settings, queryParams = {}) %}
+	
+	{% set page = settings.page ? settings.page|number_format : 1 %}
+	{% set totalPages = settings.totalPages ? settings.totalPages|number_format : 1 %}
+	{% set paginationElements = settings.paginationElements ? settings.paginationElements : 2 %}
+	{% set hash = settings.hash ? '#' ~  settings.hash : '' %}
+	
+	{% if totalPages != 1 %}
+		{% set minRangePage = max(page - paginationElements, 1) %}
+		{% set maxRangePage = min(page + paginationElements, totalPages) %}
+		{% set minRangePage = min(minRangePage, totalPages) %}
+
+		<div class="sc-pagination">
+			{% if page > 1 and totalPages > 1 %}
+				<a href="{{ dashboardUrl(request.query.module, request.query.action, {'p': 1 }|merge(queryParams)) }}{{ hash }}">{{ translate('First') }}</a>
+				<a href="{{ dashboardUrl(request.query.module, request.query.action, {'p': page - 1 }|merge(queryParams)) }}{{ hash }}">{{ translate('Previous') }}</a>
+			{% endif %}
+			{% for rangePage in range(minRangePage, maxRangePage) %}
+				{% if page == rangePage or (page == minRangePage and loop.first) or (page == maxRangePage and loop.last) %}
+					<span class="current"><b>{{ rangePage }}</b></span>
+				{% else %}
+					<a href="{{ dashboardUrl(request.query.module, request.query.action, {'p': rangePage }|merge(queryParams)) }}{{ hash }}" >{{ rangePage }}</a>
+				{% endif %}
+			{% endfor %}
+			{% if page < totalPages %}
+				<a href="{{ dashboardUrl(request.query.module, request.query.action, {'p': page + 1 }|merge(queryParams)) }}{{ hash }}">{{ translate('Next') }}</a>
+				<a href="{{ dashboardUrl(request.query.module, request.query.action, {'p': totalPages }|merge(queryParams)) }}{{ hash }}">{{ translate('Last') }}</a>
+			{% endif %}
+		</div>
+	{% endif %}
+
+{% endmacro %}

@@ -1,0 +1,173 @@
+{% extends '@users/profile.twig' %}
+
+{% block content %}
+	<div class="ui basic vertical segment" id="mp-about">
+		<div class="ui grid">
+			<div class="sixteen wide mobile six wide tablet five wide computer column">
+				<div class="ui stackable secondary vertical fluid pointing menu about-tabs">
+					{% for section in sections %}
+						<a class="item {% if loop.first %}active{% endif %}" data-tab="{{ section }}">{{ section }}</a>
+					{% endfor %}
+                    {{ environment.dispatcher.dispatch('profileAboutMenu') }}
+				</div>
+			</div>
+			<div class="sixteen wide mobile ten wide tablet eleven wide computer column">
+				{% for section in sections %}
+					<div class="ui tab {% if loop.first %}active{% endif %}" data-tab="{{ section }}">
+						{% for field in fields %}
+
+							{% if field.section == section %}
+								<div class="ui vertical segment">
+									<div class="ui form mp-field" data-field-name="{{ field.name }}" data-field-type="{{ field.type }}">
+										<div class="ui relaxed grid">
+											<div class="sixteen wide mobile six wide tablet five wide computer column">
+												<label>{{ field.label }}</label>
+											</div>
+											<div class="sixteen wide mobile ten wide tablet eleven wide computer column">
+												<div class="mp-field-data">
+													{% if isCurrentUser(requestedUser) and field.name != 'user_login' %}
+														<button class="ui button mini primary field-edit-action"><i class="write icon"></i>{{ translate('Edit') }}</button>
+													{% endif %}
+													<p>
+														{% if field.data is not empty %}
+															{% if field.options %}
+																{% set data = [] %}
+																{% for option in field.options %}
+																	{% if option.id in field.data %}
+																		{% set data = data|merge([option.name]) %}
+																	{% endif %}
+																{% endfor %}
+																{{ data|join(' • ') }}
+															{% else %}
+																{{ field.data }}
+															{% endif %}
+														{% else %}
+															{% if field.options %}
+																{% set data = [] %}
+																{% for option in field.options %}
+																	{% if option.checked %}
+																		{% set data = data|merge([option.name]) %}
+																	{% endif %}
+																{% endfor %}
+																{{ data|join(' • ') }}
+															{% endif %}
+														{% endif %}
+													</p>
+												</div>
+												{% if isCurrentUser(requestedUser) %}
+													<div class="mp-field-edit" style="display: none">
+														{% if field.type == 'text' %}
+															<input type="text" value="{{ field.data }}">
+														{% elseif field.type == 'email' %}
+															<input type="email" value="{{ field.data }}">
+														{% elseif field.type == 'password' %}
+															<input type="password" value="{{ field.data }}">
+														{% elseif field.type == 'numeric' %}
+															<input type="number" value="{{ field.data }}">
+														{% elseif field.type == 'date' %}
+															<input
+																	type="text"
+																	class="date-field"
+																	value="{{ field.data }}"
+																	data-format="{{ field.format }}"
+															>
+															<input type="hidden" value="{{ field.timestamp }}">
+														{% elseif field.type == 'scroll' %}
+															<select class="ui fluid multiple search selection dropdown" multiple>
+																{% for option in field.options %}
+																	{% set checked = false %}
+																	{% if field.data and field.data is not empty %}
+																		{% if option.id in field.data %}
+																			{% set checked = true %}
+																		{% endif %}
+																	{% else %}
+																		no data
+																		{% if option.checked %}
+																			{% set checked = true %}
+																		{% endif %}
+																	{% endif %}
+																	<option value="{{ option.id }}" {% if checked %}selected{% endif %}>{{ option.name }}</option>
+																{% endfor %}
+															</select>
+														{% elseif field.type == 'drop' %}
+															<select class="ui fluid search single dropdown">
+																{% for option in field.options %}
+																	{% set checked = false %}
+																	{% if field.data and field.data is not empty %}
+																		{% if option.id == field.data %}
+																			{% set checked = true %}
+																		{% endif %}
+																	{% else %}
+																		{% if option.checked %}
+																			{% set checked = true %}
+																		{% endif %}
+																	{% endif %}
+																	<option value="{{ option.id }}" {% if checked %}selected{% endif %}>{{ option.name }}</option>
+																{% endfor %}
+															</select>
+														{% elseif field.type == 'radio' %}
+															<div class="inline fields">
+																{% for option in field.options %}
+																	<div class="field">
+																		<div class="ui radio checkbox">
+																			{% set checked = false %}
+																			{% if field.data and field.data is not empty %}
+																				{% if option.id in field.data %}
+																					{% set checked = true %}
+																				{% endif %}
+																			{% else %}
+																				{% if option.checked %}
+																					{% set checked = true %}
+																				{% endif %}
+																			{% endif %}
+																			<input type="radio" name="{{ field.name }}" id="{{ field.name }}-{{ option.id }}" value="{{ option.id }}" {% if checked  %}checked{% endif %} class="hidden">
+																			<label for="{{ field.name }}-{{ option.id }}">{{ option.name }}</label>
+																		</div>
+																	</div>
+																{% endfor %}
+															</div>
+														{% elseif field.type == 'checkbox' %}
+															<div class="inline fields">
+																{% for option in field.options %}
+																	<div class="field">
+																		<div class="ui checkbox">
+																			{% set checked = false %}
+																			{% if field.data and field.data is not empty %}
+																				{% if option.id in field.data %}
+																					{% set checked = true %}
+																				{% endif %}
+																			{% else %}
+																				{% if option.checked %}
+																					{% set checked = true %}
+																				{% endif %}
+																			{% endif %}
+																			<input type="checkbox" id="{{ field.name }}-{{ option.id }}" value="{{ option.id }}" {% if checked  %}checked{% endif %} class="hidden">
+																			<label for="{{ field.name }}-{{ option.id }}">{{ option.name }}</label>
+																		</div>
+																	</div>
+																{% endfor %}
+															</div>
+														{% endif %}
+														<div class="ui vertical segment edit-action-buttons">
+															<button class="ui primary mini button save-action">
+																<i class="icon save"></i> {{ translate('Save') }}
+															</button>
+															<button class="ui mini button cancel-action">
+																<i class="icon cancel"></i> {{ translate('Cancel') }}
+															</button>
+														</div>
+													</div>
+												{% endif %}
+											</div>
+										</div>
+									</div>
+								</div>
+							{% endif %}
+						{% endfor %}
+					</div>
+				{% endfor %}
+                {{ environment.dispatcher.dispatch('profileAboutTabs') }}
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+<div class="sc-membership">
+	<div class="ui positive message">
+		<div class="header">{{ translate('Your email has been confirmed.') }}</div>
+		{% if isLoggedIn %}
+			<p> {{ translate('Now your account is active.') }} {{ translate('Here is you profile link.') }}
+				<a href="{{ getRouteUrl('profile') }}">{{ getRouteUrl('profile') }}</a>
+			</p>
+		{% else %}
+			<p>{{ translate('Now your account is active.') }} {{ translate('You can login in to your account here.') }}
+				<a href="{{ getRouteUrl('login') }}">{{ getRouteUrl('login') }}</a>
+			</p>
+		{% endif %}
+	</div>
+</div>

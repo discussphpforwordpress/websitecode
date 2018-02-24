@@ -1,0 +1,67 @@
+{% spaceless %}
+	{% for conversation in conversations %}
+		<div class="conversation" data-id="{{ conversation.id }}" style="display: none">
+			<div class="ui equal width grid">
+				<div class="left floated column">
+					<button class="ui button primary mini show-all-conversations">
+						<i class="angle left icon"></i> {{ translate('All conversations') }}
+					</button>
+				</div>
+				<div class="right floated right aligned column">
+					<div class="ui icon top right pointing dropdown button primary mini">
+						<i class="ellipsis horizontal icon"></i>
+						<div class="menu">
+							<a class="item delete-messages">{{ translate('Delete messages') }}</a>
+							<a class="item delete-conversation">{{ translate('Delete conversation') }}</a>
+							{% if conversation.type == 'conversation' %}
+								<a class="item block-user" {% if conversation.blocked %}style="display: none"{% endif %}>{{ translate('Block user') }}</a>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="conversation-messages ui comments" style="display: none">
+				<div class="ui basic vertical segment conversation-loader" style="display:none;">
+					<div class="ui active centered inline loader"></div>
+				</div>
+
+			</div>
+
+			{% set blockedUserId %}
+				{% for user in conversation.users %}
+					{% if not isCurrentUser(user) %}{{ user.id }}{% endif %}
+				{% endfor %}
+			{% endset %}
+			
+			<div class="ui basic secondary segment blocked-user" data-user-id="{{ blockedUserId|trim }}" {% if not conversation.blocked %}style="display: none"{% endif %}>
+				<span>User is blocked.</span>
+				<button class="ui right floated button primary mini">{{ translate('Unblock') }}</button>
+			</div>
+			
+			<div class="ui basic vertical segment send-message-reply-form">
+				<div class="ui form">
+					<div class="field">
+						<textarea placeholder="{{ translate('Write a message') }}" rows="2"></textarea>
+					</div>
+					<div class="ui right label characters-count mbsConversationCount" style="display:none;"></div>
+					<div class="mbsMessButtonsWrap">
+						<button class="mbsAddAttachment2 ui button mini"><span class="mbs-invisible">_</span><i class="icon attach"></i></button>
+						<button class="ui submit mini primary right floated button mbsAttMessSendBtn2">{{ translate('Send') }}</button>
+						<div class="mbsAllAttachmentList2"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="ui basic clearing segment conversation-delete-messages-buttons" style="display: none">
+				<div class="ui center aligned basic container">
+					<p>{{ translate('Select messages to delete') }}</p>
+				</div>
+				<div class="ui right aligned container">
+					<button class="ui mini primary button delete-action">{{ translate('Delete') }}</button>
+					<button class="ui mini button cancel-action">{{ translate('Cancel') }}</button>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+{% endspaceless %}

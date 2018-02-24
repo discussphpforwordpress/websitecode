@@ -1,0 +1,167 @@
+<div class="sc">
+	<div class="sc-head">
+		{% block head %}{% endblock %}
+	</div>
+	<div class="sc-container">
+		<div class="menu-sidebar">
+			{% set adminAreaMenus = environment.getAdminAreaMenus() %}
+			{% if( adminAreaMenus ) %}
+				{% for menu in adminAreaMenus %}
+					{% set active = request.query.module == menu.module or (menu.is_main and request.query.module is null) %}
+					{% if ((menu.action and request.query.action != menu.action) or (request.query.action and request.query.action != menu.action)) %}
+						{% set active = false %}
+					{% endif %}
+					{% set menuUrl = menu.action ? environment.generateUrl( menu.module, menu.action ) : environment.generateUrl( menu.module ) %}
+					<div class="menu-sidebar-item
+						{% if (active) %}
+							active
+						{% endif %}
+					">
+						<a href="{{ menuUrl }}">
+							{% if menu.fa_icon %}
+								{% if menu.fa_icon is iterable %}
+									<span class="fa-stack">
+										{% for fa_icon in menu.fa_icon %}
+											<i class="fa {{ fa_icon }}"></i>
+										{% endfor %}
+									</span>
+								{% else %}
+									<i class="fa {{ menu.fa_icon }}"></i>
+								{% endif %}
+							{% endif %}
+							<div class="menu-sidebar-item-title">
+								{{ menu.title }}
+							</div>
+							{% if menu.is_promo %}
+							<small>Pro</small>
+							{% endif %}
+						</a>
+					</div>
+					{% if (active and menu.is_main is empty) %}
+						<script type="text/javascript">
+							/*Make sub menu in WP menu be selected for our modules menus too*/
+							jQuery(document).ready(function(){
+								var activeTab = {
+									mod: '{{ menu.module }}'
+								,	action: '{{ menu.action }}' 
+								};
+								if(jQuery('#toplevel_page_supsystic-membership').hasClass('wp-has-current-submenu')) {
+									var $subMenus = jQuery('#toplevel_page_supsystic-membership').find('.wp-submenu li');
+									$subMenus.removeClass('current').each(function(){
+										var checkUrl = '&module='+ activeTab.mod+ (activeTab.action ? '&action='+ activeTab.action : '');
+										if(jQuery(this).find('a[href$="'+ checkUrl+ '"]').size()) {
+											jQuery(this).addClass('current');
+										}
+									});
+								}
+							});
+						</script>
+					{% endif %}
+				{% endfor %}
+			{% else %}
+			<!--Leave this code just for a while - to make sure current users will not take additional problems-->
+			<div class="menu-sidebar-item
+				{% if (request.query.module == 'membership' or request.query.module is null) %}
+					active
+				{% endif %}
+			">
+				<a href="{{ environment.generateUrl('membership') }}">
+					<i class="fa fa-cogs"></i>
+					<div class="menu-sidebar-item-title">
+						{{ translate('Main') }}
+					</div>
+				</a>
+			</div>
+			<div class="menu-sidebar-item
+				{% if (request.query.module == 'users') %}
+					active
+				{% endif %}
+			">
+				<a href="{{ environment.generateUrl('users') }}">
+					<span class="fa-stack">
+						<i class="fa fa-user"></i>
+						<i class="fa fa-file fa-file-stacked"></i>
+					</span>
+					<div class="menu-sidebar-item-title">
+						{{ translate('Profile') }}
+					</div>
+				</a>
+			</div>
+			<div class="menu-sidebar-item
+				{% if (request.query.module == 'roles') %}
+					active
+				{% endif %}
+			">
+				<a href="{{ environment.generateUrl('roles') }}">
+					<span class="fa-stack">
+						<i class="fa fa-user"></i>
+						<i class="fa fa-check-square-o fa-file-stacked"></i>
+					</span>
+					<div class="menu-sidebar-item-title">
+						{{ translate('Roles') }}
+					</div>
+				</a>
+			</div>
+			<div class="menu-sidebar-item
+				{% if (request.query.module == 'groups') %}
+					active
+				{% endif %}
+			">
+				<a href="{{ environment.generateUrl('groups') }}">
+					<i class="fa fa-group"></i>
+					<div class="menu-sidebar-item-title">
+						{{ translate('Groups') }}
+					</div>
+				</a>
+			</div>
+			<div class="
+				menu-sidebar-item
+				{% if (request.query.module == 'messages') %}
+					active
+				{% endif %}
+			">
+				<a href="{{ environment.generateUrl('messages') }}">
+					<i class="fa fa-envelope"></i>
+					<div class="menu-sidebar-item-title">
+						{{ translate('Mails') }}
+					</div>
+				</a>
+			</div>
+			<div class="
+				menu-sidebar-item
+				{% if (request.query.module == 'design') %}
+					active
+				{% endif %}
+			">
+				<a href="{{ environment.generateUrl('design') }}">
+					<i class="fa fa-picture-o"></i>
+					<div class="menu-sidebar-item-title">
+						{{ translate('Design') }}
+					</div>
+				</a>
+			</div>
+			<div class="
+				menu-sidebar-item
+				{% if (request.query.module == 'reports') %}
+					active
+				{% endif %}
+			">
+				<a href="{{ environment.generateUrl('reports') }}">
+					<i class="fa fa-bars"></i>
+					<div class="menu-sidebar-item-title">
+						{{ translate('Reports') }}
+					</div>
+				</a>
+			</div>
+			{% endif %}
+		</div>
+		<div class="main-container">
+			{% block mainHeader %}
+			{% endblock %}
+			{% block main %}
+			{% endblock %}
+			{% block mainFooter %}
+			{% endblock %}
+		</div>
+	</div>
+</div>

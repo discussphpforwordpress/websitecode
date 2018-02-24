@@ -1,0 +1,3080 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Українська\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: 4ever.young.lady@gmail.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk_UA\n"
+"X-Generator: Poedit 1.8.11\n"
+
+msgid "%d followers"
+msgstr "% D послідовників"
+
+msgid "%s and %s becomes friends"
+msgstr "%s і%s стають друзями"
+
+msgid "%s commented on this."
+msgstr "%s прокоментував це."
+
+msgid "%s followers"
+msgstr "%s послідовників"
+
+msgid "%s has restricted access to his %s page."
+msgstr "%s обмежив доступ до сторінки його%s."
+
+msgid "%s is registered"
+msgstr "%s зареєструвався"
+
+msgid "%s liked this."
+msgstr "%s це сподобалось"
+
+msgid "%s now following %s"
+msgstr "%s тепер слідує %s"
+
+msgid "%s now following you"
+msgstr "%s тепер слідує за вами"
+
+msgid "%s people liked this"
+msgstr "%s людей вподобали це"
+
+msgid "%s people shared this"
+msgstr "%s людей поділилось цим"
+
+msgid "%s shared %s post."
+msgstr "%s поділились %s записом."
+
+msgid "About"
+msgstr "Про мене"
+
+msgid "Accept"
+msgstr "Прийняти"
+
+msgid "Accept Friend Request"
+msgstr "Прийняти запит у друзі"
+
+msgid "Accept invitation"
+msgstr "Прийняти запрошення"
+
+msgid "Access to pages by roles"
+msgstr "Доступ до сторінки для ролей"
+
+msgid "Account"
+msgstr "Аккаунт"
+
+msgid "Account Activation Email"
+msgstr "Лист для активації аккаунту"
+
+msgid "Account Activation Email Body"
+msgstr "Текст Листа для Активації Аккаунту"
+
+msgid "Account Activation Email Subject"
+msgstr "Тема Листа для Активації Аккаунту"
+
+msgid "Account Approved Email"
+msgstr "Лист про те, що Аккаунт Підтверджено"
+
+msgid "Account Approved Email Body"
+msgstr "Текст Листа про те, що Аккаунт Підтверджено"
+
+msgid "Account Approved Email Subject"
+msgstr "Тема Листа про те, що Аккаунт Підтверджено"
+
+msgid "Account Deactivation Email"
+msgstr "Лист про Деактивацію Аккаунту"
+
+msgid "Account Deactivation Email Body"
+msgstr "Текст Листа про Деактивацію Аккаунту"
+
+msgid "Account Deactivation Email Subject"
+msgstr "Тема Листа про Деактивацію Аккаунту"
+
+msgid "Account Deleted Email"
+msgstr "Лист про те, що Аккаунт Видалено"
+
+msgid "Account Deleted Email Body"
+msgstr "Текст Листа про те, що Аккаунт Видалено"
+
+msgid "Account Deleted Email Subject"
+msgstr "Тема Листа про те, що Аккаунт Видалено"
+
+msgid "Account Deletion"
+msgstr "Видалення Аккаунту"
+
+msgid "Account Deletion Notification"
+msgstr "Оповіщення про Видалення Аккаунту"
+
+msgid "Account Deletion Notification Body"
+msgstr "Текст Оповіщення про Видалення Аккаунту"
+
+msgid "Account Deletion Notification Subject"
+msgstr "Тема Оповіщення про Видалення Аккаунту"
+
+msgid "Account E-mail"
+msgstr "E-mail Аккаунту"
+
+msgid "Account Needs Review Notification"
+msgstr "Оповіщення про Необхідність Перегляду Аккаунту"
+
+msgid "Account Needs Review Notification Body"
+msgstr "Текст Оповіщення про Необхідність Перегляду Аккаунту"
+
+msgid "Account Needs Review Notification Subject"
+msgstr "Тема Оповіщення про Необхідність Перегляду Аккаунту"
+
+msgid "Account Rejected Email"
+msgstr "Лист про те, що Аккаунт відхилено"
+
+msgid "Account Rejected Email Body"
+msgstr "Текст Листа про те, що Аккаунт відхилено"
+
+msgid "Account Rejected Email Subject"
+msgstr "Тема Листа про те, що Аккаунт відхилено"
+
+msgid "Account Welcome Email"
+msgstr "Вітальний лист аккаунту"
+
+msgid "Account Welcome Email Body"
+msgstr "Текст Вітального Листа Аккаунту"
+
+msgid "Account Welcome Email Subject"
+msgstr "Тема Вітального Листа Аккаунту"
+
+msgid "Account is deleted from system."
+msgstr "Аккаунт видалено з системи."
+
+msgid "Account is disabled."
+msgstr "Аккаунт вимкнений."
+
+msgid "Account is in verification process."
+msgstr "Аккаунт у процесі перевірки."
+
+msgid "Account is not approved."
+msgstr "Аккаунт не підтверджено."
+
+msgid "Activate Addons"
+msgstr "Активувати Доповнення"
+
+msgid "Activated"
+msgstr "Активовано"
+
+msgid "Activity"
+msgstr "Активність"
+
+msgid "Activity already liked"
+msgstr "Активність вподобана"
+
+msgid "Activity commenting"
+msgstr "Коментування Активності"
+
+msgid "Activity is not liked"
+msgstr "Активність не вподобали"
+
+msgid "Activity post writing"
+msgstr "Пишеться запис у Активності"
+
+msgid "Activity posting is restricted"
+msgstr "Заборона робити записи у Активності"
+
+msgid "Activity viewing"
+msgstr "Перегляд Активності"
+
+msgid "Add"
+msgstr "Додати"
+
+msgid "Add Field"
+msgstr "Додати Поле"
+
+msgid "Add Friend"
+msgstr "Додати Друга"
+
+msgid "Add New"
+msgstr "Додати Нове"
+
+msgid "Add Section"
+msgstr "Додати Секцію"
+
+msgid "Add new role"
+msgstr "Додати нову роль"
+
+msgid "Add new rule"
+msgstr "Додати нове правило"
+
+msgid "Add new tag"
+msgstr "Додати новий тег"
+
+msgid "Add role depend of the user order"
+msgstr "Додати роль у залежності від порядку користувачів"
+
+msgid "Add tag"
+msgstr "Додати тег"
+
+msgid "Added to Cart"
+msgstr "Додано до кошика"
+
+msgid "Addons"
+msgstr "Доповнення"
+
+msgid "Address"
+msgstr "Адреса"
+
+msgid "Admin"
+msgstr "Адміністратор"
+
+msgid "Admin E-mail Address"
+msgstr "E-mail Адреса Адміністратора"
+
+msgid "Admin Email"
+msgstr "Email Адміністратора"
+
+msgid "Admin will get this email after some account has been deleted."
+msgstr "Адміністратор отримає цей лист, коли хтось видалить власний аккаунт"
+
+msgid "Administrator confirmation"
+msgstr "Підтвердження Адміністратора"
+
+msgid "Administrator permissions"
+msgstr "Дозволи Адміністратора"
+
+msgid "Administrators only can comment"
+msgstr "Тільки Адміністратор може коментувати"
+
+msgid "Administrators only can write posts"
+msgstr "Тільки Адміністратори можуть робити записи"
+
+msgid "After user deletes his account, he will be redirected to the main page or to the specified link."
+msgstr "Після того як користувач видалить власний аккаунт, він буде переадресований на головну сторінку чи на задане посилання."
+
+msgid "After user logs out from his account, he will be redirected to the main page or to the specified link."
+msgstr "Після того, як користувач вийде з аккаунту, він буде переадресований на головну сторінку чи на задане посилання."
+
+msgid "After user submits a login form, he will be redirected to his profile or to the specified link."
+msgstr "Після того як користувач підтвердить вхідну форму, він буде переадресований до власного профайлу чи на задане посилання."
+
+msgid "After user submits a registration form, he will be redirected to his profile or to the specified link."
+msgstr "Після того як користувач підтвердить реєстраційну форму, він буде переадресований до власного профайлу чи на задане посилання."
+
+msgid "All"
+msgstr "Всі"
+
+msgid "All Friends"
+msgstr "Всі Друзі"
+
+msgid "All conversations"
+msgstr "Всі Розмови"
+
+msgid "All group members can send invitations"
+msgstr "Всі учасники групи можуть надсилати запрошення"
+
+msgid "All networks"
+msgstr "Всі соц.мережі"
+
+msgid "All users"
+msgstr "Всі користувачі"
+
+msgid "All users can comment"
+msgstr "Всі користувачі можуть коментувати"
+
+msgid "All users can view group activity"
+msgstr "Всі користувачі можуть дивитися Актівіті"
+
+msgid "All users can write posts"
+msgstr "Усі"
+
+msgid "Already has subscription"
+msgstr "Вже є підписка"
+
+msgid "Appear since"
+msgstr "З'явився з "
+
+msgid "Approve"
+msgstr "Затвердити"
+
+msgid "Assign to Membership Level"
+msgstr "Призначити Рівень Мембершипу"
+
+msgid "Authorize in Constant Contact"
+msgstr "Авторизуватися у Constant Contact"
+
+msgid "Auto"
+msgstr "Авто"
+
+msgid "Autosubscribe new user"
+msgstr "Підписувати нового користувача автоматично"
+
+msgid "Available for next Membership Levels:"
+msgstr "Доступно для наступних рівнів Мембершипу"
+
+msgid "Avatar Thumbnail Large Size"
+msgstr "Ескіз Аватару Великого Розміру"
+
+msgid "Avatar Thumbnail Medium Size"
+msgstr "Ескіз Аватару Середнього Розміру"
+
+msgid "Avatar Thumbnail Small Size"
+msgstr "Ескіз Аватару Маленького Розміру"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Billing"
+msgstr "Оформлення рахунку"
+
+msgid "Billing Address"
+msgstr "Адреса виставлення рахунку"
+
+msgid "Billing Amount"
+msgstr "Сума Рахунку"
+
+msgid "Billing Information"
+msgstr "Платіжна Інформація"
+
+msgid "Billing cycle limit"
+msgstr "Обмеження платіжного циклу"
+
+msgid "Black list of IP addresses. Enter IP addresses separated by comma or just leave this field blank if you don't need to use this option."
+msgstr "Чорний список IP адрес. Введіть IP адреси через кому або залиште це поле порожнім у якщо не бажаєте активувати цю опцію."
+
+msgid "Block"
+msgstr "Блокувати"
+
+msgid "Block group"
+msgstr "Блокувати групу"
+
+msgid "Block user"
+msgstr "Блокувати користувача"
+
+msgid "Blocked IP Addresses"
+msgstr "Заблоковані IP Адреси"
+
+msgid "Blocked users"
+msgstr "Заблоковані користувачі"
+
+msgid "Bottom"
+msgstr "Низ"
+
+msgid "Button text when need to extend Membership Level."
+msgstr "Текст Кнопки коли необхідно продовжити Рівень Мембершипу"
+
+msgid "Buttons"
+msgstr "Кнопки"
+
+msgid "Buy Now"
+msgstr "Купити Зараз"
+
+msgid "Buy now"
+msgstr "Купити зараз"
+
+msgid "By default option \"Site Accessible to Logged In Users\" hides only access to the pages of Membership plugin. If you want to hide access to all pages of your site - activate this checkbox. When opening any page of your site - all not logged in users will be redirected to the login page."
+msgstr "За замовчуванням опція \"Сайт Доступний для Зареєстрованих Користувачів\" приховує доступ тільки до сторінок плагіну Мембершип. Якщо Ви бажаєте приховати всі сторінки Вашого сайту - поставте тут прапорець. Після відкриття будь-якої сторінки Вашого сайту всі незареєстровані користувачі будуть перенаправлені на сторінку входу."
+
+msgid "Can access to global activity page?"
+msgstr "Має доступ до сторінки Глобальної Активності?"
+
+msgid "Can access to members page?"
+msgstr "Має доступ до сторінки Мемберс?"
+
+msgid "Can access to profile activity page?"
+msgstr "Має доступ до сторінки Активності Профайлу?"
+
+msgid "Can access to the pages by specific roles:"
+msgstr "Доступність сторінок для таких ролей:"
+
+msgid "Can access wp-admin"
+msgstr "Має доступ до wp-admin"
+
+msgid "Can add friends?"
+msgstr "Може додавати друзів?"
+
+msgid "Can block groups?"
+msgstr "Може блокувати групи?"
+
+msgid "Can create groups?"
+msgstr "Може створювати групи?"
+
+msgid "Can delete other members accounts?"
+msgstr "Може видаляти аккаунти інших членів?"
+
+msgid "Can delete their account?"
+msgstr "Може видаляти їх аккаунт?"
+
+msgid "Can edit other members accounts?"
+msgstr "Може редагувати аккаунти інших членів?"
+
+msgid "Can follow other users?"
+msgstr "Може слідувати за іншими користувачами?"
+
+msgid "Can join groups?"
+msgstr "Може приєднуватися до груп?"
+
+msgid "Can not detect authorization fo account owner. Contact site owner to resolve this issue."
+msgstr "Не визначена авторизація для власника аккаунту. Щоб вирішити це питання повідомте власника сайту."
+
+msgid "Can not find Products for this order"
+msgstr "Не вдалося знайти Продукти для цього замовлення"
+
+msgid "Can not find required Item"
+msgstr "Не вдалося знайти необхідний Елемент"
+
+msgid "Can not get cc obj"
+msgstr "Неможливо дістатися cc obj"
+
+msgid "Can read groups?"
+msgstr "Може читати групи?"
+
+msgid "Can see WordPress admin bar"
+msgstr "Може бачити панель WordPress адмінки "
+
+msgid "Can send and receive messages?"
+msgstr "Може надсилати та отримувати повідомлення? "
+
+msgid "Can't detect your IP, please don't spam"
+msgstr "Не можливо визначити Ваш IP, будь ласка не спамте"
+
+msgid "Cancel"
+msgstr "Відхилити"
+
+msgid "Cancel Friend Request"
+msgstr "Відхилити Запит у Друзі"
+
+msgid "Cancel a friend request"
+msgstr "Відхилити запит у друзі"
+
+msgid "Cancel invitation"
+msgstr "Відхилити запрошення"
+
+msgid "Cancel request"
+msgstr "Відхилити запит"
+
+msgid "Cannot send email - problem with send server"
+msgstr "Не можливо надіслати листа - проблема з сервером надсилання"
+
+msgid "Change"
+msgstr "Змінити"
+
+msgid "Change email"
+msgstr "Змінити email"
+
+msgid "Change logo image"
+msgstr "Змінити зображення логотипу"
+
+msgid "Change password"
+msgstr "Змінити пароль"
+
+msgid "Change profile image"
+msgstr "Змінити фото профайлу"
+
+msgid "Check your account to find your ordered User Levels."
+msgstr "Щоб знайти Рівні Користувача, які ви замовили, перевірте Ваш аккаунт."
+
+msgid "Checkbox"
+msgstr "Перевірка"
+
+msgid "Checkout"
+msgstr "Оплата"
+
+msgid "Checkout Success"
+msgstr "Оплата Успішна"
+
+msgid "Choose field(s) to enable in search"
+msgstr "Оберіть поля для ввімкнення у пошуку"
+
+msgid "Circle"
+msgstr "Коло"
+
+msgid "Clear data"
+msgstr "Очистити данні"
+
+msgid "Clear selection"
+msgstr "Очистити вибір"
+
+msgid "Closed"
+msgstr "Закрито"
+
+msgid "Closed group"
+msgstr "Закрита группа"
+
+msgid "Comment"
+msgstr "Коментувати"
+
+msgid "Comment as"
+msgstr "Коментувати як"
+
+msgid "Comment not found."
+msgstr "Коментар не знайдено"
+
+msgid "Comment posting is restricted"
+msgstr "Публікація коментаря обмежена"
+
+msgid "Comments"
+msgstr "Коментарі"
+
+msgid "Community activity is disabled"
+msgstr "Активність спільноти вимкнена"
+
+msgid "Community type"
+msgstr "Тип Співтовариства"
+
+msgid "Company Name"
+msgstr "Ім'я Компанії"
+
+msgid "Compose message"
+msgstr "Написати повідомлення"
+
+msgid "Confirm deletion (All group data will be deleted and cannot be restored)"
+msgstr "Підтвердіть видалення (Вся інформація групи буде видалена без можливості відновлення)"
+
+msgid "Confirm deletion (All user data will be deleted and cannot be restored)"
+msgstr "Підтвердіть видалення (Вся інформація користувача буде видалена без можливості відновлення)"
+
+msgid "Confirm password"
+msgstr "Підтвердження паролю"
+
+msgid "Confirm your current password to continue"
+msgstr "Щоб продовжити, підтвердіть ваш поточний пароль,"
+
+msgid "Confirmation link was sent to your email address. Check your email!"
+msgstr "Посилання для підтвердження було надіслано на вашу почтову адресу. Перевірте ваш email!"
+
+msgid "Confirmation sent message"
+msgstr "Повідомлення про те, що підтвердження надіслано"
+
+msgid "Connect"
+msgstr "З'єднання"
+
+msgid "Connected Accounts"
+msgstr "Пов'язані Аккаунти"
+
+msgid "Connected Social Network Accounts"
+msgstr "Пов'язані Аккаунти Соціальних Мереж"
+
+msgid "Constant Contact Setup"
+msgstr "Встановлення Constant Contact"
+
+msgid "Content"
+msgstr "Контент"
+
+msgid "Content Settings"
+msgstr "Налаштування Контенту"
+
+msgid "Content type"
+msgstr "Тип Контенту"
+
+msgid "Country"
+msgstr "Країна"
+
+msgid "Cover Thumbnail Medium Size"
+msgstr "Ескіз Обкладинки Середнього Розміру"
+
+msgid "Cover Thumbnail Small Size"
+msgstr "Ескіз Обкладинки Малого Розміру"
+
+msgid "Create"
+msgstr "Створити"
+
+msgid "Create Group"
+msgstr "Створити Групу"
+
+msgid "Create all unassigned pages"
+msgstr "Створити всі не присвоєні сторінки"
+
+msgid "Create new Membership Currency"
+msgstr "Створити нову Валюту Мембершипу"
+
+msgid "Create new Membership Drip"
+msgstr "Створити новий Крапаючий Контент для Мембершип"
+
+msgid "Create new Membership Level"
+msgstr "Створити новий Рівень Мембершип"
+
+msgid "Create new group"
+msgstr "Створити нову групу"
+
+msgid "Create page"
+msgstr "Створити сторінку"
+
+msgid "Currency"
+msgstr "Валюта"
+
+msgid "Currency value (corresponding to default currency)"
+msgstr "Вартість валюти (відносно валюти за замовчуванням)"
+
+msgid "Current password is required"
+msgstr "Необхідно ввести поточний пароль"
+
+msgid "Current password was incorrect"
+msgstr "Поточний пароль був невірним"
+
+msgid "Custom text if no users were found"
+msgstr "Довільний текст, якщо не знайдено жодного користувача"
+
+msgid "Database error"
+msgstr "Помилка бази данних"
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "Date Format"
+msgstr "Формат дати"
+
+msgid "Day"
+msgstr "День"
+
+msgid "Day(s)"
+msgstr "День"
+
+msgid "Decline"
+msgstr "Відмовити"
+
+msgid "Decline Friend Request"
+msgstr "Відхилити Запит у Друзі"
+
+msgid "Default Avatar Image"
+msgstr "Початкове Зображення Аватару"
+
+msgid "Default Cover Image"
+msgstr "Початкове Зображення Обкладинки"
+
+msgid "Default Logo Image"
+msgstr "Початкове Зображення Логотипу"
+
+msgid "Default Selected"
+msgstr "Обрано за Замовчуванням"
+
+msgid "Default Sort Users By"
+msgstr "За Замовчуванням Сортувати Користувачів За"
+
+msgid "Default User role"
+msgstr "Роль Користувача За замовчуванням "
+
+msgid "Delete"
+msgstr "Видалити"
+
+msgid "Delete account"
+msgstr "Видалити аккаунта"
+
+msgid "Delete conversation"
+msgstr "Видалити листування"
+
+msgid "Delete group"
+msgstr "Видалити групу"
+
+msgid "Delete messages"
+msgstr "Видалити повідомлення"
+
+msgid "Delete selected"
+msgstr "Видалити вибране"
+
+msgid "Delete this conversation?"
+msgstr "Видалити це листування?"
+
+msgid "Delete this messages?"
+msgstr "Видалити ці повідомлення?"
+
+msgid "Description"
+msgstr "Опис"
+
+msgid "Design"
+msgstr "Дизайн"
+
+msgid "Disable double opt-in"
+msgstr "Вимкнути подвійний вибір"
+
+msgid "Disable double opt-in confirmation message sending. This option will create subscriber directly after he will subscribe to your list."
+msgstr "Вимкнути надсилання повідомлення підтвердження подвійного вибору. Ця опція буде створювати підписника, одразу після того як користувач підпишеться на Ваш список."
+
+msgid "Disconnect"
+msgstr "Роз'єднати"
+
+msgid "Displayed"
+msgstr "Відображено"
+
+msgid "Dripping (schedule) Content"
+msgstr "Крапаючий Контент (за розкладом)"
+
+msgid "Dripping Content"
+msgstr "Крапаючий Контент"
+
+msgid "Dropdown List"
+msgstr "Випадаючий список"
+
+msgid "E-Commerce"
+msgstr "Електронна комерція"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "Edit"
+msgstr "Редагувати"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Email Address"
+msgstr "Email Адреса"
+
+msgid "Email confirmation"
+msgstr "Підтвердження Email"
+
+msgid "Email delivery depends from your server configuration. For some cases - you and your subscribers can not receive emails just because email on your server is not working correctly. You can easy test it here - by sending test email. If you receive it - then it means that email functionality on your server works well. If not - this means that it is not working correctly and you should contact your hosting provider with this issue and ask them to setup email functionality for you on your server."
+msgstr "Доставка Email залежить від налаштувань Вашого серверу. Для деяких випадків - Ви та Ваші підписники можуть не отримувати листи тому що листування на Вашому сервері не коректно працює. Ви можете це протестувати тут - відправивши тестовий лист. Якщо ви його отримаєте - функціонування серверу правильне. Якщо ні - це значить що сервер не працює належним чином і Вам необхідно звернутися до Вашого хостинг-провайдеру з цим питанням та попросити встановити функціонал електронного листування на ваш сервер."
+
+msgid "Email is not valid."
+msgstr "Електронна пошта не дійсна."
+
+msgid "Email is updated successfully"
+msgstr "Email успішно поновлено"
+
+msgid "Email that will be sent to user after signing up."
+msgstr "Цей лист буде надіслано одразу після реєстрації користувача."
+
+msgid "Email that will get notifications about the membership society."
+msgstr "Email, який буде отримувати оповіщення про товариство Мембершипу"
+
+msgid "Emails"
+msgstr "Електронні листи"
+
+msgid "Empty API key"
+msgstr "Порожній API ключ"
+
+msgid "Empty Order ID"
+msgstr "Порожній ID Замовлення"
+
+msgid "Empty User ID"
+msgstr "Порожній ID Користувача"
+
+msgid "Empty data to save option"
+msgstr "Порожні дані для опції збереження"
+
+msgid "Empty or invalid Code"
+msgstr "Недійсний або порожній Код"
+
+msgid "Empty or invalid ID - only Update action allowed for now"
+msgstr "Недійсний або порожній ID - зараз дозволена тільки дія \"Оновити\""
+
+msgid "Empty or invalid Level Name"
+msgstr "Недійсне або порожнє Ім'я Рівню"
+
+msgid "Empty or invalid email"
+msgstr "Недійсний або порожній email"
+
+msgid "Empty payment method"
+msgstr "Порожній метод оплати"
+
+msgid "Enable Cover Photo"
+msgstr "Ввімкнути Фото на Обкладинці"
+
+msgid "Enable Dripping for this Content"
+msgstr "Включити Скраплювання для цього Контенту"
+
+msgid "Enable Profile Photo"
+msgstr "Ввімкнути Фото Профайлу"
+
+msgid "Enable Search feature"
+msgstr "Ввімкнути функцію Пошуку"
+
+msgid "Enable secondary button for Login form."
+msgstr "Ввімкнути вторинну кнопку у Вхідній Формі"
+
+msgid "Enable this option and page Activity will be created on your website."
+msgstr "Ввімкніть цю опцію і сторінка Активності буде створена на Вашому сайті."
+
+msgid "Enable this option and page Friends will be created on your website."
+msgstr "Ввімкніть цю опцію і сторінка Друзі з'явиться на Вашому сайті."
+
+msgid "Enable this option and page Groups will be created on your website."
+msgstr "Ввімкніть цю опцію і сторінка Групи з'явиться на Вашому сайті."
+
+msgid "Enable this option and page Messages will be created on your website."
+msgstr "Ввімкніть цю опцію і сторінка Повідомлення з'явиться на Вашому сайті."
+
+msgid "Enable this option and users will be able to upload their Globally Recognized Avatar."
+msgstr "Ввімкніть цю опцію і користувачі зможуть завантажувати Всесвітньо Визнаний Аватар."
+
+msgid "Enabled"
+msgstr "Ввімкнено"
+
+msgid "Enter API key - and your list will appear here"
+msgstr "Введіть API ключ - і Ваш список з'явиться тут"
+
+msgid "Enter API key, select List - and your groups will appear here"
+msgstr "Введіть API ключ, оберіть список - і Ваші групи з'являться тут"
+
+msgid "Enter hashtags divided by the \",\" symbol"
+msgstr "Введіть хештеги через кому"
+
+msgid "Enter name"
+msgstr "Введіть ім'я"
+
+msgid "Enter the email of admin."
+msgstr "Введіть email адміністратора"
+
+msgid "Enter the group title that will be defined in the browser toolbar and displayed for the page in search-engine results."
+msgstr "Введіть назву групи, яка буде відображатися у результатах сторінки пошуку та у панелі інструментів браузера."
+
+msgid "Enter the maximum size of file that can be uploaded by user in Mb."
+msgstr "Введіть максимальний розмір файлу для завантаження користувачами у Mb."
+
+msgid "Enter the profile title that will be defined in the browser toolbar and displayed for the page in search-engine results."
+msgstr "Введіть ім'я профайлу, яке буде відображатися у результатах сторінки пошуку та у панелі інструментів браузера."
+
+msgid "Enter the time for intervals with which messages will be updated."
+msgstr "Введіть часовий інтервал оновлення повідомлень."
+
+msgid "Enter your Email and License Key on this page, find the information for activation in your personal account on our site %s. Then click \"Activate Addons\" button."
+msgstr "Введіть Ваш Email та Ключ Ліцензії на цій сторінці; знайти інформацію для активації Ви можете на нашому сайті %s. Потім клікніть кнопку \"Активувати Доповнення\"."
+
+msgid "Error"
+msgstr "Помилка"
+
+msgid "Everyone"
+msgstr "Всі"
+
+msgid "Exceeded filesize limit."
+msgstr "Перевищено ліміт розміру файлу."
+
+msgid "Expired"
+msgstr "Термін дії закінчився"
+
+msgid "Export"
+msgstr "Експорт"
+
+msgid "Export data from activity"
+msgstr "Експортувати данні з Активності"
+
+msgid "Export data from activity by hashtags"
+msgstr "Експортувати данні з Активності за хештегами"
+
+msgid "Export to CSV"
+msgstr "Експорт в CSV"
+
+msgid "Extend"
+msgstr "Продовжити"
+
+msgid "Extend Level button text"
+msgstr "Текст кнопки Продовження дії Рівню"
+
+msgid "Extensions"
+msgstr "Розширення"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Facebook App ID"
+msgstr "ID додатку Facebook"
+
+msgid "Facebook App Secret"
+msgstr "Secret додатку Facebook"
+
+msgid "Find group..."
+msgstr "Знаходження групи..."
+
+msgid "Find user..."
+msgstr "Знаходження користувача"
+
+msgid "Finish"
+msgstr "Фініш"
+
+msgid "First"
+msgstr "Перший"
+
+msgid "First Name"
+msgstr "Ім'я"
+
+msgid "First Name Last Name"
+msgstr "Ім'я та Прізвище"
+
+msgid "Follow"
+msgstr "Стежити"
+
+msgid "Followers"
+msgstr "Послідовники"
+
+msgid "Following"
+msgstr "Стежить"
+
+msgid "Follows"
+msgstr "Стежить"
+
+msgid "Fractional precision"
+msgstr "Точність дробу"
+
+msgid "Fractional separator"
+msgstr "Відокремлення Дробної частини"
+
+msgid "Friend Requests"
+msgstr "Запит у Друзі"
+
+msgid "Friends"
+msgstr "Друзі"
+
+msgid "Friends of friends"
+msgstr "Друзі друзів"
+
+msgid "Friends only"
+msgstr "Тільки Друзі"
+
+msgid "From"
+msgstr "З"
+
+msgid "General"
+msgstr "Загальний"
+
+msgid "General Options"
+msgstr "Загальні Опції"
+
+msgid "Get PRO Addon"
+msgstr "Отримати ПРО Доповнення"
+
+msgid "Get Pro"
+msgstr "Отримати ПРО"
+
+msgid "Global Site Access"
+msgstr "Глобальний доступ до сайту"
+
+msgid "Google ReCaptcha"
+msgstr "Google ReCaptcha"
+
+msgid "Google ReCaptcha Secret Key"
+msgstr "Секретний Ключ від Google ReCaptcha "
+
+msgid "Google ReCaptcha Site Key"
+msgstr " Google ReCaptcha Ключ Сайту "
+
+msgid "Google ReCaptcha Size"
+msgstr "Розмір Google ReCaptcha"
+
+msgid "Google ReCaptcha Theme"
+msgstr "Тема Google ReCaptcha"
+
+msgid "Google ReCaptcha Type"
+msgstr "Тип Google ReCaptcha"
+
+msgid "Group Cover Size"
+msgstr "Розмір Обкладинки Групи"
+
+msgid "Group Description"
+msgstr "Опис Групи"
+
+msgid "Group Dynamic Meta Description"
+msgstr "Динамічний Мета Опис Групи"
+
+msgid "Group ID"
+msgstr "ID Групи"
+
+msgid "Group Logo Size"
+msgstr "Розмір Логотипу Групи"
+
+msgid "Group Name"
+msgstr "Ім'я Грипи"
+
+msgid "Group Permalink Base"
+msgstr "Базис Пермалінку Групи"
+
+msgid "Group Permalink Base: Select what data to use in the group's link. E.g. \"http://supsystic/groups/culinary-blog/\" or \"http://supsystic/groups/1/\"."
+msgstr "Базис Постійного Посилання Групи: оберіть тип даних для використання у посиланні групи. Напр., \"http://supsystic/groups/culinary-blog/\" чи \"http://supsystic/groups/1/\"."
+
+msgid "Group Title"
+msgstr "Назва Групи"
+
+msgid "Group alias"
+msgstr "Псевдонім Групи"
+
+msgid "Group by"
+msgstr "Групувати за"
+
+msgid "Group data successfully updated"
+msgstr "Дані Групи успішно оновлені"
+
+msgid "Group deletion"
+msgstr "Видалення Групи"
+
+msgid "Group does not exists"
+msgstr "Група не існує"
+
+msgid "Group does not exists, or user not a member of this group"
+msgstr "Група не існує або користувач не є членом групи"
+
+msgid "Group does not exists."
+msgstr "Група не існує."
+
+msgid "Group for subscribe"
+msgstr "Група для підписки"
+
+msgid "Group invites"
+msgstr "Запрошення у Групу"
+
+msgid "Group is blocked"
+msgstr "Група блокована"
+
+msgid "Group is blocked by administrator"
+msgstr "Група заблокована адміністратором"
+
+msgid "Group logo picture"
+msgstr "Картинка логотипу Групи"
+
+msgid "Group members only can comment"
+msgstr "Коментувати можуть тільки члени групи"
+
+msgid "Group members only can view activity"
+msgstr "Тільки члени Групи можуть переглядати Активність"
+
+msgid "Group members only can write posts"
+msgstr "Робити записи можуть тільки члени групи"
+
+msgid "Group name is required"
+msgstr "Необхідне ім'я для Групи"
+
+msgid "Group settings"
+msgstr "Налаштування Групи"
+
+msgid "Group successfully created."
+msgstr "Група успішно створена."
+
+msgid "Group that are you looking is not found."
+msgstr "Група яку ви шукаєте не знайдена."
+
+msgid "Group was deleted."
+msgstr "Група була видалена."
+
+msgid "Groups"
+msgstr "Групи"
+
+msgid "Groups are disabled by site administrator."
+msgstr "Групи заборонені адміністратором сайту"
+
+msgid "Groups option is Turn Off, you can turn it On on the Main settings tab or click <a href=\"%s\">here</a>."
+msgstr "Опція Групи Вимкнена, во можете її ввімкнути на Вкладці Основних Налаштувань або натиснути <a href=\"%s\">тут</a>."
+
+msgid "Help Icon Background Color"
+msgstr "Колір Фону Значку Допомоги"
+
+msgid "Help Icon Color"
+msgstr "Колір Значку Допомоги"
+
+msgid ""
+"Hi {display_name},\n"
+"<br>\n"
+"<br>\n"
+"Thank you for applying for membership to {site_name}!<br>\n"
+"We have reviewed your information and unfortunately we are unable to accept you as a member at this moment.<br>\n"
+"<br>\n"
+"Please feel free to apply again at a future date.<br>\n"
+"<br>\n"
+"Thanks,<br>\n"
+"{site_name}"
+msgstr ""
+"Вітаємо  {display_name},\n"
+"<br>\n"
+"<br>\n"
+"Дякуємо за оформлення заявки у {site_name} Мембершип!<br>\n"
+"Ми розглянули вашу інформацію і, нажаль, не можемо прийняти вас у членство на даний момент.<br>\n"
+"<br>\n"
+"Бідь ласка, не соромтеся знову звернутися у майбутньому.<br>\n"
+"<br>\n"
+"З повагою,<br>\n"
+"{site_name}"
+
+msgid ""
+"Hi {display_name},\n"
+"<br>\n"
+"<br>\n"
+"Thank you for signing up with {site_name}!<br>\n"
+"Your account has been approved and is now active.<br>\n"
+"<br>\n"
+"To login please visit the following url:<br>\n"
+"<br>\n"
+"<a href=\"{login_url}\">{login_url}</a><br>\n"
+"<br>\n"
+"Your account e-mail: {email}<br>\n"
+"Your account username: {username}<br>\n"
+"Your account password: {password}<br>\n"
+"<br>\n"
+"If you have any problems, please contact us at {admin_email}<br>\n"
+"<br>\n"
+"Thanks,<br>\n"
+"{site_name}"
+msgstr ""
+"Вітаємо {display_name},\n"
+"<br>\n"
+"<br>\n"
+"Дякуємо за реєстрацію  {site_name}!<br>\n"
+"Ваш аккаунт підтверджено та активовано.<br>\n"
+"<br>\n"
+"Щоб ввійти перейдіть за наступним посиланням:<br>\n"
+"<br>\n"
+"<a href=\"{login_url}\">{login_url}</a><br>\n"
+"<br>\n"
+"Пошта Вашого аккаунту: {email}<br>\n"
+"Ім'я користувача Вашого аккаунту: {username}<br>\n"
+"Пароль Вашого аккаунту: {password}<br>\n"
+"<br>\n"
+"У разі виникнення проблем звертайтесь до нас - {admin_email}<br>\n"
+"<br>\n"
+"З повагою,<br>\n"
+"{site_name}"
+
+msgid ""
+"Hi {display_name},\n"
+"<br>\n"
+"<br>\n"
+"Thank you for signing up with {site_name}!<br>\n"
+"Your account is currently being reviewed by a member of our team.<br>\n"
+"<br>\n"
+"Please allow us some time to process your request.<br>\n"
+"<br>\n"
+"If you have any problems, please contact us at {admin_email}<br>\n"
+"<br>\n"
+"Thanks,<br>\n"
+"{site_name}"
+msgstr ""
+"Вітаємо {display_name},\n"
+"<br>\n"
+"<br>\n"
+"Дякуємо за реєстрацію {site_name}!<br>\n"
+"Ваш аккаунт тільки що було переглянуто членом нашої команди.<br>\n"
+"<br>\n"
+"Наразі Ваш запит у процесі обробки.<br>\n"
+"<br>\n"
+"У випадку виникнення проблем звертайтесь до нас - {admin_email}<br>\n"
+"<br>\n"
+"З повагою,<br>\n"
+"{site_name}"
+
+msgid ""
+"Hi {display_name},\n"
+"<br>\n"
+"<br>\n"
+"Thank you for signing up with {site_name}!\n"
+"<br>\n"
+"<br>\n"
+"To login please visit the following url:\n"
+"<br>\n"
+"<br>\n"
+"<a href=\"{login_url}\">{login_url}</a>\n"
+"<br>\n"
+"<br>Your account e-mail: {email}\n"
+"<br>Your account username: {username}\n"
+"<br>Your account password: {password}\n"
+"<br>\n"
+"<br>\n"
+"If you have any problems, please contact us at {admin_email}\n"
+"<br>\n"
+"<br>\n"
+"Thanks,\n"
+"<br>{site_name}"
+msgstr ""
+"Вітаємо {display_name},\n"
+"<br>\n"
+"<br>\n"
+"Дякуємо за реєстрацію {site_name}!\n"
+"<br>\n"
+"<br>\n"
+"Щоб ввійти перейдіть за наступним посиланням:\n"
+"<br>\n"
+"<br>\n"
+"<a href=\"{login_url}\">{login_url}</a>\n"
+"<br>\n"
+"Пошта Вашого аккаунту: {email}<br>\n"
+"Ім'я користувача Вашого аккаунту: {username}<br>\n"
+"Пароль Вашого аккаунту: {password}<br>\n"
+"<br>\n"
+"У разі виникнення проблем звертайтесь до нас - {admin_email}<br>\n"
+"<br>\n"
+"З повагою,<br>\n"
+"{site_name}"
+
+msgid ""
+"Hi {display_name},\n"
+"<br>\n"
+"<br>\n"
+"This is an automated email to let you know your {site_name} account has been deactivated.<br>\n"
+"<br>\n"
+"I\n"
+" you would like your account to be reactivated please contact us at {admin_email}<br>\n"
+"<br>\n"
+"Thanks,<br>\n"
+"{site_name}"
+msgstr ""
+"Вітаємо {display_name},\n"
+"<br>\n"
+"<br>\n"
+"Це автоматичне повідомлення про те, що Ваш аккаунт {site_name} було деактивовано.<br>\n"
+"<br>\n"
+"I\n"
+"Якщо Ви бажаєте активувати Ваш аккаунт знову, звертайтесь до нас - {admin_email}<br>\n"
+"<br>\n"
+"З повагою,<br>\n"
+"{site_name}"
+
+msgid ""
+"Hi {display_name},\n"
+"<br>\n"
+"<br>\n"
+"This is an automated email to let you know your {site_name} account has been deleted.<br>\n"
+"All of your personal information has been permanently deleted and you will no longer be able to login to {site_name}.<br>\n"
+"<br>\n"
+"If your account has been deleted by accident please contact us at {admin_email}<br>\n"
+"<br>\n"
+"Thanks,<br>\n"
+"{site_name}"
+msgstr ""
+"Вітаємо {display_name},\n"
+"<br>\n"
+"<br>\n"
+"Це автоматичне повідомлення про те, що Ваш аккаунт {site_name} було видалено.<br>\n"
+"\vВсі Ваші персональні дані видалено назавжди і Ви більше не зможете ввійти на сайт з ім'ям {site_name}.<br>\n"
+"<br>\n"
+"Якщо Ваш аккаунт було видалено випадково, будь ласка зверніться до нас - {admin_email}<br>\n"
+"<br>\n"
+"З повагою,<br>\n"
+"{site_name}"
+
+msgid ""
+"Hi {display_name},\n"
+"<br>\n"
+"<br>\n"
+"We received a request to reset the password for your account.<br>\n"
+"If you made this request, click the link below to change your password:<br>\n"
+"<br>\n"
+"<a href=\"{password_reset_link}\">{password_reset_link}</a><br>\n"
+"<br>\n"
+"If you didn't make this request, you can ignore this email<br>\n"
+"<br>\n"
+"Thanks,<br\n"
+"{site_name}"
+msgstr ""
+"Вітаємо {display_name},\n"
+"<br>\n"
+"<br>\n"
+"Ми отримали запит на скидання паролю до Вашого аккаунту.<br>\n"
+"Якщо це Ваш запит, щоб змінити пароль перейдіть за посиланням нижче:<br>\n"
+"<br>\n"
+"<a href=\"{password_reset_link}\">{password_reset_link}</a><br>\n"
+"<br>\n"
+"Якщо Ви цього не робили, проігноруйте цей лист.<br>\n"
+"<br>\n"
+"З повагою,<br\n"
+"{site_name}"
+
+msgid ""
+"Hi {display_name},\n"
+"<br>\n"
+"<br>\n"
+"You recently have requested for changing the password associated with your {site_name} account.<br>\n"
+"<br>\n"
+"To confirm your request please visit the following url:<br>\n"
+"<br>\n"
+"<a href=\"{password_change_url}\">{password_change_url}</a><br>\n"
+"<br>\n"
+"If you did not make this change and believe your {site_name} account has been compromised, please contact us at the following email address: {admin_email}<br>\n"
+"<br>\n"
+"Thanks,<br>\n"
+"{site_name}"
+msgstr ""
+"Вітаємо {display_name},\n"
+"<br>\n"
+"<br>\n"
+"Тільки що Ви подали запит на зміну паролю, пов'язаного з Вашим аккаунтом {site_name}.<br>\n"
+"<br>\n"
+"Щоб підтвердити Ваш запит перейдіть за посиланням:<br>\n"
+"<br>\n"
+"<a href=\"{password_change_url}\">{password_change_url}</a><br>\n"
+"<br>\n"
+"Якщо Ви не створювали цей запит і вірите, що ваш аккаунт {site_name} під загрозою, будь ласка зверніться до нас за наступною адресою: {admin_email}<br>\n"
+"<br>\n"
+"З повагою, <br>\n"
+"{site_name}"
+
+msgid "Hide ordered Membership Levels"
+msgstr "Сховати замовлені Рівні Мембершипу"
+
+msgid "Hour"
+msgstr "Година"
+
+msgid "Hour(s)"
+msgstr "Годин(и)"
+
+msgid "IPN Address"
+msgstr "Адреса IPN"
+
+msgid "ISO Code"
+msgstr "Код ISO"
+
+msgid "If buy next products"
+msgstr "Якщо куплені наступні продукти"
+
+msgid "If this option is enabled an avatar will be displayed near user's name."
+msgstr "Якщо ця опція ввімкнена, то аватарка буде відображатися поряд з ім'ям користувача."
+
+msgid "If this option is enabled users will be able to upload the second image behind the avatar image. It is kind of background image."
+msgstr "Якщо ця опція ввімкнена, то користувачі зможуть завантажувати друге зображення за основним як фонове зображення. "
+
+msgid "If this option is enabled, \"Remember me\" checkbox will be shown in login form."
+msgstr "Якщо ця опція ввімкнена, то прапорець для опції \"Запам'ятати мене\" буде відображений у формі входу."
+
+msgid "If this option is enabled, only members with avatar will be shown."
+msgstr "Якщо ця опція ввімкнена, будуть відображені тільки ті користувачі, які мають фото на аватарці."
+
+msgid "If this option is enabled, only members with cover photo will be shown on \"Members\" tab."
+msgstr "Якщо ця опція вимкнена, тільки користувачі з фото на обкладинці будуть відображенні у вкладці \"Мемберс\"."
+
+msgid "If this option is enabled, profile name will be shown in header."
+msgstr "Якщо ця опція ввімкнена, то ім'я профайлу буде відображатися  у заголовку."
+
+msgid "If this option is enabled, the default colors of your theme will be used."
+msgstr "Якщо ця опція ввімкнена, то будуть використані дефолтні кольори вашої теми."
+
+msgid "Image Quality"
+msgstr "Якість Зображення"
+
+msgid "Image size limit is exceeded"
+msgstr "Ліміт розміру зображення перевищено"
+
+msgid "Import"
+msgstr "Імпорт"
+
+msgid "Import data to activity"
+msgstr "Імпортувати данні до Активності"
+
+msgid "Import data to activity by hashtags"
+msgstr "Імпортувати данні до Активності за хештегами"
+
+msgid "In MailChimp there is possibility to select groups for your subscribers. This is not mandatory, but sometimes it is really helpful. So, we added this possibility for you in our plugin - hope you will like it!"
+msgstr "MailChimp дає можливість обирати групи для Ваших Підписників. Це не обов'язково, але іноді дійсно корисно. Таким чином, ми додали цю можливість для Вас в нашому плагіні - сподіваємося, Вам сподобається!"
+
+msgid "Input Background Color"
+msgstr "Колір Фону Поля Введення"
+
+msgid "Input Background Focus Color"
+msgstr "Колір Фокусу Фону Поля Введення"
+
+msgid "Input Border Color"
+msgstr "Колір Рамки Поля для Введення"
+
+msgid "Input Border Focus Color"
+msgstr "Колір Рамки Фокусу Поля для Введення"
+
+msgid "Input Placeholder Color"
+msgstr "Колір Підказки Поля для Введення"
+
+msgid "Input Text Color"
+msgstr "Колір Введеного Тексту в Поле"
+
+msgid "Inputs"
+msgstr "Поля Введення"
+
+msgid "Insert this URL to your %s account as IPN address - to make IPN system work as it should."
+msgstr "Вставте цю адресу у Ваш аккаунт %s як IPN адресу - це дозволить IPN системі працювати належним чином."
+
+msgid "Integrate Membership with your Facebook App."
+msgstr "Інтегруйте Ваш Мембершип з Вашим додатком Facebook"
+
+msgid "Invalid ID"
+msgstr "Невірний ID"
+
+msgid "Invalid login or password."
+msgstr "Неправильний логін чи пароль."
+
+msgid "Invalid token. Please refresh page."
+msgstr "Неприпустимий маркер. Будь ласка, поновіть сторінку."
+
+msgid "Invitations"
+msgstr "Запрошення"
+
+msgid "Invite"
+msgstr "Запросити"
+
+msgid "Invite\t\t\t\t\t\t\t\t\tadministrators"
+msgstr "Запросіть\t\t\t\t\t\t\t\t\tадміністраторів"
+
+msgid "Invite administrators"
+msgstr "Запросити адмітістраторів"
+
+msgid "Invite as administrator"
+msgstr "Запросити на посаду Адміністратора"
+
+msgid "Invite friends"
+msgstr "Запросити друзів"
+
+msgid "Invite users"
+msgstr "Запросити користувачів"
+
+msgid "Invited users"
+msgstr "Запросити користувачів"
+
+msgid "Invites"
+msgstr "Запрошення"
+
+msgid "Is default?"
+msgstr "За умовчанням?"
+
+msgid "Join group"
+msgstr "Приєднатися до групи"
+
+msgid "Join requests"
+msgstr "Приєднатися за запрошеннями"
+
+msgid "Joined Groups"
+msgstr "Ви приєдналися до Груп"
+
+msgid "Label"
+msgstr "Етикетка"
+
+msgid "Label Text Color"
+msgstr "Колір Тексту Етикетки"
+
+msgid "Last"
+msgstr "Останній"
+
+msgid "Last Name"
+msgstr "Прізвище"
+
+msgid "Last Name First Name"
+msgstr "Прізвище та Ім'я"
+
+msgid "Leave group"
+msgstr "Покинути групу"
+
+msgid "Left"
+msgstr "Покинув(ла)"
+
+msgid "Level"
+msgstr "Рівень"
+
+msgid "Level Purchase (can be with Registration)"
+msgstr "Купівля Рівня (можлива разом з Реєстрацію)"
+
+msgid "License"
+msgstr "Ліцензія"
+
+msgid "License Key"
+msgstr "Ключ Ліцензії"
+
+msgid "License server error"
+msgstr "Помилка сервера ліцензії"
+
+msgid "Like"
+msgstr "Сподобалося"
+
+msgid "Liked activity  is not exist"
+msgstr "Вподобана активність  не існує"
+
+msgid "Liked activity is not exist"
+msgstr "Вподобана активність не існує"
+
+msgid "Link"
+msgstr "Посилання"
+
+msgid "Lists for subscribe"
+msgstr "Списки підписок"
+
+msgid "Load more"
+msgstr "Завантажити більше"
+
+msgid "Log in with"
+msgstr "Увійти через"
+
+msgid "Login"
+msgstr "Вхід"
+
+msgid "Login Maximum Width"
+msgstr "Максимальна Ширина Входу"
+
+msgid "Login Primary Button Text"
+msgstr "Текст Первинної Кнопки Входу"
+
+msgid "Login Secondary Button"
+msgstr "Вторинна Кнопка Входу"
+
+msgid "Login Secondary Button Text"
+msgstr "Текст Вторинної Кнопки Входу"
+
+msgid "Login Secondary Button URL"
+msgstr "URL Вторинної Кнопки Входу"
+
+msgid "Login error"
+msgstr "Помилка Входу"
+
+msgid "Logo Thumbnail Large Size"
+msgstr "Ескіз Логотипу Великого Розміру"
+
+msgid "Logo Thumbnail Medium Size"
+msgstr "Ескіз Логотипу Середнього Розміру"
+
+msgid "Logo Thumbnail Small Size"
+msgstr "Ескіз Логотипу Меленького Розміру"
+
+msgid "Logout"
+msgstr "Вийти"
+
+msgid "Mail appears from"
+msgstr "Пошта з'являється з"
+
+msgid "Mail appears from address"
+msgstr "Пошта з'являється з адреси"
+
+msgid "MailChimp API key"
+msgstr "MailChimp API ключ"
+
+msgid "Mails"
+msgstr "Пошта"
+
+msgid "Main"
+msgstr "Головний"
+
+msgid "Main Settings"
+msgstr "Головні налаштування"
+
+msgid "Make sure you assigned Membership Level for this Content before enable Dripping."
+msgstr "Переконайтеся, що Ви призначили Рівень Мембершип для цього Контенту перед ввімкненням Скраплювання."
+
+msgid "Managed Groups"
+msgstr "Групи, якими Ви управляєте"
+
+msgid "Mark all as read"
+msgstr "Позначити як прочитане"
+
+msgid "Maximum File Size (Mb)"
+msgstr "Максимальний Розмір Файлу (Mb)"
+
+msgid "Maximum Image Size"
+msgstr "Максимальний Розмір Зображення"
+
+msgid "Maximum available file upload size is %d Mb"
+msgstr "Максимально допустимий розмір файлу завантаження %d Mb"
+
+msgid "Maximum number of profiles"
+msgstr "Максимальна кількість профайлів"
+
+msgid "Media"
+msgstr "Медіа"
+
+msgid "Members"
+msgstr "Мемберс"
+
+msgid "Members Directory"
+msgstr "Мемберс Каталог"
+
+msgid "Members page"
+msgstr "Сторінка Мемберс"
+
+msgid "Membership Administrator"
+msgstr "Адміністратор Мембершипу"
+
+msgid "Membership Guest"
+msgstr "Гість Мембершипу"
+
+msgid "Membership Levels"
+msgstr "Рівні мембершипу"
+
+msgid "Membership User"
+msgstr "Користувач Мембершип"
+
+msgid "Membership profile"
+msgstr "Профайл Мембершип"
+
+msgid "Message"
+msgstr "Повідомлення"
+
+msgid "Messages"
+msgstr "Повідомлення"
+
+msgid "Messages Refresh Period"
+msgstr "Період Оновлення Повідомлень"
+
+msgid "Messages is disabled by site administrator."
+msgstr "Повідомлення вимкнені адміністратором сайту."
+
+msgid "Minute(s)"
+msgstr "Хвилина(и)"
+
+msgid "Month"
+msgstr "Місяць"
+
+msgid "Month(s)"
+msgstr "Місяць(і)"
+
+msgid "More info"
+msgstr "Більше інформації"
+
+msgid "Name"
+msgstr "Ім'я"
+
+msgid "Need renew text"
+msgstr "Необхідно оновити текст"
+
+msgid "New Password"
+msgstr "Новий пароль"
+
+msgid "New Password Confirmation"
+msgstr "Підтвердження Нового Паролю"
+
+msgid "New Password and New Password Confirmation fields is not match."
+msgstr "Поля Нового Паролю та Підтвердження Нового Паролю не співпадають."
+
+msgid "New User Notification"
+msgstr "Оповіщення Нового Користувача"
+
+msgid "New User Notification Body"
+msgstr "Текст Оповіщення Нового Користувача"
+
+msgid "New User Notification Subject"
+msgstr "Тема Оповіщення Нового Користувача"
+
+msgid "New Users First"
+msgstr "Спочатку Нові Користувачі"
+
+msgid "New conversation"
+msgstr "Нова розмова"
+
+msgid "New group %s is created by %s."
+msgstr "Нова група %s створена %s."
+
+msgid "New password is required"
+msgstr "Необхідно ввести Новий пароль."
+
+msgid "New tag"
+msgstr "Новий тег"
+
+msgid "Next"
+msgstr "Наступний"
+
+msgid "No"
+msgstr "Ні"
+
+msgid "No API key entered in admin area - contact site owner to resolve this issue."
+msgstr "Ні один API ключ не був введений в адмінці - повідомте власника сайту про необхідність вирішення цього питання."
+
+msgid "No comments to show."
+msgstr "Жодного коментаря."
+
+msgid "No data found"
+msgstr "Інформації не знайдено"
+
+msgid "No file is sent"
+msgstr "Не один файл не був відправлений"
+
+msgid "No followers to show."
+msgstr "Жодного послідовника."
+
+msgid "No following to show."
+msgstr "Ні один користувач Вами не відстежується."
+
+msgid "No friend requests to show."
+msgstr "Жодного запрошення у друзі."
+
+msgid "No friends to show."
+msgstr "Жодного друга."
+
+msgid "No groups to show."
+msgstr "Жодної групи."
+
+msgid "No invites to show."
+msgstr "Жодного запрошення."
+
+msgid "No lists to add selected in admin area - contact site owner to resolve this issue."
+msgstr "Жодного списку не обрано у адмінці - повідомте про це власника сайту."
+
+msgid "No posts to show."
+msgstr "Жодного запису."
+
+msgid "No users is found."
+msgstr "Жодного користувача не знайдено."
+
+msgid "None"
+msgstr "Ніхто"
+
+msgid "Not Activated"
+msgstr "Не Активовано"
+
+msgid "Not logged-in"
+msgstr "Не авторизовано"
+
+msgid "Not ordered"
+msgstr "Не замовлено"
+
+msgid "Nothing is found."
+msgstr "Нічого не знайдено."
+
+msgid "Notifications"
+msgstr "Оповіщення"
+
+msgid "Number of profiles per page"
+msgstr "Кількість профайлів на одній сторінці"
+
+msgid "Number of profiles per page (for Mobiles & Tablets)"
+msgstr "Кількість профайлів на одній сторінці (для Телефонів та Планшетів)"
+
+msgid "Numeric"
+msgstr "Числовий"
+
+msgid "Off"
+msgstr "Вимкнено"
+
+msgid "Old Users First"
+msgstr "Спочатку Старі Користувачі"
+
+msgid "Once you delete your copy of this conversation, it cannot be undone."
+msgstr "Після того, як ви видалите копію цієї розмови, видалення не може бути скасовано."
+
+msgid "Once you delete your copy of this messages, it cannot be undone."
+msgstr "Після того, як ви видалите копію цих повідомлень, видалення не може бути скасовано."
+
+msgid "Once your site visitors begin to view or purchase your Membership Levels - statistics will be displayed here."
+msgstr "Після того, як відвідувачі Вашого сайту почнуть переглядати чи купувати Рівні Мембершип - тут буде відображена статистика."
+
+msgid "Only Me"
+msgstr "Тільки Я"
+
+msgid "Only group administrators can send invitations"
+msgstr "Тільки адміністратор групи може надсилати запрошення."
+
+msgid "Open"
+msgstr "Відкрито"
+
+msgid "Open group"
+msgstr "Відкрити групу"
+
+msgid "Opened Content - no Level required"
+msgstr "Відкритий Контент - не потребує рівня"
+
+msgid "Option Name"
+msgstr "Ім'я Опції"
+
+msgid "Or you can click %s."
+msgstr "Або натисніть %s."
+
+msgid "Order"
+msgstr "Замовлення"
+
+msgid "Order Admin Email"
+msgstr ""
+
+msgid "Order Admin Email content"
+msgstr ""
+
+msgid "Order Created"
+msgstr "Замовлення створене"
+
+msgid "Ordered"
+msgstr "Замовлено"
+
+msgid "Ordered Levels"
+msgstr "Замовлені Рівні"
+
+msgid "Orders"
+msgstr "Замовлення"
+
+msgid "Pages"
+msgstr "Сторінки"
+
+msgid "Parent comment is not exists"
+msgstr "Материнський Коментар не існує"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Password Changed Email"
+msgstr "Лист, що Пароль Змінено"
+
+msgid "Password Changed Email Body"
+msgstr "Текст Листа про Зміну Паролю"
+
+msgid "Password Changed Email Subject"
+msgstr "Тема Листа про Зміну Паролю"
+
+msgid "Password Confirmation"
+msgstr "Підтвердження Паролю"
+
+msgid "Password Reset Email"
+msgstr "Лист про Скидання Паролю"
+
+msgid "Password Reset Email Body"
+msgstr "Текст Листа про Скидання Паролю"
+
+msgid "Password Reset Email Subject"
+msgstr "Тема Листа про Скидання Паролю"
+
+msgid "Password change"
+msgstr "Пароль Змінено"
+
+msgid "Password confirmation is required"
+msgstr "Необхідне підтвердження Паролю"
+
+msgid "Password is required"
+msgstr "Необхідний Пароль"
+
+msgid "Password is updated successfully"
+msgstr "Пароль оновлено успішно"
+
+msgid "PayPal Standard"
+msgstr "PayPal Стандарт"
+
+msgid "PayPal Standard payments."
+msgstr "Платежі PayPal Стандарт."
+
+msgid "Payment Action"
+msgstr "Процес Оплати"
+
+msgid "Payment Method"
+msgstr "Метод Оплати"
+
+msgid "Payment fail checkout text"
+msgstr "Текст про невдалу перевірку Оплати"
+
+msgid "Payments"
+msgstr "Платежі"
+
+msgid "Pending Review Email"
+msgstr "Лист про Очікування Розгляду"
+
+msgid "Pending Review Email Body"
+msgstr "Текст Листа про Очікування Розгляду"
+
+msgid "Pending Review Email Subject"
+msgstr "Тема Листа про Очікування Розгляду"
+
+msgid "Phone"
+msgstr "Телефон"
+
+msgid "Please <a href=\"%s\">sign up</a> or <a href=\"%s\">sign in</a> to like or write comments on this post."
+msgstr "Будь ласка <a href=\"%s\">зареєструйтеся</a> або <a href=\"%s\">авторизуйтеся</a> щоб вподобати або прокоментувати запис."
+
+msgid "Please activate your account"
+msgstr "Будь ласка активуйте аккаунт"
+
+msgid "Please confirm your password correctly."
+msgstr "Будь ласка підтвердіть Ваш пароль належним чином"
+
+msgid "Post"
+msgstr "Запис"
+
+msgid "Postcode / ZIP"
+msgstr "Поштовий код / ZIP"
+
+msgid "Posts"
+msgstr "Записи"
+
+msgid "Premium support expires in"
+msgstr "Преміальна підтримка закінчується через"
+
+msgid "Prev"
+msgstr "перед"
+
+msgid "Price"
+msgstr "Ціна"
+
+msgid "Price for Membership Level"
+msgstr "Вартість Рівня Мембершип"
+
+msgid "Price for recurring payments"
+msgstr "Вартість періодичних платежів"
+
+msgid "Primary Button Color"
+msgstr "Колір Первинної Кнопки"
+
+msgid "Primary Button Hover Color"
+msgstr "Колір Первинної Кнопки при наведенні курсором"
+
+msgid "Primary Button Text Color"
+msgstr "Колір Тексту Первинної Кнопки"
+
+msgid "Primary Color"
+msgstr "Первинний Колір"
+
+msgid "Privacy"
+msgstr "Приватність"
+
+msgid "Privacy settings was not updated."
+msgstr "Приватні налаштування не було оновлено."
+
+msgid "Privacy settings was updated."
+msgstr "Приватні налаштування були оновлені."
+
+msgid "Private"
+msgstr "Приватний"
+
+msgid "Products"
+msgstr "Продукти"
+
+msgid "Profile"
+msgstr "Профайл"
+
+msgid "Profile Area Maximum Width"
+msgstr "Максимальна Ширина Зони Профайлу"
+
+msgid "Profile Avatar Size"
+msgstr "Розмір Аватару Профайлу"
+
+msgid "Profile Base Background Color"
+msgstr "Базовий Колір Фону Профайлу"
+
+msgid "Profile Container Max Width"
+msgstr "Максимальна Ширина Контейнеру Профайлу"
+
+msgid "Profile Cover Photos"
+msgstr "Фото Обкладинка Профайлу"
+
+msgid "Profile Cover Size"
+msgstr "Розмір Обкладинки Профайлу"
+
+msgid "Profile Field Icons"
+msgstr "Значки Поля Профайлу"
+
+msgid "Profile Header Background Color"
+msgstr "Колір Фону Заголовку Профайлу"
+
+msgid "Profile Header Icon Link Color"
+msgstr "Колір Посилання Значку Заголовку Профайлу"
+
+msgid "Profile Header Icon Link Hover Color"
+msgstr "Колір Посилання Значку Заголовку Профайлу при наведенні курсором"
+
+msgid "Profile Header Link Color"
+msgstr "Колір Посилання Заголовку Профайлу"
+
+msgid "Profile Header Link Hover Color"
+msgstr "Колір Посилання Заголовку Профайлу при наведенні курсором"
+
+msgid "Profile Header Menu Position"
+msgstr "Позиція Меню Заголовку Профайлу"
+
+msgid "Profile Header Meta Text Icon"
+msgstr "Мета Текст Значку Заголовку Профайлу"
+
+msgid "Profile Image Style"
+msgstr "Стиль Зображення Профайлу"
+
+msgid "Profile Permalink Base"
+msgstr "Базис Постійного Посилання Профайлу"
+
+msgid "Profile Primary Button Text"
+msgstr "Текст Первинної Кнопки Профайлу"
+
+msgid "Profile Secondary Button"
+msgstr "Вторинна Кнопка Профайлу"
+
+msgid "Profile Secondary Button Text"
+msgstr "Текст Вторинної Кнопки Профайлу"
+
+msgid "Profile is not exists."
+msgstr "Профайл не існує."
+
+msgid "Profile picture"
+msgstr "Зображення Профайлу"
+
+msgid "Protect all Pages"
+msgstr "Захистити Всі Сторінки"
+
+msgid "Publish"
+msgstr "Публікувати"
+
+msgid "Purchase button name"
+msgstr "Ім'я кнопки купівлі"
+
+msgid "Put symbol at left side?"
+msgstr "Поставити символ зліва?"
+
+msgid "Radio Button"
+msgstr "Радіо-кнопка"
+
+msgid "Random"
+msgstr "Рандом"
+
+msgid "ReCaptcha is not valid."
+msgstr "ReCaptcha не дійсна."
+
+msgid "Reading comments is restricted"
+msgstr "Обмежене читання коментарів"
+
+msgid "Recurring Subscription"
+msgstr "Регулярна Підписка"
+
+msgid "Redirect after account is deleted to"
+msgstr "Після видалення аккаунту переадресовувати на"
+
+msgid "Redirect after login to"
+msgstr "Після Входу переадресувати на "
+
+msgid "Redirect after logout to"
+msgstr "Після Виходу переадресовувати на"
+
+msgid "Redirect after registration to"
+msgstr "Після реєстрації переадресовувати на"
+
+msgid "Redirect from backend login screen to membership login page"
+msgstr "З Входу на бек-енді переадресовувати на сторінку Входу Мембершип"
+
+msgid "Register"
+msgstr "Зареєструватися"
+
+msgid "Register with"
+msgstr "Зареєструватися через"
+
+msgid "Registration"
+msgstr "Реєстрація"
+
+msgid "Registration And Login"
+msgstr "Реєстрація Та Вхід"
+
+msgid "Registration Confirmation"
+msgstr "Підтвердження Реєстрації"
+
+msgid "Registration Default Role"
+msgstr "Роль за Умовчанням при Реєстрації"
+
+msgid "Registration Field Icons"
+msgstr "Значки Полів Реєстрації"
+
+msgid "Registration Fields"
+msgstr "Поля Реєстрації"
+
+msgid "Registration Primary Button Text"
+msgstr "Текст Первинної Кнопки Реєстрації"
+
+msgid "Registration Secondary Button"
+msgstr "Вторинна Кнопка Реєстрації"
+
+msgid "Registration Secondary Button Text"
+msgstr "Текст Вторинної Кнопки Реєстрації"
+
+msgid "Registration Secondary Button URL"
+msgstr "URL Вторинної Кнопки Реєстрації"
+
+msgid "Registration button name"
+msgstr "Ім'я кнопки Реєстрації"
+
+msgid "Remember me"
+msgstr "Запам'ятати мене"
+
+msgid "Remove"
+msgstr "Видалити"
+
+msgid "Remove from group"
+msgstr "Видалити з групи"
+
+msgid "Replies"
+msgstr "Відповіді"
+
+msgid "Reply"
+msgstr "Відвовісти"
+
+msgid "Report"
+msgstr "Доповідь"
+
+msgid "Report details"
+msgstr "Деталь доповіді"
+
+msgid "Report post"
+msgstr "Доповідь на запис"
+
+msgid "Report was not sent."
+msgstr "Доповідь не надіслана."
+
+msgid "Report was not sent. Report content not found."
+msgstr "Доповідь не була надіслана. Контент доповіді не знайдено."
+
+msgid "Reported"
+msgstr "Відповідач"
+
+msgid "Reporter"
+msgstr "Доповідач"
+
+msgid "Reports"
+msgstr "Доповіді"
+
+msgid "Requested activity is not found."
+msgstr "Запитану Активність не знайдено."
+
+msgid "Required"
+msgstr "Необхідне"
+
+msgid "Required Asterisk Color"
+msgstr "Колір Обов'язкової Зірочки"
+
+msgid "Reset Zoom"
+msgstr "Скинути зум"
+
+msgid "Reset to Default"
+msgstr "Відновити значення за Замовчуванням "
+
+msgid "Reset your password"
+msgstr "Скинути пароль"
+
+msgid "Results Text"
+msgstr "Текст Результату"
+
+msgid "Review for"
+msgstr "Перевірка для"
+
+msgid "Role"
+msgstr "Роль"
+
+msgid "Role name"
+msgstr "Ім'я Ролі"
+
+msgid "Roles"
+msgstr "Ролі"
+
+msgid "Rounded Corners"
+msgstr "Заогруглені Кути"
+
+msgid "SEO"
+msgstr "SEO"
+
+msgid "Save"
+msgstr "Зберегти"
+
+msgid "Save Address"
+msgstr "Зберегти Адресу"
+
+msgid "Save Fields"
+msgstr "Зберегти Поля"
+
+msgid "Save Pages"
+msgstr "Зберегти Сторінки"
+
+msgid "Save Settings"
+msgstr "Зберегти Налаштування"
+
+msgid "Scroll List"
+msgstr "Список Прокрутки"
+
+msgid "Search"
+msgstr "Пошук"
+
+msgid "Secondary Button Color"
+msgstr "Колір Вторинної Кнопки"
+
+msgid "Secondary Button Hover Color"
+msgstr "Колір Вторинної Кнопки при наведенні курсором"
+
+msgid "Secondary Button Text Color"
+msgstr "Колір Тексту Вторинної Кнопки"
+
+msgid "Secondary Color"
+msgstr "Вторинний Колір"
+
+msgid "Section"
+msgstr "Секція"
+
+msgid "Section Name"
+msgstr "Ім'я Секції"
+
+msgid "Security"
+msgstr "Безпека"
+
+msgid "Select"
+msgstr "Вибрати"
+
+msgid "Select a role that will be assigned to user after his registration."
+msgstr "Обрати роль, яка буде призначена новому користувачу після реєстрації."
+
+msgid "Select lists for subscribe. They are taken from your Constant Contact account."
+msgstr "Оберіть списки для підписки. Вони взяті з вашого Constant Contact аккаунту."
+
+msgid "Select lists for subscribe. They are taken from your MailChimp account - so make sure that you entered correct API key before."
+msgstr "Оберіть списки для підписки. Вони взяті з вашого MailChimp аккаунту - тому переконайтеся, що ввели вірний API ключ."
+
+msgid "Select messages to delete"
+msgstr "Оберіть повідомлення для видалення"
+
+msgid "Select some Lists before"
+msgstr "Оберіть декілька Списків перед тим як"
+
+msgid "Select the sorting order to display users on \"Members\" tab."
+msgstr "Оберіть порядок сортування для відображення користувасів на вкладці \"Мемберс\""
+
+msgid "Select the style of profiles and groups images."
+msgstr "Оберіть стиль зображення профайлів та груп."
+
+msgid "Select the type of confirmation that should be performed after user registration. You can choose \"Auto\" and there will be no confirmation."
+msgstr "Оберіть вид підтвердження користувача після його реєстрації. Ви можете обрати \"Авто\" для відімкнення підтвердження."
+
+msgid "Select what data to use in the link of user's profile. E.g. \"http://supsystic/profile/john_snow/\" or \"http://supsystic/profile/1/\"."
+msgstr "Оберіть які дані використовувати у посиланні на профайл користувача. Напр., \"http://supsystic/profile/john_snow/\" чи \"http://supsystic/profile/1/\"."
+
+msgid "Select which kind of user's name will be displayed."
+msgstr "Оберіть типи імен користувачів для відображення."
+
+msgid "Select who can see information on your website."
+msgstr "Оберіть хто може бачити інформацію на Вашому сайті."
+
+msgid "Send"
+msgstr "Надіслати"
+
+msgid "Send MailChimp Welcome Email"
+msgstr "Надіслати Привітальний Email MailChimp"
+
+msgid "Send Test"
+msgstr "Надіслати Тест"
+
+msgid "Send Test Email"
+msgstr "Надіслати Тестовий Email"
+
+msgid "Send a request"
+msgstr "Надіслати запит"
+
+msgid "Send me some info, pls"
+msgstr "Надішліть мені більше інформації, будь ласка"
+
+msgid "Send message"
+msgstr "Надіслати повідомлення"
+
+msgid "Send message to"
+msgstr "Надіслати повідомлення до"
+
+msgid "Set the background color for labels."
+msgstr "Встановіть колір фону для етикеток."
+
+msgid "Set the background color for profile header."
+msgstr "Встановіть колір фону для заголовку профайлу."
+
+msgid "Set the background color when the cursor is in this field."
+msgstr "Встановіть колір фону, коли курсор на полі."
+
+msgid "Set the color for borders of labels."
+msgstr "Встановіть колір для границь етикеток."
+
+msgid "Set the color for borders when the cursor is in this field."
+msgstr "Встановіть колір для границь, коли курсор у полі."
+
+msgid "Set the color for placeholder."
+msgstr "Встановіть колір для підказок поля."
+
+msgid "Set the color for primary buttons when they will be covered by mouse."
+msgstr "Встановіть колір для первинних кнопок при наведенні курсором."
+
+msgid "Set the color for primary buttons."
+msgstr "Встановіть колір для первинних кнопок."
+
+msgid "Set the color for secondary buttons when they will be covered by mouse."
+msgstr "Встановіть колір для вторинних кнопок при наведенні курсором."
+
+msgid "Set the color for secondary buttons."
+msgstr "Встановіть колір для вторинних кнопок."
+
+msgid "Set the color for text in labels."
+msgstr "Встановіть колір для тексту у етикетках."
+
+msgid "Set the color for text in primary buttons."
+msgstr "Встановіть колір тексту первинних кнопок."
+
+msgid "Set the color for text in secondary buttons."
+msgstr "Встановіть колір тексту вторинних кнопок."
+
+msgid "Set the color for text."
+msgstr "Встановіть колір тексту."
+
+msgid "Set the quality of images in %. The highest value is 100."
+msgstr "Встановіть якість зображень у %. Де найвища - 100%"
+
+msgid "Set the text for \"Log in\" button."
+msgstr "Введіть текст для кнопки \"Вхід\"."
+
+msgid "Set the text for \"Register\" button."
+msgstr "Введіть текст для кнопки \"Зареєструватися\"."
+
+msgid "Set the text for secondary button."
+msgstr "Введіть текст для вторинної кнопки."
+
+msgid "Set the width for profile container. The maximum is 100%."
+msgstr "Встановіть ширину контейнеру профайлу. Де 100% максимум."
+
+msgid "Set to default"
+msgstr "Встановити за замовчуванням"
+
+msgid "Set url to which user will be redirected after clicking on secondary button in Login form."
+msgstr "Встановіть url куди користувача буде переадресовано після натискання на вторинну кнопку Вхідної Форми."
+
+msgid "Settings"
+msgstr "Налаштування"
+
+msgid "Share"
+msgstr "Поділитися"
+
+msgid "Shared activity is not exist or user don't have read permission to read activity."
+msgstr "Активність, якою поділилися не знайдена або користувач немає дозволу читати активність."
+
+msgid "Shipping Address"
+msgstr "Адреса Доставки"
+
+msgid "Shipping Information"
+msgstr "Інформація Доставки"
+
+msgid "Show Display Name"
+msgstr "Показати Псевдонім"
+
+msgid "Show Display Name In Profile Header"
+msgstr "Показати Псевдоніму Заголовку Профайлу"
+
+msgid "Show Friends and Followers"
+msgstr "Показати Друзів та Послідовників"
+
+msgid "Show Load More Button"
+msgstr "Показати Кнопку \"Завантажити Більше\""
+
+msgid "Show Only Members With Cover"
+msgstr "Показувати Користувачів Тільки з Обкладинкою"
+
+msgid "Show Only Members With Photo"
+msgstr "Показувати Користувачів Тільки з Фото"
+
+msgid "Show Pages"
+msgstr "Показати сторінки"
+
+msgid "Show Remember Me"
+msgstr "Показувати \"Запам'ятати Мене\""
+
+msgid "Show a custom message if profile is empty"
+msgstr "Показувати довільне повідомлення якщо профайл порожній"
+
+msgid "Show an asterisk for required fields"
+msgstr "Показувати зірочку для обов'язкових полів"
+
+msgid "Show billing address in user settings"
+msgstr "Відображати адресу виставлення рахунку у налаштуваннях користувача"
+
+msgid "Show bought products in profile"
+msgstr "Відображати прибдані продукти у профайлі"
+
+msgid "Show extra user information below tagline?"
+msgstr "Відображати додаткову інформацію користувача під слоганом?"
+
+msgid "Show inside text field"
+msgstr "Відображати у текстовому полі"
+
+msgid "Show ordered Membership Levels"
+msgstr "Відображати придбані Рівні Мембершип"
+
+msgid "Show orders in members directory"
+msgstr "Відображати замовлення у Мемберс Каталозі"
+
+msgid "Show orders in profile"
+msgstr "Відображати замовлення у профайлі"
+
+msgid "Show product reviews in profile"
+msgstr "Відображати відгуки на продукти у профайлі"
+
+msgid "Show purchases in profile"
+msgstr "Відображати придбане у профайлі"
+
+msgid "Show results only after search"
+msgstr "Відображати результати тільки після пошуку"
+
+msgid "Show shipping address in user settings"
+msgstr "Відображати адресу доставки у налаштуваннях користувача"
+
+msgid "Show social links in profile header"
+msgstr "Відображати соціальні посилання у заголовку користувача"
+
+msgid "Show tagline below profile name"
+msgstr "Відображати слоган під ім'ям профайлу"
+
+msgid "Show total spent in members directory"
+msgstr "Відображати загальні витрати у Мемберс Каталозі"
+
+msgid "Show total spent in profile"
+msgstr "Відображати загальні витрати у профайлі"
+
+msgid "Show user description in header"
+msgstr "Відображати опис користувача у заголовку"
+
+msgid "Show with label"
+msgstr "Відображати на Етикетці"
+
+msgid "Single Result Text"
+msgstr "Текст Одного Результату"
+
+msgid "Site Accessible to Everyone"
+msgstr "Сайт Доступний для Всіх"
+
+msgid "Site Accessible to Logged In Users"
+msgstr "Сайт Доступний для Зареєстрованих Користувачів"
+
+msgid "Social Login"
+msgstr "Вхід через Соц.Мережу"
+
+msgid "Social Network Integration"
+msgstr "Інтеграція з Соціальними Мережами"
+
+msgid "Social network integration"
+msgstr "Інтеграція з Соціальними Мережами"
+
+msgid "Social sign-in"
+msgstr "Вхід через соц.мережу"
+
+msgid "Some of requested users cannot receive or send messages"
+msgstr "Деякі запити користувачів стосуються неможливості отримання та надсилання повідомлень"
+
+msgid "Some of your products is extendable, but you don't have original product purchased before."
+msgstr "Деякі з ваших продуктів є продовженнями, у той час як ви ще не придбали початкові продукти."
+
+msgid "Something going wrong while trying to send data to MailChimp. Please contact site owner."
+msgstr "Щось пішло не так ід час надсилання данних до MailChimp. Будь ласка повідомте про це власника сайту."
+
+msgid "Something going wrong while trying to send data to mail list service. Please contact site owner."
+msgstr "Щось пішло не так коли ми намагалися надіслати дані до сервісу почтового списку. Будь ласка повідомте про це власника сайту."
+
+msgid "Something went wrong"
+msgstr "Щось пішло не так"
+
+msgid "Specific roles"
+msgstr "Особливі ролі"
+
+msgid "Specify a description of Group page. Search engines can pick up this description to show with the results of searches."
+msgstr "Створіть опис сторінки Групи. Пошукові двигуни зможуть використати його для показу поряд з результатами пошуку."
+
+msgid "Specify a description of User Profile page. Search engines can pick up this description to show with the results of searches."
+msgstr "Створіть опис сторінки Профайлу Користувача. Пошукові двигуни зможуть використати його для показу поряд з результатами пошуку."
+
+msgid "Square"
+msgstr "Квадрат"
+
+msgid "Start"
+msgstr "Почати"
+
+msgid "State"
+msgstr "Штат"
+
+msgid "State / County"
+msgstr "Штат / Країна"
+
+msgid "Statistics"
+msgstr "Статистика"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Subscribe"
+msgstr "Підписатися"
+
+msgid "Subscribe success message"
+msgstr "Повідомлення успішної підписки"
+
+msgid "Subscriptions"
+msgstr "Підписки"
+
+msgid "Subscriptions Lists"
+msgstr "Списки Підписки"
+
+msgid "Success checkout text"
+msgstr "Текст Успішної перевірки"
+
+msgid "Symbol"
+msgstr "Символ"
+
+msgid "Tag already exists"
+msgstr "Тег вже існує"
+
+msgid "Tag does not exists at this group"
+msgstr "Тег не існує у цій групі"
+
+msgid "Test"
+msgstr "Тест"
+
+msgid "Test Mode"
+msgstr "Тестовий Режим"
+
+msgid "Test Payments"
+msgstr "Тестові Платежі"
+
+msgid "Test mail"
+msgstr "Тестовий лист"
+
+msgid "Test user"
+msgstr "Тестовий Користувач"
+
+msgid "Text"
+msgstr "Текст"
+
+msgid "Text that users will see when they need to renew this Level."
+msgstr "Текст, який побачать користувачі коли необхідно поновити Рівень."
+
+msgid "Thank you for registration!<br>To complete your registration administrator needs to review your account.<br>You will receive email about your account activation after review."
+msgstr "Дякуємо за реєстрацію!<br>Щоб її завершити, адміністратору необхідно переглянути Ваш аккаунт.<br>Ви отримаєте лист про активацію Вашого аккаунту після його перегляду."
+
+msgid "Thank you for registration!<br>To complete your registration please follow the activation link in confirmation email message that you will receive."
+msgstr "Дякуємо за реєстрацію!<br>Щоб її завершити, будь ласка перейдіть за посиланням у підтверджувальному повідомленні листа, який ви отримаєте."
+
+msgid ""
+"Thank you for signing up with {site_name}!\n"
+"<br>\n"
+"<br>To activate your account, please click the link below to confirm your email address:\n"
+"<br>\n"
+"<br><a href=\"{account_activation_link}\">{account_activation_link}</a>\n"
+"<br>\n"
+"<br>If you have any problems, please contact us at {admin_email}\n"
+"<br>\n"
+"<br>Thanks,\n"
+"<br>{site_name}"
+msgstr ""
+"Дякуємо за реєстрацію з ім'ям {site_name}!\n"
+"<br>\n"
+"<br>Для активації Вашого аккаунт, будь ласка підтвердіть Ваш email перейшовши за посиланням нижче:\n"
+"<br>\n"
+"<br><a href=\"{account_activation_link}\">{account_activation_link}</a>\n"
+"<br>\n"
+"<br>У випадку виникнення проблем, будь ласка дайте нам знати -{admin_email}\n"
+"<br>\n"
+"<br>З повагою,\n"
+"<br>{site_name}"
+
+msgid "The color theme. You can select from themes, provided by Google, for your reCaptcha. To get more info - check <a href=\"http://supsystic.com/create-recaptcha-field/\" target=\"_blank\">our tutorial.</a>"
+msgstr "Колір теми. Ви можете обрати з тем, створених Google для Вашої reCaptcha. Більше інформації - <a href=\"http://supsystic.com/create-recaptcha-field/\" target=\"_blank\">наш урок.</a>"
+
+msgid "The message that admin will get if some account needs to be reviewed."
+msgstr "Повідомлення, яке отримає адміністратор у випадку необхідності перегляду аккаунту."
+
+msgid "The message that admin will receive after a new user signs up. In case you don't want to get this email just turn this option off."
+msgstr "Повідомлення, яке отримає адміністратор коли зареєструється новий користувач. Якщо ви не хочете отримувати цей лист, просто вимкніть цю опцію."
+
+msgid "The message was sent"
+msgstr "Повідомлення надіслано"
+
+msgid "The name of site that will be indicated in emails."
+msgstr "Ім'я сайту, яке буде відображатися у листуванні."
+
+msgid "The size of the CAPTCHA widget."
+msgstr "Розмір віджету CAPTCHA"
+
+msgid "The total number of recurring billing cycles for this level, including the trial period (if applicable) but not including the initial payment. Set to zero if membership is indefinite."
+msgstr "Загальна кількість повторюваних циклів виставлення рахунків для цього рівня, включаючи пробний період (якщо треба), але не включаючи початковий платіж. Встановіть нуль, якщо термін членства невизначено."
+
+msgid "The type of CAPTCHA to serve."
+msgstr "Який тип CAPTCHA  подавати."
+
+msgid "There are no Membership Levels on this site for now."
+msgstr "Наразі немає жодного Рівня Мембершип на сайті."
+
+msgid "There is no administrators left in group, you must delete group first."
+msgstr "Не залишилося жодного адміністратора у групі, спочатку вам необхідно її видалити."
+
+msgid "There is no products"
+msgstr "Немає продуктів"
+
+msgid "There is no purchases"
+msgstr "Немає покупок"
+
+msgid "There is no reviews"
+msgstr "Немає переглядів"
+
+msgid "There is no subscription in subscriptions lists"
+msgstr "Немає підписок у Списках Підписки"
+
+msgid "There is no such category"
+msgstr "Немає такої категорії"
+
+msgid "There is no user with provided id"
+msgstr "Немає користувача з таким id"
+
+msgid "There is no users yet."
+msgstr "Зовсім немає користувачів."
+
+msgid "There was some problem while trying to get your lists. Make sure that your API key is correct."
+msgstr "Виникли деякі проблеми під час отримання Ваших списків. Переконайтеся, що API ключ вірний."
+
+msgid "There's no any activity yet"
+msgstr "Ще немає ніякої Активності"
+
+msgid "This Level is Expired"
+msgstr "Термін Дії Рівню Вичерпано"
+
+msgid "This email will be sent to user after his account has been approved and activated by admin."
+msgstr "Цей лист буде надіслано користувачу після того, як його аккаунт буде підтверджено та активовано адміністратором."
+
+msgid "This email will be sent to user if admin rejected his account."
+msgstr "Цей лист буде надіслано користувачу, якщо адміністратор відхилив його аккаунт."
+
+msgid "This email will be sent to user if he has requested to change the password."
+msgstr "Цей лист буде надіслано користувачу, якщо користувач запросив зміну паролю."
+
+msgid "This email will be sent to user if he needs to wait till admin will approve his account."
+msgstr "Цей лист буде надіслано користувачу, якщо необхідно почекати доки адміністратор підтвердить його аккаунт."
+
+msgid "This email will be sent to user if his account has been deactivated."
+msgstr "Цей лист буде надіслано користувачу, якщо його аккаунт було деактивовано."
+
+msgid "This email will be sent to user if this account has been deleted."
+msgstr "Цей лист буде надіслано користувачу, якщо його аккаунт було видалено."
+
+msgid "This email will be sent to user, so he could confirm his email and activate the account after registration."
+msgstr "Цей лист буде надіслано користувачу, щоб він міг підтвердити свій email та активувати аккаунт після реєстрації."
+
+msgid "This email will be used as Sender."
+msgstr "Цей лист буде використано як Відправник."
+
+msgid "This is not your Order"
+msgstr "Це не Ваше замовлення"
+
+msgid "This message will be shown after subscription in the settings of user's profile right after subscriber will be    created and confirmed."
+msgstr "Це повідомлення буде відображено після підписки у налаштуваннях до профайлу користувача як тільки підписник буде створений та підтверджений."
+
+msgid "This module is used for test purpose only. Do not use in in Production."
+msgstr "Цей модуль використовується тільки для тестових цілей. Не використовувати з Продуктами."
+
+msgid "This option allows to use html markup language to edit the text in emails."
+msgstr "Ця опція дозволяє використовувати html мова розмітки для коригування тесту листів."
+
+msgid "This option will create subscriber directly after new user registration. If this option is disabled - new subscriber won't be created for your subscription list after registration. In this case user will be able to subscribe only in his Profile Settings."
+msgstr "Ця опція створить підписника одразу після реєстрації нового користувача. Якщо ця опція вимкнена - новий підписник не буде створений для Вашого Списку Підписки після реєстрації. У цьому випадку користувач матиме змогу самостійно підписатися у всланих Налаштуваннях до Профайлу."
+
+msgid "This user has restricted access to his comments page."
+msgstr "Цей користувач обмежив доступ до коментарів власної сторінки."
+
+msgid "This user has restricted access to his friends page."
+msgstr "Цей користувач обмежив доступ до сторінки з власними друзями."
+
+msgid "This user has restricted access to his posts page."
+msgstr "Цей користувач обмежив доступ до власної сторінки."
+
+msgid "This user is blocking your messages."
+msgstr "Цей користувач блокує ваші повідомлення."
+
+msgid "This will be initial amount for the first payment"
+msgstr "Це буде початкова сумма для першого платежу"
+
+msgid "Thousands separator"
+msgstr "Роздільник тисяч"
+
+msgid "To"
+msgstr "До"
+
+msgid "To find your Facebook App ID please login to your Facebook account at <a target=\"_blank\" href=\"https://developers.facebook.com/apps/\">https://developers.facebook.com/apps/</a>. Then on the left main menu click on Dashboard. Copy / Paste your App ID into \"Facebook App ID\" field here. For more detailed instruction - check article <a target=\"_blank\" href=\"http://supsystic.com/integrate-membership-facebook-app/\">here</a>."
+msgstr "Щоб знайти Ваш ID Додатку Facebook, будь ласка ввійдіть до Вашого аккаунту у Facebook <a target=\"_blank\" href=\"https://developers.facebook.com/apps/\">https://developers.facebook.com/apps/</a>. Тоді зліва на Головному Меню натисніть Dashboard. Скопіюйте та вставте Ваш ID додатку тут у поле \"ID Додатку Facebook\". Більш детальна інструкція <a target=\"_blank\" href=\"http://supsystic.com/integrate-membership-facebook-app/\">тут</a>."
+
+msgid "To find your Facebook App Secret please login to your Facebook account at https://developers.facebook.com/apps/. Then on the left main menu click on Dashboard. Copy / Paste your App Secret into \"Facebook App Secret\" field here. For more detailed instruction - check article <a target=\"_blank\" href=\"http://supsystic.com/integrate-membership-facebook-app/\">here</a>."
+msgstr "Щоб знайти Ваш Секрет Додатку Facebook, будь ласка ввійдіть до Вашого аккаунту у Facebook  https://developers.facebook.com/apps/. \vТоді зліва на Головному Меню натисніть Dashboard.\vСкопіюйте та вставте Ваш Секрет додатку тут у поле \"Секрет Додатку Facebook\". Більш детальна інструкція <a target=\"_blank\" href=\"http://supsystic.com/integrate-membership-facebook-app/\">тут</a>."
+
+msgid "To find your MailChimp API Key login to your Mailchimp account at http://mailchimp.com. On the left main menu click on your Username, then select \"Account\" in the flyout menu. From the account page select \"Extras\", \"API Keys\". Your API Key will be listed in the table labeled \"Your API Keys\". Copy / Paste your API key into \"MailChimp API key\" field here."
+msgstr "Щоб знайти Ваш MailChimp API Ключ ввійдіть до Вашого Mailchimp аккаунту http://mailchimp.com. Зліва у Меню клікніть на Ваше ім'я користувача, потім у виїзджаючому меню оберіть \"Аккаунт\". Зі сторінки аккаунту оберіть \"Додатково\", \"API ключі\". Ваш API ключ буде у записаний у таблиці з етикеткою \"Ваші API ключі\". Скопіюйте і вставте ваш API ключ тут у поле \"MailChimp API ключ\"."
+
+msgid "To find your Twitter API Key please login to your Twitter account at https://apps.twitter.com/. Open the settings of your App and click on \"Keys and Access Tokens\" tab. Copy / Paste \"Consumer Key (API Key)\" into \"Twitter API Key\" field here. For more detailed instruction - check article <a target=\"_blank\" href=\"http://supsystic.com/integrate-membership-twitter/\">here</a>."
+msgstr "Щоб знайти Ваш Twitter API ключ, будь ласка ввійдіть до Вашого аккаунту у  Twitter https://apps.twitter.com/.   \vВідкрийте налаштування Вашого Додатку та натисніть \"Пам'ятка Ключів та Доступів\". Скопіюйте та вставте \"Ключ Споживача (API ключ)\" тут у поле \"Twitter API ключ\". Більш детальна інструкція <a target=\"_blank\" href=\"http://supsystic.com/integrate-membership-twitter/\">тут</a>."
+
+msgid "To find your Twitter API Secret please login to your Twitter account at https://apps.twitter.com/. Open the settings of your App and click on \"Keys and Access Tokens\" tab. Copy / Paste \"Consumer Secret (API Secret)\" into \"Twitter API Secret\" field here. For more detailed instruction - check article <a target=\"_blank\" href=\"http://supsystic.com/integrate-membership-twitter/\">here</a>."
+msgstr "Щоб знайти Ваш Twitter API Секрет, будь ласка ввійдіть до Вашого аккаунту у Twitter https://apps.twitter.com/.   \vВідкрийте налаштування Вашого Додатку та натисніть \"Пам'ятка Ключів та Доступів\". Скопіюйте та вставте \"Секрет Споживача (API Секрет)\" тут у поле \"Twitter API Секрет\". Більш детальна інструкція <a target=\"_blank\" href=\"http://supsystic.com/integrate-membership-twitter/\">тут</a>."
+
+msgid "To:"
+msgstr "До:"
+
+msgid "Total"
+msgstr "Загалом"
+
+msgid "Total Spent"
+msgstr "Загалом витрачено"
+
+msgid "Total Statistics"
+msgstr "Загальна Статистика"
+
+msgid "Total Statistics is empty for now."
+msgstr "Загальна Статистика зараз пуста."
+
+msgid "Town / City"
+msgstr "Місто / Мегаполіс"
+
+msgid "Twitter"
+msgstr "Twitter"
+
+msgid "Twitter API Key"
+msgstr "Twitter API Ключ"
+
+msgid "Twitter API Secret"
+msgstr "Twitter API Секрет"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Unapprove"
+msgstr "Незатверджено"
+
+msgid "Unblock"
+msgstr "Розблокувати"
+
+msgid "Unblock group"
+msgstr "Розблокувати групу"
+
+msgid "Unfollow"
+msgstr "Не стежити"
+
+msgid "Unfriend"
+msgstr "Не друг"
+
+msgid "Unknown upload error."
+msgstr "Невідома помилка завантаження."
+
+msgid "Unpublished"
+msgstr "Неопублікований"
+
+msgid "Unsubscribe"
+msgstr "Відписатися"
+
+msgid "Unsubscribed successfully"
+msgstr "Ви успішно відписалися."
+
+msgid "Unsupported image format"
+msgstr "Формат зображення не підтримується"
+
+msgid "Unsupported template."
+msgstr "Шаблон не підтримується."
+
+msgid "Update"
+msgstr "Оновити"
+
+msgid "Upload logo"
+msgstr "Завантажити логотип"
+
+msgid "Upload photo"
+msgstr "Завантажити фото"
+
+msgid "Uploads"
+msgstr "Завантаження"
+
+msgid "Use Default Theme Colors"
+msgstr "Використовувати Кольори Теми за Замовчуванням"
+
+msgid "Use HTML for E-mails"
+msgstr "Використовувати HTML для E-mail"
+
+msgid "Use Profile Avatar"
+msgstr "Використовувати Аватар Профайлу"
+
+msgid "Use Profile Cover"
+msgstr "Використовувати Обкладинку Профайлу"
+
+msgid "Use Profile Gravatar"
+msgstr "Використовувати Gravatar Профайлу"
+
+msgid "Use your own social network app"
+msgstr "Скористайтеся власним додатком соціальної мережі"
+
+msgid "User"
+msgstr "Користувач"
+
+msgid "User Display Name"
+msgstr "Псевдонім Користувача"
+
+msgid "User ID"
+msgstr "ID Користувача"
+
+msgid "User Name"
+msgstr "Ім'я користувача"
+
+msgid "User Profile"
+msgstr "Профайл Користувача"
+
+msgid "User Profile Dynamic Meta Description"
+msgstr "Динамічний Мета Опис Профайлу користувача"
+
+msgid "User Profile Title"
+msgstr "Ім'я Профайлу користувача"
+
+msgid "User Registration"
+msgstr "Реєстрація Користувача"
+
+msgid "User Roles that can use search"
+msgstr "Ролі Користувачів, які можуть використовувати пошук"
+
+msgid "User Roles to Display"
+msgstr "Ролі користувачів для Відображення"
+
+msgid "User activated"
+msgstr "Користувача активовано"
+
+msgid "User already blocked"
+msgstr "Користувача вже заблоковано"
+
+msgid "User already followed"
+msgstr "Ви вже стежите за користувачем"
+
+msgid "User already in friends"
+msgstr "Користувач вже Ваш друг"
+
+msgid "User blocked"
+msgstr "Користувач заблокований"
+
+msgid "User does not have permission to delete this group."
+msgstr "Користувач не має дозволу видаляти цю групу."
+
+msgid "User get role"
+msgstr "Користувач отримав роль"
+
+msgid "User is not allowed to edit this order"
+msgstr "Користувач не має дозволу редагувати це замовлення"
+
+msgid "User is not blocked"
+msgstr "Цей користувач не заблокований"
+
+msgid "User is not follower of this group"
+msgstr "Користувач не є послідовником цієї групи"
+
+msgid "User not found"
+msgstr "Користувача не знайдено"
+
+msgid "User registration is disabled. To enable go to WP Settings > General and check box for Membership option."
+msgstr "Реєстрація користувача заборонена. Щоб її ввімкнути йдіть до Налаштувань WordPress > Загальні і поставте прапорець навпроти Мембершип опції."
+
+msgid "User unblocked"
+msgstr "Користувача розблоковано"
+
+msgid "User update error"
+msgstr "Помилка оновлення користувача"
+
+msgid "User will see this message after subscription in the settings of his profile, when email with confirmation link was    sent."
+msgstr "Користувач побачить це повідомлення після підписки у налаштуваннях до аккаунту, коли лист з посиланням для підтвердження буде надіслано. "
+
+msgid "User with this %s e-mail address already exists."
+msgstr "Користувач з цією %s e-mail адресою вже існує."
+
+msgid "User with username %s already exists"
+msgstr "Користувач з ім'ям %s вже існує"
+
+msgid "Username"
+msgstr "Ім'я користувача"
+
+msgid "Username or E-mail"
+msgstr "Ім'я користувача або E-mail"
+
+msgid "Username or E-mail is required"
+msgstr "Потрібне Ім'я користувача або E-mail"
+
+msgid "Users"
+msgstr "Користувачі"
+
+msgid "Users with the chosen role will be shown on \"Members\" tab."
+msgstr "Користувачі з обраними ролями будуть відображені на вкладці \"Мемберс\""
+
+msgid "View"
+msgstr "Вид"
+
+msgid "View previous comments"
+msgstr "Дивитись попередні коментарі"
+
+msgid "View previous replies"
+msgstr "Дивитися попередні відповіді"
+
+msgid "Waiting for schedule"
+msgstr "Очікую на розклад"
+
+msgid "Warning! Some required Membership plugin pages are missing or haven't been created, you can assign or create them <a href=\"%s\">here</a>"
+msgstr "Застереження! Деякі необхідні сторінки плагіну Мембершип пропущені або не були створені, ви можете їх призначити або створити <a href=\"%s\">тут</a>"
+
+msgid "Week"
+msgstr "Тиждень"
+
+msgid "Week(s)"
+msgstr "Тижні"
+
+msgid "Welcome to {site_name}!"
+msgstr "Вітаємо на {site_name}!"
+
+msgid "When this option is activated - users, who want to login to your website, will be redirected to Membership Login page instead of usual WordPress login form."
+msgstr "Коли цю опцію активовано - користувачі, які хочуть ввійти на Ваш сайт, будуть перенаправлені на сторінку Входу мембершип замість звичайної форми входу WordPress."
+
+msgid "When user bought any product assign role:"
+msgstr "Коли користувач купує будь-який продукт: призначити роль:"
+
+msgid "When user bought specific product: assign role:"
+msgstr "Коли користувач купує особливий продукт: призначити роль:"
+
+msgid "Who can be invited"
+msgstr "Хто може бути запрошений"
+
+msgid "Who can comment on my posts."
+msgstr "Хто може коментувати мої записи."
+
+msgid "Who can invite"
+msgstr "Хто може запрошувати"
+
+msgid "Who can post to my activity."
+msgstr "Хто може робити записи у моїй Активності."
+
+msgid "Who can view about information on my profile."
+msgstr "Хто може переглядати інформацію про мій профайл."
+
+msgid "Who can view comments on my post."
+msgstr "Хто може дивитись коментарі до мого запису."
+
+msgid "Who can view my followers."
+msgstr "Хто може бачити моїх послідовників."
+
+msgid "Who can view my follows."
+msgstr "Хто може дивитись за ким я слідую."
+
+msgid "Who can view my friends."
+msgstr "Хто може дивитись моїх друзів."
+
+msgid "Who can view my groups."
+msgstr "Хто може дивитись мої групи."
+
+msgid "Who can view my posts."
+msgstr "Хто може дивитись мої записи."
+
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+msgid "Write a comment..."
+msgstr "Пише коментар..."
+
+msgid "Write a message"
+msgstr "Написати повідомлення"
+
+msgid "Write a message..."
+msgstr "Пише повідомлення..."
+
+msgid "Year(s)"
+msgstr "Роки"
+
+msgid "Yes"
+msgstr "Так"
+
+msgid "You able to use addon but update is disabled"
+msgstr "Ви можете і надалі користуватися доповненням, але його оновлення відключено"
+
+msgid "You are is blocked by group administrator"
+msgstr "Ви заблоковані адміністратором групи"
+
+msgid "You are not logged-in"
+msgstr "Ви не ввійшли"
+
+msgid "You don't have any conversations started."
+msgstr "Ви не почали жодного діалогу."
+
+msgid "You don't have any unread messages."
+msgstr "У Вас немає непрочитаних повідомлень."
+
+msgid "You have no Currency for now. %s your first Membership Currency!"
+msgstr "Наразі Ви не маєте жодної Валюти. %s Вашу першу Мембершип Валюту!"
+
+msgid "You have no Membership Drip for now. Go to any Post / Page or other content edit on your site - and enable Dripping there."
+msgstr "Наразі Ви не маєте жодного Крапаючого Контенту у Мембершип. Перейдіть на редагування будь-якого Посту / Сторінки або іншого контенту на Вашому сайті - та ввімкніть Крапання там."
+
+msgid "You have no Membership Levels for now."
+msgstr "Наразі Ви не маєте жодного Рівня Мембершип."
+
+msgid "You have no Membership Levels for now. %s your first Membership Level!"
+msgstr "Наразі Ви не маєте жодного Рівня Мембершип. %s Ваш перший Рівень Мембершип!"
+
+msgid "You have no Membership Levels for now. To protect your content by Membership Level - %s your first Level."
+msgstr "Наразі Ви не маєте жодного Рівня Мембершип. Щоб захистити Ваш контент за допомогою Мембершип Рівнів - %s Ваш перший Рівень."
+
+msgid "You have no Orders for now."
+msgstr "Зараз у вас немає замовлень."
+
+msgid "You have this Level"
+msgstr "Ви маєте цей Рівень"
+
+msgid "You just subscribed from this IP"
+msgstr "Ви тільки що підписалися з даного IP"
+
+msgid "You must authorize to use Constant Contact features"
+msgstr "Вам необхідно авторизуватися, щоб використовувати переваги Constant Contact "
+
+msgid "You will be redirected to the home page at %s seconds."
+msgstr "Ви будете переадресовані на домашню сторінку за %s секунд."
+
+msgid "You will be redirected to the home page at 10 seconds."
+msgstr "Ви будете переадресовані на домашню сторінку за 10 секунд."
+
+msgid "Your License Key from your account on"
+msgstr "Ваш Ключ Ліцензії від вашого аккаунту на"
+
+msgid "Your account at {site_name} is now active"
+msgstr "Ваш аккаунт на {site_name} зараз активний"
+
+msgid "Your account don't have permission to access this page"
+msgstr "Ваш аккаунт немає дозволу для доступу на цю сторінку"
+
+msgid "Your account don't have permission to read groups"
+msgstr "Ваш аккаунт немає дозволу читати ці групи"
+
+msgid "Your account don't have permission to see activity page"
+msgstr "Ваш аккаунт не має дозволу на перегляд сторінки активності"
+
+msgid "Your account don't have permission to see members page"
+msgstr "Ваш аккаунт не має дозволу на перегляд сторінки Мемберс"
+
+msgid "Your account don't have permission to see messages section"
+msgstr "Ваш аккаунт немає дозволу бачити розділ повідомлень"
+
+msgid "Your account don't have permissions to see activity page"
+msgstr "Ваш аккаунт не має дозволу на перегляд сторінки Активності"
+
+msgid "Your account has been confirmed."
+msgstr "Ваш аккаунт підтверджено."
+
+msgid "Your account has been deactivated"
+msgstr "Ваш аккаунт було деактивовано"
+
+msgid "Your account has been deleted"
+msgstr "Ваш аккаунт був видалений"
+
+msgid "Your account has been rejected"
+msgstr "Ваш аккаунт відхилено"
+
+msgid "Your account is pending review"
+msgstr "Ваш аккаунт очікує розгляду"
+
+msgid "Your changes could not be saved"
+msgstr "Ваші зміни не може бути збережено"
+
+msgid "Your changes has been saved."
+msgstr "Ваші зміни було збережено."
+
+msgid "Your email address, used on checkout procedure on"
+msgstr "Ваша email адреса, використана у процедурі перевірки на "
+
+msgid "Your license has expired"
+msgstr "Ваша ліцензія минула"
+
+msgid "Your password has been changed."
+msgstr "Ваш пароль було змінено."
+
+msgid "Your search returned no results."
+msgstr "Ваш пошук не дав результатів."
+
+msgid "Your secret key, generated on <a href=\"https://www.google.com/recaptcha/admin#list\" target=\"_blank\"> https://www.google.com/recaptcha/admin#list</a>. To get more info - check <a href=\"http://supsystic.com/create-recaptcha-field/\" target=\"_blank\">our tutorial.</a>"
+msgstr "Ваш секретний ключ, згенерований на <a href=\"https://www.google.com/recaptcha/admin#list\" target=\"_blank\"> https://www.google.com/recaptcha/admin#list</a>. Щоб отримати більше інформації - перевірте <a href=\"http://supsystic.com/create-recaptcha-field/\" target=\"_blank\">нашу консультацію.</a>"
+
+msgid "Your site key, generated on <a href=\"https://www.google.com/recaptcha/admin#list\" target=\"_blank\">https://www.google.com/recaptcha/admin#list</a>. To get more info - check <a href=\"http://supsystic.com/create-recaptcha-field/\" target=\"_blank\">our tutorial.</a>"
+msgstr "Ваш ключ сайту, згенерований на <a href=\"https://www.google.com/recaptcha/admin#list\" target=\"_blank\">https://www.google.com/recaptcha/admin#list</a>. Щоб отримати більше інформації - перевірте <a href=\"http://supsystic.com/create-recaptcha-field/\" target=\"_blank\">нашу консультацію.</a>"
+
+msgid "Your {site_name} password has been changed"
+msgstr "Ваш {site_name} пароль було змінено"
+
+msgid "[{site_name}] Account deleted"
+msgstr "[{site_name}] Аккаунт видалено"
+
+msgid "[{site_name}] New user account"
+msgstr "[{site_name}] Аккаунт нового користувача"
+
+msgid "is required"
+msgstr "є необхідним"
+
+msgid "of"
+msgstr "з"
+
+msgid "per"
+msgstr "за"
+
+msgid "required"
+msgstr "обов'язково"
+
+msgid "right after"
+msgstr "зразу після"
+
+msgid "this link"
+msgstr "цей лінк"
+
+msgid "{display_name} has just created an account on {site_name}.<br>To view their profile click here:<br><br><a href=\"{user_profile_link}\">{user_profile_link}</a><br><br>Here is the submitted registration form:<br><br>{submitted_registration}{% endmacro %}{% macro account_needs_review_notification_subject() %}[{site_name}] New user awaiting review{% endmacro %}{% macro account_needs_review_notification_body() %}{display_name} has just applied for membership to {site_name} and is waiting to be reviewed.<br><br>To review this member please click the following link:<br><br><a href=\"{user_profile_link}\">{user_profile_link}</a><br><br>Here is the submitted registration form:<br><br>{submitted_registration}"
+msgstr "{display_name} тільки що створив аккаунт на {site_name}.<br>Щоб переглянути його профайл натисніть тут:<br><br><a href=\"{user_profile_link}\">{user_profile_link}</a><br><br>Відправлена реєстраційна форма знаходиться тут:<br><br>{submitted_registration}{% endmacro %}{% macro account_needs_review_notification_subject() %}[{site_name}] Новий користувач очікує перегляду {% endmacro %}{% macro account_needs_review_notification_body() %}{display_name} тільки що подав(ла) заявку на Мембершип {site_name} і очікує на перегляд.<br><br>Щоб переглянути цього користувача, як члена Мембершип, перейдіть за посиланням:<br><br><a href=\"{user_profile_link}\">{user_profile_link}</a><br><br>Надіслана реєстраційна форма є тут:<br><br>{submitted_registration}"
+
+msgid "{display_name} has just deleted their {site_name} account."
+msgstr "{display_name} тільки що видалив власний {site_name} аккаунт"

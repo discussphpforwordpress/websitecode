@@ -1,0 +1,52 @@
+{% if isPostComment(activity.group) %}
+<div class="mp-activity-comment-form" data-context="{{ context }}">
+	<div>
+		{% if context == 'group' and canEditGroup(requestedGroup) %}
+			<div class="mp-comment-form-author comment-as" data-group-id="{{ requestedGroup.id }}">
+				<div class="ui pointing left top dropdown">
+					<div class="author">
+						<img src="{{ groupLogo(requestedGroup, 'small') }}" class="activity-author-group" alt="">
+						<img src="{{ userAvatar(currentUser, 'small') }}" class="activity-author-user" style="display:none;" alt="">
+					</div>
+					<i class="dropdown icon"></i>
+					<div class="menu">
+						<div class="header">{{ translate('Comment as') }}</div>
+						<div class="divider"></div>
+						<div class="item" data-value="group">
+							<img class="ui avatar image" src="{{ groupLogo(requestedGroup, 'small') }}" alt="">
+							{{ requestedGroup.name }}
+						</div>
+						<div class="item" data-value="user">
+							<img class="ui avatar image" src="{{ userAvatar(currentUser, 'small') }}" alt="">
+							{{ currentUser.displayName }}
+						</div>
+					</div>
+				</div>
+			</div>
+		{% else %}
+			<div class="mp-comment-form-author">
+				<img class="ui mini image" src="{{ userAvatar(currentUser, 'small') }}" alt="">
+			</div>
+		{% endif %}
+
+		<div class="ui form mp-comment-form">
+			<textarea class="mp-comment-textarea" rows="1" placeholder="{{ placeholder|default(translate('Write a comment...')) }}"></textarea>
+			<div class="mp-comment-form-action post-form-buttons">
+				<i class="icon attach mbsActivityCommentAttachBtn" data-action="mbs-add-attachment"><span class="icon attach"></span></i>
+				<i class="send icon" data-action="send-comment"></i>
+				<i class="notched circle loading icon" style="display: none"></i>
+			</div>
+			<div class="mp-comment-form-edit-action" style="display: none">
+				<button class="ui floating icon button mini right floated primary" data-action="save">{{ translate('Save') }}</button>
+				<button class="ui floating icon button mini right floated secondary" data-action="cancel">{{ translate('Cancel') }}</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="ui segment mp-attachment-images" style="display:none;"></div>
+	
+	<div class="ui segment mp-attachment-link" style="display:none;">
+		<div class="ui active centered inline loader" style="display:none;"></div>
+	</div>
+</div>
+{% endif %}

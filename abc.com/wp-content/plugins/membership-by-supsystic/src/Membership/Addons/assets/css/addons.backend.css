@@ -1,0 +1,15 @@
+.sc-header-item {
+    opacity: 0;
+    z-index: 0;
+    left: -200%;
+    top: -200%;
+    position: absolute;
+    transition: opacity 500ms;
+}
+
+.sc-header-item.active {
+    z-index: 1;
+    opacity: 1;
+    position: relative;
+    left: auto;
+}

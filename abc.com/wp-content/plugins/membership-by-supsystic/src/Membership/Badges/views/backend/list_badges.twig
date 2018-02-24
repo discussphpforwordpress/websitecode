@@ -1,0 +1,68 @@
+{% import "@base/macros/options.twig" as options %}
+<section data-switch-content="badges-edit">
+	<ul id="mbsBadgesTblNavBtnsShell" class="supsystic-bar-controls">
+		<li title="{{ translate('Create new Membership Badges') }}">
+			<button class="sc-button primary mbsCreateBadgesBtn" data-toolbar-button>
+				<i class="fa fa-fw fa-plus"></i>
+				{{ translate('Add New') }}
+			</button>
+		</li>
+		<li title="{{ translate('Delete selected') }}">
+			<button class="sc-button primary" id="mbsBadgesTblRemoveGroupBtn" disabled data-toolbar-button>
+				<i class="fa fa-fw fa-trash-o"></i>
+				{{ translate('Delete') }}
+			</button>
+		</li>
+		<li title="{{ translate('Search') }}">
+			<input id="mbsBadgesTblSearchTxt" type="text" name="tbl_search" placeholder="{{ translate('Search') }}">
+		</li>
+	</ul>
+	<div id="mbsBadgesTblNavShell" class="supsystic-tbl-pagination-shell"></div>
+	<div style="clear: both;"></div>
+	<hr />
+	<table id="mbsBadgesTbl"></table>
+	<div id="mbsBadgesTblNav"></div>
+	<div id="mbsBadgesTblEmptyMsg" style="display: none;">
+		<h3>{{ translate('You have no Membership Badges for now. %s your first Membership Badge!')
+			| format('<a href="#" onclick="Membership.switchWnd(\'badges-edit\');return false;" style="font-style: italic; text-decoration: underline;" class="mbsCreateLelvelBtn">' ~ translate('Create') ~ '</a>')
+			| raw }}</h3>
+	</div>
+	<div style="clear: both;"></div>
+</section>
+<div class="sc-switch-wnd" data-switch="badges-edit">
+	<form id="mbsMembershipBadgesFrm">
+		<div class="mp-options">
+			<button class="sc-button primary mbsBackBadgesBtn">
+				<i class="fa fa-fw fa-angle-double-left"></i>
+				{{ translate('Back') }}
+			</button>
+			{{ options.saveButton(translate('Save'), 'mbsSaveBadgesBtn') }}
+			<h3>{{ translate('Main') }}</h3>
+			{{ options.inputRow(translate('Name'), 'name') }}
+			{{ options.inputRow(translate('Caption'), 'caption') }}
+			<div class="mp-option">
+				<div class="row">
+					<div class="col-md-4">
+						{{ options.label(translate('Badge img')) }}
+					</div>
+					<div class="col-md-8">
+						<div class="mp-option-input">
+							<div class="mp-option-input">
+								<div class="mp-default-image">
+									<img class="img_src" style="max-width:50px;max-height: 50px; display: none" src="">
+									<button class="mp-option-button sc-button primary mp-change">{{ translate('Change') }}</button>
+									<button class="mp-option-button sc-button primary mp-set-to-default mp-remove-info"
+									>{{ translate('Remove') }}</button>
+									{{ options.hiddenInput('img_id') }}
+									{{ options.hiddenInput('img_src') }}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{ options.hiddenInput('id') }}
+			{{ options.saveButtonRow(translate('Save'), '', '', 'mbsSaveBadgesBtn') }}
+		</div>
+	</form>
+</div>

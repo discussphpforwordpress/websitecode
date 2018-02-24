@@ -1,0 +1,659 @@
+{% extends "@base/layouts/backend.twig" %}
+{% import "@base/macros/options.twig" as options %}
+{#{% import "@mail/backend/macros/email-message-templates.twig" as templates %}#}
+
+{% block head %}
+	<div class="sc-tabs">
+		<a href="#" class="tab active" data-target="emails">
+			<i class="fa fa-envelope"></i>{{ translate('Emails') }}
+		</a>
+		<a href="#" class="tab" data-target="notifications">
+			<i class="fa fa-bell"></i>{{ translate('Notifications') }}
+		</a>
+		<button data-save-settings class="save-settings sc-button icon-button primary">
+			<i class="fa fa-save"></i>
+			<span>{{ translate('Save Settings') }}</span>
+		</button>
+	</div>
+{% endblock %}
+
+{% block mainHeader %}
+	<div class="sc-header">
+		<h2>{{ translate('Mails') }}</h2>
+	</div>
+{% endblock %}
+
+{% block main %}
+	<div class="sc-tab-content active mbsMailsMenuTab" data-tab="emails">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+
+					{{ options.inputRow(
+						translate('Mail appears from'),
+						'emails[mail-appears-from]',
+						settings.emails['mail-appears-from'],
+						'mail-appears-from',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.emailRow(
+						translate('Mail appears from address'),
+						'emails[mail-appears-from-address]',
+						settings.emails['mail-appears-from-address'],
+						'mail-appears-from-address',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.checkboxSettingRow(
+						translate('Use HTML for E-mails'),
+						[{
+							'name': 'emails[use-html-for-emails]',
+							'value': settings.emails['use-html-for-emails'],
+							'checked': settings.emails['use-html-for-emails'] == 'true'
+						}],
+						null, null, null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.checkboxSettingRow(
+						translate('Account Welcome Email'),
+						[{
+							'name': 'emails[account-welcome-email]',
+							'value': settings.emails['account-welcome-email'],
+							'checked': settings.emails['account-welcome-email'] == 'true'
+						}],
+						'account-welcome-email',
+						'',
+						{
+							'edit': {
+								'label': translate('Edit')
+							},
+							'send': {
+								'label': translate('Send Test')
+							},
+							'reset': {
+								'label': translate('Reset to Default')
+							}
+						},
+						null, {'mbsThinCol': 1}
+					) }}
+					
+					{{ options.inputRow(
+						translate('Account Welcome Email Subject'),
+						'emails[account-welcome-email-subject]',
+						settings.emails['account-welcome-email-subject'],
+						'account-welcome-email-subject',
+						'style="display:none;"'
+					) }}
+					
+					{{ options.textareaRow(
+						translate('Account Welcome Email Body'),
+						'emails[account-welcome-email-body]',
+						settings.emails['account-welcome-email-body'],
+						'account-welcome-email-body',
+						'style="display:none;"'
+					) }}
+
+					{{ options.checkboxSettingRow(
+						translate('Account Activation Email'),
+						[{
+							'name': 'emails[account-activation-email]',
+							'value': settings.emails['account-activation-email'],
+							'checked': settings.emails['account-activation-email'] == 'true'
+						}],
+						'account-activation-email',
+						'',
+						{
+							'edit': {
+								'label': translate('Edit')
+							},
+							'send': {
+								'label': translate('Send Test')
+							},
+							'reset': {
+								'label': translate('Reset to Default')
+							}
+						},
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(
+						translate('Account Activation Email Subject'),
+						'emails[account-activation-email-subject]',
+						settings.emails['account-activation-email-subject'],
+						'account-activation-email-subject',
+						'style="display:none;"'
+					) }}
+
+					{{ options.textareaRow(
+						translate('Account Activation Email Body'),
+						'emails[account-activation-email-body]',
+						settings.emails['account-activation-email-body'],
+						'account-activation-email-body',
+						'style="display:none;"'
+					) }}
+
+					{{ options.checkboxSettingRow(
+						translate('Pending Review Email'),
+						[{
+							'name': 'emails[pending-review-email]',
+							'value': settings.emails['pending-review-email'],
+							'checked': settings.emails['pending-review-email'] == 'true'
+						}],
+						'pending-review-email',
+						'',
+						{
+							'edit': {
+								'label': translate('Edit')
+							},
+							'send': {
+								'label': translate('Send Test')
+							},
+							'reset': {
+								'label': translate('Reset to Default')
+							}
+						},
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(
+						translate('Pending Review Email Subject'),
+						'emails[pending-review-email-subject]',
+						settings.emails['pending-review-email-subject'],
+						'pending-review-email-subject',
+						'style="display:none;"'
+					) }}
+
+					{{ options.textareaRow(
+						translate('Pending Review Email Body'),
+						'emails[pending-review-email-body]',
+						settings.emails['pending-review-email-body'],
+						'pending-review-email-body',
+						'style="display:none;"'
+					) }}
+
+					{{ options.checkboxSettingRow(
+						translate('Account Approved Email'),
+						[{
+							'name': 'emails[account-approved-email]',
+							'value': settings.emails['account-approved-email'],
+							'checked': settings.emails['account-approved-email'] == 'true'
+						}],
+						'account-approved-email',
+						'',
+						{
+							'edit': {
+								'label': translate('Edit')
+							},
+							'send': {
+								'label': translate('Send Test')
+							},
+							'reset': {
+								'label': translate('Reset to Default')
+							}
+						},
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(
+						translate('Account Approved Email Subject'),
+						'emails[account-approved-email-subject]',
+						settings.emails['account-approved-email-subject'],
+						'account-approved-email-subject',
+						'style="display:none;"'
+					) }}
+
+					{{ options.textareaRow(
+						translate('Account Approved Email Body'),
+						'emails[account-approved-email-body]',
+						settings.emails['account-approved-email-body'],
+						'account-approved-email-body',
+						'style="display:none;"'
+					) }}
+
+					{{ options.checkboxSettingRow(
+						translate('Account Rejected Email'),
+						[{
+							'name': 'emails[account-rejected-email]',
+							'value': settings.emails['account-rejected-email'],
+							'checked': settings.emails['account-rejected-email'] == 'true'
+						}],
+						'account-rejected-email',
+						'',
+						{
+							'edit': {
+								'label': translate('Edit')
+							},
+							'send': {
+								'label': translate('Send Test')
+							},
+							'reset': {
+								'label': translate('Reset to Default')
+							}
+						},
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(
+						translate('Account Rejected Email Subject'),
+						'emails[account-rejected-email-subject]',
+						settings.emails['account-rejected-email-subject'],
+						'account-rejected-email-subject',
+						'style="display:none;"'
+					) }}
+
+					{{ options.textareaRow(
+						translate('Account Rejected Email Body'),
+						'emails[account-rejected-email-body]',
+						settings.emails['account-rejected-email-body'],
+						'account-rejected-email-body',
+						'style="display:none;"'
+					) }}
+
+					{{ options.checkboxSettingRow(
+						translate('Account Deactivation Email'),
+						[{
+							'name': 'emails[account-deactivation-email]',
+							'value': settings.emails['account-deactivation-email'],
+							'checked': settings.emails['account-deactivation-email'] == 'true'
+						}],
+						'account-deactivation-email',
+						'',
+						{
+							'edit': {
+								'label': translate('Edit')
+							},
+							'send': {
+								'label': translate('Send Test')
+							},
+							'reset': {
+								'label': translate('Reset to Default')
+							}
+						},
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(
+						translate('Account Deactivation Email Subject'),
+						'emails[account-deactivation-email-subject]',
+						settings.emails['account-deactivation-email-subject'],
+						'account-deactivation-email-subject',
+						'style="display:none;"'
+					) }}
+
+					{{ options.textareaRow(
+						translate('Account Deactivation Email Body'),
+						'emails[account-deactivation-email-body]',
+						settings.emails['account-deactivation-email-body'],
+						'account-deactivation-email-body',
+						'style="display:none;"'
+					) }}
+
+					{{ options.checkboxSettingRow(
+						translate('Account Deleted Email'),
+						[{
+							'name': 'emails[account-deleted-email]',
+							'value': settings.emails['account-deleted-email'],
+							'checked': settings.emails['account-deleted-email'] == 'true'
+						}],
+						'account-deleted-email',
+						'',
+						{
+							'edit': {
+								'label': translate('Edit')
+							},
+							'send': {
+								'label': translate('Send Test')
+							},
+							'reset': {
+								'label': translate('Reset to Default')
+							}
+						},
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(
+						translate('Account Deleted Email Subject'),
+						'emails[account-deleted-email-subject]',
+						settings.emails['account-deleted-email-subject'],
+						'account-deleted-email-subject',
+						'style="display:none;"'
+					) }}
+
+					{{ options.textareaRow(
+						translate('Account Deleted Email Body'),
+						'emails[account-deleted-email-body]',
+						settings.emails['account-deleted-email-body'],
+						'account-deleted-email-body',
+						'style="display:none;"'
+					) }}
+
+					{{ options.checkboxSettingRow(
+						translate('Password Reset Email'),
+						[{
+							'name': 'emails[password-reset-email]',
+							'value': settings.emails['password-reset-email'],
+							'checked': 'true',
+							'attributes': 'disabled="true"'
+						}],
+						'password-reset-email',
+						'',
+						{
+							'edit': {
+								'label': translate('Edit')
+							},
+							'send': {
+								'label': translate('Send Test')
+							},
+							'reset': {
+								'label': translate('Reset to Default')
+							}
+						},
+						null, {'mbsThinCol': 1}
+					) }}
+					
+					{{ options.inputRow(
+						translate('Password Reset Email Subject'),
+						'emails[password-reset-email-subject]',
+						settings.emails['password-reset-email-subject'],
+						'password-reset-email-subject',
+						'style="display:none;"'
+					) }}
+
+					{{ options.textareaRow(
+						translate('Password Reset Email Body'),
+						'emails[password-reset-email-body]',
+						settings.emails['password-reset-email-body'],
+						'password-reset-email-body',
+						'style="display:none;"'
+					) }}
+
+					{{ options.checkboxSettingRow(
+						translate('Password Changed Email'),
+						[{
+							'name': 'emails[password-changed-email]',
+							'value': settings.emails['password-changed-email'],
+							'checked': settings.emails['password-changed-email'] == 'true'
+						}],
+						'password-changed-email',
+						'',
+						{
+							'edit': {
+								'label': translate('Edit')
+							},
+							'send': {
+								'label': translate('Send Test')
+							},
+							'reset': {
+								'label': translate('Reset to Default')
+							}
+						},
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(
+						translate('Password Changed Email Subject'),
+						'emails[password-changed-email-subject]',
+						settings.emails['password-changed-email-subject'],
+						'password-changed-email-subject',
+						'style="display:none;"'
+					) }}
+
+					{{ options.textareaRow(
+						translate('Password Changed Email Body'),
+						'emails[password-changed-email-body]',
+						settings.emails['password-changed-email-body'],
+						'password-changed-email-body',
+						'style="display:none;"'
+					) }}
+
+					{{ options.checkboxSettingRow(
+						translate('New friends and followers notification'),
+						[{
+							'name': 'emails[notification-friends-followers]',
+							'value': settings.emails['notification-friends-followers'],
+							'checked': settings.emails['notification-friends-followers'] == 'true'
+						}],
+						'notification-friends-followers',
+						'',
+						{
+							'edit': {
+								'label': translate('Edit')
+							},
+							'send': {
+								'label': translate('Send Test')
+							},
+							'reset': {
+								'label': translate('Reset to Default')
+							}
+						},
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(
+						translate('Friends/Followers Notification Subject'),
+						'emails[notification-friends-followers-subject]',
+						settings.emails['notification-friends-followers-subject'],
+						'notification-friends-followers-subject',
+						'style="display:none;"'
+					) }}
+
+					{{ options.textareaRow(
+						translate('Friends/Followers Notification Body'),
+						'emails[notification-friends-followers-body]',
+						settings.emails['notification-friends-followers-body'],
+						'notification-friends-followers-body',
+						'style="display:none;"'
+					) }}
+
+					{{ options.checkboxSettingRow(
+					translate('Message Recieve Notification'),
+						[{
+							'name': 'emails[message-recieve-notification]',
+							'value': settings.emails['message-recieve-notification'],
+							'checked': settings.emails['message-recieve-notification'] == 'true'
+						}],
+						'message-recieve-notification',
+						'',
+						{
+							'edit': {
+								'label': translate('Edit')
+							},
+								'send': {
+								'label': translate('Send Test')
+							},
+								'reset': {
+								'label': translate('Reset to Default')
+							}
+						},
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(
+						translate('Message Recieve Notification Subject'),
+						'emails[message-recieve-notification-subject]',
+						settings.emails['message-recieve-notification-subject'],
+						'message-recieve-notification-subject',
+						'style="display:none;"'
+					) }}
+
+					{{ options.textareaRow(
+						translate('Message Recieve Notification Body'),
+						'emails[message-recieve-notification-body]',
+						settings.emails['message-recieve-notification-body'],
+						'message-recieve-notification-body',
+						'style="display:none;"'
+					) }}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sc-tab-content mbsMailsMenuTabNotification" data-tab="notifications">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+					
+					{{ options.inputRow(translate('Messages Refresh Period'),
+						'notifications[messages-refresh-period]',
+						settings.notifications['messages-refresh-period']|default(7),
+						'messages-refresh-period',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.emailRow(translate('Email address for notifications'),
+						'notifications[notifications-email-address]',
+						settings.notifications['notifications-email-address'],
+						'notifications-email-address',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.checkboxSettingRow(
+						translate('New User Notification'),
+						[{
+							'name': 'notifications[new-user-notification]',
+							'value': settings.notifications['new-user-notification'],
+							'checked': settings.notifications['new-user-notification'] == 'true'
+						}],
+						'new-user-notification',
+						'',
+						{
+							'edit': {
+								'label': translate('Edit')
+							},
+							'send': {
+								'label': translate('Send Test')
+							},
+							'reset': {
+								'label': translate('Reset to Default')
+							}
+						},
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(
+						translate('New User Notification Subject'),
+						'notifications[new-user-notification-subject]',
+						settings.notifications['new-user-notification-subject'],
+						'new-user-notification-subject',
+						'style="display:none;"'
+					) }}
+
+					{{ options.textareaRow(
+						translate('New User Notification Body'),
+						'notifications[new-user-notification-body]',
+						settings.notifications['new-user-notification-body'],
+						'new-user-notification-body',
+						'style="display:none;"'
+					) }}
+
+					{{ options.checkboxSettingRow(
+						translate('Account Needs Review Notification'),
+						[{
+							'name': 'notifications[account-needs-review-notification]',
+							'value': settings.notifications['account-needs-review-notification'],
+							'checked': settings.notifications['account-needs-review-notification'] == 'true'
+						}],
+						'account-needs-review-notification',
+						'',
+						{
+							'edit': {
+								'label': translate('Edit')
+							},
+							'send': {
+								'label': translate('Send Test')
+							},
+							'reset': {
+								'label': translate('Reset to Default')
+							}
+						},
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(
+						translate('Account Needs Review Notification Subject'),
+						'notifications[account-needs-review-notification-subject]',
+						settings.notifications['account-needs-review-notification-subject'],
+						'account-needs-review-notification-subject',
+						'style="display:none;"'
+					) }}
+
+					{{ options.textareaRow(
+						translate('Account Needs Review Notification Body'),
+						'notifications[account-needs-review-notification-body]',
+						settings.notifications['account-needs-review-notification-body'],
+						'account-needs-review-notification-body',
+						'style="display:none;"'
+					) }}
+
+					{{ options.checkboxSettingRow(
+						translate('Account Deletion Notification'),
+						[{
+							'name': 'notifications[account-deletion-notification]',
+							'value': settings.notifications['account-deletion-notification'],
+							'checked': settings.notifications['account-deletion-notification'] == 'true'
+						}],
+						'account-deletion-notification',
+						'',
+						{
+							'edit': {
+								'label': translate('Edit')
+							},
+							'send': {
+								'label': translate('Send Test')
+							},
+							'reset': {
+								'label': translate('Reset to Default')
+							}
+						},
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(
+						translate('Account Deletion Notification Subject'),
+						'notifications[account-deletion-notification-subject]',
+						settings.notifications['account-deletion-notification-subject'],
+						'account-deletion-notification-subject',
+						'style="display:none;"'
+					) }}
+
+					{{ options.textareaRow(
+						translate('Account Deletion Notification Body'),
+						'notifications[account-deletion-notification-body]',
+						settings.notifications['account-deletion-notification-body'],
+						'account-deletion-notification-body',
+						'style="display:none;"'
+					) }}
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mp-modal edit-email-options-modal sc-hidden">
+		<div class="mp-option" id="email-subject">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="mp-option-label">
+						<span id="email-subject-label" title=""></span>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<input id="email-subject-input" class="sc-input" name="" value="">
+				</div>
+			</div>
+		</div>
+		<div class="mp-option" id="email-body">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="mp-option-label">
+						<span id="email-body-label" title=""></span>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<textarea style="width: 100%" id="email-body-input" class="sc-input" name="" rows="10"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% import "@base/macros/options.twig" as options %}
+<section data-switch-content="badges-and-points-edit">
+	<ul id="mbsBadgesAndPointsTblNavBtnsShell" class="supsystic-bar-controls">
+		<li title="{{ translate('Create new Membership Level') }}">
+			<button class="sc-button primary mbsCreateBadgesAndPointsBtn" data-toolbar-button>
+				<i class="fa fa-fw fa-plus"></i>
+				{{ translate('Add New') }}
+			</button>
+		</li>
+		<li title="{{ translate('Delete selected') }}">
+			<button class="sc-button primary" id="mbsBadgesAndPointsTblRemoveGroupBtn" disabled data-toolbar-button>
+				<i class="fa fa-fw fa-trash-o"></i>
+				{{ translate('Delete') }}
+			</button>
+		</li>
+		<li title="{{ translate('Search') }}">
+			<input id="mbsBadgesAndPointsTblSearchTxt" type="text" name="tbl_search" placeholder="{{ translate('Search') }}">
+		</li>
+	</ul>
+	<div id="mbsBadgesAndPointsTblNavShell" class="supsystic-tbl-pagination-shell"></div>
+	<div style="clear: both;"></div>
+	<hr />
+	<table id="mbsBadgesAndPointsTbl"></table>
+	<div id="mbsBadgesAndPointsTblNav"></div>
+	<div id="mbsBadgesAndPointsTblEmptyMsg" style="display: none;">
+		<h3>{{ translate('You have no Membership Badges And Points for now. %s your first Membership Badges And Points!')
+			| format('<a href="#" onclick="Membership.switchWnd(\'badges-and-points-edit\');return false;" style="font-style: italic; text-decoration: underline;" class="mbsCreateBadgesAndPointsBtn">' ~ translate('Create') ~ '</a>')
+			| raw }}</h3>
+	</div>
+	<div style="clear: both;"></div>
+</section>
+<div class="sc-switch-wnd" data-switch="badges-and-points-edit">
+	<form id="mbsMembershipBadgesAndPointsFrm">
+		<div class="mp-options">
+			<button class="sc-button primary mbsBackBadgesAndPointsBtn">
+				<i class="fa fa-fw fa-angle-double-left"></i>
+				{{ translate('Back') }}
+			</button>
+			{{ options.saveButton(translate('Save'), 'mbsSaveBadgesAndPointsBtn') }}
+			<h3>{{ translate('Main') }}</h3>
+			{{ options.hiddenInput('user_id') }}
+			<div class="mp-option">
+				<div class="row">
+					<div class="col-md-4">
+						{{ options.label(translate('Select user')) }}
+					</div>
+					<div class="col-md-8">
+						{{ options.selectInput(allUsers, 'all_users' ) }}
+					</div>
+				</div>
+			</div>
+			{{ options.inputRow(translate('Points count'), 'points_count') }}
+			{{ options.hiddenInput('badges_id') }}
+			<div class="mp-option">
+				<div class="row">
+					<div class="col-md-4">
+						{{ options.label(translate('Select badge')) }}
+					</div>
+					<div class="col-md-8">
+						{{ options.selectInput(allBadges, 'all_badges' ) }}
+					</div>
+				</div>
+			</div>
+			{{ options.hiddenInput('id') }}
+			{{ options.saveButtonRow(translate('Save'), '', '', 'mbsSaveBadgesAndPointsBtn') }}
+		</div>
+	</form>
+</div>

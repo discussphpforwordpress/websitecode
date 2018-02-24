@@ -1,0 +1,5 @@
+{% extends '@groups/group.twig' %}
+
+{% block content %}
+	{% include '@activity/partials/activities-container.twig' with {'activities': activities, 'context': 'group', 'disablePostForm': not currentUserHasGroupPermission('post-activity')} %}
+{% endblock %}

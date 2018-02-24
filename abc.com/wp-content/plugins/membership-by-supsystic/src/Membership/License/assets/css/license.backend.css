@@ -1,0 +1,87 @@
+.mp-addons-table {
+	width: 100%;
+	margin-top: 1em;
+}
+
+.mp-addons-table th {
+	text-align: left;
+}
+
+.mp-addons-table th,
+.mp-addons-table td {
+	padding-bottom: 0.5em;
+	vertical-align: text-top;
+	border-bottom: 1px solid #ccc;
+}
+
+.mp-addons-table td {
+	padding: 1em 0;
+}
+
+.mp-addons-table td:first-child {
+	width: 33.3%;
+	font-size: 16px;
+}
+
+.mp-addons-table td:last-child {
+	width: 66.3%;
+}
+
+.activate-addons-modal .mp-option-input {
+	display: block;
+	max-width: none;
+}
+
+.mp-addon-state .activated-state, 
+.mp-addon-state .expired-state, 
+.mp-addon-state .not-activated-state,
+.mp-addon-state .error-state {
+	display: none;
+}
+
+.mp-addon-state.activated .activated-state {
+	display: table-cell;
+}
+
+.mp-addon-state.expired .expired-state {
+	display: table-cell;
+}
+
+.mp-addon-state.not-activated .not-activated-state {
+	display: table-cell;
+}
+
+.mp-addon-state.error .error-state {
+	display: table-cell;
+}
+
+.mp-addon-state.activated .activated-state b {
+	color: green;
+}
+
+.mp-addon-state.expired .expired-state b {
+	color: #d6ab2c;
+}
+
+.mp-addon-state.not-activated .not-activated-state b {
+	color: #d62c2c;
+}
+
+.mp-addon-state.error .error-state b {
+	color: red;
+}
+
+
+.mp-addons-activation-form > * {
+	display: inline-block;
+}
+
+.mp-addons-activation-form > * + *{
+	margin-left: 1em;
+}
+
+.mp-addons-activation-form > input {
+	max-width: 15em;
+	margin-bottom: 1em;
+    width: auto!important;
+}

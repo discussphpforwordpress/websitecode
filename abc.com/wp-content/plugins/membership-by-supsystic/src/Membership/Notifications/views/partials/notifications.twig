@@ -1,0 +1,63 @@
+{% spaceless %}
+{% for notification in notifications %}
+	<div class="ui segment mp-notification {% if not notification.viewed %}not-viewed{% endif %}" data-id="{{ notification.id }}">
+		<div class="mp-notification-content">
+			<div class="mp-notification-content-text">
+				{% if notification.type == 'follow' %}
+				    {{ translate('%s is following you.')
+					    |format(
+					    	'<a href="' ~ profileUrl(notification.target) ~ '">' ~ notification.target.displayName ~ '</a>'
+					    )
+					    |raw
+				    }}
+				{% endif %}
+				{% if notification.type == 'groups_invite' %}
+				    {{ translate('%s invited you to join %s group.')
+					    |format(
+					    	'<a href="' ~ profileUrl(notification.target) ~ '">' ~ notification.target.displayName ~ '</a>',
+					    	'<a href="' ~ groupUrl(notification.group) ~ '">' ~ notification.group.name ~ '</a>'
+					    )
+					    |raw
+				    }}
+				{% endif %}
+				{% if notification.type == 'friendship_accept' %}
+				    {{ translate('%s accepted your friend reuqest.')
+					    |format(
+					    	'<a href="' ~ profileUrl(notification.target) ~ '">' ~ notification.target.displayName ~ '</a>'
+					    )
+					    |raw
+				    }}
+				{% endif %}
+				{% if notification.type == 'friendship_request' %}
+				    {{ translate('%s sent you a friend reuqest.')
+					    |format(
+					    	'<a href="' ~ profileUrl(notification.target) ~ '">' ~ notification.target.displayName ~ '</a>'
+					    )
+					    |raw
+				    }}
+				{% endif %}
+				{% if notification.type == 'message' %}
+				    {{ translate('%s sent you a message.')
+					    |format(
+					    	'<a href="' ~ profileUrl(notification.target) ~ '">' ~ notification.target.displayName ~ '</a>'
+					    )
+					    |raw
+				    }}
+				{% endif %}
+				{% if notification.type == 'group_new_note' %}
+                    {{ translate('New %s on group %s.')
+                    	|format('<a class="mm-autohide-notofication" data-id="' ~ notification.id ~ '" href="' ~ activityUrl(notification.object_id) ~ '">post</a>', '<a class="mm-autohide-notofication" data-id="' ~ notification.id ~ '" href="' ~ groupUrlById(notification.target_id) ~ '">' ~ groupNameById(notification.target_id) ~ '</a>') |raw
+                    }}
+				{% endif %}
+			</div>
+			<div class="mp-notification-content-date">
+				{{ notification.updated_at  }}
+			</div>
+		</div>
+		<i class="close icon remove-action"></i>
+		{% if not notification.viewed %}
+			<i class="checkmark icon set-viewed-action"></i>
+		{% endif %}
+	</div>
+{% endfor %}
+{% endspaceless %}

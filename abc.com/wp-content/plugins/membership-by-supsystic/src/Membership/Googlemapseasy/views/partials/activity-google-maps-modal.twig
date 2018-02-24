@@ -1,0 +1,161 @@
+<div class="ui small modal mp-google-maps-modal mbs-gg-tab-pages" data-tabs="google-maps-easy">
+	<i class="close icon"></i>
+	{# hiddens block #}
+	<div class="mbs-gg-tab-links mbs-hidden" data-tabs="google-maps">
+		<div class="mbs-gg-tab-link" data-tab-info="page1">google-maps presets</div>
+		<div class="mbs-gg-tab-link" data-tab-info="page2">google-maps maps</div>
+	</div>
+
+	{# PAGE 1 #}
+	<div class="header mbs-gg-tab-page" data-tab-info="page1">
+		{{ translate('Choose Google Maps Preset') }}
+	</div>
+	<div class="content mbs-gg-tab-page" data-tab-info="page1">
+		<div class="ui form">
+			<select id="googleMapsPresetSel">
+				<option value="">{{ translate('Select value') }}</option>
+				{% for val1 in googleMapsPresets %}
+					<option value="{{ val1.id }}">{{ val1.title }}</option>
+				{% endfor %}
+			</select>
+		</div>
+	</div>
+	<div class="actions mbs-gg-tab-page" data-tab-info="page1">
+		<button class="ui button mini primary gg-next disabled" id="mbs-google-maps-gg-next">{{ translate('Next') }}</button>
+		<button class="ui button mini secondary cancel">{{ translate('Cancel') }}</button>
+	</div>
+
+	{# PAGE 2 #}
+	<div class="header mbs-gg-tab-page" data-tab-info="page2">
+		{{ translate('Configure Google Map') }}
+	</div>
+	<div class="content mbs-gg-tab-page" data-tab-info="page2">
+		<div class="ui form">
+			<div class="mbs-gmaps-wrapper">
+				{% if googleMapsEasyHtmlArr|length %}
+					{% for htmlCode in googleMapsEasyHtmlArr %}
+						{{ htmlCode | raw }}
+					{% endfor %}
+				{% endif %}
+				<div class="mbs-add-marker-form">
+					<div class="mbsGme-page2-one-row">
+						<label> {{ translate('Markers list') }}</label>
+					</div>
+					<input type="button" id="mbsGoogleMapsEasyAddMarker" class="mbs-gmp-button ui button mini primary" value="{{ translate('Add Marker') }}"/>
+					<table class="mbsGme-marker-list-wrap" cellspacing="0" cellpadding="5">
+						<thead>
+						<tr>
+							<td>{{ translate('ID') }}</td>
+							<td>{{ translate('Icon') }}</td>
+							<td>{{ translate('Title') }}</td>
+							<td>{{ translate('Position') }}</td>
+							<td>{{ translate('Actions') }}</td>
+						</tr>
+						</thead>
+						<tbody class="mbsGme-marker-list-body">
+						</tbody>
+					</table>
+
+					<div class="mbs-add-marker-inputs">
+						<div class="mbsGme-page2-one-row">
+							<label>{{ translate('Address:')}}</label>
+							<input type="text" class="mbs-gmp-marker-address" id="mbs-gmp-add-marker-address"/>
+							<input type="hidden" id="mbsGmpMarkerMsg-nothing-was-found" value="{{ translate('Nothing was found') }}"/>
+							<input type="hidden" id="mbsGmpMarkerMsg-places" value="{{ translate('Places') }}"/>
+						</div>
+						<div class="mbsGme-page2-one-row">
+							<label>{{ translate('Marker Name:') }}</label>
+							<input type="text" class="mbs-gmp-marker-name" id="mbs-gmp-add-marker-name"/>
+						</div>
+						<div class="mbsGme-page2-one-row">
+							<label>{{ translate('Marker Description:')}}</label>
+							<input type="text" class="mbs-gmp-marker-descr" id="mbs-gmp-add-marker-descr"/>
+						</div>
+						<div class="mbsGme-page2-one-row">
+							<label>{{ translate('Icon:') }}</label>
+							<input type="button" class="ui button mini primary" id="mbsGoogleMapsEasyChooseIcon" value="{{ translate('Choose Icon') }}" data-img="{{ defaultIcon }}" data-id=""/>
+							{#<input type="button" class="ui button mini primary" id="mbsGoogleMapsEasyUploadIcon" value="{{ translate('Upload Icon') }}"/>#}
+						</div>
+						<div class="mbsGme-page2-one-row">
+							<label>{{ translate('Latitude:') }}</label>
+							<input type="text" class="mbs-gmp-marker-latitude" id="mbs-gmp-add-marker-latitude"/>
+						</div>
+						<div class="mbsGme-page2-one-row">
+							<label>{{ translate('Longitude:')}}</label>
+							<input type="text" class="mbs-gmp-marker-longitude" id="mbs-gmp-add-marker-longitude"/>
+						</div>
+						<div class="mbsGme-page2-one-row">
+							<input type="button" id="mbsGoogleMapsEasySaveMarker" class="mbs-gmp-button ui button mini primary" value="{{ translate('Save Marker') }}"/>
+							<input type="button" id="mbsGoogleMapsEasyCancelEditMarker" class="mbs-gmp-button ui button mini primary" value="{{ translate('Cancel') }}"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="actions mbs-gg-tab-page" data-tab-info="page2">
+		<button class="ui button mini primary mbs-modal-googleMaps-page2-btn-ok" id="mbs-gmp-modal-page2-ok">{{ translate('Save') }}</button>
+		<button class="ui button mini secondary cancel" id="mbs-gmp-modal-page2-cancel">{{ translate('Cancel') }}</button>
+	</div>
+
+	<input type="hidden" id="mbsGoogleMapsStrServerError" value="{{ translate('Server error!') }}"/>
+	<input type="hidden" id="mbsGme-marker-icon-types" value="{{ markerIconsList|json_encode }}"/>
+	<input type="hidden" id="mbsGme-default-marker-icon-url" value="{{ defaultIcon }}"/>
+	<input type="hidden" id="mbgGme-message-added" value="{{ translate('Added') }}"/>
+	<input type="hidden" id="mbsGme-current-map-id" value=""/>
+</div>
+
+<input type="hidden" class="mbsStrIncorrectGoogleMapsParams" value="{{ translate('Error! Incorrect GoogleMaps params!') }}"/>
+<div class="mbs-GoogleMaps-one-template mbs-hidden">
+	<div class="mbs-one-gg-image">
+		<div class="mbs-preview">
+			<img src="{{ defaultGoogleMapsImage }}" alt="">
+		</div>
+		<i class="close icon"></i>
+		<input type="hidden" class="mbsGoogleMapsEasyParams"/>
+	</div>
+</div>
+<!-- -->
+<input class="mbsGme-list-row-template-item mbs-hidden" value="
+	<tr class='mbsGme-marker-list-row'>
+		<td class='mbsGme-marker-list-id'>0</td>
+		<td class='mbsGme-marker-list-icon'>
+			<img class='mbsGme-marker-list-icon-img' src='{{ defaultIcon }}' />
+		</td>
+		<td class='mbsGme-marker-list-title'></td>
+		<td>
+			<span class='mbsGme-marker-list-lat'></span>
+			<span class='mbsGme-marker-list-lng'></span>
+		</td>
+		<td class='mbsGme-marker-list-buttons'>
+			<button class='button button-small mbsGme-marker-edit'>
+				<i class='icon edit'></i>
+			</button>
+			<button class='button button-small mbsGme-marker-remove'>
+				<i class='icon remove'></i>
+			</button>
+		</td>
+	</tr>
+"/>
+
+<!-- Modal window with Icon types (for markers) -->
+<div class="ui small modal mp-google-maps-marker-icons-modal mbs-gg-tab-pages" data-tabs="google-maps-easy-markers">
+	<i class="close icon"></i>
+	{# PAGE 1 #}
+	<div class="header mbs-gg-tab-page" data-tab-info="page1">
+		{{ translate('Choose Google Maps Marker Icon') }}
+	</div>
+	<div class="content mbs-gg-tab-page" data-tab-info="page1">
+		<div class="mbsGmeWndIconWrapper">
+			{% for oneMarker in markerIconsList %}
+				<div class="mbsGmeIconPreview" data-id="{{ oneMarker.id }}" title="{{ oneMarker.title }}">
+					<img src="{{ oneMarker.path }}" class="mbsGmeMarkerIcon"/>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="actions mbs-gg-tab-page" data-tab-info="page1">
+		<button class="ui button mini primary ok disabled" id="mbs-gme-marker-icon-ok-btn">{{ translate('Ok') }}</button>
+		<button class="ui button mini secondary cancel">{{ translate('Cancel') }}</button>
+	</div>
+</div>

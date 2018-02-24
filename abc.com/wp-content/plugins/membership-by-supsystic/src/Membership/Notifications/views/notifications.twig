@@ -1,0 +1,31 @@
+{% block content %}
+	{#<link rel="stylesheet" type="text/css" href="{{ assets('notifications', 'css/notifications.frontend.css') }}">#}
+	{% set categories = {
+		'messages': translate('Messages'),
+		'friends': translate('Friends'),
+		'groups': translate('Groups'),
+	} %}
+	
+	<div id="mp-notifications">
+		{% if notifications %}
+			<div class="ui basic vertical segment container fluid right aligned">
+				<button class="ui button mini primary mark-all-as-read">{{ translate('Mark all as read') }}</button>
+			</div>
+			
+			<div class="mp-notifications">
+				{% include '@notifications/partials/notifications.twig' %}
+			</div>
+			
+			<div class="ui basic segment" id="notifications-loader" style="display: none">
+				<div class="ui active loader"></div>
+			</div>
+		{% else %}
+			<div class="ui basic vertical segment">
+				<div class="ui message">
+					<p>{{ translate('You don\'t have unread notifications.') }}</p>
+				</div>
+			</div>
+		{% endif %}
+	</div>
+    {#<script type="text/javascript" src="{{ assets('notifications', 'js/notifications.frontend.js') }}"></script>#}
+{% endblock %}

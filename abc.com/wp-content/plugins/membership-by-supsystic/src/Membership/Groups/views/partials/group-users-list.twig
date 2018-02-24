@@ -1,0 +1,31 @@
+{% if canEditGroup(requestedGroup) %}
+	{% embed '@users/partials/users-list.twig' with {'users': users} %}
+		{% block actionButtons %}
+			{% if not isCurrentUser(user) %}
+				
+				{% if listType == 'approved' %}
+					{% if user.groupInfo.is_creator != 1 %}
+						<button class="ui mini primary button" data-action="block">{{ translate('Block') }}</button>
+						<button class="ui mini primary button" data-action="remove-from-group">{{ translate('Remove from group') }}</button>
+					{% endif %}
+				{% endif %}
+				
+				{% if listType == 'unapproved' %}
+					<button class="ui mini primary button" data-action="approve">{{ translate('Approve') }}</button>
+					<button class="ui mini primary button" data-action="unapprove">{{ translate('Unapprove') }}</button>
+				{% endif %}
+				
+				{% if listType == 'blocked' %}
+					<button class="ui mini primary button" data-action="unblock">{{ translate('Unblock') }}</button>
+				{% endif %}
+				
+				{% if listType == 'invited' %}
+					<button class="ui mini primary button" data-action="cancel-invitation">{{ translate('Cancel invitation') }}</button>
+				{% endif %}
+			{% endif %}
+		{% endblock %}
+	{% endembed %}
+{% else %}
+	{% include '@users/partials/users-list.twig' with {'users': users} %}
+{% endif %}
+

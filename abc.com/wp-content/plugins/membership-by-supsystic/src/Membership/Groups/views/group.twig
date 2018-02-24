@@ -1,0 +1,251 @@
+<div id="mp-group" class="sc-membership">
+	{% if not requestedGroup.isBlocked or currentUserCan('can-block-groups') %}
+		<div class="mp-cover-container">
+			<div class="ui inverted dimmer cover-loader">
+				<div class="ui loader"></div>
+			</div>
+			
+			<div class="mp-cover">
+				<img width="{{ settings.groups['cover-size'].width }}"
+				     height="{{ settings.groups['cover-size'].height }}"
+				     class="ui fluid image cover-image"
+				     src="{{ groupCover(requestedGroup, 'default') }}">
+			</div>
+			
+			{% if canEditGroup(requestedGroup) %}
+				<div class="mp-update-cover {% if isDefaultGroupCover(requestedGroup) %}default{% endif %}">
+					<div class="ui top right pointing dropdown item">
+						<i class="photo icon"></i>
+						<div class="menu">
+							<a class="item" data-action="upload-photo">{{ translate('Upload photo') }}</a>
+							<a class="item" data-action="remove-photo">{{ translate('Remove') }}</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="mp-crop-cover-action">
+					<button class="ui mini primary button" data-action="save-photo">{{ translate('Save') }}</button>
+					<button class="ui mini secondary button" data-action="cancel">{{ translate('Cancel') }}</button>
+				</div>
+			{% endif %}
+			
+			<div class="mp-group-display-name">{{ requestedGroup.name }}</div>
+			
+			<div class="mp-logo-container">
+				<div class="mp-logo {% if isDefaultGroupLogo(requestedGroup) %}default{% endif %} update-logo-menu">
+					<img width="{{ settings.groups['logo-size'].width }}"
+					     height="{{ settings.groups['logo-size'].height }}"
+					     src="{{ groupLogo(requestedGroup, 'default') }}"
+					     class="logo-image">
+					{% if canEditGroup(requestedGroup) %}
+						<div class="mp-update-logo-overlay">
+							<span>{{ translate('Change logo image') }}</span>
+						</div>
+						<div class="ui inverted dimmer logo-loader">
+							<div class="ui loader"></div>
+						</div>
+						<div class="ui top left pointing dropdown item">
+							<div class="menu">
+								<a class="item" data-action="upload-logo">{{ translate('Upload logo') }}</a>
+								<a class="item" data-action="remove-logo">{{ translate('Remove') }}</a>
+							</div>
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+		
+		{% if requestedGroup.currentUserIsBanned %}
+			<div class="ui negative message">
+				<p>{{ translate('You are is blocked by group administrator') }}</p>
+			</div>
+		{% else %}
+			{% if userLoggedIn %}
+				<div class="ui secondary mini menu mp-group-action-menu">
+					<div class="right menu" style="display: none">
+						{% if canSendJoinRequest(requestedGroup) %}
+							<div class="horizontally fitted item">
+								<button class="ui mini primary button" data-action="send-request">{{ translate('Send a request') }}
+								</button>
+							</div>
+						{% endif %}
+						{% if canCancelJoinRequest(requestedGroup) %}
+							<div class="horizontally fitted item">
+								<button class="ui mini primary button" data-action="cancel-request">{{ translate('Cancel request') }}
+								</button>
+							</div>
+						{% endif %}
+						{% if canJoinGroup(requestedGroup) %}
+							<div class="horizontally fitted item">
+								<button class="ui mini primary button" data-action="join-group">{{ translate('Join group') }}</button>
+							</div>
+						{% endif %}
+						{% if canLeaveGroup(requestedGroup) %}
+							<div class="horizontally fitted item">
+								<button class="ui mini primary button" data-action="leave-group">{{ translate('Leave group') }}</button>
+							</div>
+						{% endif %}
+						{% if canFollowGroup(requestedGroup) %}
+							<div class="horizontally fitted item">
+								<button class="ui mini primary button" data-action="follow">{{ translate('Follow') }}</button>
+							</div>
+						{% endif %}
+						{% if canUnfollowGroup(requestedGroup) %}
+							<div class="horizontally fitted item">
+								<button class="ui mini primary button" data-action="unfollow">{{ translate('Unfollow') }}</button>
+							</div>
+						{% endif %}
+						{% if canInviteToGroup(requestedGroup) %}
+							<div class="horizontally fitted item">
+								<button class="ui mini primary button" data-action="invite-users">{{ translate('Invite friends') }}
+								</button>
+							</div>
+						{% endif %}
+						
+						{% if canEditGroup(requestedGroup) %}
+							<div class="horizontally fitted item">
+								<button class="ui mini primary button" data-action="invite-administrators">{{ translate('Invite
+									administrators') }}
+								</button>
+							</div>
+						{% endif %}
+						{% if currentUserCan('can-block-groups') %}
+							<div class="horizontally fitted item">
+								{% if not requestedGroup.isBlocked %}
+									<button class="ui mini primary button" data-action="block">{{ translate('Block group') }}</button>
+								{% else %}
+									<button class="ui mini primary button" data-action="unblock">{{ translate('Unblock group') }}</button>
+								{% endif %}
+							</div>
+						{% endif %}
+						<div class="ui dropdown item">
+							<i class="ellipsis vertical icon"></i>
+							<div class="menu"></div>
+						</div>
+					</div>
+				</div>
+			{% else %}
+				<div class="ui secondary mini menu mp-group-action-menu">
+					<div class="right menu" style="display: none">
+						
+						<div class="horizontally fitted item">
+							{% if group.settings.type == 'open' %}
+								<button class="ui mini primary button" data-action="login">{{ translate('Join group') }}</button>
+							{% else %}
+								<button class="ui mini primary button" data-action="login">{{ translate('Send a request') }}</button>
+							{% endif %}
+						</div>
+						<div class="horizontally fitted item">
+							<button class="ui mini primary button" data-action="login">{{ translate('Follow') }}</button>
+						</div>
+					</div>
+				</div>
+			{% endif %}
+			
+			{% if requestedGroup.isBlocked and currentUserCan('can-block-groups') %}
+				<div class="ui negative message">
+					<p>{{ translate('Group is blocked') }}</p>
+				</div>
+			{% endif %}
+
+            {% if (requestedGroup.settings['read-activity'] == 'members-only' and requestedGroup.currentUserIsFollowing == true) or (requestedGroup.settings['read-activity'] == 'all') %}
+                <div class="mp-group-nav-menu">
+                    <div class="ui secondary pointing menu profile-nav-menu">
+
+                        {% set menuItems = {
+                        'activity': translate('Activity'),
+                        'members': translate('Members')
+                        } %}
+
+                        {% if canEditGroup(requestedGroup) %}
+                            {% set menuItems = menuItems|merge({'settings': translate('Settings') }) %}
+                        {% endif %}
+
+                        {% for id, title in menuItems %}
+                            {% set url = groupUrl(requestedGroup, {'action': id}) %}
+                            <a class="item {% if action == id %} active{% endif %}" href="{{ url }}">
+                                {{ title }} {% if id in unreadNotifications|keys %}
+                                    <div class="ui mini label red">{{ unreadNotifications[id] }}</div>{% endif %}
+                            </a>
+                        {% endfor %}
+
+                    </div>
+                </div>
+
+                <div class="ui modal sc-membership" id="logo-modal">
+                    <i class="close icon"></i>
+                    <div class="header">{{ translate('Group logo picture') }}</div>
+                    <div class="content">
+                        <div class="ui basic segment blurring logo-image-container">
+                            <div class="ui inverted dimmer">
+                                <div class="ui loader"></div>
+                            </div>
+                            <div class="mp-logo-modal-image">
+                                <img class="logo-modal-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="ui mini secondary button cancel" data-action="cancel">{{ translate('Cancel') }}</button>
+                        <button class="ui mini primary button primary" data-action="save-photo">{{ translate('Save') }}</button>
+                    </div>
+                </div>
+
+                <div class="ui modal long" id="invite-administrators-modal">
+                    <i class="close icon"></i>
+                    <div class="header">{{ translate('Invite administrators') }}</div>
+                    <div class="content">
+                        <div class="ui basic vertical segment form users-search-input">
+                            <div class="ui fluid icon input">
+                                <input type="text" placeholder="{{ translate('Find user...') }}">
+                                <i class="search icon"></i>
+                            </div>
+                        </div>
+                        <div class="ui two stackable cards users-list">
+                            {% include '@groups/partials/invite-modal-users.twig' with {'users': usersToInvite} %}
+                        </div>
+                        <div class="ui basic segment very padded list-loader" style="display:none;">
+                            <div class="ui active loader"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui modal long" id="invite-users-modal">
+                    <i class="close icon"></i>
+                    <div class="header">{{ translate('Invite users') }}</div>
+
+                    <div class="content">
+                        <div class="ui basic vertical segment form users-search-input">
+                            <div class="ui fluid icon input">
+                                <input type="text" placeholder="{{ translate('Find user...') }}">
+                                <i class="search icon"></i>
+                            </div>
+                        </div>
+                        <div class="ui two stackable cards users-list">
+                            {% include '@groups/partials/invite-modal-users.twig' with {'users': usersToInvite} %}
+                        </div>
+                        <div class="ui basic segment very padded list-loader" style="display:none;">
+                            <div class="ui active loader"></div>
+                        </div>
+                    </div>
+                </div>
+                {% block content %}{% endblock %}
+            {% else %}
+                <div class="ui negative message">
+                    <p>{{ translate('Access to this page is restricted.') }}</p>
+                </div>
+            {% endif %}
+
+
+		{% endif %}
+	
+	{% else %}
+		<div class="ui negative message">
+			<p>{{ translate('Group is blocked by administrator') }}</p>
+		</div>
+	{% endif %}
+	
+	{% if not userLoggedIn %}
+		{% include '@auth/partials/login-modal.twig' %}
+	{% endif %}
+</div>

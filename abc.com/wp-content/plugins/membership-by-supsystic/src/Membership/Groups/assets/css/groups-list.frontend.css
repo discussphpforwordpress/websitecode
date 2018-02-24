@@ -1,0 +1,76 @@
+.ui.cards.groups-list > .card > .extra .not-logged-in > a {
+	box-shadow: none;
+    color: #4183C4;
+}
+
+.mp-group-card .mp-group-logo-container {
+	background: #fff;
+	height: 10px;
+	position: relative;
+}
+.mp-group-card .mp-group-logo-container + a {
+	margin-top: 0px !important;
+}
+
+.mp-group-card .mp-group-logo {
+	max-width: 100px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -100px;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.mp-group-card .mp-group-logo img {
+	padding: 5px;
+    border-radius: 10px;
+}
+
+.groups-notification {
+	margin-left: 20px;
+	padding: 20px;
+}
+
+.sc-membership .groups-tabs .no-groups {
+    margin-top: 1em;
+}
+
+.mp-new-posts{
+	float: right;
+    margin-right: 4%;
+}
+#mbs-joined-groups .mbsGroupsSearchCategory,
+#membership-profile .mbsGroupsSearchCategory,
+#mp-groups .mbsGroupsSearchCategory {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0;
+}
+#mbs-joined-groups .mbsGroupsSearchName,
+#membership-profile .mbsGroupsSearchName,
+#mp-groups .mbsGroupsSearchName {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    margin: 0;
+}
+#mbs-joined-groups .mbsGroupsSearchName input,
+#membership-profile .mbsGroupsSearchName input,
+#mp-groups .mbsGroupsSearchName input {
+    width: 100%!important;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    line-height: normal;
+}
+#mbs-joined-groups .groups-tab-items {
+	text-align: right;
+}
+#mbs-joined-groups .mbs-f-hidden {
+	height: 0;
+	display: none;
+}

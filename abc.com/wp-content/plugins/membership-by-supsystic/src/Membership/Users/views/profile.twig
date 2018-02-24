@@ -1,0 +1,220 @@
+<div id="membership-profile" class="sc-membership">
+    <div class="mp-cover-container">
+        <div class="ui inverted dimmer cover-loader">
+            <div class="ui loader"></div>
+        </div>
+
+        <div class="mp-cover">
+            <img width="{{ settings.profile['cover-size'].width }}"
+                 height="{{ settings.profile['cover-size'].height }}"
+                 class="ui fluid image cover-image"
+                 src="{{ userCover(requestedUser, 'default') }}">
+        </div>
+
+        {% if isCurrentUser(requestedUser) and unreadNotifications %}
+            <div class="mp-unread-notifications">
+                <a href="{{ profileUrl(requestedUser, {'action': 'notifications'}) }}"><i class="alarm icon"></i></a>
+            </div>
+        {% endif %}
+
+        {% if isCurrentUser(requestedUser) and settings['profile']['use-cover'] == 'yes' %}
+            <div class="mp-update-cover {% if isDefaultCover(requestedUser) %}default{% endif %}">
+                <div class="ui top right pointing dropdown item">
+                    <i class="photo icon"></i>
+                    <div class="menu">
+                        <a class="item" data-action="upload-photo">{{ translate('Upload photo') }}</a>
+                        <a class="item" data-action="remove-photo">{{ translate('Remove') }}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mp-crop-cover-action">
+                <button class="ui mini primary button" data-action="save-photo">{{ translate('Save') }}</button>
+                <button class="ui mini secondary button" data-action="cancel">{{ translate('Cancel') }}</button>
+            </div>
+        {% endif %}
+        <div class="mp-user-display-name">{{ requestedUser.displayName }}
+        {% if(requestedUser.badge_src and settings.base.main.badges == 'true') %}
+	        <img class="mp-single-badge" src="{{ requestedUser.badge_src }}" />
+        {% endif %}
+        </div>
+
+        <div class="mp-avatar-container">
+            <div class="mp-avatar {% if isDefaultAvatar(requestedUser) %}default{% endif %} update-avatar-menu">
+                <img width="{{ settings.profile['avatar-size'].width }}"
+                     height="{{ settings.profile['avatar-size'].height }}"
+                     src="{{ userAvatar(requestedUser, 'default') }}"
+                     class="avatar-image">
+                {% if isCurrentUser(requestedUser) %}
+                    <div class="mp-update-avatar-overlay">
+                        <span>{{ translate('Change profile image') }}</span>
+                    </div>
+                    <div class="ui inverted dimmer avatar-loader">
+                        <div class="ui loader"></div>
+                    </div>
+                    <div class="ui top left pointing dropdown item">
+                        <div class="menu">
+                            <a class="item" data-action="upload-photo">{{ translate('Upload photo') }}</a>
+                            <a class="item" data-action="remove-photo">{{ translate('Remove') }}</a>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="mp-container">
+        <div class="mp-profile-social-stats social-stats {% if not userLoggedIn %}not-logged-in{% endif %}">
+	         {% if friendsActive %}
+	             <a href="{{ profileUrl(requestedUser, {'action': 'friends'}) }}" class="ui statistic tiny">
+	                 <div class="value mp-social-stats-friends">{{ requestedUser.friends }}</div>
+	                 <div class="label">{{ translate('Friends') }}</div>
+	             </a>
+	         {% endif %}
+	         {% if followersActive %}
+	             <a href="{{ profileUrl(requestedUser, {'action': 'followers'}) }}" class="ui statistic tiny">
+	                 <div class="value mp-social-stats-follows">{{ requestedUser.follows }}</div>
+	                 <div class="label">{{ translate('Follows') }}</div>
+	             </a>
+	         {% endif %}
+	         {% if followersActive %}
+	             <a href="{{ profileUrl(requestedUser, {'action': 'followers'}) }}" class="ui statistic tiny">
+	                 <div class="value mp-social-stats-followers">{{ requestedUser.followers }}</div>
+	                 <div class="label">{{ translate('Followers') }}</div>
+	             </a>
+	         {% endif %}
+        </div>
+	    
+        {% if userLoggedIn %}
+	        <div class="ui secondary mini menu right floated mp-user-action-menu">
+	            <div class="right menu" style="display: none">
+	                {% if not isCurrentUser(requestedUser) %}
+	                    {% if friendsActive and currentUserCan('add-friends') %}
+	                        {% if not isFriendOfCurrentUser(requestedUser) and not currentUserIsFriendOf(requestedUser) %}
+	                            <div class="horizontally fitted item">
+	                                <button class="ui mini primary button" data-action="add-friend">{{ translate('Add Friend') }}</button>
+	                            </div>
+	                        {% endif %}
+	                        {% if currentUserIsFriendOf(requestedUser) and isFriendOfCurrentUser(requestedUser) %}
+	                            <div class="horizontally fitted item">
+	                                <button class="ui mini primary button" data-action="remove-friend">{{ translate('Unfriend') }}</button>
+	                            </div>
+	                        {% endif %}
+	                        {% if currentUserIsFriendOf(requestedUser) and not isFriendOfCurrentUser(requestedUser) %}
+	                            <div class="horizontally fitted item">
+	                                <button class="ui mini primary button" data-action="add-friend">{{ translate('Accept Friend Request') }}</button>
+	                            </div>
+	                            <div class="horizontally fitted item">
+	                                <button class="ui mini primary button" data-action="remove-friend">{{ translate('Decline Friend Request') }}</button>
+	                            </div>
+	                        {% endif %}
+	                        {% if not currentUserIsFriendOf(requestedUser) and isFriendOfCurrentUser(requestedUser) %}
+	                            <div class="horizontally fitted item">
+	                                <button class="ui mini primary button" data-action="cancel-friend-request">{{ translate('Cancel Friend Request') }}</button>
+	                            </div>
+	                        {% endif %}
+	                    {% endif %}
+	                    {% if messagesActive and currentUserHasPermission('send-messages', requestedUser) %}
+	                        <div class="horizontally fitted item">
+	                            <button class="ui mini primary button" data-action="message">{{ translate('Message') }}</button>
+	                        </div>
+	                    {% endif %}
+	                    {% if followersActive and currentUserCan('follow') %}
+	                        {% if not isCurrentUserFollow(requestedUser) %}
+	                            <div class="horizontally fitted item">
+	                                <button class="ui mini primary button" data-action="follow">{{ translate('Follow') }}</button>
+	                            </div>
+	                        {% else %}
+	                            <div class="horizontally fitted item">
+	                                <button class="ui mini primary button" data-action="unfollow">{{ translate('Unfollow') }}</button>
+	                            </div>
+	                        {% endif %}
+	                    {% endif %}
+	                    <div class="horizontally fitted item">
+	                        <button class="ui mini primary button" data-action="report">{{ translate('Report') }}</button>
+	                    </div>
+	                    <div class="ui dropdown item">
+	                        <i class="ellipsis vertical icon"></i>
+	                        <div class="menu"></div>
+	                    </div>
+	                {% else %}
+	                    <a href="{{ profileUrl(requestedUser, {'action': 'settings'}) }}" class="horizontally fitted item">
+	                        <button class="ui primary button">{{ translate('Settings') }}</button>
+	                    </a>
+	                    <a href="{{ logoutUrl|raw }}" class="horizontally fitted item">
+	                        <button class="ui primary button">{{ translate('Logout') }}</button>
+	                    </a>
+	                {% endif %}
+	            </div>
+	        </div>
+        {% else %}
+	        <div class="ui secondary mini menu right floated mp-user-action-menu">
+	            <div class="right menu" style="display: none">
+	                <div class="horizontally fitted item">
+	                    <button class="ui mini primary button" data-action="login">{{ translate('Add Friend') }}</button>
+	                </div>
+	                <div class="horizontally fitted item">
+	                    <button class="ui mini primary button" data-action="login">{{ translate('Follow') }}</button>
+	                </div>
+	                <div class="horizontally fitted item">
+	                    <button class="ui mini primary button" data-action="login">{{ translate('Message') }}</button>
+	                </div>
+	                <div class="horizontally fitted item">
+	                    <button class="ui mini primary button" data-action="login">{{ translate('Report') }}</button>
+	                </div>
+	                <div class="ui dropdown item">
+	                    <i class="ellipsis vertical icon"></i>
+	                    <div class="menu"></div>
+	                </div>
+	            </div>
+	        </div>
+        {% endif %}
+    </div>
+	
+    <div class="mp-profile-nav-menu">
+        <div class="ui secondary pointing menu profile-nav-menu" style="display: none">
+	        
+            {% for id, title in profileMenuItems() %}
+                <a class="item{% if action == id %} active{% endif %}"
+                   href="{{ profileUrl(requestedUser, {'action': id}) }}"
+                >{{ title }} {% if id in unreadNotifications|keys %}<div class="ui mini label red">{{ unreadNotifications[id] }}</div>{% endif %}</a>
+            {% endfor %}
+
+            {{ environment.dispatcher.dispatch('profileMenuItems') }}
+	        
+            <div class="ui dropdown item" style="display:none;">
+                <i class="ellipsis horizontal icon"></i>
+                <div class="menu"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui modal sc-membership" id="avatar-modal">
+        <i class="close icon"></i>
+        <div class="header">
+            {{ translate('Profile picture') }}
+        </div>
+        <div class="content">
+            <div class="ui basic segment blurring avatar-image-container">
+                <div class="ui inverted dimmer">
+                    <div class="ui loader"></div>
+                </div>
+                <div class="mp-avatar-modal-image">
+                    <img class="avatar-modal-image">
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            <button class="ui mini secondary button cancel" data-action="cancel">{{ translate('Cancel') }}</button>
+            <button class="ui mini primary button primary" data-action="save-photo">{{ translate('Save') }}</button>
+        </div>
+    </div>
+	
+	{% if not userLoggedIn %}
+		{% include '@auth/partials/login-modal.twig' %}
+	{% endif %}
+	
+    {% block content %}{% endblock %}
+</div>
+
+{{ environment.dispatcher.dispatch('users.send.message.modal.wnd') }}
+{% include '@users/partials/users-report-modal.twig' %}

@@ -1,0 +1,82 @@
+{% extends '@users/profile.twig' %}
+
+{% block content %}
+	<div class="ui basic vertical segment">
+		
+		<div class="ui pointing secondary menu forums-tab-items">
+			<a class="item active" data-tab="topics">{{ translate('Topics Started') }} <div class="ui mini label">{{ counts.topics }}</div></a>
+			<a class="item" data-tab="replies">{{ translate('Replies Created') }} <div class="ui mini label">{{ counts.replies }}</div></a>
+			<a class="item" data-tab="favorites">{{ translate('Favorites') }} <div class="ui mini label">{{ counts.favorites }}</div></a>
+			<a class="item" data-tab="subscriptions">{{ translate('Subscriptions') }} <div class="ui mini label">{{ counts.subscriptions }}</div></a>
+			<div class="ui dropdown item" style="display:none;">
+				<i class="ellipsis horizontal icon"></i>
+				<div class="menu"></div>
+			</div>
+		</div>
+		
+		{{ environment.dispatcher.dispatch('someblock') }}
+		
+		<div class="forums-tabs">
+			<div class="ui tab basic vertical segment active" data-tab="topics">
+				{% if started %}
+					<div class="ui divided items entries-list">
+						{% include '@forum/partials/topics.twig' with {'entries': started} %}
+					</div>
+					<div class="ui basic vertical segment entries-loader" style="display: none">
+						<div class="ui active centered inline loader"></div>
+					</div>
+				{% else %}
+					<div class="ui message">
+						<p>{{ translate('No topics to show.') }}</p>
+					</div>
+				{% endif %}
+			</div>
+			
+			<div class="ui tab basic vertical segment" data-tab="replies">
+				{% if replies %}
+					<div class="ui divided items entries-list">
+						{% include '@forum/partials/replies.twig' with {'entries': replies} %}
+					</div>
+					<div class="ui basic vertical segment entries-loader" style="display: none">
+						<div class="ui active centered inline loader"></div>
+					</div>
+				{% else %}
+					<div class="ui message">
+						<p>{{ translate('No topics to show.') }}</p>
+					</div>
+				{% endif %}
+			</div>
+			
+			<div class="ui tab basic vertical segment" data-tab="favorites">
+				{% if favorites %}
+					<div class="ui divided items entries-list">
+						{% include '@forum/partials/topics.twig' with {'entries': favorites} %}
+					</div>
+						<div class="ui basic vertical segment entries-loader" style="display: none">
+						<div class="ui active centered inline loader"></div>
+					</div>
+				{% else %}
+					<div class="ui message">
+						<p>{{ translate('No favorites to show.') }}</p>
+					</div>
+				{% endif %}
+			</div>
+			
+			<div class="ui tab basic vertical segment" data-tab="subscriptions">
+				{% if subscriptions %}
+					<div class="ui divided items entries-list">
+						{% include '@forum/partials/topics.twig' with {'entries': subscriptions} %}
+					</div>
+					<div class="ui basic vertical segment entries-loader" style="display: none">
+						<div class="ui active centered inline loader"></div>
+					</div>
+				{% else %}
+					<div class="ui message">
+						<p>{{ translate('No subscriptions to show.') }}</p>
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	
+{% endblock content %}

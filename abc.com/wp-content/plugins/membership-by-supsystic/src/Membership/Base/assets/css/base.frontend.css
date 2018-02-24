@@ -1,0 +1,119 @@
+/* .sc - Supsystic namespace */
+/* Supsystic UI */
+/* Base */
+.ui.form .inline.fields>label {
+	margin: .035714em 1.65em 0 0;
+}
+
+.sc-membership {
+    min-height: 500px;
+    margin-bottom: 4em;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.sc-membership a  {
+    box-shadow: none!important;
+}
+
+.form-errors {
+	color: red;
+}
+
+@media only screen and (max-width: 767px) {
+	.ui.modal>.actions {
+		margin-bottom: 16px;
+	}
+}
+
+.membership-registration-form  {
+	margin-bottom: 3em;
+}
+
+.mp-form-action-buttons {
+	overflow: auto;
+}
+
+.site-info {
+	display: none;
+}
+
+.ui.card>.image>a>img, .ui.cards>.card>.image>a>img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: inherit;
+}
+
+.site-content main header {
+	margin-bottom: 30px!important;
+	padding: 0!important;
+}
+
+.site-content {
+	padding-top: 73px!important;
+}
+
+
+/* Themes styles conflict fixes */
+.sc-membership * {
+    box-sizing: border-box;
+}
+
+.sc-membership .item {
+    height: initial;
+    width: initial;
+    overflow: initial;
+    margin: initial;
+    z-index: initial;
+}
+
+.sc-membership .header {
+    min-height: initial!important;
+}
+
+.sc-membership.modal {
+    overflow: hidden;
+    right: initial;
+    bottom: initial;
+}
+
+.sc-membership .grid {
+    float: none;
+    width: auto;
+}
+
+.sc-membership .left,
+.sc-membership .right {
+    float: none;
+}
+
+.ui.modal {
+    overflow: initial;
+    right: auto;
+    bottom: auto;
+}
+.mbsInputUnderLabel {
+	font-size: 11px;
+	color: rgba(191,191,191,.87);
+	margin-left: 10px;
+}
+.ui.checkbox.mbsFrontendCheckbox {
+	display: inline;
+	vertical-align: middle !important;
+}
+.sc-membership .ui.form .mbsFrontendLbl {
+	display: inline;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.ui.two.cards {
+	margin: 0 -1em;
+}
+.ui.segment.mbsSocShareContainer {
+	padding: 0 16px;
+}

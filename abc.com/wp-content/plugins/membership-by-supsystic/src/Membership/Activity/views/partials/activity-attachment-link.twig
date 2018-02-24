@@ -1,0 +1,31 @@
+<div class="mp-activity-link squared" style="display: none" data-hash="{{ link.hash }}">
+	<div class="ui card">
+		{% if link.image %}
+			<div class="image">
+				{% if link.video is not empty %}
+					<div class="link-video-icon">
+						<i class="video play outline icon"></i>
+					</div>
+				{% endif %}
+				<a href="{{ link.url }}" target="_blank">
+					<img data-src="{{ link.image }}" data-width="{{ link.imageWidth }}" data-height="{{ link.imageHeight }}" alt="">
+				</a>
+			</div>
+		{% endif %}
+		{% if link.video %}
+			<div class="video-container" style="display: none">
+				<iframe data-src="{{ link.video }}" data-width="{{ link.videoWidth }}" data-height="{{ link.videoHeight }}" width="100%" frameborder="0" allowfullscreen="true" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		{% endif %}
+
+		<div class="content">
+			<div class="title"><a href="{{ link.url }}" target="_blank">{{ link.title }}</a></div>
+			<div class="description">{{ link.description }}</div>
+			<div class="meta"><span>{{ link.hostname }}</span>
+				<div class="ui right floated mp-remove-attached-link" style="display: none">
+					<i class="remove circle icon"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

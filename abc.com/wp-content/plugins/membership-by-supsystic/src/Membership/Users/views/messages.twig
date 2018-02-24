@@ -1,0 +1,5 @@
+{% extends '@users/profile.twig' %}
+
+{% block content %}
+	{% include '@messages/messages.twig' with {'type': 'profile', 'conversations': conversations} %}
+{% endblock %}

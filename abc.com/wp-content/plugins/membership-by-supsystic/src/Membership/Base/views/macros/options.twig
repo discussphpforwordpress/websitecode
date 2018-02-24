@@ -1,0 +1,537 @@
+{% macro row(label, input, id, attributes, withoutHelper, params) %}
+	{% import "@base/macros/tooltips-templates.twig" as tooltips %}
+	{% import _self as options %}
+	<div class="mp-option" {% if id %}id="{{ id }}"{% endif %}{{ attributes|raw }}>
+		<div class="row">
+			{% set toolTipHtml %}
+				{% if not withoutHelper %}
+				<div class="mp-option-helper tooltip">
+					<i class="fa fa-question sc-tooltip"></i>
+					<div class="tooltip_content">
+						<div>{% if id %}{{ translate(tooltips.get(id)) | raw }}{% endif %}</div>
+					</div>
+				</div>
+				{% endif %}
+			{% endset %}
+
+			{% if params and params.mbsThinCol %}
+				<div class="col-md-4 mbsThinCol">
+					<div class="mp-option-label">
+						<span title="{{ label }}">{{ label }}</span>
+						{{ toolTipHtml }}
+					</div>
+				</div>
+			{% else %}
+				<div class="col-md-4">
+					{{ options.label(label) }}
+					{{ toolTipHtml }}
+				</div>
+			{% endif %}
+
+			<div class="col-md-8">
+				{{ input|raw }}
+			</div>
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro settingRow(label, input, id, attributes, buttons, withoutHelper, params) %}
+	{% import "@base/macros/tooltips-templates.twig" as tooltips %}
+    {% import _self as options %}
+    <div class="mp-option mp-option-setting" {% if id %}id="{{ id }}"{% endif %}{{ attributes|raw }}>
+        <div class="row">
+			{% set toolTipHtml %}
+				{% if not withoutHelper %}
+					<div class="mp-option-helper tooltip">
+						<i class="fa fa-question sc-tooltip"></i>
+						<div class="tooltip_content">
+							<div>{% if id %}{{ translate(tooltips.get(id)) | raw }}{% endif %}</div>
+						</div>
+					</div>
+				{% endif %}
+			{% endset %}
+			{% if params and params.mbsThinCol %}
+				<div class="col-md-4 mbsThinCol">
+					<div class="mp-option-label">
+						<span title="{{ label }}">{{ label }}</span>
+						{{ toolTipHtml }}
+					</div>
+				</div>
+			{% else %}
+				<div class="col-md-4">
+					{{ options.label(label) }}
+					{{ toolTipHtml }}
+				</div>
+			{% endif %}
+            <div class="col-md-8">
+                {{ input|raw }}
+                {% if buttons %}
+                {% if buttons.edit %}
+                <button class="mp-option-setting-edit-button sc-button primary">
+                    <i class="fa fa-lg fa-edit"></i>
+                    {{ buttons.edit.label }}
+                </button>
+                {% endif %}
+                {% if buttons.send %}
+                <button class="mp-option-setting-send-button sc-button primary">
+                    <i class="fa fa-lg fa-send"></i>
+                    {{ buttons.send.label }}
+                </button>
+                {% endif %}
+                {% if buttons.reset %}
+                <button class="mp-option-setting-reset-button sc-button primary">
+                    <i class="fa fa-lg fa-asterisk"></i>
+                    {{ buttons.reset.label }}
+                </button>
+                {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro settingRowWithSelect(label, input, id, attributes, select, withoutHelper) %}
+    {% import "@base/macros/tooltips-templates.twig" as tooltips %}
+    {% import _self as options %}
+	<div class="mp-option mp-option-setting" {% if id %}id="{{ id }}"{% endif %}{{ attributes|raw }}>
+		<div class="row">
+			<div class="col-md-4">
+                {{ options.label(label) }}
+    			{% if not withoutHelper %}
+				<div class="mp-option-helper tooltip">
+					<i class="fa fa-question sc-tooltip"></i>
+					<div class="tooltip_content">
+						<div>{% if id %}{{ translate(tooltips.get(id)) | raw }}{% endif %}</div>
+					</div>
+				</div>
+                {% endif %}
+			</div>
+			<div class="col-md-8">
+                {{ input|raw }}
+				{{ options.selectInput(select.options, select.name) }}
+			</div>
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro settingRowWithInput(label, input1, id, attributes, input2, withHelper, params) %}
+	{% import "@base/macros/tooltips-templates.twig" as tooltips %}
+	{% import _self as options %}
+	<div class="mp-option mp-option-setting" {% if id %}id="{{ id }}"{% endif %}{{ attributes|raw }}>
+		<div class="row">
+			{% set toolTipHtml %}
+				{% if withHelper == 1 %}
+					<div class="mp-option-helper tooltip">
+						<i class="fa fa-question sc-tooltip"></i>
+						<div class="tooltip_content">
+							<div>{% if id %}{{ translate(tooltips.get(id)) | raw }}{% endif %}</div>
+						</div>
+					</div>
+				{% endif %}
+			{% endset %}
+			{% if params and params.mbsThinCol %}
+				<div class="col-md-4 mbsThinCol">
+					<div class="mp-option-label">
+						<span title="{{ label }}">{{ label }}</span>
+						{{ toolTipHtml }}
+					</div>
+				</div>
+			{% else %}
+				<div class="col-md-4">
+					{{ options.label(label) }}
+					{{ toolTipHtml }}
+				</div>
+			{% endif %}
+
+			<div class="col-md-8">
+				<div class="mbs-check-with-input-block">
+					<div class="mbs-cwib-check-block">
+						{{ input1|raw }}
+					</div>
+					<div class="mbs-cwib-input-block">
+						{{ input2|raw }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro settingRowWpEditor(label, input, id, attributes) %}
+    {% import "@base/macros/tooltips-templates.twig" as tooltips %}
+    {% import _self as options %}
+	<div class="mp-option mp-option-setting" {% if id %}id="{{ id }}"{% endif %}{{ attributes|raw }}>
+		<div class="row">
+			<div class="col-md-4 offset-md-8">
+                {{ options.label(label) }}
+				<div class="mp-option-helper tooltip">
+					<i class="fa fa-question sc-tooltip"></i>
+					<div class="tooltip_content">
+						<div>{% if id %}{{ translate(tooltips.get(id)) | raw }}{% endif %}</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+                {{ input|raw }}
+			</div>
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro label(label, helper) %}
+	<div class="mp-option-label">
+		<span title="{{ label }}">{{ label }}</span>
+	</div>
+{% endmacro %}
+
+{% macro radioRow(label, radios, id, attributes, withoutHelper, params) %}
+	{% import _self as options %}
+	{{ options.row(label, options.radioInput(radios), id, attributes, withoutHelper, params) }}
+{% endmacro %}
+
+{% macro radioRowWithInput(label, radios, id, attributes, input, withoutHelper, params) %}
+	{% import _self as options %}
+	{{ options.row(label, options.radioWithInput(radios, input), id, attributes, withoutHelper, params) }}
+{% endmacro %}
+
+{% macro selectRow(label, options, name, id, withoutHelper, params) %}
+	{% import _self as _options %}
+	{{ _options.row(label, _options.selectInput(options, name), id, null, withoutHelper, params) }}
+{% endmacro %}
+
+{% macro multipleSelectRow(label, options, name, id, attributes, selectAttributes, description, withoutHelper, addClasses, params) %}
+	{% import _self as _options %}
+	{{ _options.row(label, _options.multipleSelectInput(options, name, selectAttributes, description, addClasses), id, attributes, withoutHelper, params) }}
+{% endmacro %}
+
+{% macro wpEditorRow(label, name, value, id) %}
+	{% import _self as _options %}
+	{{ _options.settingRowWpEditor(label, _options.wpEditor(name, value), id) }}
+{% endmacro %}
+
+{% macro submitRow(label, name, id, attributes) %}
+	{% import _self as options %}
+    <div class="mp-option mp-option-setting" {% if id %}id="{{ id }}"{% endif %}{{ attributes|raw }}>
+        <div class="row">
+            <div class="col-md-12">
+                {{ options.submit(name, label, id) }}
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro saveButtonRow(label, id, attributes, addBtnClasses) %}
+	{% import _self as options %}
+    <div class="mp-option mp-option-setting" {% if id %}id="{{ id }}"{% endif %}{{ attributes|raw }}>
+        <div class="row">
+            <div class="col-md-12">
+				{{ options.saveButton(label, addBtnClasses) }}
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro saveButton(label, addBtnClasses) %}
+	<button data-save-settings class="save-settings sc-button icon-button primary {% if addBtnClasses %}{{ addBtnClasses }}{% endif %}">
+		<i class="fa fa-save"></i>
+		<span>{{ label }}</span>
+	</button>
+{% endmacro %}
+
+{% macro inputRow(label, name, value, id, attributes, inputAttributes, params) %}
+	{% import _self as options %}
+	{{ options.row(label, options.textInput(name, value, inputAttributes), id, attributes, withoutHelper, params) }}
+{% endmacro %}
+
+{% macro emailRow(label, name, value, id, attributes, withoutHelper, params) %}
+	{% import _self as options %}
+	{{ options.row(label, options.emailInput(name, value), id, attributes, withoutHelper, params) }}
+{% endmacro %}
+
+{% macro textareaRow(label, name, value, id, attributes, cols, rows, withoutHelper, params) %}
+	{% import _self as options %}
+	{{ options.row(label, options.textareaInput(name, value, cols, rows), id, attributes, withoutHelper, params) }}
+{% endmacro %}
+
+{% macro colorRow(label, name, value, id, attributes, withoutHelper, params) %}
+	{% import _self as options %}
+	{{ options.row(label, options.colorInput(name, value), id, attributes, withoutHelper, params) }}
+{% endmacro %}
+
+{% macro inputRowWithButton(label, buttonLabel, name, value, id, attributes, withoutHelper) %}
+	{% import _self as options %}
+	{{ options.row(label, options.inputWithButton(buttonLabel, name, value), id, attributes, withoutHelper) }}
+{% endmacro %}
+
+{% macro emailRowWithButton(label, button, name, value, id, attributes, withoutHelper, params) %}
+	{% import _self as options %}
+	{{ options.row(label, options.emailWithButton(button, name, value), id, attributes, withoutHelper, params) }}
+{% endmacro %}
+
+{% macro checkboxRow(label, checkboxes, id, attributes, withoutHelper) %}
+    {% import _self as options %}
+    {{ options.row(label, options.checkboxInput(checkboxes), id, attributes, withoutHelper) }}
+{% endmacro %}
+
+{% macro checkboxSettingRow(label, checkboxes, id, attributes, buttons, withoutHelper, params) %}
+    {% import _self as options %}
+    {{ options.settingRow(label, options.checkboxInput(checkboxes), id, attributes, buttons, withoutHelper, params) }}
+{% endmacro %}
+
+{% macro checkboxSettingRowWithSelect(label, checkboxes, id, attributes, select, withoutHelper) %}
+    {% import _self as options %}
+    {{ options.settingRowWithSelect(label, options.checkboxInput(checkboxes), id, attributes, select, withoutHelper) }}
+{% endmacro %}
+
+{% macro checkboxSettingRowWithInput(label, checkboxes, input2, id, attributes, withHelper, params) %}
+	{% import _self as options %}
+	{{ options.settingRowWithInput(label, options.checkboxInput(checkboxes), id, attributes, input2, withHelper, params) }}
+{% endmacro %}
+
+{% macro checkboxInput(checkboxes) %}
+	<div class="mp-option-checkbox">
+		{% for option in checkboxes %}
+			<label class="sc-checkbox">
+				<input
+						type="checkbox"
+						name="{{ option.name }}"
+						value="{{ option.value }}"
+						{% if option.checked %}
+							checked="true"
+						{% endif %}
+						{{ option.attributes|raw }}
+				>
+				{{ option.label }}
+				<div class="sc-checkbox-state"></div>
+			</label>
+		{% endfor %}
+	</div>
+{% endmacro %}
+
+{% macro radioInput(radios) %}
+	<div class="mp-option-controls">
+		{% for radio in radios %}
+			<label class="sc-radio">
+				<input 
+					type="radio"
+					name="{{ radio.name }}"
+					value="{{ radio.value }}"
+					{% if radio.checked %}
+					checked
+					{% endif %}
+				>
+				{{ radio.label }}
+				<div class="sc-radio-state"></div>
+			</label>
+		{% endfor %}
+	</div>
+{% endmacro %}
+
+{% macro textInput(name, value, attributes) %}
+	<div class="mp-option-input">
+		<input class="sc-input" name="{{ name }}" value="{{ value }}"{{ attributes|raw }}>
+	</div>
+{% endmacro %}
+
+{% macro hiddenInput(name, value, attributes) %}
+	<input type="hidden" name="{{ name }}" value="{{ value }}"{{ attributes|raw }}>
+{% endmacro %}
+
+{% macro wpEditor(name, value, attributes) %}
+	{{ function('wp_editor', value, name, {
+		'drag_drop_upload': 1
+	}) }}
+{% endmacro %}
+
+{% macro emailInput(name, value) %}
+	<div class="mp-option-input">
+		<input class="sc-input" name="{{ name }}" type="email" value="{{ value }}">
+	</div>
+{% endmacro %}
+
+{% macro textareaInput(name, value, cols = 35, rows = 5) %}
+	<div class="mp-option-input">
+		<textarea class="sc-input" name="{{ name }}" cols="{{ cols }}" rows="{{ rows }}">{{ value }}</textarea>
+	</div>
+{% endmacro %}
+
+{% macro colorInput(name, value) %}
+	<div class="mp-option-color-input">
+		<input class="sc-input" name="{{ name }}" value="{{ value }}">
+	</div>
+{% endmacro %}
+
+{% macro selectInput(options, name) %}
+	<div class="mp-option-select">
+		<select class="sc-input" name="{{ name }}">
+			{% for option in options %}
+				<option value="{{ option.value }}" 
+					{% if option.selected %}
+						selected
+					{% endif %}	
+					{% if option.disabled %}
+						disabled
+					{% endif %}
+				>{{ option.title }}</option>
+			{% endfor %}
+		</select>
+	</div>
+{% endmacro %}
+
+{% macro colorInput2(attributes) %}
+	<div class="mp-option-color-input">
+		<input
+			{% if attributes is defined %}
+				{% for attribute, val in attributes %}
+					{% if val is iterable %}
+						{{ attribute }}="{% for attr, param in val %}{{ attr }}:{{ param }};{% endfor %}"
+					{% else %}
+						{{ attribute }}="{{ val }}"
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+		/>
+	</div>
+{% endmacro %}
+
+{% macro selectInput2(optionsList, selectedOption, attributes, useWrapper) %}
+	{% if useWrapper != 0 %}
+		<div class="mp-option-select">
+	{% endif %}
+	<select
+		{% if attributes is defined %}
+			{% for attribute, val in attributes %}
+				{% if val is iterable %}
+					{{ attribute }}="{% for attr, param in val %}{{ attr }}:{{ param }};{% endfor %}"
+				{% else %}
+					{{ attribute }}="{{ val }}"
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+	">
+		{% for option in optionsList %}
+			<option value="{{ option.value }}"
+					{% if selectedOption is iterable %}
+						{% if option.value in selectedOption %}
+							selected="selected"
+						{% endif %}
+					{% elseif option.value == selectedOption %}
+						selected="selected"
+					{% endif %}
+					{% if option.disabled %}
+						disabled="disabled"
+					{% endif %}
+			>{{ option.title }}</option>
+		{% endfor %}
+	</select>
+	{% if useWrapper != 0 %}
+		</div>
+	{% endif %}
+{% endmacro %}
+
+{% macro multipleSelectInput(options, name, attributes, description, addClasses) %}
+	<div class="mp-option-select">
+		<select class="sc-input {% if addClasses is not empty %}{{ addClasses }}{% endif %}" name="{{ name }}[]" {{ attributes|raw }} multiple>
+			{% for option in options %}
+				<option value="{{ option.value }}" 
+					{% if option.selected %}
+						selected
+					{% endif %}	
+					{% if option.disabled %}
+						disabled
+					{% endif %}
+				>{{ option.title }}</option>
+			{% endfor %}
+		</select>
+		{% if description is not empty %}
+			<div class="mp-option-select-description" id="{{ description.id }}">
+				<span>{{ translate(description.title) }}</span>
+			</div>
+		{% endif %}
+	</div>
+{% endmacro %}
+
+{% macro inputWithButton(buttonLabel, inputName, inputValue) %}
+	{% import _self as options %}
+	<div class="mp-option-input-with-button">
+		<button class="mp-option-button sc-button primary">{{ buttonLabel }}</button>
+		{{ options.textInput(inputName, inputValue) }}
+	</div>
+{% endmacro %}
+
+{% macro emailWithButton(button, inputName, inputValue) %}
+	{% import _self as options %}
+	<div class="mp-option-input-with-button">
+		{{ button }}
+		{{ options.emailInput(inputName, inputValue) }}
+	</div>
+{% endmacro %}
+
+{% macro radioWithInput(radios, input) %}
+	{% import _self as options %}
+	<div class="mp-option-input-with-input">
+		{{ options.radioInput(radios) }}
+		{{ input }}
+	</div>
+{% endmacro %}
+
+{% macro button(label, id, class) %}
+	{% import "@base/macros/tooltips-templates.twig" as tooltips %}
+    <div class="tooltip">
+        <button
+                class="mp-option-button sc-button primary{% if class %} {{ class }}{% endif %}"
+                {% if id %}id="{{ id }}" title=""{% endif %}
+        >{{ label }}</button>
+        <div class="tooltip_content">
+            <div>{% if id %}{{ translate(tooltips.get(id)) | raw }}{% endif %}</div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro submit(name, label, id) %}
+	<input type="submit" name="{{ name }}" value="{{ label }}"
+			class="mp-option-button sc-button primary"
+			{% if id %}id="{{ id }}"{% endif %}
+	/>
+{% endmacro %}
+
+{% macro enablePluginRow(label, inputName, id, attributes, buttonName, withoutHelper) %}
+	{% import "@base/macros/tooltips-templates.twig" as tooltips %}
+	{% import _self as options %}
+
+	<div class="row" {% if id %}id="{{ id }}"{% endif %}>
+		<div class="col-xs-4 mpp-mrgn-top-8 mbsThinCol">
+			<label class="sc-checkbox">
+				<input type="checkbox" name="{{ inputName }}[enabled]" value="1" {{ attributes.input is defined ? attributes.input : null }}>
+				{{ translate(label) }}
+				<div class="sc-checkbox-state"></div>
+			</label>
+			{% if not withoutHelper %}
+				<div class="mpp-tooltip tooltip">
+					<i class="fa fa-question sc-tooltip"></i>
+					<div class="tooltip_content">
+						<div>{% if id %}{{ translate(tooltips.get(id)) | raw }}{% endif %}</div>
+					</div>
+				</div>
+			{% endif %}
+		</div>
+		<div class="col-xs-8">
+			<button class="mpp-button sc-button primary" {% if id %}id="button-{{ id }}" data-toogle="toogle-{{ id }}"{% endif %}>
+				<i class="fa fa-angle-down"></i>
+				<span>{{ translate(buttonName) }}</span>
+			</button>
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro input(type = 'text', name, value, attributes) %}
+	<input type="{{ type }}" name="{{ name }}" value="{{ value }}"
+		{% for attribute, val in attributes %}
+			{% if val is iterable %}
+				{{ attribute }}="{% for attr, param in val %}{{ attr }}:{{ param }};{% endfor %}"
+			{% else %}
+				{{ attribute }}="{{ val }}"
+			{% endif %}
+		{% endfor %}
+	/>
+{% endmacro %}

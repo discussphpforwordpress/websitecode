@@ -1,0 +1,271 @@
+{% extends '@users/profile.twig' %}
+
+{% block content %}
+
+	{% set privacyOptions = {
+		'all-users': translate('All users'),
+		'friends': translate('Friends'),
+		'friends-of-friends': translate('Friends of friends'),
+		'only-me': translate('Only Me'),
+	} %}
+	
+	<div class="ui basic vertical segment">
+		<div class="ui secondary pointing menu settings-nav-menu settings-tabs">
+			<a class="item active" data-tab="account">{{ translate('Account') }}</a>
+			{% if currentUserCan('change-privacy-settings') %}
+				<a class="item" data-tab="privacy">{{ translate('Privacy') }}</a>
+			{% endif %}
+			<a class="item" data-tab="blocked-users">{{ translate('Blocked users') }}</a>
+			<a class="item" data-tab="notifications">{{ translate('Notifications ') }}</a>
+
+			{{ environment.dispatcher.dispatch('profileSettingsMenu') }}
+
+			<div class="ui dropdown item" style="display:none;">
+				<i class="ellipsis horizontal icon"></i>
+				<div class="menu"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="ui tab active" data-tab="account">
+		<div class="ui vertical segment account-settings">
+			<h3 class="ui header">{{ translate('Account E-mail') }}</h3>
+			<div class="ui form">
+				<div class="field">
+					<label>{{ translate('Email') }}</label>
+					<input type="email" name="email" value="{{ currentUser.user_email }}">
+				</div>
+				<button class="ui button primary mini change-email">{{ translate('Change email') }}</button>
+			</div>
+			
+			<h3 class="ui header">{{ translate('Password change') }}</h3>
+			<div class="ui form">
+				<div class="field">
+					<label>{{ translate('New Password') }}</label>
+					<input type="password" name="password">
+				</div>
+				<div class="field">
+					<label>{{ translate('New Password Confirmation') }}</label>
+					<input type="password" name="password-confirmation">
+				</div>
+				<button class="ui button primary mini change-password">{{ translate('Change password') }}</button>
+			</div>
+
+			{% if currentUserCan('can-delete-their-account') %}
+				<h3 class="ui header">{{ translate('Account Deletion') }}</h3>
+				<div class="ui form">
+					<div class="field">
+						<div class="ui checkbox">
+							<input type="checkbox" id="delete-confirmation" class="hidden confirm-deletion">
+							<label for="delete-confirmation">{{ translate('Confirm deletion (All user data will be deleted and cannot be restored)') }}</label>
+						</div>
+					</div>
+					<button class="ui button negative mini confirm-deletion-button" style="display: none">{{ translate('Delete account') }}</button>
+				</div>
+			{% endif %}
+		</div>
+	</div>
+	<div class="ui tab" data-tab="privacy">
+		<div class="ui basic vertical segment privacy-settings">
+			<div class="ui form">
+				<h3 class="ui header">{{ translate('Privacy') }}</h3>
+				
+				<div class="field">
+					<label>{{ translate('Who can view my profile.') }}</label>
+					<select class="ui dropdown" name="view-profile">
+						{% for value, title in privacyOptions %}
+							<option value="{{ value }}" {% if currentUser.privacy['view-profile'] == value %}selected{% endif %}>{{ title }}</option>
+						{% endfor %}
+					</select>
+				</div>
+				
+				<div class="field">
+					<label>{{ translate('Who can view my profile activity page.') }}</label>
+					<select class="ui dropdown" name="view-activity">
+						{% for value, title in privacyOptions %}
+							<option value="{{ value }}" {% if currentUser.privacy['view-activity'] == value %}selected{% endif %}>{{ title }}</option>
+						{% endfor %}
+					</select>
+				</div>
+				<div class="field">
+					<label>{{ translate('Who can post to my profile activity.') }}</label>
+					<select class="ui dropdown" name="post-activity">
+						{% for value, title in privacyOptions %}
+							<option value="{{ value }}" {% if currentUser.privacy['post-activity'] == value %}selected{% endif %}>{{ title }}</option>
+						{% endfor %}
+					</select>
+				</div>
+				{% if bConfig.showFriendPostOpt == 1 %}
+					<div class="field">
+						<input type="checkbox" class="ui checkbox mbsFrontendCheckbox" id="mbsUserPrivacyHideFriendPost" name="friendPost" value="1" {% if currentUser.privacy['hideFriendPost'] == 1 %}checked="checked"{% endif %}/>
+						<label for="mbsUserPrivacyHideFriendPost" class="mbsFrontendLbl">{{ translate("Don't add friend's posts to my activity.") }}</label>
+					</div>
+				{% endif %}
+				<div class="field">
+					<label>{{ translate('Who can comment my activity posts.') }}</label>
+					<select class="ui dropdown" name="post-comments">
+						{% for value, title in privacyOptions %}
+							<option value="{{ value }}" {% if currentUser.privacy['post-comments'] == value %}selected{% endif %}>{{ title }}</option>
+						{% endfor %}
+					</select>
+				</div>
+				<div class="field">
+					<label>{{ translate('Who can view comments on my activity posts.') }}</label>
+					<select class="ui dropdown" name="view-comments">
+						{% for value, title in privacyOptions %}
+							<option value="{{ value }}" {% if currentUser.privacy['view-comments'] == value %}selected{% endif %}>{{ title }}</option>
+						{% endfor %}
+					</select>
+				</div>
+				<div class="field">
+					<label>{{ translate('Who can view about information on my profile.') }}</label>
+					<select class="ui dropdown" name="view-about">
+						{% for value, title in privacyOptions %}
+							<option value="{{ value }}" {% if currentUser.privacy['view-about'] == value %}selected{% endif %}>{{ title }}</option>
+						{% endfor %}
+					</select>
+				</div>
+				<div class="field">
+					<label>{{ translate('Who can view my friends.') }}</label>
+					<select class="ui dropdown" name="view-friends">
+						{% for value, title in privacyOptions %}
+							<option value="{{ value }}" {% if currentUser.privacy['view-friends'] == value %}selected{% endif %}>{{ title }}</option>
+						{% endfor %}
+					</select>
+				</div>
+				<div class="field">
+					<label>{{ translate('Who can view my follows.') }}</label>
+					<select class="ui dropdown" name="view-follows">
+						{% for value, title in privacyOptions %}
+							<option value="{{ value }}" {% if currentUser.privacy['view-follows'] == value %}selected{% endif %}>{{ title }}</option>
+						{% endfor %}
+					</select>
+				</div>
+				<div class="field">
+					<label>{{ translate('Who can view my followers.') }}</label>
+					<select class="ui dropdown" name="view-followers">
+						{% for value, title in privacyOptions %}
+							<option value="{{ value }}" {% if currentUser.privacy['view-followers'] == value %}selected{% endif %}>{{ title }}</option>
+						{% endfor %}
+					</select>
+				</div>
+				<div class="field">
+					<label>{{ translate('Who can view my groups.') }}</label>
+					<select class="ui dropdown" name="view-groups">
+						{% for value, title in privacyOptions %}
+							<option value="{{ value }}" {% if currentUser.privacy['view-groups'] == value %}selected{% endif %}>{{ title }}</option>
+						{% endfor %}
+					</select>
+				</div>
+				<div class="field">
+					<label>{{ translate('Who can view my posts.') }}</label>
+					<select class="ui dropdown" name="view-posts">
+						{% for value, title in privacyOptions %}
+							<option value="{{ value }}" {% if currentUser.privacy['view-posts'] == value %}selected{% endif %}>{{ title }}</option>
+						{% endfor %}
+					</select>
+				</div>
+				<div class="field">
+					<label>{{ translate('Who can send me private messages.') }}</label>
+					<select class="ui dropdown" name="send-messages">
+						{% for value, title in privacyOptions %}
+							<option value="{{ value }}" {% if currentUser.privacy['send-messages'] == value %}selected{% endif %}>{{ title }}</option>
+						{% endfor %}
+					</select>
+				</div>
+				{#
+				<div class="field">
+					<label>{{ translate('Show my profile in Members Directory.') }}</label>
+					<select class="ui dropdown" name="show-in-members-directory">
+						<option value="yes" {% if currentUser.privacy['show-in-members-directory'] == 'yes' %}selected{% endif %}>{{ translate('Yes') }}</option>
+						<option value="no" {% if currentUser.privacy['show-in-members-directory'] == 'no' %}selected{% endif %}>{{ translate('No') }}</option>
+					</select>
+				</div>
+				#}
+			</div>
+		</div>
+	</div>
+	<div class="ui tab" data-tab="blocked-users">
+		<div class="ui basic vertical segment blocked-users">
+			<div class="column">
+				<div class="ui divided items">
+					{% for user in blockedUsers %}
+						<div class="item blocked-user" data-id="{{ user.id }}">
+							<a href="{{ profileUrl(user) }}" class="ui tiny image">
+								<img src="{{ userAvatar(user, 'default') }}">
+							</a>
+							<div class="content">
+								<a href="{{ profileUrl(user) }}" class="header">{{ user.displayName }}</a>
+								<div class="extra">
+									<button class="ui button mini primary">{{ translate('Unblock') }}</button>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+					<div class="ui basic vertical segment" {% if followers %}style="display: none"{% endif %}>
+						<div class="ui message">
+							<p>{{ translate('No blocked users to show.') }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ui tab" data-tab="notifications">
+		<div class="ui basic vertical segment notifications-settings">
+			<div class="column">
+				<div class="ui divided items">
+					<div class="ui form">
+						<h5 class="ui header">Notify me when someone</h5>
+						<div class="field">
+							<div class="ui checkbox">
+								<input type="checkbox" id="notifications-messages" class="hidden"
+								       {% if currentUser.notifications['messages'] == 'on' %}checked="checked"{% endif %}
+								>
+								<label for="notifications-messages">{{ translate('Send private message') }}</label>
+							</div>
+						</div>
+						<div class="field">
+							<div class="ui checkbox">
+								<input type="checkbox" id="notifications-friend-requests" class="hidden"
+								       {% if currentUser.notifications['friend-requests'] == 'on' %}checked="checked"{% endif %}
+								>
+								<label for="notifications-friend-requests">{{ translate('Send friend request') }}</label>
+							</div>
+						</div>
+						<div class="field">
+							<div class="ui checkbox">
+								<input type="checkbox" id="notifications-follows" class="hidden"
+								       {% if currentUser.notifications['follows'] == 'on' %}checked="checked"{% endif %}
+								>
+								<label for="notifications-follows">{{ translate('Follows me') }}</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{{ environment.dispatcher.dispatch('profileSettingsTabs') }}
+		
+	<div class="ui small modal mp-confirm-password">
+		<i class="close icon"></i>
+		<div class="header">
+			{{ translate('Confirm your current password to continue') }}
+		</div>
+		<div class="content">
+			<div class="ui form">
+				<div class="field">
+					<label>{{ translate('Password') }}</label>
+					<input type="password">
+				</div>
+				<div class="ui message error"></div>
+			</div>
+		</div>
+		<div class="actions">
+			<button class="ui mini button secondary cancel">{{ translate('Cancel') }}</button>
+			<button class="ui mini primary positive button">{{ translate('Confirm password') }}</button>
+		</div>
+	</div>
+	
+{% endblock %}

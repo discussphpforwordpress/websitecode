@@ -1,0 +1,24 @@
+.users-table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.sc-table.users-table .avatar {
+    margin-right: 1em;
+    max-width: 32px;
+    max-height: 32px;
+    float: left;
+}
+
+.sc-table.users-table td {
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.sc-table.users-table .online {
+    color: darkgreen;
+}
+
+.sc-table.users-table .offline {
+    color: darkred;
+}

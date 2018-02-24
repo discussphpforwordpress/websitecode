@@ -1,0 +1,57 @@
+{% extends '@users/profile.twig' %}
+
+{% block content %}
+<div class="ui basic vertical segment">
+
+    <div class="ui pointing secondary menu users-tab-items" {% if friendRequests is empty or not isCurrentUser(requestedUser) %}style="display:none"{% endif %}>
+        <a class="item active" data-tab="friends">{{ translate('All Friends') }} <div class="ui mini label">{{ requestedUser.friends }}</div></a>
+        <a class="item" data-tab="friend-requests">{{ translate('Friend Requests') }} <div class="ui mini red label">{{ friendRequestsCount }}</div></a>
+    </div>
+	
+	<div class="users-tabs">
+	    <div class="ui tab basic vertical segment active" data-tab="friends">
+	        <div class="ui basic vertical segment form user-search-input">
+	            <div class="ui fluid icon input">
+		            <input type="text" placeholder="{{ translate('Find user...') }}">
+		            <i class="search icon"></i>
+	            </div>
+	        </div>
+		    <div class="ui two cards stackable users-list">
+			    {% include '@users/partials/users-list.twig' with {'users': friends} only %}
+		    </div>
+		    <div class="ui basic vertical segment no-users" {% if friends %}style="display: none"{% endif %}>
+			    <div class="ui message">
+				    <p>{{ translate('No friends to show.') }}</p>
+			    </div>
+		    </div>
+	        <div class="ui basic segment very padded list-loader" style="display:none;">
+	            <div class="ui active loader"></div>
+	        </div>
+	    </div>
+	
+	    {% if friendRequests is not empty and isCurrentUser(requestedUser) %}
+	        <div class="ui tab basic vertical segment" data-tab="friend-requests">
+	            <div class="ui basic vertical segment form user-search-input">
+	                <div class="ui fluid icon input">
+		                <input type="text" placeholder="{{ translate('Find user...') }}">
+		                <i class="search icon"></i>
+	                </div>
+	            </div>
+	            <div class="ui two cards stackable users-list">
+	                {% include '@users/partials/users-list-friend-requests.twig' with {'users': friendRequests} only %}
+	            </div>
+		        <div class="ui basic vertical segment no-users" {% if friends %}style="display: none"{% endif %}>
+			        <div class="ui message">
+				        <p>{{ translate('No friend requests to show.') }}</p>
+			        </div>
+		        </div>
+	            <div class="ui basic segment very padded list-loader" style="display:none;">
+	                <div class="ui active loader"></div>
+	            </div>
+	        </div>
+	    {% endif %}
+	</div>
+</div>
+
+{{ environment.dispatcher.dispatch('users.send.message.modal.wnd') }}
+{% endblock %}

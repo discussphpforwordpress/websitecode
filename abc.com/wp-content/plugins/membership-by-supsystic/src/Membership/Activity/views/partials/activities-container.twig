@@ -1,0 +1,25 @@
+<div class="ui segment vertical basic mp-activity-container" data-activity-context="{{ context }}" data-single="{% if singleView is defined %}{{ "1" }}{% else %}{{ "0" }}{% endif %}">
+
+	{% if userLoggedIn and not disablePostForm %}
+		{% include '@activity/partials/activity-post-form.twig' %}
+	{% endif %}
+	
+	<div class="mp-activity-list ">
+		{% include '@activity/partials/activities.twig' with {'activities': activities, 'settings': settings,} %}
+	</div>
+	
+	<div class="ui message no-activities" {% if activities %}style="display: none"{% endif %}>{{ translate('There\'s no any activity yet') }}</div>
+
+	<div class="ui basic segment activity-loader" style="display: none">
+		<div class="ui active loader"></div>
+	</div>
+	
+	{{ environment.dispatcher.dispatch('activity.view.actachmentTemplate') }}
+
+</div>
+
+{% include '@activity/partials/activity-gallery-modal.twig' %}
+{% include '@activity/partials/activity-report-modal.twig' %}
+{{ environment.dispatcher.dispatch('activity.view.galleryModal') }}
+{{ environment.dispatcher.dispatch('activity.view.sliderModal') }}
+{{ environment.dispatcher.dispatch('activity.view.googleMapsModal') }}

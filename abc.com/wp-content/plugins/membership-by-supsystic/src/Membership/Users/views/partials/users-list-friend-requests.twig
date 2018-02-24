@@ -1,0 +1,10 @@
+{% embed '@users/partials/users-list.twig' with {'users': users} only %}
+    {% block actionButtons %}
+
+        {% if currentUserCan('add-friends') and friendsActive %}
+            <button class="ui mini primary button"  data-action="accept-friend">{{ translate('Accept') }}</button>
+            <button class="ui mini secondary button" data-action="decline-friend">{{ translate('Decline') }}</button>
+        {% endif %}
+
+    {% endblock %}
+{% endembed %}

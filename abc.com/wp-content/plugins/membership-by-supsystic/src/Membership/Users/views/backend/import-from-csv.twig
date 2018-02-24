@@ -1,0 +1,79 @@
+{% extends "@base/layouts/backend.twig" %}
+{% import '@base/macros/options.twig' as options %}
+
+{% block main %}
+	<h2 class="sc-header">{{ translate('Import users from CSV') }}</h2>
+	{% if importResponse %}
+		<div class="my3">
+			{% if importErrors %}
+				<h3>{{ translate('Importing completed with errors') }}</h3>
+				<ul>
+					{% for error in importErrors %}
+						<li>{{ error|raw }}</li>
+					{% endfor %}
+				</ul>
+			
+			{% else %}
+				<h3 class="m3">{{ translate('Import completed successfully') }}</h3>
+			{% endif %}
+		</div>
+	{% else %}
+		
+		<div class="mp-option">
+			<form method="POST" enctype="multipart/form-data" class="row">
+				<input type="hidden" name="_wpnonce" value="{{ nonce }}" />
+				<div class="col-md-4">
+					<input name="csv" class="sc-input" type="file">
+				</div>
+				<div class="col-md-4">
+					<button class="sc-button primary import-button">
+						<span>{{ translate('Import') }}</span>
+					</button>
+				</div>
+			</form>
+		</div>
+		
+		<div class="mp-option">
+			<div class="row">
+				<div class="col-md-8">
+					<p>
+						{{ translate('You can import new users as well as data for custom fields.
+						To do this, you need to specify the required fields in the first line of your csv file and for next lines data related to these fields.') }}
+					</p>
+					<p>{{ translate('For example:') }}</p>
+					<pre>
+user_login,user_pass,first_name,last_name
+johndoe,secret,John,Doe
+janedoe,secret,Jane,Doe
+					</pre>
+					
+					<ul>
+						<li><b>Warning!</b></li>
+						<li>{{ translate('Every user must have at least %s field specified.')|format('<code>user_login</code>')|raw }}</li>
+						<li>{{ translate('If the %s field is not specified then the password will be the same as the %s field.')
+							|format('<code>user_pass</code>', '<code>user_login</code>')|raw }}</li>
+						<li>{{ translate('If the user with the specified username or email already exists then inserting fields data will be ignored.') }}</li>
+						<li>{{ translate('On fields with type (Scroll List, Dropdown List, Radio Button, Checkbox) you can only use values from the available options so passed data to that field must match otherwise it will be ignored.') }}</li>
+					</ul>
+					<p>{{ translate('Available import field names. You can add more here.') }} <a target="_blank" href="{{ dashboardUrl('users') }}#fields">Link</a></p>
+					
+					<ul>
+						{% for field in fields %}
+							<li>
+								{{ field.label }} <code><b>{{ field.name }}</b></code>
+								{% if field.type in ['scroll', 'drop', 'checkbox', 'radio'] %}
+									{{ translate('Available field data') }}
+									{% for option in field.options  %}
+										<code><b>{{ option.id }}</b></code>
+									{% endfor %}
+								{% endif %}
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+	{% endif %}
+	
+{% endblock %}

@@ -1,0 +1,106 @@
+{% for user in users %}
+    <div class="ui card mp-user-card" data-id="{{ user.id }}">
+        <div class="image">
+            <a href="{{ profileUrl(user) }}" class="header">
+                <img src="{{ userCover(user, 'medium') }}" alt="">
+            </a>
+        </div>
+
+        <div class="content">
+            <div class="mp-user-avatar-container">
+                <div class="mp-user-avatar">
+                    <a href="{{ profileUrl(user) }}" class="header">
+                        <img src="{{ userAvatar(user, 'large') }}">
+                    </a>
+                </div>
+            </div>
+
+            <a href="{{ profileUrl(user) }}" style="position: relative" class="header">{{ user.displayName }}
+	            {% if user.badge_src and settings.base.main.badges == 'true' %}
+	                <img class="mp-user-badge" src="{{ (user.badge_src) }}" />
+	            {% endif %}
+            </a>
+
+			{% if user.groupInfo and user.groupInfo.group_role == 'administrator' %}
+				<div class="mbsGroupUserRole">
+					{% if user.groupInfo.is_creator == 1 %}
+						{{ translate('(Group Creator)') }}
+					{% else %}
+						{{ translate('(Group Administrator)') }}
+					{% endif %}
+				</div>
+			{% endif %}
+
+            <div class="ui center aligned container mp-social-stats social-stats">
+                {% if friendsActive %}
+                    <a href="{{ profileUrl(user, {'action': 'friends'}) }}" class="ui statistic tiny">
+                        <div class="value mp-social-stats-friends">
+                            {{ user.friends }}
+                        </div>
+                        <div class="label">
+                           {{ translate('Friends') }}
+                        </div>
+                    </a>
+                {% endif %}
+                {% if followersActive %}
+                    <a href="{{ profileUrl(user, {'action': 'followers'}) }}" class="ui statistic tiny">
+                        <div class="value mp-social-stats-follows">
+                            {{ user.follows }}
+                        </div>
+                        <div class="label">
+                            {{ translate('Follows') }}
+                        </div>
+                    </a>
+                    <a href="{{ profileUrl(user, {'action': 'followers'}) }}" class="ui statistic tiny">
+                        <div class="value mp-social-stats-followers">
+                            {{ user.followers }}
+                        </div>
+                        <div class="label">
+                            {{ translate('Followers') }}
+                        </div>
+                    </a>
+                {% endif %}
+            </div>
+            {% if user.view and user.view.userInfoContent %}<div>{{ user.view.userInfoContent|raw }}</div>{% endif %} <!--TODO-->
+        </div>
+
+        {% if not isCurrentUser(user) %}
+            <div class="extra content">
+                <div class="ui center aligned container user-action-buttons">
+                    {% block actionButtonsBefore %}{% endblock %}
+                    {% block actionButtons %}
+                        {% if userLoggedIn %}
+                            {% if currentUserCan('add-friends') and friendsActive and not isFriendOfCurrentUser(user) %}
+	                            <button class="ui mini primary button" data-action="add-friend">{{ translate('Add Friend') }}</button>
+                            {% endif %}
+
+                            {% if currentUserCan('add-friends') and friendsActive and isFriendOfCurrentUser(user) and currentUserIsFriendOf(user) %}
+	                            <button class="ui mini primary button" data-action="remove-friend">{{ translate('Unfriend') }}</button>
+                            {% endif %}
+	                        
+                            {% if currentUserCan('add-friends') and friendsActive and isFriendOfCurrentUser(user) and not currentUserIsFriendOf(user) %}
+	                            <button class="ui mini primary button" data-action="cancel-friend-request">{{ translate('Cancel a friend request') }}</button>
+                            {% endif %}
+
+                            {% if currentUserCan('follow') and followersActive and not isCurrentUserFollow(user) %}
+	                            <button class="ui mini primary button" data-action="follow">{{ translate('Follow') }}</button>
+                            {% endif %}
+
+                            {% if currentUserCan('follow') and followersActive and isCurrentUserFollow(user) %}
+	                            <button class="ui mini primary button" data-action="unfollow">{{ translate('Unfollow') }}</button>
+                            {% endif %}
+                            {% if currentUserCan('send-and-receive-messages') and messagesActive and currentUserHasPermission('send-messages', user) %}
+	                            <button class="ui mini primary button" data-action="message">{{ translate('Message') }}</button>
+                            {% endif %}
+                        {% else %}
+                            <button class="ui mini primary button" data-action="login">{{ translate('Add Friend') }}</button>
+                            <button class="ui mini primary button" data-action="login">{{ translate('Message') }}</button>
+                            <button class="ui mini primary button" data-action="login">{{ translate('Follow') }}</button>
+                        {% endif %}
+                    {% endblock %}
+                    {% block actionButtonsAfter %}{% endblock %}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endfor %}

@@ -1,0 +1,99 @@
+{% for comment in comments %}
+	<div class="comment" data-comment-id="{{ comment.id }}">
+		<div class="comment-container">
+			<a class="avatar">
+				{% if comment.type in ['activity_group_comment', 'activity_group_comment_reply'] %}
+					<img src="{{ groupLogo(comment.author, 'small') }} ">
+				{% else %}
+					<img src="{{ userAvatar(comment.author, 'small') }} ">
+				{% endif %}
+			</a>
+			<div class="content mp-comment-content">
+				{% if comment.type in ['activity_group_comment', 'activity_group_comment_reply'] %}
+					<a href="{{ groupUrl(comment.author) }}" class="author">{{ comment.author.name }}</a>
+				{% else %}
+					<a href="{{ profileUrl(comment.author) }}" class="author">{{ comment.author.displayName }}</a>
+				{% endif %}
+				
+				<div class="metadata">
+					<span class="date">{{ comment.updated_at }}</span>
+				</div>
+				<div class="text" data-comment-data="{{ comment.data|e }}">{{ comment.data }}</div>
+				
+				{% if comment.link %}
+					{% include '@activity/partials/activity-attachment-link.twig' with {'link': comment.link} %}
+				{% endif %}
+				
+				{% if comment.images %}
+					<div class="mp-activity-gallery" data-gallery-id="{{ comment.id }}" style="display: none">
+						{% for id, thumbnails in comment.images.thumbnails|slice(0, 3, true) %}
+							<div class="mp-activity-gallery-image" data-image-id="{{ id }}">
+								<img src="{{ activityImage(thumbnails, 'large') }}">
+								{% if loop.index0 == 2 and comment.images.total > 3 %}
+									<div class="mp-activity-gallery-image-overlay">
+										<div>+{{ comment.images.total - 3 }}</div>
+									</div>
+								{% endif %}
+							</div>
+						{% endfor %}
+					</div>
+				{% endif %}
+
+				{% if comment.attachmentFiles %}
+					<div class="mbsActivAttachFilesWr" data-activity-id="{{ comment.id }}">
+						{% for oneAttachId, oneAttach in comment.attachmentFiles %}
+							<a class="mbsOneAttachItem" title="{{ oneAttach['file_info']['name'] }}" href="{{ oneAttach['file_info']['url'] }}" target="_blank" data-id="{{ oneAttach['attachment_all_id'] }}">
+								<i class="icon attach mbsOneAttachIcon"></i>
+								<span class="mbsOneAttachCaption">{{ oneAttach['file_info']['name'] }}</span>
+							</a>
+						{% endfor %}
+					</div>
+				{% endif %}
+
+				{% if isPostComment(activity.group) %}
+					<div class="actions">
+                        {% if relatedActivity.status != 'deleted' %}
+                            {% if activity.type starts with 'group' or currentUserHasPermission('post-comments', activity.author) %}
+								<a class="reply reply-action">{{ translate('Reply') }}</a>
+                            {% endif %}
+							{% if isCurrentUser(comment.author) or currentUserCan('edit-activity') %}
+								<a class="edit-action">{{ translate('Edit') }}</a>
+								<a class="remove-action">{{ translate('Remove') }}</a>
+                            {% endif %}
+                        {% endif %}
+						<div class="mp-load-replies">
+							<a class="load-replies" {% if not comment.replies %}style="display:none;"{% endif %}><i class="vertically flipped share icon"></i><span>{{ comment.replies }}</span> {{ translate('Replies') }}</a>
+						</div>
+					</div>
+				{% endif %}
+			
+			</div>
+		</div>
+		
+		<div class="comments mp-comment-replies" style="display: none">
+			<div class="ui equal width grid mp-previous-replies" style="display: none">
+				<div class="left floated column">
+					<div class="mp-more-replies">{{ translate('View previous replies') }} <div class="ui active mini inline loader" style="display: none"></div></div>
+				</div>
+				<div class="right floated right aligned column mp-replies-count">
+					<div class="ui floated right">
+						<span class="showed-replies">0</span> {{ translate('of') }}
+						<span class="total-replies">{{ comment.replies }}</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="ui basic segment replies-loader" style="display: none">
+				<div class="ui small active loader"></div>
+			</div>
+			
+			<div class="comment-replies" style="display: none"></div>
+			
+			{% if activity.type starts with 'group' or currentUserHasPermission('post-comments', activity.author) %}
+				<div class="mp-reply-form">
+					{% include '@activity/partials/activity-comment-form.twig' with {'context' : activityContext, 'placeholder': 'Write a reply...'} %}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+{% endfor %}

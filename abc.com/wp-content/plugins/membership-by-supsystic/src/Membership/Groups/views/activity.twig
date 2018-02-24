@@ -1,0 +1,5 @@
+{% extends '@groups/group.twig' %}
+
+{% block content %}
+	{% include '@activity/partials/activities-container.twig' with {'disablePostForm': true, 'activities': activities, 'context': 'group', 'disablePostForm': true} %}
+{% endblock %}

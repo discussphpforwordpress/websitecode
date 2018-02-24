@@ -1,0 +1,31 @@
+/* .sc - Supsystic namespace */
+/* Supsystic UI */
+/* Membership */
+.mbsDescOrder {
+	position: relative;
+}
+.mbsDescOrder:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 7px 5px 0 5px;
+	border-color: #337ab7 transparent transparent transparent;
+	position: absolute;
+	top: 5px;
+	right: -15px;
+}
+.mbsAscOrder {
+	position: relative;
+}
+.mbsAscOrder:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 5px 7px 5px;
+	border-color: transparent transparent #337ab7 transparent;
+	position: absolute;
+	top: 5px;
+	right: -15px;
+}

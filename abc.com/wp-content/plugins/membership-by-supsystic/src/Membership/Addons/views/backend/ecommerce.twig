@@ -1,0 +1,34 @@
+{% extends "@base/layouts/backend.twig" %}
+
+{% block head %}
+    <div class="sc-tabs">
+		{% for tabKey, tab in ecommerceTabs %}
+			<a href="#" class="tab" data-target="{{ tabKey }}">
+				<i class="fa {{ tab.fa_icon }}"></i>{{ tab.title }}
+			</a>
+		{% endfor %}
+    </div>
+{% endblock %}
+
+{% block mainHeader %}
+    <div class="sc-header">
+        {% for tabKey, tab in ecommerceTabs %}
+        <div class="sc-header-item" data-item="{{ tabKey }}">
+            <a class="sc-get-addon" target="_blank"
+               href="{{ getMembershipExtensionUrl('membership-ecommerce') }}"><button class="sc-button primary">{{ translate('Get PRO Addon') }}</button></a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div class="sc-tabs-container">
+    {% for tabKey, tab in ecommerceTabs %}
+        <div class="sc-tab-content" data-tab="{{ tabKey }}">
+            <a target="_blank" href="{{ getMembershipExtensionUrl('membership-ecommerce') }}">
+                <img src="{{ assets('addons', tab.promo_image) }}" title="{{ translate('Get Pro') }}">
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

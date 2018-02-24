@@ -1,0 +1,27 @@
+{% for post in posts %}
+	<div class="item mp-post mbsOneProfilePost" data-post-id="{{ post.id }}">
+		<div class="content">
+			<a class="header" href="{{ post.link }}">{{ post.title }} </a>
+			<div class="meta">
+				<small class="date">{{ post.date }}</small>
+			</div>
+			<div class="extra">
+				<div><small>{{ post.category }}</small></div>
+				{% if post.comments_count %}
+					<small>{{ post.comments_count }} {{ translate('Comments') }}</small>
+				{% endif %}
+			</div>
+		</div>
+		{% if settings.base.plugins.socialShare.enabled == 1 and settings.base.plugins.socialShare.ids | length %}
+			<div class="mbsSocShareContainerForPost">
+				{{ getSocShareProject({
+					'projectId': settings.base.plugins.socialShare.ids[0],
+					'url': post.link,
+					'title': post.title,
+					'type': 'pp',
+					'id': post.id,
+				}) | raw }}
+			</div>
+		{% endif %}
+	</div>
+{% endfor %}

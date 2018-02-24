@@ -1,0 +1,87 @@
+{#<link rel="stylesheet" type="text/css" href="{{ assets('messages', 'css/messages.frontend.css') }}">#}
+
+<div id="conversations" class="sc-membership">
+	<div class="ui basic vertical segment">
+		<div class="conversations-list-container">
+			<div class="ui grid">
+				<div class="two column row">
+					<div class="left floated column">
+						<span class="no-conversations-message" {% if conversations %}style="display: none"{% endif %}>{{ translate('You don\'t have any conversations started.') }}</span>
+					</div>
+					<div class="right floated column">
+						<button class="ui button right floated mini primary new-conversation">{{ translate('New conversation') }}</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="conversations-list ui relaxed selection divided list">
+				{% include '@messages/partials/conversations-list.twig' with {'conversations': conversations} %}
+			</div>
+		</div>
+		
+		<div class="conversations-messages-container" style="display: none">
+			{% include '@messages/partials/conversations.twig' with {'converstaions': conversations} %}
+		</div>
+		
+		<div class="new-conversation-container" style="display: none">
+			<button class="ui primary mini button show-all-conversations">
+				<i class="angle left icon"></i>
+				{{ translate('All conversations') }}
+			</button>
+			<div class="ui basic vertical segment">
+				<div class="ui form conversation-create-form">
+					<div class="field">
+						<div class="ui fluid multiple search selection dropdown">
+							<input type="hidden" name="recepients">
+							<i class="dropdown icon"></i>
+							<div class="default text">{{ translate('To:') }}</div>
+							<div class="ui active small inline loader" style="display: none; margin: 0.2em 0;"></div>
+							<div class="menu ui relaxed list">
+								{% include '@base/partials/search-dropdown-user.twig' with {'users': currentUserFriends} %}
+							</div>
+						</div>
+					</div>
+					<div class="field">
+						<textarea placeholder="{{ translate('Write a message') }}" rows="2"></textarea>
+					</div>
+					<div class="ui right label characters-count" style="display:none;"></div>
+					<button class="ui submit mini primary right floated button">{{ translate('Send') }}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="delete-messages-modal" class="ui modal small">
+		<i class="close icon cancel"></i>
+		<div class="header">{{ translate('Delete this messages?') }}</div>
+		<div class="content">
+			<div class="description">{{ translate('Once you delete your copy of this messages, it cannot be undone.') }}</div>
+		</div>
+		<div class="actions">
+			<button class="ui mini button ok primary">{{ translate('Delete messages') }}</button>
+			<button class="ui mini button secondary cancel">{{ translate('Cancel') }}</button>
+		</div>
+	</div>
+
+	<div id="delete-conversation-modal" class="ui modal small">
+		<i class="close icon cancel"></i>
+		<div class="header">{{ translate('Delete this conversation?') }}</div>
+		<div class="content">
+			<div class="description">{{ translate('Once you delete your copy of this conversation, it cannot be undone.') }}</div>
+		</div>
+		<div class="actions">
+			<button class="ui mini button ok primary">{{ translate('Delete conversation') }}</button>
+			<button class="ui mini button secondary cancel">{{ translate('Cancel') }}</button>
+		</div>
+	</div>
+
+	<div id="mbsImagePopupModalWnd" class="ui modal">
+		<div class="content">
+			<img class="ui image" src=""/>
+		</div>
+	</div>
+</div>
+
+{#<link rel="stylesheet" type="text/css" href="{{ assets('users', 'css/users-list.frontend.css') }}">#}
+{#<script type="text/javascript" src="{{ assets('users', 'js/users-list.frontend.js') }}"></script>#}
+{#<script type="text/javascript" src="{{ assets('messages', 'js/messages.frontend.js') }}"></script>#}

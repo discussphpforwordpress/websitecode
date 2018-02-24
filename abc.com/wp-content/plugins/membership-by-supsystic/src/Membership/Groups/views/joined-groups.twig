@@ -1,0 +1,50 @@
+<div id="mbs-joined-groups" class="sc-membership">
+	<div class="ui grid">
+		<div class="sixteen wide column">
+			<div class="groups-tab-items">
+				<div class="item mbs-f-hidden" data-tab="joined"></div>
+				{% if currentUserCan('can-create-groups') %}
+					<div class="right menu">
+						<div>
+							<button class="ui button mini primary create-group-button">{{ translate('Create Group') }}</button>
+						</div>
+					</div>
+				{% endif %}
+			</div>
+			<div class="groups-tabs">
+				<div class="ui tab active" data-tab="joined">
+					<div class="ui basic vertical segment form group-search-input">
+						<select name="category" class="mbsGroupsSearchCategory">
+							<option value="0">{{ translate('All categories') }}</option>
+							{% if groupCategoryList|length %}
+								{% for oneGcItem in groupCategoryList %}
+									<option value="{{ oneGcItem['id'] }}">{{ oneGcItem['name'] }}</option>
+								{% endfor %}
+							{% endif %}
+						</select>
+						<div class="ui fluid icon input mbsGroupsSearchName">
+							<input type="text" placeholder="{{ translate('Find group...') }}">
+							<i class="search icon"></i>
+						</div>
+					</div>
+					<div class="ui two cards stackable groups-list">
+						{% include '@groups/partials/groups-list.twig' with {'groups': joinedGroups} %}
+					</div>
+					<div class="ui basic vertical segment">
+						<div class="ui message no-groups" {% if groups %}style="display:none"{% endif %}>
+							<p>{{ translate('No groups to show.') }}</p>
+						</div>
+					</div>
+					<div class="ui basic segment very padded list-loader" style="display:none;">
+						<div class="ui active loader"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% include '@groups/partials/create-group-modal.twig' %}
+{% if not userLoggedIn %}
+	{% include '@auth/partials/login-modal.twig' %}
+{% endif %}
+

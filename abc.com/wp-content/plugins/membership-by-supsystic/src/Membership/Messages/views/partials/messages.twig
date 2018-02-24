@@ -1,0 +1,47 @@
+{% spaceless %}
+	{% for message in messages %}
+		<div class="mp-message ui vertical segment" data-id="{{ message.id }}" data-state="{{ message.message_state }}">
+			<div class="ui equal width grid">
+				<div class="one wide column delete-message-column" style="display: none">
+					<div class="ui checkbox">
+						<input type="checkbox" value="{{ message.id }}">
+						<label></label>
+					</div>
+				</div>
+				<div class="column">
+					<div class="comment mp-message-container">
+						<div class="mp-message-avatar">
+							<a href="{{ profileUrl(message.author) }}">
+								<img src="{{ userAvatar(message.author, 'medium') }}">
+							</a>
+						</div>
+						<div class="mp-message-content">
+							<a href="{{ profileUrl(message.author) }}" class="author">{{ message.author.displayName }}</a>
+							<div class="metadata">
+								<span class="date">{{ message.created_at }}</span>
+							</div>
+							<div class="text">{{ message.message|nl2br }}</div>
+							{% if message.attachments | length %}
+								<div class="mbsMsgAttachmentWrap">
+									{% for attItem in message.attachments %}
+
+										{% set attachmentUrl = attachmentIcon %}
+										{% if attItem['is_image'] %}
+											{% set attachmentUrl = attItem['file_info']['url'] %}
+										{% endif %}
+
+										<a class="mbsMsgAttachmentOne {% if attItem['is_image'] %}mbsPopupImage{% else %}{{ mbsMsgAttachmLink }}{% endif %}"
+											href="{{ attItem['file_info']['url'] }}" target="_blank" data-attachment-id="{{ attItem['attachment_all_id'] }}" title="{{ attItem['file_info']['name'] }}">
+											<img src="{{ attachmentUrl }}" class="mbsMsgAttachmImage"/>
+											<span class="mbsMsgAttachmCaption">{{ attItem['file_info']['name'] }}</span>
+										</a>
+									{% endfor %}
+								</div>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+{% endspaceless %}

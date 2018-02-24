@@ -1,0 +1,19 @@
+{% if activity.type == 'bbpress_topic' %}
+	{{ translate('%s created new topic %s.')
+	|format(
+	'<a href="' ~  profileUrl(activity.author) ~ '">' ~  activity.author.displayName ~ '</a>',
+	'<a target="_blank" href="' ~ activity.post.guid ~ '">' ~ activity.post.post_title ~ '</a>'
+	)
+	|raw
+	}}
+{% endif %}
+
+{% if activity.type == 'bbpress_reply' %}
+    {{ translate('%s replied in topic %s.')
+    |format(
+    '<a href="' ~  profileUrl(activity.author) ~ '">' ~  activity.author.displayName ~ '</a>',
+    '<a target="_blank" href="' ~ activity.post.guid ~ '">' ~ activity.post.post_title ~ '</a>'
+    )
+    |raw
+    }}
+{% endif %}

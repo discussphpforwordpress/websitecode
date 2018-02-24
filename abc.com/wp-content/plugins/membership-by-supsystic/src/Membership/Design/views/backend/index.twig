@@ -1,0 +1,1765 @@
+{% extends "@base/layouts/backend.twig" %}
+{% import "@base/macros/options.twig" as options %}
+
+{% block head %}
+	<div class="sc-tabs">
+		<a href="#" class="tab active" data-target="general">
+			<i class="fa fa-desktop"></i>{{ translate('General') }}
+		</a>
+		<a href="#" class="tab" data-target="menu">
+			<i class="fa fa-bars"></i>{{ translate('Menu') }}
+		</a>
+		<a href="#" class="tab" data-target="profile">
+			<i class="fa fa-user"></i>{{ translate('User Profile') }}
+		</a>
+		<a href="#" class="tab" data-target="activity">
+			<i class="fa fa-newspaper-o"></i>{{ translate('Activity') }}
+		</a>
+		<a href="#" class="tab" data-target="auth">
+			<i class="fa fa-user-plus"></i>{{ translate('Registration and Login') }}
+		</a>
+		<a href="#" class="tab" data-target="members">
+			<i class="fa fa-users"></i>{{ translate('Members Directory') }}
+		</a>
+		<a href="#" class="tab" data-target="fonts">
+			<i class="fa fa-font"></i>{{ translate('Fonts') }}
+		</a>
+		<a href="#" class="tab active" data-target="groups">
+			<i class="fa fa-object-group"></i>{{ translate('Groups') }}
+		</a>
+		<button data-save-settings class="save-settings sc-button icon-button primary">
+			<i class="fa fa-save"></i>
+			<span>{{ translate('Save Settings') }}</span>
+		</button>
+	</div>
+{% endblock %}
+
+{% block mainHeader %}
+	<div class="sc-header">
+		<h2>{{ translate('Design') }}</h2>
+	</div>
+{% endblock %}
+
+{% block main %}
+
+	<div class="sc-tab-content active" data-tab="general">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+					
+					<h3>{{ translate('Main') }}</h3>
+
+
+					{{ options.radioRow(translate('Profile Image Style'), 
+						[{
+							'label': translate('Rounded Corners'),
+							'name': 'general[avatar-style]',
+							'value': 'round',
+							'checked': settings.general['avatar-style'] == 'round'
+						},
+						{
+							'label': translate('Circle'),
+							'name': 'general[avatar-style]',
+							'value': 'circle',
+							'checked': settings.general['avatar-style'] == 'circle'
+						},
+						{
+							'label': translate('Square'),
+							'name': 'general[avatar-style]',
+							'value': 'square',
+							'checked': settings.general['avatar-style'] == 'square'
+						}], 
+						'avatar-style',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Use Default Theme Colors'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'general[default-theme-colors]',
+							'value': 'true',
+							'checked': settings.general['default-theme-colors'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'general[default-theme-colors]',
+							'value': 'false',
+							'checked': settings.general['default-theme-colors'] == 'false'
+						}], 
+						'default-theme-colors',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					<h3>{{ translate('Buttons') }}</h3>
+
+					{{ options.colorRow(translate('Primary Button Color'),
+						'general[primary-button-color]',
+						settings.general['primary-button-color'],
+						'primary-button-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.colorRow(translate('Primary Button Hover Color'),
+						'general[primary-button-hover-color]',
+						settings.general['primary-button-hover-color'],
+						'primary-button-hover-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					
+					{{ options.colorRow(translate('Secondary Button Color'),
+						'general[secondary-button-color]',
+						settings.general['secondary-button-color'],
+						'secondary-button-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.colorRow(translate('Secondary Button Hover Color'),
+						'general[secondary-button-hover-color]',
+						settings.general['secondary-button-hover-color'],
+						'secondary-button-hover-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.colorRow(translate('Smile Button Background Color'),
+						'general[smile-button-bg-color]',
+						settings.general['smile-button-bg-color'] | default('#fff'),
+						'smile-button-bg-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.colorRow(translate('Smile Button Hover Background Color'),
+						'general[smile-button-hover-bg-color]',
+						settings.general['smile-button-hover-bg-color'] | default('#fff'),
+						'smile-button-hover-bg-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.settingRowWithInput(
+						translate('Smile button icon size'),
+						null,
+						'mbsSmileButtonSettRow',
+						null,
+						options.input(
+							'number',
+							'general[smiles-button-icon-size-text-font-size-number]',
+							settings['general']['smiles-button-icon-size-text-font-size-number'] | default(20),
+							{ 'id': 'smiles-button-icon-size-text-font-size-number', 'class': 'mbs-number-units-width', 'pattern':'[0-9]' }
+						) ~ options.selectInput2(
+							[{'value' : 'px', 'title' : 'px',},],
+							settings['general']['smiles-button-icon-size-text-font-unit-select'] | default('px'),
+							{
+								'id': 'smiles-button-icon-size-text-font-unit-select',
+								'class': 'mbs-selector-unit-width sc-input',
+								'name': 'general[smiles-button-icon-size-text-font-unit-select]',
+							}
+						), null
+						, {'mbsThinCol': 1}
+					)}}
+
+					<!-- 					
+					{{ options.colorRow(translate('Primary Color'),
+						'general[primary-color]',
+						settings.general['primary-color'],
+						'primary-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.colorRow(translate('Secondary Color'),
+						'general[secondary-color]',
+						settings.general['secondary-color'],
+						'secondary-color',
+						null, null, {'mbsThinCol': 1}
+					) }} -->
+
+					<h3>{{ translate('Inputs') }}</h3>
+
+					{{ options.colorRow(translate('Input Border Color'),
+						'general[input-border-color]',
+						settings.general['input-border-color'],
+						'input-border-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.colorRow(translate('Input Border Focus Color'),
+						'general[input-border-focus-color]',
+						settings.general['input-border-focus-color'],
+						'input-border-focus-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.colorRow(translate('Input Background Color'),
+						'general[input-background-color]',
+						settings.general['input-background-color'],
+						'input-background-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.colorRow(translate('Input Background Focus Color'),
+						'general[input-background-focus-color]',
+						settings.general['input-background-focus-color'],
+						'input-background-focus-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.colorRow(translate('Input Placeholder Color'),
+						'general[input-placeholder-color]',
+						settings.general['input-placeholder-color'],
+						'input-placeholder-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					<!-- {{ options.colorRow(translate('Help Icon Background Color'),
+						'general[help-icon-background-color]',
+						settings.general['help-icon-background-color'],
+						'help-icon-background-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					
+					{{ options.colorRow(translate('Help Icon Color'),
+						'general[help-icon-text-color]',
+						settings.general['help-icon-text-color'],
+						'help-icon-text-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Show an asterisk for required fields'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'general[css_visibility_asterisk]',
+							'value': 'visible',
+							'checked': settings.general['css_visibility_asterisk'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'general[css_visibility_asterisk]',
+							'value': 'hidden',
+							'checked': settings.general['css_visibility_asterisk'] == 'false'
+						}], 
+						'show-asterisk',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.colorRow(translate('Required Asterisk Color'),
+						'general[css_color_asterisk]',
+						settings.general['css_color_asterisk'],
+						'asterisk-color',
+						(settings.general['show-asterisk'] == '') ? 'style="display:none;"'
+					) }} -->
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="sc-tab-content" data-tab="menu">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+					
+				
+					{{ options.radioRow(translate('Add logout link to menu'),
+						[{
+							'label': translate('Yes'),
+							'name': 'menu[add-logout-link]',
+							'value': 'true',
+							'checked': settings.menu['add-logout-link'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'menu[add-logout-link]',
+							'value': 'false',
+							'checked': settings.menu['add-logout-link'] == 'false'
+						}],
+						'add-logout-link',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					<div class="row logoutMenuListRow mbs-hidden">
+						<div class="col-md-12">
+							<div class="loutMenuListWrapper">
+								{{ options.selectInput2(
+									wpMenuList,
+									settings.menu['logout-menu-list'],
+									{
+										'class': 'chosen-select',
+										'multiple': 'multiple',
+										'id': 'mbs-design-logout-menu-list',
+										'name': 'menu[logout-menu-list][]',
+										'data-placeholder': translate('Choose menus to add logout item...'),
+									},
+									0
+								) }}
+								{{ options.hiddenInput('menu[use-logout-list]', 1, null) }}
+							</div>
+						</div>
+					</div>
+
+					{{ options.radioRow(translate('Remove login and registration links from menu when user is logged in'),
+						[{
+							'label': translate('Yes'),
+							'name': 'menu[remove-login-registration]',
+							'value': 'true',
+							'checked': settings.menu['remove-login-registration'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'menu[remove-login-registration]',
+							'value': 'false',
+							'checked': settings.menu['remove-login-registration'] == 'false'
+						}],
+						'remove-login-registration',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="sc-tab-content" data-tab="activity">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+					
+					<h3>{{ translate('Activity filter') }}</h3>
+					
+					{{ options.radioRow(translate('Show Activity Filter'),
+						[{
+							'label': translate('Yes'),
+							'name': 'activity[show-filter]',
+							'value': 'true',
+							'checked': settings.activity['show-filter'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'activity[show-filter]',
+							'value': 'false',
+							'checked': settings.activity['show-filter'] == 'false'
+						}],
+						'activity.show-filter',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.selectRow(translate('Default Activity Filter'),
+						[{
+							'title': translate('Subscriptions'),
+							'value': 'subscriptions',
+							'selected': settings.activity['default-filter'] == 'subscriptions'
+						},
+						{
+							'title': translate('Popular'),
+							'value': 'popular',
+							'selected': settings.activity['default-filter'] == 'popular'
+						},
+						{
+							'title': translate('Site wide'),
+							'value': 'site-wide',
+							'selected': settings.activity['default-filter'] == 'site-wide'
+						}],
+						'activity[default-filter]',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					
+					<h3>{{ translate('Activity types') }}</h3>
+					
+					{{ options.radioRow(translate('Posts'),
+						[{
+							'label': translate('Yes'),
+							'name': 'activity[type][posts]',
+							'value': 'true',
+							'checked': settings.activity['type']['posts'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'activity[type][posts]',
+							'value': 'false',
+							'checked': settings.activity['type']['posts'] == 'false'
+						}],
+						'activity.type.posts',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					
+					{{ options.radioRow(translate('Photos'),
+						[{
+							'label': translate('Yes'),
+							'name': 'activity[type][photos]',
+							'value': 'true',
+							'checked': settings.activity['type']['photos'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'activity[type][photos]',
+							'value': 'false',
+							'checked': settings.activity['type']['photos'] == 'false'
+						}],
+						'activity.type.photos',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					
+					{{ options.radioRow(translate('Shares'),
+						[{
+							'label': translate('Yes'),
+							'name': 'activity[type][shares]',
+							'value': 'true',
+							'checked': settings.activity['type']['shares'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'activity[type][shares]',
+							'value': 'false',
+							'checked': settings.activity['type']['shares'] == 'false'
+						}],
+						'activity.type.shares',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{% set shareFriendPostOnCheckItem = {
+						'name': 'activity[type][friendPostOn]',
+						'value': 1,
+					} %}
+					{% if settings.activity['type']['friendPostOn'] == 1 %}
+						{% set shareFriendPostOnCheckItem = shareFriendPostOnCheckItem | merge({'checked': 'checked'}) %}
+					{% endif %}
+					{{ options.checkboxSettingRow(translate('Share to Friends Activity'),
+						[shareFriendPostOnCheckItem],
+						'activityTypesFriendPostOn',
+						null,
+						null,
+						null,
+						{'mbsThinCol' : 1,}
+					)}}
+
+					{% set shareFrontendPostOnCheckItem = {
+						'name': 'activity[type][friendPostOnShowInFrontend]',
+						'value': 1,
+					} %}
+					{% if settings.activity['type']['friendPostOnShowInFrontend'] == 1 %}
+						{% set shareFrontendPostOnCheckItem = shareFrontendPostOnCheckItem | merge({'checked': 'checked'}) %}
+					{% endif %}
+					{{ options.checkboxSettingRow(translate('Add this option to frontend'),
+						[shareFrontendPostOnCheckItem],
+						'activityTypesFriendPostInFrontendOn',
+						null,
+						null,
+						null,
+						{'mbsThinCol' : 1,}
+					)}}
+					
+					{{ options.radioRow(translate('Likes'),
+						[{
+							'label': translate('Yes'),
+							'name': 'activity[type][likes]',
+							'value': 'true',
+							'checked': settings.activity['type']['likes'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'activity[type][likes]',
+							'value': 'false',
+							'checked': settings.activity['type']['likes'] == 'false'
+						}],
+						'activity.type.likes',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Favorite'),
+						[{
+							'label': translate('Yes'),
+							'name': 'activity[type][favorite]',
+							'value': 'true',
+							'checked': settings.activity['type']['favorite'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'activity[type][favorite]',
+							'value': 'false',
+							'checked': settings.activity['type']['favorite'] == 'false'
+						}],
+						'activity.type.favorite',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					
+					{{ options.radioRow(translate('Comments'),
+						[{
+							'label': translate('Yes'),
+							'name': 'activity[type][comments]',
+							'value': 'true',
+							'checked': settings.activity['type']['comments'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'activity[type][comments]',
+							'value': 'false',
+							'checked': settings.activity['type']['comments'] == 'false'
+						}],
+						'activity.type.comments',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					
+					{{ options.radioRow(translate('Groups'),
+						[{
+							'label': translate('Yes'),
+							'name': 'activity[type][groups]',
+							'value': 'true',
+							'checked': settings.activity['type']['groups'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'activity[type][groups]',
+							'value': 'false',
+							'checked': settings.activity['type']['groups'] == 'false'
+						}],
+						'activity.type.groups',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					
+					{{ options.radioRow(translate('Social'),
+						[{
+							'label': translate('Yes'),
+							'name': 'activity[type][social]',
+							'value': 'true',
+							'checked': settings.activity['type']['social'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'activity[type][social]',
+							'value': 'false',
+							'checked': settings.activity['type']['social'] == 'false'
+						}],
+						'activity.type.social',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					
+					{{ options.radioRow(translate('Forum'),
+						[{
+							'label': translate('Yes'),
+							'name': 'activity[type][forum]',
+							'value': 'true',
+							'checked': settings.activity['type']['forum'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'activity[type][forum]',
+							'value': 'false',
+							'checked': settings.activity['type']['forum'] == 'false'
+						}],
+						'activity.type.forum',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="sc-tab-content" data-tab="profile">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+
+					{{ options.inputRow(translate('Profile Container Max Width'),
+						'profile[container-max-width]',
+						settings.profile['container-max-width'],
+						'container-max-width',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.colorRow(translate('Profile Header Background Color'),
+						'profile[header-background-color]',
+						settings.profile['header-background-color'],
+						'header-background-color',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+
+					{{ options.radioRow(translate('Show Display Name In Profile Header'),
+						[{
+							'label': translate('Yes'),
+							'name': 'profile[show-display-name]',
+							'value': 'true',
+							'checked': settings.profile['show-display-name'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'profile[show-display-name]',
+							'value': 'false',
+							'checked': settings.profile['show-display-name'] == 'false'
+						}],
+						'show-display-name',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="sc-tab-content" data-tab="auth">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+
+					<h3>{{ translate('Registration') }}</h3>
+
+
+					{{ options.inputRow(translate('Registration Primary Button Text'),
+						'auth[registration-primary-button-text]',
+						settings.auth['registration-primary-button-text'],
+						'registration-primary-button-text',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+                    {{ options.colorRow(translate('Asterisk color'),
+                        'general[asterisk-color]',
+                        settings.general['asterisk-color'] | default('rgb(255, 0, 0)'),
+                        'asterisk-color',
+                        null, null, {'mbsThinCol': 1}
+                    ) }}
+					
+					<h3>{{ translate('Login') }}</h3>
+					
+					{{ options.inputRow(translate('Login Primary Button Text'),
+						'auth[login-primary-button-text]',
+						settings.auth['login-primary-button-text'],
+						'login-primary-button-text',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Login Secondary Button'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'auth[login-secondary-button]',
+							'value': 'true',
+							'checked': settings.auth['login-secondary-button'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'auth[login-secondary-button]',
+							'value': 'false',
+							'checked': settings.auth['login-secondary-button'] == 'false'
+						}], 
+						'login-secondary-button',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(translate('Login Secondary Button Text'),
+						'auth[login-secondary-button-text]',
+						settings.auth['login-secondary-button-text'],
+						'login-secondary-button-text',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(translate('Login Secondary Button URL'),
+						'auth[login-secondary-button-url]',
+						settings.auth['login-secondary-button-url'],
+						'login-secondary-button-url',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Show Remember Me'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'auth[login-show-remember-me]',
+							'value': 'true',
+							'checked': settings.auth['login-show-remember-me'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'auth[login-show-remember-me]',
+							'value': 'false',
+							'checked': settings.auth['login-show-remember-me'] == 'false'
+						}], 
+						'login-show-remember-me',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					
+					
+					{{ options.radioRow(translate('Google ReCaptcha'),
+						[{
+							'label': translate('Yes'),
+							'name': 'auth[login-google-recaptcha-enable]',
+							'value': 'true',
+							'checked': settings.auth['login-google-recaptcha-enable'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'auth[login-google-recaptcha-enable]',
+							'value': 'false',
+							'checked': settings.auth['login-google-recaptcha-enable'] == 'false'
+						}],
+						'login-google-recaptcha-enable',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Login after success Registration'),
+						[{
+							'label': translate('Yes'),
+							'name': 'auth[login-after-register-enable]',
+							'value': 1,
+							'checked': settings.auth['login-after-register-enable'] == 1 or settings.auth['login-after-register-enable'] is not defined
+						},
+						{
+							'label': translate('No'),
+							'name': 'auth[login-after-register-enable]',
+							'value': 0,
+							'checked': settings.auth['login-after-register-enable'] is defined and settings.auth['login-after-register-enable'] == 0
+						}],
+						'login-after-register-enable',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					
+					<div class="login-google-recaptcha-settings" style="display: none">
+
+					{{ options.inputRow(translate('Google ReCaptcha Site Key'),
+						'auth[login-google-recaptcha-site-key]',
+						settings.auth['login-google-recaptcha-site-key'],
+						'login-google-recaptcha-site-key',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					
+					
+					{{ options.inputRow(translate('Google ReCaptcha Secret Key'),
+						'auth[login-google-recaptcha-secret-key]',
+						settings.auth['login-google-recaptcha-secret-key'],
+						'login-google-recaptcha-secret-key',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					
+					{{ options.selectRow(translate('Google ReCaptcha Theme'),
+						[{
+							'title': translate('Light'),
+							'value': 'light',
+							'checked': settings.auth['login-google-recaptcha-theme'] == 'light'
+						},
+						{
+							'title': translate('Dark'),
+							'value': 'dark',
+							'selected': settings.auth['login-google-recaptcha-theme'] == 'dark'
+						}],
+						'auth[login-google-recaptcha-theme]',
+						'google-re-captcha-theme',
+						 null, {'mbsThinCol': 1}
+					) }}
+					
+					{{ options.selectRow(translate('Google ReCaptcha Type'),
+						[{
+							'title': translate('Image'),
+							'value': 'image',
+							'selected': settings.auth['login-google-recaptcha-type'] == 'image'
+						},
+						{
+							'title': translate('Audio'),
+							'value': 'audio',
+							'selected': settings.auth['login-google-recaptcha-type'] == 'audio'
+						}],
+						'auth[login-google-recaptcha-type]',
+						'google-re-captcha-type',
+						null, {'mbsThinCol': 1}
+					) }}
+					
+					
+					{{ options.selectRow(translate('Google ReCaptcha Size'),
+						[{
+							'title': translate('Normal'),
+							'value': 'normal',
+							'selected': settings.auth['login-google-recaptcha-size'] == 'normal'
+						},
+						{
+							'title': translate('Compact'),
+							'value': 'compact',
+							'selected': settings.auth['login-google-recaptcha-size'] == 'compact'
+						}],
+						'auth[login-google-recaptcha-size]',
+						'google-re-captcha-size',
+						null, {'mbsThinCol': 1}
+					) }}
+					
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sc-tab-content" data-tab="members">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+
+					<h3>{{ translate('General Options') }}</h3>
+
+					{% set _roles = [{
+							'title': translate('All'),
+							'value': 'all',
+							'selected': 'all' in settings.members['roles-to-display'],
+						}] %}
+	
+					{% for value, role in roles %}
+						{% set _roles = _roles|merge([{
+							'title': role.name,
+							'value': role.id,
+							'selected': role.id in settings.members['roles-to-display'],
+						}]) %}
+					{% endfor %}
+
+					{{ options.multipleSelectRow(translate('User Roles to Display'), 
+						_roles,
+						'members[roles-to-display]',
+						'roles-to-display',
+						null, null, null, null, null, {'mbsThinCol': 1}
+					) }}
+
+					<!-- Only show members who have uploaded a profile photo -->
+					{{ options.radioRow(translate('Show Only Members With Photo'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'members[show-only-with-avatar]',
+							'value': 'true',
+							'checked': settings.members['show-only-with-avatar'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[show-only-with-avatar]',
+							'value': 'false',
+							'checked': settings.members['show-only-with-avatar'] == 'false'
+						}], 
+						'show-only-with-avatar',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					<!-- Only show members who have uploaded a cover photo -->
+					{{ options.radioRow(translate('Show Only Members With Cover'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'members[show-only-with-cover]',
+							'value': 'true',
+							'checked': settings.members['show-only-with-cover'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[show-only-with-cover]',
+							'value': 'false',
+							'checked': settings.members['show-only-with-cover'] == 'false'
+						}], 
+						'show-only-with-cover',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					<!-- Show load more button on members page -->
+					{{ options.radioRow(translate('Show Load More Button'),
+						[{
+							'label': translate('Yes'),
+							'name': 'members[show-load-more-button]',
+							'value': 'true',
+							'checked': settings.members['show-load-more-button'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[show-load-more-button]',
+							'value': 'false',
+							'checked': settings.members['show-load-more-button'] == 'false'
+						}],
+						'show-load-more-button',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					<!-- Show pages on members page -->
+					{{ options.radioRow(translate('Show Pages'),
+						[{
+							'label': translate('Yes'),
+							'name': 'members[show-pages]',
+							'value': 'true',
+							'checked': settings.members['show-pages'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[show-pages]',
+							'value': 'false',
+							'checked': settings.members['show-pages'] == 'false'
+						}],
+						'show-pages',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					<!-- Show tabs (friend, followers) for login user on members page -->
+					{{ options.radioRow(translate('Show tabs'),
+					[{
+						'label': translate('Yes'),
+						'name': 'members[show-tabs]',
+						'value': 'true',
+						'checked': settings.members['show-tabs'] == 'true'
+					},
+					{
+						'label': translate('No'),
+						'name': 'members[show-tabs]',
+						'value': 'false',
+						'checked': settings.members['show-tabs'] == 'false'
+					}],
+					'show-tabs',
+					null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.selectRow(translate('Default Sort Users By'), 
+						[{
+							'title': translate('New Users First'),
+							'value': 'new-users-first',
+							'selected': settings.members['sort-users-by'] == 'new-users-first',
+						},
+						{
+							'title': translate('Old Users First'),
+							'value': 'old-users-first',
+							'selected': settings.members['sort-users-by'] == 'old-users-first',
+						},
+						{
+							'title': translate('First Name'),
+							'value': 'first-name',
+							'selected': settings.members['sort-users-by'] == 'first-name',
+						},
+						{
+							'title': translate('Last Name'),
+							'value': 'last-name',
+							'selected': settings.members['sort-users-by'] == 'last-name',
+						},
+						{
+							'title': translate('Random'),
+							'value': 'random',
+							'selected': settings.members['sort-users-by'] == 'random',
+						}],
+						'members[sort-users-by]',
+						'sort-users-by',
+						null, {'mbsThinCol': 1}
+					) }}
+
+
+					<h3>User Card</h3>
+
+                    {{ options.radioRow(translate('Show Friends and Followers'),
+						[{
+							'label': translate('Yes'),
+							'name': 'members[show-friends-and-followers]',
+							'value': 'true',
+							'checked': settings.members['show-friends-and-followers'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[show-friends-and-followers]',
+							'value': 'false',
+							'checked': settings.members['show-friends-and-followers'] == 'false'
+						}],
+						'show-display-name',
+						null, null, {'mbsThinCol': 1}
+                    ) }}
+
+                    <!--
+					{{ options.radioRow(translate('Enable Profile Photo'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'members[enable-profile-photo]',
+							'value': 'true',
+							'checked': settings.members['enable-profile-photo'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[enable-profile-photo]',
+							'value': 'false',
+							'checked': settings.members['enable-profile-photo'] == 'false'
+						}], 
+						'enable-profile-cards',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Enable Cover Photo'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'members[enable-cover-photo]',
+							'value': 'true',
+							'checked': settings.members['enable-cover-photo'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[enable-cover-photo]',
+							'value': 'false',
+							'checked': settings.members['enable-cover-photo'] == 'false'
+						}], 
+						'enable-cover-photo',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Show Display Name'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'members[show-display-name]',
+							'value': 'true',
+							'checked': settings.members['show-display-name'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[show-display-name]',
+							'value': 'false',
+							'checked': settings.members['show-display-name'] == 'false'
+						}], 
+						'show-display-name',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Show tagline below profile name'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'members[show-tagline]',
+							'value': 'true',
+							'checked': settings.members['show-tagline'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[show-tagline]',
+							'value': 'false',
+							'checked': settings.members['show-tagline'] == 'false'
+						}], 
+						'show-tagline',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Show extra user information below tagline?'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'members[show-extra-user-information]',
+							'value': 'true',
+							'checked': settings.members['show-extra-user-information'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[show-extra-user-information]',
+							'value': 'false',
+							'checked': settings.members['show-extra-user-information'] == 'false'
+						}], 
+						'show-extra-user-information',
+						null, null, {'mbsThinCol': 1}
+					) }}
+ -->
+<!-- 					<h3>Search Option</h3>
+
+					{{ options.radioRow(translate('Enable Search feature'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'members[enable-search-options]',
+							'value': 'true',
+							'checked': settings.members['enable-search-options'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[enable-search-options]',
+							'value': 'false',
+							'checked': settings.members['enable-search-options'] == 'false'
+						}], 
+						'enable-search-options',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Show results only after search'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'members[show-search-result-after-search]',
+							'value': 'true',
+							'checked': settings.members['show-search-result-after-search'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[show-search-result-after-search]',
+							'value': 'false',
+							'checked': settings.members['show-search-result-after-search'] == 'false'
+						}], 
+						'show-search-result-after-search',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.selectRow(translate('User Roles that can use search'), 
+						[{
+							'title': translate('All'),
+							'value': 'none',
+							'selected': settings.members['user-role-that-can-use-search'] == 'none',
+							'disabled': true
+						}],
+						'members[user-role-that-can-use-search]',
+						'user-role-that-can-use-search',
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.selectRow(translate('Choose field(s) to enable in search'), 
+						[{
+							'title': translate('All'),
+							'value': 'none',
+							'selected': settings.members['user-role-that-can-use-search'] == 'none',
+							'disabled': true
+						}],
+						'members[user-role-that-can-use-search]',
+						'user-role-that-can-use-search',
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Show results only after search'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'members[show-search-result-after-search]',
+							'value': 'true',
+							'checked': settings.members['show-search-result-after-search'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[show-search-result-after-search]',
+							'value': 'false',
+							'checked': settings.members['show-search-result-after-search'] == 'false'
+						}], 
+						'show-search-result-after-search',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+
+					{{ options.radioRow(translate('Results Text'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'members[search-results-text]',
+							'value': 'true',
+							'checked': settings.members['search-results-text'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[search-results-text]',
+							'value': 'false',
+							'checked': settings.members['search-results-text'] == 'false'
+						}], 
+						'search-results-text',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Single Result Text'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'members[single-search-results-text]',
+							'value': 'true',
+							'checked': settings.members['single-search-results-text'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[single-search-results-text]',
+							'value': 'false',
+							'checked': settings.members['single-search-results-text'] == 'false'
+						}], 
+						'single-search-results-text',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Custom text if no users were found'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'members[custeom-text-if-no-users-found]',
+							'value': 'true',
+							'checked': settings.members['custeom-text-if-no-users-found'] == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'members[custeom-text-if-no-users-found]',
+							'value': 'false',
+							'checked': settings.members['custeom-text-if-no-users-found'] == 'false'
+						}], 
+						'custeom-text-if-no-users-found',
+						null, null, {'mbsThinCol': 1}
+					) }}
+					 -->
+<!-- 					<h3>Result and Pagination</h3>
+
+					{{ options.inputRow(translate('Number of profiles per page'),
+						'auth[search-profiles-per-page]',
+						settings.auth['search-profiles-per-page'],
+						'search-profiles-per-page',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(translate('Number of profiles per page (for Mobiles & Tablets)'),
+						'auth[search-profiles-per-page-mobile]',
+						settings.auth['search-profiles-per-page-mobile'],
+						'search-profiles-per-page-mobile',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(translate('Maximum number of profiles'),
+						'auth[maximum-profiles-number]',
+						settings.auth['maximum-profiles-number'],
+						'maximum-profiles-number',
+						null, null, {'mbsThinCol': 1}
+					) }} -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sc-tab-content" data-tab="fonts">
+		{% set fontsSizeUnits = [
+			{
+				'value' : 'px',
+				'title' : 'px',
+			},
+			{
+				'value' : 'em',
+				'title' : 'em',
+			}
+		] %}
+
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+
+					<h3>{{ translate('General') }}</h3>
+					{# Primary button #}
+					{{ _self.getCheckBoxFontSizeSelector('Primary Buttons text font size:', 'primary-buttons', 'fonts', 'general', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Primary Buttons text font family:', 'primary-buttons', 'fonts', 'general', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Primary Buttons text color:', 'primary-buttons', 'fonts', 'general', settings, (settings.general['primary-button-text-color'] is defined) ? settings.general['primary-button-text-color'] : null) }}
+					{# Secondary button #}
+					{{ _self.getCheckBoxFontSizeSelector('Secondary Buttons text font size:', 'secondary-buttons', 'fonts', 'general', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Secondary Buttons text font family:', 'secondary-buttons', 'fonts', 'general', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Secondary Buttons text color:', 'secondary-buttons', 'fonts', 'general', settings, (settings.general['secondary-button-text-color'] is defined) ? settings.general['secondary-button-text-color'] : null) }}
+					{# Page Header #}
+					{{ _self.getCheckBoxFontSizeSelector('Page Header text font size:', 'page-header', 'fonts', 'general', settings, fontsSizeUnits, 40) }}
+					{{ _self.getCheckBoxFontFamilySelector('Page Header text font family:', 'page-header', 'fonts', 'general', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Page Header text color:', 'page-header', 'fonts', 'general', settings) }}
+					{# Text input #}
+					{{ _self.getCheckBoxFontSizeSelector('Input text font size:', 'text-input', 'fonts', 'general', settings, fontsSizeUnits, 40) }}
+					{{ _self.getCheckBoxFontFamilySelector('Input text font family:', 'text-input', 'fonts', 'general', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Input text color:', 'text-input', 'fonts', 'general', settings, (settings.general['input-text-color'] is defined) ? settings.general['input-text-color'] : null) }}
+					{# Labels #}
+					{{ _self.getCheckBoxFontSizeSelector('Labels text font size:', 'labels', 'fonts', 'general', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Labels text font family:', 'labels', 'fonts', 'general', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Labels text color:', 'labels', 'fonts', 'general', settings, (settings.general['label-text-color'] is defined) ? settings.general['label-text-color'] : null) }}
+					{# Small labels #}
+					{{ _self.getCheckBoxFontSizeSelector('Small labels text font size:', 'small-labels', 'fonts', 'general', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Small labels text font family:', 'small-labels', 'fonts', 'general', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Small labels text color:', 'small-labels', 'fonts', 'general', settings) }}
+					{# Links #}
+					{{ _self.getCheckBoxFontSizeSelector('Links text font size:', 'links', 'fonts', 'general', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Links text font family:', 'links', 'fonts', 'general', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Links text color:', 'links', 'fonts', 'general', settings) }}
+
+					<h3>{{ translate('Profile') }}</h3>
+					{# User name #}
+					{{ _self.getCheckBoxFontSizeSelector('User name text font size:', 'user-name', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('User name text font family:', 'user-name', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('User name text color:', 'user-name', 'fonts', 'profile', settings) }}
+					{# Counters #}
+					{{ _self.getCheckBoxFontSizeSelector('Counters text font size:', 'counters', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Counters text font family:', 'counters', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Counters text color:', 'counters', 'fonts', 'profile', settings) }}
+					{# Counters label #}
+					{{ _self.getCheckBoxFontSizeSelector('Counters label text font size:', 'counters-label', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Counters label text font family:', 'counters-label', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Counters label text color:', 'counters-label', 'fonts', 'profile', settings) }}
+					{# Tab #}
+					{{ _self.getCheckBoxFontSizeSelector('Tab text font size:', 'tab', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Tab text font family:', 'tab', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Tab text color:', 'tab', 'fonts', 'profile', settings) }}
+					{# Tab menu hover #}
+					{{ _self.getCheckBoxFontSizeSelector('Tab menu hover text font size:', 'tab-menu-hover', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Tab menu hover text font family:', 'tab-menu-hover', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Tab menu hover text color:', 'tab-menu-hover', 'fonts', 'profile', settings) }}
+					{# Message #}
+					{{ _self.getCheckBoxFontSizeSelector('Message text font size:', 'message', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Message text font family:', 'message', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Message text color:', 'message', 'fonts', 'profile', settings, (settings.general['input-text-color'] is defined) ? settings.general['input-text-color'] : null) }}
+					{# Post buttons #}
+					{{ _self.getCheckBoxFontSizeSelector('Post buttons text font size:', 'post-buttons', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontColorSelector('Post buttons text color:', 'post-buttons', 'fonts', 'profile', settings, (settings.general['secondary-button-text-color'] is defined) ? settings.general['secondary-button-text-color'] : null) }}
+					{# Post buttons hover #}
+					{{ _self.getCheckBoxFontSizeSelector('Post buttons hover text font size:', 'post-buttons-hover', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontColorSelector('Post buttons hover text color:', 'post-buttons-hover', 'fonts', 'profile', settings) }}
+					{# Post user name #}
+					{{ _self.getCheckBoxFontSizeSelector('Post user name text font size:', 'post-user-name', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Post user name text font family:', 'post-user-name', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Post user name text color:', 'post-user-name', 'fonts', 'profile', settings) }}
+					{# Post text #}
+					{{ _self.getCheckBoxFontSizeSelector('Post text font size:', 'post-text', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Post text font family:', 'post-text', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Post text color:', 'post-text', 'fonts', 'profile', settings) }}
+					{# Post other text #}
+					{{ _self.getCheckBoxFontSizeSelector('Post other text font size:', 'post-other-text', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Post other text font family:', 'post-other-text', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Post other text color:', 'post-other-text', 'fonts', 'profile', settings) }}
+					{# Post comment text #}
+					{{ _self.getCheckBoxFontSizeSelector('Post comment text font size:', 'post-comment-text', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Post comment text font family:', 'post-comment-text', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Post comment text color:', 'post-comment-text', 'fonts', 'profile', settings) }}
+					{# Post date #}
+					{{ _self.getCheckBoxFontSizeSelector('Post date text font size:', 'post-date', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Post date text font family:', 'post-date', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Post date text color:', 'post-date', 'fonts', 'profile', settings) }}
+					{# Post icons #}
+					{{ _self.getCheckBoxFontSizeSelector('Post icons text font size:', 'post-icons', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Post icons text font family:', 'post-icons', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Post icons text color:', 'post-icons', 'fonts', 'profile', settings) }}
+					{# Post icons hover #}
+					{{ _self.getCheckBoxFontSizeSelector('Post icons hover text font size:', 'post-icons-hover', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Post icons hover text font family:', 'post-icons-hover', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Post icons hover text color:', 'post-icons-hover', 'fonts', 'profile', settings) }}
+					{# Deleted Post entry #}
+					{{ _self.getCheckBoxFontSizeSelector('Deleted Post entry text font size:', 'deleted-post-entry', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Deleted Post entry text font family:', 'deleted-post-entry', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Deleted Post entry text color:', 'deleted-post-entry', 'fonts', 'profile', settings) }}
+					{# Menu #}
+					{{ _self.getCheckBoxFontSizeSelector('Menu text font size:', 'menu', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Menu text font family:', 'menu', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Menu text color:', 'menu', 'fonts', 'profile', settings) }}
+					{# Menu hover #}
+					{{ _self.getCheckBoxFontSizeSelector('Menu hover text font size:', 'menu-hover', 'fonts', 'profile', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Menu hover text font family:', 'menu-hover', 'fonts', 'profile', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Menu hover text color:', 'menu-hover', 'fonts', 'profile', settings) }}
+
+					<h3>{{ translate('Members') }}</h3>
+					{# User name #}
+					{{ _self.getCheckBoxFontSizeSelector('User name text font size:', 'user-name', 'fonts', 'members', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('User name text font family:', 'user-name', 'fonts', 'members', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('User name text color:', 'user-name', 'fonts', 'members', settings) }}
+					{# User name hover #}
+					{{ _self.getCheckBoxFontSizeSelector('User name hover text font size:', 'user-name-hover', 'fonts', 'members', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('User name hover text font family:', 'user-name-hover', 'fonts', 'members', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('User name hover text color:', 'user-name-hover', 'fonts', 'members', settings) }}
+					{# Counters #}
+					{{ _self.getCheckBoxFontSizeSelector('Counters text font size:', 'counters', 'fonts', 'members', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Counters text font family:', 'counters', 'fonts', 'members', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Counters text color:', 'counters', 'fonts', 'members', settings) }}
+					{# Counters label #}
+					{{ _self.getCheckBoxFontSizeSelector('Counters label text font size:', 'counters-label', 'fonts', 'members', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Counters label text font family:', 'counters-label', 'fonts', 'members', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Counters label text color:', 'counters-label', 'fonts', 'members', settings) }}
+
+					<h3>{{ translate('Groups') }}</h3>
+					{# Tab #}
+					{{ _self.getCheckBoxFontSizeSelector('Tab text font size:', 'tab', 'fonts', 'groups', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Tab text font family:', 'tab', 'fonts', 'groups', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Tab text color:', 'tab', 'fonts', 'groups', settings) }}
+					{# User name #}
+					{{ _self.getCheckBoxFontSizeSelector('User name text font size:', 'user-name', 'fonts', 'groups', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('User name text font family:', 'user-name', 'fonts', 'groups', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('User name text color:', 'user-name', 'fonts', 'groups', settings) }}
+					{# User name hover #}
+					{{ _self.getCheckBoxFontSizeSelector('User name hover text font size:', 'user-name-hover', 'fonts', 'groups', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('User name hover text font family:', 'user-name-hover', 'fonts', 'groups', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('User name hover text color:', 'user-name-hover', 'fonts', 'groups', settings) }}
+					{# Group type #}
+					{{ _self.getCheckBoxFontSizeSelector('Group type text font size:', 'group-type', 'fonts', 'groups', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Group type text font family:', 'group-type', 'fonts', 'groups', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Group type text color:', 'group-type', 'fonts', 'groups', settings) }}
+					{# Follower count #}
+					{{ _self.getCheckBoxFontSizeSelector('Follower count text font size:', 'follower-count', 'fonts', 'groups', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Follower count text font family:', 'follower-count', 'fonts', 'groups', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Follower count text color:', 'follower-count', 'fonts', 'groups', settings) }}
+
+					<h3>{{ translate('Activity') }}</h3>
+					{# Filter button #}
+					{{ _self.getCheckBoxFontSizeSelector('Filter button text font size:', 'filter-button', 'fonts', 'activity', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Filter button text font family:', 'filter-button', 'fonts', 'activity', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Filter button text color:', 'filter-button', 'fonts', 'activity', settings) }}
+					{# Filter button hover #}
+					{{ _self.getCheckBoxFontSizeSelector('Filter button hover text font size:', 'filter-button-hover', 'fonts', 'activity', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Filter button hover text font family:', 'filter-button-hover', 'fonts', 'activity', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Filter button hover text color:', 'filter-button-hover', 'fonts', 'activity', settings) }}
+					{# Filter button menu #}
+					{{ _self.getCheckBoxFontSizeSelector('Filter button menu text font size:', 'filter-button-menu', 'fonts', 'activity', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Filter button menu text font family:', 'filter-button-menu', 'fonts', 'activity', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Filter button menu text color:', 'filter-button-menu', 'fonts', 'activity', settings) }}
+					{# Filter button menu hover #}
+					{{ _self.getCheckBoxFontSizeSelector('Filter button menu hover text font size:', 'filter-button-menu-hover', 'fonts', 'activity', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Filter button menu hover text font family:', 'filter-button-menu-hover', 'fonts', 'activity', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Filter button menu hover text color:', 'filter-button-menu-hover', 'fonts', 'activity', settings) }}
+
+					{#<h3>{{ translate('Registration') }}</h3>#}
+					{#<h3>{{ translate('Login') }}</h3>#}
+
+					<h3>{{ translate('Search') }}</h3>
+					{# Nothing is found #}
+					{{ _self.getCheckBoxFontSizeSelector('Nothing is found text font size:', 'nothing-found', 'fonts', 'search', settings, fontsSizeUnits) }}
+					{{ _self.getCheckBoxFontFamilySelector('Nothing is found text font family:', 'nothing-found', 'fonts', 'search', settings, fontsList) }}
+					{{ _self.getCheckBoxFontColorSelector('Nothing is found text color:', 'nothing-found', 'fonts', 'search', settings) }}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sc-tab-content mbsGroupTabMenu" data-tab="groups">
+		{% if baseSettings['main']['groups'] == 'true' %}
+			<link rel="stylesheet" type="text/css" href="{{ assets('base', 'lib/cropper/cropper.min.css') }}">
+			<script async type="text/javascript" src="{{ assets('base', 'lib/cropper/cropper.min.js') }}"></script>
+			<div class="mp-options">
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="mp-option" id="logo-size">
+							<div class="row">
+								<div class="col-md-4 mbsThinCol">
+									{{ options.label(translate('Group Logo Size')) }}
+								</div>
+								<div class="col-md-8">
+									<div class="mp-option-sizes-input">
+										<div class="mp-option-input">
+											<input class="sc-input" value="{{ groupsSettings['logo-size'].width }}" name="groups[logo-size][width]">
+										</div>
+										<span>x</span>
+										<div class="mp-option-input">
+											<input class="sc-input" value="{{ groupsSettings['logo-size'].height }}" name="groups[logo-size][height]">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mp-option" id="logo-large-size">
+							<div class="row">
+								<div class="col-md-4 mbsThinCol">
+									{{ options.label(translate('Logo Thumbnail Large Size')) }}
+								</div>
+								<div class="col-md-8">
+									<div class="mp-option-sizes-input">
+										<div class="mp-option-input">
+											<input class="sc-input" value="{{ groupsSettings['logo-large-size'].width }}" name="groups[logo-large-size][width]">
+										</div>
+										<span>x</span>
+										<div class="mp-option-input">
+											<input class="sc-input" value="{{ groupsSettings['logo-large-size'].height }}" name="groups[logo-large-size][height]">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mp-option" id="logo-medium-size">
+							<div class="row">
+								<div class="col-md-4 mbsThinCol">
+									{{ options.label(translate('Logo Thumbnail Medium Size')) }}
+								</div>
+								<div class="col-md-8">
+									<div class="mp-option-sizes-input">
+										<div class="mp-option-input">
+											<input class="sc-input" value="{{ groupsSettings['logo-medium-size'].width }}" name="groups[logo-medium-size][width]">
+										</div>
+										<span>x</span>
+										<div class="mp-option-input">
+											<input class="sc-input" value="{{ groupsSettings['logo-medium-size'].height }}" name="groups[logo-medium-size][height]">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mp-option" id="logo-small-size">
+							<div class="row">
+								<div class="col-md-4 mbsThinCol">
+									{{ options.label(translate('Logo Thumbnail Small Size')) }}
+								</div>
+								<div class="col-md-8">
+									<div class="mp-option-sizes-input">
+										<div class="mp-option-input">
+											<input class="sc-input" value="{{ groupsSettings['logo-small-size'].width }}" name="groups[logo-small-size][width]">
+										</div>
+										<span>x</span>
+										<div class="mp-option-input">
+											<input class="sc-input" value="{{ groupsSettings['logo-small-size'].height }}" name="groups[logo-small-size][height]">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						{% set defaultLogo = assets('groups', 'images/group.jpg', false) %}
+
+						<div class="mp-option" id="default-logo">
+							<div class="row">
+								<div class="col-md-4 mbsThinCol">
+									{{ options.label(translate('Default Logo Image')) }}
+								</div>
+								<div class="col-md-8">
+									<div class="mp-default-image">
+										<img style="max-width:50px;max-height: 50px;"
+											 src="{{ groupsSettings['default-logo'] }}"
+										>
+										<button class="mp-option-button sc-button primary mp-change">Change</button>
+										<button class="mp-option-button sc-button primary mp-set-to-default"
+												{% if defaultLogo == groupsSettings['default-logo'] or defaultLogo == setting['default-logo-source'] %}
+													style="display: none"
+												{% endif %}
+										>Set to default</button>
+										<input
+												type="hidden"
+												name="groups[default-logo]"
+												value="{{ groupsSettings['default-logo'] }}"
+										>
+										<input
+												type="hidden"
+												name="groups[default-logo-large]"
+												value="{{ groupsSettings['default-logo-large'] }}"
+										>
+										<input
+												type="hidden"
+												name="groups[default-logo-medium]"
+												value="{{ groupsSettings['default-logo-medium'] }}"
+										>
+										<input
+												type="hidden"
+												name="groups[default-logo-small]"
+												value="{{ groupsSettings['default-logo-small'] }}"
+										>
+										<input
+												type="hidden"
+												name="groups[default-logo-source]"
+												data-default-width-input-name="groups[logo-size][width]"
+												data-default-height-input-name="groups[logo-size][height]"
+												data-default-crop-input-name="groups[default-logo-crop-data]"
+												data-default-image="{{ defaultLogo }}"
+												value="{{ groupsSettings['default-logo-source'] }}"
+										>
+										<input
+												type="hidden"
+												name="groups[default-logo-crop-data]"
+												value="{{ groupsSettings['default-logo-crop-data'] }}"
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mp-option" id="cover-size">
+							<div class="row">
+								<div class="col-md-4 mbsThinCol">
+									{{ options.label(translate('Group Cover Size')) }}
+								</div>
+								<div class="col-md-8">
+									<div class="mp-option-sizes-input">
+										<div class="mp-option-input">
+											<input class="sc-input" value="{{ groupsSettings['cover-size'].width }}" name="groups[cover-size][width]">
+										</div>
+										<span>x</span>
+										<div class="mp-option-input">
+											<input class="sc-input" value="{{ groupsSettings['cover-size'].height }}" name="groups[cover-size][height]">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mp-option" id="cover-medium-size">
+							<div class="row">
+								<div class="col-md-4 mbsThinCol">
+									{{ options.label(translate('Cover Thumbnail Medium Size')) }}
+								</div>
+								<div class="col-md-8">
+									<div class="mp-option-sizes-input">
+										<div class="mp-option-input">
+											<input class="sc-input" value="{{ groupsSettings['cover-medium-size'].width }}" name="groups[cover-medium-size][width]">
+										</div>
+										<span>x</span>
+										<div class="mp-option-input">
+											<input class="sc-input" value="{{ groupsSettings['cover-medium-size'].height }}" name="groups[cover-medium-size][height]">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mp-option" id="cover-small-size">
+							<div class="row">
+								<div class="col-md-4 mbsThinCol">
+									{{ options.label(translate('Cover Thumbnail Small Size')) }}
+								</div>
+								<div class="col-md-8">
+									<div class="mp-option-sizes-input">
+										<div class="mp-option-input">
+											<input class="sc-input" value="{{ groupsSettings['cover-small-size'].width }}" name="groups[cover-small-size][width]">
+										</div>
+										<span>x</span>
+										<div class="mp-option-input">
+											<input class="sc-input" value="{{ groupsSettings['cover-small-size'].height }}" name="groups[cover-small-size][height]">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						{% set defaultCover = assets('groups', 'images/group-cover.jpg', false) %}
+
+						<div class="mp-option" id="default-cover">
+							<div class="row">
+								<div class="col-md-4 mbsThinCol">
+									{{ options.label(translate('Default Cover Image')) }}
+								</div>
+								<div class="col-md-8">
+									<div class="mp-default-image">
+										<img style="max-width:50px;max-height: 50px;"
+											 src="{{ groupsSettings['default-cover'] }}"
+										>
+										<button class="mp-option-button sc-button primary mp-change">Change</button>
+										<button class="mp-option-button sc-button primary mp-set-to-default"
+												{% if defaultCover == groupsSettings['default-cover'] or defaultCover == groupsSettings['default-cover-source'] %}
+													style="display: none"
+												{% endif %}
+										>Set to default</button>
+										<input
+												type="hidden"
+												name="groups[default-cover]"
+												value="{{ groupsSettings['default-cover'] }}"
+										>
+										<input
+												type="hidden"
+												name="groups[default-cover-medium]"
+												value="{{ groupsSettings['default-cover-medium'] }}"
+										>
+										<input
+												type="hidden"
+												name="groups[default-cover-small]"
+												value="{{ groupsSettings['default-cover-small'] }}"
+										>
+										<input
+												type="hidden"
+												name="groups[default-cover-source]"
+												data-default-image="{{ defaultCover }}"
+												data-default-width-input-name="cover-size[width]"
+												data-default-height-input-name="cover-size[height]"
+												data-default-crop-input-name="default-cover-crop-data"
+												value="{{ groupsSettings['default-cover-source'] }}"
+										>
+										<input
+												type="hidden"
+												name="groups[default-cover-crop-data]"
+												value="{{ groupsSettings['default-cover-crop-data'] }}"
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						{% set permalinks = [
+							{
+								'value': 'groupalias',
+								'title': translate('Group alias'),
+								'selected': groupsSettings['permalink-base'] == 'groupalias'
+							},
+							{
+								'value': 'id',
+								'title': translate('Group ID'),
+								'selected': groupsSettings['permalink-base'] == 'id'
+							},
+						] %}
+
+						{{ options.selectRow(
+							translate('Group Permalink Base'),
+							permalinks,
+							'groups[permalink-base]',
+							'permalink-base',
+							null, {'mbsThinCol': 1}
+						) }}
+
+						{% set _roles = [] %}
+
+						{% for value, role in roles %}
+							{% set _roles = _roles|merge([{
+								'title': role.name,
+								'value': value,
+								'selected': groupsSettings['roles-to-invite'] == value,
+							}]) %}
+						{% endfor %}
+
+						{% set _types = [{
+							'label': translate('All'),
+							'name': 'groups[inviting-type]',
+							'value': 'all',
+							'checked': groupsSettings['inviting-type'] == 'all'
+						},
+						{
+							'label': translate('Specific roles'),
+							'name': 'groups[inviting-type]',
+							'value': 'specific_roles',
+							'checked': groupsSettings['inviting-type'] == 'specific_roles'
+						}] %}
+					</div>
+				</div>
+			</div>
+		{% else %}
+			<div>
+				<span>{{ translate('Groups option is Turn Off, you can turn it On on the Main settings tab or click <a href="%s">here</a>.')|format(mainSettingsLink)|raw }}</span>
+			</div>
+		{% endif %}
+	</div>
+
+
+
+{% endblock %}
+
+{% macro getCheckBoxFontSizeSelector(buttonName, itemCode, settProp1, settProp2, settings, fontsSizeUnits, defaultFontSize, defaultUnit) %}
+	{% import "@base/macros/options.twig" as options %}
+
+	{{ options.checkboxSettingRowWithInput(
+		translate(buttonName),
+		[{
+			'name': settProp1 ~ '[' ~ settProp2 ~ '][' ~ itemCode ~ '-text-font-size-check]',
+			'value': 1,
+			'checked': settings[settProp1][settProp2][itemCode ~ '-text-font-size-check'] == 1 ? 1 : null,
+			'attributes': 'id="' ~ itemCode ~ '-text-font-size-check" class="mbs-checkbox-for-enable"',
+		}],
+		options.input(
+			'number',
+			settProp1 ~ '[' ~ settProp2 ~ '][' ~ itemCode ~ '-text-font-size-number]',
+			settings[settProp1][settProp2][itemCode ~ '-text-font-size-number'] | default(defaultFontSize) | default(16),
+			{ 'id': itemCode ~ '-text-font-size-number', 'class': 'mbs-number-units-width', 'pattern':'[0-9]' }
+		) ~ options.selectInput2(
+			fontsSizeUnits,
+			settings[settProp1][settProp2][itemCode ~ '-text-font-unit-select'] | default(defaultUnit) | default('px'),
+			{
+				'id': itemCode ~ '-text-font-unit-select',
+				'class': 'mbs-selector-unit-width sc-input',
+				'name': settProp1 ~ '[' ~ settProp2 ~ '][' ~ itemCode ~ '-text-font-unit-select]',
+			}
+		),
+		null, null, null, {'mbsThinCol': 1}
+	)  }}
+{% endmacro %}
+
+{% macro getCheckBoxFontFamilySelector(buttonName, itemCode, settProp1, settProp2, settings, fontsList, defaultFontName) %}
+	{% import "@base/macros/options.twig" as options %}
+	{{ options.checkboxSettingRowWithInput(
+		translate(buttonName),
+		[{
+			'name': settProp1 ~ '[' ~ settProp2 ~ '][' ~ itemCode ~ '-text-font-family-check]',
+			'value': 1,
+			'checked': settings[settProp1][settProp2][itemCode ~'-text-font-family-check'] == 1 ? 1 : null,
+			'attributes': 'id="' ~ itemCode ~ '-text-font-family-check" class="mbs-checkbox-for-enable"',
+		}],
+		options.selectInput2(
+			fontsList,
+			settings[settProp1][settProp2][itemCode ~ '-text-font-family-select'] | default(defaultFontName) | default('initial'),
+			{
+				'id': itemCode ~ '-text-font-family-select',
+				'class': 'mbs-cwib-selector-width sc-input',
+				'name': settProp1 ~ '[' ~ settProp2 ~ '][' ~ itemCode ~ '-text-font-family-select]',
+			},
+			1
+		),
+		null, null, null, {'mbsThinCol': 1}
+	) }}
+{% endmacro %}
+
+{% macro getCheckBoxFontColorSelector(buttonName, itemCode, settProp1, settProp2, settings, defaultColor) %}
+	{% import "@base/macros/options.twig" as options %}
+	{{ options.checkboxSettingRowWithInput(
+		translate(buttonName),
+		[{
+			'name': settProp1 ~ '[' ~ settProp2 ~ '][' ~ itemCode ~ '-text-color-check]',
+			'value': 1,
+			'checked': (settings[settProp1][settProp2][itemCode ~ '-text-color-check'] == 1) or defaultColor != null ? 1 : null,
+			'attributes': 'id="' ~ itemCode ~ '-text-color-check" class="mbs-checkbox-for-enable"',
+		}],
+		options.colorInput2({
+			'id': itemCode ~ '-text-color-input',
+			'class': 'mbs-cwib-selector-width sc-input',
+			'name': settProp1 ~ '[' ~ settProp2 ~ '][' ~ itemCode ~ '-text-color-input]',
+			'value': settings[settProp1][settProp2][itemCode ~ '-text-color-input'] | default(defaultColor) | default('rgba(0, 0, 0, 1)'),
+		}),
+		null, null, null, {'mbsThinCol': 1}
+	) }}
+{% endmacro %}

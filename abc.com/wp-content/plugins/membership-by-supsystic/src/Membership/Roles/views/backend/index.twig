@@ -1,0 +1,479 @@
+{% extends "@base/layouts/backend.twig" %}
+{% import '@base/macros/options.twig' as options %}
+
+{% block mainHeader %}
+	<div class="sc-header">
+		<h2>{{ translate('Roles') }}</h2>
+	</div>
+{% endblock %}
+
+{% block head %}
+	<div class="sc-tabs">
+		<a href="#" class="tab active" data-target="roles">
+			<i class="fa fa-desktop"></i>{{ translate('General') }}
+		</a>
+		<a href="#" class="tab active" data-target="groups">
+			<i class="fa fa-group"></i>{{ translate('Group invites') }}
+		</a>
+		<button data-save-settings class="save-settings sc-button icon-button primary">
+			<i class="fa fa-save"></i>
+			<span>{{ translate('Save Settings') }}</span>
+		</button>
+	</div>
+{% endblock %}
+
+{% block main %}
+	{% set _roles = [{
+		'title': translate('All'),
+		'value': 'all',
+	}] %}
+	
+	{% for value, role in roles %}
+		{% if role.type != '__guest__' %}
+			{% set _roles = _roles|merge([{
+			'title': role.name,
+			'value': role.id,
+			}]) %}
+		{% endif %}
+	{% endfor %}
+	
+	<div class="sc-tabs-container">
+		<div class="sc-tab-content active" data-tab="roles">
+			<button class="sc-button primary add-new-role">{{ translate('Add new role') }}</button>
+			<div class="roles-table-wrap">
+				<table class="sc-table roles">
+					<tr>
+						<th style="width: 320px;">{{ translate('Role Name') }}</th>
+						{% for role in roles %}
+							<th data-id="{{ role.id }}">
+								<div>
+									<input style="max-width: calc(100% - 30px);" type="text" class="sc-input" name="name" value="{{ role.name }}">
+									{% if role.type != '__guest__' %}
+										<div style="margin: 0 10px; display: inline; cursor: pointer" class="remove-role">
+											<i class="fa fa-trash"></i>
+										</div>
+									{% endif %}
+								</div>
+							</th>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td><b>{{ translate('Administrative permissions') }}</b></td>
+					</tr>
+					<tr>
+						<td>{{ translate('Access to admin dashboard') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="can-access-wp-admin"
+											{% if role.permissions['can-access-wp-admin'] == 'true' %}
+												checked="checked"
+											{% endif %}
+											{% if role.type == '__guest__' %}
+												disabled="true"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td>{{ translate('See dashboard bar') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="can-see-admin-bar"
+											{% if role.permissions['can-see-admin-bar'] == 'true' %}
+												checked="checked"
+											{% endif %}
+											{% if role.type == '__guest__' %}
+												disabled="true"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td><b>{{ translate('Activities') }}</b></td>
+					</tr>
+					<tr>
+						<td>{{ translate('Edit or delete other users activity') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="edit-activity"
+											{% if role.permissions['edit-activity'] == 'true' %}
+												checked="checked"
+											{% endif %}
+											{% if role.type in ['__guest__', 'administrator'] %}
+												disabled="true"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td><b>{{ translate('Profile') }}</b></td>
+					</tr>
+					<tr>
+						<td>{{ translate('Delete their account') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="can-delete-their-account"
+											{% if role.permissions['can-delete-their-account'] == 'true' %}
+												checked="checked"
+											{% endif %}
+											{% if role.type == '__guest__' %}
+												disabled="true"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td>{{ translate('Access to user profiles with specific roles') }}</td>
+						{% for role in roles %}
+							<td>
+								<select class="sc-input" name="access-to-specific-roles-page" multiple=""
+								        data-value="{{ _roles | json_encode }}">
+									{% for option in _roles %}
+										<option value="{{ option.value }}"
+												{% if option.value in role.permissions['access-to-specific-roles-page'] %}
+													selected
+												{% endif %}
+										>{{ option.title }}</option>
+									{% endfor %}
+								</select>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td>{{ translate('Allow to change privacy settings') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="change-privacy-settings"
+											{% if role.permissions['change-privacy-settings'] == 'true' %}
+												checked="checked"
+											{% endif %}
+											{% if role.type == '__guest__' %}
+												disabled="true"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td>{{ translate('Apply WordPress role') }}</td>
+						{% for role in roles %}
+							<td>
+								{{ options.selectInput2(
+									wpRoles,
+									role.settings['wp-role'] | default(wpDefaultRole),
+									{
+										'name': 'wp-role',
+										'data-role-id': role.id,
+									}
+								) }}
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td><b>{{ translate('Groups') }}</b></td>
+					</tr>
+					<tr>
+						<td>{{ translate('Create groups') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="can-create-groups"
+											{% if role.permissions['can-create-groups'] == 'true' %}
+												checked="checked"
+											{% endif %}
+											{% if role.type == '__guest__' %}
+												disabled="true"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td>{{ translate('Join groups') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="join-groups"
+											{% if role.permissions['join-groups'] == 'true' %}
+												checked="checked"
+											{% endif %}
+											{% if role.type == '__guest__' %}
+												disabled="true"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td>{{ translate('Read groups') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="read-groups"
+											{% if role.permissions['read-groups'] == 'true' %}
+												checked="checked"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td>{{ translate('Block groups') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="can-block-groups"
+											{% if role.permissions['can-block-groups'] == 'true' %}
+												checked="checked"
+											{% endif %}
+											{% if role.type == '__guest__' %}
+												disabled="true"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td><b>{{ translate('Messages') }}</b></td>
+					</tr>
+					<tr>
+						<td>{{ translate('Send and receive messages') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="send-and-receive-messages"
+											{% if role.permissions['send-and-receive-messages'] == 'true' %}
+												checked="checked"
+											{% endif %}
+											{% if role.type == '__guest__' %}
+												disabled="true"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td><b>{{ translate('Access to specific pages') }}</b></td>
+					</tr>
+					<tr>
+						<td>{{ translate('Members page') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="access-to-members-page"
+											{% if role.permissions['access-to-members-page'] == 'true' %}
+												checked="checked"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td>{{ translate('Global activity page') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="access-to-global-activity-page"
+											{% if role.permissions['access-to-global-activity-page'] == 'true' %}
+												checked="checked"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td>{{ translate('Users profile activity page') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="access-to-profile-activity-page"
+											{% if role.permissions['access-to-profile-activity-page'] == 'true' %}
+												checked="checked"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td><b>{{ translate('Social') }}</b></td>
+					</tr>
+					<tr>
+						<td>{{ translate('Add remove friends') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="add-friends"
+											{% if role.permissions['add-friends'] == 'true' %}
+												checked="checked"
+											{% endif %}
+											{% if role.type == '__guest__' %}
+												disabled="true"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+					<tr>
+						<td>{{ translate('Follow unfollow users') }}</td>
+						{% for role in roles %}
+							<td>
+								<label class="sc-checkbox">
+									<input type="checkbox" value="true" name="follow"
+											{% if role.permissions['follow'] == 'true' %}
+												checked="checked"
+											{% endif %}
+											{% if role.type == '__guest__' %}
+												disabled="true"
+											{% endif %}
+									>
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</td>
+						{% endfor %}
+					</tr>
+				</table>
+			</div>
+			
+			<div class="new-role-template" style="display:none;">
+				<div class="mp-option">
+					<div class="row">
+						<div class="col-md-5">
+							{{ options.label(translate('Role name')) }}
+						</div>
+						<div class="col-md-7">
+							<div class="mp-option-input">
+								<input class="sc-input" name="name">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="remove-role-template" style="display:none;">
+				<div>{{ translate('Are you sure you want to delete this role?') }}</div>
+			</div>
+		</div>
+
+		<div class="sc-tab-content" data-tab="groups">
+			{% if baseSettings['main']['groups'] == 'true' %}
+				<div class="mp-options">
+					<div class="row">
+						<div class="col-md-12">
+
+							<div class="mp-option" id="inviting-type">
+								<div class="row">
+									<div class="col-md-4 mbsThinCol">
+										<div class="mp-option-label inviting-type-label">
+											<span title="{{ translate('Who can invite') }}">{{ translate('Who can invite') }}</span>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="mp-option-controls">
+											{% for radio in _types %}
+												<label class="sc-radio">
+													<input
+															type="radio"
+															name="groups[{{ radio.name }}]"
+															value="{{ radio.value }}"
+															{% if radio.checked %}
+																checked
+															{% endif %}
+													>
+													{{ radio.label }}
+													<div class="sc-radio-state"></div>
+												</label>
+											{% endfor %}
+										</div>
+										<div class="mp-option-select inviting-type-roles">
+											<select class="sc-input" name="groups[inviting-type-roles][]" multiple>
+												{% for option in _roles %}
+													<option value="{{ option.value }}"
+															{% if option.selected %}
+																selected
+															{% endif %}
+															{% if option.disabled %}
+																disabled
+															{% endif %}
+													>{{ option.title }}</option>
+												{% endfor %}
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="mp-option" id="roles-to-invite">
+								<div class="row">
+									<div class="col-md-4 mbsThinCol">
+										<div class="mp-option-label">
+											<span title="{{ translate('Who can be invited') }}">{{ translate('Who can be invited') }}</span>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<select class="sc-input" name="groups[roles-to-invite]">
+											<option value="everyone"
+													{% if groupsSettings['roles-to-invite'] == 'everyone' %}
+														selected
+													{% endif %}
+											>{{ translate('Everyone') }}</option>
+											{% if baseSettings['main']['friends'] == 'true' %}
+												<option value="friends-only"
+														{% if groupsSettings['roles-to-invite'] == 'friends-only' %}
+															selected
+														{% endif %}
+												>{{ translate('Friends only') }}</option>
+											{% endif %}
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% else %}
+				<div>
+					<span>{{ translate('Groups option is Turn Off, you can turn it On on the Main settings tab or click <a href="%s">here</a>.')|format(mainSettingsLink)|raw }}</span>
+				</div>
+			{% endif %}
+		</div>
+	</div>
+
+	
+{% endblock %}

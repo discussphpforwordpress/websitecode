@@ -1,0 +1,11 @@
+{% extends "@base/layouts/backend.twig" %}
+
+{% block mainHeader %}
+
+{% endblock %}
+
+{% block main %}
+	<a target="_blank" href="{{ getMembershipAddonUrl('membership-social-login') }}">
+		<img src="{{ assets('addons', '') }}" title="{{ translate('Get Pro') }}">
+	</a>
+{% endblock %}

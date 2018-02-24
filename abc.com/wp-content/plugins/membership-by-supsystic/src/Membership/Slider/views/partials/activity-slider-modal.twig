@@ -1,0 +1,70 @@
+<div class="ui small modal mp-slider-modal mbs-gg-tab-pages" data-tabs="slider">
+	<i class="close icon"></i>
+	{# hiddend block #}
+	<div class="mbs-gg-tab-links mbs-hidden" data-tabs="slider">
+		<div class="mbs-gg-tab-link" data-tab-info="page1">slider presets</div>
+		<div class="mbs-gg-tab-link" data-tab-info="page2">slider images</div>
+	</div>
+
+	{# PAGE 1 #}
+	<div class="header mbs-gg-tab-page" data-tab-info="page1">
+		{{ translate('Choose Slider Preset') }}
+	</div>
+	<div class="content mbs-gg-tab-page" data-tab-info="page1">
+		<div class="ui form">
+			<select id="sliderPresetSel">
+				<option value="">{{ translate('Select value') }}</option>
+				{% for val1 in sliderPresets %}
+					<option value="{{ val1.id }}">{{ val1.title }}</option>
+				{% endfor %}
+			</select>
+		</div>
+	</div>
+	<div class="actions mbs-gg-tab-page" data-tab-info="page1">
+		<button class="ui button mini primary gg-next disabled" id="mbs-slider-gg-next">{{ translate('Next') }}</button>
+		<button class="ui button mini secondary cancel">{{ translate('Cancel') }}</button>
+	</div>
+
+	{# PAGE 2 #}
+	<div class="header mbs-gg-tab-page" data-tab-info="page2">
+		{{ translate('Slider Images') }}
+	</div>
+	<div class="content mbs-gg-tab-page" data-tab-info="page2">
+		<div class="ui form">
+			<button class="ui button mini primary gg-add-image" id="mbs-slider-add-image">{{ translate('Add Image') }}</button>
+			<button class="ui button mini gg-remove-image" id="mbs-slider-remove-image">{{ translate('Remove selected images') }}</button>
+			<div class="mbs-rs-img-list"></div>
+		</div>
+	</div>
+	<div class="actions mbs-gg-tab-page" data-tab-info="page2">
+		<button class="ui button mini primary mbs-modal-slider-page2-btn-ok" id="mbs-rs-modal-page2-ok">{{ translate('Ok') }}</button>
+		<button class="ui button mini secondary cancel" id="mbs-rs-modal-page2-cancel">{{ translate('Cancel') }}</button>
+	</div>
+
+	<input type="hidden" id="mbsSliderStrImageParamIncorrect" value="{{ translate('Error! Image params are incorrect!') }}"/>
+	<input type="hidden" id="mbsSliderStrSelectImageToRemove" value="{{ translate('Please select an image to remove.') }}"/>
+	<input type="hidden" id="mbsSliderStrParamIncorrect" value="{{ translate('Error! Slider params are incorrect!') }}"/>
+	<input type="hidden" id="mbsSliderStrServerError" value="{{ translate('Server error!') }}"/>
+</div>
+
+<div class="mbs-rs-image-template mbs-hidden">
+	<div class="mbs-one-gg-image">
+		<div class="mbs-preview">
+			<img alt=""/>
+			<div class="mbs-progress-bar">
+				<div class="ui tiny indicating progress active">
+					<div class="bar"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<input type="hidden" class="mbsStrIncorrectSliderParams" value="{{ translate('Error! Incorrect slider params!') }}"/>
+<div class="mbs-slider-one-template mbs-hidden">
+	<div class="mbs-one-gg-image">
+		<div class="mbs-preview">
+			<img src="{{ defaultSliderImage }}" alt="">
+		</div>
+		<i class="close icon"></i>
+	</div>
+</div>

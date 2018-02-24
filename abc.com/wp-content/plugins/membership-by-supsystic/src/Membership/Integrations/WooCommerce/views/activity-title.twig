@@ -1,0 +1,5 @@
+{% raw %}
+    <div v-if="activity.type == 'woocommerce_product'">
+        <a :href="userProfileUrl(activity.author)">{{ activity.author.displayName }}</a> added new <a target="_blank" href="{{ activity.product.permalink }}">product</a>
+    </div>
+{% endraw %}

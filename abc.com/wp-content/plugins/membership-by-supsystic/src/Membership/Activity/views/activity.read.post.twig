@@ -1,0 +1,11 @@
+<div class="ui segment vertical basic mp-activity-container ">
+	<div class="mp-activity-list ">
+		{% if activities | length == 0 %}
+			{{ translate('This post not exist!') }}
+		{% elseif params.canUserViewThisPost != true %}
+			{{ translate('You do not have access!') }}
+		{% else %}
+			{% include '@activity/partials/activities.twig' with {'activities': activities, 'context': 'activity', 'params': params, } %}
+		{% endif %}
+	</div>
+</div>

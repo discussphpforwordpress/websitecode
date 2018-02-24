@@ -1,0 +1,44 @@
+{% extends '@groups/group.twig' %}
+
+{% block content %}
+	
+	{% set userSectionTitles = {
+		'approved': translate('Members'),
+		'unapproved': translate('Join requests'),
+		'blocked': translate('Blocked users'),
+		'invited': translate('Invited users'),
+	} %}
+	
+	<div class="ui basic vertical segment">
+		<div class="ui pointing secondary menu users-tab-items" {% if counts|length < 2 %}style="display:none"{% endif %}>
+			{% for type, count in counts %}
+				<a class="item" data-tab="{{ type }}" {% if not count %}style="display:none"{% endif %}>{{ userSectionTitles[type] }} <div class="ui mini label">{{ count }}</div></a>
+			{% endfor %}
+			
+		</div>
+		<div class="users-tabs">
+			{% for section in counts|keys %}
+				<div class="ui tab {% if loop.first %}active{% endif %}" data-tab="{{ section }}">
+					<div class="ui basic vertical segment form user-search-input">
+						<div class="ui fluid icon input">
+							<input type="text" placeholder="{{ translate('Find user...') }}">
+							<i class="search icon"></i>
+						</div>
+					</div>
+					<div class="ui two cards stackable users-list">
+						{% if canEditGroup(requestedGroup) %}
+							{% include '@groups/partials/group-users-list.twig' with {'users': users[section], 'listType': section} %}
+						{% else %}
+							{% include '@users/partials/users-list.twig' with {'users': users[section]} %}
+						{% endif %}
+					</div>
+					<div class="ui basic segment very padded list-loader" style="display:none;">
+						<div class="ui active loader"></div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	{{ environment.dispatcher.dispatch('users.send.message.modal.wnd') }}
+{% endblock %}

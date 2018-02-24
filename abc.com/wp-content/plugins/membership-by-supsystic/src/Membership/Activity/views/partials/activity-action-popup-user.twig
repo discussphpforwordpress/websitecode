@@ -1,0 +1,10 @@
+{% spaceless %}
+{% for activity in activities %}
+<div class="item activity {% if isCurrentUser(activity.author) %}current-user{% endif %}">
+	<a href="{{ profileUrl(activity.author) }}" class="avatar">
+		<img title="{{ activity.author.displayName }}" class="ui image avatar mp-activity-activity-avatar" src="{{ userAvatar(activity.author, 'default') }}">
+	</a>
+</div>
+{% endfor %}
+{% endspaceless %}
+

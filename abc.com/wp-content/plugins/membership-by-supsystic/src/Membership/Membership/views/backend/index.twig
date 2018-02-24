@@ -1,0 +1,853 @@
+{% extends "@base/layouts/backend.twig" %}
+{% import "@base/macros/options.twig" as options %}
+
+{% block head %}
+	<div class="sc-tabs">
+		<a href="#" class="tab active" data-target="main">
+			<i class="fa fa-cog"></i>{{ translate('Main') }}
+		</a>
+		<a href="#" class="tab" data-target="pages">
+			<i class="fa fa-file-text-o"></i>{{ translate('Pages') }}
+		</a>
+		<a href="#" class="tab" data-target="security">
+			<i class="fa fa-lock"></i>{{ translate('Security') }}
+		</a>
+		<a href="#" class="tab" data-target="uploads">
+			<i class="fa fa-upload"></i>{{ translate('Uploads') }}
+		</a>
+		<a href="#" class="tab" data-target="seo">
+			<i class="fa fa-search"></i>{{ translate('SEO') }}
+		</a>
+		<a href="#" class="tab" data-target="import">
+			<i class="fa fa-download"></i>{{ translate('Import Data') }}
+		</a>
+		<a href="#" class="tab" data-target="groups">
+			<i class="fa fa-object-group"></i> {{ translate('Groups') }}
+		</a>
+		<a href="#" class="tab" data-target="reports">
+			<i class="fa fa-flag"></i>{{ translate('Reports') }}
+		</a>
+        {{ environment.dispatcher.dispatch('backendSettingsMainContentTab') }}
+
+		<button data-save-settings class="save-settings sc-button icon-button primary">
+			<i class="fa fa-save"></i>
+			<span>{{ translate('Save Settings') }}</span>
+		</button>
+	</div>
+{% endblock %}
+
+{% block mainHeader %}
+	<div class="sc-header">
+		<h2>{{ translate('Main') }}</h2>
+	</div>
+{% endblock %}
+
+{% block main %}
+
+	<div class="sc-tab-content active" data-tab="main">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+
+					{{ options.emailRowWithButton(
+						translate('Admin Email'),
+						options.button(
+							translate('Send Test Email'),
+							'admin-email-button',
+							'tooltip'
+						),
+						'main[admin-email]',
+						settings.main['admin-email'],
+						'admin-email',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(
+						translate('Messages'),
+						[{
+							'label': translate('Yes'),
+							'name': 'main[messages]',
+							'value': 'true',
+							'checked': settings.main.messages == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'main[messages]',
+							'value': 'false',
+							'checked': settings.main.messages == 'false'
+						}],
+						'messages',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(
+						translate('Groups'),
+						[{
+							'label': translate('Yes'),
+							'name': 'main[groups]',
+							'value': 'true',
+							'checked': settings.main.groups == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'main[groups]',
+							'value': 'false',
+							'checked': settings.main.groups == 'false'
+						}], 
+						'groups',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(
+						translate('Friends'),
+						[{
+							'label': translate('Yes'),
+							'name': 'main[friends]',
+							'value': 'true',
+							'checked': settings.main.friends == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'main[friends]',
+							'value': 'false',
+							'checked': settings.main.friends == 'false'
+						}],
+						'friends',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(
+						translate('Activity'),
+						[{
+							'label': translate('Yes'),
+							'name': 'main[activity]',
+							'value': 'true',
+							'checked': settings.main.activity == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'main[activity]',
+							'value': 'false',
+							'checked': settings.main.activity == 'false'
+						}],
+						'activity',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(
+					translate('Followers'),
+					[{
+						'label': translate('Yes'),
+						'name': 'main[followers]',
+						'value': 'true',
+						'checked': settings.main.followers == 'true'
+					},
+					{
+						'label': translate('No'),
+						'name': 'main[followers]',
+						'value': 'false',
+						'checked': settings.main.followers == 'false'
+					}],
+					'followers',
+					null, null, {'mbsThinCol': 1}
+					) }}
+
+					 {{ options.radioRow(
+						translate('Favorites'),
+						[{
+							'label': translate('Yes'),
+							'name': 'main[favorites]',
+							'value': 'true',
+							'checked': settings.main.favorites == 'true'
+						},
+						{
+							'label': translate('No'),
+							'name': 'main[favorites]',
+							'value': 'false',
+							'checked': settings.main.favorites == 'false'
+						}],
+						'favorites',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+                    {{ options.radioRow(
+                    translate('Posts'),
+                    [{
+                        'label': translate('Yes'),
+                        'name': 'main[posts]',
+                        'value': 'true',
+                        'checked': settings.main.posts == 'true'
+                    },
+                    {
+                        'label': translate('No'),
+                        'name': 'main[posts]',
+                        'value': 'false',
+                        'checked': settings.main.posts == 'false'
+                    }],
+                    'posts',
+					null, null, {'mbsThinCol': 1}
+                    ) }}
+
+                    {{ options.radioRow(
+                    translate('Comments'),
+                    [{
+                        'label': translate('Yes'),
+                        'name': 'main[comments]',
+                        'value': 'true',
+                        'checked': settings.main.comments == 'true'
+                    },
+                    {
+                        'label': translate('No'),
+                        'name': 'main[comments]',
+                        'value': 'false',
+                        'checked': settings.main.comments == 'false'
+                    }],
+                    'comments',
+					null, null, {'mbsThinCol': 1}
+                    ) }}
+
+                    {{ environment.dispatcher.dispatch('adminMainSettingsOptions') }}
+
+					{{ options.radioRowWithInput(
+						translate('Redirect after registration to'),
+						[{
+							'label': translate('Profile'),
+							'name': 'main[after-registration-action]',
+							'value': 'redirect-to-profile',
+							'checked': settings.main['after-registration-action'] == 'redirect-to-profile'
+						},
+						{
+							'label': translate('URL'),
+							'name': 'main[after-registration-action]',
+							'value': 'redirect-to-url',
+							'checked': settings.main['after-registration-action'] == 'redirect-to-url'
+						}],
+						'after-registration-action',
+						'',
+						options.textInput(
+							'main[after-registration-redirect-url]',
+							settings.main['after-registration-redirect-url']
+						),
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRowWithInput(
+						translate('Redirect after login to'),
+						[{
+							'label': translate('Profile'),
+							'name': 'main[after-login-action]',
+							'value': 'redirect-to-profile',
+							'checked': settings.main['after-login-action'] == 'redirect-to-profile'
+						},
+						{
+							'label': translate('URL'),
+							'name': 'main[after-login-action]',
+							'value': 'redirect-to-url',
+							'checked': settings.main['after-login-action'] == 'redirect-to-url'
+						}],
+						'after-login-action',
+						'',
+						options.textInput(
+							'main[after-login-action-redirect-url]',
+							settings.main['after-login-action-redirect-url']
+						),
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRowWithInput(
+						translate('Redirect after logout to'),
+						[{
+							'label': translate('Main'),
+							'name': 'main[after-logout-action]',
+							'value': 'redirect-to-main',
+							'checked': settings.main['after-logout-action'] == 'redirect-to-main'
+						},
+						{
+							'label': translate('URL'),
+							'name': 'main[after-logout-action]',
+							'value': 'redirect-to-url',
+							'checked': settings.main['after-logout-action'] == 'redirect-to-url'
+						}],
+						'after-logout-action',
+						'',
+						options.textInput(
+							'main[after-logout-action-redirect-url]',
+							settings.main['after-logout-action-redirect-url']
+						),
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRowWithInput(
+						translate('Redirect after account is deleted to'),
+						[{
+							'label': translate('Main'),
+							'name': 'main[after-delete-account-action]',
+							'value': 'redirect-to-main',
+							'checked': settings.main['after-delete-account-action'] == 'redirect-to-main'
+						},
+						{
+							'label': translate('URL'),
+							'name': 'main[after-delete-account-action]',
+							'value': 'redirect-to-url',
+							'checked': settings.main['after-delete-account-action'] == 'redirect-to-url'
+						}],
+						'after-delete-account-action',
+						'',
+						options.textInput(
+						'main[after-delete-account-action-redirect-url]',
+						settings.main['after-delete-account-action-redirect-url']
+						),
+						null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(
+					translate('Badges'),
+					[{
+						'label': translate('Yes'),
+						'name': 'main[badges]',
+						'value': 'true',
+						'checked': settings.main.badges == 'true'
+					},
+					{
+						'label': translate('No'),
+						'name': 'main[badges]',
+						'value': 'false',
+						'checked': settings.main.badges == 'false'
+					}],
+					'badges',
+					null, null, {'mbsThinCol': 1}
+					) }}
+
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="sc-tab-content" data-tab="pages">
+        <div class="mp-action-panel">
+            <button class="create-pages sc-button icon-button primary">
+                <i class="fa fa-plus"></i>
+                <span>{{ translate('Create all unassigned pages') }}</span>
+            </button>
+            <button class="save-pages sc-button icon-button primary">
+                <i class="fa fa-save"></i>
+                <span>{{ translate('Save Pages') }}</span>
+            </button>
+        </div>
+        <div class="mp-options">
+            <div class="row">
+                <div class="col-md-12">
+                    {% for slug, page in pages %}
+						{% if slug == 'contact_form' %}
+							{{ environment.dispatcher.dispatch('backendSettingsMainPagesTab', [  settings.pages ]) }}
+						{% else %}
+							<div class="mp-option mp-page-option" data-page-slug="{{ slug }}">
+								<div class="row">
+									<div class="col-md-4 mbsThinCol">
+										<div class="mp-option-label">
+											<span title="{{ page.title }}">{{ page.title }}</span>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="mp-option-input-with-button">
+											<div class="mp-option-button" {% if (page.id) %}style="display: none"{% endif %}>
+												<button class="sc-button icon-button create-page-button primary" data-page-slug="{{ slug }}">
+													<i class="fa fa-plus"></i>
+													<span>{{ translate('Create page') }}</span>
+												</button>
+											</div>
+											<div class="mp-option-select">
+												{{ function('wp_dropdown_pages', {'name': 'pages[' ~ slug ~ ']', 'selected': page.id, 'class': 'sc-input wp-pages-list', 'echo': false, 'show_option_none': 'Select Page', 'option_none_value': '__none'})|raw }}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						{% endif %}
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+	<div class="sc-tab-content" data-tab="security">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+
+					{{ options.radioRow(translate('Global Site Access'), 
+						[{
+							'label': translate('Site Accessible to Everyone'),
+							'name': 'security[global-site-access]',
+							'value': 'everyone',
+							'checked': settings.security['global-site-access'] == 'everyone'
+						},
+						{
+							'label': translate('Site Accessible to Logged In Users'),
+							'name': 'security[global-site-access]',
+							'value': 'logged-in-users',
+							'checked': settings.security['global-site-access'] == 'logged-in-users'
+						}], 
+						'global-site-access',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+                    {{ options.radioRow(translate('Protect all Pages'),
+						[{
+							'label': translate('Yes'),
+							'name': 'security[protect-all-pages]',
+							'value': 'yes',
+							'checked': settings.security['protect-all-pages'] == 'yes'
+						},
+						{
+							'label': translate('No'),
+							'name': 'security[protect-all-pages]',
+							'value': 'no',
+							'checked': settings.security['protect-all-pages'] == 'no'
+						}],
+						'protect-all-pages',
+						null, null, {'mbsThinCol': 1}
+                    ) }}
+
+					{{ options.row(translate('Redirect from backend login screen to membership login page'), 
+						options.radioInput([{
+							'label': translate('Yes'),
+							'name': 'security[backend-login-screen-redirect]',
+							'value': 'yes',
+							'checked': settings.security['backend-login-screen-redirect'] == 'yes'
+						},
+						{
+							'label': translate('No'),
+							'name': 'security[backend-login-screen-redirect]',
+							'value': 'no',
+							'checked': settings.security['backend-login-screen-redirect'] == 'no'
+						}]), 
+						'backend-login-screen-redirect',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.textareaRow(translate('Blocked IP Addresses'),
+						'security[blocked-ip]',
+						settings.security['blocked-ip']|default(templates.get('blocked-ip')),
+						'blocked-ip',
+						null, null, 6, null, {'mbsThinCol': 1}
+					) }}
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sc-tab-content" data-tab="uploads">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="mp-option" id="max-image-size">
+						<div class="row">
+							<div class="col-md-4 mbsThinCol">
+								{{ options.label(translate('Maximum Image Size')) }}
+							</div>
+							<div class="col-md-8">
+								<div class="mp-option-sizes-input">
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings.uploads['max-image-size'].width }}" name="uploads[max-image-size][width]">
+									</div>
+									<span>x</span>
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings.uploads['max-image-size'].height }}" name="uploads[max-image-size][height]">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mp-option-input">
+						<input type="hidden"
+							   class="sc-input"
+							   name="uploads[max-file-size]"
+							   value="{{ settings.uploads['max-file-size'] }}"
+							   max="{{ maxFileUpload }}"
+						>
+					</div>
+
+					{{ options.inputRow(
+						translate('Maximum File Size (Mb)'),
+						'uploads[max-file-size-mb]',
+						settings.uploads['max-file-size'] / (1024 * 1024),
+						'max-file-size-mb',
+						'',
+						'max="' ~ maxFileUpload / (1024 * 1024) ~ '"',
+						{'mbsThinCol': 1}
+					) }}
+					<div class="col-md-4 mbsThinCol" style="width: 315px!important;">
+					</div>
+					<div class="col-md-8">
+						<div class="mp-option-input-description">
+							<div class="description">
+								<span>{{ translate('Maximum available file upload size is %d Mb')|format(maxFileUpload / (1024 * 1024)) }}</span>
+							</div>
+						</div>
+					</div>
+
+					{{ options.inputRow(translate('Image Quality'),
+						'uploads[image-quality]',
+						settings.uploads['image-quality'],
+						'image-quality',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sc-tab-content" data-tab="seo">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+
+					{{ options.inputRow(translate('User Profile Title'),
+						'seo[profile-title]',
+						settings.seo['profile-title'],
+						'profile-title',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.textareaRow(translate('User Profile Dynamic Meta Description'),
+						'seo[profile-description]',
+						settings.seo['profile-description']|default(templates.get('profile-description')),
+						'profile-description',
+						null, null, 6, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.inputRow(translate('Group Title'),
+						'seo[group-title]',
+						settings.seo['group-title'],
+						'group-title',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.textareaRow(translate('Group Dynamic Meta Description'),
+						'seo[group-description]',
+						settings.seo['group-description']|default(templates.get('group-description')),
+						'group-description',
+						null, null, 6, null, {'mbsThinCol': 1}
+					) }}
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sc-tab-content" data-tab="import">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>{{ translate('Activity link image preview for Amazon') }}</h3>
+					{{ options.selectInput2(
+						[
+							{'value': 0, 'title': 'Default'},
+							{'value': 1, 'title': 'Extended1'},
+						],
+						settings['import']['amazon-link-img-preview'],
+						{
+							'name': 'import[amazon-link-img-preview]',
+							'class': 'sc-input mbs-act-link-img-preview',
+						},
+						0
+					) }}
+	
+					{% if isBuddyPressExists %}
+						<h3 class="header">BuddyPress</h3>
+						<div class="mp-option">
+							<label class="sc-checkbox">
+								<input type="checkbox" id="bp-fields" value="true" checked="checked">
+								<div class="sc-checkbox-state"></div>
+							</label>
+							<label for="bp-fields">{{ translate('Import User Fields') }}</label>
+						</div>
+						<div class="mp-option">
+							<label class="sc-checkbox">
+								<input type="checkbox" id="bp-groups" value="true" checked="checked">
+								<div class="sc-checkbox-state"></div>
+							</label>
+							<label for="bp-groups">{{ translate('Import Groups') }}</label>
+						</div>
+						<div class="mp-option">
+							<label class="sc-checkbox">
+								<input type="checkbox" id="bp-friends" value="true" checked="checked">
+								<div class="sc-checkbox-state"></div>
+							</label>
+							<label for="bp-friends">{{ translate('Import Friends') }}</label>
+						</div>
+						<div class="mp-option">
+							<label class="sc-checkbox">
+								<input type="checkbox" id="bp-activity" value="true" checked="checked">
+								<div class="sc-checkbox-state"></div>
+							</label>
+							<label for="bp-activity">{{ translate('Import Activity') }}</label>
+						</div>
+						
+						<div style="margin: 2em 0">
+							<button class="import-buddy-press-data sc-button icon-button primary">
+								<i class="fa fa-plus-circle"></i>
+								<span>{{ translate('Import Buddy Press Data') }}</span>
+							</button>
+						</div>
+					{% endif %}
+					
+					{% if isUltimateMemberExists %}
+						<h3 class="header">Ultimate Member</h3>
+						<div class="mp-option">
+							<label class="sc-checkbox">
+								<input type="checkbox" id="um-fields" value="true" checked="checked">
+								<div class="sc-checkbox-state"></div>
+							</label>
+							<label for="bp-fields">{{ translate('Import User Fields') }}</label>
+						</div>
+						
+						<div style="margin: 2em 0">
+							<button class="import-ultimate-member-data sc-button icon-button primary">
+								<i class="fa fa-plus-circle"></i>
+								<span>{{ translate('Import Ultimate Member Data') }}</span>
+							</button>
+						</div>
+					{% endif %}
+					
+					{% if not isBuddyPressExists and not isUltimateMemberExists %}
+						{{ translate('No supported plugins found. Currently we support:') }} BuddyPress, Ultimate Member.
+					{% endif %}
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sc-tab-content" data-tab="groups">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>{{ translate('Group Category List') }}</h3>
+					<div class="mbsGroupCategoryWrapper">
+						<label id="mbsGroupCategoryNameLabel" for="mbsGroupCategoryName">{{ translate('Group category name:') }}</label>
+						<input type="text" value="" id="mbsGroupCategoryName" class="sc-input"/>
+						<button id="mbsSaveNewGroupCategory" class="sc-button icon-button primary" data-add="{{ translate('Add new') }}" data-update="{{ translate('Update') }}">{{ translate('Add new') }}</button>
+						<button id="mbsCancelNewGroupCategory" class="sc-button icon-button primary">{{ translate('Cancel') }}</button>
+					</div>
+					<table id="mbsGroupCategoryTbl">
+						<body>
+							<tr>
+								<th>Id</th>
+								<th>Name</th>
+								<th></th>
+							</tr>
+							{% if groupCategoryList|length %}
+								{% for oneGcItem in groupCategoryList %}
+									<tr id="mbsGcTblRow-{{ oneGcItem['id'] }}" data-id="{{ oneGcItem['id'] }}">
+										<td>{{ oneGcItem['id'] }}</td>
+										<td>{{ oneGcItem['name'] }}</td>
+										<td>
+											<a href="#" class="mbsGroupCategoryEdit">{{ translate('Edit') }}</a>
+											<a href="#" class="mbsGroupCategoryRemove">{{ translate('Remove') }}</a>
+										</td>
+									</tr>
+								{% endfor %}
+							{% endif %}
+						</body>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="mp-option" id="admin-email">
+						<h4>{{ translate('Joined Groups tab') }}</h4>
+						<div class="row">
+							<div class="col-md-4 mbsThinCol">
+								<div class="mp-option-label">
+									<span>{{ translate('Sort Groups by') }}</span>
+									<div class="mp-option-helper tooltip">
+										<i class="fa fa-question sc-tooltip"></i>
+										<div class="tooltip_content">
+											<div>{{ translate('Sorts in Descending order')}}</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-8">
+								{{ options.selectInput2(
+									[
+										{'value': 0, 'title': translate('Id')},
+										{'value': 1, 'title': translate('Recent Post')},
+									],
+									settings.groups['joined-sort-order'],
+									{'name': 'groups[joined-sort-order]', 'class': 'sc-input', 'style': 'width: 160px;'}
+								) }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<input type="hidden" id="mbsMsgGroupCategoryRemove" value="{{ translate('Are you sure you want to delete this category?') }}"/>
+		<input type="hidden" id="mbsMsgErrorOcured-1" value="{{ translate('Error Occurred!') }}"/>
+		<input type="hidden" id="mbsMsgSavedSuccessfully" value="{{ translate('Record saved...') }}"/>
+		<input type="hidden" id="mbsMsgUpdatedSuccessfully" value="{{ translate('Record updated...') }}"/>
+		<input type="hidden" id="mbsMsgRemoveSuccessfully" value="{{ translate('Record removed...') }}"/>
+		<input type="hidden" id="mbsTxtEdit" value="{{ translate('Edit') }}"/>
+		<input type="hidden" id="mbsTxtRemove" value="{{ translate('Remove') }}"/>
+	</div>
+
+	<div class="sc-tab-content" data-tab="reports">
+		<div class="mp-options">
+			<div class="row">
+				<div class="col-md-12">
+					<form class="mp-option" id="search" action="{{ reportsUrl ~ '#reports' }}" method="get">
+						<div class="row">
+							<div class="col-md-2">
+								{{ options.label(translate('Search')) }}
+							</div>
+							<div class="col-md-4">
+								<div class="report-filter search">
+									<input name="page" type="hidden" value="supsystic-membership"/>
+									<input name="module" type="hidden" value="membership"/>
+									<input name="order_by" type="hidden" value="{{ request.query.get('order_by') }}"/>
+									<input name="order" type="hidden" value="{{ request.query.get('order') }}"/>
+									<input class="sc-input" name="report_comment" type="text" value="{{ request.query.get('report_comment') }}" id="mbsReportFindField" />
+								</div>
+							</div>
+							<div class="col-md-2">
+								<input type="submit" class="sc-button primary" value="{{ translate('Search') }}"/>
+							</div>
+						</div>
+					</form>
+
+					{% set reqTurnedOrder = (request.query.get('order') == 'asc' ? 'desc' : 'asc') %}
+					{% set reqOrderName = request.query.get('order_by') %}
+					{% set report_comment = request.query.get('report_comment') %}
+					<table class="sc-table reports" data-translate="{{ {
+						'Read': translate('Read'),
+						'Unread': translate('Unread'),
+						'Mark as read and close': translate('Mark as read and close'),
+						'Mark as unread and close': translate('Mark as unread and close'),
+						'Close': translate('Close'),
+						'User is not found': translate('User is not found'),
+						'Activity is not found': translate('Activity is not found'),
+					}|json_encode|e }}">
+						<tr>
+							<th><a href="{{ reportsUrl ~ '&order_by=id&order=' ~ reqTurnedOrder  ~ '&report_comment=' ~ report_comment ~ '#reports' }}" class="{% if reqOrderName == 'id' %}{% if request.query.get('order') == 'desc' %}{{ 'mbsDescOrder' }}{% else %}{{ 'mbsAscOrder' }}{% endif %}{% endif %}">#</a></th>
+							<th><a href="{{ reportsUrl ~ '&order_by=content_type&order=' ~ reqTurnedOrder ~ '&report_comment=' ~ report_comment ~ '#reports' }}" class="{% if reqOrderName == 'content_type' %}{% if request.query.get('order') == 'desc' %}{{ 'mbsDescOrder' }}{% else %}{{ 'mbsAscOrder' }}{% endif %}{% endif %}">{{ translate('Report type') }}</a></th>
+							<th><a href="{{ reportsUrl ~ '&order_by=reporter_id&order=' ~ reqTurnedOrder ~ '&report_comment=' ~ report_comment ~ '#reports' }}" class="{% if reqOrderName == 'reporter_id' %}{% if request.query.get('order') == 'desc' %}{{ 'mbsDescOrder' }}{% else %}{{ 'mbsAscOrder' }}{% endif %}{% endif %}">{{ translate('Reporter') }}</a></th>
+							{#<th>{{ translate('Content') }}</th>#}
+							<th><a href="{{ reportsUrl ~ '&order_by=reported_id&order=' ~ reqTurnedOrder ~ '&report_comment=' ~ report_comment ~ '#reports' }}" class="{% if reqOrderName == 'reported_id' %}{% if request.query.get('order') == 'desc' %}{{ 'mbsDescOrder' }}{% else %}{{ 'mbsAscOrder' }}{% endif %}{% endif %}">{{ translate('Reported') }}</a></th>
+							<th>{{ translate('Report Comment') }}</th>
+							<th><a href="{{ reportsUrl ~ '&order_by=date&order=' ~ reqTurnedOrder ~ '&report_comment=' ~ report_comment ~ '#reports' }}" class="{% if reqOrderName == 'date' %}{% if request.query.get('order') == 'desc' %}{{ 'mbsDescOrder' }}{% else %}{{ 'mbsAscOrder' }}{% endif %}{% endif %}">{{ translate('Report Date') }}</a></th>
+							<th><a href="{{ reportsUrl ~ '&order_by=status&order=' ~ reqTurnedOrder ~ '&report_comment=' ~ report_comment ~ '#reports' }}" class="{% if reqOrderName == 'status' %}{% if request.query.get('order') == 'desc' %}{{ 'mbsDescOrder' }}{% else %}{{ 'mbsAscOrder' }}{% endif %}{% endif %}">{{ translate('Report Status') }}</a></th>
+							<th></th>
+						</tr>
+
+						{% for report in reports %}
+							<tr class="report"
+								data-report-id="{{ report.id }}"
+								data-report="{{ report|json_encode }}"
+							>
+								<td>
+									{{  report.id }}
+								</td>
+								<td>
+									<div class="content-type">
+										{% if report.content_type == 'activity' %}
+											{{ translate('Activity Report') }}
+										{% elseif report.content_type == 'user' %}
+											{{ translate('User Report') }}
+										{% endif %}
+									</div>
+								</td>
+								<td>
+									<div class="reporter">
+										{% if report.reporter %}
+											<a target="_blank" href="{{ report.reporter.url }}">{{ report.reporter.displayName }}</a>
+											<a target="_blank" href="{{ report.reporter.editLink }}"><small>({{ translate('Edit profile') }})</small></a>
+										{% else %}
+											{{ translate('User with id %d is not found')|format(report.reporter_id) }}
+										{% endif %}
+									</div>
+								</td>
+								{#<td>#}
+								{#<div class="content">#}
+								{#{% if report.content_type == 'activity' %}#}
+								{#{{ report.reported.data|slice(0, 80) }}#}
+								{#{% endif %}#}
+								{#</div>#}
+								{#</td>#}
+								<td>
+									<div class="reported">
+										{% if report.content_type == 'activity' %}
+											{% if report.reported %}
+												<a target="_blank" href="{{ report.reported.url }}">{{ translate('Link') }}</a>
+											{% else %}
+												{{ translate('Activity with id %d is not found')|format(report.reported_id) }}
+											{% endif %}
+										{% elseif report.content_type == 'user' %}
+											{% if report.reported %}
+												<a target="_blank" href="{{ profileUrl(report.reported) }}">{{ report.reported.displayName }}</a>
+												<a target="_blank" href="{{ report.reported.editLink }}"><small>({{ translate('Edit') }})</small></a>
+											{% else %}
+												{{ translate('User with id %d is not found')|format(report.reported_id) }}
+											{% endif %}
+										{% endif %}
+									</div>
+								</td>
+								<td>
+									<div class="comment">{{ truncate(report.comment, 80) }}</div>
+								</td>
+								<td>
+									<div class="date">{{ report.date }}</div>
+								</td>
+								<td>
+									<div class="status">
+										{% if report.status != 'new' %}
+											{{ translate('Read') }}
+										{% else %}
+											{{ translate('Unread') }}
+										{% endif %}
+									</div>
+								</td>
+								<td>
+									<div class="info">
+										<a href="#" class="report-details">{{ translate('Details') }}</a>
+									</div>
+								</td>
+							</tr>
+						{% endfor %}
+					</table>
+
+					<div class="sc-hidden user-report-details-template">
+						{% include '@reports/backend/partials/user-report-details.twig' %}
+					</div>
+
+					<div class="sc-hidden activity-report-details-template">
+						{% include '@reports/backend/partials/activity-report-details.twig' %}
+					</div>
+
+					<div class="mp-modal send-message-modal sc-hidden">
+						<div class="mp-option" id="message">
+							<div class="row">
+								<div class="col-md-12">
+									<input type="hidden" class="user-id" name="user-id" value="">
+									<div class="mp-option-label">
+										<span>{{ translate('Send message to: ') }}</span> <span class="message-recipient"></span>
+									</div>
+									<div class="mp-option-input">
+										<textarea class="message-input" class="sc-input" name="" cols="35" rows="10"></textarea>
+									</div>
+									<div class="mp-result">
+										<span id="message-result"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    {{ environment.dispatcher.dispatch('backendSettingsMainContentSettings') }}
+{% endblock %}

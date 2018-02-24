@@ -1,0 +1,201 @@
+{% extends "@base/layouts/backend.twig" %}
+{% import "@base/macros/options.twig" as options %}
+{% import "@base/macros/tooltips-templates.twig" as tooltips %}
+{% import '@base/macros/pagination.twig' as pagination %}
+
+
+{% block head %}
+
+{% endblock %}
+
+{% block main %}
+
+	{% import _self as f %}
+	<div class="sc-tabs-container">
+		<div class="sc-tab-content active" data-tab="users">
+			<h2 class="sc-header">{{ translate('Users') }}</h2>
+			<div class="mp-option">
+				<div class="row">
+					<div class="col-md-4">
+						<input class="sc-input search-users-input" type="text" placeholder="{{ translate('Search...') }}" value="{{ request.query.search }}">
+					</div>
+					<div class="col-md-4">
+						<button class="sc-button primary search-button">
+							<span>{{ translate('Search') }}</span>
+						</button>
+						<a href="{{ function('admin_url', 'user-new.php') }}" target="_blank">
+							<button class="sc-button primary">
+								<span>{{ translate('Create user') }}</span>
+							</button>
+						</a>
+						<a href="{{ dashboardUrl('users', 'importFromCsv') }}#users" target="_blank">
+							<button class="sc-button primary">
+								<span>{{ translate('Import from csv') }}</span>
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-2">
+					<select class="bulk-actions">
+						<option value="">{{ translate('Bulk Actions') }}</option>
+						<option value="change-status">{{ translate('Change User Status') }}</option>
+						<option value="change-role">{{ translate('Change User Role') }}</option>
+					</select>
+				</div>
+				<div class="col-md-2">
+					<select class="bulk-actions-list roles-list" style="display: none">
+						{% for role in roles if role.type != '__guest__' %}
+							<option value="{{ role.id }}">{{ role.name }}</option>
+						{% endfor %}
+					</select>
+					<select class="bulk-actions-list status-list" style="display: none">
+						{% for status, statusTitle in userStatusesList %}
+							<option value="{{ status }}">{{ statusTitle }}</option>
+						{% endfor %}
+					</select>
+				</div>
+				<div class="col-md-2">
+					<button class="sc-button primary bulk-actions-apply-button" style="display: none">
+						<span>{{ translate('Apply') }}</span>
+					</button>
+				</div>
+			</div>
+			
+			{% if users %}
+				{% set requestQuery = request.query.all %}
+				
+				<div class="users-table-wrap">
+					<table class="sc-table users-table">
+						<tr>
+							<th>
+								<label class="sc-checkbox">
+									<input type="checkbox" class="select-all">
+									<div class="sc-checkbox-state"></div>
+								</label>
+							</th>
+							<th>{{ translate('Username') }}</th>
+							<th>{{ translate('Name') }}</th>
+							<th>{{ translate('Email') }}</th>
+							<th>
+								{% if request.query.sort == 'user_registered' %}
+									{% if request.query.order == 'asc' %}
+										{% set icon = '<i class="fa fa-sort-asc" aria-hidden="true"></i>' %}
+										{% set requestQuery = requestQuery|merge({'sort':'user_registered', 'order':'desc'}) %}
+									{% else %}
+										{% set icon = '<i class="fa fa-sort-desc" aria-hidden="true"></i>' %}
+										{% set requestQuery = requestQuery|merge({'sort':'user_registered', 'order':'asc'}) %}
+									{% endif %}
+								{% else %}
+									{% set requestQuery = requestQuery|merge({'sort':'user_registered', 'order':'asc'}) %}
+									{% if request.query.sort %}
+										{% set icon = '<i class="fa fa-sort" aria-hidden="true"></i>' %}
+									{% else %}
+										{% set icon = '<i class="fa fa-sort-desc" aria-hidden="true"></i>' %}
+									{% endif %}
+								{% endif %}
+								<a href="{{ dashboardUrl('roles', null, requestQuery) }}#users">
+									<span>{{ translate('Registered') }}</span> {{ icon|raw }}
+								</a>
+							
+							</th>
+							<th>
+								{% if request.query.sort == 'role' %}
+									{% if request.query.order == 'asc' %}
+										{% set icon = '<i class="fa fa-sort-asc" aria-hidden="true"></i>' %}
+										{% set requestQuery = requestQuery|merge({'sort':'role', 'order':'desc'}) %}
+									{% else %}
+										{% set icon = '<i class="fa fa-sort-desc" aria-hidden="true"></i>' %}
+										{% set requestQuery = requestQuery|merge({'sort':'role', 'order':'asc'}) %}
+									{% endif %}
+								{% else %}
+									{% set requestQuery = requestQuery|merge({'sort':'role', 'order':'desc'}) %}
+									{% set icon = '<i class="fa fa-sort" aria-hidden="true"></i>' %}
+								{% endif %}
+								<a href="{{ dashboardUrl('roles', null, requestQuery) }}#users">
+									<span>{{ translate('Membership Role') }}</span> {{ icon|raw }}
+								</a>
+							</th>
+							<th>
+								{% if request.query.sort == 'status' %}
+									{% if request.query.order == 'asc' %}
+										{% set icon = '<i class="fa fa-sort-asc" aria-hidden="true"></i>' %}
+										{% set requestQuery = requestQuery|merge({'sort':'status', 'order':'desc'}) %}
+									{% else %}
+										{% set icon = '<i class="fa fa-sort-desc" aria-hidden="true"></i>' %}
+										{% set requestQuery = requestQuery|merge({'sort':'status', 'order':'asc'}) %}
+									{% endif %}
+								{% else %}
+									{% set requestQuery = requestQuery|merge({'sort':'status', 'order':'desc'}) %}
+									{% set icon = '<i class="fa fa-sort" aria-hidden="true"></i>' %}
+								{% endif %}
+								<a href="{{ dashboardUrl('roles', null, requestQuery) }}#users">
+									<span>{{ translate('Membership Status') }}</span> {{ icon|raw }}
+								</a>
+							</th>
+							<th>{{ translate('Last seen') }}</th>
+						</tr>
+						{% for user in users %}
+							<tr>
+								<td>
+									<label class="sc-checkbox">
+										<input type="checkbox" name="users[]" value="{{ user.id }}" />
+										<div class="sc-checkbox-state"></div>
+									</label>
+								</td>
+								<td><img class="avatar" src="{{ userAvatar(user, 'small') }}">
+									<a href="{{ profileUrl(user) }}" target="_blank">{{ user.user_login }}</a></td>
+								<td>{{ user.displayName }}</td>
+								<td>{{ user.user_email }}</td>
+								<td class="registered" title="{{ user.user_registered }}">{{ user.user_registered }}</td>
+								<td class="role">{{ user.roleName }}</td>
+								<td class="status">{{ user.userStatus }}</td>
+								<td>
+									{% if user.isOnline %}
+										<b class="online">{{ translate('Online') }}</b>
+									{% else %}
+										{% if user.lastSeen %}
+											<span class="last-seen" style="display: none">{{ user.lastSeen }}</span>
+										{% endif %}
+									{% endif %}
+								</td>
+							</tr>
+						{% endfor %}
+					
+					</table>
+				</div>
+			{% else %}
+				<div class="my3 text-center">
+					<h4>{{ translate('Nothing is found') }}</h4>
+				</div>
+			{% endif %}
+			
+			
+			{% if users %}
+				<div class="row">
+					<div class="col-md-6">
+						{{ pagination.create(
+							{
+								'page': request.query.p ?: '1',
+								'totalPages': totalPaginationPages,
+								'hash': 'users'
+							},
+							{
+								'search': request.query.search
+							}
+						) }}
+					</div>
+					<div class="col-md-6 text-right">
+						<span>{{ translate('Found %d users')|format(totalUsers) }}</span>
+					</div>
+				</div>
+			{% endif %}
+		
+		
+		
+		</div>
+	</div>
+
+{% endblock %}

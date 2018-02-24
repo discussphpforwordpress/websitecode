@@ -1,0 +1,13 @@
+{% spaceless %}
+<div class="mbs-sc-user-avatar-block">
+	<div class="mbs-sc-user-avatar-wrapper">
+		<div class="mbs-sc-user-avatar">
+			<img class="mbs-sc-user-avatar-img"
+				 src="{{ userAvatar(userInfo, 'default') }}"
+				 width="{{ settings.profile['avatar-size'].width }}"
+				 height="{{ settings.profile['avatar-size'].height }}" alt=""
+			/>
+		</div>
+	</div>
+</div>
+{% endspaceless %}

@@ -1,0 +1,842 @@
+<style id="membership-custom-styles">
+	
+	{% if settings.design.general['default-theme-colors'] == 'false' %}
+	
+	
+		.sc-membership .ui.primary.button,
+		.ui.modals .ui.primary.button {
+			background: {{ settings.design.general['primary-button-color'] }}!important;
+			{# New feature compatibility #}
+			{% if settings.design.general['primary-button-text-color'] is defined %}
+				color: {{ settings.design.general['primary-button-text-color'] }}!important;
+			{% endif %}
+		}
+	
+
+		.sc-membership .ui.primary.button:active,
+		.sc-membership .ui.primary.buttons .button:active,
+		.ui.modals .ui.primary.button:active,
+		.ui.modals .ui.primary.buttons .button:active,
+		.sc-membership .ui.primary.button:hover,
+		.sc-membership .ui.primary.buttons .button:hover,
+		.ui.modals .ui.primary.button:hover,
+		.ui.modals .ui.primary.buttons .button:hover {
+			{% if settings.design.general['primary-button-hover-color'] %}
+				background: {{ settings.design.general['primary-button-hover-color'] }}!important;
+			{% endif %}
+		}
+
+
+		.sc-membership .ui.secondary.button,
+		.ui.modals .mbs-add-attachment,
+		.ui.modals .ui.secondary.button {
+			background: {{ settings.design.general['secondary-button-color'] }}!important;
+			{# New feature compatibility #}
+			{% if settings.design.general['secondary-button-text-color'] is defined %}
+				color: {{ settings.design.general['secondary-button-text-color'] }}!important;
+			{% endif %}
+		}
+
+		{% if settings.design.general['secondary-button-text-color'] is defined %}
+			.ui.modals .mbs-add-attachment .icon.attach {
+				color: {{ settings.design.general['secondary-button-text-color'] }}!important;
+			}
+		{% endif %}
+
+		.sc-membership .ui.secondary.button:hover,
+		.sc-membership .ui.secondary.buttons .button:hover,
+		.ui.modals .ui.secondary.button:hover,
+		.ui.modals .ui.secondary.buttons .button:hover {
+			background: {{ settings.design.general['secondary-button-hover-color'] }}!important;
+		}
+		{# Smile button background#}
+		.post-activity-buttons .button[data-action="add-smile-to-text"] {
+			background-color: {{ settings.design.general['smile-button-bg-color']|default('#fff') }} !important;
+		}
+		.post-activity-buttons .button[data-action="add-smile-to-text"]:hover {
+			background-color: {{ settings.design.general['smile-button-hover-bg-color']|default('#ddd') }} !important;
+		}
+		{# Smile button icon size#}
+		{% set smileBtnIconSize = settings.design.general['smiles-button-icon-size-text-font-size-number'] | default(20) %}
+		{% set smileBtnIconSizeUnits = settings.design.general['smiles-button-icon-size-text-font-unit-select'] | default('px') %}
+		{% set smileBtnIconWidthAndHeightSize = (smileBtnIconSizeUnits == 'em') ? (smileBtnIconSize + 1) : (smileBtnIconSize + 16) %}
+		{#
+				6 *5px word space;
+				6 *20px smile width;
+				6 *8px margin-left;
+				6 *8px margin-right;
+		#}
+		{% set smileWrapperIconSizeWidth = (smileBtnIconSizeUnits == 'em') ? (smileBtnIconSize*6) : (6*smileBtnIconSize + 6*5 + 6*8 + 6*8) %}
+		.post-activity-buttons .button[data-action="add-smile-to-text"] {
+			font-size: {{ smileBtnIconSize }}{{ smileBtnIconSizeUnits }}!important;
+		}
+		.mbs-smiles-wrapper {
+			width: {{ smileWrapperIconSizeWidth }}px;
+		}
+		.mbs-sw-one-smile {
+			width: {{ smileBtnIconWidthAndHeightSize }}{{ smileBtnIconSizeUnits }}!important;
+			height: {{ smileBtnIconWidthAndHeightSize }}{{ smileBtnIconSizeUnits }}!important;
+			font-size: {{ smileBtnIconSize }}{{ smileBtnIconSizeUnits }}!important;
+			line-height: {{ smileBtnIconSize }}{{ smileBtnIconSizeUnits }}!important;
+		}
+
+		.ui.form input, .ui.form textarea {
+			border-color: {{ settings.design.general['input-border-color'] }}!important;
+			background-color: {{ settings.design.general['input-background-color'] }}!important;
+			{# New feature compatibility #}
+			{% if settings.design.general['input-text-color'] is defined %}
+				color: {{ settings.design.general['input-text-color'] }}!important;
+			{% endif %}
+		}
+
+		.ui.form input:focus, .ui.form textarea:focus {
+			border-color: {{ settings.design.general['input-border-focus-color'] }}!important;
+			background-color: {{ settings.design.general['input-background-focus-color'] }}!important;
+		}
+
+		.ui.form input::-webkit-input-placeholder { color: {{ settings.design.general['input-placeholder-color'] }}!important; }
+		.ui.form textarea::-webkit-input-placeholder { color: {{ settings.design.general['input-placeholder-color'] }}!important; }
+		.ui.form input:-moz-placeholder { color: {{ settings.design.general['input-placeholder-color'] }}!important;}
+		.ui.form textarea:-moz-placeholder { color: {{ settings.design.general['input-placeholder-color'] }}!important;}
+		.ui.form input::-moz-placeholder {color: {{ settings.design.general['input-placeholder-color'] }}!important;}
+		.ui.form textarea::-moz-placeholder {color: {{ settings.design.general['input-placeholder-color'] }}!important;}
+		.ui.form input:-ms-input-placeholder {color: {{ settings.design.general['input-placeholder-color'] }}!important;}
+		.ui.form textarea:-ms-input-placeholder {color: {{ settings.design.general['input-placeholder-color'] }}!important;}
+
+		{# New feature compatibility #}
+		{% if settings.design.general['label-text-color'] is defined %}
+			.ui.form label {
+				color: {{ settings.design.general['label-text-color'] }}!important;
+			}
+		{% endif %}
+	{% endif %}
+
+	#mp-profile .ui.container {
+		width: {{ settings.design.profile['container-max-width'] }}!important;
+	}
+
+	.mp-profile-header {
+		background-color: {{ settings.design.profile['header-background-color'] }}!important;
+		{% if settings.design.profile['avatar-style'] != null %}
+			background-color: {{ settings.design.profile['avatar-style'] }}!important;
+		{% endif %}
+	}
+
+	{% if settings.design.general['avatar-style'] == 'round' %}
+		.sc-membership .mp-avatar,
+		.sc-membership .mp-avatar img,
+		.sc-membership .mp-avatar .mp-update-avatar-overlay,
+		.sc-membership .mp-user-card .mp-user-avatar,
+		.sc-membership .mp-user-card .mp-user-avatar img,
+		.sc-membership .mp-group-card .mp-group-logo,
+		.sc-membership .mp-group-card .mp-group-logo img,
+		#conversations .conversation-image,
+		#conversations .mp-message-avatar,
+		#conversations .mp-message-avatar img,
+		.sc-membership .mp-activity-container .mp-activity-header-image,
+		.sc-membership .mp-activity-container .mp-activity-header-image img,
+		.sc-membership .mp-activity-post-form .mp-activity-post-avatar,
+		.sc-membership .mp-activity-post-form .mp-activity-post-avatar img,
+		.sc-membership .mp-logo,
+		.sc-membership .mp-logo img,
+		.sc-membership .mp-logo .mp-update-logo-overlay,
+		.sc-membership .mp-activity-container .activity-author-group,
+		.sc-membership .mp-activity-container .activity-author-user,
+		.sc-membership .mp-activity-container .comment-container .avatar,
+		.sc-membership .mp-activity-container .comment-container .avatar img,
+		.sc-membership .mp-activity-container .mp-comment-form-author,
+		.sc-membership .mp-activity-container .mp-comment-form-author img,
+		.sc-membership .mp-activity-container .menu img.avatar
+		{
+			border-radius: 5px;
+		}
+	{% endif %}
+
+	{% if settings.design.general['avatar-style'] == 'circle' %}
+		.sc-membership .mp-avatar,
+		.sc-membership .mp-avatar img,
+		.sc-membership .mp-avatar .mp-update-avatar-overlay,
+		.sc-membership .mp-user-card .mp-user-avatar,
+		.sc-membership .mp-user-card .mp-user-avatar img,
+		.sc-membership .mp-group-card .mp-group-logo,
+		.sc-membership .mp-group-card .mp-group-logo img,
+		#conversations .conversation-image,
+		#conversations .mp-message-avatar,
+		#conversations .mp-message-avatar img,
+		.sc-membership .mp-activity-container .mp-activity-header-image,
+		.sc-membership .mp-activity-container .mp-activity-header-image img,
+		.sc-membership .mp-activity-post-form .mp-activity-post-avatar,
+		.sc-membership .mp-activity-post-form .mp-activity-post-avatar img,
+		.sc-membership .mp-logo,
+		.sc-membership .mp-logo img,
+		.sc-membership .mp-logo .mp-update-logo-overlay,
+		.sc-membership .mp-activity-container .activity-author-group,
+		.sc-membership .mp-activity-container .activity-author-user,
+		.sc-membership .mp-activity-container .comment-container .avatar,
+		.sc-membership .mp-activity-container .comment-container .avatar img,
+		.sc-membership .mp-activity-container .mp-comment-form-author,
+		.sc-membership .mp-activity-container .mp-comment-form-author img,
+		.sc-membership .mp-activity-container .menu img.avatar
+		{
+			border-radius: 50%;
+		}
+
+	{% endif %}	
+
+	{% if settings.design.general['avatar-style'] == 'square' %}
+		.sc-membership .mp-avatar,
+		.sc-membership .mp-avatar img,
+		.sc-membership .mp-avatar .mp-update-avatar-overlay,
+		.sc-membership .mp-user-card .mp-user-avatar,
+		.sc-membership .mp-user-card .mp-user-avatar img,
+		.sc-membership .mp-group-card .mp-group-logo,
+		.sc-membership .mp-group-card .mp-group-logo img,
+		#conversations .conversation-image,
+		#conversations .mp-message-avatar,
+		#conversations .mp-message-avatar img,
+		.sc-membership .mp-activity-container .mp-activity-header-image,
+		.sc-membership .mp-activity-container .mp-activity-header-image img,
+		.sc-membership .mp-activity-post-form .mp-activity-post-avatar,
+		.sc-membership .mp-activity-post-form .mp-activity-post-avatar img,
+		.sc-membership .mp-logo,
+		.sc-membership .mp-logo img,
+		.sc-membership .mp-logo .mp-update-logo-overlay,
+		.sc-membership .mp-activity-container .activity-author-group,
+		.sc-membership .mp-activity-container .activity-author-user,
+		.sc-membership .mp-activity-container .comment-container .avatar,
+		.sc-membership .mp-activity-container .comment-container .avatar img,
+		.sc-membership .mp-activity-container .mp-comment-form-author,
+		.sc-membership .mp-activity-container .mp-comment-form-author img,
+		.sc-membership .mp-activity-container .menu img.avatar
+		{
+			border-radius: 0;
+		}
+	{% endif %}
+
+	{% if settings.design.profile['show-display-name'] == 'false' %}
+		.sc-membership .mp-cover-container .mp-user-display-name {
+			display: none;
+		}
+	{% endif %}
+
+	{% if settings.design.auth['login-secondary-button'] == 'false' %}
+		.sc-membership .ui.button.mp-login-secondary-button {
+			display: none;
+		}
+	{% endif %}
+
+    {% if settings.design.members['show-friends-and-followers'] != 'true' %}
+        .mp-social-stats {
+            display: none!important;
+        }
+    {% endif %}
+	{# General #}
+	{# Primary button #}
+	{% if settings.design.fonts.general['primary-buttons-text-font-size-check'] == 1 or settings.design.fonts.general['primary-buttons-text-font-family-check'] == 1 or settings.design.fonts.general['primary-buttons-text-color-check'] == 1 %}
+		.ui.modals .ui.button.primary,
+		.sc-membership .ui.button.primary {
+			{% if settings.design.fonts.general['primary-buttons-text-font-size-check'] == 1
+				and settings.design.fonts.general['primary-buttons-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.general['primary-buttons-text-font-size-number'] ~ settings.design.fonts.general['primary-buttons-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.general['primary-buttons-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.general['primary-buttons-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.general['primary-buttons-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.general['primary-buttons-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Secondary button #}
+	{% if settings.design.fonts.general['secondary-buttons-text-font-size-check'] == 1 or settings.design.fonts.general['secondary-buttons-text-font-family-check'] == 1 or settings.design.fonts.general['secondary-buttons-text-color-check'] == 1 %}
+		.ui.modals .ui.secondary.button,
+		.sc-membership .ui.button.secondary:not(.icon) {
+			{% if settings.design.fonts.general['secondary-buttons-text-font-size-check'] == 1
+				and settings.design.fonts.general['secondary-buttons-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.general['secondary-buttons-text-font-size-number'] ~ settings.design.fonts.general['secondary-buttons-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.general['secondary-buttons-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.general['secondary-buttons-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.general['secondary-buttons-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.general['secondary-buttons-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Page Header #}
+	{% if settings.design.fonts.general['page-header-text-font-size-check'] == 1 or settings.design.fonts.general['page-header-text-font-family-check'] == 1 or settings.design.fonts.general['page-header-text-color-check'] == 1 %}
+		.entry-header .entry-title {
+			{% if settings.design.fonts.general['page-header-text-font-size-check'] == 1
+				and settings.design.fonts.general['page-header-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.general['page-header-text-font-size-number'] ~ settings.design.fonts.general['page-header-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.general['page-header-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.general['page-header-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.general['page-header-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.general['page-header-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Text input #}
+	{% if settings.design.fonts.general['text-input-text-font-size-check'] == 1 or settings.design.fonts.general['text-input-text-font-family-check'] == 1 or settings.design.fonts.general['text-input-text-color-check'] == 1 %}
+		.sc-membership input[type="text"],
+		/*.sc-membership input[type="password"],*/
+		/*.sc-membership input[type="email"],*/
+		.sc-membership .ui.form input[type="text"],
+		.sc-membership .ui.form input[type="text"]:focus,
+		.sc-membership .ui.form input[type="password"],
+		.sc-membership .ui.form input[type="email"] {
+			{% if settings.design.fonts.general['text-input-text-font-size-check'] == 1
+				and settings.design.fonts.general['text-input-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.general['text-input-text-font-size-number'] ~ settings.design.fonts.general['text-input-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.general['text-input-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.general['text-input-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.general['text-input-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.general['text-input-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Labels #}
+	{% if settings.design.fonts.general['labels-text-font-size-check'] == 1 or settings.design.fonts.general['labels-text-font-family-check'] == 1 or settings.design.fonts.general['labels-text-color-check'] == 1 %}
+		.sc-membership .ui.form label {
+			{% if settings.design.fonts.general['labels-text-font-size-check'] == 1
+				and settings.design.fonts.general['labels-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.general['labels-text-font-size-number'] ~ settings.design.fonts.general['labels-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.general['labels-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.general['labels-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.general['labels-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.general['labels-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Small labels #}
+	{% if settings.design.fonts.general['small-labels-text-font-size-check'] == 1 or settings.design.fonts.general['small-labels-text-font-family-check'] == 1 or settings.design.fonts.general['small-labels-text-color-check'] == 1 %}
+		.sc-membership .ui.form label small {
+			{% if settings.design.fonts.general['small-labels-text-font-size-check'] == 1
+				and settings.design.fonts.general['small-labels-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.general['small-labels-text-font-size-number'] ~ settings.design.fonts.general['small-labels-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.general['small-labels-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.general['small-labels-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.general['small-labels-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.general['small-labels-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Links #}
+	{% if settings.design.fonts.general['links-text-font-size-check'] == 1 or settings.design.fonts.general['links-text-font-family-check'] == 1 or settings.design.fonts.general['links-text-color-check'] == 1 %}
+		.sc-membership .ui.form a {
+			{% if settings.design.fonts.general['links-text-font-size-check'] == 1
+				and settings.design.fonts.general['links-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.general['links-text-font-size-number'] ~ settings.design.fonts.general['links-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.general['links-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.general['links-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.general['links-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.general['links-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Profile Page#}
+	{# User name #}
+	{% if settings.design.fonts.profile['user-name-text-font-size-check'] == 1 or settings.design.fonts.profile['user-name-text-font-family-check'] == 1 or settings.design.fonts.profile['user-name-text-color-check'] == 1 %}
+		.sc-membership .mp-user-display-name {
+			{% if settings.design.fonts.profile['user-name-text-font-size-check'] == 1
+				and settings.design.fonts.profile['user-name-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['user-name-text-font-size-number'] ~ settings.design.fonts.profile['user-name-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['user-name-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['user-name-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['user-name-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['user-name-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Counters #}
+	{% if settings.design.fonts.profile['counters-text-font-size-check'] == 1 or settings.design.fonts.profile['counters-text-font-family-check'] == 1 or settings.design.fonts.profile['counters-text-color-check'] == 1 %}
+		.sc-membership .mp-profile-social-stats a.statistic div.value {
+			{% if settings.design.fonts.profile['counters-text-font-size-check'] == 1
+				and settings.design.fonts.profile['counters-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['counters-text-font-size-number'] ~ settings.design.fonts.profile['counters-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['counters-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['counters-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['counters-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['counters-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Counters label #}
+	{% if settings.design.fonts.profile['counters-label-text-font-size-check'] == 1 or settings.design.fonts.profile['counters-label-text-font-family-check'] == 1 or settings.design.fonts.profile['counters-label-text-color-check'] == 1 %}
+		.sc-membership .mp-profile-social-stats a.statistic div.label {
+			{% if settings.design.fonts.profile['counters-label-text-font-size-check'] == 1
+				and settings.design.fonts.profile['counters-label-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['counters-label-text-font-size-number'] ~ settings.design.fonts.profile['counters-label-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['counters-label-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['counters-label-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['counters-label-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['counters-label-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Tab #}
+	{% if settings.design.fonts.profile['tab-text-font-size-check'] == 1 or settings.design.fonts.profile['tab-text-font-family-check'] == 1 or settings.design.fonts.profile['tab-text-color-check'] == 1 %}
+		.sc-membership .profile-nav-menu a.item,
+		.sc-membership .profile-nav-menu .ui.dropdown .menu a.item {
+			{% if settings.design.fonts.profile['tab-text-font-size-check'] == 1
+				and settings.design.fonts.profile['tab-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['tab-text-font-size-number'] ~ settings.design.fonts.profile['tab-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['tab-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['tab-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['tab-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['tab-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Tab menu hover #}
+	{% if settings.design.fonts.profile['tab-menu-hover-text-font-size-check'] == 1 or settings.design.fonts.profile['tab-menu-hover-text-font-family-check'] == 1 or settings.design.fonts.profile['tab-menu-hover-text-color-check'] == 1 %}
+		.sc-membership .profile-nav-menu a.item:hover,
+		.sc-membership .profile-nav-menu .ui.dropdown .menu a.item:hover {
+			{% if settings.design.fonts.profile['tab-menu-hover-text-font-size-check'] == 1
+				and settings.design.fonts.profile['tab-menu-hover-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['tab-menu-hover-text-font-size-number'] ~ settings.design.fonts.profile['tab-menu-hover-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['tab-menu-hover-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['tab-menu-hover-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['tab-menu-hover-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['tab-menu-hover-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Message #}
+	{% if settings.design.fonts.profile['message-text-font-size-check'] == 1 or settings.design.fonts.profile['message-text-font-family-check'] == 1 or settings.design.fonts.profile['message-text-color-check'] == 1 %}
+		.sc-membership .mp-activity-container .mp-form-textarea {
+			{% if settings.design.fonts.profile['message-text-font-size-check'] == 1
+				and settings.design.fonts.profile['message-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['message-text-font-size-number'] ~ settings.design.fonts.profile['message-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['message-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['message-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['message-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['message-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Post buttons #}
+	{% if settings.design.fonts.profile['post-buttons-text-font-size-check'] == 1 or settings.design.fonts.profile['post-buttons-text-color-check'] == 1 %}
+		.ui.modals .ui.secondary.button.icon,
+		.sc-membership .ui.button.secondary.icon {
+		{% if settings.design.fonts.profile['post-buttons-text-font-size-check'] == 1
+			and settings.design.fonts.profile['post-buttons-text-font-unit-select'] in ['px', 'em'] %}
+			font-size: {{ settings.design.fonts.profile['post-buttons-text-font-size-number'] ~ settings.design.fonts.profile['post-buttons-text-font-unit-select'] }}  !important;
+		{% endif %}
+		{% if settings.design.fonts.profile['post-buttons-text-color-check'] == 1 %}
+			color: {{ settings.design.fonts.profile['post-buttons-text-color-input'] }} !important;
+		{% endif %}
+		}
+	{% endif %}
+	{# Post buttons hover #}
+	{% if settings.design.fonts.profile['post-buttons-hover-text-font-size-check'] == 1 or settings.design.fonts.profile['post-buttons-hover-text-color-check'] == 1 %}
+		.sc-membership .post-form-buttons .icon.button:hover {
+			{% if settings.design.fonts.profile['post-buttons-hover-text-font-size-check'] == 1
+				and settings.design.fonts.profile['post-buttons-hover-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['post-buttons-hover-text-font-size-number'] ~ settings.design.fonts.profile['post-buttons-hover-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['post-buttons-hover-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['post-buttons-hover-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Post user name #}
+	{% if settings.design.fonts.profile['post-user-name-text-font-size-check'] == 1 or settings.design.fonts.profile['post-user-name-text-font-family-check'] == 1 or settings.design.fonts.profile['post-user-name-text-color-check'] == 1 %}
+		.sc-membership .mp-activity .ui.basic a,
+		.sc-membership .mp-activity-comments .mp-comment-content a.author,
+		.sc-membership .mp-activity-header-title a {
+			{% if settings.design.fonts.profile['post-user-name-text-font-size-check'] == 1
+				and settings.design.fonts.profile['post-user-name-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['post-user-name-text-font-size-number'] ~ settings.design.fonts.profile['post-user-name-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['post-user-name-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['post-user-name-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['post-user-name-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['post-user-name-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Post text #}
+	{% if settings.design.fonts.profile['post-text-text-font-size-check'] == 1 or settings.design.fonts.profile['post-text-text-font-family-check'] == 1 or settings.design.fonts.profile['post-text-text-color-check'] == 1 %}
+		.sc-membership .mp-activity-content {
+			{% if settings.design.fonts.profile['post-text-text-font-size-check'] == 1
+				and settings.design.fonts.profile['post-text-text-font-unit-select'] in ['px', 'em'] %}
+					font-size: {{ settings.design.fonts.profile['post-text-text-font-size-number'] ~ settings.design.fonts.profile['post-text-text-font-unit-select'] }}  !important;
+				{% endif %}
+			{% if settings.design.fonts.profile['post-text-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['post-text-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['post-text-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['post-text-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Post other text #}
+	{% if settings.design.fonts.profile['post-other-text-text-font-size-check'] == 1 or settings.design.fonts.profile['post-other-text-text-font-family-check'] == 1 or settings.design.fonts.profile['post-other-text-text-color-check'] == 1 %}
+		.sc-membership .mp-activity .ui.basic,
+		.sc-membership .mp-activity-header-title {
+			{% if settings.design.fonts.profile['post-other-text-text-font-size-check'] == 1
+			and settings.design.fonts.profile['post-other-text-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['post-other-text-text-font-size-number'] ~ settings.design.fonts.profile['post-other-text-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['post-other-text-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['post-other-text-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['post-other-text-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['post-other-text-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+
+
+	{# Post comment text #}
+	{% if settings.design.fonts.profile['post-comment-text-text-font-size-check'] == 1 or settings.design.fonts.profile['post-comment-text-text-font-family-check'] == 1 or settings.design.fonts.profile['post-comment-text-text-color-check'] == 1 %}
+		.sc-membership .mp-activity-comments .mp-comment-content .text {
+			{% if settings.design.fonts.profile['post-comment-text-text-font-size-check'] == 1
+				and settings.design.fonts.profile['post-comment-text-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['post-comment-text-text-font-size-number'] ~ settings.design.fonts.profile['post-comment-text-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['post-comment-text-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['post-comment-text-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['post-comment-text-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['post-comment-text-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Post date #}
+	{% if settings.design.fonts.profile['post-date-text-font-size-check'] == 1 or settings.design.fonts.profile['post-date-text-font-family-check'] == 1 or settings.design.fonts.profile['post-date-text-color-check'] == 1 %}
+		.sc-membership .mp-activity-comments .date,
+		.sc-membership .mp-activity-header-title .date {
+			{% if settings.design.fonts.profile['post-date-text-font-size-check'] == 1
+				and settings.design.fonts.profile['post-date-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['post-date-text-font-size-number'] ~ settings.design.fonts.profile['post-date-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['post-date-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['post-date-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['post-date-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['post-date-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Post icons #}
+	{% if settings.design.fonts.profile['post-icons-text-font-size-check'] == 1 or settings.design.fonts.profile['post-icons-text-font-family-check'] == 1 or settings.design.fonts.profile['post-icons-text-color-check'] == 1 %}
+		.sc-membership .mp-activity-actions a {
+			{% if settings.design.fonts.profile['post-icons-text-font-size-check'] == 1
+				and settings.design.fonts.profile['post-icons-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['post-icons-text-font-size-number'] ~ settings.design.fonts.profile['post-icons-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['post-icons-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['post-icons-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['post-icons-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['post-icons-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Post icons hover #}
+	{% if settings.design.fonts.profile['post-icons-hover-text-font-size-check'] == 1 or settings.design.fonts.profile['post-icons-hover-text-font-family-check'] == 1 or settings.design.fonts.profile['post-icons-hover-text-color-check'] == 1 %}
+		.sc-membership .mp-activity-actions a:hover {
+			{% if settings.design.fonts.profile['post-icons-hover-text-font-size-check'] == 1
+				and settings.design.fonts.profile['post-icons-hover-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['post-icons-hover-text-font-size-number'] ~ settings.design.fonts.profile['post-icons-hover-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['post-icons-hover-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['post-icons-hover-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['post-icons-hover-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['post-icons-hover-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Deleted Post entry #}
+	{% if settings.design.fonts.profile['deleted-post-entry-text-font-size-check'] == 1 or settings.design.fonts.profile['deleted-post-entry-text-font-family-check'] == 1 or settings.design.fonts.profile['deleted-post-entry-text-color-check'] == 1 %}
+		.sc-membership .mp-activity .mp-activity-content.mp-activity-removed {
+			{% if settings.design.fonts.profile['deleted-post-entry-text-font-size-check'] == 1
+				and settings.design.fonts.profile['deleted-post-entry-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['deleted-post-entry-text-font-size-number'] ~ settings.design.fonts.profile['deleted-post-entry-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['deleted-post-entry-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['deleted-post-entry-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['deleted-post-entry-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['deleted-post-entry-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Menu #}
+	{% if settings.design.fonts.profile['menu-text-font-size-check'] == 1 or settings.design.fonts.profile['menu-text-font-family-check'] == 1 or settings.design.fonts.profile['menu-text-color-check'] == 1 %}
+		.sc-membership .mp-activity-menu .item {
+			{% if settings.design.fonts.profile['menu-text-font-size-check'] == 1
+				and settings.design.fonts.profile['menu-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['menu-text-font-size-number'] ~ settings.design.fonts.profile['menu-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['menu-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['menu-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['menu-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['menu-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Menu hover #}
+	{% if settings.design.fonts.profile['menu-hover-text-font-size-check'] == 1 or settings.design.fonts.profile['menu-hover-text-font-family-check'] == 1 or settings.design.fonts.profile['menu-hover-text-color-check'] == 1 %}
+		.sc-membership .mp-activity-menu .item:hover {
+			{% if settings.design.fonts.profile['menu-hover-text-font-size-check'] == 1
+				and settings.design.fonts.profile['menu-hover-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.profile['menu-hover-text-font-size-number'] ~ settings.design.fonts.profile['menu-hover-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['menu-hover-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.profile['menu-hover-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.profile['menu-hover-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.profile['menu-hover-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+
+	{# Activity Page #}
+	{# Filter button #}
+	{% if settings.design.fonts.activity['filter-button-text-font-size-check'] == 1 or settings.design.fonts.activity['filter-button-text-font-family-check'] == 1 or settings.design.fonts.activity['filter-button-text-color-check'] == 1 %}
+		.sc-membership .activity-filter {
+			{% if settings.design.fonts.activity['filter-button-text-font-size-check'] == 1
+				and settings.design.fonts.activity['filter-button-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.activity['filter-button-text-font-size-number'] ~ settings.design.fonts.activity['filter-button-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.activity['filter-button-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.activity['filter-button-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.activity['filter-button-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.activity['filter-button-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Filter button hover #}
+	{% if settings.design.fonts.activity['filter-button-hover-text-font-size-check'] == 1 or settings.design.fonts.activity['filter-button-hover-text-font-family-check'] == 1 or settings.design.fonts.activity['filter-button-hover-text-color-check'] == 1 %}
+		.sc-membership .activity-filter:hover {
+			{% if settings.design.fonts.activity['filter-button-hover-text-font-size-check'] == 1
+				and settings.design.fonts.activity['filter-button-hover-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.activity['filter-button-hover-text-font-size-number'] ~ settings.design.fonts.activity['filter-button-hover-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.activity['filter-button-hover-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.activity['filter-button-hover-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.activity['filter-button-hover-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.activity['filter-button-hover-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Filter button menu #}
+	{% if settings.design.fonts.activity['filter-button-menu-text-font-size-check'] == 1 or settings.design.fonts.activity['filter-button-menu-text-font-family-check'] == 1 or settings.design.fonts.activity['filter-button-menu-text-color-check'] == 1 %}
+		.sc-membership .activity-filter .header,
+		.sc-membership .activity-filter .activity-filter-item,
+		.sc-membership .activity-filter .menu .activity-type-item {
+			{% if settings.design.fonts.activity['filter-button-menu-text-font-size-check'] == 1
+				and settings.design.fonts.activity['filter-button-menu-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.activity['filter-button-menu-text-font-size-number'] ~ settings.design.fonts.activity['filter-button-menu-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.activity['filter-button-menu-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.activity['filter-button-menu-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.activity['filter-button-menu-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.activity['filter-button-menu-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Filter button menu hover #}
+	{% if settings.design.fonts.activity['filter-button-menu-hover-text-font-size-check'] == 1 or settings.design.fonts.activity['filter-button-menu-hover-text-font-family-check'] == 1 or settings.design.fonts.activity['filter-button-menu-hover-text-color-check'] == 1 %}
+		.sc-membership .activity-filter .header:hover,
+		.sc-membership .activity-filter .activity-filter-item:hover,
+		.sc-membership .activity-filter .menu .activity-type-item:hover {
+			{% if settings.design.fonts.activity['filter-button-menu-hover-text-font-size-check'] == 1
+				and settings.design.fonts.activity['filter-button-menu-hover-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.activity['filter-button-menu-hover-text-font-size-number'] ~ settings.design.fonts.activity['filter-button-menu-hover-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.activity['filter-button-menu-hover-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.activity['filter-button-menu-hover-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.activity['filter-button-menu-hover-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.activity['filter-button-menu-hover-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+
+	{# Members Page #}
+	{# User name #}
+	{% if settings.design.fonts.members['user-name-text-font-size-check'] == 1 or settings.design.fonts.members['user-name-text-font-family-check'] == 1 or settings.design.fonts.members['user-name-text-color-check'] == 1 %}
+		.sc-membership .mp-user-card a.header {
+			{% if settings.design.fonts.members['user-name-text-font-size-check'] == 1
+				and settings.design.fonts.members['user-name-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.members['user-name-text-font-size-number'] ~ settings.design.fonts.members['user-name-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.members['user-name-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.members['user-name-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.members['user-name-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.members['user-name-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# User name hover #}
+	{% if settings.design.fonts.members['user-name-hover-text-font-size-check'] == 1 or settings.design.fonts.members['user-name-hover-text-font-family-check'] == 1 or settings.design.fonts.members['user-name-hover-text-color-check'] == 1 %}
+		.sc-membership .mp-user-card a.header:hover {
+			{% if settings.design.fonts.members['user-name-hover-text-font-size-check'] == 1
+				and settings.design.fonts.members['user-name-hover-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.members['user-name-hover-text-font-size-number'] ~ settings.design.fonts.members['user-name-hover-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.members['user-name-hover-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.members['user-name-hover-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.members['user-name-hover-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.members['user-name-hover-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Counters #}
+	{% if settings.design.fonts.members['counters-text-font-size-check'] == 1 or settings.design.fonts.members['counters-text-font-family-check'] == 1 or settings.design.fonts.members['counters-text-color-check'] == 1 %}
+		.sc-membership .mp-user-card .statistic div.value {
+			{% if settings.design.fonts.members['counters-text-font-size-check'] == 1
+				and settings.design.fonts.members['counters-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.members['counters-text-font-size-number'] ~ settings.design.fonts.members['counters-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.members['counters-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.members['counters-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.members['counters-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.members['counters-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Counters label #}
+	{% if settings.design.fonts.members['counters-label-text-font-size-check'] == 1 or settings.design.fonts.members['counters-label-text-font-family-check'] == 1 or settings.design.fonts.members['counters-label-text-color-check'] == 1 %}
+		.sc-membership .mp-user-card .statistic div.label {
+			{% if settings.design.fonts.members['counters-label-text-font-size-check'] == 1
+				and settings.design.fonts.members['counters-label-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.members['counters-label-text-font-size-number'] ~ settings.design.fonts.members['counters-label-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.members['counters-label-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.members['counters-label-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.members['counters-label-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.members['counters-label-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Group Page #}
+	{# Tab #}
+	{% if settings.design.fonts.groups['tab-text-font-size-check'] == 1 or settings.design.fonts.groups['tab-text-font-family-check'] == 1 or settings.design.fonts.groups['tab-text-color-check'] == 1 %}
+		.sc-membership .groups-tab-items a.item {
+			{% if settings.design.fonts.groups['tab-text-font-size-check'] == 1
+				and settings.design.fonts.groups['tab-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.groups['tab-text-font-size-number'] ~ settings.design.fonts.groups['tab-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.groups['tab-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.groups['tab-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.groups['tab-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.groups['tab-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# User name #}
+	{% if settings.design.fonts.groups['user-name-text-font-size-check'] == 1 or settings.design.fonts.groups['user-name-text-font-family-check'] == 1 or settings.design.fonts.groups['user-name-text-color-check'] == 1 %}
+		.sc-membership .ui.card.mp-group-card a.header {
+			{% if settings.design.fonts.groups['user-name-text-font-size-check'] == 1
+				and settings.design.fonts.groups['user-name-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.groups['user-name-text-font-size-number'] ~ settings.design.fonts.groups['user-name-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.groups['user-name-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.groups['user-name-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.groups['user-name-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.groups['user-name-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# User name hover #}
+	{% if settings.design.fonts.groups['user-name-hover-text-font-size-check'] == 1 or settings.design.fonts.groups['user-name-hover-text-font-family-check'] == 1 or settings.design.fonts.groups['user-name-hover-text-color-check'] == 1 %}
+		.sc-membership .ui.card.mp-group-card a.header:hover {
+			{% if settings.design.fonts.groups['user-name-hover-text-font-size-check'] == 1
+				and settings.design.fonts.groups['user-name-hover-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.groups['user-name-hover-text-font-size-number'] ~ settings.design.fonts.groups['user-name-hover-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.groups['user-name-hover-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.groups['user-name-hover-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.groups['user-name-hover-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.groups['user-name-hover-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Group type #}
+	{% if settings.design.fonts.groups['group-type-text-font-size-check'] == 1 or settings.design.fonts.groups['group-type-text-font-family-check'] == 1 or settings.design.fonts.groups['group-type-text-color-check'] == 1 %}
+		.sc-membership .ui.card.mp-group-card .mbs-group-g-type small {
+			{% if settings.design.fonts.groups['group-type-text-font-size-check'] == 1
+				and settings.design.fonts.groups['group-type-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.groups['group-type-text-font-size-number'] ~ settings.design.fonts.groups['group-type-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.groups['group-type-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.groups['group-type-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.groups['group-type-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.groups['group-type-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+	{# Follower count #}
+	{% if settings.design.fonts.groups['follower-count-text-font-size-check'] == 1 or settings.design.fonts.groups['follower-count-text-font-family-check'] == 1 or settings.design.fonts.groups['follower-count-text-color-check'] == 1 %}
+		.sc-membership .ui.card.mp-group-card .mbs-group-followers small {
+			{% if settings.design.fonts.groups['follower-count-text-font-size-check'] == 1
+				and settings.design.fonts.groups['follower-count-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.groups['follower-count-text-font-size-number'] ~ settings.design.fonts.groups['follower-count-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.groups['follower-count-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.groups['follower-count-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.groups['follower-count-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.groups['follower-count-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+
+	{# Search Page #}
+	{# Nothing is found #}
+	{% if settings.design.fonts.search['nothing-found-text-font-size-check'] == 1 or settings.design.fonts.search['nothing-found-text-font-family-check'] == 1 or settings.design.fonts.search['nothing-found-text-color-check'] == 1 %}
+		.sc-membership .ui.message {
+			{% if settings.design.fonts.search['nothing-found-text-font-size-check'] == 1
+				and settings.design.fonts.search['nothing-found-text-font-unit-select'] in ['px', 'em'] %}
+				font-size: {{ settings.design.fonts.search['nothing-found-text-font-size-number'] ~ settings.design.fonts.search['nothing-found-text-font-unit-select'] }}  !important;
+			{% endif %}
+			{% if settings.design.fonts.search['nothing-found-text-font-family-check'] == 1 %}
+				font-family: "{{ settings.design.fonts.search['nothing-found-text-font-family-select'] }}" !important;
+			{% endif %}
+			{% if settings.design.fonts.search['nothing-found-text-color-check'] == 1 %}
+				color: {{ settings.design.fonts.search['nothing-found-text-color-input'] }} !important;
+			{% endif %}
+		}
+	{% endif %}
+</style>

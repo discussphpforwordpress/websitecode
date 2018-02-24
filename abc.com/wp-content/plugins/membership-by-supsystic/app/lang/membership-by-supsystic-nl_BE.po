@@ -1,0 +1,4823 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: membership-by-supsystic\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: pcatthoor@gmail.com\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.1\n"
+
+msgid ""
+" WooCommerce from admin area, or visit it's official page on Wordpress.org "
+msgstr ""
+" WooCommerce vanaf admin gebied, of bezoek de officiële pagina op Wordpress."
+"org "
+
+msgid ""
+" plugin from your admin area, or visit it's official page on Wordpress.org "
+msgstr ""
+" de plugin vanaf je  admin gebied, of bezoek de officiële pagina op "
+"Wordpress.org "
+
+msgid "%d followers"
+msgstr "%d volgers"
+
+msgid "%s accepted your friend reuqest."
+msgstr "%s accepteerden je vriendschapsaanvraag."
+
+msgid "%s and %s becomes friends"
+msgstr "%s en %s werden vrienden"
+
+msgid "%s commented post from %s on %s."
+msgstr "%s reageerde op het bericht van %s on %s."
+
+msgid "%s created new topic %s."
+msgstr "%s creëerde een nieuw topic %s."
+
+msgid "%s followers"
+msgstr "%d volgers"
+
+msgid "%s invited you to join %s group."
+msgstr "%s nodigde je uit om lid te worden van de groep %s."
+
+msgid "%s is following you."
+msgstr "%s volgt je."
+
+msgid "%s is registered"
+msgstr "%s is geregistreerd"
+
+msgid "%s liked post from %s on %s."
+msgstr "%s vond(en) het bericht van %s op %s leuk."
+
+msgid "%s now following %s"
+msgstr "%s volgt nu %s"
+
+msgid "%s now following you"
+msgstr "%s volgt je nu"
+
+msgid "%s people liked this"
+msgstr "%s mensen vonden dit leuk"
+
+msgid "%s people shared this"
+msgstr "%s mensen deelden dit"
+
+msgid "%s replied in topic %s."
+msgstr "%s antwoordde op topic %s."
+
+msgid "%s sent you a friend reuqest."
+msgstr "%s stuurde je een vriendschapsverzoek."
+
+msgid "%s sent you a message."
+msgstr "%s stuurde je een boodschap."
+
+msgid "%s shared %s post."
+msgstr "%s deelde %s bericht."
+
+msgid "%s tag already added to this group."
+msgstr "%s tag al aan deze groep toegevoegd."
+
+msgid "(for Maestro and Solo cards only)"
+msgstr "(enkel voor Maestro en Solo kaarten)"
+
+msgid "(if available)"
+msgstr "(indien beschikbaar)"
+
+msgid "2Checkout"
+msgstr "2Checkout"
+
+msgid "2Checkout payments."
+msgstr "2Checkout betalingen."
+
+msgid ""
+"<p><b>Upgrading</b></p><p>Once you have purchased PRO addon of plugin - "
+"you'll have to enter license key (you can find it in your personal account "
+"on our site). Go to the License tab and enter your email and license key. "
+"Once you have activated your PRO license - you can use plugin pro addon.</"
+"p><p> That's all. From this moment you can use your Membership plugin "
+"without any doubt. But if you still have some question - do not hesitate to "
+"contact us through our <a href=\"https://supsystic.com/contact-us/"
+"\">internal support</a> or on our <a href=\"https://supsystic.com/forum/"
+"membership-plugin/\">Supsystic Forum</a>. Besides you can always describe "
+"your questions on <a href=\"https://wordpress.org/support/plugin/membership-"
+"by-supsystic\">WordPress Ultimate Forum</a>.</p><p><b>Enjoy this plugin?</"
+"b></p> <p>It will be nice if you'll help us and boost plugin with <a href="
+"\"https://wordpress.org/support/plugin/membership-by-supsystic/reviews/"
+"\">Five Stars rating on WordPress.org.</a> We hope that you like this plugin "
+"and wish you all the best! Good luck!</p>"
+msgstr ""
+"<p><b>Upgrading</b></p><p>Eens je de PRO addon of plugin hebt aangekocht, "
+"moet je de licentiesleutel invoeren (je vindt deze in je persoonlijke "
+"account op onze website). Ga naar de Licentie tab en vul je e-mail en "
+"licentiecode in. Nadat je je PRO licentie geactiveerd hebt, kan je de pro "
+"addon gebruiken.</p><p> Dat is alles. vanaf dit ogenblik kan je ongetwijfeld "
+"je Membership plugin gebruiken. Maar ingeval je nog een vraag hebt, aarzel "
+"dan niet ons te contacteren via onze <a href=\"https://supsystic.com/contact-"
+"us/\">interne support</a> of op ons <a href=\"https://supsystic.com/forum/"
+"membership-plugin/\">Supsystic Forum</a>. Daarnaast kan je ons je vragen "
+"schrijven op het <a href=\"https://wordpress.org/support/plugin/membership-"
+"by-supsystic\">WordPress Ultimate Forum</a>.</p><p><b>Vind je deze plugin "
+"leuk?</b></p> <p>Je kan ons helpen de plugin een boost te geven met een <a "
+"href=\"https://wordpress.org/support/plugin/membership-by-supsystic/reviews/"
+"\">Vijf Sterren rating op WordPress.org.</a> We hopen dat je deze plugin "
+"leuk vindt en wensen je het beste! Veel geluk!</p>"
+
+msgid "A small guide for the first-time user"
+msgstr "Een beknopte gids voor de eerste-keer gebruiker"
+
+msgid "API Password"
+msgstr "API Wachtwoord"
+
+msgid "API Signature"
+msgstr "API Handtekening"
+
+msgid "API Username"
+msgstr "API Gebruikersnaam"
+
+msgid "About"
+msgstr "Over"
+
+msgid "Accept"
+msgstr "Accepteer"
+
+msgid "Accept Friend Request"
+msgstr "Accepteer Vriendschapsverzoek"
+
+msgid "Accept invitation"
+msgstr "Accepteer uitnodiging"
+
+msgid "Access denied. You can't add image to this gallery."
+msgstr "Toegang geweigerd. Je kan aan deze galerij geen afbeelding toevoegen."
+
+msgid "Access denied. You can't add image to this slider."
+msgstr "Toegang geweigerd. Je kan aan deze slider geen afbeelding toevoegen."
+
+msgid "Access denied. You can't remove this gallery."
+msgstr "Toegang geweigerd. Je kan deze galerij niet verwijderen."
+
+msgid "Access denied. You can't remove this image."
+msgstr "Toegang geweigerd. Je kan deze afbeelding niet verwijderen."
+
+msgid "Access denied. You can't remove this slider."
+msgstr "Toegang geweigerd. Je kan deze slider niet verwijderen."
+
+msgid "Access is denied"
+msgstr "Toegang geweigerd."
+
+msgid "Access to admin dashboard"
+msgstr "Toegang tot admin dashboard"
+
+msgid "Access to specific pages"
+msgstr "Toegang tot specifieke pagina's"
+
+msgid "Access to this page is restricted."
+msgstr "Toegang tot deze pagina is niet toegestaan."
+
+msgid "Access to user profiles with specific roles"
+msgstr "Toegang tot gebruikersprofielen met specifieke rollen"
+
+msgid "Account"
+msgstr "Account"
+
+msgid "Account Activation Email"
+msgstr "Account Activatie E-mail"
+
+msgid "Account Activation Email Body"
+msgstr "Account Activatie E-mail Inhoud"
+
+msgid "Account Activation Email Subject"
+msgstr "Account Activatie E-mail Onderwerp"
+
+msgid "Account Approved Email"
+msgstr "Account Goedgekeurd E-mail"
+
+msgid "Account Approved Email Body"
+msgstr "Account Goedgekeurd E-mail Inhoud"
+
+msgid "Account Approved Email Subject"
+msgstr "Account Goedgekeurd E-mail Onderwerp"
+
+msgid "Account Deactivation Email"
+msgstr "Account Deactivatie E-mail"
+
+msgid "Account Deactivation Email Body"
+msgstr "Account Deactivatie E-mail Inhoud"
+
+msgid "Account Deactivation Email Subject"
+msgstr "Account Deactivatie E-mail Onderwerp"
+
+msgid "Account Deleted Email"
+msgstr "Account Verwijderd E-mail"
+
+msgid "Account Deleted Email Body"
+msgstr "Account Verwijderd E-mail Inhoud"
+
+msgid "Account Deleted Email Subject"
+msgstr "Account Verwijderd E-mail Onderwerp"
+
+msgid "Account Deletion"
+msgstr "Account Verwijdering"
+
+msgid "Account Deletion Notification"
+msgstr "Account Verwijdering Aankondiging"
+
+msgid "Account Deletion Notification Body"
+msgstr "Account Verwijdering Aankondiging Inhoud"
+
+msgid "Account Deletion Notification Subject"
+msgstr "Account Verwijdering Aankondiging Onderwerp"
+
+msgid "Account E-mail"
+msgstr "Account E-mail"
+
+msgid "Account Needs Review Notification"
+msgstr "Account Behoeft Review Aankondiging"
+
+msgid "Account Needs Review Notification Body"
+msgstr "Account Behoeft Review Aankondiging Inhoud"
+
+msgid "Account Needs Review Notification Subject"
+msgstr "Account Behoeft Review Aankondiging Onderwerp"
+
+msgid "Account Rejected Email"
+msgstr "Account Afgewezen E-mail"
+
+msgid "Account Rejected Email Body"
+msgstr "Account Afgewezen E-mail Inhoud"
+
+msgid "Account Rejected Email Subject"
+msgstr "Account Afgewezen E-mail Onderwerp"
+
+msgid "Account Welcome Email"
+msgstr "Account Welkom E-mail"
+
+msgid "Account Welcome Email Body"
+msgstr "Account Welkom E-mail Inhoud"
+
+msgid "Account Welcome Email Subject"
+msgstr "Account Welkom E-mail Onderwerp"
+
+msgid "Account is deleted from system."
+msgstr "Account is uit systeem verwijderd."
+
+msgid "Account is disabled."
+msgstr "Account is disabled."
+
+msgid "Account is in verification process."
+msgstr "Account wordt geverifieerd."
+
+msgid "Account is not approved."
+msgstr "Account is niet goedgekeurd."
+
+msgid "Actions"
+msgstr "Acties"
+
+msgid "Activate Addons"
+msgstr "Activeer Hulptoepassingen"
+
+msgid "Activated"
+msgstr "Geactiveerd"
+
+msgid "Active"
+msgstr "Actief"
+
+msgid "Activities"
+msgstr "Activiteiten"
+
+msgid "Activity"
+msgstr "Activiteit"
+
+msgid "Activity Report"
+msgstr "Activiteitsrapport"
+
+msgid "Activity already liked"
+msgstr "Activiteit reeds leuk gevonden"
+
+#, fuzzy
+msgid "Activity commenting"
+msgstr "Reageren op activiteit"
+
+msgid "Activity content"
+msgstr "Activiteit inhoud"
+
+msgid "Activity filter"
+msgstr "Activiteit filter"
+
+msgid "Activity is not found"
+msgstr "Activiteit niet gevonden"
+
+msgid "Activity is not liked"
+msgstr "Activiteit niet leuk gevonden"
+
+msgid "Activity post writing"
+msgstr "Activiteit bericht schrijven"
+
+msgid "Activity posting is restricted"
+msgstr "Activiteit publiceren is niet toegelaten"
+
+msgid "Activity type"
+msgstr "Type activiteit"
+
+msgid "Activity types"
+msgstr "Types activiteit"
+
+msgid "Activity viewing"
+msgstr "Activiteit bekijken"
+
+msgid "Activity with id %d is not found"
+msgstr "Activiteit met id %d werd niet gevonden"
+
+msgid "Add"
+msgstr "Voeg toe"
+
+msgid "Add Field"
+msgstr "Voeg Veld toe"
+
+msgid "Add Friend"
+msgstr "Voeg Vriend toe"
+
+msgid "Add Image"
+msgstr "Voeg Afbeelding toe"
+
+msgid "Add Marker"
+msgstr "Voeg Marker toe"
+
+msgid "Add New"
+msgstr "Voeg Nieuwe toe"
+
+msgid "Add Section"
+msgstr "Voeg Sectie toe"
+
+msgid "Add logout link to menu"
+msgstr "Voeg logout link toe aan menu"
+
+msgid "Add new role"
+msgstr "Voeg nieuwe rol toe"
+
+msgid "Add new rule"
+msgstr "Voeg nieuwe regel toe"
+
+msgid "Add new tag"
+msgstr "Voeg nieuwe tag toe"
+
+msgid "Add remove friends"
+msgstr "Voeg verwijder vrienden toe"
+
+msgid "Add role depend of the user order"
+msgstr "Voeg rol toe afhankelijk van de bestelling van de gebruiker"
+
+msgid "Add tag"
+msgstr "Voeg tag toe"
+
+msgid "Added"
+msgstr "Toegevoegd"
+
+msgid "Added to Cart"
+msgstr "Toegevoegd aan Winkelmand"
+
+msgid "Addons"
+msgstr "Hulptoepassingen"
+
+msgid "Address"
+msgstr "Adres"
+
+msgid "Address:"
+msgstr "Adres:"
+
+msgid "Admin Email"
+msgstr "Beheerder E-mail"
+
+msgid "Admin will get this email after some account has been deleted."
+msgstr "Admin zal deze e-mail krijgen nadat een account werd verwijderd."
+
+msgid "Administrative permissions"
+msgstr "Administratieve rechten"
+
+msgid "Administrator confirmation"
+msgstr "Administrator bevestiging"
+
+msgid "Administrators only can comment"
+msgstr "Enkel Administrators kunnen reageren"
+
+msgid "Administrators only can write posts"
+msgstr "Enkel Administratrs kunnen berichten schrijven"
+
+msgid ""
+"After user deletes his account, he will be redirected to the main page or to "
+"the specified link."
+msgstr ""
+"Nadat een gebruiker zijn account verwijdert, wordt hij doorgestuurd naar de "
+"hoofdpagina of naar een specifieke link."
+
+msgid ""
+"After user logs out from his account, he will be redirected to the main page "
+"or to the specified link."
+msgstr ""
+"Nadat een gebruiker zich van zijn account afmeldt, wordt hij doorgestuurd "
+"naar de hoofdpagina of naar een specifieke link."
+
+msgid ""
+"After user submits a login form, he will be redirected to his profile or to "
+"the specified link."
+msgstr ""
+"Nadat een gebruiker zich aanmeldt, wordt hij doorgestuurd naar zijn profiel "
+"of naar een specifieke link."
+
+msgid ""
+"After user submits a registration form, he will be redirected to his profile "
+"or to the specified link."
+msgstr ""
+"Nadat een gebruiker zich registreert, wordt hij doorgestuurd naar zijn "
+"profiel of naar een specifieke link."
+
+msgid "All"
+msgstr "Alle"
+
+msgid "All Friends"
+msgstr "Alle Vrienden"
+
+msgid "All conversations"
+msgstr "Alle gesprekken"
+
+msgid "All group members can send invitations"
+msgstr "Alle groepsleden kunnen uitnodigingen sturen"
+
+msgid "All networks"
+msgstr "Alle netwerken"
+
+msgid "All users"
+msgstr "Alle gebruikers"
+
+msgid "All users can comment"
+msgstr "Alle gebruikers kunnen reageren"
+
+msgid "All users can view group activity"
+msgstr "Alle gebruikers kunnen groepsactiviteit zien"
+
+msgid "All users can write posts"
+msgstr "Alle gebruikers kunnen berichten schrijven"
+
+msgid "Allow to change privacy settings"
+msgstr "Wijzigen van privacy-instellingen toestaan"
+
+msgid ""
+"Allow your members share posts to several networks simultaneously in one "
+"click, making your site more famous again and again."
+msgstr ""
+"Laat je gebruikers toe om met een klik een bericht te delen op verschillende "
+"netwerken tegelijk, om je site telkens weer bekender te maken."
+
+msgid "Already has subscription"
+msgstr "Reeds ingeschreven"
+
+msgid "Appear since"
+msgstr "Verschijn sinds"
+
+msgid "Apply"
+msgstr "Pas toe"
+
+msgid "Apply WordPress role"
+msgstr "Pas WordPress rol toe"
+
+msgid "Approve"
+msgstr "Keur goed"
+
+msgid "Are you sure you want to delete this role?"
+msgstr "Ben je zeker dat je deze rol wil verwijderen?"
+
+msgid "Assign to Membership Level"
+msgstr "Ken lidmaatschapsniveau toe"
+
+msgid "Audio"
+msgstr "Audio"
+
+msgid "Authorize in Constant Contact"
+msgstr "Autoriseer in Constant Contact"
+
+msgid "Authorize.net"
+msgstr "Authorize.net"
+
+msgid "Authorize.net SIM payments."
+msgstr "Authorize.net SIM betalingen."
+
+msgid "Auto"
+msgstr "Auto"
+
+msgid "Autosubscribe new user"
+msgstr "Abonneer nieuwe gebruiker automatisch"
+
+msgid "Available field data"
+msgstr "Beschikbare veld gegevens"
+
+msgid "Available for next Membership Levels:"
+msgstr "Beschikbaar in volgende Lidmaatschapsniveau's:"
+
+msgid "Available import field names. You can add more here."
+msgstr "Beschikbare importveldnamen. Je kan er hier nog meer toevoegen."
+
+msgid "Avatar Thumbnail Large Size"
+msgstr "Avatar Thumbnail Grote Afmeting"
+
+msgid "Avatar Thumbnail Medium Size"
+msgstr "Avatar Thumbnail Medium Afmeting"
+
+msgid "Avatar Thumbnail Small Size"
+msgstr "Avatar Thumbnail Kleine Afmeting"
+
+msgid "Back"
+msgstr "Terug"
+
+msgid "Back to Site"
+msgstr "Terug naar Site"
+
+msgid "Billing"
+msgstr "Facturatie"
+
+msgid "Billing Address"
+msgstr "Facturatie-adres"
+
+msgid "Billing Amount"
+msgstr "Factuur Hoeveelheid"
+
+msgid "Billing Information"
+msgstr "Factuur Informatie"
+
+msgid "Billing cycle limit"
+msgstr "Facturatiecyclus limiet"
+
+msgid ""
+"Black list of IP addresses. Enter IP addresses separated by comma or just "
+"leave this field blank if you don't need to use this option."
+msgstr ""
+"Zwarte lijst van IP-adressen. Geef IP-adressen in, gescheiden door een komma "
+"of laat dit veld leeg als je deze optie niet hoeft te gebruiken."
+
+msgid "Block"
+msgstr "Blokkeer"
+
+msgid "Block activity"
+msgstr "Blokkeer Activiteit"
+
+msgid "Block group"
+msgstr "Blokkeer Groep"
+
+msgid "Block groups"
+msgstr "Blokkeer groepen"
+
+msgid "Block user"
+msgstr "Blokkeer gebruiker"
+
+msgid "Blocked IP Addresses"
+msgstr "Blokkeer IP-adres"
+
+msgid "Blocked users"
+msgstr "Geblokkeerde gebruikers"
+
+msgid "Bulk Actions"
+msgstr "Bulk Acties"
+
+msgid "Button text when need to extend Membership Level."
+msgstr "Knop tekst, nodig om Lidmaatschapsniveau uit te breiden."
+
+msgid "Buttons"
+msgstr "Knoppen"
+
+msgid "Buy Now"
+msgstr "Koop Nu"
+
+msgid "Buy now"
+msgstr "Koop nu"
+
+msgid ""
+"By default option \"Site Accessible to Logged In Users\" hides only access "
+"to the pages of Membership plugin. If you want to hide access to all pages "
+"of your site - activate this checkbox. When opening any page of your site - "
+"all not logged in users will be redirected to the login page."
+msgstr ""
+"De optie \"Site Toegankelijk voor Ingelogde Gebruikers\" verbergt bij "
+"default enkel de pagina's van de Lidmaatschapsplug-in. Als je alle pagina's "
+"van je site wil verbergen, activeer deze checkbox. Alle niet-ingelogde "
+"gebruikers die een pagina van je site openen, zullen doorgestuurd worden "
+"naar de loginpagina."
+
+msgid "Can not create Customer in Stripe"
+msgstr "Kan geen klant aanmaken in Stripe"
+
+msgid ""
+"Can not detect authorization fo account owner. Contact site owner to resolve "
+"this issue."
+msgstr ""
+"Kan geen autorisatie vinden voor account eigenaar. Contact site eigenaar om "
+"deze kwestie op te lossen."
+
+msgid "Can not find Products for this order"
+msgstr "Kan geen Producten vinden voor deze bestelling"
+
+msgid "Can not find order"
+msgstr "Kan bestelling niet vinden"
+
+msgid "Can not find required Item"
+msgstr "Kan vereist Item niet vinden"
+
+#, fuzzy
+msgid "Can not get cc obj"
+msgstr "Can not get cc obj"
+
+msgid "Can't detect your IP, please don't spam"
+msgstr "Kan je IP niet detecteren, stuur a.u.b. geen spam"
+
+msgid "Cancel"
+msgstr "Annuleer"
+
+msgid "Cancel Friend Request"
+msgstr "Annuleer Vriendschapsverzoek"
+
+msgid "Cancel a friend request"
+msgstr "Annuleer Vriendschapsverzoek"
+
+msgid "Cancel invitation"
+msgstr "Annuleer uitnodiging"
+
+msgid "Cancel request"
+msgstr "Annuleer verzoek"
+
+msgid "Cannot send email - problem with send server"
+msgstr "Kan geen e-mail versturen - probleem met verzendingsserver"
+
+msgid "Captcha response error."
+msgstr "Captcha antwoord fout."
+
+msgid "Card Expiry Date"
+msgstr "Kaart Vervaldatum"
+
+msgid "Card Expiry Date: Month"
+msgstr "Kaart Vervaldatum: Maand"
+
+msgid "Card Expiry Date: Year"
+msgstr "Kaart Vervaldatum: Jaar"
+
+msgid "Card Issue Number"
+msgstr "Kaart Uitgiftenummer"
+
+msgid "Card Number"
+msgstr "Kaartnummer"
+
+msgid "Card Owner"
+msgstr "Kaarteigenaar"
+
+msgid "Card Security Code (CVV2)"
+msgstr "Kaart Beveiligingscode (CVV2)"
+
+msgid "Card Type"
+msgstr "Kaarttype"
+
+msgid "Card Valid From Date"
+msgstr "Kaart Geldig Vanaf Datum"
+
+msgid "Card Valid From Date: Month"
+msgstr "Kaart Geldig Vanaf Datum: Maand"
+
+msgid "Card Valid From Date: Year"
+msgstr "Kaart Geldig Vanaf Datum: Jaar"
+
+msgid "Change"
+msgstr "Wijzig"
+
+msgid "Change User Role"
+msgstr "Wijzig Gebruikersrol"
+
+msgid "Change User Status"
+msgstr "Wijzig Gebruikerstatus"
+
+msgid "Change email"
+msgstr "Wijzig e-mail"
+
+msgid "Change logo image"
+msgstr "Wijzig logo-afbeelding"
+
+msgid "Change password"
+msgstr "Wijzig wachtwoord"
+
+msgid "Change profile image"
+msgstr "Wijzig profielafbeelding"
+
+msgid "Changing page..."
+msgstr "Wijzigen pagina..."
+
+msgid "Check your account to find your ordered User Levels."
+msgstr "Check je account om je bestelde Gebruikersniveaus te vinden."
+
+msgid "Check your email address for confirmation link."
+msgstr "Check je e-mailadres voor bevestigingslink."
+
+msgid "Check your email for the confirmation link."
+msgstr "Check je e-mail voor de bevestigingslink."
+
+msgid "Checkbox"
+msgstr "Checkbox"
+
+msgid "Checkout"
+msgstr "Afrekenen"
+
+msgid "Checkout Success"
+msgstr "Afrekening Geslaagd"
+
+msgid "Choose Gallery Preset"
+msgstr "Kies Galerij Instellingen"
+
+msgid "Choose Google Maps Marker Icon"
+msgstr "Kies Google Maps Marker Icoon"
+
+msgid "Choose Google Maps Preset"
+msgstr "Kies Google Maps Instellingen"
+
+msgid ""
+"Choose Google Maps, which will be used for list of google map presets and "
+"displayed for membership users on frontend"
+msgstr ""
+"Kies Google Maps welke zullen toegevoegd worden aan een lijst van google map "
+"instellingen en getoond aan membership gebruikers op de voorgrond"
+
+msgid "Choose Icon"
+msgstr "Kies Icoon"
+
+msgid "Choose Slider Preset"
+msgstr "Kies Slider Instellingen"
+
+msgid "Choose field(s) to enable in search"
+msgstr "Kies velden(en) te gebruiken in zoek"
+
+msgid ""
+"Choose galleries, which will be used for list of gallery presets and "
+"displayed for membership users on frontend"
+msgstr ""
+"Kies galerijen welke zullen toegevoegd worden aan een lijst van google map "
+"instellingen en getoond aan membership gebruikers op de voorgrond"
+
+msgid ""
+"Choose sliders, which will be used for list of sliders presets and displayed "
+"for membership users on frontend"
+msgstr ""
+"Kies sliders welke zullen toegevoegd worden aan een lijst van google map "
+"instellingen en getoond aan membership gebruikers op de voorgrond"
+
+msgid "Circle"
+msgstr "Cirkel"
+
+msgid "Clear data"
+msgstr "Wis gegevens"
+
+msgid "Clear selection"
+msgstr "Wis selectie"
+
+msgid "Close"
+msgstr "Sluit"
+
+msgid "Close Tutorial"
+msgstr "Sluit Handleiding"
+
+msgid "Closed"
+msgstr "Gesloten"
+
+msgid "Closed group"
+msgstr "Gesloten Groep"
+
+msgid "Comment as"
+msgstr "Reageer als"
+
+msgid "Comment not found."
+msgstr "Reactie niet gevonden."
+
+msgid "Comment posting is restricted"
+msgstr "Reageren is niet toegelaten"
+
+msgid "Comments"
+msgstr "Reacties"
+
+msgid "Community activity is disabled"
+msgstr "Gemeenschapsactiviteit is uitgeschakeld"
+
+msgid "Community type"
+msgstr "Gemeenschapstype"
+
+msgid "Compact"
+msgstr "Compact"
+
+msgid "Company Name"
+msgstr "Bedrijfsnaam"
+
+msgid "Configure Google Map"
+msgstr "Configureer Google Map"
+
+msgid "Confirm Uninstall"
+msgstr "Bevestig Deinstallatie"
+
+msgid ""
+"Confirm deletion (All group data will be deleted and cannot be restored)"
+msgstr ""
+"Bevestig verwijdering (Alle groepsgegevens zullen onherroepelijk verwijderd "
+"worden)"
+
+msgid "Confirm deletion (All user data will be deleted and cannot be restored)"
+msgstr ""
+"Bevestig verwijdering (Alle gebruikersgegevens zullen onherroepelijk "
+"verwijderd worden)"
+
+msgid "Confirm password"
+msgstr "Bevestig wachtwoord"
+
+msgid "Confirm your current password to continue"
+msgstr "Bevestig je huidig wachtwoord om verder te gaan"
+
+msgid "Confirmation link for password change is sent to your email."
+msgstr ""
+"Een bevestigingslink voor het wijzigen van je wachtwoord werd naar je email "
+"verstuurd."
+
+msgid "Confirmation link was sent to your email address. Check your email!"
+msgstr "Een bevestigingslink werd naar je email verstuurd. Check je e-mail!"
+
+msgid "Confirmation sent message"
+msgstr "Bevestiging verzonden boodschap"
+
+msgid "Connect"
+msgstr "Connecteer"
+
+msgid "Connected Accounts"
+msgstr "Geconnecteerde accounts"
+
+msgid "Connected Social Network Accounts"
+msgstr "Geconnecteerde Social Network Accounts"
+
+msgid "Constant Contact Setup"
+msgstr "Constant Contact Instelling"
+
+msgid "Contact Us"
+msgstr "Contacteer Ons"
+
+msgid "Contact us through %s if you have some question, offer or wish."
+msgstr "Contacteer ons via %s indien je een vraag, voorstel of wens hebt."
+
+msgid "Content"
+msgstr "Inhoud"
+
+msgid "Content Settings"
+msgstr "Inhoud Instellingen"
+
+msgid ""
+"Could you please do me a BIG favor and give it a 5-star rating on WordPress? "
+"Just to help us spread the word and boost our motivation."
+msgstr ""
+"Kan je me a.u.b. een GROOT plezier doen en het een 5-sterren beoordeling "
+"geven op WordPress? Help ons het woord te verspreiden en boost onze "
+"motivatie."
+
+msgid "Country"
+msgstr "Land"
+
+msgid "Cover Thumbnail Medium Size"
+msgstr "Omslag Miniatuur Medium Afmeting"
+
+msgid "Cover Thumbnail Small Size"
+msgstr "Omslag Miniatuur Kleine Afmeting"
+
+msgid "Create"
+msgstr "Creëer"
+
+msgid "Create Group"
+msgstr "Creëer Groep"
+
+msgid "Create all unassigned pages"
+msgstr "Creëer alle niet toegewezen pagina's"
+
+#, fuzzy
+msgid ""
+"Create and edit mailing templates of users letters and notifications for "
+"administrator."
+msgstr ""
+"Creëer en editeer mailing templates voor gebruikersbrieven en meldingen voor "
+"administrator."
+
+msgid "Create groups"
+msgstr "Creëer groepen"
+
+msgid "Create new Membership Currency"
+msgstr "Creëer nieuwe Lidmaatschap Munteenheid"
+
+#, fuzzy
+msgid "Create new Membership Drip"
+msgstr "Creëer nieuwe Lidmaatschap Druppel"
+
+msgid "Create new Membership Level"
+msgstr "Creëer nieuw lidmaatschapsniveau"
+
+msgid "Create new group"
+msgstr "Creëer nieuwe groep"
+
+msgid "Create page"
+msgstr "Creëer pagina"
+
+msgid "Create user"
+msgstr "Creëer gebruiker"
+
+msgid "Currency"
+msgstr "Munteenheid"
+
+msgid "Currency value (corresponding to default currency)"
+msgstr "Munteenheid waarde (vergeleken met default munteenheid)"
+
+msgid "Current password is required"
+msgstr "Huidig wachwoord is vereist"
+
+msgid "Current password was incorrect"
+msgstr "Huidig wachtwoord was niet juist"
+
+msgid "Custom text if no users were found"
+msgstr "Aangepaste tekst ingeval geen gebruikers gevonden werden"
+
+msgid "Dark"
+msgstr "Donker"
+
+msgid "Data exported successfully"
+msgstr "Gegevens met succes geëxporteerd"
+
+msgid "Data successfully imported."
+msgstr "Gegevens met succes geïmporteerd."
+
+msgid "Database error"
+msgstr "Databank fout"
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "Date Format"
+msgstr "Datumformaat"
+
+msgid "Day"
+msgstr "Dag"
+
+msgid "Day(s)"
+msgstr "Dag(en)"
+
+msgid "Decline"
+msgstr "Afwijzen"
+
+msgid "Decline Friend Request"
+msgstr "Wij vriendschapsverzoek af"
+
+msgid "Default Activity Filter"
+msgstr "Standaard Activiteitsfilter"
+
+msgid "Default Avatar Image"
+msgstr "Standaard Avatar Afbeelding"
+
+msgid "Default Cover Image"
+msgstr "Standaard Omslagafbeelding"
+
+msgid "Default Logo Image"
+msgstr "Standaard Logo Afbeelding"
+
+msgid "Default Selected"
+msgstr "Standaard Geselecteerd"
+
+msgid "Default Sort Users By"
+msgstr "Sorteer Gebruikers Standaard Op"
+
+msgid "Default User role"
+msgstr "Standaard Gebruikersrol"
+
+msgid "Delete"
+msgstr "Verwijderen"
+
+msgid "Delete account"
+msgstr "Verwijder account"
+
+msgid "Delete conversation"
+msgstr "Verwijder Conversatie"
+
+msgid "Delete group"
+msgstr "Verwijder Groep"
+
+msgid "Delete messages"
+msgstr "Verwijder boodschappen"
+
+msgid "Delete selected"
+msgstr "Verwijder geselecteerd"
+
+msgid "Delete their account"
+msgstr "Verwijder hun account"
+
+msgid "Delete this conversation?"
+msgstr "Verwijder dit gesprek?"
+
+msgid "Delete this messages?"
+msgstr "Verwijder deze boodschap?"
+
+msgid "Deleted"
+msgstr "Verwijderd"
+
+msgid "Demo Mode"
+msgstr "Demo modus"
+
+msgid "Description"
+msgstr "Omschrijving"
+
+msgid "Design"
+msgstr "Ontwerp"
+
+msgid "Design Customization"
+msgstr "Ontwerp Aanpassing"
+
+msgid "Details"
+msgstr "Details"
+
+msgid "Disable double opt-in"
+msgstr "Schakel dubbel opt-in uit"
+
+msgid ""
+"Disable double opt-in confirmation message sending. This option will create "
+"subscriber directly after he will subscribe to your list."
+msgstr ""
+"Zet het verzenden dubbele bevestigingsboodschap af. Deze instelling zal de "
+"gebruiker creëren onmiddellijk nadat hij zich abonneert op een lijst."
+
+msgid "Disabled"
+msgstr "Uitgeschakeld"
+
+#, fuzzy
+msgid "Disconnect"
+msgstr "Zet uit"
+
+msgid "Displayed"
+msgstr "Getoond"
+
+msgid "Dripping (schedule) Content"
+msgstr "Dripping (planning) Inhoud"
+
+msgid "Dripping Content"
+msgstr "Dripping Inhoud"
+
+msgid "Dropdown List"
+msgstr "Dropdown Lijst"
+
+msgid "E-Commerce"
+msgstr "E-Commerce"
+
+msgid "E-Commerce (PRO)"
+msgstr "E-Commerce (PRO)"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "Edit"
+msgstr "Bewerk"
+
+msgid "Edit or delete other users activity"
+msgstr "Editeer of verwijder activiteiten van andere gebruikers"
+
+msgid "Edit profile"
+msgstr "Bewerk profiel"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Email Address"
+msgstr "E-mailadres"
+
+msgid "Email address for notifications"
+msgstr "E-mailadres voor kennisgevingen"
+
+msgid "Email confirmation"
+msgstr "E-mail bevestiging"
+
+msgid ""
+"Email delivery depends from your server configuration. For some cases - you "
+"and your subscribers can not receive emails just because email on your "
+"server is not working correctly. You can easy test it here - by sending test "
+"email. If you receive it - then it means that email functionality on your "
+"server works well. If not - this means that it is not working correctly and "
+"you should contact your hosting provider with this issue and ask them to "
+"setup email functionality for you on your server."
+msgstr ""
+"Het bezorgen van e-mail hangt af van je server configuratie. In sommige "
+"gevallen kunnen jij en je gebruikers geen e-mail ontvangen omdat e-mail niet "
+"correct werkt op je server. Je kan dit hier gemakkelijk testen door het "
+"versturen van een test e-mail. Als je deze e-mail ontvangt, betekent dit dat "
+"de e-mail functionaliteit op je server goed werkt. Indien niet, betekent het "
+"dat het niet correct werkt en dan zou je contact moeten opnemen met je "
+"hosting provider en hen vragen om de e-mail functionaliteit voor jou in te "
+"stellen op je server."
+
+msgid "Email is not valid."
+msgstr "E-mail is niet geldig."
+
+msgid "Email is updated successfully"
+msgstr "E-mail met succes bijgewerkt"
+
+msgid "Email not confirmed"
+msgstr "E-mail niet bevestigd"
+
+msgid "Email that will be sent to user after signing up."
+msgstr "E-mail die zal verstuurd worden na gebruikersregistratie."
+
+msgid "Email that will get notifications about the membership society."
+msgstr "E-mail die meldingen zal ontvangen van de lidmaatschapsgemeenschap."
+
+msgid "Emails"
+msgstr "E-mails"
+
+msgid "Empty API key"
+msgstr "Geen API sleutel"
+
+msgid "Empty Form Data"
+msgstr "Geen Formuliergegevens"
+
+msgid "Empty Order ID"
+msgstr "Geen Bestelling ID"
+
+msgid "Empty Strie Token"
+msgstr "Geen Stripe Token"
+
+msgid "Empty User ID"
+msgstr "Geen Gebruiker ID"
+
+msgid "Empty data to save option"
+msgstr "Geen gegevens te bewaren optie"
+
+msgid "Empty or invalid Code"
+msgstr "Geen of ongeldige Code"
+
+msgid "Empty or invalid ID - only Update action allowed for now"
+msgstr "Geen of ongeldige ID - momenteel enkel Wijzigingsactie toegelaten"
+
+msgid "Empty or invalid Level Name"
+msgstr "Geen of ongeldige niveaunaam"
+
+msgid "Empty or invalid email"
+msgstr "Geen of ongeldige e-mail"
+
+msgid "Empty payment method"
+msgstr "Geen betalingsmethode"
+
+msgid "Enable Cover Photo"
+msgstr "Activeer Omslagfoto"
+
+msgid "Enable Dripping for this Content"
+msgstr "Avtiverr Dripping voor deze Inhoud"
+
+msgid "Enable Forum Tab"
+msgstr "Activeer Forum Tab"
+
+msgid "Enable Google ReCaptcha on login page."
+msgstr "Activeer Google ReCaptcha op de loginpagina."
+
+msgid "Enable Profile Photo"
+msgstr "Activeer Profielfoto"
+
+msgid "Enable Search feature"
+msgstr "Activeer Zoekfunctie"
+
+msgid "Enable secondary button for Login form."
+msgstr "Activeer secundaire knop voor Aanmeldingsformulier."
+
+msgid "Enable this option and page Activity will be created on your website."
+msgstr ""
+"Activeer deze optie en de pagina Activity zal aangemaakt worden op je "
+"website."
+
+msgid "Enable this option and page Friends will be created on your website."
+msgstr ""
+"Activeer deze optie en de pagina Vrienden zal aangemaakt worden op je "
+"website."
+
+msgid "Enable this option and page Groups will be created on your website."
+msgstr ""
+"Activeer deze optie en de pagina Groepen zal aangemaakt worden op je website."
+
+msgid "Enable this option and page Messages will be created on your website."
+msgstr ""
+"Activeer deze optie en de pagina Boodschappen zal aangemaakt worden op je "
+"website."
+
+msgid ""
+"Enable this option and users will be able to upload their Globally "
+"Recognized Avatar."
+msgstr ""
+"Zet deze instelling op en gebruikers zullen hun Globaal Herkenbare Avatar "
+"kunnen opladen."
+
+msgid "Enabled"
+msgstr "Aangezet"
+
+msgid "Enter API key - and your list will appear here"
+msgstr "Vul API sleutel in  - en je lijst zal hier verschijnen"
+
+msgid "Enter API key, select List - and your groups will appear here"
+msgstr "Vul API sleutel in, kies Lijst - en je groepen zullen hier verschijnen"
+
+msgid "Enter hashtags divided by the \",\" symbol"
+msgstr "Vul hashtags in gescheiden door het \",\" symbool"
+
+msgid "Enter name"
+msgstr "Vul naam in"
+
+msgid "Enter the email of admin."
+msgstr "Vul de e-mail van admin in."
+
+msgid ""
+"Enter the group title that will be defined in the browser toolbar and "
+"displayed for the page in search-engine results."
+msgstr ""
+"Vul de groepstitel in die zal getoond worden in de browser toolbaar en die "
+"getoond zal worden voor de pagina in search-engine resultaten."
+
+msgid "Enter the maximum size of file that can be uploaded by user in Mb."
+msgstr ""
+"Geef de maximale grootte  in Mb op van bestanden die kunnen opgeladen worden."
+
+msgid ""
+"Enter the profile title that will be defined in the browser toolbar and "
+"displayed for the page in search-engine results."
+msgstr ""
+"Vul de profieltitel in die zal getoond worden in de browser toolbaar en die "
+"getoond zal worden voor de pagina in search-engine resultaten."
+
+msgid "Enter the time for intervals with which messages will be updated."
+msgstr "Vul de intervaltijd in waarmee boodschappen zullen bijgewerkt worden."
+
+msgid ""
+"Enter your Email and License Key on this page, find the information for "
+"activation in your personal account on our site %s. Then click \"Activate "
+"Addons\" button."
+msgstr ""
+"Vul je E-mail en Licentiesleutel in op deze pagina. Je vindt de "
+"activeringsinformatie in je persoonlijke account op onze site %s. Klik "
+"daarna op de “Activeer Addons” knop."
+
+msgid "Error"
+msgstr "Fout"
+
+msgid "Error creating user with login: %s. Error message: %s"
+msgstr "Fout aanmaken gebruiker met login: %s. Foutboodschap: %s"
+
+msgid "Error when adding a Google Map to the database"
+msgstr "Fout tijdens toevoegen van een Google Map in de databank"
+
+msgid "Error when adding a gallery to the database."
+msgstr "Fout tijdens toevoegen van een galerij in de databank."
+
+msgid "Error when adding a slider to the database."
+msgstr "Fout tijdens toevoegen van een galerij in de databank."
+
+msgid "Error! Gallery params are incorrect!"
+msgstr "Fout! Galerij parameters zijn niet juist!"
+
+msgid "Error! Image params are incorrect!"
+msgstr "Fout! Afbeelding parameters zijn niet juist!"
+
+msgid "Error! Incorrect GoogleMaps params!"
+msgstr "Fout! Google Maps parameters zijn niet juist!"
+
+msgid "Error! Incorrect gallery params!"
+msgstr "Fout! Galerij parameters zijn niet juist!"
+
+msgid "Error! Incorrect slider params!"
+msgstr "Fout! Slider parameters zijn niet juist!"
+
+msgid "Error! Slider params are incorrect!"
+msgstr "Fout! Slider parameters zijn niet juist!"
+
+msgid "Establish your privacy settings for you local social network."
+msgstr "Stel je privacy instellingen in voor je lokaal sociaal netwerk."
+
+msgid "Every user must have at least %s field specified."
+msgstr "Elke gebruiker moet ten minste %s velden opgeven."
+
+msgid "Everyone"
+msgstr "Iedereen"
+
+msgid "Exceeded filesize limit."
+msgstr "Limiet bestandsgrootte overschreden."
+
+msgid "Expired"
+msgstr "Verlopen"
+
+msgid "Export"
+msgstr "Exporteer"
+
+msgid "Export data from activity"
+msgstr "Exporteer gegevens van activiteit"
+
+msgid "Export data from activity by hashtags"
+msgstr "Exporteer gegevens van activiteit per hashtag"
+
+msgid "Export to CSV"
+msgstr "Exporteer als CSV"
+
+msgid "Extend"
+msgstr "Breid uit"
+
+msgid "Extend Level button text"
+msgstr "Breid uit knop tekst"
+
+msgid "Extensions"
+msgstr "Uitbreidingen"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Facebook App ID"
+msgstr "Facebook App ID"
+
+msgid "Facebook App Secret"
+msgstr "Facebook App Geheim"
+
+msgid "Failed to import posts."
+msgstr "Importeren van berichten mislukt."
+
+msgid "Failed to update last export data"
+msgstr "Bijwerken van de laatst geëxporteerde gegevens is mislukt"
+
+msgid "Favorites"
+msgstr "Favorieten"
+
+msgid "Feel free to contact us and don't worry, everything will be cool!"
+msgstr ""
+"Neem gerust contact met ons op en maak je geen zorgen, alles zal in orde "
+"zijn!"
+
+msgid "Field user_login is required. Passed data: %s. Skipped."
+msgstr "Veld user_login is vereist. Doorgegeven gegevens: %s. Overgeslagen."
+
+msgid "Find group..."
+msgstr "Zoek groep..."
+
+msgid "Find user..."
+msgstr "Zoek gebruiker..."
+
+#, fuzzy
+msgid "Finish"
+msgstr "Voltooi"
+
+msgid "First"
+msgstr "Eerste"
+
+msgid "First Name"
+msgstr "Voornaam"
+
+msgid "First Name Last Name"
+msgstr "Voornaam Achternaam"
+
+msgid "Follow"
+msgstr "Volg"
+
+msgid "Follow unfollow users"
+msgstr "Volg / Volg niet gebruikers"
+
+msgid "Followers"
+msgstr "Volgers"
+
+msgid "Following"
+msgstr "Gevolgden"
+
+msgid "Follows"
+msgstr "Volgt"
+
+msgid "Follows me"
+msgstr "Volgt mij"
+
+msgid "Fonts"
+msgstr "Fonts"
+
+msgid "For example:"
+msgstr "Voorbeeld:"
+
+msgid "Forgot your password?"
+msgstr "Wachtwoord vergeten?"
+
+msgid "Forum"
+msgstr "Forum"
+
+msgid "Found %d users"
+msgstr "%d gebruikers gevonden"
+
+msgid "Fractional precision"
+msgstr "Decimale nauwkeurigheid"
+
+msgid "Fractional separator"
+msgstr "Decimaal teken"
+
+msgid "Friend Requests"
+msgstr "Vriendschapsverzoeken"
+
+msgid "Friends"
+msgstr "Vrienden"
+
+msgid "Friends of friends"
+msgstr "Vrienden van Vrienden"
+
+msgid "Friends only"
+msgstr "Enkel Vrienden"
+
+msgid "Friends/Followers Notification Body"
+msgstr "Vrienden/Volgers Verwittiging Inhoud"
+
+msgid "Friends/Followers Notification Subject"
+msgstr "Vrienden/Volgers Verwittiging Onderwerp"
+
+msgid "From"
+msgstr "Van"
+
+msgid "Gallery Images"
+msgstr "Galerij Afbeeldingen"
+
+msgid "Gallery Name"
+msgstr "Galerij Naam"
+
+msgid "General"
+msgstr "Algemeen"
+
+msgid "General Options"
+msgstr "Algemene opties"
+
+msgid "Get PRO Addon"
+msgstr "Koop de Pro AddOn"
+
+msgid "Get Pro"
+msgstr "Koop de Pro"
+
+msgid "Get new password"
+msgstr "Nieuw wachtwoord"
+
+msgid ""
+"Get this from your 2Checkout account. This should be present here to "
+"validate responce from 2Checkout!"
+msgstr ""
+"Krijg dit van je 2Checkout account. Dit zou hier aanwezig moeten zijn om "
+"antwoord van 2Checkout te valideren!"
+
+msgid "Global Site Access"
+msgstr "Globale site Toegang"
+
+msgid "Global activity page"
+msgstr "Algemene activiteitspagina"
+
+msgid "Google ReCaptcha"
+msgstr "Google ReCaptcha"
+
+msgid "Google ReCaptcha Secret Key"
+msgstr "Google ReCaptcha Geheieme Sleutel"
+
+msgid "Google ReCaptcha Site Key"
+msgstr "Google ReCaptcha Site Sleutel"
+
+msgid "Google ReCaptcha Size"
+msgstr "Google ReCaptcha Grootte"
+
+msgid "Google ReCaptcha Theme"
+msgstr "Google ReCaptcha Thema"
+
+msgid "Google ReCaptcha Type"
+msgstr "Google ReCaptcha Type"
+
+msgid "GoogleMaps Name"
+msgstr "GoogleMaps Naam"
+
+msgid "Group Cover Size"
+msgstr "Groep Omslag Afmeting"
+
+msgid "Group Description"
+msgstr "Groepsbeschrijving"
+
+msgid "Group Dynamic Meta Description"
+msgstr "Groep Dynamische Meta Beschrijving"
+
+msgid "Group ID"
+msgstr "Groep ID"
+
+msgid "Group Logo Size"
+msgstr "Groep Logo Grootte"
+
+msgid "Group Name"
+msgstr "Groepsnaam"
+
+msgid "Group Permalink Base"
+msgstr "Groep Permalink Basis"
+
+msgid ""
+"Group Permalink Base: Select what data to use in the group's link. E.g. "
+"\"http://supsystic/groups/culinary-blog/\" or \"http://supsystic/groups/1/\"."
+msgstr ""
+"Groep Permalink Basis: Selecteer welke gegevens moeten gebruikt worden in de "
+"groepling. Vb. “http://supsystic/groups/culinary-blog/“ of “http://supsystic/"
+"groups/1/“."
+
+msgid "Group Title"
+msgstr "Groepstitel"
+
+msgid "Group alias"
+msgstr "Groep alias"
+
+msgid "Group by"
+msgstr "Gegroepeerd op"
+
+msgid "Group data successfully updated"
+msgstr "Groepsgegevens met succes bijgewerkt"
+
+msgid "Group deletion"
+msgstr "Groep verwijdering"
+
+msgid "Group does not exists"
+msgstr "Groep bestaat niet"
+
+msgid "Group does not exists, or user not a member of this group"
+msgstr "Groep bestaat niet of gebruiker is geen lid van deze groep"
+
+msgid "Group does not exists."
+msgstr "Groep bestaat niet."
+
+msgid "Group for subscribe"
+msgstr "Groep voor abonnement"
+
+msgid "Group invites"
+msgstr "Groepsuitnodiging"
+
+msgid "Group is blocked"
+msgstr "Groep is geblokkeerd"
+
+msgid "Group is blocked by administrator"
+msgstr "Groep is geblokkeerd door de administrator"
+
+msgid "Group logo picture"
+msgstr "Groep logo afbeelding"
+
+msgid "Group members only can comment"
+msgstr "Groepsleden kunnen enkel reageren"
+
+msgid "Group members only can view activity"
+msgstr "Groepsleden kunnen enkel activiteit zien"
+
+msgid "Group members only can write posts"
+msgstr "Groepsleden kunnen enkel berichten schrijven"
+
+msgid "Group name is required"
+msgstr "Groepsnaam is vereist"
+
+msgid "Group settings"
+msgstr "Groepinstellingen"
+
+msgid "Group successfully created."
+msgstr "Groep met succes gecreëerd."
+
+msgid "Group that are you looking is not found."
+msgstr "De groep die je zocht werd niet gevonden."
+
+msgid "Group was deleted."
+msgstr "Groep werdverwijderd."
+
+msgid "Group with given id does not exists."
+msgstr "De groep met het opgegeven is bestaat niet."
+
+msgid "Groups"
+msgstr "Groepen"
+
+msgid "Groups are disabled by site administrator."
+msgstr "Groepen werden afgezet door de site administrator."
+
+msgid ""
+"Groups option is Turn Off, you can turn it On on the Main settings tab or "
+"click <a href=\"%s\">here</a>."
+msgstr ""
+"De Groepen instelling staat Af; je kan deze Aan zetten in de "
+"Hoofdinstellingen tab of klik <a href=\"%s\">hier</a>."
+
+msgid "Help Icon Background Color"
+msgstr "Help Icoon Achtergrondkleur"
+
+msgid "Help Icon Color"
+msgstr "Help Icoon Kleur"
+
+#, fuzzy
+#| msgid ""
+#| "Here is possible to adjust external user's profiles look, Registration "
+#| "Ñonfirmation and others."
+msgid ""
+"Here is possible to adjust external user's profiles look, Registration "
+"сonfirmation and others."
+msgstr ""
+"Hier is het mogelijk om het uitzicht van je externe gebruikersprofiel, "
+"Registratie Bevestiging en andere aan te passen."
+
+msgid "Here is you profile link."
+msgstr "Hier is je profiel link."
+
+msgid ""
+"Here you can adjust main settings of the site page and enter your admin "
+"email."
+msgstr ""
+"Hier kan je de hoofdinstellingen van de site pagina aanpassen en je admin e-"
+"mail invullen."
+
+msgid ""
+"Hey, I noticed you just use Membership by Supsystic over a week – that’s "
+"awesome!"
+msgstr ""
+"Hallo, I zag net dat je Membership by Supsystic al meer dan een week "
+"gebruikt - dat is geweldig!"
+
+msgid ""
+"Hi {display_name}\n"
+"This is an automated email to let you know your {site_name} account has been "
+"deactivated.\n"
+"I you would like your account to be reactivated please contact us at "
+"{admin_email}\n"
+"Thanks, {site_name}"
+msgstr ""
+"Hallo {display_name}\n"
+"Dit is een automatische e-mail om je te laten weten dat je {site_name} "
+"account werd gedeactiveerd.\n"
+"Als je je account wil opnieuw actief wil laten maken, contacteer ons via "
+"{admin_email}\n"
+"Bedankt, {site_name}"
+
+msgid ""
+"Hi {display_name}.\t\t \n"
+"Thank you for applying for membership to {site_name}!\n"
+"We have reviewed your information and unfortunately we are unable to accept "
+"you as a member at this moment.\n"
+"Please feel free to apply again at a future date.\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+"Hallo {display_name}.\t\t \n"
+"Bedankt voor je aanvraag om lid te worden van {site_name}!\n"
+"We hebben je informatie beoordeeld en ongelukkig genoeg kunnen we je "
+"momenteel niet accepteren als lid.\n"
+"Je kan in de toekomst een nieuwe aanvraag indienen.\n"
+"\n"
+"Bedankt, {site_name}"
+
+msgid ""
+"Hi {display_name}.\n"
+"Thank you for signing up with {site_name}!\n"
+"\n"
+"To login please visit the following url: \n"
+"\n"
+"<a href=\"{login_url}\">{login_url}</a>\n"
+"\n"
+"Your account e-mail: {email}\n"
+"\n"
+"Your account username: {username}\n"
+"\n"
+"Your account password: {password}\n"
+"\n"
+"If you have any problems, please contact us at {admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+"Hallo {display_name}.\n"
+"Bedankt om je te abonneren op {site_name}!\n"
+"\n"
+"Om je aan te melden, volg volgende link: \n"
+"\n"
+"<a href=\"{login_url}\">{login_url}</a>\n"
+"\n"
+"Je account e-mail: {email}\n"
+"\n"
+"Je account gebruikersnaam: {username}\n"
+"\n"
+"Je account wachtwoord: {password}\n"
+"\n"
+"Ingeval van problemen, contacteer ons via {admin_email}\n"
+"\n"
+"Bedankt, {site_name}"
+
+msgid ""
+"Hi {display_name}.\n"
+"Thank you for signing up with {site_name}!\n"
+"Your account has been approved and is now active.\n"
+"To login please visit the following url: <a href=\"{login_url}\">{login_url}"
+"</a>\n"
+"Your account e-mail: {email}\n"
+"Your account username: {username}\n"
+"Your account password: {password}\n"
+"If you have any problems, please contact us at {admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+"Hallo {display_name}.\n"
+"Bedankt om je te abonneren op {site_name}!\n"
+"Je account werd goedgekeurd en is nu actief.\n"
+"Om je aan te melden, volg volgende link: <a href=\"{login_url}\">{login_url}"
+"</a>\n"
+"Je account e-mail: {email}\n"
+"Je account gebruikersnaam: {username}\n"
+"Je account wachtwoord: {password}\n"
+"Ingeval van problemen, contacteer ons via {admin_email}\n"
+"\n"
+"Bedankt, {site_name}"
+
+msgid ""
+"Hi {display_name}.\n"
+"Thank you for signing up with {site_name}!\n"
+"Your account is currently being reviewed by a member of our team.\n"
+"Please allow us some time to process your request.\n"
+"If you have any problems, please contact us at {admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+"Hallo {display_name}.\n"
+"Bedankt om je te registreren bij {site_name}!\n"
+"Je account wordt momenteel nagezien door een teamlid.\n"
+"Geef ons enige tijd om je verzoek te verwerken.\n"
+"Ingeval van problemen, contacteer ons via {admin_email}\n"
+"\n"
+"Bedankt, {site_name}"
+
+msgid ""
+"Hi {display_name}.\n"
+"This is an automated email to let you know your {site_name} account has been "
+"deleted.\n"
+"All of your personal information has been permanently deleted and you will "
+"no longer be able to login to {site_name}.\n"
+"\n"
+"If your account has been deleted by accident please contact us at "
+"{admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+"Hallo {display_name}.\n"
+"Dit is een automatische e-mail om je te laten weten dat je {site_name} "
+"account verwijderd werd.\n"
+"Al je persoonlijke gegevens werden definitief gewist en je zal je niet meer "
+"kunnen kunnen aanmelden bij {site_name}.\n"
+"\n"
+"Ingeval je account per ongeluk werd verwijderd, contacteer ons via "
+"{admin_email}\n"
+"\n"
+"Bedankt, {site_name}"
+
+msgid ""
+"Hi {display_name}.\n"
+"We received a request to reset the password for your account.\n"
+"If you made this request, click the link below to change your password:\n"
+"<a href=\"{password_reset_link}\">{password_reset_link}</a>\n"
+"\n"
+"If you didn't make this request, you can ignore this email\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+"Hallo {display_name}.\n"
+"We ontvingen een verzoek om het wachtwoord van je account te vernieuwen.\n"
+"Ingeval jij dit verzoek indiende, gelieve onderstaande link te klikken om je "
+"wachtwoord te wijzigen:\n"
+"<a href=\"{password_reset_link}\">{password_reset_link}</a>\n"
+"\n"
+"Ingeval je dit verzoek niet indiende, kan je deze e-mail negeren\n"
+"\n"
+"Bedankt, {site_name}"
+
+msgid ""
+"Hi {display_name}.\n"
+"You have new {friend_follower}.\n"
+"Сheck it <a target=\"_blank\" href=\"{followers_url}\">here</a>"
+msgstr ""
+"Hallo {display_name}.\n"
+"Je hebt een nieuwe {friend_follower}.\n"
+"Bekijk het <a target=\"_blank\" href=\"{followers_url}\">hier</a>"
+
+msgid ""
+"Hi {display_name}.\n"
+"You recently have requested for changing the password associated with your "
+"{site_name} account.\n"
+"To confirm your request please visit the following url: <a href="
+"\"{password_change_url}\">{password_change_url}</a>\n"
+"If you did not make this change and believe your {site_name} account has "
+"been compromised, please contact us at the following email address: "
+"{admin_email}\n"
+"\n"
+"Thanks, {site_name}"
+msgstr ""
+"Hallo {display_name}.\n"
+"Recentelijk deed je een aanvraag om het wachtwoord verbonden met je "
+"{site_name} account te wijzigen.\n"
+"Om deze aanvraag te bevestigen vragen we je volgende url te bezoeken: <a "
+"href=\"{password_change_url}\">{password_change_url}</a>\n"
+"Ingeval jij deze aanvraag niet indiende en je denkt dat je {site_name} "
+"account gecompromitteerd werd, neem dan zo spoedig mogelijk contact op met "
+"ons via volgend e-mailadres: {admin_email}\n"
+"\n"
+"Bedankt, {site_name}"
+
+msgid "Hide ordered Membership Levels"
+msgstr "Verberg bestelde lidmaatschapsniveau's"
+
+msgid "Hope you will come back."
+msgstr "Ik hoop dat je terug komt."
+
+msgid "Hour"
+msgstr "Uur"
+
+msgid "Hour(s)"
+msgstr "Uur"
+
+msgid "I already did"
+msgstr "Ik deed het al"
+
+msgid "I found a better plugin"
+msgstr "Ik vond een betere plugin"
+
+msgid "I no longer need the plugin"
+msgstr "Ik heb de plugin niet meer nodig"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "IPN Address"
+msgstr "IPN Adres"
+
+msgid "ISO Code"
+msgstr "ISO Code"
+
+msgid "Icon"
+msgstr "Icoon"
+
+msgid "Icon:"
+msgstr "Icoon:"
+
+msgid "If buy next products"
+msgstr "Als je volgende producten koopt"
+
+msgid ""
+"If the %s field is not specified then the password will be the same as the "
+"%s field."
+msgstr ""
+"Als het %s veld niet ingevuld is, zal het wachtwoord hetzelfde zijn als het "
+"%s veld."
+
+msgid ""
+"If the user with the specified username or email already exists then "
+"inserting fields data will be ignored."
+msgstr ""
+"Als de gebruiker met de ingevulde gebruikersnaam of e-mail bestaat, zal het "
+"invullen van veldgegevens genegeerd worden."
+
+msgid "If this option is enabled an avatar will be displayed near user's name."
+msgstr ""
+"Als deze instelling aan staat, zal een avatar getoond worden nabij de "
+"gebruikersnaam."
+
+msgid ""
+"If this option is enabled users will be able to upload the second image "
+"behind the avatar image. It is kind of background image."
+msgstr ""
+"Als deze instelling aan staat zullen gebruikers een tweede afbeelding kunnen "
+"opladen achter hun avatar afbeelding. Het is een soort achtergondafbeelding."
+
+msgid ""
+"If this option is enabled, \"Remember me\" checkbox will be shown in login "
+"form."
+msgstr ""
+"Als deze instelling aan staat, zal de “Onthoud mij” checkbox getoond worden "
+"in het loginformulier."
+
+msgid "If this option is enabled, only members with avatar will be shown."
+msgstr ""
+"Als deze instelling aan staat, zullen enkel leden met een avatar getoond "
+"worden."
+
+msgid ""
+"If this option is enabled, only members with cover photo will be shown on "
+"\"Members\" tab."
+msgstr ""
+"Als deze instelling aan staat, zullen enkel leden met een omslagfoto getoond "
+"worden in de “Leden” tab."
+
+msgid "If this option is enabled, profile name will be shown in header."
+msgstr ""
+"Als deze instelling aan staat, zullen profielnamen getoond worden in de "
+"hoofding."
+
+msgid ""
+"If this option is enabled, the default colors of your theme will be used."
+msgstr ""
+"Als deze instelling aan staat, zullen de standaard kleuren van je thema "
+"gebruikt worden."
+
+msgid ""
+"If you have a moment, please share why you are deactivating Membership by "
+"Supsystic"
+msgstr ""
+"Als je een ogenblik hebt, laat ons a.u.b. weten waarom je Membership by "
+"Supsystic deactiveert"
+
+msgid ""
+"If you have a question, <a href=\"%s\" target=\"_blank\">contact us</a> and "
+"will do our best to help you"
+msgstr ""
+"Als je een vraag hebt, <a href=\"%s\" target=\"_blank\">contacteer ons</a> "
+"en we zullen ons best doen om je te helpen"
+
+msgid ""
+"If, unfortunately, you have some problem - we are always ready to help you "
+"in our %s."
+msgstr ""
+"Ingeval je, jammer genoeg, een of ander probleem zou hebben, staan we altijd "
+"klaar je te helpen in onze %s."
+
+msgid "Image"
+msgstr "Afbeelding"
+
+msgid "Image Quality"
+msgstr "Afbeeldingskwaliteit"
+
+msgid "Image size limit is exceeded"
+msgstr "Limiet afbeelding afmeting is overschreden"
+
+msgid "Import"
+msgstr "Importeer"
+
+msgid "Import Activity"
+msgstr "Importeer Activiteit"
+
+msgid "Import Buddy Press Data"
+msgstr "Importeer Buddy Press Gegevens"
+
+msgid "Import Data"
+msgstr "Importeer Gegevens"
+
+msgid "Import Friends"
+msgstr "Importeer Vrienden"
+
+msgid "Import Groups"
+msgstr "Importeer Groepen"
+
+msgid "Import Ultimate Member Data"
+msgstr "Importeer Ultimate Member Gegevens"
+
+msgid "Import User Fields"
+msgstr "Importeer Gebruiker Velden"
+
+msgid "Import completed successfully"
+msgstr "Import met succes voltooid"
+
+msgid "Import data to activity"
+msgstr "Import gegevens naar activiteit"
+
+msgid "Import data to activity by hashtags"
+msgstr "Import gegevens naar activiteit per hashtags"
+
+msgid "Import from csv"
+msgstr "Importeer van csv"
+
+msgid "Import users from CSV"
+msgstr "Importeer gebruikers van csv"
+
+msgid "Importing completed with errors"
+msgstr "Import voltooid met fouten"
+
+msgid ""
+"In MailChimp there is possibility to select groups for your subscribers. "
+"This is not mandatory, but sometimes it is really helpful. So, we added this "
+"possibility for you in our plugin - hope you will like it!"
+msgstr ""
+"In MailChimp is het mogelijk groepen te kiezen voor je abonnees. Dit is niet "
+"verplicht maar soms echt handig. Daarom voegden we deze mogelijkheid toe aan "
+"onze plug-in. We hopen dat je dit leuk vindt!"
+
+msgid ""
+"Indeed, Membership is a very easy-to-use plugin and it consists of various "
+"exciting options at the same time. So after you close this page we will "
+"demonstrate you the main of them with step-by-step tutorial. For the first "
+"time we will help you to tune your Membership, but if you will need our "
+"help, please, contact us via our %s."
+msgstr ""
+"Inderdaad, Membership is een makkelijk te gebruiken plug-in die tegelijk "
+"verscheiden opwindende instellingen bevat. Dus, nadat je deze pagina sluit "
+"zullen we he de hoofdinstellingen demonstreren met een stap-voor-stap "
+"handleiding. Voor de eerste keer zullen we je helpen om je Membership in te "
+"stellen, maar als je later onze hulp nodig hebt, contacteer ons via ons %s."
+
+msgid "Input Background Color"
+msgstr "Geef Achtergrondkleur"
+
+msgid "Input Background Focus Color"
+msgstr "Geef Achtergrond Focus Kleur"
+
+msgid "Input Border Color"
+msgstr "Geef Boord Kleur"
+
+msgid "Input Border Focus Color"
+msgstr "Geef Boord Focus Kleur"
+
+msgid "Input Placeholder Color"
+msgstr "Geef Plaatshouder Kleur"
+
+msgid "Inputs"
+msgstr "Invoer"
+
+msgid ""
+"Insert this URL to your %s account as IPN address - to make IPN system work "
+"as it should."
+msgstr ""
+"Vul deze URL in in je %s account als IPN adres om je IPN systeem te doen "
+"werken."
+
+msgid "Install"
+msgstr "Installeer"
+
+msgid "Integrate Membership with your Facebook App."
+msgstr "Integreer Lidmaatschap met je Facebook App."
+
+msgid "Integrations"
+msgstr "Integraties"
+
+msgid "Invalid ID"
+msgstr "Ongeldige ID"
+
+msgid "Invalid login or password."
+msgstr "Ongeldige login of wachtwoord."
+
+msgid "Invalid token. Please refresh page."
+msgstr "Ongeldige token. Ververs de pagina."
+
+msgid "Invalid username or email."
+msgstr "Ongeldige gebruikersnaam of e-mail."
+
+msgid "Invitations"
+msgstr "Uitnodigingen"
+
+msgid "Invite"
+msgstr "Nodig uit"
+
+msgid ""
+"Invite\n"
+"\t\t\t\t\t\t\t\t\tadministrators"
+msgstr ""
+"Nodig uit\n"
+"\t\t\t\t\t\t\t\t\tadministrators"
+
+msgid "Invite administrators"
+msgstr "Nodig administrators uit"
+
+msgid "Invite as administrator"
+msgstr "Nodig uit als administrator"
+
+msgid "Invite friends"
+msgstr "Nodig vrienden uit"
+
+msgid "Invite users"
+msgstr "Nodig gebruikers uit"
+
+msgid "Invited users"
+msgstr "Uitgenodigde gebruikers"
+
+msgid "Invites"
+msgstr "Uitnodigingen"
+
+msgid "Is default?"
+msgstr "Is standaard?"
+
+msgid "Join group"
+msgstr "Wordt lid van goep"
+
+msgid "Join groups"
+msgstr "Wordt lid van groepen"
+
+msgid "Join requests"
+msgstr "Lidmaatschapsverzoeken"
+
+msgid "Joined Groups"
+msgstr "Aangesloten Groepen"
+
+msgid "Label"
+msgstr "Label"
+
+msgid "Last"
+msgstr "Laatste"
+
+msgid "Last Name"
+msgstr "Achternaam"
+
+msgid "Last Name First Name"
+msgstr "Achternaam Voornaam"
+
+msgid "Last seen"
+msgstr "Laatst gezien"
+
+msgid "Latitude:"
+msgstr "Latitude:"
+
+msgid "Leave group"
+msgstr "Verlaat groep"
+
+msgid ""
+"Let your users register and login easily via Facebook or Twitter accounts."
+msgstr ""
+"Laat je gebruikers gemakkelijk registreren en aanmelden via hun Facebook of "
+"Twitter accounts."
+
+msgid ""
+"Let's make a quick tour through features and main options of the plugin. "
+"Just click \"Next\" button."
+msgstr ""
+"Laten we een snelle tour maken over de functies en hoofdinstellingen van de "
+"plug-in. Klik “Volgende” knop."
+
+msgid "Level"
+msgstr "Niveau"
+
+msgid "Level Purchase (can be with Registration)"
+msgstr "Niveau Aankoop (kan bij Registratie)"
+
+msgid "License"
+msgstr "Licentie"
+
+msgid "License Key"
+msgstr "Licentie Sleutel"
+
+msgid "License server error"
+msgstr "Licentie server fout"
+
+msgid "Light"
+msgstr "Licht"
+
+msgid "Like"
+msgstr "Vindt leuk"
+
+msgid "Liked activity  is not exist"
+msgstr "Leuk gevonden activiteit bestaat niet"
+
+msgid "Liked activity is not exist"
+msgstr "Leuk gevonden activiteit bestaat niet"
+
+msgid "Likes"
+msgstr "Houdt van's"
+
+msgid "Link"
+msgstr "Link"
+
+msgid "Lists for subscribe"
+msgstr "Lijst voor abonnering"
+
+msgid "Load more"
+msgstr "Laad meer"
+
+msgid "Log in"
+msgstr "Meld aan"
+
+msgid "Log in with"
+msgstr "Meld aan met"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Login ID"
+msgstr "Login ID"
+
+msgid "Login Primary Button Text"
+msgstr "Login Eerste Knop Tekst"
+
+msgid "Login Secondary Button"
+msgstr "Login Tweede Knop"
+
+msgid "Login Secondary Button Text"
+msgstr "Login Tweede Knop Tekst"
+
+msgid "Login Secondary Button URL"
+msgstr "Login Tweede KnopURL"
+
+msgid "Login after success Registration"
+msgstr "Login na succesvolle Registratie"
+
+msgid "Login error"
+msgstr "Fout bij Login"
+
+msgid "Logo Thumbnail Large Size"
+msgstr "Logo Miniatuur Grote Afmeting"
+
+msgid "Logo Thumbnail Medium Size"
+msgstr "Logo Miniatuur Medium Afmeting"
+
+msgid "Logo Thumbnail Small Size"
+msgstr "Logo Miniatuur Kleine Afmeting"
+
+msgid "Logout"
+msgstr "Afmelden"
+
+msgid "Longitude:"
+msgstr "Longitude:"
+
+msgid "Mail appears from"
+msgstr "Mail komt van"
+
+msgid "Mail appears from address"
+msgstr "Mail komt van adres"
+
+msgid "MailChimp API key"
+msgstr "MailChimp API sleutel"
+
+msgid "Mails"
+msgstr "Mails"
+
+msgid "Mails Configuration"
+msgstr "Mails Instellingen"
+
+msgid "Main"
+msgstr "Hoofd"
+
+msgid "Main Settings"
+msgstr "Hoofdinstellingen"
+
+msgid ""
+"Make sure you assigned Membership Level for this Content before enable "
+"Dripping."
+msgstr ""
+"Zorg ervoor dat je een Lidmaatschapsniveau toekend aan deze Inhoud vooraleer "
+"je Dripping aanzet."
+
+msgid "Managed Groups"
+msgstr "Beheerde Groepen"
+
+msgid "Maps params was saved success"
+msgstr "Kaarten parameters met succes bewaard"
+
+msgid "Mark all as read"
+msgstr "Markeer alle als gelezen"
+
+msgid "Mark as read and close"
+msgstr "Markeer als gelezen en gesloten"
+
+msgid "Mark as unread and close"
+msgstr "Markeer als ongelezen en gesloten"
+
+msgid "Marker Description:"
+msgstr "Marker Beschrijving:"
+
+msgid "Marker Name:"
+msgstr "Marker Naam:"
+
+msgid "Markers list"
+msgstr "Markers lijst"
+
+msgid "Maximum File Size (Mb)"
+msgstr "Maximum Betandsgrootte (MB)"
+
+msgid "Maximum Image Size"
+msgstr "Maximum Afbeeldinggrootte"
+
+msgid "Maximum available file upload size is %d Mb"
+msgstr "Maximum beschikbare grootte bestandsupload is %d Mb"
+
+msgid "Maximum number of profiles"
+msgstr "Maximum aantal profielen"
+
+msgid "Media"
+msgstr "Media"
+
+msgid "Members"
+msgstr "Leden"
+
+msgid "Members Directory"
+msgstr "Ledenlijst"
+
+msgid "Members page"
+msgstr "Ledenpagina"
+
+msgid "Membership Administrator"
+msgstr "Lidmaatschap Administrator"
+
+msgid "Membership Guest"
+msgstr "Lidmaatschap Gast"
+
+msgid "Membership Levels"
+msgstr "Lidmaatschapsniveau's"
+
+msgid "Membership Purchase"
+msgstr "Lidmaatschap Aankoop"
+
+msgid "Membership Role"
+msgstr "Lidmaatschapsrol"
+
+msgid "Membership Status"
+msgstr "Lidmaatschapstatus"
+
+msgid "Membership User"
+msgstr "Lidmaatschap Gebruiker"
+
+msgid "Membership by Supsystic Popular Activities"
+msgstr "Lidmaatschap per Supsystic Populaire Activiteiten"
+
+msgid "Membership by Supsystic Popular Groups"
+msgstr "Lidmaatschap per Supsystic Populaire Groepen"
+
+msgid "Membership by Supsystic Suggested Groups"
+msgstr "Lidmaatschap per Supsystic Aangeraden Groepen"
+
+msgid "Membership profile"
+msgstr "Lidmaatschapsprofiel"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Message"
+msgstr "Bericht"
+
+msgid "Message Recieve Notification"
+msgstr "Boodschap Ontvangen Kennisgeving"
+
+msgid "Message Recieve Notification Body"
+msgstr "Boodschap Ontvangen Kennisgeving Inhoud"
+
+msgid "Message Recieve Notification Subject"
+msgstr "Boodschap Ontvangen Kennisgeving Onderwerp"
+
+msgid "Messages"
+msgstr "Boodschappen"
+
+msgid "Messages Refresh Period"
+msgstr "Verversingsperiode Boodschappen"
+
+msgid "Minute(s)"
+msgstr "Minu(u)t(en)"
+
+msgid "Month"
+msgstr "Maand"
+
+msgid "Month(s)"
+msgstr "Maand(en)"
+
+msgid "Name"
+msgstr "Naam"
+
+msgid "Need renew text"
+msgstr "Vernieuwtekst nodig"
+
+msgid "Network Uninstall"
+msgstr "Deïnstallatie Netwerk"
+
+msgid "New Password"
+msgstr "Nieuw wachtwoord"
+
+msgid "New Password Confirmation"
+msgstr "Nieuw Wachtwoord Bevestiging"
+
+msgid "New Password and New Password Confirmation fields is not match."
+msgstr "Nieuw Wachtwoord en Bevestiging Wachtwoord komen niet overeen."
+
+msgid "New User Notification"
+msgstr "Nieuwe Gebruiker Verwittiging"
+
+msgid "New User Notification Body"
+msgstr "Nieuwe Gebruiker Verwittiging Inhoud"
+
+msgid "New User Notification Subject"
+msgstr "Nieuwe Gebruiker Verwittiging Onderwerp"
+
+msgid "New Users First"
+msgstr "Nieuwste Gebruikers Eerst"
+
+msgid "New conversation"
+msgstr "Nieuwe conversatie"
+
+msgid "New friends and followers notification"
+msgstr "Nieuwe vrienden en volgers kennisgeving"
+
+msgid "New group %s is created by %s."
+msgstr "Nieuwe groep %s werd gecreëerd door %s."
+
+msgid "New password"
+msgstr "Nieuw wachtwoord"
+
+msgid "New password and password confirmation not match."
+msgstr "Nieuw wachtwoord en bevestiging wachtwoord komen niet overeen."
+
+msgid "New password can't be empty."
+msgstr "Nieuw wachtwoord mag niet leeg zijn."
+
+msgid "New password confirmation"
+msgstr "Nieuw wachtwoord bevestiging"
+
+msgid "New password confirmation can't be empty."
+msgstr "Nieuw wachtwoord bevestiging mag niet leeg zijn."
+
+msgid "New password is required"
+msgstr "Nieuw wachtwoord is vereist"
+
+msgid "New tag"
+msgstr "Nieuwe tag"
+
+msgid "Next"
+msgstr "Volgende"
+
+#, fuzzy
+msgid "No"
+msgstr "Geen"
+
+msgid ""
+"No API key entered in admin area - contact site owner to resolve this issue."
+msgstr ""
+"Geen API sleutel ingevuld in admin sectie - contacteer site-eigenaar om dit "
+"probleem op te lossen."
+
+msgid "No blocked users to show."
+msgstr "Geen geblokkeerde gebruikers te tonen."
+
+msgid "No comments to show."
+msgstr "Geen reacties te tonen."
+
+msgid "No data found"
+msgstr "Geen gegevens gevonden"
+
+msgid "No favorites to show."
+msgstr "Geen favorieten te tonen."
+
+msgid "No file is sent"
+msgstr "Geen bestand verzonden"
+
+msgid "No followers to show."
+msgstr "Geen volgers te tonen."
+
+msgid "No following to show."
+msgstr "Geen gevolgden te tonen."
+
+msgid "No friend requests to show."
+msgstr "Geen vriendschapverzoeken te tonen."
+
+msgid "No friends to show."
+msgstr "Geen vrienden te tonen."
+
+msgid "No groups to show."
+msgstr "Geen groepen te tonen."
+
+msgid "No invites to show."
+msgstr "Geen uitnodigingen te tonen."
+
+msgid ""
+"No lists to add selected in admin area - contact site owner to resolve this "
+"issue."
+msgstr ""
+"Geen toe te voegen lijsten geselecteerd in de admin sectie - contacteer de "
+"site eigenaar om dit probleem op te lossen."
+
+msgid "No posts to show."
+msgstr "Geen berichten te tonen."
+
+msgid "No role restriction"
+msgstr "Geen rol beperking"
+
+msgid "No subscriptions to show."
+msgstr "Geen abonnementen te tonen."
+
+msgid "No supported plugins found. Currently we support:"
+msgstr "Geen ondersteunde plug-ins gevonden. Momenteel ondersteunen we:"
+
+msgid "No topics to show."
+msgstr "Geen topics te tonen."
+
+msgid "No users is found."
+msgstr "Geen gebruikers gevonden."
+
+msgid "None"
+msgstr "Geen"
+
+msgid "Nope, maybe later"
+msgstr "Neen, misschien later"
+
+msgid "Normal"
+msgstr "Normaal"
+
+msgid "Not Activated"
+msgstr "Niet GEACTIVEERD"
+
+msgid "Not logged-in"
+msgstr "Niet Aangemeld"
+
+msgid "Not ordered"
+msgstr "Niet besteld"
+
+msgid "Nothing is found"
+msgstr "Niets gevonden"
+
+msgid "Nothing is found."
+msgstr "Niets gevonden."
+
+msgid "Nothing was found"
+msgstr "Niets gevonden"
+
+msgid "Notifications"
+msgstr "Kennisgevingen"
+
+msgid "Notifications "
+msgstr "Kennisgevingen "
+
+msgid "Notifications settings changes could not be saved."
+msgstr "Wijziging kennisgeving instellingen konden niet bewaard worden."
+
+msgid "Notifications settings changes has been saved."
+msgstr "Wijziging kennisgeving instellingen zijn bewaard."
+
+msgid "Now your account is active."
+msgstr "Je account is nu actief."
+
+msgid "Number of activities to show:"
+msgstr "Aantal te tonen activiteiten:"
+
+msgid "Number of columns to show:"
+msgstr "Aantal te tonen kolommen:"
+
+msgid "Number of groups to show:"
+msgstr "Aantal te tonen groepen:"
+
+msgid "Number of profiles per page"
+msgstr "Aantal profielen per pagina"
+
+msgid "Number of profiles per page (for Mobiles & Tablets)"
+msgstr "Aantal profielen per pagina (voor Mobiele Tabletten)"
+
+msgid "Numeric"
+msgstr "Numeriek"
+
+msgid "Ok"
+msgstr "Ok"
+
+msgid "Ok, you deserve it"
+msgstr "Ok, je verdient het"
+
+msgid "Old Users First"
+msgstr "Oudste Gebruikers Eerst"
+
+msgid ""
+"On fields with type (Scroll List, Dropdown List, Radio Button, Checkbox) you "
+"can only use values from the available options so passed data to that field "
+"must match otherwise it will be ignored."
+msgstr ""
+"Voor velden van het type (Scroll List, Dropdown List, Radio Button, "
+"Checkbox) kan je enkel waarden gebruiken uit de beschikbare instellingen - "
+"andere waarden worden genegeerd."
+
+msgid "Once you delete your copy of this conversation, it cannot be undone."
+msgstr ""
+"Het verwijderen van je kopie van dit gesprek kan niet meer ongedaan gemaakt "
+"worden."
+
+msgid "Once you delete your copy of this messages, it cannot be undone."
+msgstr ""
+"Het verwijderen van je kopie van deze boodschappen kan niet meer ongedaan "
+"gemaakt worden."
+
+msgid ""
+"Once your site visitors begin to view or purchase your Membership Levels - "
+"statistics will be displayed here."
+msgstr ""
+"Wanneer sitebezoekers je Lidmaatschapsniveaus beginnen te bekijken of "
+"aankopen, worden hier statistieken getoond."
+
+msgid "Online"
+msgstr "Online"
+
+msgid "Only Me"
+msgstr "Alleen Ik"
+
+msgid "Only group administrators can send invitations"
+msgstr "Enkel groepsadministrators kunnen uitnodigingen versturen"
+
+msgid "Open"
+msgstr "Open"
+
+msgid "Open group"
+msgstr "Open groep"
+
+msgid "Opened Content - no Level required"
+msgstr "Geopende Inhoud - geen Niveau vereist"
+
+msgid "Option Name"
+msgstr "Optie Naam"
+
+msgid "Order"
+msgstr "Bestelling"
+
+msgid "Order Admin Email"
+msgstr "Bestelling Admin E-mail"
+
+msgid "Order Admin Email content"
+msgstr "Bestelling Admin E-mail inhoud"
+
+msgid "Order Created"
+msgstr "Bestelling Gecreëerd"
+
+msgid "Ordered"
+msgstr "Besteld"
+
+msgid "Ordered Levels"
+msgstr "Bestelde Niveau's"
+
+msgid "Orders"
+msgstr "Bestellingen"
+
+msgid "Other"
+msgstr "Andere"
+
+msgid "Pages"
+msgstr "Pagina's"
+
+msgid "Parent comment is not exists"
+msgstr "Ouder reactie bestaat niet"
+
+msgid "Password"
+msgstr "Wachtwoord"
+
+msgid "Password Changed Email"
+msgstr "Wachtwoord Gewijzigd E-mail"
+
+msgid "Password Changed Email Body"
+msgstr "Wachtwoord Gewijzigd E-mail Inhoud"
+
+msgid "Password Changed Email Subject"
+msgstr "Wachtwoord Gewijzigd E-mail Onderwerp"
+
+msgid "Password Confirmation"
+msgstr "Wachtwoord Bevestigd"
+
+msgid "Password Reset Email"
+msgstr "Herstel Wachtwoord E-mail"
+
+msgid "Password Reset Email Body"
+msgstr "Herstel Wachtwoord E-mail Inhoud"
+
+msgid "Password Reset Email Subject"
+msgstr "Herstel Wachtwoord E-mail Onderwerp"
+
+msgid "Password and password confirmation must match"
+msgstr "Wachtwoord en wachtwoord bevestiging moeten overeenkomen"
+
+msgid "Password change"
+msgstr "Wijziging wachtwoord"
+
+msgid "Password confirmation is required"
+msgstr "Bevestiging wachtwoord is vereist"
+
+msgid "Password is required"
+msgstr "Wachtwoord is vereist"
+
+msgid "Password is required and can't be empty."
+msgstr "Wachtwoord is vereist en kan niet leeg zijn."
+
+msgid "Password is updated successfully"
+msgstr "Wachtwoord met succes bijgewerkt"
+
+msgid "Pay by Stripe"
+msgstr "Betaal met Stripe"
+
+msgid "PayPal PRO"
+msgstr "PayPal PRO"
+
+msgid "PayPal PRO payments."
+msgstr "PayPal PRO betalingen."
+
+msgid "PayPal Standard"
+msgstr "PayPal Standaard"
+
+msgid "PayPal Standard payments."
+msgstr "PayPal Standaard betalingen."
+
+msgid "Payment Action"
+msgstr "Betalingsactie"
+
+msgid "Payment Info"
+msgstr "Betalingsinfo"
+
+msgid "Payment Method"
+msgstr "Betalingsmethode"
+
+msgid "Payment fail checkout text"
+msgstr "Betaling mislukt checkout tekst"
+
+msgid "Payments"
+msgstr "Betalingen"
+
+msgid "Pending Review Email"
+msgstr "Wachten op Review E-mail"
+
+msgid "Pending Review Email Body"
+msgstr "Wachten op Review E-mail Inhoud"
+
+msgid "Pending Review Email Subject"
+msgstr "Wachten op Review E-mail Onderwerp"
+
+msgid "Pending review"
+msgstr "Wachten op review"
+
+msgid "Phone"
+msgstr "Telefoonnummer"
+
+msgid "Photos"
+msgstr "Foto's"
+
+msgid ""
+"Pick up your Membership users to different Subscription lists right after "
+"registration."
+msgstr ""
+"Neem je Membership gebruikers naar andere Abonnementslijsten onmiddellijk na "
+"registratie."
+
+msgid "Places"
+msgstr "Plaatsen"
+
+msgid ""
+"Please <a href=\"%s\">sign up</a> or <a href=\"%s\">sign in</a> to join or "
+"leave groups."
+msgstr ""
+"A.u.b. <a href=\"%s\">registreer</a> of <a href=\"%s\">meld aan</a> om je te "
+"abonneren of groepen te verlaten."
+
+msgid ""
+"Please <a href=\"%s\">sign up</a> or <a href=\"%s\">sign in</a> to like or "
+"write comments on this post."
+msgstr ""
+"A.u.b. <a href=\"%s\">registreer</a> of <a href=\"%s\">meld aan</a> om leuk "
+"te vinden of reacties te schrijven op dit bericht."
+
+msgid "Please activate your account"
+msgstr "Activeer je account"
+
+msgid "Please enter %s"
+msgstr "Vul %s in"
+
+msgid "Please fill up the captcha."
+msgstr "Vul de captcha in, a.u.b."
+
+msgid "Please select an image to remove."
+msgstr "Selecteer een te verwijderen afbeelding."
+
+msgid "Popular"
+msgstr "Populair"
+
+msgid "Position"
+msgstr "Positie"
+
+msgid "Post"
+msgstr "Bericht"
+
+msgid "Post by service action setting could not be saved."
+msgstr "Bericht door service actie kon niet bewaard worden."
+
+msgid "Post by service action setting has been saved."
+msgstr "Bericht door service actie werd bewaard."
+
+msgid "Postcode / ZIP"
+msgstr "Postcode / ZIP"
+
+msgid "Posts"
+msgstr "Berichten"
+
+msgid ""
+"Powerful stuff of Membership Ecommerce addon will help you to start and "
+"manage your own paid Membership site."
+msgstr ""
+"De krachtige functies van de Membership eCommerce Haddon, zullen je helpen "
+"je eigen betaalde Lidmaatschapssite te starten en beheren."
+
+msgid "Premium support expires in"
+msgstr "Premium support vervalt over"
+
+msgid "Prev"
+msgstr "Vor"
+
+msgid "Previous"
+msgstr "Vorig"
+
+msgid "Price"
+msgstr "Prijs"
+
+msgid "Price for Membership Level"
+msgstr "Prijs voor Lidmaatschapsniveau"
+
+msgid "Price for recurring payments"
+msgstr "Prijs voor herhalende betalingen"
+
+msgid "Primary Button Color"
+msgstr "Primaire Knop Kleur"
+
+msgid "Primary Button Hover Color"
+msgstr "Primaire Knop Hover Kleur"
+
+msgid "Primary Color"
+msgstr "Primaire kleur"
+
+msgid "Privacy"
+msgstr "Privacy"
+
+msgid "Privacy settings was not updated."
+msgstr "Privacy instellingen werden niet gewijzigd."
+
+msgid "Privacy settings was updated."
+msgstr "Privacy instellingen werden gewijzigd."
+
+msgid "Private"
+msgstr "Privaat"
+
+msgid "Private group"
+msgstr "Private groep"
+
+msgid "Products"
+msgstr "Producten"
+
+msgid "Profile"
+msgstr "Profiel"
+
+msgid "Profile Avatar Size"
+msgstr "Profiel Avatar Grootte"
+
+msgid "Profile Container Max Width"
+msgstr "Max Breedte Profiel Container"
+
+msgid "Profile Cover Size"
+msgstr "Profiel Omslag Afmeting"
+
+msgid "Profile Fields"
+msgstr "Profielvelden"
+
+msgid ""
+"Profile Fields are made for their creation and configuration of asking on "
+"registration page and demonstrating at About section in users profiles after "
+"loginning to the site."
+msgstr ""
+"De profielvelden tab is bedoeld voor de creatie van velden voor het "
+"Gebruikersprofiel. Zij zullen te zien zijn in de Over sectie, nadat je je "
+"hebt aangemeld op de site. Hier kan je ook de verplichte velden op de "
+"Registratiepagina beheren."
+
+msgid "Profile Header Background Color"
+msgstr "Profielhoofding Achtergrondkleur"
+
+msgid "Profile Image Style"
+msgstr "Profiel Afbeelding Stijl"
+
+msgid "Profile Permalink Base"
+msgstr "Profiele Permalink Basis"
+
+msgid "Profile Settings"
+msgstr "Profiel Instellingen"
+
+msgid "Profile is not exists."
+msgstr "Profiel bestaat niet."
+
+msgid "Profile picture"
+msgstr "Profielfoto"
+
+msgid "Protect all Pages"
+msgstr "Bescherm Alle Pagina's"
+
+msgid "Publish"
+msgstr "Publiceer"
+
+msgid "Publish to Membership Activity"
+msgstr "Publiceer bij Lidmaatschapactiviteit"
+
+msgid "Publish to my activity"
+msgstr "Publiceer bij mijn activiteit"
+
+msgid "Purchase"
+msgstr "Aankoop"
+
+msgid "Purchase button name"
+msgstr "Aankoop knop naam"
+
+msgid "Put symbol at left side?"
+msgstr "Symbool aan linkerkant zetten?"
+
+msgid "Radio Button"
+msgstr "Radio Knop"
+
+msgid "Random"
+msgstr "Willekeurig"
+
+msgid "ReCaptcha is not valid."
+msgstr "ReCaptcha is niet geldig."
+
+msgid "Read"
+msgstr "Lees"
+
+msgid "Read groups"
+msgstr "Lees groepen"
+
+msgid "Read more"
+msgstr "Lees verder"
+
+msgid "Reading comments is restricted"
+msgstr "Lezen van reacties is niet toegelaten"
+
+msgid "Recurring Subscription"
+msgstr "Weerkerende Inschrijving"
+
+msgid "Redirect after account is deleted to"
+msgstr "Verwijs na verwijdering account naar"
+
+msgid "Redirect after login to"
+msgstr "Verwijs na aanmelding naar"
+
+msgid "Redirect after logout to"
+msgstr "Verwijs na afmelding naar"
+
+msgid "Redirect after registration to"
+msgstr "Verwijs na registratie naar"
+
+msgid "Redirect from backend login screen to membership login page"
+msgstr "Verwijs van backend login scherm naar membership login pagina"
+
+msgid "Register"
+msgstr "Registreer"
+
+msgid "Register with"
+msgstr "Registreer met"
+
+msgid "Registered"
+msgstr "Geregistreerd"
+
+msgid "Registration"
+msgstr "Registratie"
+
+msgid "Registration Confirmation"
+msgstr "Registratie Bevestiging"
+
+msgid "Registration Fields"
+msgstr "Registratievelden"
+
+msgid "Registration Primary Button Text"
+msgstr "Registratie Eerste Knop Tekst"
+
+msgid "Registration and Login"
+msgstr "Registratie en Aanmelden"
+
+msgid "Registration button name"
+msgstr "Registratie knop naam"
+
+msgid "Rejected"
+msgstr "Geweigerd"
+
+msgid "Remember me"
+msgstr "Onthoud mij"
+
+msgid "Remove"
+msgstr "Verwijder"
+
+msgid "Remove from group"
+msgstr "Verwijder uit groep"
+
+msgid "Remove login and registartion links from menu when user is logged in"
+msgstr ""
+"Verwijder login en registratie links uit menu wanneer gebruiker aangemeld is"
+
+msgid "Remove selected images"
+msgstr "Verwijder geselecteerde afbeeldingen"
+
+msgid "Replace bbPress profile link with link to Membership profile"
+msgstr "Vervang bbPress profiel link met link naar Membership profiel"
+
+msgid "Replies"
+msgstr "Antwoorden"
+
+msgid "Replies Created"
+msgstr "Antwoorden gecreëerd"
+
+msgid "Reply"
+msgstr "Antwoord"
+
+msgid "Report"
+msgstr "Rapport"
+
+msgid "Report Comment"
+msgstr "Rapport Reactie"
+
+msgid "Report Date"
+msgstr "Rapportdatum"
+
+msgid "Report Status"
+msgstr "Rapportstatus"
+
+msgid "Report comment"
+msgstr "Rapport reactie"
+
+msgid "Report date"
+msgstr "Rapportdatum"
+
+msgid "Report details"
+msgstr "Rapportdetails"
+
+msgid "Report post"
+msgstr "Rapport bericht"
+
+msgid "Report type"
+msgstr "Rapporttype"
+
+msgid "Report was not sent."
+msgstr "Rapport werd niet verzonden."
+
+msgid "Report was not sent. Report content not found."
+msgstr "Rapport werd niet verzonden. Rapport inhoud niet gevonden."
+
+msgid "Reported"
+msgstr "Gerapporteerd"
+
+msgid "Reported Activity"
+msgstr "Gerapporteerde Activiteit"
+
+msgid "Reported Activity Author"
+msgstr "Gerapporteerde Activiteit Auteur"
+
+msgid "Reporter"
+msgstr "Rapporteerder"
+
+msgid "Reports"
+msgstr "Rapport"
+
+msgid "Requested activity is not found."
+msgstr "Gevraagde activiteit werd niet gevonden."
+
+msgid "Required"
+msgstr "Vereist"
+
+msgid "Required Asterisk Color"
+msgstr "Asterisk Kleur Vereist"
+
+msgid "Reset Zoom"
+msgstr "Herstel Zoom"
+
+msgid "Reset key is not provided."
+msgstr "Herstelsleutel werd niet opgegeven."
+
+msgid "Reset password"
+msgstr "Herstel Wachtwoord"
+
+msgid "Reset to Default"
+msgstr "Herstel naar Standaard"
+
+msgid "Reset your password"
+msgstr "Herstel je Wachtwoord"
+
+msgid "Results Text"
+msgstr "Resultaattekst"
+
+msgid "Review for"
+msgstr "Beoordeling voor"
+
+msgid "Role"
+msgstr "Rol"
+
+msgid "Role Name"
+msgstr "Rol Nnaam"
+
+msgid "Role name"
+msgstr "Rol naam"
+
+msgid "Roles"
+msgstr "Rollen"
+
+#, fuzzy
+#| msgid ""
+#| "Roles tab offers you to manage with membership roles. By default there "
+#| "are three roles â Membership Administrator, Membership User and "
+#| "Membership Guest."
+msgid ""
+"Roles tab offers you to manage with membership roles. By default there are "
+"three roles – Membership Administrator, Membership User and Membership Guest."
+msgstr ""
+"De rol tab laat toe om je lidmaatschap rollen te beheren. Standaard voorziet "
+"Membership in drie rollen: Membership Administrator, Membership Gebruiker en "
+"Membership Gast."
+
+msgid "Roles who can have forum tab"
+msgstr "Rollen die een forum tab kunnen hebben"
+
+msgid "Rounded Corners"
+msgstr "Afgeronde Hoeken"
+
+msgid "SEO"
+msgstr "SEO"
+
+msgid "Save"
+msgstr "Bewaar"
+
+msgid "Save Address"
+msgstr "Bewaar Adres"
+
+msgid "Save Fields"
+msgstr "Bewaar Velden"
+
+msgid "Save Marker"
+msgstr "Bewaar Marker"
+
+msgid "Save Pages"
+msgstr "Bewaar Pagina's"
+
+msgid "Save Settings"
+msgstr "Bewaar Instellingen"
+
+msgid "Scroll List"
+msgstr "Scroll Lijst"
+
+msgid "Search"
+msgstr "Zoek"
+
+msgid "Search..."
+msgstr "Zoek..."
+
+msgid "Secondary Button Color"
+msgstr "Secundaire Knop Kleur"
+
+msgid "Secondary Button Hover Color"
+msgstr "Secundaire Knop Hover Kleur"
+
+msgid "Secondary Color"
+msgstr "Secundaire Kleur"
+
+msgid "Secret word to validate responce"
+msgstr "Geheim woord om antwoord te valideren"
+
+msgid "Section"
+msgstr "Sectie"
+
+msgid "Section Name"
+msgstr "Sectie Naam"
+
+msgid "Security"
+msgstr "Beveiliging"
+
+msgid "Security Settings"
+msgstr "Beveiligingsinstellingen"
+
+msgid "See dashboard bar"
+msgstr "Zie dashboard bar"
+
+msgid "Select"
+msgstr "Selecteer"
+
+msgid "Select a role that will be assigned to user after his registration."
+msgstr ""
+"Selecteer een rol die aan een gebruiker wordt toegewezen na registratie."
+
+msgid "Select contact form that will be displayed on Contact Us page."
+msgstr ""
+"Selecteer het contactformulier dat zal getoond worden op de Contacteer Ons "
+"pagina."
+
+msgid ""
+"Select lists for subscribe. They are taken from your Constant Contact "
+"account."
+msgstr ""
+"Selecteer lijsten voor abonnementen. Ze worden opgehaald van je Constant "
+"Contact account."
+
+msgid ""
+"Select lists for subscribe. They are taken from your MailChimp account - so "
+"make sure that you entered correct API key before."
+msgstr ""
+"Selecteer lijsten voor abonnementen. Ze worden opgehaald van je MailChimp "
+"account; zorg er dus voor dat je eerst de juiste API sleutel hebt ingevuld."
+
+msgid "Select membership roles that will have access to this page."
+msgstr "Selecteer membershiprollen die toegang zullen hebben tot deze pagina."
+
+msgid "Select messages to delete"
+msgstr "Selecteer te verwijderen boodschap"
+
+msgid "Select some Lists before"
+msgstr "Selecteer een aantal Lijsten voor"
+
+msgid "Select the sorting order to display users on \"Members\" tab."
+msgstr ""
+"Selecteer de volgorde waarin gebruikers getoond worden in de \"Leden\" tab."
+
+msgid "Select the style of profiles and groups images."
+msgstr "Selecteer de stijl van afbeeldingen voor profielen en groepen."
+
+msgid ""
+"Select the type of confirmation that should be performed after user "
+"registration. You can choose \"Auto\" and there will be no confirmation."
+msgstr ""
+"Kies het type van bevestiging dat moet uitgevoerd worden na gebruiker "
+"regisitratie. Als je kiest voor \"Auto\" zal er geen bevestiging zijn."
+
+msgid "Select value"
+msgstr "Selecteer waarde"
+
+msgid ""
+"Select what data to use in the link of user's profile. E.g. \"http://"
+"supsystic/profile/john_snow/\" or \"http://supsystic/profile/1/\"."
+msgstr ""
+"Selecteer de te gebruiken gegevens in de link van het gebruikersprofiel. Vb. "
+"\"http://supsystic/profile/john_snow/\" of \"http://supsystic/profile/1/\"."
+
+msgid "Select which kind of user's name will be displayed."
+msgstr "Selecteer welke soort gebruikersnaam zal getoond worden."
+
+msgid "Select who can see information on your website."
+msgstr "Selecteer wie informatie kan zien op je website."
+
+msgid "Send"
+msgstr "Verzend"
+
+msgid "Send MailChimp Welcome Email"
+msgstr "Verzend MailChimp Welkom E-mail"
+
+msgid "Send Test"
+msgstr "Verzend Test"
+
+msgid "Send Test Email"
+msgstr "Verzend Test E-mail"
+
+msgid "Send a request"
+msgstr "Verzend een verzoek"
+
+msgid "Send and receive messages"
+msgstr "Verzend en ontvang boodschappen"
+
+msgid "Send friend request"
+msgstr "Verzend vriendschapsverzoek"
+
+msgid "Send me some info, pls"
+msgstr "Zend me a.u.b. een beetje info"
+
+msgid "Send message"
+msgstr "Verzend boodschap"
+
+msgid "Send message to"
+msgstr "Zend boodschap naar"
+
+msgid "Send message to: "
+msgstr "Zend boodschap naar: "
+
+msgid "Send private message"
+msgstr "Verzend private boodschap"
+
+msgid "Sending message to this user is restricted by his privacy settings"
+msgstr ""
+"Verzenden van een boodschap naar deze gebruiker is niet toegelaten door zijn "
+"privacy instellingen"
+
+msgid "Server error!"
+msgstr "Server fout!"
+
+msgid "Set the background color for labels."
+msgstr "Zet de achtergrondkleur voor labels."
+
+msgid "Set the background color for profile header."
+msgstr "Zet de achtergrondkleur voor profielhoofding."
+
+msgid "Set the background color when the cursor is in this field."
+msgstr "Zet de achtergrondkleur wanneer de cursor in dit veld is."
+
+msgid "Set the color for borders of labels."
+msgstr "Zet de kleur voor boorden en labels."
+
+msgid "Set the color for borders when the cursor is in this field."
+msgstr "Zet de kleur voor boorden wanneer de cursor in dit veld is."
+
+msgid "Set the color for placeholder."
+msgstr "Zet de kleur voor plaatshouder."
+
+msgid "Set the color for primary buttons when they will be covered by mouse."
+msgstr ""
+"Zet de kleur voor primaire knoppen wanneer ze door de muis bedekt zijn."
+
+msgid "Set the color for primary buttons."
+msgstr "Zet de kleur voor primaire knoppen."
+
+msgid "Set the color for secondary buttons when they will be covered by mouse."
+msgstr ""
+"Zet de kleur voor secundaire knoppen wanneer ze door de muis bedekt zijn."
+
+msgid "Set the color for secondary buttons."
+msgstr "Zet de kleur voor secundaire knoppen."
+
+msgid "Set the color for text in labels."
+msgstr "Zet de kleur voor tekst in labels."
+
+msgid "Set the color for text in primary buttons."
+msgstr "Zet de kleur voor tekst in primaire knoppen."
+
+msgid "Set the color for text in secondary buttons."
+msgstr "Zet de kleur voor tekst in secundaire knoppen."
+
+msgid "Set the color for text."
+msgstr "Zet de tekstkleur."
+
+msgid "Set the quality of images in %. The highest value is 100."
+msgstr "Zet de afbeeldingskwaliteit in %. De hoogste waarde is 100."
+
+msgid "Set the text for \"Log in\" button."
+msgstr "Zet de tekst voor \"Log in\" knop."
+
+msgid "Set the text for \"Register\" button."
+msgstr "Zet de tekst voor \"Register\" knop."
+
+msgid "Set the text for secondary button."
+msgstr "Zet de tekst voor secundaire knop."
+
+msgid "Set the width for profile container. The maximum is 100%."
+msgstr "Stel de breedte voor de profiel container in. Maximum is 100%."
+
+msgid "Set to default"
+msgstr "Stel in als standaard"
+
+msgid ""
+"Set url to which user will be redirected after clicking on secondary button "
+"in Login form."
+msgstr ""
+"Stel de url in waarnaar de gebruiker zal verwezen worden na het klikken op "
+"de secundaire knop van het Aanmeldingsformulier."
+
+msgid "Settings"
+msgstr "Instellingen"
+
+msgid "Share"
+msgstr "Deel"
+
+msgid ""
+"Shared activity is not exist or user don't have read permission to read "
+"activity."
+msgstr ""
+"Gedeelde activiteit bestaat niet of gebruiker heeft geen toelating om de "
+"activiteit te lezen."
+
+msgid "Shares"
+msgstr "Delen"
+
+msgid "Shipping Address"
+msgstr "Verzendingsadres"
+
+msgid "Shipping Information"
+msgstr "Verzendingsinformatie"
+
+msgid "Show Activity Filter"
+msgstr "Toon Activiteitenfilter"
+
+msgid "Show Display Name"
+msgstr "Toon Schermnaam"
+
+msgid "Show Display Name In Profile Header"
+msgstr "Toon Schermnaam in Profielhoofding"
+
+msgid "Show Friends and Followers"
+msgstr "Toon Vrienden en Volgers"
+
+msgid "Show Load More Button"
+msgstr "Toon Laad Meer Knop"
+
+msgid "Show Only Members With Cover"
+msgstr "Toon Enkel Leden met Omslag"
+
+msgid "Show Only Members With Photo"
+msgstr "Toon Enkel Leden met Foto"
+
+msgid "Show Pages"
+msgstr "Toon Pagina’s"
+
+msgid "Show Remember Me"
+msgstr "Toon Onthoud Mij"
+
+msgid "Show an asterisk for required fields"
+msgstr "Toon een asterisk voor vereiste velden"
+
+msgid "Show billing address in user settings"
+msgstr "Toon facturatieadres in gebruikersinstellingen"
+
+msgid "Show bought products in profile"
+msgstr "Toon aangekochte producten in profiel"
+
+msgid "Show extra user information below tagline?"
+msgstr "Toon extra gebruikersinformatie onder de taglijn?"
+
+msgid "Show group action buttons?"
+msgstr "Toon groep actie knoppen?"
+
+msgid "Show my profile in Members Directory."
+msgstr "Toon mijn profiel in Ledenlijst."
+
+msgid "Show ordered Membership Levels"
+msgstr "Toon bestelde Lidmaatschapsniveaus"
+
+msgid "Show orders in members directory"
+msgstr "Toon bestellingen in ledenlijst"
+
+msgid "Show orders in profile"
+msgstr "Toon bestellingen in profiel"
+
+msgid "Show product reviews in profile"
+msgstr "Toon productbeoordelingen in profiel"
+
+msgid "Show purchases in profile"
+msgstr "Toon aankopen in profiel"
+
+msgid "Show results only after search"
+msgstr "Toon resultaten enkel na zoek"
+
+msgid "Show shipping address in user settings"
+msgstr "Toon leveringsadres in gebruikersinstellingen"
+
+msgid "Show short post view"
+msgstr "Toon Excerpt"
+
+msgid "Show tagline below profile name"
+msgstr "Toon taglijn onder profielnaam"
+
+msgid "Show total spent in members directory"
+msgstr "Toon totaal gespendeerd in ledenlijst"
+
+msgid "Show total spent in profile"
+msgstr "Toon totaal gespendeerd in profiel"
+
+msgid "Shows the list of activities, depending on likes."
+msgstr "Toont activiteitenlijst afhankelijk van likes."
+
+msgid "Shows the list of groups, depending on the number of followers."
+msgstr "Toont de lijst van groepen afhankelijk van het aantal volgers."
+
+msgid "Shows the list of suggested groups."
+msgstr "Toont de lijst van aangeraden groepen."
+
+msgid "Since:"
+msgstr "Sinds:"
+
+msgid "Single Result Text"
+msgstr "Enkele Resultaat Tekst"
+
+msgid "Site Accessible to Everyone"
+msgstr "Site Toegankelijk voor Iedereen"
+
+msgid "Site Accessible to Logged In Users"
+msgstr "Site Toegankelijk voor Aangemelde Gebruikers"
+
+msgid "Site wide"
+msgstr "Site breed"
+
+msgid "Skip & Deactivate"
+msgstr "Sla over & Deactiveer"
+
+msgid "Slider Images"
+msgstr "Slider Afbeeldingen"
+
+msgid "Slider Name"
+msgstr "Slider Naam"
+
+msgid "Social"
+msgstr "Social"
+
+msgid "Social Login"
+msgstr "Social Login"
+
+msgid "Social Login (PRO)"
+msgstr "Social Login (PRO)"
+
+msgid "Social Network Integration"
+msgstr "Sociaal Netwerk Integratie"
+
+msgid "Social Networks Integration (PRO)"
+msgstr "Social Netwerken Integratie (PRO)"
+
+msgid "Social network integration"
+msgstr "Sociaal netwerk integratie"
+
+msgid "Social sign-in"
+msgstr "Social registratie"
+
+msgid "Some of requested users cannot receive or send messages"
+msgstr ""
+"Sommige van de gevraagde gebruikers kunnen geen boodschappen ontvangen noch "
+"versturen"
+
+msgid ""
+"Some of your products is extendable, but you don't have original product "
+"purchased before."
+msgstr ""
+"Enkele van je producten zijn verlengbaar, maar je hebt vroeger geen "
+"originele producten gekocht."
+
+msgid ""
+"Something going wrong while trying to send data to MailChimp. Please contact "
+"site owner."
+msgstr ""
+"Er ging iets fout bij het verzenden van gegevens naar MailChimp. Contacteer "
+"de site eigenaar."
+
+msgid ""
+"Something going wrong while trying to send data to mail list service. Please "
+"contact site owner."
+msgstr ""
+"Er ging iets fout bij het verzenden van gegevens naar de mail list service. "
+"Contacteer de site eigenaar."
+
+msgid "Something went wrong"
+msgstr "Er ging iets fout"
+
+msgid "Sorry, the original post was deleted by its author."
+msgstr "Sorry, het originele bericht werd door zijn auteur verwijderd."
+
+msgid "Specific roles"
+msgstr "Specifieke rollen"
+
+msgid ""
+"Specify a description of Group page. Search engines can pick up this "
+"description to show with the results of searches."
+msgstr ""
+"Geef een omschrijving van de Groep pagina. Zoek motoren kunnen deze "
+"omschrijving tonen in hun zoekresultaten."
+
+msgid ""
+"Specify a description of User Profile page. Search engines can pick up this "
+"description to show with the results of searches."
+msgstr ""
+"Geef een omschrijving van de Gebruikersprofiel pagina. Zoek motoren kunnen "
+"deze omschrijving tonen in hun zoekresultaten."
+
+msgid "Square"
+msgstr "Vierkant"
+
+msgid "Start"
+msgstr "Start"
+
+msgid "State"
+msgstr "Staat"
+
+msgid "State / County"
+msgstr "Staat / Land"
+
+msgid "Statistics"
+msgstr "Statistieken"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Stripe"
+msgstr "Stripe"
+
+msgid "Stripe Publishable Key"
+msgstr "Stripe Publieke Sleutel"
+
+msgid "Stripe Secret Key"
+msgstr "Stripe Geheime Sleutel"
+
+msgid "Stripe payments."
+msgstr "Stripe betalingen."
+
+msgid "Subscribe"
+msgstr "Abonneer"
+
+msgid "Subscribe success message"
+msgstr "Abonnement geslaagd boodschap"
+
+msgid "Subscriptions"
+msgstr "Abonnementen"
+
+msgid "Subscriptions (PRO)"
+msgstr "Abonnementen (PRO)"
+
+msgid "Subscriptions Lists"
+msgstr "Abonnementenlijst"
+
+msgid "Success checkout text"
+msgstr "Afrekening geslaagd tekst"
+
+msgid "Support part"
+msgstr "Support part"
+
+msgid "Supsystic Forum"
+msgstr "Supsystic Forum"
+
+msgid "Supsystic Membership Role"
+msgstr "Supsystic Membership Rol"
+
+msgid "Symbol"
+msgstr "Symbool"
+
+msgid "Tag does not exists at this group"
+msgstr "Tag bestaat niet voor deze groep"
+
+msgid "Tags"
+msgstr "Tags"
+
+msgid "Tags for this group have not been added yet."
+msgstr "Aan deze groep werden nog geen tags toegevoegd."
+
+msgid "Test"
+msgstr "Test"
+
+msgid "Test Mode"
+msgstr "Test modus"
+
+msgid "Test Payments"
+msgstr "Test Betalingen"
+
+msgid "Test mail"
+msgstr "Test e-mail"
+
+msgid "Test user"
+msgstr "Test gebruiker"
+
+msgid "Text"
+msgstr "Tekst"
+
+msgid "Text that users will see when they need to renew this Level."
+msgstr ""
+"Tekst die gebruikers zullen zien wanneer ze dit Niveau moeten vernieuwen."
+
+msgid "Thank you for choosing our Membership plugin"
+msgstr "Bedankt om onze Membership plug-in te kiezen"
+
+msgid ""
+"Thank you for choosing our plugin! We are happy you like Membership plugin "
+"by Supsystic and You will get our best work!"
+msgstr ""
+"Bedankt om onze plug-in te kiezen. We zijn blij dat je de Membership plug-in "
+"van Supsystic leuk vind en je zal ons beste werk krijgen!"
+
+msgid "Thank you for registration!"
+msgstr "Bedankt voor je registratie!"
+
+msgid ""
+"Thank you for signing up with {site_name}!\n"
+"To activate your account, please click the link below to confirm your email "
+"address: <a href=\"{account_activation_link}\">{account_activation_link}</"
+"a>\n"
+"If you have any problems, please contact us at {admin_email}\n"
+"Thanks, {site_name}"
+msgstr ""
+"Bedankt voor de registratie op {site_name}!\n"
+"Om je account te activieren, klik onderstaande link om je e-mailadres te "
+"bevestigen: <a href=\"{account_activation_link}\">{account_activation_link}</"
+"a>\n"
+"Ingeval van problemen, contacteer ons via {admin_email}\n"
+"Bedankt, {site_name}"
+
+msgid ""
+"The color theme. You can select from themes, provided by Google, for your "
+"reCaptcha."
+msgstr ""
+"Het kleur thema. Je kan kiezen uit thema's, aangereikt door Google, voor je "
+"reCaptcha."
+
+msgid "The message that admin will get if some account needs to be reviewed."
+msgstr ""
+"De boodschap die admin zal krijgen als een account moet nagekeken worden."
+
+msgid ""
+"The message that admin will receive after a new user signs up. In case you "
+"don't want to get this email just turn this option off."
+msgstr ""
+"De boodschap die admin zal krijgen als een nieuwe gebruiker zich "
+"registreert. Ingeval je deze e-mail niet wil krijgen, kan je deze instelling "
+"afzetten."
+
+msgid "The message was sent"
+msgstr "De boodschap werd verzonden"
+
+msgid "The name of site that will be indicated in emails."
+msgstr "De naam van de site die zal aangegeven worden in e-mails."
+
+msgid "The requested social network integration is not enabled"
+msgstr "De gevraagde social netwerk integratie staat niet aan"
+
+msgid "The size of the CAPTCHA widget."
+msgstr "De grootte van de CAPTCHA widget."
+
+msgid ""
+"The total number of recurring billing cycles for this level, including the "
+"trial period (if applicable) but not including the initial payment. Set to "
+"zero if membership is indefinite."
+msgstr ""
+"Het totaal aantal weerkerende facturatiecycli voor dit niveau, met inbegrip "
+"van de proefperiode (indien van toepassing) maar zonder de initiële "
+"betaling. Zet op nul als het lidmaatschap onbepaald is."
+
+msgid "The type of CAPTCHA to serve."
+msgstr "Het type te gebruiken CAPTCHA."
+
+msgid "The vendor account number for the 2Checkout gateway"
+msgstr "De verkoper account nummer voor de 2Checkout gateway"
+
+msgid "There are no Membership Levels on this site for now."
+msgstr "Er zijn nog geen Lidmaatschapsniveau's op deze site."
+
+msgid "There is no administrators left in group, you must delete group first."
+msgstr ""
+"Er zijn geen administrators meer over in de groep; je moet de groep eerst "
+"verwijderen."
+
+msgid "There is no data to import."
+msgstr "Er zijn geen gegevens te importeren."
+
+msgid "There is no products"
+msgstr "Er zijn geen producten"
+
+msgid "There is no purchases"
+msgstr "Er zijn geen aankopen"
+
+msgid "There is no reviews"
+msgstr "Er zijn geen reviews"
+
+msgid "There is no subscription in subscriptions lists"
+msgstr "Er zijn geen abonnementen in de abonementenlijst"
+
+msgid "There is no user with provided id"
+msgstr "Er is geen gebruiker met het opgegeven id"
+
+msgid "There is no users yet."
+msgstr "Er zijn nog geen gebruikers."
+
+msgid ""
+"There was some problem while trying to get your lists. Make sure that your "
+"API key is correct."
+msgstr ""
+"Er waren problemen tijdens het opzoeken van je lijsten. Verzeker je ervan "
+"dat je API sleutel juist is."
+
+msgid "There were some errors with your data"
+msgstr "Er wareen fouten met je gegevens"
+
+msgid "There's no any activity yet"
+msgstr "Er is nog geen activiteit"
+
+msgid "This Level is Expired"
+msgstr "Het Niveau is Verlopen"
+
+msgid "This content is closed for you"
+msgstr "Deze content is gesloten voor jou"
+
+msgid ""
+"This email will be sent to user after his account has been approved and "
+"activated by admin."
+msgstr ""
+"Deze e-mail zal verstuurd worden naar de gebruiker nadat admin deze account "
+"heeft goedgekeurd en geactiveerd."
+
+msgid "This email will be sent to user if admin rejected his account."
+msgstr ""
+"Deze e-mail zal verstuurd worden aan de gebruiker als admin zijn account "
+"weigert."
+
+msgid ""
+"This email will be sent to user if he has requested to change the password."
+msgstr ""
+"Deze e-mail zal verstuurd worden aan de gebruiker als deze gebraagd heeft "
+"zijn wachtwoord te wijzigen."
+
+msgid ""
+"This email will be sent to user if he needs to wait till admin will approve "
+"his account."
+msgstr ""
+"Deze e-mail zal verstuurd worden aan de gebruiker als deze moet wachten tot "
+"admin zijn account goedkeurt."
+
+msgid "This email will be sent to user if his account has been deactivated."
+msgstr ""
+"Deze e-mail zal verstuurd worden aan de gebruiker als zijn account "
+"gedeactiveerd werd."
+
+msgid "This email will be sent to user if this account has been deleted."
+msgstr ""
+"Deze e-mail zal verstuurd worden aan de gebruiker als zijn account "
+"verwijderd werd."
+
+msgid ""
+"This email will be sent to user, so he could confirm his email and activate "
+"the account after registration."
+msgstr ""
+"Deze e-mail zal verstuurd worden aan de gebruiker zodat deze zijn e-mail kan "
+"bevestigen en zijn account na registratie kan activeren."
+
+msgid "This email will be used as Sender."
+msgstr "Dit e-mailadres zal gebruikt worden als Afzender."
+
+msgid "This is not your Order"
+msgstr "Dit is niet jouw Bestelling"
+
+msgid ""
+"This message will be shown after subscription in the settings of user's "
+"profile right after subscriber will be\n"
+"    created and confirmed."
+msgstr ""
+"Deze boodschap zal na abonnering getoond worden in de instellingen van het "
+"gebruikersprofiel onmiddellijk nadat de inschrijver wordt\n"
+"    gecreëerd en bevestigd."
+
+msgid "This module is used for test purpose only. Do not use in in Production."
+msgstr ""
+"Deze module wordt enkel gebruikt voor testen. Niet gebruiken in Productie."
+
+msgid "This month"
+msgstr "Deze maand"
+
+msgid ""
+"This option allows to use html markup language to edit the text in emails."
+msgstr ""
+"Deze instelling laat toe om html markup te gebruiken om teksten in e-mails "
+"te schrijven."
+
+msgid ""
+"This option will create subscriber directly after new user registration. If "
+"this option is disabled - new subscriber won't be created for your "
+"subscription list after registration. In this case user will be able to "
+"subscribe only in his Profile Settings."
+msgstr ""
+"Deze instelling creëert inschrijver onmiddellijk na een nieuwe "
+"gebruikersregistratie. Als deze instelling af staat zal geen nieuwe "
+"inschrijver gecreëerd worden voor je abonnementenlijst. In dit geval kan de "
+"gebruiker zich enkel abonneren in zijn Profielinstellingen."
+
+msgid "This page is disabled by site administrator."
+msgstr "Deze pagina werd buiten gebruik gesteld door de site administrator."
+
+msgid ""
+"This tab allows you to see detail user reports on restricted content types "
+"of other users and write to the reporter/reported user or block him/her."
+msgstr ""
+"Deze tab laat toe details te zien van gebruiker rapporten op afgeschermde "
+"inhoud types of andere gebruikers en om naar de rapporterende/gerapporteerde "
+"gebruiker te schrijven of hem/haar te blokkeren."
+
+msgid "This user is blocking your messages."
+msgstr "Deze gebruiker blokkeert je boodschappen."
+
+msgid "This user is restrict access to his about page."
+msgstr "Deze gebruiker heeft de toegang tot zijn 'over mij' pagina beperkt."
+
+msgid "This user is restrict access to his activity page."
+msgstr "Deze gebruiker heeft de toegang tot zijn 'activiteit' pagina beperkt."
+
+msgid "This user is restrict access to his comments page."
+msgstr "Deze gebruiker heeft de toegang tot zijn 'reacties' pagina beperkt."
+
+msgid "This user is restrict access to his followers page."
+msgstr "Deze gebruiker heeft de toegang tot zijn 'volgers' pagina beperkt."
+
+msgid "This user is restrict access to his friends page."
+msgstr "Deze gebruiker heeft de toegang tot zijn 'vrienden' pagina beperkt."
+
+msgid "This user is restrict access to his groups page."
+msgstr "Deze gebruiker heeft de toegang tot zijn 'groepen' pagina beperkt."
+
+msgid "This user is restrict access to his posts page."
+msgstr "Deze gebruiker heeft de toegang tot zijn 'berichten' pagina beperkt."
+
+msgid "This user is restrict access to his profile."
+msgstr "Deze gebruiker heeft de toegang tot zijn profiel beperkt."
+
+msgid "This week"
+msgstr "Deze week"
+
+msgid "This will be initial amount for the first payment"
+msgstr "Dit zal het initiële bedrag voor de eerste betaling zijn"
+
+msgid "This year"
+msgstr "Dit jaar"
+
+msgid "Thousands separator"
+msgstr "Scheidingsteken voor duizenden"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Title:"
+msgstr "Titel:"
+
+msgid "To"
+msgstr "Aan"
+
+msgid ""
+"To be unique develop your own coloristic combination of Membership design."
+msgstr "Om uniek te zijn, ontwikkel je eigen kleurcombinatie voor Membership."
+
+msgid ""
+"To complete your registration administrator needs to review your account."
+"<br>You will receive email about your account activation after review."
+msgstr ""
+"Om je registratie te vervolledigen moet een administrator je account "
+"nakijken.<br>Na review zal je een e-mail ontvangen over je account "
+"activering."
+
+msgid ""
+"To complete your registration please follow the activation link in "
+"confirmation email message that you will receive."
+msgstr ""
+"Om je registratie te vervolledigen, volg de activatie link in de "
+"bevestigingse-mail die je zal ontvangen."
+
+msgid ""
+"To find your Facebook App ID please login to your Facebook account at <a "
+"target=\"_blank\" href=\"https://developers.facebook.com/apps/\">https://"
+"developers.facebook.com/apps/</a>. Then on the left main menu click on "
+"Dashboard. Copy / Paste your App ID into \"Facebook App ID\" field here. For "
+"more detailed instruction - check article <a target=\"_blank\" href=\"http://"
+"supsystic.com/integrate-membership-facebook-app/\">here</a>."
+msgstr ""
+"Om je Facebook App ID te vinden, meld je aan op je Facebook account via <a "
+"target=\"_blank\" href=\"https://developers.facebook.com/apps/\">https://"
+"developers.facebook.com/apps/</a>. Klik dan op de linker hoofdmenu in het "
+"Dashboard. Kopieer / Plak hier je App ID in het \"Facebook App ID\" veld. "
+"Voor meer gedetailleerde instructies, raadpleeg het artikel <a target="
+"\"_blank\" href=\"http://supsystic.com/integrate-membership-facebook-app/"
+"\">hier</a>."
+
+msgid ""
+"To find your Facebook App Secret please login to your Facebook account at "
+"https://developers.facebook.com/apps/. Then on the left main menu click on "
+"Dashboard. Copy / Paste your App Secret into \"Facebook App Secret\" field "
+"here. For more detailed instruction - check article <a target=\"_blank\" "
+"href=\"http://supsystic.com/integrate-membership-facebook-app/\">here</a>."
+msgstr ""
+"Om je Facebook App Geheime sleutel te vinden, meld je aan op je Facebook "
+"account via https://developers.facebook.com/apps/. Klik dan op het linker "
+"hoofdmenu op het Dashboard. Kopieer / Plak hier je App Secret in het "
+"\"Facebook App Secret\" veld. Voor meer gedetailleerde instructies - "
+"raadpleeg het artikel <a target=\"_blank\" href=\"http://supsystic.com/"
+"integrate-membership-facebook-app/\">hier</a>."
+
+msgid ""
+"To find your MailChimp API Key login to your Mailchimp account at http://"
+"mailchimp.com. On the left main menu click on your Username, then select "
+"\"Account\" in the flyout menu. From the account page select \"Extras\", "
+"\"API Keys\". Your API Key will be listed in the table labeled \"Your API "
+"Keys\". Copy / Paste your API key into \"MailChimp API key\" field here."
+msgstr ""
+"Om je MailChimp API Sleutel te vinden, meld je aan op je  Mailchimp account "
+"via http://mailchimp.com. Klik op je Gebruikersnaam in het linker hoofdmenu "
+"en selecteer “Account” in het uitflap menu. Selecteer “Extras” van de "
+"account pagina, “API Keys”. Je API Sleutel zal opgelost staan in de tabel "
+"met de naam “Your API Keys”. Kopieer / Plak je API key hier in het "
+"“MailChimp API key” veld."
+
+msgid ""
+"To find your Twitter API Key please login to your Twitter account at https://"
+"apps.twitter.com/. Open the settings of your App and click on \"Keys and "
+"Access Tokens\" tab. Copy / Paste \"Consumer Key (API Key)\" into \"Twitter "
+"API Key\" field here. For more detailed instruction - check article <a "
+"target=\"_blank\" href=\"http://supsystic.com/integrate-membership-twitter/"
+"\">here</a>."
+msgstr ""
+"Om je Twitter API Sleutel te vinden, meld je aan op je  Twitter account via "
+"https://apps.twitter.com/. Open de instellingen van je App en klik op de "
+"“Keys and Access Tokens” tab. Kopieer / Plak hier je “Consumer Key (API "
+"Key)” in het“Twitter API Key” veld. Voor meer gedetailleerde instructies - "
+"raadpleeg het artikel <a target=“_blank” href=“http://supsystic.com/"
+"integrate-membership-twitter/“>hier</a>."
+
+msgid ""
+"To find your Twitter API Secret please login to your Twitter account at "
+"https://apps.twitter.com/. Open the settings of your App and click on \"Keys "
+"and Access Tokens\" tab. Copy / Paste \"Consumer Secret (API Secret)\" into "
+"\"Twitter API Secret\" field here. For more detailed instruction - check "
+"article <a target=\"_blank\" href=\"http://supsystic.com/integrate-"
+"membership-twitter/\">here</a>."
+msgstr ""
+"Om je Twitter API Sleutel te vinden, meld je aan op je  Twitter account via "
+"https://apps.twitter.com/. Open de instellingen van je App en klik op de "
+"“Keys and Access Tokens” tab. Kopieer / Plak hier je “Consumer Key (API "
+"Key)” in het“Twitter API Key” veld. Voor meer gedetailleerde instructies - "
+"raadpleeg het artikel <a target=“_blank” href=“http://supsystic.com/"
+"integrate-membership-twitter/“>hier</a>."
+
+msgid "To:"
+msgstr "Aan:"
+
+msgid "Today"
+msgstr "Vandaag"
+
+msgid "Token response error. You need to reconnect to %s."
+msgstr "Token antwoord fout. Je moet opnieuw connecteren op %s."
+
+msgid "Topics Started"
+msgstr "Topics Gestart"
+
+msgid "Total"
+msgstr "Totaal"
+
+msgid "Total Spent"
+msgstr "Totaal Uitgegeven"
+
+msgid "Total Statistics"
+msgstr "Totaal Statistieken"
+
+msgid "Total Statistics is empty for now."
+msgstr "Totaal Statistieken is leeg nu."
+
+msgid "Town / City"
+msgstr "Gemeente / Stad"
+
+msgid "Transaction Key"
+msgstr "Transactie Sleutel"
+
+msgid "Tune needed settings for frontend appearance of Membership Groups."
+msgstr ""
+"Stel de nodige instellingen in voor het frontend uitzicht van Membership "
+"Groepen."
+
+msgid "Twitter"
+msgstr "Twitter"
+
+msgid "Twitter API Key"
+msgstr "Twitter API Sleutel"
+
+msgid "Twitter API Secret"
+msgstr "Twitter API Geheim"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Unapprove"
+msgstr "Goedkeuring weghalen"
+
+msgid "Unblock"
+msgstr "Deblokkeren"
+
+msgid "Unblock actvity"
+msgstr "Deblokkeer activiteit"
+
+msgid "Unblock group"
+msgstr "Deblokkeer groep"
+
+msgid "Unblock user"
+msgstr "Deblokkeer gebruiker"
+
+msgid "Unfollow"
+msgstr "Volg niet meer"
+
+msgid "Unfriend"
+msgstr "Verwijder vriend"
+
+msgid "Uninstall"
+msgstr "Deïnstalleer"
+
+msgid "Unknown upload error."
+msgstr "Onbekende oplaadfout."
+
+msgid "Unpublished"
+msgstr "Niet gepubliceerd"
+
+msgid "Unread"
+msgstr "Ongelezen"
+
+msgid "Unsubscribe"
+msgstr "Uitschrijven"
+
+msgid "Unsubscribed successfully"
+msgstr "Met succes uitgeschreven"
+
+msgid "Unsupported image format"
+msgstr "Niet ondersteund afbeeldingsformaat"
+
+msgid "Unsupported image format. You can use jpeg or png image format."
+msgstr "Niet-ondersteund afbeeldingformaat. Je kan jpeg of png gebruiken."
+
+msgid "Unsupported template."
+msgstr "Niet ondersteunde template."
+
+msgid "Update"
+msgstr "Bijwerken"
+
+msgid ""
+"Upgrade your Membership site and provide beneficial abilities for clients "
+"with Membership PRO Addons by Supsystic."
+msgstr ""
+"Upgrade je Membership site en voorzie bijkomende mogelijkheden voor klanten "
+"met Membership PRO Add-ons door Supsystic."
+
+msgid "Upload Icon"
+msgstr "Laad Icoon op"
+
+msgid "Upload logo"
+msgstr "Laad logo op"
+
+msgid "Upload photo"
+msgstr "Laad foto op"
+
+msgid "Uploads"
+msgstr "Uploads"
+
+msgid "Use Default Theme Colors"
+msgstr "Gebruik Standaard Thema Kleuren"
+
+msgid "Use HTML for E-mails"
+msgstr "Gebruik HTML voor E-mails"
+
+msgid "Use Profile Avatar"
+msgstr "Gebruik Profiel Avatar"
+
+msgid "Use Profile Cover"
+msgstr "Gebruik Profiel Omslag"
+
+msgid "Use Profile Gravatar"
+msgstr "Gebruik Profiel Gravatar"
+
+msgid "Use your own social network app"
+msgstr "Gebruik je eigen social netwerk app"
+
+msgid "User Display Name"
+msgstr "Schermnaam Gebruiker"
+
+msgid "User ID"
+msgstr "Gebruiker ID"
+
+msgid "User Name"
+msgstr "Gebruikersnaam"
+
+msgid "User Profile"
+msgstr "Gebruikersprofiel"
+
+msgid "User Profile Dynamic Meta Description"
+msgstr "Gebruiker Profiel Dynamishe Meta Beschrijving"
+
+msgid "User Profile Title"
+msgstr "Gebruiker Profiel Titel"
+
+msgid "User Registration"
+msgstr "Gebruiker Registratie"
+
+msgid "User Report"
+msgstr "Gebruiker Rapport"
+
+msgid "User Roles that can use search"
+msgstr "Gebruikersrollen die kunnen zoeken"
+
+msgid "User Roles to Display"
+msgstr "Te Tonen Gebruikersrollen"
+
+msgid "User activated"
+msgstr "Gebruiker geactiveerd"
+
+msgid "User already blocked"
+msgstr "Gebruiker reeds geblokkeerd"
+
+msgid "User already followed"
+msgstr "Gebruiker wordt al gevolgd"
+
+msgid "User already in friends"
+msgstr "Reeds bevriend met deze gebruiker"
+
+msgid "User blocked"
+msgstr "Gebruiker geblokkeerd"
+
+msgid "User does not have permission to delete this group."
+msgstr "Gebruiker heeft geen toelating om deze groep te verwijderen."
+
+msgid "User get role"
+msgstr "Gebruiker krijg rol"
+
+msgid "User is not allowed to edit this order"
+msgstr "Gebruiker heeft geen toelating om deze bestelling te wijzigen"
+
+msgid "User is not blocked"
+msgstr "Gebruiker is niet geblokkeerd"
+
+msgid "User is not follower of this group"
+msgstr "Gebruiker volgt deze groep niet"
+
+msgid "User is not found"
+msgstr "Gebruiker niet gevonden"
+
+msgid "User is not provided."
+msgstr "Gebruiker is niet opgegeven."
+
+msgid "User not found"
+msgstr "Gebruiker niet gevonden"
+
+msgid ""
+"User registration is disabled. To enable go to WP Settings > General and "
+"check box for Membership option."
+msgstr ""
+"Gebruiker registratie staat af. Om op te zetten, ga naar WP Instellingen > "
+"Algemeen en check box voor Lidmaatschap optie."
+
+msgid "User unblocked"
+msgstr "Gebruiker niet meer geblokkeerd"
+
+msgid "User update error"
+msgstr "Gebruiker update fout"
+
+msgid ""
+"User will see this message after subscription in the settings of his "
+"profile, when email with confirmation link was\n"
+"    sent."
+msgstr ""
+"Gebruiker zal na inschrijving een boodschap zien  in de instellingen van "
+"zijn profiel, wanneer een e-mail met bevestigingslink werd\n"
+"    verzonden."
+
+msgid "User with email %s already exists. Skipped."
+msgstr "Gebruiker met e-mail %s bestaat al. Overgeslagen."
+
+msgid "User with id %d is not found"
+msgstr "Gebruiker met id %d werd niet gevonden"
+
+msgid "User with login %s already exists. Skipped."
+msgstr "Gebruiker met login %s bestaat al. Overgeslagen."
+
+msgid "User with this %s e-mail address already exists."
+msgstr "Gebruiker met e-mailadres %s bestaat al."
+
+msgid "User with username %s already exists"
+msgstr "Gebruiker met gebruikersnaam %s bestaat al"
+
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+msgid "Username or E-mail"
+msgstr "Gebruikersnaam of E-mail"
+
+msgid "Username or E-mail is required"
+msgstr "Gebruikersnaam of E-mail is vereist"
+
+msgid "Username or E-mail is required."
+msgstr "Gebruikersnaam of E-mail."
+
+msgid "Username or Email Address"
+msgstr "Gebruikersnaam of E-mailadres"
+
+msgid "Users"
+msgstr "Gebruikers"
+
+msgid "Users profile activity page"
+msgstr "Gebruiker profiel activiteit pagina"
+
+msgid "Users with the chosen role will be shown on \"Members\" tab."
+msgstr ""
+"Gebruikers met de gekozen rol zullen getoond worden op de \"Leden\" tab."
+
+msgid "Vendor account number"
+msgstr "Verkoper account nummer"
+
+msgid "Video Tutorial"
+msgstr "Video Handleiding"
+
+msgid "View"
+msgstr "Bekijk"
+
+msgid "View previous comments"
+msgstr "Bekijk vorige reacties"
+
+msgid "View previous replies"
+msgstr "Bekijk vorige antwoorden"
+
+msgid "Waiting for schedule"
+msgstr "Wachten op planning"
+
+msgid ""
+"Warning! All membership users data will be deleted. This action cannot be "
+"undone!"
+msgstr ""
+"Waarschuwing! Alle lidmaatschap gebruikers zullen gewist worden. Deze actie "
+"is onherroepelijk!"
+
+msgid ""
+"Warning! Some required Membership plugin pages are missing or haven't been "
+"created, you can assign or create them <a href=\"%s\">here</a>"
+msgstr ""
+"Waarschuwing! Sommige vereiste Lidmaatschap plug-in pagina's ontbreken of "
+"werden niet aangemaakt. Je kan ze <a href=\"%s\">hier</a> toewijzen of "
+"aanmaken."
+
+msgid ""
+"We are constantly making improvements of the Membership tool usage for your "
+"maximum comfort and easiness. And now it is the most appropriate moment to "
+"tell you about some options and features of Membership plugin."
+msgstr ""
+"We zijn constant bezig om het gebruik van Lidmaatschap te verbeteren voor "
+"een maximaal comfort en eenvoud. Nu is het meest aangewezen moment om je te "
+"vertellen over een aantal instellingen en functie van de Lidmaatschap plug-"
+"in."
+
+msgid ""
+"We love the plugins that we created and feel responsibility for every our "
+"product. Constantly we are trying to improve something or update the new "
+"features, but sometimes you may have a situation when you need help or have "
+"an issue. We can propose you next kinds of help:"
+msgstr ""
+"We houden van de plug-ins die we gecreëerd hebben en we voelen ons "
+"verantwoordelijk voor elk van onze producten. Constant proberen we iets te "
+"verbeteren of nieuwe functies te updaten, maar soms kom je in een situatie "
+"waarin je hulp nodig hebt of dat je met een probleem zit. We kunnen je "
+"volgende hulp voorstellen:"
+
+msgid "Week"
+msgstr "Week"
+
+msgid "Week(s)"
+msgstr "We(e)k(en)"
+
+msgid "Welcome to the"
+msgstr "Welkom bij de"
+
+msgid "Welcome to {site_name}!"
+msgstr "Welkom bij {site_name}!"
+
+msgid "Well done!"
+msgstr "Goed gedaan!"
+
+msgid ""
+"When this option is activated - users, who want to login to your website, "
+"will be redirected to Membership Login page instead of usual WordPress login "
+"form."
+msgstr ""
+"Wanneer deze instelling actief is, zullen gebruikers die zich willen "
+"aanmelden op je website, doorverwezen worden naar de Lidmaatschap Aanmelding "
+"pagina of naar het gewone Wordpress aanmeldingsformulier."
+
+msgid "When user bought any product assign role:"
+msgstr "Wanneer gebruiker eender welk product kocht, ken volgende rol toe:"
+
+msgid "When user bought specific product: assign role:"
+msgstr "Wanneer gebruiker een specifiek product kocht, ken volgende rol toe:"
+
+msgid "Who can be invited"
+msgstr "Wie kan uitgenodigd worden"
+
+msgid "Who can comment my activity posts."
+msgstr "Wie kan reageren op mijn activiteit berichten."
+
+msgid "Who can invite"
+msgstr "Wie kan uitnodigen"
+
+msgid "Who can post to my profile activity."
+msgstr "Wie kan berichten schrijven op mijn profiel activiteit."
+
+msgid "Who can send me private messages."
+msgstr "Wie kan me privé berichten sturen."
+
+msgid "Who can view about information on my profile."
+msgstr "Wie kan de 'over mij' informatie lezen op mijn profiel."
+
+msgid "Who can view comments on my activity posts."
+msgstr "Wie kan reacties zien op mijn activiteit berichten."
+
+msgid "Who can view my followers."
+msgstr "Wie kan mijn volgers zien."
+
+msgid "Who can view my follows."
+msgstr "Wie kan mijn volgers zien."
+
+msgid "Who can view my friends."
+msgstr "Wie kan mijn vrienden zien."
+
+msgid "Who can view my groups."
+msgstr "Wie kan mijn groepen zien."
+
+msgid "Who can view my posts."
+msgstr "Wie kan mijn berichten zien."
+
+msgid "Who can view my profile activity page."
+msgstr "Wie kan mijn profiel activiteit pagina zien."
+
+msgid "Who can view my profile."
+msgstr "Wie kan mijn profiel zien."
+
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+msgid "WooCommerce (PRO)"
+msgstr "WooCommerce (PRO)"
+
+msgid ""
+"WooCommerce integration is made for those who want to create online shop "
+"inside Membership community."
+msgstr ""
+"WooCommerce integratie is gemaakt voor diegenen die een online winkel willen "
+"creëren binnen de Lidmaatschap gemeenschap."
+
+msgid "Write a comment..."
+msgstr "Schrijf een reactie..."
+
+msgid "Write a message"
+msgstr "Schrijf een boodschap"
+
+msgid "Write a message..."
+msgstr "Schrijf een boodschap..."
+
+msgid "Year(s)"
+msgstr "Jaar"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "You able to use addon but update is disabled"
+msgstr "Je kan de addon gebruiken maar bijwerken staat af"
+
+msgid "You are is blocked by group administrator"
+msgstr "Je bent geblokkeerd door de groep administrator"
+
+msgid "You are not logged-in"
+msgstr "Je bent niet aangemeld"
+
+msgid ""
+"You can import new users as well as data for custom fields.\n"
+"\t\t\t\t\t\tTo do this, you need to specify the required fields in the first "
+"line of your csv file and for next lines data related to these fields."
+msgstr ""
+"Je kan zowel nieuwe gebruikers als gegevens voor aangepaste velden "
+"importeren.\n"
+"\t\t\t\t\t\tOm dit te doen, moet je de vereiste velden opgeven in de eerste "
+"regel van je csv bestand en op de volgende regels de gegevens gerelateerd "
+"aan die velden."
+
+msgid "You can login in to your account here."
+msgstr "Hier kan je je aanmelden op je account."
+
+msgid "You can not delete this map"
+msgstr "Je kan deze map niet verwijderen"
+
+msgid "You don't have any conversations started."
+msgstr "Je hebt nog geen converstaties gestart."
+
+msgid "You don't have permissions to access this user profile."
+msgstr "Je hebt geen toelating om dit gebruikersprofiel te bekijken."
+
+msgid "You don't have unread notifications."
+msgstr "Je hebt geen ongelezen meldingen."
+
+msgid "You have new {friend_follower}"
+msgstr "Je hebt nieuwe {friend_follower}"
+
+msgid ""
+"You have no Contact Form for now. Create your Contact Form or Enable "
+"Membership feature for contact form which you want to use for Contact Us "
+"page."
+msgstr ""
+"Je hebt momenteel geen Contactformulier. Creëer je Contactformulier of zet "
+"de Membership functie aan voor het contactformulier dat je wil gebruiken als "
+"Contacteer Ons pagina."
+
+msgid "You have no Currency for now. %s your first Membership Currency!"
+msgstr "Je hebt momenteel geen Valuta. %s je eerste Membership Valuta!"
+
+msgid ""
+"You have no Galleries for now. Create your Gallery or Enable Membership "
+"feature for galleries which you want to use as presets!."
+msgstr ""
+"Je hebt momenteel geen Galerijen. Creëer je Galerij of zet de Membership "
+"functie aan voor galerijen die je wil gebruiken als voorinstellingen."
+
+msgid ""
+"You have no Google Maps for now. Create your Google Maps  or Enable "
+"Membership feature for Google Maps which you want to use as presets."
+msgstr ""
+"Je hebt momenteel geen Google Maps. Creëer je Google Maps of zet de "
+"Membership functie aan voor Google Maps die je wil gebruiken als "
+"voorinstellingen."
+
+msgid ""
+"You have no Membership Drip for now. Go to any Post / Page or other content "
+"edit on your site - and enable Dripping there."
+msgstr ""
+"Je hebt momenteel geen Membership Drip. Ga naar eender welk(e) Bericht / "
+"Pagina of andere inhoud van je site en zet daar Dripping op."
+
+msgid "You have no Membership Levels for now."
+msgstr "Je hebt nog een Lidmaatschapsniveaus."
+
+msgid "You have no Membership Levels for now. %s your first Membership Level!"
+msgstr ""
+"Je hebt nog een Lidmaatschapsniveaus. %s je eerste Lidmaatschapsniveau!"
+
+msgid ""
+"You have no Membership Levels for now. To protect your content by Membership "
+"Level - %s your first Level."
+msgstr ""
+"Je hebt nog een Lidmaatschapsniveaus. Om je inhoud te beschermen door "
+"Lidmaatschapsniveau - %s je eerste Niveau."
+
+msgid "You have no Orders for now."
+msgstr "Je hebt nog geen Bestellingen."
+
+msgid ""
+"You have no Sliders for now. Create your Slider or Enable Membership feature "
+"for sliders which you want to use as presets!."
+msgstr ""
+"Je hebt momenteel geen Sliders. Creëer je Sliders of zet de Membership "
+"functie aan voor sliders die je wil gebruiken als voorinstellingen."
+
+msgid "You have this Level"
+msgstr "Je hebt dit niveau"
+
+msgid "You just subscribed from this IP"
+msgstr "Je bent geabonneerd vanaf dit IP"
+
+msgid "You must authorize to use Constant Contact features"
+msgstr "Je moet toelating hebben om de Constant Contact functie te gebruiken"
+
+msgid ""
+"You must confirm your account email address. Check your email for "
+"confirmation link."
+msgstr ""
+"Je moet je account e-mail bevestigen. Check je e-mail voor de "
+"bevestigingslink."
+
+msgid "You must enter a username or email address."
+msgstr "Je moet een gebruikersnaam of e-mailadres ingeven."
+
+msgid "You need to install Contact Form by Supsystic to use this feature. "
+msgstr ""
+"Je moet Contact Form by Supsystic installeren om deze functie te gebruiken. "
+
+msgid "You need to install Google Maps Easy to use this feature. "
+msgstr "Je moet Google Maps installeren om deze functie te gebruiken. "
+
+msgid "You need to install Photo Gallery by Supsystic to use this feature. "
+msgstr ""
+"Je moet Photo Gallery by Supsystic installeren om deze functie te gebruiken. "
+
+msgid "You need to install Slider by Supsystic to use this feature. "
+msgstr "Je moet Slider by Supsystic installeren om deze functie te gebruiken. "
+
+msgid ""
+"You need to install and activate WooCommerce plugin to use this feature. "
+msgstr ""
+"Je moet de WooCommerce plug-in installeren en activeren om deze functie te "
+"gebruiken. "
+
+msgid "You will be redirected to next page in few seconds."
+msgstr "Je wordt binnen enkele seconden doorverwezen naar de volgende pagina."
+
+msgid "Your Feedback"
+msgstr "Jouw Feedback"
+
+msgid "Your License Key from your account on"
+msgstr "Je Licentie Sleutel van je account op"
+
+msgid "Your account at {site_name} is now active"
+msgstr "Je account bij {site_name} is nu actief"
+
+msgid "Your account don't have permission to access this page"
+msgstr "Je account heeft geen toelating om deze pagina te benaderen"
+
+msgid "Your account don't have permission to read groups"
+msgstr "Je account heeft geen toelating om groepen te lezen"
+
+msgid "Your account don't have permission to see activity page"
+msgstr "Je account heeft geen toelating om de activiteitenpagina te zien"
+
+msgid "Your account don't have permission to see members page"
+msgstr "Je account heeft geen toelating om de ledenpagina te zien"
+
+msgid "Your account don't have permission to see messages section"
+msgstr "Je account heeft geen toelating om de activiteitenpagina te zien"
+
+msgid "Your account don't have permissions to see activity page"
+msgstr "Je account heeft geen toelating om de activiteitenpagina te zien"
+
+msgid "Your account has been deactivated"
+msgstr "Je account werd gedeactiveerd"
+
+msgid "Your account has been deleted"
+msgstr "Je account werd verwijderd"
+
+msgid "Your account has been deleted."
+msgstr "Je account werd verwijderd."
+
+msgid "Your account has been disabled."
+msgstr "Je account werd bevroren."
+
+msgid "Your account has been rejected"
+msgstr "Je account werd verworpen"
+
+msgid "Your account has been rejected."
+msgstr "Je account werd verworpen."
+
+msgid "Your account is awaiting admin approval."
+msgstr "Je account wacht op admin goedkeuring."
+
+msgid "Your account is pending review"
+msgstr "Je account wordt gecontroleerd"
+
+msgid "Your changes could not be saved"
+msgstr "Je wijzigingen konden niet bewaard worden"
+
+msgid "Your changes has been saved."
+msgstr "Je wijzigingen werden bewaard."
+
+msgid "Your email address, used on checkout procedure on"
+msgstr "Je e-mail adres, gebruikt voor de betalingsprocedure op"
+
+msgid "Your email has been confirmed."
+msgstr "Je e-mail werd bevestigd."
+
+msgid "Your license has expired"
+msgstr "Je licentie is verlopen"
+
+msgid "Your password has been changed."
+msgstr "Je wachtwoord werd gewijzigd."
+
+msgid "Your password has been reset."
+msgstr "Je wachtwoord werd hersteld."
+
+msgid ""
+"Your password reset link appears to be invalid. Please request a new link."
+msgstr ""
+"Je herstel wachtwoord link lijkt ongeldig te zijn. Vraag een nieuwe link."
+
+msgid "Your search returned no results."
+msgstr "Je zoekopdracht leverde geen resultaat op."
+
+msgid ""
+"Your secret key, generated on <a href=\"https://www.google.com/recaptcha/"
+"admin#list\" target=\"_blank\">https://www.google.com/recaptcha/admin#list</"
+"a>."
+msgstr ""
+"Je geheime sleutel, gegenerated opn <a href=\"https://www.google.com/"
+"recaptcha/admin#list\" target=\"_blank\">https://www.google.com/recaptcha/"
+"admin#list</a>."
+
+msgid ""
+"Your site key, generated on <a href=\"https://www.google.com/recaptcha/"
+"admin#list\" target=\"_blank\">https://www.google.com/recaptcha/admin#list</"
+"a>."
+msgstr ""
+"Je site sleutel, gegenerated op <a href=\"https://www.google.com/recaptcha/"
+"admin#list\" target=\"_blank\">https://www.google.com/recaptcha/admin#list</"
+"a>."
+
+msgid "Your {site_name} password has been changed"
+msgstr "Je {site_name} wachtwoord werd gewijzigd"
+
+msgid "[{site_name}] Account deleted"
+msgstr "[{site_name}] Account verwijderd"
+
+msgid "[{site_name}] New user account"
+msgstr "[{site_name}] Nieuwe gebruiker account"
+
+msgid "[{site_name}] New user awaiting review"
+msgstr "[{site_name}] Nieuwe gebruiker wacht op review"
+
+msgid "here"
+msgstr "hier."
+
+msgid "internal support"
+msgstr "interne ondersteuning"
+
+msgid "is loading..."
+msgstr "bezig met laden..."
+
+msgid "is required"
+msgstr "is vereist"
+
+msgid "of"
+msgstr "van"
+
+msgid "per"
+msgstr "per"
+
+msgid "required"
+msgstr "vereist"
+
+msgid "right after"
+msgstr "vlak na"
+
+msgid ""
+"{display_name} has just applied for membership to {site_name} and is waiting "
+"to be reviewed.\n"
+"To review this member please click the following link: <a href="
+"\"{user_profile_link}\">{user_profile_link}</a>\n"
+"Here is the submitted registration form:\n"
+"{submitted_registration}"
+msgstr ""
+"{display_name} heeft net een lidmaatschapsaanvraag ingediend voor "
+"{site_name} en wacht nu op controle.\n"
+"Klik de volgende link om deze gebruiker te controleren: <a href="
+"\"{user_profile_link}\">{user_profile_link}</a>\n"
+"Hier is het ingediende registratieformulier:\n"
+"{submitted_registration}"
+
+msgid ""
+"{display_name} has just created an account on {site_name}.\n"
+"To view their profile click here: <a href="
+"\"{user_profile_link}\">{user_profile_link}</a>\n"
+"Here is the submitted registration form:\n"
+"{submitted_registration}"
+msgstr ""
+"{display_name} heeft net een account gecreëerd op {site_name}.\n"
+"Klik hier om het profiel te zien: <a href="
+"\"{user_profile_link}\">{user_profile_link}</a>\n"
+"Hier is het ingediende registratieformulier:\n"
+"{submitted_registration}"
+
+msgid "{display_name} has just deleted their {site_name} account."
+msgstr "{display_name} heeft net zijn/haar {site_name} account verwijderd."
+
+#~ msgid "%s commented on this."
+#~ msgstr "%s reageerden hierop."
+
+#~ msgid "%s liked this."
+#~ msgstr "%s vond dit leuk."
+
+#~ msgid "Admin"
+#~ msgstr "Beheerder"
+
+#~ msgid "Bottom"
+#~ msgstr "Onder"
+
+#~ msgid "Input Text Color"
+#~ msgstr "Geef Tekstkleur"
+
+#~ msgid "Label Text Color"
+#~ msgstr "Label Tekstkleur"
+
+#~ msgid "Left"
+#~ msgstr "Links"
+
+#~ msgid "Login Maximum Width"
+#~ msgstr "Maximum Breedte Login"
+
+#~ msgid "No supported plugins is found. Currently we support:"
+#~ msgstr "Geen ondersteunde plug-ins gevonden. Momenteel ondersteunen we:"
+
+#~ msgid "Notififcations"
+#~ msgstr "Kennisgevingen"
+
+#~ msgid "Off"
+#~ msgstr "Uit"
+
+#~ msgid "Primary Button Text Color"
+#~ msgstr "Primaire Knop Tekst Kleur"
+
+#~ msgid "Profile Area Maximum Width"
+#~ msgstr "Maximale Breedte Profielgebied"
+
+#~ msgid "Profile Base Background Color"
+#~ msgstr "Profiel Basis Achtergrondkleur"
+
+#~ msgid "Profile Cover Photos"
+#~ msgstr "Profiel Omslag Foto's"
+
+#~ msgid "Profile Field Icons"
+#~ msgstr "Profielveld Iconen"
+
+#~ msgid "Profile Header Icon Link Color"
+#~ msgstr "Profielhoofding Icoon Link Kleur"
+
+#~ msgid "Profile Header Icon Link Hover Color"
+#~ msgstr "Profielhoofding Icoon Link Hover Kleur"
+
+#~ msgid "Profile Header Link Color"
+#~ msgstr "Profielhoofding Link Kleur"
+
+#~ msgid "Profile Header Link Hover Color"
+#~ msgstr "Profielhoofding Link Hover Kleur"
+
+#~ msgid "Profile Header Menu Position"
+#~ msgstr "Profielhoofding Menu Positie"
+
+#~ msgid "Profile Header Meta Text Icon"
+#~ msgstr "Profielhoofding Meta Tekst Icoon"
+
+#~ msgid "Profile Primary Button Text"
+#~ msgstr "Profiel Primaire Knop Tekst"
+
+#~ msgid "Profile Secondary Button"
+#~ msgstr "Profiel Secundaire Knop"
+
+#~ msgid "Profile Secondary Button Text"
+#~ msgstr "Profiel Secundaire Knop tekst"
+
+#~ msgid "Registration Default Role"
+#~ msgstr "Registratie Standaard Rol"
+
+#~ msgid "Registration Field Icons"
+#~ msgstr "Registratie Veldiconen"
+
+#~ msgid "Registration Secondary Button"
+#~ msgstr "Registratie Tweede Knop"
+
+#~ msgid "Registration Secondary Button Text"
+#~ msgstr "Registratie Tweede Knop Tekst"
+
+#~ msgid "Registration Secondary Button URL"
+#~ msgstr "Registratie Tweede Knop URL"
+
+#~ msgid "Secondary Button Text Color"
+#~ msgstr "Secundaire Knop Tekst Kleur"
+
+#~ msgid "Show a custom message if profile is empty"
+#~ msgstr "Toon een aangepaste boodschap als het profiel leeg is"
+
+#~ msgid "Show inside text field"
+#~ msgstr "Toon inside tekst veld"
+
+#~ msgid "Show social links in profile header"
+#~ msgstr "Toon sociale links in profielhoofding"
+
+#~ msgid "Show user description in header"
+#~ msgstr "Toon gebruikerbeschrijving in hoofding"
+
+#~ msgid "Show with label"
+#~ msgstr "Toon met label"
+
+#~ msgid "There were some errors with your submission"
+#~ msgstr "Er waren fouten bij je indiening"
+
+#~ msgid "User"
+#~ msgstr "Gebruiker"

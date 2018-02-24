@@ -1,0 +1,83 @@
+{% extends "@base/layouts/backend.twig" %}
+{% import "@base/macros/options.twig" as options %}
+{% import "@base/macros/tooltips-templates.twig" as tooltips %}
+
+{% block mainHeader %}
+	<div class="sc-header">
+		<h2>{{ translate('Forum') }}</h2>
+		<button data-save-settings data-item="forum" class="save-settings sc-button icon-button primary">
+			<i class="fa fa-save"></i>
+			<span>{{ translate('Save Settings') }}</span>
+		</button>
+	</div>
+{% endblock %}
+
+{% block main %}
+	
+	{% import _self as f %}
+	<div class="sc-tabs-container">
+		<div class="sc-tab-content active" data-tab="forum">
+			<div class="mp-options">
+				<div class="row">
+					<div class="col-md-12">
+						
+						{{ options.radioRow(translate('Enable Forum Tab'),
+						[{
+							'label': translate('Yes'),
+							'name': 'enable-forum-tab',
+							'value': 'yes',
+							'checked': settings['enable-forum-tab'] == 'yes'
+						},
+						{
+							'label': translate('No'),
+							'name': 'enable-forum-tab',
+							'value': 'no',
+							'checked': settings['enable-forum-tab'] == 'no'
+						}],
+						'enable-forum-tab'
+						) }}
+						
+						
+						{{ options.radioRow(translate('Replace bbPress profile link with link to Membership profile'),
+						[{
+							'label': translate('Yes'),
+							'name': 'replace-profile-url',
+							'value': 'yes',
+							'checked': settings['replace-profile-url'] == 'yes'
+						},
+						{
+							'label': translate('No'),
+							'name': 'replace-profile-url',
+							'value': 'no',
+							'checked': settings['replace-profile-url'] == 'no'
+						}],
+						'replace-profile-url'
+						) }}
+						
+						
+						{% set _roles = [{
+						'title': translate('All'),
+						'value': 'all',
+						'selected': 'all' in settings['roles-who-can-have-forum-tab'],
+						}] %}
+						
+						{% for value, role in roles %}
+							{% set _roles = _roles|merge([{
+							'title': role.name,
+							'value': role.id,
+							'selected': role.id in settings['roles-who-can-have-forum-tab'],
+							}]) %}
+						{% endfor %}
+						
+						{{ options.multipleSelectRow(translate('Roles who can have forum tab'),
+						_roles,
+						'roles-who-can-have-forum-tab',
+						'roles-who-can-have-forum-tab'
+						) }}
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

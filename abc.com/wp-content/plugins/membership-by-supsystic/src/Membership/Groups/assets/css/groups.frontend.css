@@ -1,0 +1,252 @@
+.mp-cover-container {
+	position: relative;
+}
+
+.mp-cover {
+	background: #444;
+	position: relative
+}
+
+.mp-cover-container.crop-action .mp-crop-cover-action {
+    display: block;
+}
+
+.mp-cover-container.crop-action .mp-update-cover,
+.mp-cover-container .mp-crop-cover-action {
+    display: none;
+}
+
+
+.mp-update-cover, .mp-crop-cover-action {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	padding: 0 5px;
+}
+
+.mp-update-cover i {
+	transition: all 0.1s linear;
+	text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
+	color: #f1f1f1;
+}
+
+
+.mp-cover-username {
+	position: absolute;
+	left: 200px;
+	bottom: 10px;
+	font-size: 20px;
+	color: white;
+}
+
+.mp-logo {
+	float: left;
+	width: 160px;
+	position: absolute;
+	height: 160px;
+    top: -140px;
+	left: 10px;
+    padding: 5px;
+    background: white;
+    border-radius: 5px;
+}
+
+.mp-logo-container {
+	background: #fff;
+	width: 160px;
+	position: relative;
+}
+
+.mp-update-logo, .mp-crop-avatar-action {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	padding: 0 5px;
+}
+
+.mp-logo:hover .mp-update-logo-overlay {
+	display: table;
+}
+
+.mp-update-logo-overlay {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+}
+
+.mp-update-logo-overlay span {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #fafafa;
+}
+
+.mp-logo .dropdown.item {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.mp-logo .dropdown.item i {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.mp-logo i {
+	transition: all 0.1s linear;
+	text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
+	color: #f1f1f1;
+}
+
+.mp-logo-modal-image {
+	text-align: center;
+}
+
+.mp-logo-modal-image img {
+	min-height: 400px;
+	max-height: 400px;
+}
+
+.mp-group-display-name {
+	position: absolute;
+    left: 195px;
+    bottom: 10px;
+    font-size: 22px;
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0,0,0,.87);
+}
+
+.mp-group-action-menu .menu .dropdown.item > i {
+    margin: 0;
+}
+
+.mp-group-action-menu .menu .dropdown .menu {
+    font-size: 14px;
+}
+
+#invite-administrators-modal .mp-user-card [data-action="cancel-invitation"],
+#invite-users-modal .mp-user-card  [data-action="cancel-invitation"] {
+    display: none;
+}
+
+#invite-administrators-modal .mp-user-card [data-action="invite-user"] {
+    display: none;
+}
+
+#invite-users-modal .mp-user-card [data-action="invite-administrator"] {
+    display: none;
+}
+
+#invite-users-modal .mp-user-card.invited [data-action="cancel-invitation"],
+#invite-administrators-modal .mp-user-card.invited [data-action="cancel-invitation"] {
+    display: inline-block;
+}
+
+#invite-users-modal .mp-user-card.invited [data-action="invite-user"] {
+    display: none;
+}
+
+#invite-administrators-modal .mp-user-card.invited [data-action="invite-administrator"] {
+    display: none;
+}
+
+#mp-group .mp-cover-container + .mp-group-nav-menu {
+    margin-top: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+.mp-create-group-modal .multiple.dropdown > .image.label {
+	padding: .5833em .833em .5833em .5em;
+	font-size: .78571429rem;
+}
+
+.mp-create-group-modal .dropdown-icon-show {
+	display: block;
+}
+
+.mp-create-group-modal .dropdown-icon {
+	display: none;
+}
+
+.mp-group-add-tag-button {
+	padding: .78571429em 1em!important;
+}
+
+@media only screen and (max-width: 392px)
+{
+	.mp-group-display-name {
+		left: 120px;
+		bottom: 0;
+		font-size: 16px;
+	}
+
+	.mp-update-cover, .mp-crop-cover-action {
+		bottom: 0;
+	}
+
+	.mp-avatar {
+		top: -72px;
+	}
+}
+
+@media only screen and (max-width: 460px)
+{
+	.mp-logo {
+		width: 100px;
+		height: 100px;
+		top: -72px;
+	}
+
+	.mp-group-display-name {
+		left: 120px;
+	}
+
+	.mp-update-cover, .mp-crop-cover-action {
+		right: 0px;
+	}
+}
+
+.mp-friend-action {
+	margin: 10px!important;
+}
+
+.invite-users-input {
+	min-width: 100px;
+}
+
+#create-group-modal .multiple.dropdown > .image.label {
+    padding: 0.6em 0.5em;
+    font-size: 14px;
+    margin: .14285714rem .28571429rem .14285714rem 0;
+}
+
+#create-group-modal input.search {
+    padding: 0;
+    margin: .4em 0 .4em .4em;
+    width: 2.2em;
+    line-height: 1.21428571em;
+}
+
+.tags-container .ui.label {
+    margin-bottom: .5em;
+}
+
+#invite-users-modal .mp-user-card .header img {
+	min-height: 100px;
+}

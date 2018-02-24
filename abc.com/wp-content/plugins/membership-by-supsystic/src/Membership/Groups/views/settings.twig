@@ -1,0 +1,213 @@
+{% extends '@groups/group.twig' %}
+
+{% block content %}
+	<div class="mp-group-settings">
+		<div class="ui basic vertical segment">
+			<div class="ui secondary pointing menu settings-tabs">
+				<a class="active item" data-tab="main">{{ translate('Main') }}</a>
+				{% if requestedGroup.isCurrentUserCreator == 1 %}
+					<a class="item" data-tab="privacy">{{ translate('Privacy') }}</a>
+				{% endif %}
+				<a class="item" data-tab="tags">{{ translate('Tags') }}</a>
+			</div>
+		</div>
+		
+		<div class="ui active tab" data-tab="main">
+			<div class="ui form basic vertical segment group-settings-form">
+				<h3 class="ui header">{{ translate('Group settings') }}</h3>
+				<div class="field">
+					<label>{{ translate('Group Name') }}</label>
+					 <input type="text" name="name" value="{{ requestedGroup.name }}" placeholder="Group Name">
+				</div>
+				<div class="field">
+					<label>{{ translate('Group Description') }}</label>
+					<textarea max="2000" rows="2" name="description" placeholder="{{ translate('Group Description') }}">{{ requestedGroup.description }}</textarea>
+				</div>
+				<div class="field">
+					<label>{{ translate('Group Category') }}</label>
+					<select name="category">
+						<option value="0">{{ translate('None') }}</option>
+						{% if groupCategoryList|length %}
+							{% for oneGcItem in groupCategoryList %}
+								<option value="{{ oneGcItem['id'] }}" {% if oneGcItem['id'] == requestedGroup['category_id'] %}{{ 'selected="selected"' }}{% endif %}>{{ oneGcItem['name'] }}</option>
+							{% endfor %}
+						{% endif %}
+					</select>
+				</div>
+				
+				<div class="field">
+					<button class="ui primary mini button update-button">{{ translate('Update') }}</button>
+				</div>
+			</div>
+
+			{% if requestedGroup.isCurrentUserCreator == 1 %}
+				<div class="ui form basic vertical segment">
+					<h3 class="ui header">{{ translate('Group deletion') }}</h3>
+					<div class="field">
+						<div class="field">
+							<div class="ui checkbox">
+								<input type="checkbox" id="delete-confirmation" class="hidden confirm-deletion">
+								<label for="delete-confirmation">{{ translate('Confirm deletion (All group data will be deleted and cannot be restored)') }}</label>
+							</div>
+						</div>
+						<button class="ui button negative mini confirm-deletion-button" style="display: none">{{ translate('Delete group') }}</button>
+					</div>
+
+				</div>
+			{% endif %}
+		</div>
+		{% if requestedGroup.isCurrentUserCreator == 1 %}
+			<div class="ui tab" data-tab="privacy">
+				<div class="ui form vertical segment privacy-settings">
+					<div class="field">
+						<label>{{ translate('Community type') }}</label>
+
+						{% set typeOptions = {
+							'open': translate('Open'),
+							'closed': translate('Closed'),
+							'private': translate('Private'),
+						} %}
+
+						<select class="ui dropdown" name="type">
+							{% for option, title in typeOptions %}
+								<option
+									value="{{ option }}"
+									{% if requestedGroup.settings.type == option %} selected{% endif %}
+								>{{ title }}</option>
+							{% endfor %}
+						</select>
+
+					</div>
+					<div class="field">
+						<label>{{ translate('Activity viewing') }}</label>
+
+						{% set readActivityOptions = {
+							'all': translate('All users can view group activity'),
+							'members-only': translate('Group members only can view activity'),
+						} %}
+
+						<select class="ui dropdown" name="read-activity">
+							{% for option, title in readActivityOptions %}
+								<option value="{{ option }}"
+										{% if requestedGroup.settings['read-activity'] == option %} selected{% endif %}
+								>{{ title }}</option>
+							{% endfor %}
+						</select>
+					</div>
+					<div class="field">
+						<label>{{ translate('Activity post writing') }}</label>
+
+						{% set postActivityOptions = {
+							'all': translate('All users can write posts'),
+							'members-only': translate('Group members only can write posts'),
+							'administrators': translate('Administrators only can write posts'),
+						} %}
+
+						<select class="ui dropdown"  name="post-activity">
+							{% for option, title in postActivityOptions %}
+								<option
+									value="{{ option }}"
+									{% if requestedGroup.settings['post-activity'] == option %} selected{% endif %}
+								>{{ title }}</option>
+							{% endfor %}
+						</select>
+
+					</div>
+					<div class="field">
+						<label>{{ translate('Activity commenting') }}</label>
+
+						{% set commentActivityOptions = {
+							'all': translate('All users can comment'),
+							'members-only': translate('Group members only can comment'),
+							'administrators': translate('Administrators only can comment'),
+						} %}
+
+						<select class="ui dropdown" name="post-comments">
+							{% for option, title in commentActivityOptions %}
+								<option
+									value="{{ option }}"
+									{% if requestedGroup.settings['post-comments'] == option %} selected{% endif %}
+								>{{ title }}</option>
+							{% endfor %}
+						</select>
+					</div>
+					<div class="field">
+						<label>{{ translate('Invitations') }}</label>
+
+						{% set invitationOptions = {
+							'members-only': translate('All group members can send invitations'),
+							'administrators': translate('Only group administrators can send invitations'),
+						} %}
+
+						<select class="ui dropdown" name="invitations">
+							{% for option, title in invitationOptions %}
+								<option
+									value="{{ option }}"
+									{% if requestedGroup.settings['invitations'] == option %} selected{% endif %}
+								>{{ title }}</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>
+			</div>
+		{% endif %}
+		<div class="ui tab" data-tab="tags">
+			<div class="ui basic vertical segment">
+				<div class="ui fluid right labeled left icon action small input add-tag-input-container">
+					<i class="tags icon"></i>
+					<input type="text" placeholder="Enter new tag" class="add-tag-input">
+					<button class="ui icon button add-tag-button">
+						<i class="add icon"></i>
+					</button>
+				</div>
+			</div>
+			
+			<div class="ui basic vertical segment">
+				<div class="tags-container">
+					{% if requestedGroup.tags %}
+						{% include '@groups/partials/tags-list.twig' with {'tags': requestedGroup.tags} %}
+					{% else %}
+						{{ translate('Tags for this group have not been added yet.') }}
+					{% endif %}
+					
+				</div>
+			</div>
+
+			<!--
+			<div class="ui segment">
+				<div class="content ui labels">
+					<div class="ui grid">
+						<div class="sixteen wide column">
+							<i class="tags icon"></i>
+							<tag :tag="tag" v-for="tag in tags"></tag>
+						</div>
+						<div class="sixteen wide column">
+							<button class="item mini ui button mp-group-add-tag-button" v-if="isAdmin" @click="addTag">
+								{{ translate('Add tag') }}
+							</button>
+						</div>
+					</div>
+					<div class="ui small modal mp-add-tag">
+						<i class="close icon"></i>
+						<div class="header">
+							{{ translate('Add new tag') }}
+						</div>
+						<div class="content">
+							<div class="ui form">
+								<div class="field">
+									<label>{{ translate('New tag') }}</label>
+									<input type="text" v-model="newTag">
+								</div>
+							</div>
+						</div>
+						<div class="actions">
+							<button class="ui button secondary cancel">Cancel</button>
+							<button class="ui positive primary button" :class="{'disabled': !newTag.length }">{{ translate('Add') }}</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			-->
+		</div>
+	</div>
+{% endblock %}

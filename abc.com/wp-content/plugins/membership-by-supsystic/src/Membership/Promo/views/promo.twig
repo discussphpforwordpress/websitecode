@@ -1,0 +1,43 @@
+
+<div class="supsystic-item supsystic-panel supsystic-plugin supsystic-plugin-promo">
+    <div class="container-fluid" style="background: white; margin: 1.4em; padding: 1em 3em 3em; font-size: 1.3em">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="header">{{ translate('Welcome to the') }} {{ plugin_name }} v {{ plugin_version }}</h2>
+                <p>{{ translate('Thank you for choosing our plugin! We are happy you like Membership plugin by Supsystic and You will get our best work!') }}</p>
+                <p>{{ translate('We are constantly making improvements of the Membership tool usage for your maximum comfort and easiness. And now it is the most appropriate moment to tell you about some options and features of Membership plugin.') }}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>{{ translate('A small guide for the first-time user') }}</h3>
+                         <p>{{ translate('Indeed, Membership is a very easy-to-use plugin and it consists of various exciting options at the same time. So after you close this page we will demonstrate you the main of them with step-by-step tutorial. For the first time we will help you to tune your Membership, but if you will need our help, please, contact us via our %s.')|format('<a href="https://supsystic.com/contact-us/">' ~ translate('internal support') ~ '</a>')|raw }}
+						</p>
+	                    <h3>{{ environment.translate('Video Tutorial') }}</h3>
+	                    <div class="embed-responsive embed-responsive-16by9">
+		                    <iframe class="embed-responsive-item" allowfullscreen
+		                            src="https://www.youtube.com/embed/q4zFNEPsv1o">
+		                    </iframe>
+	                    </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>{{ translate('Support part') }}</h3>
+                        <p>{{ translate('We love the plugins that we created and feel responsibility for every our product. Constantly we are trying to improve something or update the new features, but sometimes you may have a situation when you need help or have an issue. We can propose you next kinds of help:') }} </p>
+                        <ul>
+                            <li>{{ translate('Contact us through %s if you have some question, offer or wish.')|format('<a href="//supsystic.com/forum/membership-plugin/" target="_blank">' ~ translate('Supsystic Forum') ~ '</a>')|raw }} </li>
+                            <li>{{ translate('If, unfortunately, you have some problem - we are always ready to help you in our %s.')|format('<a href="https://supsystic.com/contact-us/">' ~ translate('internal support') ~ '</a>')|raw }} </li>
+                        </ul>
+                        <p>{{ translate('Feel free to contact us and don\'t worry, everything will be cool!') }}</p>
+	                    <a href="{{ start_url }}" style="font-size: 20px" class="button button-primary button-hero lets-start-button">
+		                    {{ environment.translate("Let's Start!") }}
+	                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

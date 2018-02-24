@@ -1,0 +1,15 @@
+{% for reply in entries %}
+	<div class="item mp-entry" data-id="{{ reply.id }}">
+		<div class="content">
+			<a class="header" href="{{ reply.forumLink }}">{{ reply.forumTitle }}</a> >
+			<a class="header" href="{{ reply.topicLink }}">{{ reply.topicTitle }}</a>
+			<div class="meta">
+				<small class="date">{{ reply.date }}</small>
+			</div>
+			<div class="extra">
+				{% set moreLink %}<a href="{{ reply.topicLink }}#topic-{{ reply.id }}" target="_blank">{{ translate('Read more') }}</a>{% endset %}
+				<div>{{ truncate(reply.content, 300) }} {{ moreLink|raw }}</div>
+			</div>
+		</div>
+	</div>
+{% endfor %}

@@ -1,0 +1,37 @@
+{% extends "@base/layouts/backend.twig" %}
+
+{% block head %}
+    <div class="sc-tabs">
+        {{ environment.dispatcher.dispatch('adminExtensionTabItem') }}
+    {% for addon in notInstalledAddons %}
+        <a href="#" class="tab" data-target="{{ addon.id }}">
+            <i class="fa fa-cog"></i>{{ addon.title }}
+        </a>
+    {% endfor %}
+    </div>
+{% endblock %}
+
+{% block mainHeader %}
+    <div class="sc-header">
+        {{ environment.dispatcher.dispatch('adminExtensionHeaderItem') }}
+        {% for addon in notInstalledAddons %}
+        <div class="sc-header-item" data-item="{{ addon.id }}">
+            <a class="sc-get-addon" target="_blank"
+               href="{{ getMembershipExtensionUrl(addon.promo_id) }}"><button class="sc-button primary">{{ translate('Get PRO Addon') }}</button></a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div class="sc-tabs-container">
+        {{ environment.dispatcher.dispatch('adminExtensionMainItem') }}
+    {% for addon in notInstalledAddons %}
+        <div class="sc-tab-content" data-tab="{{ addon.id }}">
+            <a target="_blank" href="{{ getMembershipExtensionUrl(addon.promo_id) }}">
+                <img src="{{ assets('addons', addon.promo_image) }}" title="{{ translate('Get Pro') }}">
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

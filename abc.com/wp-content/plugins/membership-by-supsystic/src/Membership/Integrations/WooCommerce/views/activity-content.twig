@@ -1,0 +1,27 @@
+{% raw %}
+    <div v-if="activity.type == 'woocommerce_product'">
+        <div class="ui items">
+            <div class="item">
+                <div class="image">
+                    {{{ activity.product.image }}}
+                </div>
+                <div class="content">
+                    <a class="header" href="{{ activity.product.permalink }}">{{ activity.product.title }}</a>
+                    <div class="meta">
+                        <div class="ui green large label">{{{ activity.product.currency }}}{{ activity.product.price }}</div>
+                    </div>
+                    <div class="description">
+                        <p>{{ activity.product.description }}</p>
+                    </div>
+                    <div class="extra">
+                        {{{  activity.product.buyButton }}}
+
+                        <a target="_blank" href="{{{ activity.product.buyUrl }}}">
+                            <div class="ui primary icon button"><i class="shop icon"></i> Buy now</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endraw %}

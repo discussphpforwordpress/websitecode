@@ -1,0 +1,62 @@
+<style type="text/css">
+	.mbsDeactivateDescShell {
+		display: none;
+		margin-left: 25px;
+		margin-top: 5px;
+	}
+	.mbsDeactivateReasonShell {
+		display: block;
+		margin-bottom: 10px;
+	}
+	#mbsDeactivateWnd input[type="text"],
+	#mbsDeactivateWnd textarea {
+		width: 100%;
+	}
+	#mbsDeactivateWnd h4 {
+		line-height: 1.53em;
+	}
+	#mbsDeactivateWnd + .ui-dialog-buttonpane .ui-dialog-buttonset {
+		float: none;
+	}
+	.mbsDeactivateSkipDataBtn {
+		float: right;
+		margin-top: 15px;
+		text-decoration: none;
+		color: #777 !important;
+	}
+</style>
+<div id="mbsDeactivateWnd" style="display: none;" title="{{ environment.translate('Your Feedback') }}">
+	<h4>{{ environment.translate('If you have a moment, please share why you are deactivating Membership by Supsystic') }}</h4>
+	<form id="mbsDeactivateForm">
+		<label class="mbsDeactivateReasonShell">
+			<input type="radio" name="deactivate_reason" value="not_working" />
+			{{ environment.translate("Couldn\'t get the plugin to work") }}
+			<div class="mbsDeactivateDescShell">
+				{{ environment.translate('If you have a question, <a href="%s" target="_blank">contact us</a> and will do our best to help you') | format('https://supsystic.com/contact-us/?utm_source=plugin&utm_medium=deactivated_contact&utm_campaign=membership') | raw }}
+			</div>
+		</label>
+		<label class="mbsDeactivateReasonShell">
+			<input type="radio" name="deactivate_reason" value="found_better" />
+			{{ environment.translate('I found a better plugin') }}
+			<div class="mbsDeactivateDescShell">
+				<input type="text" name="better_plugin" placeholder="{{ environment.translate("If it\'s possible, specify plugin name") }}" />
+			</div>
+		</label>
+		<label class="mbsDeactivateReasonShell">
+			<input type="radio" name="deactivate_reason" value="not_need" />
+			{{ environment.translate('I no longer need the plugin') }}
+		</label>
+		<label class="mbsDeactivateReasonShell">
+			<input type="radio" name="deactivate_reason" value="temporary" />
+			{{ environment.translate("It\'s a temporary deactivation") }}
+		</label>
+		<label class="mbsDeactivateReasonShell">
+			<input type="radio" name="deactivate_reason" value="other" />
+			{{ environment.translate('Other') }}
+			<div class="mbsDeactivateDescShell">
+				<input type="text" name="other" placeholder="{{ environment.translate("What is the reason?") }}" />
+			</div>
+		</label>
+	</form>
+	<a href="" class="mbsDeactivateSkipDataBtn">{{ environment.translate('Skip & Deactivate') }}</a>
+</div>

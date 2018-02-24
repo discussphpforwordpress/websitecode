@@ -1,0 +1,806 @@
+{% extends "@base/layouts/backend.twig" %}
+{% import "@base/macros/options.twig" as options %}
+{% import "@base/macros/tooltips-templates.twig" as tooltips %}
+{% import '@base/macros/pagination.twig' as pagination %}
+
+{% macro fieldsList() %}
+	{% set fields = {
+		'text': translate('Text'),
+		'email': translate('Email'),
+		'password': translate('Password'),
+		'numeric': translate('Numeric'),
+		'date': translate('Date'),
+		'scroll': translate('Scroll List'),
+		'drop': translate('Dropdown List'),
+		'radio': translate('Radio Button'),
+		'checkbox': translate('Checkbox'),
+		'g-recaptcha-response': translate('Google ReCaptcha'),
+	} %}
+	{#		'media': translate('Media'), #}
+	{% for value, title in fields %}
+	    <option value="{{ value }}">{{ title }}</option>
+	{% endfor %}
+{% endmacro %}
+
+{% block head %}
+	<div class="sc-tabs">
+		<a href="#" class="tab active" data-target="main">
+			<i class="fa fa-user"></i>{{ translate('Main') }}
+		</a>
+		<a href="#" class="tab" data-target="fields">
+			<i class="fa fa-list-alt"></i>{{ translate('User Fields') }}
+		</a>
+		{#<button data-save-settings class="save-settings sc-button icon-button primary">#}
+			{#<i class="fa fa-save"></i>#}
+			{#<span>{{ translate('Save Settings') }}</span>#}
+		{#</button>#}
+	</div>
+{% endblock %}
+
+{% block main %}
+
+    <link rel="stylesheet" type="text/css" href="{{ assets('base', 'lib/cropper/cropper.min.css') }}">
+    <script async type="text/javascript" src="{{ assets('base', 'lib/cropper/cropper.min.js') }}"></script>
+
+	{% import _self as f %}
+	<div class="sc-tabs-container">
+		<div class="sc-tab-content mbsProfileTabMenu active" data-tab="main">
+			
+			<div class="sc-header">
+				<h2>{{ translate('Profile') }}</h2>
+				<button data-save-settings class="save-settings sc-button icon-button primary">
+					<i class="fa fa-save"></i>
+					<span>{{ translate('Save Settings') }}</span>
+				</button>
+			</div>
+			
+			<div class="mp-options">
+				<div class="row">
+					<div class="col-md-12">
+					
+					{% set _roles = [] %}
+	
+					{% for value, role in roles %}
+						{% set _roles = _roles|merge([{
+							'title': role.name,
+							'value': role.id,
+							'selected': settings['default-role'] == role.id,
+						}]) %}
+					{% endfor %}
+
+					{{ options.selectRow(translate('Default User role'), 
+						_roles,
+						'default-role',
+						'default-role',
+						null,
+						{'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Use Profile Avatar'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'use-avatar',
+							'value': 'yes',
+							'checked': settings['use-avatar'] == 'yes'
+						},
+						{
+							'label': translate('No'),
+							'name': 'use-avatar',
+							'value': 'no',
+							'checked': settings['use-avatar'] == 'no'
+						}], 
+						'use-avatar',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					{{ options.radioRow(translate('Use Profile Gravatar'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'use-gravatar',
+							'value': 'yes',
+							'checked': settings['use-gravatar'] == 'yes'
+						},
+						{
+							'label': translate('No'),
+							'name': 'use-gravatar',
+							'value': 'no',
+							'checked': settings['use-gravatar'] == 'no'
+						}], 
+						'use-gravatar',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					<div class="mp-option" id="avatar-size">
+						<div class="row">
+							<div class="col-md-4 mbsThinCol">
+								{{ options.label(translate('Profile Avatar Size')) }}
+							</div>
+							<div class="col-md-8">
+								<div class="mp-option-sizes-input">
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings['avatar-size'].width }}" name="avatar-size[width]">
+									</div>
+									<span>x</span>
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings['avatar-size'].height }}" name="avatar-size[height]">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mp-option" id="avatar-large-size">
+						<div class="row">
+							<div class="col-md-4 mbsThinCol">
+								{{ options.label(translate('Avatar Thumbnail Large Size')) }}
+							</div>
+							<div class="col-md-8">
+								<div class="mp-option-sizes-input">
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings['avatar-large-size'].width }}" name="avatar-large-size[width]">
+									</div>
+									<span>x</span>
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings['avatar-large-size'].height }}" name="avatar-large-size[height]">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mp-option" id="avatar-medium-size">
+						<div class="row">
+							<div class="col-md-4 mbsThinCol">
+								{{ options.label(translate('Avatar Thumbnail Medium Size')) }}
+							</div>
+							<div class="col-md-8">
+								<div class="mp-option-sizes-input">
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings['avatar-medium-size'].width }}" name="avatar-medium-size[width]">
+									</div>
+									<span>x</span>
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings['avatar-medium-size'].height }}" name="avatar-medium-size[height]">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mp-option" id="avatar-small-size">
+						<div class="row">
+							<div class="col-md-4 mbsThinCol">
+								{{ options.label(translate('Avatar Thumbnail Small Size')) }}
+							</div>
+							<div class="col-md-8">
+								<div class="mp-option-sizes-input">
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings['avatar-small-size'].width }}" name="avatar-small-size[width]">
+									</div>
+									<span>x</span>
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings['avatar-small-size'].height }}" name="avatar-small-size[height]">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						
+
+                    {% set defaultAvatar = assets('users', 'images/user.jpg', false) %}
+
+					<div class="mp-option" id="default-avatar">
+						<div class="row">
+							<div class="col-md-4 mbsThinCol">
+								{{ options.label(translate('Default Avatar Image')) }}
+							</div>
+							<div class="col-md-8">
+								<div class="mp-default-image">
+									<img style="max-width:50px;max-height: 50px;"
+										src="{{ settings['default-avatar'] }}"
+									>
+									<button class="mp-option-button sc-button primary mp-change">{{ translate('Change') }}</button>
+									<button class="mp-option-button sc-button primary mp-set-to-default"
+										{% if defaultAvatar == settings['default-avatar'] or defaultAvatar == settings['default-avatar-source']  %}
+											style="display: none" 
+										{% endif %}
+									>{{ translate('Set to default') }}</button>
+									<input
+										type="hidden"
+										name="default-avatar"
+										value="{{ settings['default-avatar'] }}"
+									>
+                                    <input
+                                            type="hidden"
+                                            name="default-avatar-large"
+                                            value="{{ settings['default-avatar-large'] }}"
+                                    >
+                                    <input
+                                            type="hidden"
+                                            name="default-avatar-medium"
+                                            value="{{ settings['default-avatar-medium'] }}"
+                                    >
+                                    <input
+                                            type="hidden"
+                                            name="default-avatar-small"
+                                            value="{{ settings['default-avatar-small'] }}"
+                                    >
+                                    <input
+                                            type="hidden"
+                                            name="default-avatar-source"
+                                            data-default-width-input-name="avatar-size[width]"
+                                            data-default-height-input-name="avatar-size[height]"
+                                            data-default-crop-input-name="default-avatar-crop-data"
+                                            data-default-image="{{ defaultAvatar }}"
+                                            value="{{ settings['default-avatar-source'] }}"
+                                    >
+                                    <input
+                                            type="hidden"
+                                            name="default-avatar-crop-data"
+                                            value="{{ settings['default-avatar-crop-data'] }}"
+                                    >
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					{{ options.radioRow(translate('Use Profile Cover'), 
+						[{
+							'label': translate('Yes'),
+							'name': 'use-cover',
+							'value': 'yes',
+							'checked': settings['use-cover'] == 'yes'
+						},
+						{
+							'label': translate('No'),
+							'name': 'use-cover',
+							'value': 'no',
+							'checked': settings['use-cover'] == 'no'
+						}], 
+						'use-cover',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+					<div class="mp-option" id="cover-size">
+						<div class="row">
+							<div class="col-md-4 mbsThinCol">
+								{{ options.label(translate('Profile Cover Size')) }}
+							</div>
+							<div class="col-md-8">
+								<div class="mp-option-sizes-input">
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings['cover-size'].width }}" name="cover-size[width]">
+									</div>
+									<span>x</span>
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings['cover-size'].height }}" name="cover-size[height]">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mp-option" id="cover-small-size">
+						<div class="row">
+							<div class="col-md-4 mbsThinCol">
+								{{ options.label(translate('Cover Thumbnail Medium Size')) }}
+							</div>
+							<div class="col-md-8">
+								<div class="mp-option-sizes-input">
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings['cover-medium-size'].width }}" name="cover-medium-size[width]">
+									</div>
+									<span>x</span>
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings['cover-medium-size'].height }}" name="cover-medium-size[height]">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mp-option" id="cover-small-size">
+						<div class="row">
+							<div class="col-md-4 mbsThinCol">
+								{{ options.label(translate('Cover Thumbnail Small Size')) }}
+							</div>
+							<div class="col-md-8">
+								<div class="mp-option-sizes-input">
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings['cover-small-size'].width }}" name="cover-small-size[width]">
+									</div>
+									<span>x</span>
+									<div class="mp-option-input">
+										<input class="sc-input" value="{{ settings['cover-small-size'].height }}" name="cover-small-size[height]">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+                    {% set defaultCover = assets('users', 'images/user-cover.jpg', false) %}
+
+					<div class="mp-option" id="default-cover">
+						<div class="row">
+							<div class="col-md-4 mbsThinCol">
+								{{ options.label(translate('Default Cover Image')) }}
+							</div>
+							<div class="col-md-8">
+								<div class="mp-default-image" data-modal="#cover-modal" data-width="" data-height="">
+									<img style="max-width:50px;max-height: 50px;"
+										src="{{ settings['default-cover'] }}"
+									>
+									<button class="mp-option-button sc-button primary mp-change">{{ translate('Change') }}</button>
+									<button class="mp-option-button sc-button primary mp-set-to-default"
+										{% if defaultCover == settings['default-cover'] or defaultCover == settings['default-cover-source'] %}
+											style="display: none" 
+										{% endif %}
+									>{{ translate('Set to default') }}</button>
+									<input
+										type="hidden"
+										name="default-cover"
+										value="{{ settings['default-cover'] }}"
+									>
+                                    <input
+                                            type="hidden"
+                                            name="default-cover-medium"
+                                            value="{{ settings['default-cover-medium'] }}"
+                                    >
+                                    <input
+                                            type="hidden"
+                                            name="default-cover-small"
+                                            value="{{ settings['default-cover-small'] }}"
+                                    >
+                                    <input
+                                            type="hidden"
+                                            name="default-cover-source"
+                                            data-default-image="{{ defaultCover }}"
+                                            data-default-width-input-name="cover-size[width]"
+                                            data-default-height-input-name="cover-size[height]"
+                                            data-default-crop-input-name="default-cover-crop-data"
+                                            value="{{ settings['default-cover-source'] }}"
+                                    >
+                                    <input
+                                            type="hidden"
+                                            name="default-cover-crop-data"
+                                            value="{{ settings['default-cover-crop-data'] }}"
+                                    >
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					{% set permalinks = [
+						{
+							'value': 'username',
+							'title': translate('Username'),
+							'selected': settings['permalink-base'] == 'username'
+						},
+						{
+							'value': 'id',
+							'title': translate('User ID'),
+							'selected': settings['permalink-base'] == 'id'
+						},
+					] %}
+
+					{{ options.selectRow(translate('Profile Permalink Base'), 
+						permalinks,
+						'permalink-base',
+						'permalink-base',
+						null,
+						{'mbsThinCol': 1}
+					) }}
+
+
+					{% set displayNames = [
+						{
+							'value': 'username',
+							'title': translate('Username'),
+							'selected': settings['display-name'] == 'username'
+						},
+						{
+							'value': 'firstname-lastname',
+							'title': translate('First Name Last Name'),
+							'selected': settings['display-name'] == 'firstname-lastname'
+						},
+						{
+							'value': 'lastname-firstname',
+							'title': translate('Last Name First Name'),
+							'selected': settings['display-name'] == 'lastname-firstname'
+						},
+						{
+							'value': 'nickname',
+							'title': translate('Nickname '),
+							'selected': settings['display-name'] == 'nickname',
+						},
+					] %}
+
+					{{ options.selectRow(translate('User Display Name'), 
+						displayNames,
+						'display-name',
+						'display-name',
+						null,
+						{'mbsThinCol': 1}
+					) }}
+
+			
+					{{ options.radioRow(translate('Registration Confirmation'),
+						[{
+							'value': 'auto',
+							'label': translate('Auto'),
+							'name': 'registration-confirmation',
+							'checked': settings['registration-confirmation'] == 'auto'
+						},
+						{
+							'value': 'email-confirmation',
+							'label': translate('Email confirmation'),
+							'name': 'registration-confirmation',
+							'checked': settings['registration-confirmation'] == 'email-confirmation'
+						},
+						{
+							'value': 'admin-confirmation',
+							'label': translate('Administrator confirmation'),
+							'name': 'registration-confirmation',
+							'checked': settings['registration-confirmation'] == 'admin-confirmation'
+						}],
+						'registration-confirmation',
+						null, null, {'mbsThinCol': 1}
+					) }}
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sc-tab-content" data-tab="fields">
+			<div class="mp-fields">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="action-panel">
+							<button data-save-settings class="save-fields sc-button icon-button primary">
+								<i class="fa fa-save"></i>
+								<span>{{ translate('Save Fields') }}</span>
+							</button>
+							<button class="add-new-section sc-button icon-button primary">
+								<i class="fa fa-plus-circle"></i>
+								<span>{{ translate('Add Section') }}</span>
+							</button>
+							<button class="add-new-field sc-button icon-button primary">
+								<i class="fa fa-plus-circle"></i>
+								<span>{{ translate('Add Field') }}</span>
+							</button>
+						</div>
+						<div class="mp-fields-container"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mp-fields-template sc-hidden">
+		<table>
+			<tr class="mp-field">
+				<td class="mp-field-drag-handler">
+					<i class="fa fa-arrows-v"></i>
+				</td>
+				<td class="mp-field-label">
+					<input type="text" class="mp-field-label-input" name="label">
+				</td>
+				<td class="mp-field-type">
+					<select class="sc-input mp-field-types-select" name="type">
+						{{ f.fieldsList() }}
+					</select>
+				</td>
+				<td class="mp-field-registration">
+					<label class="sc-checkbox">
+						<input type="checkbox" name="registration" value="true">
+						<div class="sc-checkbox-state"></div>
+					</label>
+				</td>
+				<td class="mp-field-required">
+					<label class="sc-checkbox">
+						<input type="checkbox" name="required" value="true">
+						<div class="sc-checkbox-state"></div>
+					</label>
+				</td>
+				<td class="mp-field-enabled">
+					<label class="sc-checkbox">
+						<input type="checkbox" name="enabled" value="true">
+						<div class="sc-checkbox-state"></div>
+					</label>
+				</td>
+				<td class="mp-field-action">
+					<button class="sc-button mp-field-edit-button">
+						<i class="fa fa-lg fa-edit"></i>
+						{{ translate('Edit') }}
+					</button>
+					<button class="sc-button mp-field-remove-button">	
+						<i class="fa fa-lg fa-trash-o"></i>
+						{{ translate('Remove') }}
+					</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="mp-section-template sc-hidden">
+		<div class="mp-section">
+			<div class="mp-section-title-bar">
+				<div class="mp-section-drag-handler">
+					<i class="fa fa-arrows-v"></i>
+				</div>
+				<div class="mp-section-title">
+					<input type="text" class="mp-section-title-input">
+				</div>
+				<div class="mp-section-remove">
+					<i class="fa fa-times"></i>
+				</div>
+			</div>
+			<div class="mp-section-container">
+				<table class="mp-section-fields-table">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Field Label</th>
+							<th>Type</th>
+							<th>Registration</th>
+							<th>Required</th>
+							<th>Enabled</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody class="fields-list">
+						<tr class="fields-list-placeholder"></tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="mp-modal add-section-modal sc-hidden">
+		<div class="row sc-input-row">
+			<div class="col-md-4">
+				<label class="sc-label">{{ translate('Section Name') }}</label>
+			</div>
+			<div class="col-md-8">
+				<input class="sc-input section-name" type="text">
+				<p class="sc-hidden error-msg"></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="mp-modal edit-field-modal sc-hidden">
+		<div class="edit-field-container">
+			<div class="protected-field-message">
+				{{ translate("This is protected field. You cannot modify its type.") }}
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<div class="sc-input-row">
+						<label class="sc-label">{{ translate('Label') }}</label>
+						<input class="sc-input field-label" type="text" name="label">
+						<p class="sc-hidden error-msg"></p>
+					</div>
+					<div class="sc-input-row">
+						<label class="sc-label">{{ translate('Section') }}</label>
+						<select class="sc-input field-section" name="section"></select>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="sc-input-row">
+						<label class="sc-label">{{ translate('Type') }}</label>
+						<select class="sc-input field-type" name="type">
+							{{ f.fieldsList() }}
+						</select>
+					</div>
+					<div class="sc-input-row">
+						<label class="sc-label">{{ translate('Description') }}</label>
+						<input class="sc-input field-description" type="text" name="description">
+					</div>
+				</div>
+			</div>
+
+			<div class="field-options field-date sc-hidden">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="sc-input-row">
+							<label class="sc-label">{{ translate('Date Format') }}</label>
+							<select class="sc-input field-date-format" name="date-format">
+								{% for value, data in dateFormats %}
+									<option value="{{ value }}">{{ data.text }}</option>
+								{% endfor %}
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="field-options field-g-recaptcha-response sc-hidden">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="sc-input-row">
+							<table>
+								<tr class="mp-field-option mp-field-option-google-re-captcha-site-key">
+									<td class="mp-field-option-setting">
+										<label class="sc-label">{{ translate('Google ReCaptcha Site Key') }}</label>
+									</td>
+									<td class="mp-field-option-setting">
+										<div class="mp-option-helper tooltip">
+											<i class="fa fa-question sc-tooltip"></i>
+											<div class="tooltip_content">
+												<div>{{ tooltips.get('google-re-captcha-site-key')|raw() }}</div>
+											</div>
+										</div>
+									</td>
+									<td class="mp-field-option-setting">
+										<input type="text" class="mp-field-label-input" name="google-re-captcha-site-key">
+									</td>
+								</tr>
+								<tr class="mp-field-option mp-field-option-google-re-captcha-secret-key">
+									<td class="mp-field-option-setting">
+										<label class="sc-label">{{ translate('Google ReCaptcha Secret Key') }}</label>
+									</td>
+									<td class="mp-field-option-setting">
+										<div class="mp-option-helper tooltip">
+											<i class="fa fa-question sc-tooltip"></i>
+											<div class="tooltip_content">
+												<div>{{ translate(tooltips.get('google-re-captcha-secret-key'))|raw }}</div>
+											</div>
+										</div>
+									</td>
+									<td class="mp-field-option-setting">
+										<input type="text" class="mp-field-label-input" name="google-re-captcha-secret-key">
+									</td>
+								</tr>
+								<tr class="mp-field-option mp-field-option-google-re-captcha-theme">
+									<td class="mp-field-option-setting">
+										<label class="sc-label">{{ translate('Google ReCaptcha Theme') }}</label>
+									</td>
+									<td class="mp-field-option-setting">
+										<div class="mp-option-helper tooltip">
+											<i class="fa fa-question sc-tooltip"></i>
+											<div class="tooltip_content">
+												<div>{{ translate(tooltips.get('google-re-captcha-theme'))|raw }}</div>
+											</div>
+										</div>
+									</td>
+									<td class="mp-field-option-setting">
+										<select name="google-re-captcha-theme">
+											<option value="light">{{ translate('Light') }}</option>
+											<option value="dark">{{ translate('Dark') }}</option>
+										</select>
+									</td>
+								</tr>
+								<tr class="mp-field-option mp-field-option-google-re-captcha-type">
+									<td class="mp-field-option-setting">
+										<label class="sc-label">{{ translate('Google ReCaptcha Type') }}</label>
+									</td>
+									<td class="mp-field-option-setting">
+										<div class="mp-option-helper tooltip">
+											<i class="fa fa-question sc-tooltip"></i>
+											<div class="tooltip_content">
+												<div>{{ translate(tooltips.get('google-re-captcha-type'))|raw }}</div>
+											</div>
+										</div>
+									</td>
+									<td class="mp-field-option-setting">
+										<select name="google-re-captcha-type">
+											<option value="audio">{{ translate('Audio') }}</option>
+											<option value="image" selected="true">{{ translate('Image') }}</option>
+										</select>
+									</td>
+								</tr>
+								<tr class="mp-field-option mp-field-option-google-re-captcha-size">
+									<td class="mp-field-option-setting">
+										<label class="sc-label">{{ translate('Google ReCaptcha Size') }}</label>
+									</td>
+									<td class="mp-field-option-setting">
+										<div class="mp-option-helper tooltip">
+											<i class="fa fa-question sc-tooltip"></i>
+											<div class="tooltip_content">
+												<div>{{ translate(tooltips.get('google-re-captcha-size'))|raw }}</div>
+											</div>
+										</div>
+									</td>
+									<td class="mp-field-option-setting">
+										<select name="google-re-captcha-size">
+											<option value="compact">{{ translate('Compact') }}</option>
+											<option value="normal" selected="true">{{ translate('Normal') }}</option>
+										</select>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+			<div class="row field-states">
+				<div class="col-md-3">
+					<label class="sc-checkbox">
+						<input type="checkbox" name="registration" value="true">
+						{{ translate('Registration') }}
+						<div class="sc-checkbox-state"></div>
+					</label>
+				</div>
+				<div class="col-md-3">
+					<label class="sc-checkbox">
+						<input type="checkbox" name="required" value="true" id="popup-required">
+						{{ translate('Required') }}
+						<div class="sc-checkbox-state"></div>
+					</label>
+				</div>
+                <div class="col-md-3">
+                    <label class="sc-checkbox">
+                        <input type="checkbox" name="asterisk" value="true" id="popup-asterisk">
+                        {{ translate('Asterisk') }}
+                        <div class="sc-checkbox-state"></div>
+                    </label>
+                </div>
+				<div class="col-md-3">
+					<label class="sc-checkbox">
+						<input type="checkbox" name="enabled" value="true" checked>
+						{{ translate('Enabled') }}
+						<div class="sc-checkbox-state"></div>
+					</label>
+				</div>
+			</div>
+
+			<div class="field-options-container sc-hidden">
+				<hr>
+				<div class="row mbsModalEditAddToDdOpt">
+					<div class="col-md-4">
+						<label class="sc-label">{{ translate('Option Name') }}</label>
+					</div>
+					<div class="col-md-6">
+						<div class="sc-input-row">
+							<input class="sc-input option-name-input" type="text" name="name" value="">
+							<p class="sc-hidden error-msg"></p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="sc-input-row">
+							<button class="sc-button primary add-field-option">
+								<i class="fa fa-plus-circle"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="row sc-input-row">
+					<div class="col-md-12">
+						<div class="field-options-list"></div>
+					</div>
+				</div>
+
+				<div class="option-template sc-hidden">
+					<div class="option">
+						<div class="option-drag-handler">
+							<i class="fa fa-arrows-v"></i>
+						</div>
+						<div class="option-name">
+							<input type="text" name="options[]">
+						</div>
+						<div class="checked-state">
+							<label class="sc-checkbox seleceted-options-state">
+								<input type="checkbox" name="selected-options[]" value="true">
+								<input type="radio" name="selected-options[]" value="true">
+								{{ translate('Default Selected') }}
+								<div class="sc-checkbox-state seleceted-options-input-state"></div>
+							</label>
+						</div>
+						<div class="remove-option">
+							<i class="fa fa-trash-o"></i>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+{% endblock %}
