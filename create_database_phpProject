@@ -1,0 +1,75 @@
+--创建数据库
+create database php_project;
+
+--图片(素材)表
+create table tbl_pic(
+    p_id            int not null,
+    p_url           varchar(128),
+    p_upload_date   datetime,
+    p_format        varchar(16),
+    p_size          bigint,
+    p_length        int,
+    p_width         int,
+
+    p_uuid          bigint,
+    p_usr_id        int                 --所有者ID FK
+);
+ALTER TABLE tbl_pic ADD CONSTRAINT pk_tbl_pic PRIMARY KEY (p_id);
+CREATE INDEX idx_tbl_pic_p_id           ON tbl_pic (p_id)           USING BTREE;
+CREATE INDEX idx_tbl_pic_p_upload_date  ON tbl_pic (p_upload_date)  USING BTREE;
+CREATE INDEX idx_tbl_pic_p_usr_id       ON tbl_pic (p_usr_id)       USING BTREE;
+
+
+--模板表
+create table tbl_model(
+    m_id            int not null,
+    m_url           varchar(128),
+    m_upload_date   datetime,
+    m_format        varchar(16),
+    m_size          bigint,
+    m_length        int,
+    m_width         int,
+    m_uuid          bigint,
+
+    m_usr_id        bigint              --所有者ID FK
+);
+ALTER TABLE tbl_model ADD CONSTRAINT pk_tbl_model PRIMARY KEY (m_id);
+CREATE INDEX idx_tbl_pic_m_id           ON tbl_pic (m_id)           USING BTREE;
+CREATE INDEX idx_tbl_pic_m_upload_date  ON tbl_pic (m_upload_date)  USING BTREE;
+CREATE INDEX idx_tbl_pic_m_usr_id       ON tbl_pic (m_usr_id)       USING BTREE;
+
+create table tbl_processed_pic(
+    pp_id           int not null,
+    pp_url          varchar(128),
+
+    pp_create_date  datetime,
+    pp_format       varchar(16),
+    pp_size         bigint,
+    pp_length       int,
+    pp_width        int,
+
+    pp_uuid         bigint,
+    pp_p_id         varchar(256),       --素材id,用逗号分隔存为字符串
+    pp_m_id         varchar(128),       --模板id,
+    pp_a_id         varchar(256),       --所属相簿id
+    pp_usr_id       bigint              --所有者ID FK
+);
+ALTER TABLE tbl_processed_pic ADD CONSTRAINT pk_tbl_processd_pic PRIMARY KEY (pp_id);
+CREATE INDEX idx_tbl_processed_pic  ON tbl_processed_pic (pp_id)            USING BTREE;
+CREATE INDEX idx_tbl_processed_pic  ON tbl_processed_pic (pp_create_date)   USING BTREE;
+CREATE INDEX idx_tbl_processed_pic  ON tbl_processed_pic (pp_a_id)          USING BTREE;
+CREATE INDEX idx_tbl_processed_pic  ON tbl_processed_pic (pp_usr_id)        USING BTREE;
+
+create table tbl_album(
+    a_id            int not null,
+    a_create_time   datetime,
+    a_update_time   datetime,
+
+    a_usr_id        bigint              --所有者ID FK
+
+);
+ALTER TABLE tbl_album ADD CONSTRAINT pk_tbl_processd_pic PRIMARY KEY (pp_id);
+CREATE INDEX idx_tbl_album  ON tbl_album (a_id)            USING BTREE;
+CREATE INDEX idx_tbl_album  ON tbl_album (a_create_time)   USING BTREE;
+CREATE INDEX idx_tbl_album  ON tbl_album (a_update_time)   USING BTREE;
+CREATE INDEX idx_tbl_album  ON tbl_album (a_usr_id)        USING BTREE;
