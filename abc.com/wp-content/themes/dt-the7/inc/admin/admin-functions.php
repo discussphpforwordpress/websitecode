@@ -424,6 +424,7 @@ if ( ! function_exists( 'the7_register_admin_scripts' ) ) {
 
 }
 
+
 if ( ! function_exists( 'presscore_admin_scripts' ) ) :
 
 	/**

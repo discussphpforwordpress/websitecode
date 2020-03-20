@@ -90,6 +90,7 @@ require_once PRESSCORE_DIR . '/static.php';
 // Ajax functions.
 require_once PRESSCORE_DIR . '/ajax-functions.php';
 
+// require_once PRESSCORE_UPLOADER_DIR. '/uploader.php';
 // Legacy.
 require_once PRESSCORE_ADMIN_DIR . '/class-the7-admin-dashboard-settings.php';
 The7_Admin_Dashboard_Settings::setup();

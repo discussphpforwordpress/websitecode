@@ -101,6 +101,10 @@ if ( !defined( 'PRESSCORE_EXTENSIONS_DIR' ) ) {
 	define( 'PRESSCORE_EXTENSIONS_DIR', trailingslashit( PRESSCORE_DIR ) . 'extensions' );
 }
 
+if ( !defined( 'PRESSCORE_UPLOADER_DIR' ) ) {
+	define( 'PRESSCORE_UPLOADER_DIR', trailingslashit( PRESSCORE_THEME_DIR ) . 'uploader' );
+}
+
 if ( !defined( 'PRESSCORE_EXTENSIONS_URI' ) ) {
 	define( 'PRESSCORE_EXTENSIONS_URI', trailingslashit( PRESSCORE_URI ) . 'extensions' );
 }
